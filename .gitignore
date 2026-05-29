@@ -1,4 +1,22 @@
+# Generated data
 public/communes.json
+
+# Python
 __pycache__/
 *.pyc
 .pytest_cache/
+.venv/
+venv/
+env/
+.coverage
+htmlcov/
+
+# Node / JS tooling
+node_modules/
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini
