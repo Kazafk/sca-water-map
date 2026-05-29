@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SCA Water Map — Eau du robinet pour le café</title>
+  <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4/dist/maplibre-gl.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <header id="topbar">
+      <div id="brand">
+        <span id="brand-title">☕ SCA Water Map</span>
+        <span id="brand-subtitle">Qualité de l'eau du robinet pour le café — France</span>
+      </div>
+      <div id="controls">
+        <div id="search-wrapper">
+          <input id="search" type="text" placeholder="🔍  Rechercher une commune..." autocomplete="off">
+        </div>
+        <span id="data-date">Chargement…</span>
+      </div>
+    </header>
+
+    <main id="main-layout">
+      <div id="map-container">
+        <div id="map"></div>
+        <div id="legend">
+          <div class="legend-title">Score SCA</div>
+          <div class="legend-item"><span class="dot" style="background:#2ecc71"></span>≥ 75 % — Idéal</div>
+          <div class="legend-item"><span class="dot" style="background:#3498db"></span>50–75 % — Acceptable</div>
+          <div class="legend-item"><span class="dot" style="background:#f39c12"></span>25–50 % — Hors plage</div>
+          <div class="legend-item"><span class="dot" style="background:#e74c3c"></span>&lt; 25 % — Très hors SCA</div>
+          <div class="legend-item"><span class="dot" style="background:#333"></span>Données absentes</div>
+        </div>
+      </div>
+
+      <div id="panel">
+        <div id="panel-empty">Cliquez sur une commune pour voir le détail</div>
+        <div id="panel-content" hidden></div>
+      </div>
+    </main>
+  </div>
+
+  <script src="https://unpkg.com/maplibre-gl@4/dist/maplibre-gl.js"></script>
+  <script type="module" src="map.js"></script>
+</body>
+</html>
