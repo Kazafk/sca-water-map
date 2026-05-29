@@ -1,0 +1,29 @@
+name: Update water data
+
+on:
+  schedule:
+    - cron: "0 3 * * 1"   # Every Monday at 3am UTC
+  workflow_dispatch:        # Manual trigger from GitHub UI
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Fetch Hub'Eau data and compute scores
+        run: python data/compute_scores.py
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
