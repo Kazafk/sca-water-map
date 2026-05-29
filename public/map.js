@@ -119,8 +119,9 @@ async function init() {
     document.getElementById('search-wrapper').appendChild(dropdown);
   });
 
+  const searchWrapper = document.getElementById('search-wrapper');
   document.addEventListener('click', (e) => {
-    if (!searchEl.contains(e.target)) closeDropdown();
+    if (!searchWrapper.contains(e.target)) closeDropdown();
   });
 }
 
