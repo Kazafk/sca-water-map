@@ -1,6 +1,14 @@
 // public/panel.js
 import { labelFromScore, colorFromScore, flagsFromParams } from './scoring.js';
 
+function _esc(str) {
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
+
 const PARAMS = [
   { key: 'ca_hardness', label: 'Ca Hardness', unit: 'mg/L CaCO₃', lo: 50,  hi: 85  },
   { key: 'alkalinity',  label: 'Alcalinité',  unit: 'mg/L CaCO₃', lo: 40,  hi: 70  },
@@ -38,7 +46,7 @@ export function updatePanel(commune, generatedAt) {
     <div class="panel-header">
       <div class="panel-score-row">
         <div>
-          <div class="panel-commune">${nom}</div>
+          <div class="panel-commune">${_esc(nom)}</div>
           <div class="panel-meta">Dép. ${dept} · ${dateStr}</div>
         </div>
         <div>
