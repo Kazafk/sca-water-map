@@ -75,3 +75,8 @@ test('flagsFromParams: detects too_soft for alpine water', () => {
   const flags  = flagsFromParams(params, dates, '2026-05-01T00:00:00Z');
   assert.ok(flags.includes('too_soft'));
 });
+
+test('scoreFromParams: negative cl2 (sensor noise) does not exceed 1.0', () => {
+  const s = scoreFromParams({ ca_hardness: 68, alkalinity: 55, ph: 7.0, tds: 150, na: 10, cl: 20, cl2: -1.0 });
+  assert.ok(s !== null && s >= 0 && s <= 1.0, `expected 0 <= score <= 1, got ${s}`);
+});

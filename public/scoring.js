@@ -33,7 +33,7 @@ export function scoreFromParams(params) {
     [_scoreRange(tds,  75,  250,  0,  500), 0.06],
     [_scoreRange(na,    0,   30,  0,  100), 0.03],
     [_scoreRange(cl,    0,   75,  0,  200), 0.02],
-    [cl2 != null ? Math.max(0, 1 - cl2 / 0.5) : null, 0.01],
+    [cl2 != null ? Math.max(0, Math.min(1, 1 - cl2 / 0.5)) : null, 0.01],
   ];
 
   const avail  = secondaries.filter(([s]) => s !== null);
