@@ -6,6 +6,28 @@ const GEOJSON_URL      = 'https://raw.githubusercontent.com/gregoiredavid/france
 const DEPT_GEOJSON_URL = 'https://raw.githubusercontent.com/gregoiredavid/france-geojson/master/departements-version-simplifiee.geojson';
 const MAP_STYLE        = 'https://tiles.openfreemap.org/styles/dark';
 
+// Zoom minimum d'affichage du label par commune (INSEE → zoom)
+const LABEL_MIN_ZOOM = {
+  // Tier 1 — grandes métropoles (zoom 6)
+  '75056':6,'13055':6,'69123':6,'31555':6,'06088':6,'44109':6,'34172':6,
+  '67482':6,'33063':6,'59350':6,'35238':6,'51454':6,'76351':6,'42218':6,
+  '83137':6,'38185':6,'21231':6,'49007':6,'30189':6,'63113':6,'87085':6,
+  '66136':6,'57463':6,'25056':6,'45234':6,'76540':6,'14118':6,'54395':6,
+  '86194':6,'84007':6,'29019':6,'37261':6,'72181':6,'68224':6,'80021':6,
+  '13001':6,'69266':6,'95018':6,'92012':6,'93048':6,'59599':6,'59512':6,
+  '59183':6,'74010':6,'73065':6,'64445':6,'62193':6,'56121':6,'97105':6,
+  '97209':6,'97408':6,
+  // Tier 2 — villes moyennes et chefs-lieux (zoom 8)
+  '62041':8,'02691':8,'10387':8,'51108':8,'88160':8,'90010':8,'39300':8,
+  '01053':8,'68066':8,'71270':8,'71076':8,'89024':8,'58194':8,'03190':8,
+  '82121':8,'81004':8,'12202':8,'46042':8,'19031':8,'24322':8,'47001':8,
+  '40192':8,'65440':8,'32013':8,'09122':8,'11069':8,'34032':8,'06029':8,
+  '06004':8,'78646':8,'94028':8,'92050':8,'77288':8,'77152':8,'28085':8,
+  '53130':8,'61001':8,'50129':8,'27229':8,'60057':8,'08105':8,'55029':8,
+  '26362':8,'07186':8,'43157':8,'15014':8,'48095':8,'04070':8,'05061':8,
+  '83050':8,'93066':8,'92025':8,'94080':8,'91228':8,'95127':8,
+};
+
 let communesData = {};
 let generatedAt  = null;
 let totalScored  = 0;
@@ -36,9 +58,9 @@ function buildDeptData() {
 function _applyViewMode() {
   if (!map || !map.isStyleLoaded()) return;
   const isC = viewMode === 'communes';
-  for (const l of ['communes-fill', 'communes-line', 'communes-selected'])
+  for (const l of ['communes-fill', 'communes-line', 'communes-selected', 'communes-labels'])
     map.setLayoutProperty(l, 'visibility', isC ? 'visible' : 'none');
-  for (const l of ['depts-fill', 'depts-line', 'depts-selected'])
+  for (const l of ['depts-fill', 'depts-line', 'depts-selected', 'depts-labels'])
     map.setLayoutProperty(l, 'visibility', isC ? 'none' : 'visible');
   document.getElementById('btn-toggle-view').textContent = isC ? '🗺 Depts' : '🏘 Communes';
 }
@@ -62,7 +84,8 @@ async function init() {
 
   for (const f of geojson.features) {
     const c = communesData[f.properties.code];
-    f.properties.color = colorFromScore(c?.score ?? null);
+    f.properties.color         = colorFromScore(c?.score ?? null);
+    f.properties.label_min_zoom = LABEL_MIN_ZOOM[f.properties.code] ?? 11;
   }
   for (const f of deptGeojson.features) {
     const info = deptData[f.properties.code];
@@ -87,6 +110,23 @@ async function init() {
       filter: ['==', ['get', 'code'], ''],
       paint: { 'line-color': '#ffffff', 'line-width': 2 } });
 
+    map.addLayer({ id: 'communes-labels', type: 'symbol', source: 'communes', minzoom: 6,
+      layout: {
+        'text-field':         ['get', 'nom'],
+        'text-font':          ['Open Sans Semibold', 'Arial Unicode MS Bold'],
+        'text-size':          ['interpolate', ['linear'], ['zoom'], 6, 9, 9, 10, 12, 12],
+        'text-anchor':        'center',
+        'text-max-width':     8,
+        'text-allow-overlap': false,
+      },
+      paint: {
+        'text-color':      '#e8edf3',
+        'text-halo-color': 'rgba(13,17,23,0.88)',
+        'text-halo-width': 1.5,
+        'text-opacity':    ['case', ['>=', ['zoom'], ['get', 'label_min_zoom']], 1, 0],
+      },
+    });
+
     // Départements
     map.addSource('depts', { type: 'geojson', data: deptGeojson });
     map.addLayer({ id: 'depts-fill', type: 'fill', source: 'depts',
@@ -98,6 +138,23 @@ async function init() {
     map.addLayer({ id: 'depts-selected', type: 'line', source: 'depts',
       filter: ['==', ['get', 'code'], ''], layout: { visibility: 'none' },
       paint: { 'line-color': '#ffffff', 'line-width': 2.5 } });
+
+    map.addLayer({ id: 'depts-labels', type: 'symbol', source: 'depts', minzoom: 5,
+      layout: {
+        visibility:           'none',
+        'text-field':         ['get', 'nom'],
+        'text-font':          ['Open Sans Semibold', 'Arial Unicode MS Bold'],
+        'text-size':          ['interpolate', ['linear'], ['zoom'], 5, 10, 8, 13],
+        'text-anchor':        'center',
+        'text-max-width':     10,
+        'text-allow-overlap': false,
+      },
+      paint: {
+        'text-color':      '#e8edf3',
+        'text-halo-color': 'rgba(13,17,23,0.88)',
+        'text-halo-width': 2,
+      },
+    });
 
     // Tooltip survol
     const tooltip = document.getElementById('map-tooltip');
