@@ -385,101 +385,200 @@ function _paramBar({ label, unit, lo, hi, decimals = 1 }, val, isEstimated = fal
 function _scaChart(params, pts, pointColor, showBottled = false) {
   const ca  = params.ca_hardness;
   const alk = params.alkalinity;
-  const W=220, H=160, PL=30, PR=10, PT=10, PB=20;
+
+  const W=248, H=190, PL=34, PR=8, PT=12, PB=28;
   const CW=W-PL-PR, CH=H-PT-PB;
   const sx = v => PL + (Math.min(Math.max(v, 0), 160) / 160) * CW;
   const sy = v => PT + CH - (Math.min(Math.max(v, 0), 120) / 120) * CH;
+  const f  = n => n.toFixed(1);
 
   const ix = sx(55), iy = sy(68);
   const px = alk != null ? sx(alk) : null;
   const py = ca  != null ? sy(ca)  : null;
 
-  const indivPts = (pts || [])
-    .filter(p => p.alk != null)
-    .map(p => {
-      const cx  = sx(p.alk);
-      const cy  = sy(p.ca);
-      const tip = _esc(`${p.l || 'Lieu inconnu'} · ${p.d}`);
-      return `<circle cx="${cx.toFixed(1)}" cy="${cy.toFixed(1)}" r="2.5"
-        fill="${pointColor}" fill-opacity="0.35" stroke="${pointColor}" stroke-width="0.5" style="cursor:default">
-        <title>${tip}</title>
-      </circle>`;
-    }).join('');
+  // Axes
+  const axesX = [40, 70, 100, 160];
+  const axesY = [17, 50, 68, 85, 120];
+  const gridLines = axesX.slice(0,2).map(v =>
+    `<line x1="${f(sx(v))}" y1="${f(PT)}" x2="${f(sx(v))}" y2="${f(PT+CH)}" stroke="var(--border)" stroke-width=".5" stroke-dasharray="2,2"/>`
+  ).join('') + axesY.filter(v => v===50||v===85).map(v =>
+    `<line x1="${f(PL)}" y1="${f(sy(v))}" x2="${f(PL+CW)}" y2="${f(sy(v))}" stroke="var(--border)" stroke-width=".5" stroke-dasharray="2,2"/>`
+  ).join('');
+  const xTicks = axesX.map(v =>
+    `<line x1="${f(sx(v))}" y1="${f(PT+CH)}" x2="${f(sx(v))}" y2="${f(PT+CH+3)}" stroke="var(--border)" stroke-width="1"/>
+     <text x="${f(sx(v))}" y="${f(PT+CH+9)}" fill="var(--muted)" font-size="6" text-anchor="middle" font-family="sans-serif">${v}</text>`
+  ).join('');
+  const yTicks = axesY.filter(v => v!==68).map(v =>
+    `<line x1="${f(PL-3)}" y1="${f(sy(v))}" x2="${f(PL)}" y2="${f(sy(v))}" stroke="var(--border)" stroke-width="1"/>
+     <text x="${f(PL-5)}" y="${f(sy(v)+2.5)}" fill="var(--muted)" font-size="6" text-anchor="end" font-family="sans-serif">${v}</text>`
+  ).join('');
 
-  const nPts = (pts || []).filter(p => p.alk != null).length;
+  // Historical individual points (staggered fade-in)
+  const validPts = (pts || []).filter(p => p.alk != null);
+  const indivPts = validPts.map((p, i) => {
+    const tip = _esc(`${p.l || 'Lieu inconnu'} · ${p.d}`);
+    return `<circle cx="${f(sx(p.alk))}" cy="${f(sy(p.ca))}" r="2.5"
+      fill="${pointColor}" fill-opacity=".35" stroke="${pointColor}" stroke-width="0.5"
+      class="sca-pt-in" style="animation-delay:${i*25}ms" cursor="default">
+      <title>${tip}</title>
+    </circle>`;
+  }).join('');
+  const nPts = validPts.length;
 
+  // Animated line from commune point to ideal
+  let lineAnim = '';
+  if (px != null && py != null) {
+    const len = f(Math.hypot(px-ix, py-iy));
+    lineAnim = `<line x1="${f(px)}" y1="${f(py)}" x2="${f(ix)}" y2="${f(iy)}"
+      stroke="var(--muted)" stroke-width=".8" stroke-dasharray="${len} ${len}" stroke-dashoffset="${len}" opacity=".6">
+      <animate attributeName="stroke-dashoffset" from="${len}" to="0"
+        dur=".5s" begin=".1s" fill="freeze" calcMode="spline" keySplines=".4 0 .2 1" keyTimes="0;1"/>
+    </line>`;
+  }
+
+  // Main commune point (scale-bounce)
   const avgPoint = px != null && py != null ? `
-    <line x1="${px.toFixed(1)}" y1="${py.toFixed(1)}" x2="${ix.toFixed(1)}" y2="${iy.toFixed(1)}"
-          style="stroke:var(--muted)" stroke-width=".8" stroke-dasharray="2,1.5"/>
-    <circle cx="${px.toFixed(1)}" cy="${py.toFixed(1)}" r="${nPts > 1 ? 5 : 4}"
-            fill="${pointColor}" stroke="white" stroke-width="1.2">
-      ${nPts > 1 ? `<title>Moyenne · ${nPts} point${nPts > 1 ? 's' : ''}</title>` : ''}
+    ${lineAnim}
+    <circle cx="${f(px)}" cy="${f(py)}" r="${nPts > 1 ? 5.5 : 4.5}"
+            fill="${pointColor}" stroke="white" stroke-width="1.5" class="sca-dot-in">
+      ${nPts > 1 ? `<title>Moyenne · ${nPts} mesures</title>` : ''}
     </circle>
   ` : '';
 
+  // Value label — positioned to avoid edges
+  let pointLabel = '';
+  if (px != null && py != null && (ca != null || alk != null)) {
+    const toRight  = px < PL + CW * 0.65;
+    const toBottom = py < PT + CH * 0.45;
+    const lx = toRight  ? px + 7 : px - 7;
+    const ly = toBottom ? py + 13 : py - 5;
+    const anchor = toRight ? 'start' : 'end';
+    const caStr  = ca  != null ? ca.toFixed(0)  : '—';
+    const alkStr = alk != null ? alk.toFixed(0) : '—';
+    pointLabel = `<text x="${f(lx)}" y="${f(ly)}" fill="${pointColor}" font-size="6.5"
+      font-family="sans-serif" font-weight="bold" text-anchor="${anchor}" class="sca-label-in">${caStr} / ${alkStr}</text>`;
+  }
+
+  // Bottled waters — label anchor avoids right edge
   const bottledPts = showBottled ? BOTTLED_WATERS.map(w => {
     const bx = sx(w.alk), by = sy(w.ca);
     const offX = w.alk > 160, offY = w.ca > 120;
-    const tip = `${w.name} · Ca ${w.ca} / Alk ${w.alk} mg/L CaCO₃${offX || offY ? ' (hors échelle)' : ''}`;
+    const tip  = `${w.name} · Ca ${w.ca} / Alk ${w.alk}${offX || offY ? ' (hors échelle)' : ''}`;
+    const lx   = bx < PL + CW - 28 ? bx + 5 : bx - 5;
+    const anch = bx < PL + CW - 28 ? 'start' : 'end';
     return `<g>
-      <circle cx="${bx.toFixed(1)}" cy="${by.toFixed(1)}" r="3"
-        fill="none" stroke="#9b59b6" stroke-width="1.2" stroke-dasharray="${offX || offY ? '2,1' : 'none'}">
+      <circle cx="${f(bx)}" cy="${f(by)}" r="3.5" fill="none"
+        stroke="#9b59b6" stroke-width="1.5" stroke-dasharray="${offX||offY ? '2,1' : 'none'}">
         <title>${tip}</title>
       </circle>
-      <text x="${(bx + 4).toFixed(1)}" y="${(by + 2).toFixed(1)}"
-            fill="#9b59b6" font-size="5" font-family="sans-serif">${w.name}</text>
+      <text x="${f(lx)}" y="${f(by+2.5)}" fill="#9b59b6" font-size="5.5"
+            font-family="sans-serif" text-anchor="${anch}">${w.name}</text>
     </g>`;
   }).join('') : '';
 
   return `
-  <svg viewBox="0 0 ${W} ${H}" style="width:100%">
+  <svg viewBox="0 0 ${W} ${H}" style="width:100%;overflow:visible">
     <rect width="${W}" height="${H}" style="fill:var(--bg)" rx="4"/>
-    <rect x="${sx(40).toFixed(1)}" y="${sy(85).toFixed(1)}"
-          width="${(sx(75)-sx(40)).toFixed(1)}" height="${(sy(17)-sy(85)).toFixed(1)}"
-          fill="var(--orange)" fill-opacity=".1" stroke="var(--orange)" stroke-width=".8" stroke-dasharray="3,2"/>
-    <rect x="${sx(40).toFixed(1)}" y="${sy(85).toFixed(1)}"
-          width="${(sx(70)-sx(40)).toFixed(1)}" height="${(sy(50)-sy(85)).toFixed(1)}"
-          fill="var(--green)" fill-opacity=".15" stroke="var(--green)" stroke-width="1"/>
-    <text x="${sx(42).toFixed(1)}" y="${sy(83).toFixed(1)}"
-          style="fill:var(--green)" font-size="5.5" font-family="sans-serif">Idéal</text>
-    <circle cx="${ix.toFixed(1)}" cy="${iy.toFixed(1)}" r="3" fill="var(--green)" fill-opacity=".5"/>
+
+    <!-- Zones -->
+    <rect x="${f(sx(40))}" y="${f(sy(85))}" width="${f(sx(75)-sx(40))}" height="${f(sy(17)-sy(85))}"
+          fill="var(--orange)" fill-opacity=".08" stroke="var(--orange)" stroke-width=".8" stroke-dasharray="3,2"/>
+    <rect x="${f(sx(40))}" y="${f(sy(85))}" width="${f(sx(70)-sx(40))}" height="${f(sy(50)-sy(85))}"
+          fill="var(--green)" fill-opacity=".13" stroke="var(--green)" stroke-width="1"/>
+
+    <!-- Zone labels -->
+    <text x="${f(sx(55))}" y="${f(sy(67.5)+17)}" fill="var(--green)" fill-opacity=".65"
+          font-size="7" font-weight="bold" text-anchor="middle" font-family="sans-serif">Idéal SCA</text>
+    <text x="${f(sx(55))}" y="${f(sy(30))}" fill="var(--orange)" fill-opacity=".7"
+          font-size="5.5" text-anchor="middle" font-family="sans-serif">Acceptable</text>
+
+    <!-- Grid + axes -->
+    ${gridLines}
+    <line x1="${f(PL)}" y1="${f(PT+CH)}" x2="${f(PL+CW)}" y2="${f(PT+CH)}" stroke="var(--border)" stroke-width="1"/>
+    <line x1="${f(PL)}"   y1="${f(PT)}"    x2="${f(PL)}"   y2="${f(PT+CH)}" stroke="var(--border)" stroke-width="1"/>
+
+    <!-- Ticks -->
+    ${xTicks}
+    ${yTicks}
+
+    <!-- Axis labels -->
+    <text x="${f(PL+CW/2)}" y="${f(H-4)}" fill="var(--muted)" font-size="6.5"
+          text-anchor="middle" font-family="sans-serif">Alkalinity (mg/L CaCO₃)</text>
+    <text x="8" y="${f(PT+CH/2)}" fill="var(--muted)" font-size="6.5"
+          text-anchor="middle" font-family="sans-serif"
+          transform="rotate(-90,8,${f(PT+CH/2)})">Ca Hardness</text>
+
+    <!-- Target SCA -->
+    <circle cx="${f(ix)}" cy="${f(iy)}" r="3.5" fill="var(--green)" fill-opacity=".55"/>
+    <text x="${f(ix+5)}" y="${f(iy-4)}" fill="var(--green)" fill-opacity=".8"
+          font-size="5.5" font-family="sans-serif">Cible 55/68</text>
+
+    <!-- Data -->
     ${bottledPts}
     ${indivPts}
     ${avgPoint}
-    <text x="${(W/2).toFixed(1)}" y="${H-2}" style="fill:var(--muted)" font-size="5.5" text-anchor="middle" font-family="sans-serif">Alkalinity (mg/L CaCO₃)</text>
-    <text x="8" y="${(PT+CH/2).toFixed(1)}" style="fill:var(--muted)" font-size="5.5" text-anchor="middle" font-family="sans-serif"
-          transform="rotate(-90,8,${(PT+CH/2).toFixed(1)})">Ca Hardness</text>
+    ${pointLabel}
   </svg>`;
 }
 
 function _scaChartCompare(c1, c2) {
-  const W=220, H=160, PL=30, PR=10, PT=10, PB=20;
+  const W=248, H=190, PL=34, PR=8, PT=12, PB=28;
   const CW=W-PL-PR, CH=H-PT-PB;
   const sx = v => PL + (Math.min(Math.max(v, 0), 160) / 160) * CW;
   const sy = v => PT + CH - (Math.min(Math.max(v, 0), 120) / 120) * CH;
+  const f  = n => n.toFixed(1);
   const ix = sx(55), iy = sy(68);
 
   const pt = (c, col) => {
     const px = c.params.alkalinity  != null ? sx(c.params.alkalinity)  : null;
     const py = c.params.ca_hardness != null ? sy(c.params.ca_hardness) : null;
     if (!px || !py) return '';
-    return `<circle cx="${px.toFixed(1)}" cy="${py.toFixed(1)}" r="5"
-      fill="${col}" stroke="white" stroke-width="1.2">
-      <title>${c.nom} · Ca ${c.params.ca_hardness?.toFixed(0)} / Alk ${c.params.alkalinity?.toFixed(0)}</title>
-    </circle>`;
+    const toRight  = px < PL + CW * 0.65;
+    const toBottom = py < PT + CH * 0.45;
+    const lx = toRight  ? px + 7 : px - 7;
+    const ly = toBottom ? py + 12 : py - 4;
+    const anchor = toRight ? 'start' : 'end';
+    const caStr  = c.params.ca_hardness?.toFixed(0) ?? '—';
+    const alkStr = c.params.alkalinity?.toFixed(0)  ?? '—';
+    return `<g>
+      <circle cx="${f(px)}" cy="${f(py)}" r="5.5"
+        fill="${col}" stroke="white" stroke-width="1.5" class="sca-dot-in">
+        <title>${c.nom} · Ca ${caStr} / Alk ${alkStr}</title>
+      </circle>
+      <text x="${f(lx)}" y="${f(ly)}" fill="${col}" font-size="6" font-family="sans-serif"
+            font-weight="bold" text-anchor="${anchor}" class="sca-label-in">${c.nom.split(' ')[0]}</text>
+    </g>`;
   };
 
+  const xTicks = [40, 70, 100, 160].map(v =>
+    `<line x1="${f(sx(v))}" y1="${f(PT+CH)}" x2="${f(sx(v))}" y2="${f(PT+CH+3)}" stroke="var(--border)" stroke-width="1"/>
+     <text x="${f(sx(v))}" y="${f(PT+CH+9)}" fill="var(--muted)" font-size="6" text-anchor="middle" font-family="sans-serif">${v}</text>`
+  ).join('');
+  const yTicks = [17, 50, 85, 120].map(v =>
+    `<line x1="${f(PL-3)}" y1="${f(sy(v))}" x2="${f(PL)}" y2="${f(sy(v))}" stroke="var(--border)" stroke-width="1"/>
+     <text x="${f(PL-5)}" y="${f(sy(v)+2.5)}" fill="var(--muted)" font-size="6" text-anchor="end" font-family="sans-serif">${v}</text>`
+  ).join('');
+
   return `
-  <svg viewBox="0 0 ${W} ${H}" style="width:100%">
+  <svg viewBox="0 0 ${W} ${H}" style="width:100%;overflow:visible">
     <rect width="${W}" height="${H}" style="fill:var(--bg)" rx="4"/>
-    <rect x="${sx(40).toFixed(1)}" y="${sy(85).toFixed(1)}"
-          width="${(sx(70)-sx(40)).toFixed(1)}" height="${(sy(50)-sy(85)).toFixed(1)}"
-          fill="var(--green)" fill-opacity=".15" stroke="var(--green)" stroke-width="1"/>
-    <circle cx="${ix.toFixed(1)}" cy="${iy.toFixed(1)}" r="3" fill="var(--green)" fill-opacity=".5"/>
-    ${pt(c1, colorFromScore(c1.score))}
-    ${pt(c2, colorFromScore(c2.score))}
-    <text x="${(W/2).toFixed(1)}" y="${H-2}" fill="#444" font-size="5.5" text-anchor="middle" font-family="sans-serif">Alkalinity (mg/L CaCO₃)</text>
-    <text x="8" y="${(PT+CH/2).toFixed(1)}" fill="#444" font-size="5.5" text-anchor="middle" font-family="sans-serif"
-          transform="rotate(-90,8,${(PT+CH/2).toFixed(1)})">Ca Hardness</text>
+    <rect x="${f(sx(40))}" y="${f(sy(85))}" width="${f(sx(75)-sx(40))}" height="${f(sy(17)-sy(85))}"
+          fill="var(--orange)" fill-opacity=".08" stroke="var(--orange)" stroke-width=".8" stroke-dasharray="3,2"/>
+    <rect x="${f(sx(40))}" y="${f(sy(85))}" width="${f(sx(70)-sx(40))}" height="${f(sy(50)-sy(85))}"
+          fill="var(--green)" fill-opacity=".13" stroke="var(--green)" stroke-width="1"/>
+    <text x="${f(sx(55))}" y="${f(sy(67.5)+17)}" fill="var(--green)" fill-opacity=".65"
+          font-size="7" font-weight="bold" text-anchor="middle" font-family="sans-serif">Idéal SCA</text>
+    <line x1="${f(PL)}" y1="${f(PT+CH)}" x2="${f(PL+CW)}" y2="${f(PT+CH)}" stroke="var(--border)" stroke-width="1"/>
+    <line x1="${f(PL)}"   y1="${f(PT)}"    x2="${f(PL)}"   y2="${f(PT+CH)}" stroke="var(--border)" stroke-width="1"/>
+    ${xTicks}
+    ${yTicks}
+    <text x="${f(PL+CW/2)}" y="${f(H-4)}" fill="var(--muted)" font-size="6.5"
+          text-anchor="middle" font-family="sans-serif">Alkalinity (mg/L CaCO₃)</text>
+    <text x="8" y="${f(PT+CH/2)}" fill="var(--muted)" font-size="6.5"
+          text-anchor="middle" font-family="sans-serif"
+          transform="rotate(-90,8,${f(PT+CH/2)})">Ca Hardness</text>
+    <circle cx="${f(ix)}" cy="${f(iy)}" r="3.5" fill="var(--green)" fill-opacity=".55"/>
+    ${pt(c1, colorFromScore(cappedScore(c1.score, c1.params)))}
+    ${pt(c2, colorFromScore(cappedScore(c2.score, c2.params)))}
   </svg>`;
 }
