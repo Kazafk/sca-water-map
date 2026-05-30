@@ -309,6 +309,22 @@ function _setupMapLayers() {
 
 // --- Commune selection ---
 
+function _deselectCommune() {
+  activeCommune  = null;
+  showBottled    = false;
+  searchEl.value = '';
+  closeDropdown();
+  if (map?.isStyleLoaded())
+    map.setFilter('communes-selected', ['==', ['get', 'code'], '']);
+  const url = new URL(location.href);
+  url.searchParams.delete('commune');
+  history.pushState({}, '', url);
+  document.getElementById('panel-content').hidden = true;
+  document.getElementById('panel-empty').hidden   = false;
+  _renderHistory();
+  sheet?.peek?.();
+}
+
 function selectCommune(commune) {
   if (compareMode) {
     compareMode = false;
@@ -500,6 +516,7 @@ async function init() {
     const code    = e.features[0]?.properties?.code;
     const commune = communesData[code] ?? arrData[code];
     if (!commune) return;
+    if (activeCommune?.insee === commune.insee) { _deselectCommune(); return; }
     map.setFilter('communes-selected', ['==', ['get', 'code'], code]);
     selectCommune(commune);
   });
