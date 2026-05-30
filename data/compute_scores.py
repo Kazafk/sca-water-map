@@ -2,13 +2,13 @@ import math
 import json
 import os
 import time
-import sys
 from datetime import datetime, timezone, timedelta
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 import requests
 
-BASE_URL = "https://hubeau.eaufrance.fr/api/v1/qualite_eau_potable/resultats_dis"
+BASE_URL       = "https://hubeau.eaufrance.fr/api/v1/qualite_eau_potable/resultats_dis"
+UDI_URL        = "https://hubeau.eaufrance.fr/api/v1/qualite_eau_potable/communes_udi"
 
 PARAM_CODES = {
     "calcium":      "1374",
@@ -24,17 +24,17 @@ PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUTPUT_FILE  = os.path.join(PROJECT_ROOT, "public", "communes.json")
 
 MAX_CHART_POINTS = 30
-LOOKBACK_DAYS    = 180  # 6 months
+LOOKBACK_DAYS    = 180
 
 
 def _log(msg):
     print(msg, flush=True)
 
 
-def _get_with_retry(params, retries=4, timeout=60):
+def _get_with_retry(params, url=BASE_URL, retries=4, timeout=60):
     for attempt in range(retries):
         try:
-            resp = requests.get(BASE_URL, params=params, timeout=timeout)
+            resp = requests.get(url, params=params, timeout=timeout)
             resp.raise_for_status()
             return resp.json()
         except (requests.exceptions.Timeout, requests.exceptions.ConnectionError):
@@ -45,23 +45,62 @@ def _get_with_retry(params, retries=4, timeout=60):
             time.sleep(wait)
 
 
-def fetch_all_per_commune(key_and_code: tuple) -> tuple:
-    """Fetch all measurements for one parameter. Returns (key, results_dict)."""
-    key, param_code = key_and_code
-    since = (datetime.now(timezone.utc) - timedelta(days=LOOKBACK_DAYS)).strftime("%Y-%m-%d")
+def fetch_communes_udi() -> dict:
+    """Return {code_commune: {code_reseau: nom_reseau}} for current year."""
     results = {}
     page    = 1
+    year    = datetime.now(timezone.utc).year
+
+    while True:
+        data = _get_with_retry({
+            "annee":  year,
+            "fields": "code_commune,code_reseau,nom_reseau",
+            "size":   10000,
+            "page":   page,
+        }, url=UDI_URL)
+
+        for item in data.get("data", []):
+            code   = item.get("code_commune")
+            reseau = item.get("code_reseau")
+            nom    = item.get("nom_reseau", "")
+            if code and reseau:
+                results.setdefault(code, {})[reseau] = nom
+
+        count = data.get("count", 0)
+        total = math.ceil(count / 10000) if count else 1
+        _log(f"  [communes_udi] page {page}/{total} — {len(results)} communes")
+        if page >= total:
+            break
+        page += 1
+        time.sleep(0.3)
+
+    _log(f"  [communes_udi] done — {len(results)} communes mappées")
+    return results
+
+
+def fetch_all_per_commune(key_and_code: tuple) -> tuple:
+    """Returns (key, commune_index, reseau_index).
+
+    commune_index: {code_commune: {nom, measurements: [{v,d,l,cp}]}}
+    reseau_index:  {code_reseau:  {nom, measurements: [{v,d,l,cp}]}}
+    """
+    key, param_code = key_and_code
+    since = (datetime.now(timezone.utc) - timedelta(days=LOOKBACK_DAYS)).strftime("%Y-%m-%d")
+    commune_idx = {}
+    reseau_idx  = {}
+    page        = 1
 
     while True:
         data = _get_with_retry({
             "code_parametre":       param_code,
-            "fields":               "code_commune,nom_commune,resultat_numerique,date_prelevement,nom_uge,code_prelevement",
+            "fields":               "code_commune,nom_commune,resultat_numerique,"
+                                    "date_prelevement,nom_uge,code_prelevement,reseaux",
             "size":                 10000,
             "date_min_prelevement": since,
             "page":                 page,
         })
 
-        count = data.get("count", 0)
+        count       = data.get("count", 0)
         total_pages = math.ceil(count / 10000) if count else 1
 
         for item in data.get("data", []):
@@ -69,29 +108,50 @@ def fetch_all_per_commune(key_and_code: tuple) -> tuple:
             val  = item.get("resultat_numerique")
             if not code or val is None:
                 continue
-            if code not in results:
-                results[code] = {"nom": item.get("nom_commune", ""), "measurements": []}
-            results[code]["measurements"].append({
+
+            m = {
                 "v":  round(float(val), 3),
                 "d":  (item.get("date_prelevement") or "")[:10],
                 "l":  item.get("nom_uge") or "",
                 "cp": item.get("code_prelevement") or "",
-            })
+            }
 
-        _log(f"  [{key}] page {page}/{total_pages} — {len(results)} communes")
+            # Index by commune
+            if code not in commune_idx:
+                commune_idx[code] = {"nom": item.get("nom_commune", ""), "measurements": []}
+            commune_idx[code]["measurements"].append(m)
 
+            # Index by reseau
+            for r in (item.get("reseaux") or []):
+                rc = r.get("code")
+                if rc:
+                    if rc not in reseau_idx:
+                        reseau_idx[rc] = {"nom": r.get("nom", ""), "measurements": []}
+                    reseau_idx[rc]["measurements"].append(m)
+
+        _log(f"  [{key}] page {page}/{total_pages} — {len(commune_idx)} communes")
         if page >= total_pages:
             break
         page += 1
         time.sleep(0.3)
 
-    _log(f"  [{key}] done — {len(results)} communes, {sum(len(v['measurements']) for v in results.values())} mesures")
-    return key, results
+    n_mesures = sum(len(v["measurements"]) for v in commune_idx.values())
+    _log(f"  [{key}] done — {len(commune_idx)} communes, {n_mesures} mesures, {len(reseau_idx)} réseaux")
+    return key, commune_idx, reseau_idx
 
 
 def _avg(values):
     vals = [v for v in values if v is not None]
     return sum(vals) / len(vals) if vals else None
+
+
+def _avg_from(index, code):
+    """Average value from a commune or reseau index entry."""
+    entry = index.get(code)
+    if not entry or not entry["measurements"]:
+        return None, None
+    ms = entry["measurements"]
+    return _avg([m["v"] for m in ms]), max(m["d"] for m in ms)
 
 
 def convert_params(raw: dict) -> dict:
@@ -161,44 +221,71 @@ def score_final(params: dict):
 
 def build_communes_json() -> dict:
     _log(f"Fetching Hub'Eau data (last {LOOKBACK_DAYS} days, parallel)...")
-    raw_data: dict[str, dict] = {}
 
-    # Fetch all 7 parameters in parallel
-    with ThreadPoolExecutor(max_workers=7) as executor:
-        futures = {executor.submit(fetch_all_per_commune, item): item[0]
-                   for item in PARAM_CODES.items()}
-        completed = 0
-        for future in as_completed(futures):
-            key, results = future.result()
-            raw_data[key] = results
-            completed += 1
-            _log(f"[{completed}/7] {key} complete")
+    raw_commune: dict[str, dict] = {}  # key -> commune_idx
+    raw_reseau:  dict[str, dict] = {}  # key -> reseau_idx
+    commune_udi: dict            = {}  # code_commune -> {code_reseau: nom}
 
+    with ThreadPoolExecutor(max_workers=8) as executor:
+        param_futures = {
+            executor.submit(fetch_all_per_commune, item): item[0]
+            for item in PARAM_CODES.items()
+        }
+        udi_future = executor.submit(fetch_communes_udi)
+
+        all_futures = list(param_futures.keys()) + [udi_future]
+        completed   = 0
+
+        for future in as_completed(all_futures):
+            if future is udi_future:
+                commune_udi = future.result()
+                _log(f"[udi] communes_udi complete — {len(commune_udi)} communes")
+            else:
+                key, c_idx, r_idx = future.result()
+                raw_commune[key] = c_idx
+                raw_reseau[key]  = r_idx
+                completed += 1
+                _log(f"[{completed}/7] {key} complete")
+
+    # Union of all communes (direct measurements)
     all_communes: dict[str, str] = {}
-    for cm in raw_data.values():
+    for cm in raw_commune.values():
         for code, info in cm.items():
             if code not in all_communes:
                 all_communes[code] = info["nom"]
 
     total = len(all_communes)
-    _log(f"Scoring {total} communes...")
-    output = []
+    _log(f"Scoring {total} communes (with UDI fallback)...")
+    output        = []
+    udi_fallbacks = 0
 
     for i, (code, nom) in enumerate(all_communes.items(), 1):
         if i % 1000 == 0:
-            _log(f"  {i}/{total} ({100*i//total}%)")
+            _log(f"  {i}/{total} ({100*i//total}%) — {udi_fallbacks} fallbacks UDI")
 
         raw_avgs   = {}
         raw_latest = {}
+        fallback   = {}  # param -> reseau_nom
+
+        # Pass 1: direct commune measurements
         for k in PARAM_CODES:
-            commune_data = raw_data[k].get(code)
-            if commune_data and commune_data["measurements"]:
-                ms = commune_data["measurements"]
-                raw_avgs[k]   = _avg([m["v"] for m in ms])
-                raw_latest[k] = max(m["d"] for m in ms)
-            else:
-                raw_avgs[k]   = None
-                raw_latest[k] = None
+            val, date = _avg_from(raw_commune[k], code)
+            raw_avgs[k]   = val
+            raw_latest[k] = date
+
+        # Pass 2: UDI fallback for calcium and TAC if missing
+        if raw_avgs.get("calcium") is None or raw_avgs.get("tac") is None:
+            for reseau_code, reseau_nom in commune_udi.get(code, {}).items():
+                for k in ("calcium", "tac"):
+                    if raw_avgs.get(k) is None:
+                        val, date = _avg_from(raw_reseau[k], reseau_code)
+                        if val is not None:
+                            raw_avgs[k]   = val
+                            raw_latest[k] = date
+                            fallback[k]   = reseau_nom
+
+        if fallback:
+            udi_fallbacks += 1
 
         params = convert_params(raw_avgs)
         dates  = {
@@ -211,10 +298,24 @@ def build_communes_json() -> dict:
             "cl2":         raw_latest.get("cl2"),
         }
 
-        ca_ms     = raw_data["calcium"].get(code, {}).get("measurements", [])
-        tac_ms    = raw_data["tac"].get(code, {}).get("measurements", [])
-        tac_by_cp = {m["cp"]: m for m in tac_ms if m["cp"]}
+        # chart_points: join Ca + TAC by code_prelevement
+        # Use reseau measurements if commune has none for that param
+        ca_ms  = raw_commune["calcium"].get(code, {}).get("measurements", [])
+        tac_ms = raw_commune["tac"].get(code, {}).get("measurements", [])
 
+        # UDI fallback for chart points if commune has no direct Ca/TAC
+        if not ca_ms and "calcium" in fallback:
+            for rc in commune_udi.get(code, {}):
+                ca_ms = raw_reseau["calcium"].get(rc, {}).get("measurements", [])
+                if ca_ms:
+                    break
+        if not tac_ms and "tac" in fallback:
+            for rc in commune_udi.get(code, {}):
+                tac_ms = raw_reseau["tac"].get(rc, {}).get("measurements", [])
+                if tac_ms:
+                    break
+
+        tac_by_cp = {m["cp"]: m for m in tac_ms if m["cp"]}
         pts = []
         for m in ca_ms:
             tac_m = tac_by_cp.get(m["cp"]) if m["cp"] else None
@@ -237,9 +338,13 @@ def build_communes_json() -> dict:
         }
         if pts:
             entry["pts"] = pts
+        if fallback:
+            # Store first reseau name for display (calcium > tac)
+            entry["reseau"] = fallback.get("calcium") or fallback.get("tac")
 
         output.append(entry)
 
+    _log(f"UDI fallback appliqué à {udi_fallbacks} communes ({100*udi_fallbacks//total}%)")
     return {
         "communes":     output,
         "generated_at": datetime.now(timezone.utc).isoformat(),

@@ -42,8 +42,9 @@ export function updatePanel(commune, generatedAt) {
     : 'date inconnue';
 
   const nMeasures = pts?.length ?? 0;
-  const measureLabel = nMeasures > 1
-    ? `· ${nMeasures} mesures moyennées`
+  const measureLabel = nMeasures > 1 ? `· ${nMeasures} mesures moyennées` : '';
+  const reseauNote  = commune.reseau
+    ? `<div class="panel-alert" style="font-size:11px">ℹ️ Ca/TAC : données du réseau <b>${_esc(commune.reseau)}</b></div>`
     : '';
 
   content.innerHTML = `
@@ -72,6 +73,7 @@ export function updatePanel(commune, generatedAt) {
       ${PARAMS.map(p => _paramBar(p, params[p.key])).join('')}
     </div>
 
+    ${reseauNote}
     ${flags.map(f => FLAG_MSG[f] ? `<div class="panel-alert">${FLAG_MSG[f](params)}</div>` : '').join('')}
   `;
 }
