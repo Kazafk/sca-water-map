@@ -188,6 +188,12 @@ function _applyViewMode() {
 // --- Map layer setup (called on every style.load) ---
 
 function _setupMapLayers() {
+  // Guard: remove any stale layers/sources that may still exist after setStyle()
+  const layerIds = ['communes-labels','communes-selected','communes-line','communes-fill',
+                    'depts-labels','depts-selected','depts-line','depts-fill'];
+  for (const id of layerIds) { try { if (map.getLayer(id))  map.removeLayer(id);  } catch (_) {} }
+  for (const id of ['communes','depts']) { try { if (map.getSource(id)) map.removeSource(id); } catch (_) {} }
+
   const light       = _theme === 'light';
   const lineColor   = light ? '#c8b090' : '#21262d';
   const noDataColor = light ? '#d0c4b8' : '#2d2d2d';

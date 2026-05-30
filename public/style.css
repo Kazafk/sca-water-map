@@ -104,16 +104,18 @@ body {
 #legend {
   position: absolute;
   top: 10px; left: 10px;
-  background: rgba(13,17,23,.92);
+  background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 6px;
   padding: 8px 10px;
   font-size: 10px;
   z-index: 1;
+  transition: background .3s, border-color .3s;
 }
 .legend-title { color: var(--muted); text-transform: uppercase; letter-spacing: .5px; font-size: 9px; margin-bottom: 5px; }
 .legend-item  { display: flex; align-items: center; gap: 5px; margin: 3px 0; }
-.dot          { width: 12px; height: 12px; border-radius: 2px; flex-shrink: 0; }
+.dot          { width: 12px; height: 12px; border-radius: 2px; flex-shrink: 0; background: var(--border); }
+.dot-nodata   { background: var(--border); }
 
 #panel {
   width: 280px;
@@ -169,7 +171,7 @@ body {
 /* Map tooltip */
 #map-tooltip {
   position: absolute;
-  background: rgba(13,17,23,.95);
+  background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 4px;
   padding: 4px 8px;
