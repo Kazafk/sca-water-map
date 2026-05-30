@@ -33,7 +33,7 @@ const FLAG_MSG = {
   too_soft:        ()  => '⚠ Eau trop douce — peu de minéraux, café plat probable',
   too_alkaline:    ()  => '⚠ Alcalinité élevée — peut masquer les arômes acides',
   data_old:        ()  => '⚠ Certaines mesures datent de plus de 12 mois',
-  partial_ca:      ()  => 'ℹ Score partiel — Ca Hardness absent, score plafonné à 85 % (paramètre primaire SCA non mesuré)',
+  partial_ca:      ()  => 'ℹ Score partiel — Ca Hardness absent (ni mesure directe ni TH disponibles), score plafonné à 85 %',
   partial_na:      ()  => 'ℹ Score partiel — Sodium absent, score plafonné à 95 % (mesure non obligatoire réglementairement)',
 };
 
@@ -100,7 +100,7 @@ export function updatePanel(commune, generatedAt, totalScored, { showBottled = f
   const content = document.getElementById('panel-content');
   content.hidden = false;
 
-  const { nom, score: rawScore, params, dates, insee, pts } = commune;
+  const { nom, score: rawScore, params, dates, insee, pts, ca_from_th } = commune;
   const score  = cappedScore(rawScore, params);
   const color  = colorFromScore(score);
   const label  = labelFromScore(score);
@@ -183,12 +183,13 @@ export function updatePanel(commune, generatedAt, totalScored, { showBottled = f
 
     <div class="panel-section">
       <div class="panel-section-title">Paramètres</div>
-      ${PARAMS.map(p => _paramBar(p, params[p.key])).join('')}
+      ${PARAMS.map(p => _paramBar(p, params[p.key], p.key === 'ca_hardness' && !!ca_from_th)).join('')}
     </div>
 
     ${_coffeeRecipe(params)}
     ${_treatmentAdvice(params)}
     ${reseauNote}
+    ${ca_from_th ? `<div class="panel-alert">⚠ <b>Ca Hardness estimé via Titre Hydrotimétrique</b> — calcul indirect (TH × 0,65), imprécision ±25 %. Score indicatif : la mesure directe du calcium n'est pas disponible dans Hub'Eau.</div>` : ''}
     ${flags.map(f => FLAG_MSG[f] ? `<div class="panel-alert">${FLAG_MSG[f](params)}</div>` : '').join('')}
   `;
 }
@@ -358,7 +359,7 @@ function _distBar(ideal, acceptable, horPlage, tres, total) {
     </div>`;
 }
 
-function _paramBar({ label, unit, lo, hi, decimals = 1 }, val) {
+function _paramBar({ label, unit, lo, hi, decimals = 1 }, val, isEstimated = false) {
   const missing  = val == null;
   // Compare against the rounded display value so status always matches what's shown
   const shown    = missing ? null : parseFloat(val.toFixed(decimals));
@@ -366,7 +367,8 @@ function _paramBar({ label, unit, lo, hi, decimals = 1 }, val) {
   const color    = missing ? '#555' : inRange ? '#2ecc71' : '#f39c12';
   const pct      = missing ? 0 : Math.min(100, (val / (Math.max(hi, 1) * 1.5)) * 100);
   const status   = missing ? '—' : inRange ? '✓ idéal' : '⚠ hors plage';
-  const valStr   = missing ? '' : ` <span style="color:#555">(${val.toFixed(decimals)} ${unit})</span>`;
+  const prefix   = isEstimated ? '~' : '';
+  const valStr   = missing ? '' : ` <span style="color:#555">(${prefix}${val.toFixed(decimals)} ${unit}${isEstimated ? ', estimé' : ''})</span>`;
 
   return `
     <div class="param-item">
