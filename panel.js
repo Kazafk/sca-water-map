@@ -50,7 +50,11 @@ export function updatePanel(commune, generatedAt, totalScored) {
   const freshnessTitle = ageDays < 180 ? 'données récentes' : ageDays < 365 ? 'données 6–12 mois' : 'données > 1 an';
 
   const nMeasures  = pts?.length ?? 0;
-  const measureLabel = nMeasures > 1 ? `· ${nMeasures} mesures moyennées` : '';
+  const validPts   = (pts || []).filter(p => p.ca != null && p.alk != null);
+  const nPaired    = validPts.length;
+
+  // "30 mesures Ca" dans le header
+  const measureLabel = nMeasures > 1 ? `· ${nMeasures} mesures Ca` : '';
   const rankLabel  = (commune.rank != null && totalScored)
     ? `· #${commune.rank.toLocaleString('fr-FR')} / ${totalScored.toLocaleString('fr-FR')}`
     : '';
@@ -58,15 +62,23 @@ export function updatePanel(commune, generatedAt, totalScored) {
     ? `<div class="panel-alert" style="font-size:11px">ℹ️ Ca/TAC : données du réseau <b>${_esc(commune.reseau)}</b></div>`
     : '';
 
-  // Variabilité Ca / Alk sur les points individuels
-  const validPts = (pts || []).filter(p => p.ca != null && p.alk != null);
-  const variabilityHtml = validPts.length >= 3 ? (() => {
-    const caVals  = validPts.map(p => p.ca);
-    const alkVals = validPts.map(p => p.alk);
-    const caRange  = Math.max(...caVals)  - Math.min(...caVals);
-    const alkRange = Math.max(...alkVals) - Math.min(...alkVals);
-    return `<div class="variability-note">Variabilité · Ca ±${(caRange / 2).toFixed(0)} · Alk ±${(alkRange / 2).toFixed(0)} mg/L</div>`;
-  })() : '';
+  // Note sous le graphique : explication si peu de paires Ca+TAC
+  const chartNote = (() => {
+    if (nPaired >= 3) {
+      const caVals  = validPts.map(p => p.ca);
+      const alkVals = validPts.map(p => p.alk);
+      const caRange  = Math.max(...caVals)  - Math.min(...caVals);
+      const alkRange = Math.max(...alkVals) - Math.min(...alkVals);
+      return `<div class="variability-note">Variabilité · Ca ±${(caRange/2).toFixed(0)} · Alk ±${(alkRange/2).toFixed(0)} mg/L</div>`;
+    }
+    if (nMeasures > nPaired && nPaired === 0)
+      return `<div class="variability-note">${nMeasures} mesures Ca — aucune paire Ca+TAC (prélevements distincts)</div>`;
+    if (nMeasures > nPaired && nPaired > 0)
+      return `<div class="variability-note">${nPaired} paire${nPaired > 1 ? 's' : ''} Ca+TAC · ${nMeasures - nPaired} mesures Ca sans TAC correspondant</div>`;
+    return '';
+  })();
+
+  const variabilityHtml = chartNote;
 
   content.innerHTML = `
     <div class="panel-header">
