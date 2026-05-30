@@ -11,7 +11,7 @@ function _esc(str) {
 const PARAMS = [
   { key: 'ca_hardness', label: 'Ca Hardness', unit: 'mg/L CaCO₃', lo: 50,  hi: 85  },
   { key: 'alkalinity',  label: 'Alcalinité',  unit: 'mg/L CaCO₃', lo: 40,  hi: 70  },
-  { key: 'ph',          label: 'pH',          unit: '',            lo: 6.5, hi: 7.5 },
+  { key: 'ph',          label: 'pH',          unit: '',            lo: 6.5, hi: 7.5, decimals: 2 },
   { key: 'tds',         label: 'TDS',         unit: 'mg/L',        lo: 75,  hi: 250 },
   { key: 'na',          label: 'Sodium',      unit: 'mg/L',        lo: 0,   hi: 30  },
   { key: 'cl',          label: 'Chlorures',   unit: 'mg/L',        lo: 0,   hi: 75  },
