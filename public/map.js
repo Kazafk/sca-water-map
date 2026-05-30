@@ -1,4 +1,4 @@
-import { colorFromScore } from './scoring.js';
+import { colorFromScore, cappedScore } from './scoring.js';
 import { updatePanel, updateDeptPanel, updateComparePanel, showComparePending } from './panel.js';
 import { initBottomSheet } from './sheet.js';
 
@@ -87,8 +87,9 @@ function _renderHistory() {
     <div style="padding:16px 14px">
       <div style="font-size:9px;text-transform:uppercase;letter-spacing:.5px;color:var(--muted);margin-bottom:10px">Récemment consultées</div>
       ${history.map(c => {
-        const col   = colorFromScore(c.score);
-        const score = c.score != null ? Math.round(c.score * 100) + ' %' : '—';
+        const cs    = cappedScore(c.score, c.params);
+        const col   = colorFromScore(cs);
+        const score = cs != null ? Math.round(cs * 100) + ' %' : '—';
         return `<div class="history-row" data-insee="${c.insee}">
           <span class="history-nom">${c.nom}</span>
           <span style="color:${col};font-size:10px">${score}</span>
@@ -111,7 +112,7 @@ function _updateGeoColors() {
   for (const f of _geojson.features) {
     const code = f.properties.code;
     const c    = communesData[code] ?? arrData[code] ?? null;
-    f.properties.color = _colorForTheme(c?.score ?? null, _theme);
+    f.properties.color = _colorForTheme(cappedScore(c?.score ?? null, c?.params), _theme);
   }
   for (const f of _deptGeojson.features) {
     const info = deptData[f.properties.code];
@@ -373,7 +374,7 @@ async function init() {
     const parent = ARR_PARENT[code];
     if (parent && arrData[code]) arrData[code].nom = f.properties.nom;
     const c = communesData[code] ?? arrData[code] ?? null;
-    f.properties.color          = _colorForTheme(c?.score ?? null, _theme);
+    f.properties.color          = _colorForTheme(cappedScore(c?.score ?? null, c?.params), _theme);
     f.properties.label_min_zoom = LABEL_MIN_ZOOM[parent ?? code] ?? 11;
   }
   for (const f of _deptGeojson.features) {
@@ -430,8 +431,9 @@ async function init() {
     const code = e.features[0]?.properties?.code;
     const c    = communesData[code];
     if (!c) return;
-    const score = c.score != null ? `${Math.round(c.score * 100)} %` : '—';
-    const col   = colorFromScore(c.score);
+    const cs    = cappedScore(c.score, c.params);
+    const score = cs != null ? `${Math.round(cs * 100)} %` : '—';
+    const col   = colorFromScore(cs);
     tooltip.innerHTML = `<b>${c.nom}</b> <span style="color:${col}">${score}</span>`;
     tooltip.style.cssText = `display:block;left:${e.point.x + 14}px;top:${e.point.y - 8}px`;
   });
