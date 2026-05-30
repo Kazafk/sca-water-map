@@ -65,7 +65,7 @@ export function flagsFromParams(params, dates, generatedAt) {
   const flags = [];
   const { ca_hardness, alkalinity, cl2 } = params;
 
-  if (cl2 != null && cl2 > 0)                   flags.push('chlore_detected');
+  if (cl2 != null && cl2 > 0.1)                 flags.push('chlore_detected');
   if (ca_hardness != null && ca_hardness > 85)   flags.push('too_hard');
   if (ca_hardness != null && ca_hardness < 17)   flags.push('too_soft');
   if (alkalinity  != null && alkalinity  > 75)   flags.push('too_alkaline');
