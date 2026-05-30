@@ -1,4 +1,3 @@
-// public/panel.js
 import { labelFromScore, colorFromScore, flagsFromParams } from './scoring.js';
 
 function _esc(str) {
@@ -32,22 +31,27 @@ export function updatePanel(commune, generatedAt) {
   const content = document.getElementById('panel-content');
   content.hidden = false;
 
-  const { nom, score, params, dates, insee } = commune;
-  const color  = colorFromScore(score);
-  const label  = labelFromScore(score);
-  const flags  = flagsFromParams(params, dates, generatedAt);
-  const dept   = insee.startsWith('97') ? insee.slice(0, 3) : insee.slice(0, 2);
+  const { nom, score, params, dates, insee, pts } = commune;
+  const color   = colorFromScore(score);
+  const label   = labelFromScore(score);
+  const flags   = flagsFromParams(params, dates, generatedAt);
+  const dept    = insee.startsWith('97') ? insee.slice(0, 3) : insee.slice(0, 2);
   const lastDate = Object.values(dates).filter(Boolean).sort().at(-1);
   const dateStr  = lastDate
     ? new Date(lastDate).toLocaleDateString('fr-FR', { month: 'long', year: 'numeric' })
     : 'date inconnue';
+
+  const nMeasures = pts?.length ?? 0;
+  const measureLabel = nMeasures > 1
+    ? `· ${nMeasures} mesures moyennées`
+    : '';
 
   content.innerHTML = `
     <div class="panel-header">
       <div class="panel-score-row">
         <div>
           <div class="panel-commune">${_esc(nom)}</div>
-          <div class="panel-meta">Dép. ${dept} · ${dateStr}</div>
+          <div class="panel-meta">Dép. ${dept} · ${dateStr} ${_esc(measureLabel)}</div>
         </div>
         <div>
           <div class="panel-score-val" style="color:${color}">
@@ -60,7 +64,7 @@ export function updatePanel(commune, generatedAt) {
 
     <div class="panel-section">
       <div class="panel-section-title">SCA Water Chart</div>
-      ${_scaChart(params.ca_hardness, params.alkalinity, color)}
+      ${_scaChart(params, pts, color)}
     </div>
 
     <div class="panel-section">
@@ -92,38 +96,61 @@ function _paramBar({ label, unit, lo, hi }, val) {
     </div>`;
 }
 
-function _scaChart(ca, alk, pointColor) {
+function _scaChart(params, pts, pointColor) {
+  const ca  = params.ca_hardness;
+  const alk = params.alkalinity;
   const W=220, H=160, PL=30, PR=10, PT=10, PB=20;
   const CW=W-PL-PR, CH=H-PT-PB;
-  // X axis = Alkalinity (0..160), Y axis = Ca Hardness (0..120, inverted top=high)
   const sx = v => PL + (Math.min(Math.max(v, 0), 160) / 160) * CW;
   const sy = v => PT + CH - (Math.min(Math.max(v, 0), 120) / 120) * CH;
 
-  const ix = sx(55), iy = sy(68);  // ideal center
+  const ix = sx(55), iy = sy(68);
   const px = alk != null ? sx(alk) : null;
   const py = ca  != null ? sy(ca)  : null;
+
+  // Individual measurement points (only those with both ca and alk)
+  const indivPts = (pts || [])
+    .filter(p => p.alk != null)
+    .map(p => {
+      const cx  = sx(p.alk);
+      const cy  = sy(p.ca);
+      const tip = _esc(`${p.l || 'Lieu inconnu'} · ${p.d}`);
+      return `<circle cx="${cx.toFixed(1)}" cy="${cy.toFixed(1)}" r="2.5"
+        fill="${pointColor}" fill-opacity="0.35" stroke="${pointColor}" stroke-width="0.5" style="cursor:default">
+        <title>${tip}</title>
+      </circle>`;
+    }).join('');
+
+  const nPts = (pts || []).filter(p => p.alk != null).length;
+
+  // Average point (larger, on top)
+  const avgPoint = px != null && py != null ? `
+    <line x1="${px.toFixed(1)}" y1="${py.toFixed(1)}" x2="${ix.toFixed(1)}" y2="${iy.toFixed(1)}"
+          stroke="#888" stroke-width=".8" stroke-dasharray="2,1.5"/>
+    <circle cx="${px.toFixed(1)}" cy="${py.toFixed(1)}" r="${nPts > 1 ? 5 : 4}"
+            fill="${pointColor}" stroke="white" stroke-width="1.2">
+      ${nPts > 1 ? `<title>Moyenne · ${nPts} point${nPts > 1 ? 's' : ''}</title>` : ''}
+    </circle>
+  ` : '';
 
   return `
   <svg viewBox="0 0 ${W} ${H}" style="width:100%">
     <rect width="${W}" height="${H}" fill="#0d1117" rx="4"/>
-    <!-- Acceptable zone: Alk 40-75, Ca 17-85 -->
-    <rect x="${sx(40)}" y="${sy(85)}" width="${sx(75)-sx(40)}" height="${sy(17)-sy(85)}"
+    <!-- Acceptable zone -->
+    <rect x="${sx(40).toFixed(1)}" y="${sy(85).toFixed(1)}"
+          width="${(sx(75)-sx(40)).toFixed(1)}" height="${(sy(17)-sy(85)).toFixed(1)}"
           fill="#f39c12" fill-opacity=".08" stroke="#f39c12" stroke-width=".8" stroke-dasharray="3,2"/>
-    <!-- Ideal zone: Alk 40-70, Ca 50-85 -->
-    <rect x="${sx(40)}" y="${sy(85)}" width="${sx(70)-sx(40)}" height="${sy(50)-sy(85)}"
+    <!-- Ideal zone -->
+    <rect x="${sx(40).toFixed(1)}" y="${sy(85).toFixed(1)}"
+          width="${(sx(70)-sx(40)).toFixed(1)}" height="${(sy(50)-sy(85)).toFixed(1)}"
           fill="#2ecc71" fill-opacity=".15" stroke="#2ecc71" stroke-width="1"/>
-    <text x="${sx(42)}" y="${sy(83)}" fill="#2ecc71" font-size="5.5" font-family="sans-serif">Idéal</text>
-    <!-- Ideal center -->
-    <circle cx="${ix}" cy="${iy}" r="3" fill="#2ecc71" fill-opacity=".5"/>
-    ${px != null && py != null ? `
-      <line x1="${px}" y1="${py}" x2="${ix}" y2="${iy}"
-            stroke="#888" stroke-width=".8" stroke-dasharray="2,1.5"/>
-      <circle cx="${px}" cy="${py}" r="4"
-              fill="${pointColor}" stroke="white" stroke-width="1.2"/>
-    ` : ''}
-    <!-- Axis labels -->
-    <text x="${W/2}" y="${H-2}" fill="#444" font-size="5.5" text-anchor="middle" font-family="sans-serif">Alkalinity (mg/L CaCO₃)</text>
-    <text x="8" y="${PT+CH/2}" fill="#444" font-size="5.5" text-anchor="middle" font-family="sans-serif"
-          transform="rotate(-90,8,${PT+CH/2})">Ca Hardness</text>
+    <text x="${sx(42).toFixed(1)}" y="${sy(83).toFixed(1)}"
+          fill="#2ecc71" font-size="5.5" font-family="sans-serif">Idéal</text>
+    <circle cx="${ix.toFixed(1)}" cy="${iy.toFixed(1)}" r="3" fill="#2ecc71" fill-opacity=".5"/>
+    ${indivPts}
+    ${avgPoint}
+    <text x="${(W/2).toFixed(1)}" y="${H-2}" fill="#444" font-size="5.5" text-anchor="middle" font-family="sans-serif">Alkalinity (mg/L CaCO₃)</text>
+    <text x="8" y="${(PT+CH/2).toFixed(1)}" fill="#444" font-size="5.5" text-anchor="middle" font-family="sans-serif"
+          transform="rotate(-90,8,${(PT+CH/2).toFixed(1)})">Ca Hardness</text>
   </svg>`;
 }
