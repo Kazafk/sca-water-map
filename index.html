@@ -8,6 +8,52 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Onboarding modal (affiché au premier chargement) -->
+  <div id="onboarding-overlay" hidden></div>
+  <div id="onboarding-modal" hidden>
+    <div id="onboarding-header">
+      <span id="onboarding-logo">☕</span>
+      <div>
+        <div id="onboarding-title">SCA Water Map</div>
+        <div id="onboarding-sub">L'eau du robinet pour le café — France</div>
+      </div>
+    </div>
+
+    <p id="onboarding-intro">
+      La <strong>Specialty Coffee Association (SCA)</strong> définit des critères précis de qualité d'eau
+      pour obtenir la meilleure extraction possible. Cette carte évalue l'eau du robinet de
+      <strong>34 500 communes françaises</strong> selon ces standards.
+    </p>
+
+    <div id="onboarding-scores">
+      <div class="ob-score-row">
+        <span class="ob-dot" style="background:var(--green)"></span>
+        <div><strong>Idéal</strong> — Eau parfaite pour espresso et filtre, dans toutes les plages SCA</div>
+      </div>
+      <div class="ob-score-row">
+        <span class="ob-dot" style="background:var(--blue)"></span>
+        <div><strong>Acceptable</strong> — Eau correcte, extraction bonne mais non optimale</div>
+      </div>
+      <div class="ob-score-row">
+        <span class="ob-dot" style="background:var(--orange)"></span>
+        <div><strong>Hors plage</strong> — Eau hors des recommandations, résultats variables</div>
+      </div>
+      <div class="ob-score-row">
+        <span class="ob-dot" style="background:var(--red)"></span>
+        <div><strong>Très hors SCA</strong> — Eau très calcaire, trop douce ou très chargée en minéraux</div>
+      </div>
+    </div>
+
+    <p id="onboarding-hint">
+      Cliquez sur la carte ou cherchez votre ville dans la barre de recherche.
+    </p>
+
+    <div id="onboarding-actions">
+      <a href="about.html" id="btn-onboarding-method">Méthode de calcul →</a>
+      <button id="btn-onboarding-close">Commencer</button>
+    </div>
+  </div>
+
   <div id="app">
     <header id="topbar">
       <div id="brand">
@@ -33,11 +79,26 @@
         <div id="map-tooltip"></div>
         <div id="legend">
           <div class="legend-title">Score SCA</div>
-          <div class="legend-item"><span class="dot" style="background:var(--green)"></span>≥ 75 % — Idéal</div>
-          <div class="legend-item"><span class="dot" style="background:var(--blue)"></span>50–75 % — Acceptable</div>
-          <div class="legend-item"><span class="dot" style="background:var(--orange)"></span>25–50 % — Hors plage</div>
-          <div class="legend-item"><span class="dot" style="background:var(--red)"></span>&lt; 25 % — Très hors SCA</div>
-          <div class="legend-item"><span class="dot dot-nodata"></span>Données absentes</div>
+          <div class="legend-item">
+            <span class="dot" style="background:var(--green)"></span>
+            <div><div class="legend-label">≥ 75 % — Idéal</div><div class="legend-sub">Parfait pour espresso &amp; filtre</div></div>
+          </div>
+          <div class="legend-item">
+            <span class="dot" style="background:var(--blue)"></span>
+            <div><div class="legend-label">50–75 % — Acceptable</div><div class="legend-sub">Extraction correcte, non optimale</div></div>
+          </div>
+          <div class="legend-item">
+            <span class="dot" style="background:var(--orange)"></span>
+            <div><div class="legend-label">25–50 % — Hors plage</div><div class="legend-sub">Résultats variables en tasse</div></div>
+          </div>
+          <div class="legend-item">
+            <span class="dot" style="background:var(--red)"></span>
+            <div><div class="legend-label">&lt; 25 % — Très hors SCA</div><div class="legend-sub">Eau très calcaire ou trop douce</div></div>
+          </div>
+          <div class="legend-item">
+            <span class="dot dot-nodata"></span>
+            <div><div class="legend-label">Données absentes</div></div>
+          </div>
         </div>
       </div>
 
