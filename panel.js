@@ -1,4 +1,4 @@
-import { labelFromScore, colorFromScore, flagsFromParams } from './scoring.js';
+import { labelFromScore, colorFromScore, flagsFromParams, cappedScore } from './scoring.js';
 
 function _esc(str) {
   return String(str)
@@ -33,6 +33,8 @@ const FLAG_MSG = {
   too_soft:        ()  => '⚠ Eau trop douce — peu de minéraux, café plat probable',
   too_alkaline:    ()  => '⚠ Alcalinité élevée — peut masquer les arômes acides',
   data_old:        ()  => '⚠ Certaines mesures datent de plus de 12 mois',
+  partial_ca:      ()  => 'ℹ Score partiel — Ca Hardness absent, score plafonné à 85 % (paramètre primaire SCA non mesuré)',
+  partial_na:      ()  => 'ℹ Score partiel — Sodium absent, score plafonné à 95 % (mesure non obligatoire réglementairement)',
 };
 
 function _coffeeRecipe(params) {
@@ -98,7 +100,8 @@ export function updatePanel(commune, generatedAt, totalScored, { showBottled = f
   const content = document.getElementById('panel-content');
   content.hidden = false;
 
-  const { nom, score, params, dates, insee, pts } = commune;
+  const { nom, score: rawScore, params, dates, insee, pts } = commune;
+  const score  = cappedScore(rawScore, params);
   const color  = colorFromScore(score);
   const label  = labelFromScore(score);
   const flags  = flagsFromParams(params, dates, generatedAt);
@@ -253,9 +256,10 @@ export function updateComparePanel(c1, c2, generatedAt) {
   const content = document.getElementById('panel-content');
   content.hidden = false;
 
-  const _col = c => colorFromScore(c.score);
-  const _lbl = c => labelFromScore(c.score);
-  const _scoreStr = c => c.score != null ? Math.round(c.score * 100) + ' %' : 'N/A';
+  const _cs  = c => cappedScore(c.score, c.params);
+  const _col = c => colorFromScore(_cs(c));
+  const _lbl = c => labelFromScore(_cs(c));
+  const _scoreStr = c => _cs(c) != null ? Math.round(_cs(c) * 100) + ' %' : 'N/A';
 
   const paramRows = PARAMS.map(({ key, label, unit, lo, hi }) => {
     const v1 = c1.params[key], v2 = c2.params[key];
@@ -311,7 +315,8 @@ export function showComparePending(commune) {
   document.getElementById('panel-empty').hidden = true;
   const content = document.getElementById('panel-content');
   content.hidden = false;
-  const color = colorFromScore(commune.score);
+  const cs    = cappedScore(commune.score, commune.params);
+  const color = colorFromScore(cs);
   content.innerHTML = `
     <div class="panel-header">
       <div class="panel-score-row">
@@ -319,7 +324,7 @@ export function showComparePending(commune) {
           <div class="panel-commune">${_esc(commune.nom)}</div>
           <div class="panel-meta" style="color:var(--blue)">Sélectionnez la commune à comparer</div>
         </div>
-        <div class="panel-score-val" style="color:${color}">${commune.score != null ? Math.round(commune.score * 100) + ' %' : 'N/A'}</div>
+        <div class="panel-score-val" style="color:${color}">${cs != null ? Math.round(cs * 100) + ' %' : 'N/A'}</div>
       </div>
     </div>
     <div style="padding:20px 14px;text-align:center;color:var(--muted);font-size:12px">

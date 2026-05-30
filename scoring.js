@@ -61,14 +61,25 @@ export function colorFromScore(score) {
   return '#e74c3c';
 }
 
+// Score plafonné quand des paramètres primaires sont absents
+export function cappedScore(score, params) {
+  if (score == null) return null;
+  let s = score;
+  if (params?.ca_hardness == null) s = Math.min(s, 0.85);
+  if (params?.na           == null) s = Math.min(s, 0.95);
+  return Math.round(s * 10000) / 10000;
+}
+
 export function flagsFromParams(params, dates, generatedAt) {
   const flags = [];
-  const { ca_hardness, alkalinity, cl2 } = params;
+  const { ca_hardness, alkalinity, cl2, na } = params;
 
   if (cl2 != null && cl2 > 0.1)                 flags.push('chlore_detected');
   if (ca_hardness != null && ca_hardness > 85)   flags.push('too_hard');
   if (ca_hardness != null && ca_hardness < 17)   flags.push('too_soft');
   if (alkalinity  != null && alkalinity  > 75)   flags.push('too_alkaline');
+  if (ca_hardness == null)                        flags.push('partial_ca');
+  if (na          == null)                        flags.push('partial_na');
 
   const cutoff = new Date(generatedAt);
   cutoff.setFullYear(cutoff.getFullYear() - 1);
