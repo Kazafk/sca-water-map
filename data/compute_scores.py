@@ -27,7 +27,7 @@ LOOKBACK_DAYS          = 180   # fenêtre principale
 LOOKBACK_DAYS_FALLBACK = 730   # fenêtre étendue pour fallback Ca/TAC/Na/Cl/Cl2
 
 # Paramètres pour lesquels on fait aussi un fetch étendu 2 ans
-EXT_PARAMS = ("calcium", "tac", "na", "cl", "cl2")
+EXT_PARAMS = ("calcium", "tac", "na", "cl", "cl2", "ph", "conductivite")
 
 
 def _log(msg):
@@ -259,7 +259,7 @@ def build_communes_json() -> dict:
     raw_commune_ext: dict[str, dict] = {}
     raw_reseau_ext:  dict[str, dict] = {}
 
-    with ThreadPoolExecutor(max_workers=5) as executor:
+    with ThreadPoolExecutor(max_workers=7) as executor:
         ext_futures = {
             executor.submit(fetch_all_per_commune, item, LOOKBACK_DAYS_FALLBACK): item[0]
             for item in PARAM_CODES.items()

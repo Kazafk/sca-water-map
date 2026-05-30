@@ -32,30 +32,48 @@ export function updatePanel(commune, generatedAt, totalScored) {
   content.hidden = false;
 
   const { nom, score, params, dates, insee, pts } = commune;
-  const color   = colorFromScore(score);
-  const label   = labelFromScore(score);
-  const flags   = flagsFromParams(params, dates, generatedAt);
-  const dept    = insee.startsWith('97') ? insee.slice(0, 3) : insee.slice(0, 2);
+  const color  = colorFromScore(score);
+  const label  = labelFromScore(score);
+  const flags  = flagsFromParams(params, dates, generatedAt);
+  const dept   = insee.startsWith('97') ? insee.slice(0, 3) : insee.slice(0, 2);
+
   const lastDate = Object.values(dates).filter(Boolean).sort().at(-1);
   const dateStr  = lastDate
     ? new Date(lastDate).toLocaleDateString('fr-FR', { month: 'long', year: 'numeric' })
     : 'date inconnue';
 
-  const nMeasures = pts?.length ?? 0;
+  // Indicateur fraîcheur
+  const ageDays = lastDate
+    ? Math.round((new Date(generatedAt) - new Date(lastDate)) / 86400000)
+    : 9999;
+  const freshnessColor = ageDays < 180 ? '#2ecc71' : ageDays < 365 ? '#f39c12' : '#e74c3c';
+  const freshnessTitle = ageDays < 180 ? 'données récentes' : ageDays < 365 ? 'données 6–12 mois' : 'données > 1 an';
+
+  const nMeasures  = pts?.length ?? 0;
   const measureLabel = nMeasures > 1 ? `· ${nMeasures} mesures moyennées` : '';
-  const rankLabel = (commune.rank != null && totalScored)
+  const rankLabel  = (commune.rank != null && totalScored)
     ? `· #${commune.rank.toLocaleString('fr-FR')} / ${totalScored.toLocaleString('fr-FR')}`
     : '';
-  const reseauNote  = commune.reseau
+  const reseauNote = commune.reseau
     ? `<div class="panel-alert" style="font-size:11px">ℹ️ Ca/TAC : données du réseau <b>${_esc(commune.reseau)}</b></div>`
     : '';
+
+  // Variabilité Ca / Alk sur les points individuels
+  const validPts = (pts || []).filter(p => p.ca != null && p.alk != null);
+  const variabilityHtml = validPts.length >= 3 ? (() => {
+    const caVals  = validPts.map(p => p.ca);
+    const alkVals = validPts.map(p => p.alk);
+    const caRange  = Math.max(...caVals)  - Math.min(...caVals);
+    const alkRange = Math.max(...alkVals) - Math.min(...alkVals);
+    return `<div class="variability-note">Variabilité · Ca ±${(caRange / 2).toFixed(0)} · Alk ±${(alkRange / 2).toFixed(0)} mg/L</div>`;
+  })() : '';
 
   content.innerHTML = `
     <div class="panel-header">
       <div class="panel-score-row">
         <div>
           <div class="panel-commune">${_esc(nom)}</div>
-          <div class="panel-meta">Dép. ${dept} · ${dateStr} ${_esc(measureLabel)}</div>
+          <div class="panel-meta">Dép. ${dept} · <span style="color:${freshnessColor}" title="${freshnessTitle}">${dateStr}</span> ${_esc(measureLabel)}</div>
           ${rankLabel ? `<div class="panel-rank">${rankLabel}</div>` : ''}
         </div>
         <div>
@@ -70,6 +88,7 @@ export function updatePanel(commune, generatedAt, totalScored) {
     <div class="panel-section">
       <div class="panel-section-title">SCA Water Chart</div>
       ${_scaChart(params, pts, color)}
+      ${variabilityHtml}
     </div>
 
     <div class="panel-section">
@@ -80,6 +99,86 @@ export function updatePanel(commune, generatedAt, totalScored) {
     ${reseauNote}
     ${flags.map(f => FLAG_MSG[f] ? `<div class="panel-alert">${FLAG_MSG[f](params)}</div>` : '').join('')}
   `;
+}
+
+export function updateDeptPanel(code, nom, deptInfo) {
+  document.getElementById('panel-empty').hidden = true;
+  const content = document.getElementById('panel-content');
+  content.hidden = false;
+
+  const avgScore = deptInfo?.avgScore ?? null;
+  const n        = deptInfo?.n ?? 0;
+  const color    = colorFromScore(avgScore);
+  const label    = labelFromScore(avgScore);
+
+  let ideal = 0, acceptable = 0, horPlage = 0, tres = 0;
+  for (const c of (deptInfo?.communes ?? [])) {
+    if (c.score == null) continue;
+    if      (c.score >= 0.75) ideal++;
+    else if (c.score >= 0.50) acceptable++;
+    else if (c.score >= 0.25) horPlage++;
+    else                      tres++;
+  }
+  const total = ideal + acceptable + horPlage + tres;
+
+  const top5 = (deptInfo?.communes ?? [])
+    .filter(c => c.score != null)
+    .sort((a, b) => b.score - a.score)
+    .slice(0, 5);
+
+  content.innerHTML = `
+    <div class="panel-header">
+      <div class="panel-score-row">
+        <div>
+          <div class="panel-commune">Dép. ${_esc(nom)}</div>
+          <div class="panel-meta">${code} · ${n} communes scorées</div>
+        </div>
+        <div>
+          <div class="panel-score-val" style="color:${color}">
+            ${avgScore != null ? Math.round(avgScore * 100) + ' %' : 'N/A'}
+          </div>
+          <span class="panel-score-lbl" style="background:${color}">${label}</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel-section">
+      <div class="panel-section-title">Répartition des communes</div>
+      ${_distBar(ideal, acceptable, horPlage, tres, total)}
+    </div>
+
+    <div class="panel-section">
+      <div class="panel-section-title">Top 5 communes</div>
+      ${top5.map((c, i) => `
+        <div class="dept-commune-row">
+          <span class="dept-commune-rank">${i + 1}</span>
+          <span class="dept-commune-nom">${_esc(c.nom)}</span>
+          <span style="color:${colorFromScore(c.score)}">${Math.round(c.score * 100)} %</span>
+        </div>`).join('')}
+    </div>
+  `;
+}
+
+function _distBar(ideal, acceptable, horPlage, tres, total) {
+  if (total === 0) return '<div style="color:var(--muted);font-size:10px">Aucune donnée</div>';
+  const pct = n => Math.round(n * 100 / total);
+  const seg = (n, col, lbl) => n > 0
+    ? `<div style="width:${pct(n)}%;background:${col}" title="${lbl} : ${n}"></div>` : '';
+  const leg = (n, col, lbl) => n > 0
+    ? `<span style="color:${col}">${pct(n)}% ${lbl}</span>` : '';
+  return `
+    <div class="dist-bar">
+      ${seg(ideal,      '#2ecc71', 'Idéal')}
+      ${seg(acceptable, '#3498db', 'Acceptable')}
+      ${seg(horPlage,   '#f39c12', 'Hors plage')}
+      ${seg(tres,       '#e74c3c', 'Très hors SCA')}
+    </div>
+    <div class="dist-legend">
+      ${leg(ideal,      '#2ecc71', 'idéal')}
+      ${leg(acceptable, '#3498db', 'acceptable')}
+      ${leg(horPlage,   '#f39c12', 'hors plage')}
+      ${leg(tres,       '#e74c3c', 'très hors')}
+    </div>`;
 }
 
 function _paramBar({ label, unit, lo, hi }, val) {
@@ -114,7 +213,6 @@ function _scaChart(params, pts, pointColor) {
   const px = alk != null ? sx(alk) : null;
   const py = ca  != null ? sy(ca)  : null;
 
-  // Individual measurement points (only those with both ca and alk)
   const indivPts = (pts || [])
     .filter(p => p.alk != null)
     .map(p => {
@@ -129,7 +227,6 @@ function _scaChart(params, pts, pointColor) {
 
   const nPts = (pts || []).filter(p => p.alk != null).length;
 
-  // Average point (larger, on top)
   const avgPoint = px != null && py != null ? `
     <line x1="${px.toFixed(1)}" y1="${py.toFixed(1)}" x2="${ix.toFixed(1)}" y2="${iy.toFixed(1)}"
           stroke="#888" stroke-width=".8" stroke-dasharray="2,1.5"/>
@@ -142,11 +239,9 @@ function _scaChart(params, pts, pointColor) {
   return `
   <svg viewBox="0 0 ${W} ${H}" style="width:100%">
     <rect width="${W}" height="${H}" fill="#0d1117" rx="4"/>
-    <!-- Acceptable zone -->
     <rect x="${sx(40).toFixed(1)}" y="${sy(85).toFixed(1)}"
           width="${(sx(75)-sx(40)).toFixed(1)}" height="${(sy(17)-sy(85)).toFixed(1)}"
           fill="#f39c12" fill-opacity=".08" stroke="#f39c12" stroke-width=".8" stroke-dasharray="3,2"/>
-    <!-- Ideal zone -->
     <rect x="${sx(40).toFixed(1)}" y="${sy(85).toFixed(1)}"
           width="${(sx(70)-sx(40)).toFixed(1)}" height="${(sy(50)-sy(85)).toFixed(1)}"
           fill="#2ecc71" fill-opacity=".15" stroke="#2ecc71" stroke-width="1"/>

@@ -16,8 +16,10 @@
       </div>
       <div id="controls">
         <div id="search-wrapper">
-          <input id="search" type="text" placeholder="🔍  Rechercher une commune..." autocomplete="off">
+          <input id="search" type="text" placeholder="🔍  Commune ou n° de dép..." autocomplete="off">
         </div>
+        <button id="btn-locate" class="btn-icon" title="Me localiser">📍</button>
+        <button id="btn-toggle-view" class="btn-icon">🗺 Depts</button>
         <span id="data-date">Chargement…</span>
       </div>
     </header>
@@ -25,6 +27,7 @@
     <main id="main-layout">
       <div id="map-container">
         <div id="map"></div>
+        <div id="map-tooltip"></div>
         <div id="legend">
           <div class="legend-title">Score SCA</div>
           <div class="legend-item"><span class="dot" style="background:#2ecc71"></span>≥ 75 % — Idéal</div>
