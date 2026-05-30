@@ -127,14 +127,20 @@ function _toggleTheme() {
   document.body.dataset.theme = _theme === 'light' ? 'light' : '';
   document.getElementById('btn-theme').textContent = _theme === 'light' ? '🌙' : '☀';
   _updateGeoColors();
-  // Listen once for the style reload, then re-add layers
-  map.once('style.load', () => {
-    _setupMapLayers();
-    _applyViewMode();
-    if (activeCommune)
-      map.setFilter('communes-selected', ['==', ['get', 'code'], activeCommune.insee]);
-  });
-  map.setStyle(_theme === 'light' ? LIGHT_MAP_STYLE : DARK_MAP_STYLE);
+  const newStyle = _theme === 'light' ? LIGHT_MAP_STYLE : DARK_MAP_STYLE;
+  map.setStyle(newStyle);
+  // Wait for style to be fully ready before re-adding layers
+  const _waitAndSetup = () => {
+    if (map.isStyleLoaded()) {
+      _setupMapLayers();
+      _applyViewMode();
+      if (activeCommune)
+        map.setFilter('communes-selected', ['==', ['get', 'code'], activeCommune.insee]);
+    } else {
+      map.once('styledata', _waitAndSetup);
+    }
+  };
+  map.once('style.load', () => requestAnimationFrame(_waitAndSetup));
 }
 
 // --- URL state ---
