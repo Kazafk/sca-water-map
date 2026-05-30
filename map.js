@@ -29,7 +29,14 @@ const LABEL_MIN_ZOOM = {
   '83050':8,'93066':8,'92025':8,'94080':8,'91228':8,'95127':8,
 };
 
+// Arrondissements → commune parente (Hub'Eau n'a pas de données par arrondissement)
+const ARR_PARENT = {};
+for (let i = 1; i <= 20; i++) ARR_PARENT[`751${String(i).padStart(2,'0')}`] = '75056'; // Paris
+for (let i = 1; i <= 9;  i++) ARR_PARENT[`6938${i}`]                        = '69123'; // Lyon
+for (let i = 1; i <= 16; i++) ARR_PARENT[`132${String(i).padStart(2,'0')}`] = '13055'; // Marseille
+
 let communesData = {};
+let arrData      = {}; // données propagées pour arrondissements
 let generatedAt  = null;
 let totalScored  = 0;
 let deptData     = {};
@@ -78,6 +85,11 @@ async function init() {
   totalScored = communesJson.total_scored ?? 0;
   for (const c of communesJson.communes) communesData[c.insee] = c;
 
+  // Propager données de la commune parente sur chaque arrondissement
+  for (const [arr, parent] of Object.entries(ARR_PARENT)) {
+    if (communesData[parent]) arrData[arr] = { ...communesData[parent], insee: arr };
+  }
+
   const d = new Date(generatedAt);
   document.getElementById('data-date').textContent =
     `Données Hub'Eau · ${d.toLocaleDateString('fr-FR', { month: 'long', year: 'numeric' })}`;
@@ -89,9 +101,13 @@ async function init() {
   }
 
   for (const f of geojson.features) {
-    const c = communesData[f.properties.code];
-    f.properties.color         = colorFromScore(c?.score ?? null);
-    f.properties.label_min_zoom = LABEL_MIN_ZOOM[f.properties.code] ?? 11;
+    const code   = f.properties.code;
+    const parent = ARR_PARENT[code];
+    // Mettre à jour le nom de l'arrondissement depuis le GeoJSON
+    if (parent && arrData[code]) arrData[code].nom = f.properties.nom;
+    const c = communesData[code] ?? arrData[code] ?? null;
+    f.properties.color          = colorFromScore(c?.score ?? null);
+    f.properties.label_min_zoom = LABEL_MIN_ZOOM[parent ?? code] ?? 11;
   }
   for (const f of deptGeojson.features) {
     const info = deptData[f.properties.code];
@@ -190,7 +206,7 @@ async function init() {
     // Clics
     map.on('click', 'communes-fill', (e) => {
       const code    = e.features[0]?.properties?.code;
-      const commune = communesData[code];
+      const commune = communesData[code] ?? arrData[code];
       if (!commune) return;
       map.setFilter('communes-selected', ['==', ['get', 'code'], code]);
       sheet?.open();
@@ -229,7 +245,7 @@ async function init() {
         const pt       = map.project([coords.longitude, coords.latitude]);
         const features = map.queryRenderedFeatures(pt, { layers: ['communes-fill'] });
         const code     = features[0]?.properties?.code;
-        const commune  = communesData[code];
+        const commune  = communesData[code] ?? arrData[code];
         if (commune) {
           map.setFilter('communes-selected', ['==', ['get', 'code'], code]);
           updatePanel(commune, generatedAt, totalScored);
