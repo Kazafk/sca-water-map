@@ -5,7 +5,8 @@ import { initBottomSheet } from './sheet.js';
 const COMMUNES_URL     = './communes.json';
 const GEOJSON_URL      = 'https://raw.githubusercontent.com/gregoiredavid/france-geojson/master/communes-version-simplifiee.geojson';
 const DEPT_GEOJSON_URL = 'https://raw.githubusercontent.com/gregoiredavid/france-geojson/master/departements-version-simplifiee.geojson';
-const MAP_STYLE        = 'https://tiles.openfreemap.org/styles/dark';
+const DARK_MAP_STYLE   = 'https://tiles.openfreemap.org/styles/dark';
+const LIGHT_MAP_STYLE  = 'https://tiles.openfreemap.org/styles/positron';
 const HISTORY_KEY      = 'sca-history';
 const HISTORY_MAX      = 8;
 
@@ -33,10 +34,25 @@ for (let i = 1; i <= 20; i++) ARR_PARENT[`751${String(i).padStart(2,'0')}`] = '7
 for (let i = 1; i <= 9;  i++) ARR_PARENT[`6938${i}`]                        = '69123';
 for (let i = 1; i <= 16; i++) ARR_PARENT[`132${String(i).padStart(2,'0')}`] = '13055';
 
-let communesData = {};
-let arrData      = {};
-let generatedAt  = null;
-let totalScored  = 0;
+// Score → color per theme
+const THEME_COLORS = {
+  dark:  { noData: '#2d2d2d', ideal: '#2ecc71', ok: '#3498db', warn: '#f39c12', bad: '#e74c3c' },
+  light: { noData: '#d0c4b8', ideal: '#5a9e5a', ok: '#4a80c0', warn: '#c87020', bad: '#c03030' },
+};
+
+function _colorForTheme(score, theme) {
+  const C = THEME_COLORS[theme] ?? THEME_COLORS.dark;
+  if (score == null) return C.noData;
+  if (score >= 0.75) return C.ideal;
+  if (score >= 0.50) return C.ok;
+  if (score >= 0.25) return C.warn;
+  return C.bad;
+}
+
+let communesData  = {};
+let arrData       = {};
+let generatedAt   = null;
+let totalScored   = 0;
 let deptData      = {};
 let map           = null;
 let viewMode      = 'communes';
@@ -45,7 +61,10 @@ let compareMode   = false;
 let compareBase   = null;
 let showBottled   = false;
 let activeCommune = null;
-let _deptGeojson  = null; // kept for popstate handler
+let _geojson      = null;
+let _deptGeojson  = null;
+let _theme        = localStorage.getItem('sca-theme') || 'dark';
+let _mapInitialized = false;
 
 // --- History ---
 
@@ -83,6 +102,32 @@ function _renderHistory() {
       if (c) selectCommune(c);
     });
   });
+}
+
+// --- Theme ---
+
+function _updateGeoColors() {
+  if (!_geojson || !_deptGeojson) return;
+  for (const f of _geojson.features) {
+    const code = f.properties.code;
+    const c    = communesData[code] ?? arrData[code] ?? null;
+    f.properties.color = _colorForTheme(c?.score ?? null, _theme);
+  }
+  for (const f of _deptGeojson.features) {
+    const info = deptData[f.properties.code];
+    f.properties.color = _colorForTheme(info?.avgScore ?? null, _theme);
+  }
+  if (map?.getSource('communes')) map.getSource('communes').setData(_geojson);
+  if (map?.getSource('depts'))    map.getSource('depts').setData(_deptGeojson);
+}
+
+function _toggleTheme() {
+  _theme = _theme === 'dark' ? 'light' : 'dark';
+  localStorage.setItem('sca-theme', _theme);
+  document.body.dataset.theme = _theme === 'light' ? 'light' : '';
+  document.getElementById('btn-theme').textContent = _theme === 'light' ? '🌙' : '☀';
+  _updateGeoColors(); // pre-update colors before style reload
+  map.setStyle(_theme === 'light' ? LIGHT_MAP_STYLE : DARK_MAP_STYLE);
 }
 
 // --- URL state ---
@@ -133,6 +178,69 @@ function _applyViewMode() {
   document.getElementById('btn-toggle-view').textContent = isC ? '🗺 Depts' : '🏘 Communes';
 }
 
+// --- Map layer setup (called on every style.load) ---
+
+function _setupMapLayers() {
+  const light       = _theme === 'light';
+  const lineColor   = light ? '#c8b090' : '#21262d';
+  const noDataColor = light ? '#d0c4b8' : '#2d2d2d';
+  const textColor   = light ? '#3d2810' : '#e8edf3';
+  const textHalo    = light ? 'rgba(245,237,224,0.9)' : 'rgba(13,17,23,0.88)';
+  const selColor    = light ? '#3d2810' : '#ffffff';
+
+  map.addSource('communes', { type: 'geojson', data: _geojson });
+  map.addLayer({ id: 'communes-fill', type: 'fill', source: 'communes',
+    paint: { 'fill-color': ['coalesce', ['get', 'color'], noDataColor], 'fill-opacity': 0.65 } });
+  map.addLayer({ id: 'communes-line', type: 'line', source: 'communes',
+    paint: { 'line-color': lineColor, 'line-width': 0.3, 'line-opacity': 0.7 } });
+  map.addLayer({ id: 'communes-selected', type: 'line', source: 'communes',
+    filter: ['==', ['get', 'code'], ''],
+    paint: { 'line-color': selColor, 'line-width': 2.5 } });
+  map.addLayer({ id: 'communes-labels', type: 'symbol', source: 'communes', minzoom: 6,
+    layout: {
+      'text-field':         ['get', 'nom'],
+      'text-font':          ['Open Sans Semibold', 'Arial Unicode MS Bold'],
+      'text-size':          ['interpolate', ['linear'], ['zoom'], 6, 9, 9, 10, 12, 12],
+      'text-anchor':        'center',
+      'text-max-width':     8,
+      'text-allow-overlap': false,
+    },
+    paint: {
+      'text-color':      textColor,
+      'text-halo-color': textHalo,
+      'text-halo-width': 1.5,
+      'text-opacity':    ['case', ['>=', ['zoom'], ['get', 'label_min_zoom']], 1, 0],
+    },
+  });
+
+  map.addSource('depts', { type: 'geojson', data: _deptGeojson });
+  map.addLayer({ id: 'depts-fill', type: 'fill', source: 'depts',
+    layout: { visibility: 'none' },
+    paint: { 'fill-color': ['coalesce', ['get', 'color'], noDataColor], 'fill-opacity': 0.7 } });
+  map.addLayer({ id: 'depts-line', type: 'line', source: 'depts',
+    layout: { visibility: 'none' },
+    paint: { 'line-color': lineColor, 'line-width': 1 } });
+  map.addLayer({ id: 'depts-selected', type: 'line', source: 'depts',
+    filter: ['==', ['get', 'code'], ''], layout: { visibility: 'none' },
+    paint: { 'line-color': selColor, 'line-width': 2.5 } });
+  map.addLayer({ id: 'depts-labels', type: 'symbol', source: 'depts', minzoom: 5,
+    layout: {
+      visibility:           'none',
+      'text-field':         ['get', 'nom'],
+      'text-font':          ['Open Sans Semibold', 'Arial Unicode MS Bold'],
+      'text-size':          ['interpolate', ['linear'], ['zoom'], 5, 10, 8, 13],
+      'text-anchor':        'center',
+      'text-max-width':     10,
+      'text-allow-overlap': false,
+    },
+    paint: {
+      'text-color':      textColor,
+      'text-halo-color': textHalo,
+      'text-halo-width': 2,
+    },
+  });
+}
+
 // --- Commune selection ---
 
 function selectCommune(commune) {
@@ -145,7 +253,7 @@ function selectCommune(commune) {
   }
 
   activeCommune = commune;
-  showBottled = false;
+  showBottled   = false;
   searchEl.value = commune.nom;
   closeDropdown();
   if (viewMode !== 'communes') { viewMode = 'communes'; _applyViewMode(); }
@@ -160,7 +268,7 @@ function selectCommune(commune) {
 // --- Search ---
 
 let searchEl;
-let dropdown   = null;
+let dropdown      = null;
 let dropdownIndex = -1;
 
 function closeDropdown() {
@@ -194,9 +302,10 @@ async function init() {
     fetch(DEPT_GEOJSON_URL).then(r => r.json()),
   ]);
 
+  _geojson     = geojson;
   _deptGeojson = deptGeojson;
   generatedAt  = communesJson.generated_at;
-  totalScored = communesJson.total_scored ?? 0;
+  totalScored  = communesJson.total_scored ?? 0;
   for (const c of communesJson.communes) communesData[c.insee] = c;
 
   for (const [arr, parent] of Object.entries(ARR_PARENT)) {
@@ -213,155 +322,121 @@ async function init() {
     sheet = initBottomSheet(document.getElementById('panel'));
   }
 
-  for (const f of geojson.features) {
+  // Apply saved theme on load
+  if (_theme === 'light') {
+    document.body.dataset.theme = 'light';
+    document.getElementById('btn-theme').textContent = '🌙';
+  }
+
+  for (const f of _geojson.features) {
     const code   = f.properties.code;
     const parent = ARR_PARENT[code];
     if (parent && arrData[code]) arrData[code].nom = f.properties.nom;
     const c = communesData[code] ?? arrData[code] ?? null;
-    f.properties.color          = colorFromScore(c?.score ?? null);
+    f.properties.color          = _colorForTheme(c?.score ?? null, _theme);
     f.properties.label_min_zoom = LABEL_MIN_ZOOM[parent ?? code] ?? 11;
   }
-  for (const f of deptGeojson.features) {
+  for (const f of _deptGeojson.features) {
     const info = deptData[f.properties.code];
-    f.properties.color = colorFromScore(info?.avgScore ?? null);
+    f.properties.color = _colorForTheme(info?.avgScore ?? null, _theme);
   }
 
   map = new maplibregl.Map({
     container: 'map',
-    style: MAP_STYLE,
-    center: [2.35, 46.5],
-    zoom: 5,
+    style:     _theme === 'light' ? LIGHT_MAP_STYLE : DARK_MAP_STYLE,
+    center:    [2.35, 46.5],
+    zoom:      5,
   });
 
   map.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'top-right');
 
-  map.on('load', () => {
-    map.addSource('communes', { type: 'geojson', data: geojson });
-    map.addLayer({ id: 'communes-fill', type: 'fill', source: 'communes',
-      paint: { 'fill-color': ['coalesce', ['get', 'color'], '#2d2d2d'], 'fill-opacity': 0.6 } });
-    map.addLayer({ id: 'communes-line', type: 'line', source: 'communes',
-      paint: { 'line-color': '#21262d', 'line-width': 0.3, 'line-opacity': 0.6 } });
-    map.addLayer({ id: 'communes-selected', type: 'line', source: 'communes',
-      filter: ['==', ['get', 'code'], ''],
-      paint: { 'line-color': '#ffffff', 'line-width': 2 } });
+  // Re-add layers on every style load (initial + theme switch)
+  map.on('style.load', () => {
+    _setupMapLayers();
+    _applyViewMode();
 
-    map.addLayer({ id: 'communes-labels', type: 'symbol', source: 'communes', minzoom: 6,
-      layout: {
-        'text-field':         ['get', 'nom'],
-        'text-font':          ['Open Sans Semibold', 'Arial Unicode MS Bold'],
-        'text-size':          ['interpolate', ['linear'], ['zoom'], 6, 9, 9, 10, 12, 12],
-        'text-anchor':        'center',
-        'text-max-width':     8,
-        'text-allow-overlap': false,
-      },
-      paint: {
-        'text-color':      '#e8edf3',
-        'text-halo-color': 'rgba(13,17,23,0.88)',
-        'text-halo-width': 1.5,
-        'text-opacity':    ['case', ['>=', ['zoom'], ['get', 'label_min_zoom']], 1, 0],
-      },
-    });
+    // Restore selection highlight after theme switch
+    if (activeCommune)
+      map.setFilter('communes-selected', ['==', ['get', 'code'], activeCommune.insee]);
 
-    map.addSource('depts', { type: 'geojson', data: deptGeojson });
-    map.addLayer({ id: 'depts-fill', type: 'fill', source: 'depts',
-      layout: { visibility: 'none' },
-      paint: { 'fill-color': ['coalesce', ['get', 'color'], '#2d2d2d'], 'fill-opacity': 0.7 } });
-    map.addLayer({ id: 'depts-line', type: 'line', source: 'depts',
-      layout: { visibility: 'none' },
-      paint: { 'line-color': '#21262d', 'line-width': 1 } });
-    map.addLayer({ id: 'depts-selected', type: 'line', source: 'depts',
-      filter: ['==', ['get', 'code'], ''], layout: { visibility: 'none' },
-      paint: { 'line-color': '#ffffff', 'line-width': 2.5 } });
-
-    map.addLayer({ id: 'depts-labels', type: 'symbol', source: 'depts', minzoom: 5,
-      layout: {
-        visibility:           'none',
-        'text-field':         ['get', 'nom'],
-        'text-font':          ['Open Sans Semibold', 'Arial Unicode MS Bold'],
-        'text-size':          ['interpolate', ['linear'], ['zoom'], 5, 10, 8, 13],
-        'text-anchor':        'center',
-        'text-max-width':     10,
-        'text-allow-overlap': false,
-      },
-      paint: {
-        'text-color':      '#e8edf3',
-        'text-halo-color': 'rgba(13,17,23,0.88)',
-        'text-halo-width': 2,
-      },
-    });
-
-    // Tooltip
-    const tooltip = document.getElementById('map-tooltip');
-
-    map.on('mousemove', 'communes-fill', (e) => {
-      const code = e.features[0]?.properties?.code;
-      const c    = communesData[code];
-      if (!c) return;
-      const score = c.score != null ? `${Math.round(c.score * 100)} %` : '—';
-      const col   = colorFromScore(c.score);
-      tooltip.innerHTML = `<b>${c.nom}</b> <span style="color:${col}">${score}</span>`;
-      tooltip.style.cssText = `display:block;left:${e.point.x + 14}px;top:${e.point.y - 8}px`;
-    });
-    map.on('mouseleave', 'communes-fill', () => { tooltip.style.display = 'none'; });
-
-    map.on('mousemove', 'depts-fill', (e) => {
-      const code = e.features[0]?.properties?.code ?? '';
-      const nom  = e.features[0]?.properties?.nom  ?? '';
-      const info = deptData[code];
-      const score = info?.avgScore != null ? `${Math.round(info.avgScore * 100)} %` : '—';
-      const col   = colorFromScore(info?.avgScore ?? null);
-      tooltip.innerHTML = `<b>${nom} (${code})</b> <span style="color:${col}">${score} moy.</span>`;
-      tooltip.style.cssText = `display:block;left:${e.point.x + 14}px;top:${e.point.y - 8}px`;
-    });
-    map.on('mouseleave', 'depts-fill', () => { tooltip.style.display = 'none'; });
-
-    map.on('click', 'communes-fill', (e) => {
-      const code    = e.features[0]?.properties?.code;
-      const commune = communesData[code] ?? arrData[code];
-      if (!commune) return;
-      map.setFilter('communes-selected', ['==', ['get', 'code'], code]);
-      selectCommune(commune);
-    });
-
-    map.on('click', 'depts-fill', (e) => {
-      const code = e.features[0]?.properties?.code;
-      const nom  = e.features[0]?.properties?.nom ?? '';
-      if (!code) return;
-      map.setFilter('depts-selected', ['==', ['get', 'code'], code]);
-      _pushStateDept(code);
-      sheet?.open();
-      updateDeptPanel(code, nom, deptData[code]);
-    });
-
-    for (const layer of ['communes-fill', 'depts-fill']) {
-      map.on('mouseenter', layer, () => { map.getCanvas().style.cursor = 'pointer'; });
-      map.on('mouseleave', layer, () => { map.getCanvas().style.cursor = ''; });
-    }
-
-    // Restore from URL on load
-    const params = new URLSearchParams(location.search);
-    const initCommune = params.get('commune');
-    const initDept    = params.get('dept');
-    if (initCommune) {
-      const c = communesData[initCommune] ?? arrData[initCommune];
-      if (c) {
-        map.setFilter('communes-selected', ['==', ['get', 'code'], c.insee]);
-        updatePanel(c, generatedAt, totalScored);
-        activeCommune = c;
-        map.flyTo({ center: _communeCenter(geojson, initCommune), zoom: 11, animate: false });
+    if (!_mapInitialized) {
+      _mapInitialized = true;
+      // URL restore (only on first load)
+      const params      = new URLSearchParams(location.search);
+      const initCommune = params.get('commune');
+      const initDept    = params.get('dept');
+      if (initCommune) {
+        const c = communesData[initCommune] ?? arrData[initCommune];
+        if (c) {
+          map.setFilter('communes-selected', ['==', ['get', 'code'], c.insee]);
+          updatePanel(c, generatedAt, totalScored);
+          activeCommune = c;
+          map.flyTo({ center: _communeCenter(initCommune), zoom: 11, animate: false });
+        }
+      } else if (initDept) {
+        viewMode = 'depts';
+        _applyViewMode();
+        const deptFeature = _deptGeojson.features.find(f => f.properties.code === initDept);
+        if (deptFeature) {
+          map.setFilter('depts-selected', ['==', ['get', 'code'], initDept]);
+          updateDeptPanel(initDept, deptFeature.properties.nom, deptData[initDept]);
+        }
+      } else {
+        _renderHistory();
       }
-    } else if (initDept) {
-      viewMode = 'depts';
-      _applyViewMode();
-      const deptFeature = deptGeojson.features.find(f => f.properties.code === initDept);
-      if (deptFeature) {
-        map.setFilter('depts-selected', ['==', ['get', 'code'], initDept]);
-        updateDeptPanel(initDept, deptFeature.properties.nom, deptData[initDept]);
-      }
-    } else {
-      _renderHistory();
     }
   });
+
+  // Layer event handlers — registered once, survive style reloads
+  const tooltip = document.getElementById('map-tooltip');
+
+  map.on('mousemove', 'communes-fill', (e) => {
+    const code = e.features[0]?.properties?.code;
+    const c    = communesData[code];
+    if (!c) return;
+    const score = c.score != null ? `${Math.round(c.score * 100)} %` : '—';
+    const col   = colorFromScore(c.score);
+    tooltip.innerHTML = `<b>${c.nom}</b> <span style="color:${col}">${score}</span>`;
+    tooltip.style.cssText = `display:block;left:${e.point.x + 14}px;top:${e.point.y - 8}px`;
+  });
+  map.on('mouseleave', 'communes-fill', () => { tooltip.style.display = 'none'; });
+
+  map.on('mousemove', 'depts-fill', (e) => {
+    const code  = e.features[0]?.properties?.code ?? '';
+    const nom   = e.features[0]?.properties?.nom  ?? '';
+    const info  = deptData[code];
+    const score = info?.avgScore != null ? `${Math.round(info.avgScore * 100)} %` : '—';
+    const col   = colorFromScore(info?.avgScore ?? null);
+    tooltip.innerHTML = `<b>${nom} (${code})</b> <span style="color:${col}">${score} moy.</span>`;
+    tooltip.style.cssText = `display:block;left:${e.point.x + 14}px;top:${e.point.y - 8}px`;
+  });
+  map.on('mouseleave', 'depts-fill', () => { tooltip.style.display = 'none'; });
+
+  map.on('click', 'communes-fill', (e) => {
+    const code    = e.features[0]?.properties?.code;
+    const commune = communesData[code] ?? arrData[code];
+    if (!commune) return;
+    map.setFilter('communes-selected', ['==', ['get', 'code'], code]);
+    selectCommune(commune);
+  });
+
+  map.on('click', 'depts-fill', (e) => {
+    const code = e.features[0]?.properties?.code;
+    const nom  = e.features[0]?.properties?.nom ?? '';
+    if (!code) return;
+    map.setFilter('depts-selected', ['==', ['get', 'code'], code]);
+    _pushStateDept(code);
+    sheet?.open();
+    updateDeptPanel(code, nom, deptData[code]);
+  });
+
+  for (const layer of ['communes-fill', 'depts-fill']) {
+    map.on('mouseenter', layer, () => { map.getCanvas().style.cursor = 'pointer'; });
+    map.on('mouseleave', layer, () => { map.getCanvas().style.cursor = ''; });
+  }
+
+  // Theme toggle
+  document.getElementById('btn-theme').addEventListener('click', _toggleTheme);
 
   // Toggle view
   document.getElementById('btn-toggle-view').addEventListener('click', () => {
@@ -369,7 +444,7 @@ async function init() {
     _applyViewMode();
   });
 
-  // Home button
+  // Home
   document.getElementById('btn-home').addEventListener('click', () => {
     map.flyTo({ center: [2.35, 46.5], zoom: 5 });
   });
@@ -393,7 +468,7 @@ async function init() {
     }, () => alert('Géolocalisation refusée ou indisponible.'));
   });
 
-  // Panel event delegation (compare, bottled, dept top-5 clicks)
+  // Panel delegation
   document.getElementById('panel-content').addEventListener('click', (e) => {
     const action = e.target.closest('[data-action]')?.dataset?.action;
     if (!action) return;
@@ -409,7 +484,7 @@ async function init() {
         updatePanel(activeCommune, generatedAt, totalScored, { showBottled });
       } else {
         document.getElementById('panel-content').hidden = true;
-        document.getElementById('panel-empty').hidden = false;
+        document.getElementById('panel-empty').hidden   = false;
         _renderHistory();
       }
     } else if (action === 'toggle-bottled' && activeCommune) {
@@ -444,7 +519,6 @@ async function init() {
     _buildDropdown(matches);
   });
 
-  // Keyboard navigation (B)
   searchEl.addEventListener('keydown', (e) => {
     if (!dropdown) {
       if (e.key === 'Escape') searchEl.blur();
@@ -478,14 +552,13 @@ async function init() {
     if (!document.getElementById('search-wrapper').contains(e.target)) closeDropdown();
   });
 
-  // popstate (browser back/forward)
   window.addEventListener('popstate', (e) => {
     const st = e.state;
     if (st?.commune) {
       const c = communesData[st.commune] ?? arrData[st.commune];
       if (c) {
         activeCommune = c;
-        showBottled = false;
+        showBottled   = false;
         map.setFilter('communes-selected', ['==', ['get', 'code'], c.insee]);
         updatePanel(c, generatedAt, totalScored);
       }
@@ -497,8 +570,8 @@ async function init() {
   });
 }
 
-function _communeCenter(geojson, code) {
-  const f = geojson.features.find(f => f.properties.code === code);
+function _communeCenter(code) {
+  const f = _geojson.features.find(f => f.properties.code === code);
   if (!f) return [2.35, 46.5];
   const coords = f.geometry.type === 'Polygon'
     ? f.geometry.coordinates[0]

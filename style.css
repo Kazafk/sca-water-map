@@ -10,6 +10,18 @@
   --red:     #e74c3c;
 }
 
+body[data-theme="light"] {
+  --bg:      #f5ede0;
+  --surface: #ede0cc;
+  --border:  #dcc9b0;
+  --text:    #3d2810;
+  --muted:   #a08060;
+  --green:   #5a9e5a;
+  --blue:    #4a80c0;
+  --orange:  #c87020;
+  --red:     #c03030;
+}
+
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
@@ -19,6 +31,7 @@ body {
   font-size: 13px;
   height: 100vh;
   overflow: hidden;
+  transition: background .3s, color .3s;
 }
 
 #app { display: flex; flex-direction: column; height: 100vh; }
