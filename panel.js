@@ -127,7 +127,7 @@ export function updatePanel(commune, generatedAt, totalScored, { showBottled = f
     ? `<div class="panel-alert" style="font-size:11px">ℹ️ Ca/TAC : données du réseau <b>${_esc(commune.reseau)}</b></div>`
     : '';
 
-  const arsUrl = `https://www.eaupotable.sante.gouv.fr/pages/communes/${insee}/resultats-de-la-surveillance`;
+  const arsUrl = `https://hubeau.eaufrance.fr/api/v1/qualite_eau_potable/resultats_dis?code_commune_insee=${insee}&size=20`;
 
   const chartNote = (() => {
     if (nPaired >= 3) {
@@ -165,7 +165,7 @@ export function updatePanel(commune, generatedAt, totalScored, { showBottled = f
       </div>
       <div class="panel-actions">
         <button class="btn-panel-action" data-action="compare">⚖ Comparer</button>
-        <a class="btn-panel-action" href="${arsUrl}" target="_blank" rel="noopener" title="Rapport ARS officiel">📋 ARS</a>
+        <a class="btn-panel-action" href="${arsUrl}" target="_blank" rel="noopener" title="Données brutes Hub'Eau (JSON)">📊 Hub'Eau</a>
       </div>
     </div>
 
