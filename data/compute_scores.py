@@ -12,6 +12,7 @@ UDI_URL  = "https://hubeau.eaufrance.fr/api/v1/qualite_eau_potable/communes_udi"
 
 PARAM_CODES = {
     "calcium":      "1374",
+    "th":           "1350",   # Titre Hydrotimétrique (dureté totale Ca+Mg) — proxy Ca quand calcium absent
     "tac":          "1347",
     "ph":           "1302",
     "conductivite": "1303",
@@ -23,11 +24,16 @@ PARAM_CODES = {
 PROJECT_ROOT           = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUTPUT_FILE            = os.path.join(PROJECT_ROOT, "public", "communes.json")
 MAX_CHART_POINTS       = 30
-LOOKBACK_DAYS          = 180   # fenêtre principale
-LOOKBACK_DAYS_FALLBACK = 730   # fenêtre étendue pour fallback Ca/TAC/Na/Cl/Cl2
+LOOKBACK_DAYS          = 180    # fenêtre principale
+LOOKBACK_DAYS_FALLBACK = 730    # fenêtre étendue (2 ans) pour fallback
+LOOKBACK_DAYS_NA_EXT   = 1826   # fenêtre étendue 5 ans spécifique Na (mesure rare)
+
+# Ca estimé via TH : Ca_hardness ≈ TH_°f × 10 × TH_CA_FRACTION
+# En eau calcaire française, Ca représente ~65 % de la dureté totale (Ca+Mg)
+TH_CA_FRACTION = 0.65
 
 # Paramètres pour lesquels on fait aussi un fetch étendu 2 ans
-EXT_PARAMS = ("calcium", "tac", "na", "cl", "cl2", "ph", "conductivite")
+EXT_PARAMS = ("calcium", "th", "tac", "na", "cl", "cl2", "ph", "conductivite")
 
 
 def _log(msg):
@@ -259,7 +265,7 @@ def build_communes_json() -> dict:
     raw_commune_ext: dict[str, dict] = {}
     raw_reseau_ext:  dict[str, dict] = {}
 
-    with ThreadPoolExecutor(max_workers=7) as executor:
+    with ThreadPoolExecutor(max_workers=8) as executor:
         ext_futures = {
             executor.submit(fetch_all_per_commune, item, LOOKBACK_DAYS_FALLBACK): item[0]
             for item in PARAM_CODES.items()
@@ -270,6 +276,11 @@ def build_communes_json() -> dict:
             raw_commune_ext[key] = c_idx
             raw_reseau_ext[key]  = r_idx
             _log(f"[ext] {key} — {len(c_idx)} communes, {len(r_idx)} réseaux")
+
+    _log(f"\nPhase 3 — fetch Na étendu {LOOKBACK_DAYS_NA_EXT}j (5 ans, mesure rare)...")
+    _, na_ext5_commune, na_ext5_reseau = fetch_all_per_commune(
+        ("na", PARAM_CODES["na"]), LOOKBACK_DAYS_NA_EXT
+    )
 
     # Base : union(mesures directes, communes_udi)
     all_communes: dict[str, str] = {}
@@ -301,8 +312,8 @@ def build_communes_json() -> dict:
             raw_avgs[k]   = val
             raw_latest[k] = date
 
-        # Niveau 2 : réseau 6 mois (Ca, TAC + Na, Cl, Cl2)
-        for k in ("calcium", "tac", "na", "cl", "cl2"):
+        # Niveau 2 : réseau 6 mois (Ca, TAC, TH + Na, Cl, Cl2)
+        for k in ("calcium", "th", "tac", "na", "cl", "cl2"):
             if raw_avgs.get(k) is None:
                 val, date, rnom = _reseau_lookup(commune_udi_map, raw_reseau[k], code)
                 if val is not None:
@@ -311,8 +322,8 @@ def build_communes_json() -> dict:
                     if k in ("calcium", "tac"):
                         fallback[k] = rnom
 
-        # Niveau 3 : réseau 2 ans (Ca, TAC + Na, Cl, Cl2)
-        for k in ("calcium", "tac", "na", "cl", "cl2"):
+        # Niveau 3 : réseau 2 ans (Ca, TAC, TH + Na, Cl, Cl2)
+        for k in ("calcium", "th", "tac", "na", "cl", "cl2"):
             if raw_avgs.get(k) is None:
                 val, date, rnom = _reseau_lookup(commune_udi_map, raw_reseau_ext.get(k, {}), code)
                 if val is not None:
@@ -321,6 +332,27 @@ def build_communes_json() -> dict:
                     if k in ("calcium", "tac"):
                         fallback[k] = rnom
                         fallback_ext.add(k)
+
+        # Niveau 4 : Na direct + réseau 5 ans (Na mesuré très peu fréquemment)
+        if raw_avgs.get("na") is None:
+            val, date = _avg_from(na_ext5_commune, code)
+            if val is not None:
+                raw_avgs["na"]   = val
+                raw_latest["na"] = date
+        if raw_avgs.get("na") is None:
+            val, date, _ = _reseau_lookup(commune_udi_map, na_ext5_reseau, code)
+            if val is not None:
+                raw_avgs["na"]   = val
+                raw_latest["na"] = date
+
+        # Niveau 5 : Ca estimé via Titre Hydrotimétrique (TH, code 1350)
+        # TH en °f × 10 = dureté totale mg/L CaCO₃ ; Ca ≈ TH_CA_FRACTION du total
+        # raw_avgs["th"] est déjà alimenté par les niveaux 1–3 (commune direct + réseau)
+        ca_from_th = False
+        if raw_avgs.get("calcium") is None and raw_avgs.get("th") is not None:
+            raw_avgs["calcium"]   = round(raw_avgs["th"] * 10 * TH_CA_FRACTION, 1)
+            raw_latest["calcium"] = raw_latest.get("th")
+            ca_from_th = True
 
         if fallback_ext:
             n_udi2y += 1
@@ -383,6 +415,8 @@ def build_communes_json() -> dict:
             entry["pts"] = pts
         if fallback:
             entry["reseau"] = fallback.get("calcium") or fallback.get("tac")
+        if ca_from_th:
+            entry["ca_from_th"] = True
 
         output.append(entry)
 
