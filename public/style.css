@@ -192,6 +192,87 @@ body {
 /* Variability note */
 .variability-note { font-size: 9px; color: var(--muted); text-align: center; margin-top: 4px; }
 
+/* Keyboard-selected dropdown item */
+.search-dropdown li.active { background: var(--border); }
+
+/* History */
+.history-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 0;
+  border-bottom: 1px solid var(--border);
+  cursor: pointer;
+}
+.history-row:last-child { border-bottom: none; }
+.history-row:hover { background: var(--border); margin: 0 -4px; padding-left: 4px; padding-right: 4px; }
+.history-nom { font-size: 12px; }
+
+/* Panel action buttons (compare, ARS link) */
+.panel-actions {
+  display: flex;
+  gap: 6px;
+  margin-top: 8px;
+  flex-wrap: wrap;
+}
+.btn-panel-action {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  color: var(--muted);
+  padding: 3px 8px;
+  font-size: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.btn-panel-action:hover { border-color: var(--blue); color: var(--blue); }
+
+/* Bottled water toggle button */
+.btn-bottled {
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  color: var(--muted);
+  padding: 2px 6px;
+  font-size: 9px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.btn-bottled:hover, .btn-bottled.active { border-color: #9b59b6; color: #9b59b6; }
+
+/* Coffee recipe tips */
+.recipe-tip {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 6px;
+  font-size: 11px;
+  color: var(--text);
+}
+.recipe-icon { color: var(--green); font-weight: bold; flex-shrink: 0; width: 12px; }
+
+/* Treatment advice */
+.treatment-tip { font-size: 11px; color: var(--muted); margin-bottom: 5px; }
+
+/* Compare panel */
+.compare-header-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px;
+}
+.compare-commune-col { flex: 1; text-align: center; }
+.compare-row {
+  display: flex;
+  align-items: center;
+  padding: 4px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 10px;
+}
+.compare-row:last-child { border-bottom: none; }
+.compare-val  { flex: 1; text-align: center; }
+.compare-param { width: 80px; text-align: center; color: var(--muted); font-size: 9px; }
+
 /* Sheet handle — visible sur mobile seulement */
 #sheet-handle { display: none; }
 

@@ -1,15 +1,15 @@
 import { colorFromScore } from './scoring.js';
-import { updatePanel, updateDeptPanel } from './panel.js';
+import { updatePanel, updateDeptPanel, updateComparePanel, showComparePending } from './panel.js';
 import { initBottomSheet } from './sheet.js';
 
 const COMMUNES_URL     = './communes.json';
 const GEOJSON_URL      = 'https://raw.githubusercontent.com/gregoiredavid/france-geojson/master/communes-version-simplifiee.geojson';
 const DEPT_GEOJSON_URL = 'https://raw.githubusercontent.com/gregoiredavid/france-geojson/master/departements-version-simplifiee.geojson';
 const MAP_STYLE        = 'https://tiles.openfreemap.org/styles/dark';
+const HISTORY_KEY      = 'sca-history';
+const HISTORY_MAX      = 8;
 
-// Zoom minimum d'affichage du label par commune (INSEE → zoom)
 const LABEL_MIN_ZOOM = {
-  // Tier 1 — grandes métropoles (zoom 6)
   '75056':6,'13055':6,'69123':6,'31555':6,'06088':6,'44109':6,'34172':6,
   '67482':6,'33063':6,'59350':6,'35238':6,'51454':6,'76351':6,'42218':6,
   '83137':6,'38185':6,'21231':6,'49007':6,'30189':6,'63113':6,'87085':6,
@@ -18,7 +18,6 @@ const LABEL_MIN_ZOOM = {
   '13001':6,'69266':6,'95018':6,'92012':6,'93048':6,'59599':6,'59512':6,
   '59183':6,'74010':6,'73065':6,'64445':6,'62193':6,'56121':6,'97105':6,
   '97209':6,'97408':6,
-  // Tier 2 — villes moyennes et chefs-lieux (zoom 8)
   '62041':8,'02691':8,'10387':8,'51108':8,'88160':8,'90010':8,'39300':8,
   '01053':8,'68066':8,'71270':8,'71076':8,'89024':8,'58194':8,'03190':8,
   '82121':8,'81004':8,'12202':8,'46042':8,'19031':8,'24322':8,'47001':8,
@@ -29,20 +28,80 @@ const LABEL_MIN_ZOOM = {
   '83050':8,'93066':8,'92025':8,'94080':8,'91228':8,'95127':8,
 };
 
-// Arrondissements → commune parente (Hub'Eau n'a pas de données par arrondissement)
 const ARR_PARENT = {};
-for (let i = 1; i <= 20; i++) ARR_PARENT[`751${String(i).padStart(2,'0')}`] = '75056'; // Paris
-for (let i = 1; i <= 9;  i++) ARR_PARENT[`6938${i}`]                        = '69123'; // Lyon
-for (let i = 1; i <= 16; i++) ARR_PARENT[`132${String(i).padStart(2,'0')}`] = '13055'; // Marseille
+for (let i = 1; i <= 20; i++) ARR_PARENT[`751${String(i).padStart(2,'0')}`] = '75056';
+for (let i = 1; i <= 9;  i++) ARR_PARENT[`6938${i}`]                        = '69123';
+for (let i = 1; i <= 16; i++) ARR_PARENT[`132${String(i).padStart(2,'0')}`] = '13055';
 
 let communesData = {};
-let arrData      = {}; // données propagées pour arrondissements
+let arrData      = {};
 let generatedAt  = null;
 let totalScored  = 0;
-let deptData     = {};
-let map          = null;
-let viewMode     = 'communes';
-let sheet        = null;
+let deptData      = {};
+let map           = null;
+let viewMode      = 'communes';
+let sheet         = null;
+let compareMode   = false;
+let compareBase   = null;
+let showBottled   = false;
+let activeCommune = null;
+let _deptGeojson  = null; // kept for popstate handler
+
+// --- History ---
+
+function _saveHistory(commune) {
+  let h = JSON.parse(localStorage.getItem(HISTORY_KEY) || '[]');
+  h = [commune.insee, ...h.filter(c => c !== commune.insee)].slice(0, HISTORY_MAX);
+  localStorage.setItem(HISTORY_KEY, JSON.stringify(h));
+}
+
+function _renderHistory() {
+  const emptyEl = document.getElementById('panel-empty');
+  const history = JSON.parse(localStorage.getItem(HISTORY_KEY) || '[]')
+    .map(ins => communesData[ins] ?? arrData[ins]).filter(Boolean);
+  if (!history.length) {
+    emptyEl.innerHTML = 'Cliquez sur une commune pour voir le détail';
+    emptyEl.hidden = false;
+    return;
+  }
+  emptyEl.innerHTML = `
+    <div style="padding:16px 14px">
+      <div style="font-size:9px;text-transform:uppercase;letter-spacing:.5px;color:var(--muted);margin-bottom:10px">Récemment consultées</div>
+      ${history.map(c => {
+        const col   = colorFromScore(c.score);
+        const score = c.score != null ? Math.round(c.score * 100) + ' %' : '—';
+        return `<div class="history-row" data-insee="${c.insee}">
+          <span class="history-nom">${c.nom}</span>
+          <span style="color:${col};font-size:10px">${score}</span>
+        </div>`;
+      }).join('')}
+    </div>`;
+  emptyEl.hidden = false;
+  emptyEl.querySelectorAll('.history-row').forEach(row => {
+    row.addEventListener('click', () => {
+      const c = communesData[row.dataset.insee] ?? arrData[row.dataset.insee];
+      if (c) selectCommune(c);
+    });
+  });
+}
+
+// --- URL state ---
+
+function _pushState(commune) {
+  const url = new URL(location.href);
+  url.searchParams.set('commune', commune.insee);
+  url.searchParams.delete('dept');
+  history.pushState({ commune: commune.insee }, '', url);
+}
+
+function _pushStateDept(code) {
+  const url = new URL(location.href);
+  url.searchParams.set('dept', code);
+  url.searchParams.delete('commune');
+  history.pushState({ dept: code }, '', url);
+}
+
+// --- Helpers ---
 
 function _dept(insee) {
   return insee.startsWith('97') ? insee.slice(0, 3) : insee.slice(0, 2);
@@ -74,6 +133,60 @@ function _applyViewMode() {
   document.getElementById('btn-toggle-view').textContent = isC ? '🗺 Depts' : '🏘 Communes';
 }
 
+// --- Commune selection ---
+
+function selectCommune(commune) {
+  if (compareMode) {
+    compareMode = false;
+    updateComparePanel(compareBase, commune, generatedAt);
+    compareBase = null;
+    sheet?.open();
+    return;
+  }
+
+  activeCommune = commune;
+  showBottled = false;
+  searchEl.value = commune.nom;
+  closeDropdown();
+  if (viewMode !== 'communes') { viewMode = 'communes'; _applyViewMode(); }
+  if (map?.isStyleLoaded())
+    map.setFilter('communes-selected', ['==', ['get', 'code'], commune.insee]);
+  _saveHistory(commune);
+  _pushState(commune);
+  sheet?.open();
+  updatePanel(commune, generatedAt, totalScored, { showBottled });
+}
+
+// --- Search ---
+
+let searchEl;
+let dropdown   = null;
+let dropdownIndex = -1;
+
+function closeDropdown() {
+  if (dropdown) { dropdown.remove(); dropdown = null; }
+  dropdownIndex = -1;
+}
+
+function _buildDropdown(matches) {
+  closeDropdown();
+  if (!matches.length) return;
+  dropdown = document.createElement('ul');
+  dropdown.className = 'search-dropdown';
+  for (const commune of matches) {
+    const li    = document.createElement('li');
+    const score = commune.score != null ? ` — ${Math.round(commune.score * 100)} %` : '';
+    const col   = colorFromScore(commune.score);
+    li.innerHTML = `${commune.nom}<span style="color:${col};float:right">${score}</span>`;
+    li.dataset.insee = commune.insee;
+    li.addEventListener('mousedown', (e) => { e.preventDefault(); selectCommune(commune); });
+    dropdown.appendChild(li);
+  }
+  document.getElementById('search-wrapper').appendChild(dropdown);
+}
+
+// --- Init ---
+
 async function init() {
   const [communesJson, geojson, deptGeojson] = await Promise.all([
     fetch(COMMUNES_URL).then(r => r.json()),
@@ -81,11 +194,11 @@ async function init() {
     fetch(DEPT_GEOJSON_URL).then(r => r.json()),
   ]);
 
-  generatedAt = communesJson.generated_at;
+  _deptGeojson = deptGeojson;
+  generatedAt  = communesJson.generated_at;
   totalScored = communesJson.total_scored ?? 0;
   for (const c of communesJson.communes) communesData[c.insee] = c;
 
-  // Propager données de la commune parente sur chaque arrondissement
   for (const [arr, parent] of Object.entries(ARR_PARENT)) {
     if (communesData[parent]) arrData[arr] = { ...communesData[parent], insee: arr };
   }
@@ -103,7 +216,6 @@ async function init() {
   for (const f of geojson.features) {
     const code   = f.properties.code;
     const parent = ARR_PARENT[code];
-    // Mettre à jour le nom de l'arrondissement depuis le GeoJSON
     if (parent && arrData[code]) arrData[code].nom = f.properties.nom;
     const c = communesData[code] ?? arrData[code] ?? null;
     f.properties.color          = colorFromScore(c?.score ?? null);
@@ -121,8 +233,9 @@ async function init() {
     zoom: 5,
   });
 
+  map.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'top-right');
+
   map.on('load', () => {
-    // Communes
     map.addSource('communes', { type: 'geojson', data: geojson });
     map.addLayer({ id: 'communes-fill', type: 'fill', source: 'communes',
       paint: { 'fill-color': ['coalesce', ['get', 'color'], '#2d2d2d'], 'fill-opacity': 0.6 } });
@@ -149,7 +262,6 @@ async function init() {
       },
     });
 
-    // Départements
     map.addSource('depts', { type: 'geojson', data: deptGeojson });
     map.addLayer({ id: 'depts-fill', type: 'fill', source: 'depts',
       layout: { visibility: 'none' },
@@ -178,7 +290,7 @@ async function init() {
       },
     });
 
-    // Tooltip survol
+    // Tooltip
     const tooltip = document.getElementById('map-tooltip');
 
     map.on('mousemove', 'communes-fill', (e) => {
@@ -203,14 +315,12 @@ async function init() {
     });
     map.on('mouseleave', 'depts-fill', () => { tooltip.style.display = 'none'; });
 
-    // Clics
     map.on('click', 'communes-fill', (e) => {
       const code    = e.features[0]?.properties?.code;
       const commune = communesData[code] ?? arrData[code];
       if (!commune) return;
       map.setFilter('communes-selected', ['==', ['get', 'code'], code]);
-      sheet?.open();
-      updatePanel(commune, generatedAt, totalScored);
+      selectCommune(commune);
     });
 
     map.on('click', 'depts-fill', (e) => {
@@ -218,21 +328,50 @@ async function init() {
       const nom  = e.features[0]?.properties?.nom ?? '';
       if (!code) return;
       map.setFilter('depts-selected', ['==', ['get', 'code'], code]);
+      _pushStateDept(code);
       sheet?.open();
       updateDeptPanel(code, nom, deptData[code]);
     });
 
-    // Curseurs
     for (const layer of ['communes-fill', 'depts-fill']) {
       map.on('mouseenter', layer, () => { map.getCanvas().style.cursor = 'pointer'; });
       map.on('mouseleave', layer, () => { map.getCanvas().style.cursor = ''; });
     }
+
+    // Restore from URL on load
+    const params = new URLSearchParams(location.search);
+    const initCommune = params.get('commune');
+    const initDept    = params.get('dept');
+    if (initCommune) {
+      const c = communesData[initCommune] ?? arrData[initCommune];
+      if (c) {
+        map.setFilter('communes-selected', ['==', ['get', 'code'], c.insee]);
+        updatePanel(c, generatedAt, totalScored);
+        activeCommune = c;
+        map.flyTo({ center: _communeCenter(geojson, initCommune), zoom: 11, animate: false });
+      }
+    } else if (initDept) {
+      viewMode = 'depts';
+      _applyViewMode();
+      const deptFeature = deptGeojson.features.find(f => f.properties.code === initDept);
+      if (deptFeature) {
+        map.setFilter('depts-selected', ['==', ['get', 'code'], initDept]);
+        updateDeptPanel(initDept, deptFeature.properties.nom, deptData[initDept]);
+      }
+    } else {
+      _renderHistory();
+    }
   });
 
-  // Toggle vue communes / départements
+  // Toggle view
   document.getElementById('btn-toggle-view').addEventListener('click', () => {
     viewMode = viewMode === 'communes' ? 'depts' : 'communes';
     _applyViewMode();
+  });
+
+  // Home button
+  document.getElementById('btn-home').addEventListener('click', () => {
+    map.flyTo({ center: [2.35, 46.5], zoom: 5 });
   });
 
   // Géolocalisation
@@ -248,34 +387,47 @@ async function init() {
         const commune  = communesData[code] ?? arrData[code];
         if (commune) {
           map.setFilter('communes-selected', ['==', ['get', 'code'], code]);
-          updatePanel(commune, generatedAt, totalScored);
+          selectCommune(commune);
         }
       });
     }, () => alert('Géolocalisation refusée ou indisponible.'));
   });
 
-  // Recherche (commune ou n° de département)
-  const searchEl = document.getElementById('search');
-  let dropdown   = null;
+  // Panel event delegation (compare, bottled, dept top-5 clicks)
+  document.getElementById('panel-content').addEventListener('click', (e) => {
+    const action = e.target.closest('[data-action]')?.dataset?.action;
+    if (!action) return;
 
-  function closeDropdown() {
-    if (dropdown) { dropdown.remove(); dropdown = null; }
-  }
+    if (action === 'compare' && activeCommune) {
+      compareMode = true;
+      compareBase = activeCommune;
+      showComparePending(activeCommune);
+    } else if (action === 'close-compare') {
+      compareMode = false;
+      compareBase = null;
+      if (activeCommune) {
+        updatePanel(activeCommune, generatedAt, totalScored, { showBottled });
+      } else {
+        document.getElementById('panel-content').hidden = true;
+        document.getElementById('panel-empty').hidden = false;
+        _renderHistory();
+      }
+    } else if (action === 'toggle-bottled' && activeCommune) {
+      showBottled = !showBottled;
+      updatePanel(activeCommune, generatedAt, totalScored, { showBottled });
+    } else if (action === 'select-commune') {
+      const ins = e.target.closest('[data-insee]')?.dataset?.insee;
+      const c   = communesData[ins] ?? arrData[ins];
+      if (c) selectCommune(c);
+    }
+  });
 
-  function selectCommune(commune) {
-    searchEl.value = commune.nom;
-    closeDropdown();
-    if (viewMode !== 'communes') { viewMode = 'communes'; _applyViewMode(); }
-    if (map?.isStyleLoaded())
-      map.setFilter('communes-selected', ['==', ['get', 'code'], commune.insee]);
-    sheet?.open();
-    updatePanel(commune, generatedAt, totalScored);
-  }
+  // Search
+  searchEl = document.getElementById('search');
 
   searchEl.addEventListener('input', () => {
-    closeDropdown();
     const q = searchEl.value.trim().toLowerCase();
-    if (q.length < 2) return;
+    if (q.length < 2) { closeDropdown(); return; }
 
     let matches;
     if (/^\d{2,3}$/.test(q)) {
@@ -289,24 +441,74 @@ async function init() {
         .filter(c => c.nom.toLowerCase().includes(q))
         .slice(0, 8);
     }
-    if (!matches.length) return;
+    _buildDropdown(matches);
+  });
 
-    dropdown = document.createElement('ul');
-    dropdown.className = 'search-dropdown';
-    for (const commune of matches) {
-      const li    = document.createElement('li');
-      const score = commune.score != null ? ` — ${Math.round(commune.score * 100)} %` : '';
-      const col   = colorFromScore(commune.score);
-      li.innerHTML = `${commune.nom}<span style="color:${col};float:right">${score}</span>`;
-      li.addEventListener('mousedown', (e) => { e.preventDefault(); selectCommune(commune); });
-      dropdown.appendChild(li);
+  // Keyboard navigation (B)
+  searchEl.addEventListener('keydown', (e) => {
+    if (!dropdown) {
+      if (e.key === 'Escape') searchEl.blur();
+      return;
     }
-    document.getElementById('search-wrapper').appendChild(dropdown);
+    const items = dropdown.querySelectorAll('li');
+    if (e.key === 'ArrowDown') {
+      e.preventDefault();
+      dropdownIndex = Math.min(dropdownIndex + 1, items.length - 1);
+      items.forEach((li, i) => li.classList.toggle('active', i === dropdownIndex));
+      items[dropdownIndex]?.scrollIntoView({ block: 'nearest' });
+    } else if (e.key === 'ArrowUp') {
+      e.preventDefault();
+      dropdownIndex = Math.max(dropdownIndex - 1, 0);
+      items.forEach((li, i) => li.classList.toggle('active', i === dropdownIndex));
+      items[dropdownIndex]?.scrollIntoView({ block: 'nearest' });
+    } else if (e.key === 'Enter') {
+      e.preventDefault();
+      if (dropdownIndex >= 0 && items[dropdownIndex]) {
+        const ins = items[dropdownIndex].dataset.insee;
+        const c   = communesData[ins];
+        if (c) selectCommune(c);
+      }
+    } else if (e.key === 'Escape') {
+      closeDropdown();
+      searchEl.blur();
+    }
   });
 
   document.addEventListener('click', (e) => {
     if (!document.getElementById('search-wrapper').contains(e.target)) closeDropdown();
   });
+
+  // popstate (browser back/forward)
+  window.addEventListener('popstate', (e) => {
+    const st = e.state;
+    if (st?.commune) {
+      const c = communesData[st.commune] ?? arrData[st.commune];
+      if (c) {
+        activeCommune = c;
+        showBottled = false;
+        map.setFilter('communes-selected', ['==', ['get', 'code'], c.insee]);
+        updatePanel(c, generatedAt, totalScored);
+      }
+    } else if (st?.dept) {
+      const deptFeature = _deptGeojson?.features?.find(f => f.properties.code === st.dept);
+      map.setFilter('depts-selected', ['==', ['get', 'code'], st.dept]);
+      updateDeptPanel(st.dept, deptFeature?.properties?.nom ?? '', deptData[st.dept]);
+    }
+  });
+}
+
+function _communeCenter(geojson, code) {
+  const f = geojson.features.find(f => f.properties.code === code);
+  if (!f) return [2.35, 46.5];
+  const coords = f.geometry.type === 'Polygon'
+    ? f.geometry.coordinates[0]
+    : f.geometry.coordinates[0][0];
+  const lons = coords.map(c => c[0]);
+  const lats = coords.map(c => c[1]);
+  return [
+    (Math.min(...lons) + Math.max(...lons)) / 2,
+    (Math.min(...lats) + Math.max(...lats)) / 2,
+  ];
 }
 
 init().catch(err => {
