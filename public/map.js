@@ -306,6 +306,25 @@ function _buildDropdown(matches) {
   document.getElementById('search-wrapper').appendChild(dropdown);
 }
 
+// --- Onboarding ---
+
+function _initOnboarding() {
+  if (localStorage.getItem('sca-onboarded')) return;
+  const overlay = document.getElementById('onboarding-overlay');
+  const modal   = document.getElementById('onboarding-modal');
+  overlay.hidden = false;
+  modal.hidden   = false;
+
+  function close() {
+    overlay.hidden = true;
+    modal.hidden   = true;
+    localStorage.setItem('sca-onboarded', '1');
+  }
+
+  document.getElementById('btn-onboarding-close').addEventListener('click', close);
+  overlay.addEventListener('click', close);
+}
+
 // --- Init ---
 
 async function init() {
@@ -334,6 +353,8 @@ async function init() {
   if (window.matchMedia('(max-width: 768px)').matches) {
     sheet = initBottomSheet(document.getElementById('panel'));
   }
+
+  _initOnboarding();
 
   // Apply saved theme on load
   if (_theme === 'light') {
