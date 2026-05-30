@@ -354,12 +354,14 @@ function _distBar(ideal, acceptable, horPlage, tres, total) {
 }
 
 function _paramBar({ label, unit, lo, hi, decimals = 1 }, val) {
-  const missing = val == null;
-  const inRange = !missing && val >= lo && val <= hi;
-  const color   = missing ? '#555' : inRange ? '#2ecc71' : '#f39c12';
-  const pct     = missing ? 0 : Math.min(100, (val / (Math.max(hi, 1) * 1.5)) * 100);
-  const status  = missing ? '—' : inRange ? '✓ idéal' : '⚠ hors plage';
-  const valStr  = missing ? '' : ` <span style="color:#555">(${val.toFixed(decimals)} ${unit})</span>`;
+  const missing  = val == null;
+  // Compare against the rounded display value so status always matches what's shown
+  const shown    = missing ? null : parseFloat(val.toFixed(decimals));
+  const inRange  = !missing && shown >= lo && shown <= hi;
+  const color    = missing ? '#555' : inRange ? '#2ecc71' : '#f39c12';
+  const pct      = missing ? 0 : Math.min(100, (val / (Math.max(hi, 1) * 1.5)) * 100);
+  const status   = missing ? '—' : inRange ? '✓ idéal' : '⚠ hors plage';
+  const valStr   = missing ? '' : ` <span style="color:#555">(${val.toFixed(decimals)} ${unit})</span>`;
 
   return `
     <div class="param-item">
