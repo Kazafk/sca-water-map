@@ -122,13 +122,72 @@ function _updateGeoColors() {
   if (map?.getSource('depts'))    map.getSource('depts').setData(_deptGeojson);
 }
 
+// Met à jour les propriétés de rendu des layers sans les recréer
+function _applyThemePaint() {
+  const light       = _theme === 'light';
+  const lineColor   = light ? '#c8b090' : '#21262d';
+  const noDataColor = light ? '#d0c4b8' : '#2d2d2d';
+  const textColor   = light ? '#3d2810' : '#e8edf3';
+  const textHalo    = light ? 'rgba(245,237,224,0.9)' : 'rgba(13,17,23,0.88)';
+  const selColor    = light ? '#3d2810' : '#ffffff';
+  const s = (layer, prop, val) => { try { map.setPaintProperty(layer, prop, val); } catch (_) {} };
+  s('communes-fill',     'fill-color',      ['coalesce', ['get', 'color'], noDataColor]);
+  s('communes-line',     'line-color',      lineColor);
+  s('communes-selected', 'line-color',      selColor);
+  s('communes-labels',   'text-color',      textColor);
+  s('communes-labels',   'text-halo-color', textHalo);
+  s('depts-fill',        'fill-color',      ['coalesce', ['get', 'color'], noDataColor]);
+  s('depts-line',        'line-color',      lineColor);
+  s('depts-selected',    'line-color',      selColor);
+  s('depts-labels',      'text-color',      textColor);
+  s('depts-labels',      'text-halo-color', textHalo);
+}
+
 function _toggleTheme() {
   _theme = _theme === 'dark' ? 'light' : 'dark';
   localStorage.setItem('sca-theme', _theme);
   document.body.dataset.theme = _theme === 'light' ? 'light' : '';
   document.getElementById('btn-theme').textContent = _theme === 'light' ? '🌙' : '☀';
+
+  // Mettre à jour les couleurs GeoJSON en mémoire avant le changement de style
   _updateGeoColors();
-  map.setStyle(_theme === 'light' ? LIGHT_MAP_STYLE : DARK_MAP_STYLE);
+
+  const customLayerIds = ['communes-fill','communes-line','communes-selected','communes-labels',
+                          'depts-fill','depts-line','depts-selected','depts-labels'];
+
+  // transformStyle préserve nos sources et layers custom pendant le swap de style de fond.
+  // Évite totalement le problème de timing remove/re-add après style.load.
+  map.setStyle(_theme === 'light' ? LIGHT_MAP_STYLE : DARK_MAP_STYLE, {
+    transformStyle: (prev, next) => {
+      if (!prev) return next;
+      const keepSources = {};
+      for (const id of ['communes', 'depts']) {
+        if (prev.sources?.[id]) keepSources[id] = prev.sources[id];
+      }
+      const keepLayers = (prev.layers ?? []).filter(l => customLayerIds.includes(l.id));
+      return {
+        ...next,
+        sources: { ...next.sources, ...keepSources },
+        layers:  [...next.layers, ...keepLayers],
+      };
+    },
+  });
+
+  map.once('style.load', () => {
+    if (map.getLayer('communes-fill')) {
+      // Cas nominal : transformStyle a préservé les layers
+      // Mettre à jour les données source (nouvelles couleurs thème) et les propriétés de peinture
+      if (map.getSource('communes')) map.getSource('communes').setData(_geojson);
+      if (map.getSource('depts'))    map.getSource('depts').setData(_deptGeojson);
+      _applyThemePaint();
+    } else {
+      // Fallback : transformStyle n'a pas fonctionné, recréer les layers
+      _setupMapLayers();
+    }
+    _applyViewMode();
+    if (activeCommune)
+      map.setFilter('communes-selected', ['==', ['get', 'code'], activeCommune.insee]);
+  });
 }
 
 // --- URL state ---
@@ -377,16 +436,6 @@ async function init() {
   });
 
   map.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'top-right');
-
-  // Persistent handler: re-installe les layers à chaque changement de style (thème)
-  // Ignoré lors du premier chargement (géré par 'load') grâce au guard _mapInitialized
-  map.on('style.load', () => {
-    if (!_mapInitialized) return;
-    _setupMapLayers();
-    _applyViewMode();
-    if (activeCommune)
-      map.setFilter('communes-selected', ['==', ['get', 'code'], activeCommune.insee]);
-  });
 
   // Initial layer setup on first load
   map.on('load', () => {
