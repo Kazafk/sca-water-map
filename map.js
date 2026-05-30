@@ -128,20 +128,7 @@ function _toggleTheme() {
   document.body.dataset.theme = _theme === 'light' ? 'light' : '';
   document.getElementById('btn-theme').textContent = _theme === 'light' ? '🌙' : '☀';
   _updateGeoColors();
-  const newStyle = _theme === 'light' ? LIGHT_MAP_STYLE : DARK_MAP_STYLE;
-  map.setStyle(newStyle);
-  // Wait for style to be fully ready before re-adding layers
-  const _waitAndSetup = () => {
-    if (map.isStyleLoaded()) {
-      _setupMapLayers();
-      _applyViewMode();
-      if (activeCommune)
-        map.setFilter('communes-selected', ['==', ['get', 'code'], activeCommune.insee]);
-    } else {
-      map.once('styledata', _waitAndSetup);
-    }
-  };
-  map.once('style.load', () => requestAnimationFrame(_waitAndSetup));
+  map.setStyle(_theme === 'light' ? LIGHT_MAP_STYLE : DARK_MAP_STYLE);
 }
 
 // --- URL state ---
@@ -390,6 +377,16 @@ async function init() {
   });
 
   map.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'top-right');
+
+  // Persistent handler: re-installe les layers à chaque changement de style (thème)
+  // Ignoré lors du premier chargement (géré par 'load') grâce au guard _mapInitialized
+  map.on('style.load', () => {
+    if (!_mapInitialized) return;
+    _setupMapLayers();
+    _applyViewMode();
+    if (activeCommune)
+      map.setFilter('communes-selected', ['==', ['get', 'code'], activeCommune.insee]);
+  });
 
   // Initial layer setup on first load
   map.on('load', () => {
