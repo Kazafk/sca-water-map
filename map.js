@@ -8,6 +8,7 @@ const MAP_STYLE    = 'https://tiles.openfreemap.org/styles/dark';
 
 let communesData = {};
 let generatedAt  = null;
+let totalScored  = 0;
 let map          = null;
 
 async function init() {
@@ -17,6 +18,7 @@ async function init() {
   ]);
 
   generatedAt = communesJson.generated_at;
+  totalScored  = communesJson.total_scored ?? 0;
 
   for (const c of communesJson.communes) {
     communesData[c.insee] = c;
@@ -74,7 +76,7 @@ async function init() {
       const commune = communesData[code];
       if (!commune) return;
       map.setFilter('communes-selected', ['==', ['get', 'code'], code]);
-      updatePanel(commune, generatedAt);
+      updatePanel(commune, generatedAt, totalScored);
     });
 
     map.on('mouseenter', 'communes-fill', () => { map.getCanvas().style.cursor = 'pointer'; });
@@ -95,7 +97,7 @@ async function init() {
     if (map && map.getLayer('communes-selected')) {
       map.setFilter('communes-selected', ['==', ['get', 'code'], commune.insee]);
     }
-    updatePanel(commune, generatedAt);
+    updatePanel(commune, generatedAt, totalScored);
   }
 
   searchEl.addEventListener('input', () => {

@@ -26,7 +26,7 @@ const FLAG_MSG = {
   data_old:        ()  => '⚠ Certaines mesures datent de plus de 12 mois',
 };
 
-export function updatePanel(commune, generatedAt) {
+export function updatePanel(commune, generatedAt, totalScored) {
   document.getElementById('panel-empty').hidden  = true;
   const content = document.getElementById('panel-content');
   content.hidden = false;
@@ -43,6 +43,9 @@ export function updatePanel(commune, generatedAt) {
 
   const nMeasures = pts?.length ?? 0;
   const measureLabel = nMeasures > 1 ? `· ${nMeasures} mesures moyennées` : '';
+  const rankLabel = (commune.rank != null && totalScored)
+    ? `· #${commune.rank.toLocaleString('fr-FR')} / ${totalScored.toLocaleString('fr-FR')}`
+    : '';
   const reseauNote  = commune.reseau
     ? `<div class="panel-alert" style="font-size:11px">ℹ️ Ca/TAC : données du réseau <b>${_esc(commune.reseau)}</b></div>`
     : '';
@@ -53,6 +56,7 @@ export function updatePanel(commune, generatedAt) {
         <div>
           <div class="panel-commune">${_esc(nom)}</div>
           <div class="panel-meta">Dép. ${dept} · ${dateStr} ${_esc(measureLabel)}</div>
+          ${rankLabel ? `<div class="panel-rank">${rankLabel}</div>` : ''}
         </div>
         <div>
           <div class="panel-score-val" style="color:${color}">

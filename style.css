@@ -122,6 +122,7 @@ body {
 .panel-score-row { display: flex; align-items: flex-start; justify-content: space-between; }
 .panel-commune   { font-weight: bold; font-size: 14px; }
 .panel-meta      { color: var(--muted); font-size: 10px; margin-top: 2px; }
+.panel-rank      { color: var(--muted); font-size: 10px; margin-top: 1px; }
 .panel-score-val { font-size: 22px; font-weight: bold; text-align: right; }
 .panel-score-lbl {
   display: inline-block;
