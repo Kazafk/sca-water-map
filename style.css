@@ -367,6 +367,23 @@ body {
 }
 .btn-bottled:hover, .btn-bottled.active { border-color: #9b59b6; color: #9b59b6; }
 
+/* SCA Water Chart — animations */
+@keyframes scaDotIn {
+  from { opacity: 0; transform: scale(0); }
+  to   { opacity: 1; transform: scale(1); }
+}
+@keyframes scaFadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+.sca-dot-in {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: scaDotIn .45s cubic-bezier(.34,1.56,.64,1) .1s both;
+}
+.sca-label-in { animation: scaFadeIn .35s ease-out .45s both; }
+.sca-pt-in    { animation: scaFadeIn .35s ease-out both; }
+
 /* Coffee recipe tips */
 .recipe-tip {
   display: flex;
