@@ -1,5 +1,6 @@
 import { colorFromScore } from './scoring.js';
 import { updatePanel, updateDeptPanel } from './panel.js';
+import { initBottomSheet } from './sheet.js';
 
 const COMMUNES_URL     = './communes.json';
 const GEOJSON_URL      = 'https://raw.githubusercontent.com/gregoiredavid/france-geojson/master/communes-version-simplifiee.geojson';
@@ -34,6 +35,7 @@ let totalScored  = 0;
 let deptData     = {};
 let map          = null;
 let viewMode     = 'communes';
+let sheet        = null;
 
 function _dept(insee) {
   return insee.startsWith('97') ? insee.slice(0, 3) : insee.slice(0, 2);
@@ -81,6 +83,10 @@ async function init() {
     `Données Hub'Eau · ${d.toLocaleDateString('fr-FR', { month: 'long', year: 'numeric' })}`;
 
   deptData = buildDeptData();
+
+  if (window.matchMedia('(max-width: 768px)').matches) {
+    sheet = initBottomSheet(document.getElementById('panel'));
+  }
 
   for (const f of geojson.features) {
     const c = communesData[f.properties.code];
@@ -187,6 +193,7 @@ async function init() {
       const commune = communesData[code];
       if (!commune) return;
       map.setFilter('communes-selected', ['==', ['get', 'code'], code]);
+      sheet?.open();
       updatePanel(commune, generatedAt, totalScored);
     });
 
@@ -195,6 +202,7 @@ async function init() {
       const nom  = e.features[0]?.properties?.nom ?? '';
       if (!code) return;
       map.setFilter('depts-selected', ['==', ['get', 'code'], code]);
+      sheet?.open();
       updateDeptPanel(code, nom, deptData[code]);
     });
 
@@ -244,6 +252,7 @@ async function init() {
     if (viewMode !== 'communes') { viewMode = 'communes'; _applyViewMode(); }
     if (map?.isStyleLoaded())
       map.setFilter('communes-selected', ['==', ['get', 'code'], commune.insee]);
+    sheet?.open();
     updatePanel(commune, generatedAt, totalScored);
   }
 
