@@ -315,13 +315,15 @@
     <!-- ── Paramètres ──────────────────────────────────────────────────── -->
     <div class="about-section">
       <h2>🧪 Paramètres mesurés</h2>
-      <p>Sept paramètres sont utilisés. Les deux premiers (Ca Hardness et Alcalinité) forment le cœur du score — les cinq autres l'affinent.</p>
+      <p>Sept paramètres sont utilisés. Les deux premiers (Ca Hardness et Alcalinité) forment le cœur du score — les cinq autres l'affinent.
+         Un huitième paramètre (TH) sert uniquement de proxy quand le calcium est absent.</p>
 
       <div class="param-grid">
         <div class="param-card">
           <div class="param-card-name">Ca Hardness</div>
           <div class="param-card-range">Idéal : 50–85 mg/L CaCO₃</div>
-          <div class="param-card-note">Calcium × 2,497. Influence l'extraction des arômes.</div>
+          <div class="param-card-note">Calcium × 2,497. Influence l'extraction des arômes.
+            Si le calcium n'est pas mesuré, il est estimé via le Titre Hydrotimétrique (voir ci-dessous).</div>
           <div class="param-card-weight">Poids : primaire (80 % du score chart)</div>
         </div>
         <div class="param-card">
@@ -345,7 +347,8 @@
         <div class="param-card">
           <div class="param-card-name">Sodium (Na)</div>
           <div class="param-card-range">Idéal : 0–30 mg/L</div>
-          <div class="param-card-note">Concentration directe. Excès perceptible comme salé.</div>
+          <div class="param-card-note">Concentration directe. Excès perceptible comme salé.
+            Mesure non obligatoire réglementairement : fenêtre de recherche étendue à 5 ans.</div>
           <div class="param-card-weight">Poids secondaire : 3 %</div>
         </div>
         <div class="param-card">
@@ -359,6 +362,15 @@
           <div class="param-card-range">Idéal : 0–0,10 mg/L</div>
           <div class="param-card-note">Affiché à 2 décimales. En dessous de 0,10 mg/L le chlore est imperceptible en dégustation (seuil sensoriel ~0,3 mg/L). Au-delà, pénalité progressive.</div>
           <div class="param-card-weight">Poids secondaire : 1 %</div>
+        </div>
+        <div class="param-card" style="border-color:var(--orange);opacity:.85">
+          <div class="param-card-name" style="color:var(--orange)">TH — Titre Hydrotimétrique</div>
+          <div class="param-card-range" style="color:var(--muted)">Utilisé uniquement comme proxy</div>
+          <div class="param-card-note">Dureté totale (Ca + Mg) en °f. Code Hub'Eau 1350.
+            Quand le calcium n'est pas mesuré directement, on estime <code>Ca ≈ TH × 10 × 0,65</code>
+            (65 % de la dureté totale en moyenne pour l'eau calcaire française).
+            Imprécision ±25 % — résultat affiché avec le signe <code>~</code>.</div>
+          <div class="param-card-weight">Pas de poids propre — proxy Ca uniquement</div>
         </div>
       </div>
     </div>
@@ -389,6 +401,12 @@
         Si Ca Hardness ET Alcalinité sont tous deux absents, le score est <strong>N/A</strong> (commune grisée sur la carte).
       </p>
       <p>
+        <strong>Score plafonné quand des paramètres primaires manquent</strong> (après tous les niveaux de fallback) :
+        Ca Hardness absent → score limité à 85 % · Sodium absent → score limité à 95 %.
+        Le panneau de détail indique « Score partiel » avec un badge explicatif.
+        Quand Ca est <em>estimé</em> via TH, le plafond ne s'applique pas mais la valeur est affichée avec <code>~</code>.
+      </p>
+      <p>
         Les moyennes utilisées pour le score sont calculées sur <strong>toutes les mesures disponibles</strong> dans la fenêtre temporelle,
         pas seulement la plus récente. Les points du graphique ne montrent que les mesures où Ca et TAC ont été prélevés
         lors du même événement (même <code>code_prelevement</code>).
@@ -397,10 +415,10 @@
 
     <!-- ── Méthode de collecte ─────────────────────────────────────────── -->
     <div class="about-section">
-      <h2>🔄 Collecte des données — 4 niveaux de fallback</h2>
+      <h2>🔄 Collecte des données — 6 niveaux de fallback</h2>
       <p>
-        Pour maximiser la couverture (~34 500 communes), le pipeline cherche des données selon quatre niveaux,
-        s'arrêtant au premier qui retourne un résultat :
+        Pour maximiser la couverture (~34 500 communes), le pipeline cherche des données selon six niveaux,
+        s'arrêtant au premier qui retourne un résultat pour chaque paramètre :
       </p>
 
       <div class="fallback-steps">
@@ -408,7 +426,7 @@
           <div class="fallback-step-num">1</div>
           <div class="fallback-step-content">
             <strong>Mesure directe sur la commune — fenêtre 6 mois</strong><br>
-            Requête Hub'Eau <code>resultats_dis</code> filtrée sur le code commune et les 7 paramètres.
+            Requête Hub'Eau <code>resultats_dis</code> filtrée sur le code commune et les 8 paramètres (dont TH).
             Tous les paramètres sont cherchés en parallèle (8 threads).
           </div>
         </div>
@@ -416,8 +434,7 @@
           <div class="fallback-step-num">2</div>
           <div class="fallback-step-content">
             <strong>Mesure directe sur la commune — fenêtre 2 ans</strong><br>
-            Même requête mais sur 24 mois. Utile pour les paramètres mesurés annuellement
-            (Na surtout : passé de 88 % à 9 % de communes manquantes).
+            Même requête mais sur 24 mois. Utile pour les paramètres mesurés annuellement.
           </div>
         </div>
         <div class="fallback-step">
@@ -432,9 +449,27 @@
           <div class="fallback-step-num">4</div>
           <div class="fallback-step-content">
             <strong>Réseau UDI voisin — 2 ans</strong><br>
-            Dernier recours. Quand un réseau peu mesuré n'a pas de données récentes,
-            on élargit à 24 mois. Couvre ~5 771 communes supplémentaires pour Ca/TAC.
+            Même réseau mais fenêtre étendue à 24 mois. Couvre ~5 771 communes supplémentaires pour Ca/TAC.
             La fiche indique le nom du réseau utilisé.
+          </div>
+        </div>
+        <div class="fallback-step">
+          <div class="fallback-step-num">5</div>
+          <div class="fallback-step-content">
+            <strong>Sodium — mesure directe + réseau sur 5 ans</strong><br>
+            Le sodium n'est pas une mesure réglementairement obligatoire : certains réseaux ne le mesurent
+            qu'une fois tous les 3–5 ans. Une phase dédiée élargit la fenêtre à 60 mois pour récupérer
+            ces mesures rares, en direct et via réseau.
+          </div>
+        </div>
+        <div class="fallback-step">
+          <div class="fallback-step-num">6</div>
+          <div class="fallback-step-content">
+            <strong>Ca Hardness estimé via Titre Hydrotimétrique (TH)</strong><br>
+            En dernier recours, quand le calcium n'est pas mesuré directement, le pipeline utilise
+            le TH (code 1350 Hub'Eau, dureté totale Ca+Mg en °f) pour l'estimer :
+            <code>Ca_hardness ≈ TH × 10 × 0,65</code>. La valeur est marquée <code>~</code> dans la fiche
+            et une alerte explique l'imprécision (~±25 %).
           </div>
         </div>
       </div>
@@ -565,9 +600,22 @@
       <div class="limit-item">
         <div class="limit-icon">⚠</div>
         <div class="limit-text">
+          <strong>Ca Hardness estimé pour ~4 % des communes.</strong>
+          Quand le calcium (code 1374) n'est pas mesuré dans Hub'Eau, il est estimé à partir du
+          Titre Hydrotimétrique (TH, code 1350) via <code>Ca ≈ TH × 10 × 0,65</code>.
+          Cette estimation présente une imprécision de ±25 % : en eau calcaire française le calcium
+          représente en moyenne 65 % de la dureté totale, mais cette fraction peut varier de 50 à 80 %.
+          Les fiches concernées affichent <code>~</code> devant la valeur Ca et une alerte explicite.
+        </div>
+      </div>
+      <div class="limit-item">
+        <div class="limit-icon">⚠</div>
+        <div class="limit-text">
           <strong>Sodium non mesuré systématiquement.</strong>
-          La réglementation française n'impose pas la mesure du sodium dans tous les réseaux de distribution.
-          9 % des communes (~3 125) restent sans donnée Na même après 4 niveaux de fallback.
+          La réglementation française n'impose pas la mesure du sodium dans tous les réseaux.
+          Malgré une fenêtre de recherche étendue à 5 ans, ~9 % des communes restent sans donnée Na.
+          Leur score est plafonné à 95 % avec le badge « Score partiel ».
+          Il n'existe pas de proxy chimique fiable pour estimer le sodium.
         </div>
       </div>
       <div class="limit-item">
@@ -589,8 +637,9 @@
       <div class="limit-item">
         <div class="limit-icon">⚠</div>
         <div class="limit-text">
-          <strong>Données jusqu'à 2 ans d'ancienneté.</strong>
-          Pour les communes sans mesure récente, le pipeline utilise des données allant jusqu'à 24 mois.
+          <strong>Données allant jusqu'à 5 ans d'ancienneté (Na) ou 2 ans (autres paramètres).</strong>
+          Pour les communes sans mesure récente, le pipeline utilise des données historiques :
+          jusqu'à 24 mois pour Ca, TAC, pH, TDS, Cl, Cl₂ — jusqu'à 60 mois pour le sodium.
           La date des mesures est indiquée dans le panneau de détail (indicateur de fraîcheur coloré).
         </div>
       </div>
