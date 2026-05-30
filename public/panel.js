@@ -15,7 +15,7 @@ const PARAMS = [
   { key: 'tds',         label: 'TDS',         unit: 'mg/L',        lo: 75,  hi: 250 },
   { key: 'na',          label: 'Sodium',      unit: 'mg/L',        lo: 0,   hi: 30  },
   { key: 'cl',          label: 'Chlorures',   unit: 'mg/L',        lo: 0,   hi: 75  },
-  { key: 'cl2',         label: 'Chlore libre',unit: 'mg/L',        lo: 0,   hi: 0   },
+  { key: 'cl2',         label: 'Chlore libre',unit: 'mg/L',        lo: 0,   hi: 0.1, decimals: 2 },
 ];
 
 // Eaux en bouteille (Ca hardness & alk en mg/L CaCO₃, approximatif)
@@ -353,13 +353,13 @@ function _distBar(ideal, acceptable, horPlage, tres, total) {
     </div>`;
 }
 
-function _paramBar({ label, unit, lo, hi }, val) {
+function _paramBar({ label, unit, lo, hi, decimals = 1 }, val) {
   const missing = val == null;
   const inRange = !missing && val >= lo && val <= hi;
   const color   = missing ? '#555' : inRange ? '#2ecc71' : '#f39c12';
   const pct     = missing ? 0 : Math.min(100, (val / (Math.max(hi, 1) * 1.5)) * 100);
   const status  = missing ? '—' : inRange ? '✓ idéal' : '⚠ hors plage';
-  const valStr  = missing ? '' : ` <span style="color:#555">(${+val.toFixed(1)} ${unit})</span>`;
+  const valStr  = missing ? '' : ` <span style="color:#555">(${val.toFixed(decimals)} ${unit})</span>`;
 
   return `
     <div class="param-item">
