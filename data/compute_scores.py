@@ -374,8 +374,20 @@ def build_communes_json() -> dict:
         output.append(entry)
 
     _log(f"\nStats : udi_6m={n_udi6m} | udi_2ans={n_udi2y} | sans_score={n_none}")
+
+    # Classement par score décroissant (rang 1 = meilleure eau)
+    scored = sorted(
+        [e for e in output if e["score"] is not None],
+        key=lambda x: x["score"],
+        reverse=True,
+    )
+    for rank, entry in enumerate(scored, 1):
+        entry["rank"] = rank
+    _log(f"Classement : {len(scored)} communes scorées")
+
     return {
         "communes":     output,
+        "total_scored": len(scored),
         "generated_at": datetime.now(timezone.utc).isoformat(),
     }
 
