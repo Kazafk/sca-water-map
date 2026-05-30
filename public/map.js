@@ -126,7 +126,14 @@ function _toggleTheme() {
   localStorage.setItem('sca-theme', _theme);
   document.body.dataset.theme = _theme === 'light' ? 'light' : '';
   document.getElementById('btn-theme').textContent = _theme === 'light' ? '🌙' : '☀';
-  _updateGeoColors(); // pre-update colors before style reload
+  _updateGeoColors();
+  // Listen once for the style reload, then re-add layers
+  map.once('style.load', () => {
+    _setupMapLayers();
+    _applyViewMode();
+    if (activeCommune)
+      map.setFilter('communes-selected', ['==', ['get', 'code'], activeCommune.insee]);
+  });
   map.setStyle(_theme === 'light' ? LIGHT_MAP_STYLE : DARK_MAP_STYLE);
 }
 
@@ -350,18 +357,14 @@ async function init() {
 
   map.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'top-right');
 
-  // Re-add layers on every style load (initial + theme switch)
-  map.on('style.load', () => {
+  // Initial layer setup on first load
+  map.on('load', () => {
     _setupMapLayers();
     _applyViewMode();
 
-    // Restore selection highlight after theme switch
-    if (activeCommune)
-      map.setFilter('communes-selected', ['==', ['get', 'code'], activeCommune.insee]);
-
     if (!_mapInitialized) {
       _mapInitialized = true;
-      // URL restore (only on first load)
+      // URL restore
       const params      = new URLSearchParams(location.search);
       const initCommune = params.get('commune');
       const initDept    = params.get('dept');
@@ -387,7 +390,7 @@ async function init() {
     }
   });
 
-  // Layer event handlers — registered once, survive style reloads
+  // Layer event handlers — registered once on map instance
   const tooltip = document.getElementById('map-tooltip');
 
   map.on('mousemove', 'communes-fill', (e) => {
