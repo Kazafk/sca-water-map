@@ -401,7 +401,7 @@ function _scaChart(params, pts, pointColor, showBottled = false) {
 
   const avgPoint = px != null && py != null ? `
     <line x1="${px.toFixed(1)}" y1="${py.toFixed(1)}" x2="${ix.toFixed(1)}" y2="${iy.toFixed(1)}"
-          stroke="#888" stroke-width=".8" stroke-dasharray="2,1.5"/>
+          style="stroke:var(--muted)" stroke-width=".8" stroke-dasharray="2,1.5"/>
     <circle cx="${px.toFixed(1)}" cy="${py.toFixed(1)}" r="${nPts > 1 ? 5 : 4}"
             fill="${pointColor}" stroke="white" stroke-width="1.2">
       ${nPts > 1 ? `<title>Moyenne · ${nPts} point${nPts > 1 ? 's' : ''}</title>` : ''}
@@ -424,21 +424,21 @@ function _scaChart(params, pts, pointColor, showBottled = false) {
 
   return `
   <svg viewBox="0 0 ${W} ${H}" style="width:100%">
-    <rect width="${W}" height="${H}" fill="#0d1117" rx="4"/>
+    <rect width="${W}" height="${H}" style="fill:var(--bg)" rx="4"/>
     <rect x="${sx(40).toFixed(1)}" y="${sy(85).toFixed(1)}"
           width="${(sx(75)-sx(40)).toFixed(1)}" height="${(sy(17)-sy(85)).toFixed(1)}"
-          fill="#f39c12" fill-opacity=".08" stroke="#f39c12" stroke-width=".8" stroke-dasharray="3,2"/>
+          fill="var(--orange)" fill-opacity=".1" stroke="var(--orange)" stroke-width=".8" stroke-dasharray="3,2"/>
     <rect x="${sx(40).toFixed(1)}" y="${sy(85).toFixed(1)}"
           width="${(sx(70)-sx(40)).toFixed(1)}" height="${(sy(50)-sy(85)).toFixed(1)}"
-          fill="#2ecc71" fill-opacity=".15" stroke="#2ecc71" stroke-width="1"/>
+          fill="var(--green)" fill-opacity=".15" stroke="var(--green)" stroke-width="1"/>
     <text x="${sx(42).toFixed(1)}" y="${sy(83).toFixed(1)}"
-          fill="#2ecc71" font-size="5.5" font-family="sans-serif">Idéal</text>
-    <circle cx="${ix.toFixed(1)}" cy="${iy.toFixed(1)}" r="3" fill="#2ecc71" fill-opacity=".5"/>
+          style="fill:var(--green)" font-size="5.5" font-family="sans-serif">Idéal</text>
+    <circle cx="${ix.toFixed(1)}" cy="${iy.toFixed(1)}" r="3" fill="var(--green)" fill-opacity=".5"/>
     ${bottledPts}
     ${indivPts}
     ${avgPoint}
-    <text x="${(W/2).toFixed(1)}" y="${H-2}" fill="#444" font-size="5.5" text-anchor="middle" font-family="sans-serif">Alkalinity (mg/L CaCO₃)</text>
-    <text x="8" y="${(PT+CH/2).toFixed(1)}" fill="#444" font-size="5.5" text-anchor="middle" font-family="sans-serif"
+    <text x="${(W/2).toFixed(1)}" y="${H-2}" style="fill:var(--muted)" font-size="5.5" text-anchor="middle" font-family="sans-serif">Alkalinity (mg/L CaCO₃)</text>
+    <text x="8" y="${(PT+CH/2).toFixed(1)}" style="fill:var(--muted)" font-size="5.5" text-anchor="middle" font-family="sans-serif"
           transform="rotate(-90,8,${(PT+CH/2).toFixed(1)})">Ca Hardness</text>
   </svg>`;
 }
@@ -462,11 +462,11 @@ function _scaChartCompare(c1, c2) {
 
   return `
   <svg viewBox="0 0 ${W} ${H}" style="width:100%">
-    <rect width="${W}" height="${H}" fill="#0d1117" rx="4"/>
+    <rect width="${W}" height="${H}" style="fill:var(--bg)" rx="4"/>
     <rect x="${sx(40).toFixed(1)}" y="${sy(85).toFixed(1)}"
           width="${(sx(70)-sx(40)).toFixed(1)}" height="${(sy(50)-sy(85)).toFixed(1)}"
-          fill="#2ecc71" fill-opacity=".15" stroke="#2ecc71" stroke-width="1"/>
-    <circle cx="${ix.toFixed(1)}" cy="${iy.toFixed(1)}" r="3" fill="#2ecc71" fill-opacity=".5"/>
+          fill="var(--green)" fill-opacity=".15" stroke="var(--green)" stroke-width="1"/>
+    <circle cx="${ix.toFixed(1)}" cy="${iy.toFixed(1)}" r="3" fill="var(--green)" fill-opacity=".5"/>
     ${pt(c1, colorFromScore(c1.score))}
     ${pt(c2, colorFromScore(c2.score))}
     <text x="${(W/2).toFixed(1)}" y="${H-2}" fill="#444" font-size="5.5" text-anchor="middle" font-family="sans-serif">Alkalinity (mg/L CaCO₃)</text>
