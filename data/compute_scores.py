@@ -24,7 +24,10 @@ PROJECT_ROOT           = os.path.dirname(os.path.dirname(os.path.abspath(__file_
 OUTPUT_FILE            = os.path.join(PROJECT_ROOT, "public", "communes.json")
 MAX_CHART_POINTS       = 30
 LOOKBACK_DAYS          = 180   # fenêtre principale
-LOOKBACK_DAYS_FALLBACK = 730   # fenêtre étendue pour fallback Ca/TAC
+LOOKBACK_DAYS_FALLBACK = 730   # fenêtre étendue pour fallback Ca/TAC/Na/Cl/Cl2
+
+# Paramètres pour lesquels on fait aussi un fetch étendu 2 ans
+EXT_PARAMS = ("calcium", "tac", "na", "cl", "cl2")
 
 
 def _log(msg):
@@ -252,19 +255,21 @@ def build_communes_json() -> dict:
                 completed += 1
                 _log(f"[{completed}/7] {key} complete")
 
-    _log(f"\nPhase 2 — fetch étendu {LOOKBACK_DAYS_FALLBACK}j (Ca + TAC, index réseau)...")
-    raw_reseau_ext: dict[str, dict] = {}
+    _log(f"\nPhase 2 — fetch étendu {LOOKBACK_DAYS_FALLBACK}j ({', '.join(EXT_PARAMS)})...")
+    raw_commune_ext: dict[str, dict] = {}
+    raw_reseau_ext:  dict[str, dict] = {}
 
-    with ThreadPoolExecutor(max_workers=2) as executor:
+    with ThreadPoolExecutor(max_workers=5) as executor:
         ext_futures = {
             executor.submit(fetch_all_per_commune, item, LOOKBACK_DAYS_FALLBACK): item[0]
             for item in PARAM_CODES.items()
-            if item[0] in ("calcium", "tac")
+            if item[0] in EXT_PARAMS
         }
         for future in as_completed(ext_futures):
-            key, _, r_idx = future.result()
-            raw_reseau_ext[key] = r_idx
-            _log(f"[ext] {key} — {len(r_idx)} réseaux indexés")
+            key, c_idx, r_idx = future.result()
+            raw_commune_ext[key] = c_idx
+            raw_reseau_ext[key]  = r_idx
+            _log(f"[ext] {key} — {len(c_idx)} communes, {len(r_idx)} réseaux")
 
     # Base : union(mesures directes, communes_udi)
     all_communes: dict[str, str] = {}
@@ -290,27 +295,32 @@ def build_communes_json() -> dict:
 
         for k in PARAM_CODES:
             val, date = _avg_from(raw_commune[k], code)
+            # Niveau 1b : mesure directe 2 ans (Na/Cl/Cl2 mesurés peu fréquemment)
+            if val is None and k in EXT_PARAMS:
+                val, date = _avg_from(raw_commune_ext.get(k, {}), code)
             raw_avgs[k]   = val
             raw_latest[k] = date
 
-        # Niveau 2 : réseau 6 mois
-        for k in ("calcium", "tac"):
+        # Niveau 2 : réseau 6 mois (Ca, TAC + Na, Cl, Cl2)
+        for k in ("calcium", "tac", "na", "cl", "cl2"):
             if raw_avgs.get(k) is None:
                 val, date, rnom = _reseau_lookup(commune_udi_map, raw_reseau[k], code)
                 if val is not None:
                     raw_avgs[k]   = val
                     raw_latest[k] = date
-                    fallback[k]   = rnom
+                    if k in ("calcium", "tac"):
+                        fallback[k] = rnom
 
-        # Niveau 3 : réseau 2 ans
-        for k in ("calcium", "tac"):
+        # Niveau 3 : réseau 2 ans (Ca, TAC + Na, Cl, Cl2)
+        for k in ("calcium", "tac", "na", "cl", "cl2"):
             if raw_avgs.get(k) is None:
-                val, date, rnom = _reseau_lookup(commune_udi_map, raw_reseau_ext[k], code)
+                val, date, rnom = _reseau_lookup(commune_udi_map, raw_reseau_ext.get(k, {}), code)
                 if val is not None:
                     raw_avgs[k]   = val
                     raw_latest[k] = date
-                    fallback[k]   = rnom
-                    fallback_ext.add(k)
+                    if k in ("calcium", "tac"):
+                        fallback[k] = rnom
+                        fallback_ext.add(k)
 
         if fallback_ext:
             n_udi2y += 1
@@ -330,8 +340,11 @@ def build_communes_json() -> dict:
             "cl2":         raw_latest.get("cl2"),
         }
 
-        ca_ms  = raw_commune["calcium"].get(code, {}).get("measurements", [])
-        tac_ms = raw_commune["tac"].get(code, {}).get("measurements", [])
+        # Points pour le graphique : 6 mois direct, puis 2 ans direct, puis réseau
+        ca_ms  = (raw_commune["calcium"].get(code, {}).get("measurements", [])
+                  or raw_commune_ext.get("calcium", {}).get(code, {}).get("measurements", []))
+        tac_ms = (raw_commune["tac"].get(code, {}).get("measurements", [])
+                  or raw_commune_ext.get("tac", {}).get(code, {}).get("measurements", []))
 
         if not ca_ms and "calcium" in fallback:
             for rc in commune_udi_map.get(code, {}):
