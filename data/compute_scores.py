@@ -2,7 +2,9 @@ import math
 import json
 import os
 import time
-from datetime import datetime, timezone
+import sys
+from datetime import datetime, timezone, timedelta
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 import requests
 
@@ -21,45 +23,78 @@ PARAM_CODES = {
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUTPUT_FILE  = os.path.join(PROJECT_ROOT, "public", "communes.json")
 
+MAX_CHART_POINTS = 30
+LOOKBACK_DAYS    = 180  # 6 months
 
-def fetch_latest_per_commune(param_code: str) -> dict:
-    """Return {code_insee: {nom, value, date}} — most recent measurement per commune."""
+
+def _log(msg):
+    print(msg, flush=True)
+
+
+def _get_with_retry(params, retries=4, timeout=60):
+    for attempt in range(retries):
+        try:
+            resp = requests.get(BASE_URL, params=params, timeout=timeout)
+            resp.raise_for_status()
+            return resp.json()
+        except (requests.exceptions.Timeout, requests.exceptions.ConnectionError):
+            if attempt == retries - 1:
+                raise
+            wait = 5 * 2 ** attempt
+            _log(f"    timeout, retry in {wait}s...")
+            time.sleep(wait)
+
+
+def fetch_all_per_commune(key_and_code: tuple) -> tuple:
+    """Fetch all measurements for one parameter. Returns (key, results_dict)."""
+    key, param_code = key_and_code
+    since = (datetime.now(timezone.utc) - timedelta(days=LOOKBACK_DAYS)).strftime("%Y-%m-%d")
     results = {}
     page    = 1
 
     while True:
-        resp = requests.get(BASE_URL, params={
-            "code_parametre": param_code,
-            "fields": "code_commune,nom_commune,resultat_numerique,date_prelevement",
-            "size": 10000,
-            "sort": "-date_prelevement",
-            "page": page,
-        }, timeout=30)
-        resp.raise_for_status()
-        data = resp.json()
+        data = _get_with_retry({
+            "code_parametre":       param_code,
+            "fields":               "code_commune,nom_commune,resultat_numerique,date_prelevement,nom_uge,code_prelevement",
+            "size":                 10000,
+            "date_min_prelevement": since,
+            "page":                 page,
+        })
+
+        count = data.get("count", 0)
+        total_pages = math.ceil(count / 10000) if count else 1
 
         for item in data.get("data", []):
             code = item.get("code_commune")
-            if not code or code in results:
+            val  = item.get("resultat_numerique")
+            if not code or val is None:
                 continue
-            val = item.get("resultat_numerique")
-            if val is not None:
-                results[code] = {
-                    "nom":   item.get("nom_commune", ""),
-                    "value": float(val),
-                    "date":  item.get("date_prelevement", ""),
-                }
+            if code not in results:
+                results[code] = {"nom": item.get("nom_commune", ""), "measurements": []}
+            results[code]["measurements"].append({
+                "v":  round(float(val), 3),
+                "d":  (item.get("date_prelevement") or "")[:10],
+                "l":  item.get("nom_uge") or "",
+                "cp": item.get("code_prelevement") or "",
+            })
 
-        if page * 10000 >= data.get("count", 0):
+        _log(f"  [{key}] page {page}/{total_pages} — {len(results)} communes")
+
+        if page >= total_pages:
             break
         page += 1
-        time.sleep(0.5)
+        time.sleep(0.3)
 
-    return results
+    _log(f"  [{key}] done — {len(results)} communes, {sum(len(v['measurements']) for v in results.values())} mesures")
+    return key, results
+
+
+def _avg(values):
+    vals = [v for v in values if v is not None]
+    return sum(vals) / len(vals) if vals else None
 
 
 def convert_params(raw: dict) -> dict:
-    """Convert raw Hub'Eau values to SCA units."""
     ca   = raw.get("calcium")
     tac  = raw.get("tac")
     cond = raw.get("conductivite")
@@ -125,43 +160,85 @@ def score_final(params: dict):
 
 
 def build_communes_json() -> dict:
-    print("Fetching Hub'Eau data...")
+    _log(f"Fetching Hub'Eau data (last {LOOKBACK_DAYS} days, parallel)...")
     raw_data: dict[str, dict] = {}
 
-    for key, code in PARAM_CODES.items():
-        print(f"  → {key} ({code})...")
-        raw_data[key] = fetch_latest_per_commune(code)
-        time.sleep(1.0)
+    # Fetch all 7 parameters in parallel
+    with ThreadPoolExecutor(max_workers=7) as executor:
+        futures = {executor.submit(fetch_all_per_commune, item): item[0]
+                   for item in PARAM_CODES.items()}
+        completed = 0
+        for future in as_completed(futures):
+            key, results = future.result()
+            raw_data[key] = results
+            completed += 1
+            _log(f"[{completed}/7] {key} complete")
 
     all_communes: dict[str, str] = {}
-    for key, cm in raw_data.items():
+    for cm in raw_data.values():
         for code, info in cm.items():
             if code not in all_communes:
                 all_communes[code] = info["nom"]
 
-    print(f"Scoring {len(all_communes)} communes...")
+    total = len(all_communes)
+    _log(f"Scoring {total} communes...")
     output = []
 
-    for code, nom in all_communes.items():
-        raw    = {k: raw_data[k].get(code, {}).get("value") for k in PARAM_CODES}
-        dates_raw = {k: raw_data[k].get(code, {}).get("date")  for k in PARAM_CODES}
-        params = convert_params(raw)
+    for i, (code, nom) in enumerate(all_communes.items(), 1):
+        if i % 1000 == 0:
+            _log(f"  {i}/{total} ({100*i//total}%)")
+
+        raw_avgs   = {}
+        raw_latest = {}
+        for k in PARAM_CODES:
+            commune_data = raw_data[k].get(code)
+            if commune_data and commune_data["measurements"]:
+                ms = commune_data["measurements"]
+                raw_avgs[k]   = _avg([m["v"] for m in ms])
+                raw_latest[k] = max(m["d"] for m in ms)
+            else:
+                raw_avgs[k]   = None
+                raw_latest[k] = None
+
+        params = convert_params(raw_avgs)
         dates  = {
-            "ca_hardness": dates_raw.get("calcium"),
-            "alkalinity":  dates_raw.get("tac"),
-            "ph":          dates_raw.get("ph"),
-            "tds":         dates_raw.get("conductivite"),
-            "na":          dates_raw.get("na"),
-            "cl":          dates_raw.get("cl"),
-            "cl2":         dates_raw.get("cl2"),
+            "ca_hardness": raw_latest.get("calcium"),
+            "alkalinity":  raw_latest.get("tac"),
+            "ph":          raw_latest.get("ph"),
+            "tds":         raw_latest.get("conductivite"),
+            "na":          raw_latest.get("na"),
+            "cl":          raw_latest.get("cl"),
+            "cl2":         raw_latest.get("cl2"),
         }
-        output.append({
-            "insee": code,
-            "nom":   nom,
-            "score": score_final(params),
+
+        ca_ms     = raw_data["calcium"].get(code, {}).get("measurements", [])
+        tac_ms    = raw_data["tac"].get(code, {}).get("measurements", [])
+        tac_by_cp = {m["cp"]: m for m in tac_ms if m["cp"]}
+
+        pts = []
+        for m in ca_ms:
+            tac_m = tac_by_cp.get(m["cp"]) if m["cp"] else None
+            pts.append({
+                "ca":  round(m["v"] * 2.497, 1),
+                "alk": round(tac_m["v"] * 10.0, 1) if tac_m else None,
+                "d":   m["d"],
+                "l":   m["l"],
+            })
+
+        pts.sort(key=lambda p: p["d"], reverse=True)
+        pts = pts[:MAX_CHART_POINTS]
+
+        entry = {
+            "insee":  code,
+            "nom":    nom,
+            "score":  score_final(params),
             "params": params,
             "dates":  dates,
-        })
+        }
+        if pts:
+            entry["pts"] = pts
+
+        output.append(entry)
 
     return {
         "communes":     output,
@@ -170,8 +247,10 @@ def build_communes_json() -> dict:
 
 
 if __name__ == "__main__":
+    t0   = time.time()
     data = build_communes_json()
     os.makedirs(os.path.dirname(OUTPUT_FILE), exist_ok=True)
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, separators=(",", ":"))
-    print(f"✓ {len(data['communes'])} communes → {OUTPUT_FILE}")
+    elapsed = round(time.time() - t0)
+    _log(f"done: {len(data['communes'])} communes -> {OUTPUT_FILE} ({elapsed}s)")
