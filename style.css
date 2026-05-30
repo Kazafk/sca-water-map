@@ -153,6 +153,45 @@ body {
   color: var(--muted);
 }
 
+/* Map tooltip */
+#map-tooltip {
+  position: absolute;
+  background: rgba(13,17,23,.95);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-size: 11px;
+  pointer-events: none;
+  display: none;
+  z-index: 10;
+  white-space: nowrap;
+}
+
+/* Topbar icon buttons */
+.btn-icon {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  color: var(--text);
+  padding: 4px 8px;
+  font-size: 11px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.btn-icon:hover { border-color: var(--blue); color: var(--blue); }
+
+/* Dept panel */
+.dept-commune-row { display: flex; align-items: center; gap: 6px; padding: 3px 0; font-size: 11px; }
+.dept-commune-rank { color: var(--muted); font-size: 10px; width: 14px; text-align: right; }
+.dept-commune-nom  { flex: 1; }
+
+.dist-bar { display: flex; height: 8px; border-radius: 4px; overflow: hidden; margin-bottom: 5px; }
+.dist-bar div { height: 100%; }
+.dist-legend { display: flex; gap: 8px; flex-wrap: wrap; font-size: 9px; color: var(--muted); }
+
+/* Variability note */
+.variability-note { font-size: 9px; color: var(--muted); text-align: center; margin-top: 4px; }
+
 @media (max-width: 768px) {
   #main-layout     { flex-direction: column; }
   #map-container   { flex: 1; }
