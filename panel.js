@@ -240,7 +240,7 @@ function _seasonalityChart(items, code) {
     </svg>`;
 }
 
-function _renderDataTab(rawData, selectedCode) {
+function _renderDataTab(rawData, selectedCode, communeCaPts = []) {
   if (rawData === null) {
     return `<div class="panel-section">
       <div class="data-loading">
@@ -284,7 +284,12 @@ function _renderDataTab(rawData, selectedCode) {
       }).join('')}</div>`
     : '';
 
-  const chart = selectedCode ? _seasonalityChart(items, selectedCode) : '';
+  // For Ca (1374), use commune-specific historical pts from communes.json.
+  // Hub'Eau resultats_dis is not filtered by commune, so historical data is global.
+  const chartData = (selectedCode === '1374' && communeCaPts.length >= 2)
+    ? communeCaPts
+    : items;
+  const chart = selectedCode ? _seasonalityChart(chartData, selectedCode) : '';
   const label = selectedCode
     ? (SANDRE_LABELS[selectedCode] ?? items.find(r => r.code_parametre === selectedCode)?.libelle_parametre ?? selectedCode)
     : '';
@@ -341,6 +346,16 @@ export function updatePanel(commune, generatedAt, totalScored, { showBottled = f
     : 9999;
   const freshnessColor = ageDays < 180 ? '#2ecc71' : ageDays < 365 ? '#f39c12' : '#e74c3c';
   const freshnessTitle = ageDays < 180 ? 'données récentes' : ageDays < 365 ? 'données 6–12 mois' : 'données > 1 an';
+
+  // Ca pts from communes.json → formatted as Hub'Eau-like records for the seasonality chart
+  const communeCaPts = (pts || [])
+    .filter(p => p.v != null && p.d)
+    .map(p => ({
+      code_parametre: '1374',
+      resultat_numerique: p.v,
+      date_prelevement: p.d.length === 10 ? p.d + 'T12:00:00Z' : p.d,
+      libelle_unite: 'mg/L',
+    }));
 
   const nMeasures  = pts?.length ?? 0;
   const validPts   = (pts || []).filter(p => p.ca != null && p.alk != null);
@@ -416,7 +431,7 @@ export function updatePanel(commune, generatedAt, totalScored, { showBottled = f
     </div>
 
     ${_renderTabs(activeTab)}
-    ${activeTab === 'params' ? paramsContent : _renderDataTab(rawData ?? null, selectedCode)}
+    ${activeTab === 'params' ? paramsContent : _renderDataTab(rawData ?? null, selectedCode, communeCaPts)}
   `;
 }
 

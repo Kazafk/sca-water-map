@@ -74,10 +74,7 @@ let _mapInitialized = false;
 async function _fetchRawData(insee) {
   if (_rawDataCache[insee]) return _rawDataCache[insee];
   try {
-    // Fetch 5 years of data sorted oldest-first — the monthly aggregation in the chart
-    // then produces seasonal buckets even when many stations measure on the same day.
-    const since = new Date(Date.now() - 5 * 365 * 24 * 3600 * 1000).toISOString().slice(0, 10);
-    const url = `https://hubeau.eaufrance.fr/api/v1/qualite_eau_potable/resultats_dis?code_commune_insee=${insee}&size=500&date_min_prelevement=${since}&sort=date_prelevement&order=asc`;
+    const url = `https://hubeau.eaufrance.fr/api/v1/qualite_eau_potable/resultats_dis?code_commune_insee=${insee}&size=200`;
     const r = await fetch(url);
     if (!r.ok) throw new Error(`HTTP ${r.status}`);
     const data = await r.json();
