@@ -95,7 +95,102 @@ function _treatmentAdvice(params) {
   return `<div class="panel-section"><div class="panel-section-title">Conseils traitement</div>${rows}</div>`;
 }
 
-export function updatePanel(commune, generatedAt, totalScored, { showBottled = false } = {}) {
+function _renderTabs(activeTab) {
+  return `<div class="panel-tabs">
+    <button class="panel-tab${activeTab === 'params' ? ' active' : ''}" data-action="switch-tab" data-tab="params">Paramètres</button>
+    <button class="panel-tab${activeTab === 'data'   ? ' active' : ''}" data-action="switch-tab" data-tab="data">Données brutes</button>
+  </div>`;
+}
+
+// SANDRE param codes → display labels (for Hub'Eau resultats_dis)
+const SANDRE_LABELS = {
+  '1302': 'pH',
+  '1303': 'Conductivité (µS/cm)',
+  '1319': 'Sodium (mg/L)',
+  '1335': 'TAC / Alcalinité (mg/L)',
+  '1337': 'Chlorures (mg/L)',
+  '1338': 'Calcium (mg/L)',
+  '1339': 'Magnésium (mg/L)',
+  '1340': 'Dureté TH (°f)',
+  '1350': 'Titre hydrotimétrique TH (°f)',
+  '1374': 'Résidu sec — TDS (mg/L)',
+  '1015': 'Chlore libre (mg/L)',
+  '1016': 'Chlore total (mg/L)',
+};
+
+const SANDRE_PRIORITY = ['1338','1335','1302','1374','1319','1337','1015','1016','1303','1350','1340','1339'];
+
+function _renderDataTab(rawData) {
+  if (rawData === null) {
+    return `<div class="panel-section">
+      <div class="data-loading">
+        <div class="data-spinner"></div>
+        <div style="font-size:11px;color:var(--muted)">Chargement Hub'Eau…</div>
+      </div>
+    </div>`;
+  }
+
+  if (rawData?.error) {
+    return `<div class="panel-section">
+      <div class="panel-alert">⚠ Impossible de charger : ${_esc(rawData.error)}</div>
+    </div>`;
+  }
+
+  const items = rawData?.data ?? [];
+  if (!items.length) {
+    return `<div class="panel-section">
+      <div style="color:var(--muted);font-size:11px;text-align:center;padding:16px 0">
+        Aucune mesure disponible via Hub'Eau
+      </div>
+    </div>`;
+  }
+
+  // Group by code_parametre, keep last 6 per param
+  const byCode = {};
+  for (const r of items) {
+    const code = r.code_parametre;
+    if (!byCode[code]) byCode[code] = [];
+    if (byCode[code].length < 6) byCode[code].push(r);
+  }
+
+  // Sort params: priority list first, then alphabetical by libelle
+  const codes = Object.keys(byCode).sort((a, b) => {
+    const ia = SANDRE_PRIORITY.indexOf(a), ib = SANDRE_PRIORITY.indexOf(b);
+    if (ia !== -1 && ib !== -1) return ia - ib;
+    if (ia !== -1) return -1;
+    if (ib !== -1) return  1;
+    return (byCode[a][0].libelle_parametre ?? a).localeCompare(byCode[b][0].libelle_parametre ?? b);
+  });
+
+  const total = rawData.count ?? items.length;
+
+  return codes.map(code => {
+    const rows    = byCode[code];
+    const label   = SANDRE_LABELS[code] ?? (rows[0].libelle_parametre ?? `Code ${code}`);
+    const rowsHtml = rows.map(r => {
+      const d   = r.date_prelevement
+        ? new Date(r.date_prelevement).toLocaleDateString('fr-FR', { day:'2-digit', month:'2-digit', year:'2-digit' })
+        : '—';
+      const val = r.resultat_numerique != null
+        ? String(r.resultat_numerique)
+        : (r.resultat_alphanumerique ?? '—');
+      const lieu = (r.nom_udi ?? r.libelle_commune ?? '').slice(0, 28);
+      return `<div class="raw-data-row">
+        <span class="raw-data-date">${d}</span>
+        <span class="raw-data-val">${_esc(val)}</span>
+        <span class="raw-data-lieu" title="${_esc(lieu)}">${_esc(lieu)}</span>
+      </div>`;
+    }).join('');
+    return `<div class="panel-section">
+      <div class="panel-section-title">${_esc(label)}</div>
+      ${rowsHtml}
+    </div>`;
+  }).join('') + `<div style="padding:8px 14px;font-size:9px;color:var(--muted);text-align:center">
+    ${total} mesure${total > 1 ? 's' : ''} au total · <a href="https://hubeau.eaufrance.fr" target="_blank" rel="noopener" style="color:var(--muted)">Hub'Eau</a>
+  </div>`;
+}
+
+export function updatePanel(commune, generatedAt, totalScored, { showBottled = false, activeTab = 'params', rawData = undefined } = {}) {
   document.getElementById('panel-empty').hidden  = true;
   const content = document.getElementById('panel-content');
   content.hidden = false;
@@ -130,8 +225,6 @@ export function updatePanel(commune, generatedAt, totalScored, { showBottled = f
     ? `<div class="panel-alert" style="font-size:11px">ℹ️ Ca/TAC : données du réseau <b>${_esc(commune.reseau)}</b></div>`
     : '';
 
-  const arsUrl = `https://hubeau.eaufrance.fr/api/v1/qualite_eau_potable/resultats_dis?code_commune_insee=${insee}&size=20`;
-
   const chartNote = (() => {
     if (nPaired >= 3) {
       const caVals  = validPts.map(p => p.ca);
@@ -151,27 +244,7 @@ export function updatePanel(commune, generatedAt, totalScored, { showBottled = f
     ${showBottled ? '🍾 Masquer bouteilles' : '🍾 Bouteilles'}
   </button>`;
 
-  content.innerHTML = `
-    <div class="panel-header">
-      <div class="panel-score-row">
-        <div>
-          <div class="panel-commune">${_esc(nom)}</div>
-          <div class="panel-meta">Dép. ${dept} · <span style="color:${freshnessColor}" title="${freshnessTitle}">${dateStr}</span> ${_esc(measureLabel)}</div>
-          ${rankLabel ? `<div class="panel-rank">${rankLabel}</div>` : ''}
-        </div>
-        <div>
-          <div class="panel-score-val" style="color:${color}">
-            ${score != null ? Math.round(score * 100) + ' %' : 'N/A'}
-          </div>
-          <span class="panel-score-lbl" style="background:${color}">${label}</span>
-        </div>
-      </div>
-      <div class="panel-actions">
-        <button class="btn-panel-action" data-action="compare">⚖ Comparer</button>
-        <a class="btn-panel-action" href="${arsUrl}" target="_blank" rel="noopener" title="Données brutes Hub'Eau (JSON)">📊 Hub'Eau</a>
-      </div>
-    </div>
-
+  const paramsContent = `
     <div class="panel-section">
       <div class="panel-section-title" style="display:flex;justify-content:space-between;align-items:center">
         SCA Water Chart
@@ -191,6 +264,30 @@ export function updatePanel(commune, generatedAt, totalScored, { showBottled = f
     ${reseauNote}
     ${ca_from_th ? `<div class="panel-alert">⚠ <b>Ca Hardness estimé via Titre Hydrotimétrique</b> — calcul indirect (TH × 0,65), imprécision ±25 %. Score indicatif : la mesure directe du calcium n'est pas disponible dans Hub'Eau.</div>` : ''}
     ${flags.map(f => FLAG_MSG[f] ? `<div class="panel-alert">${FLAG_MSG[f](params)}</div>` : '').join('')}
+  `;
+
+  content.innerHTML = `
+    <div class="panel-header">
+      <div class="panel-score-row">
+        <div>
+          <div class="panel-commune">${_esc(nom)}</div>
+          <div class="panel-meta">Dép. ${dept} · <span style="color:${freshnessColor}" title="${freshnessTitle}">${dateStr}</span> ${_esc(measureLabel)}</div>
+          ${rankLabel ? `<div class="panel-rank">${rankLabel}</div>` : ''}
+        </div>
+        <div>
+          <div class="panel-score-val" style="color:${color}">
+            ${score != null ? Math.round(score * 100) + ' %' : 'N/A'}
+          </div>
+          <span class="panel-score-lbl" style="background:${color}">${label}</span>
+        </div>
+      </div>
+      <div class="panel-actions">
+        <button class="btn-panel-action" data-action="compare">⚖ Comparer</button>
+      </div>
+    </div>
+
+    ${_renderTabs(activeTab)}
+    ${activeTab === 'params' ? paramsContent : _renderDataTab(rawData ?? null)}
   `;
 }
 

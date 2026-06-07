@@ -367,6 +367,58 @@ body {
 }
 .btn-bottled:hover, .btn-bottled.active { border-color: #9b59b6; color: #9b59b6; }
 
+/* Panel tabs */
+.panel-tabs {
+  display: flex;
+  border-bottom: 1px solid var(--border);
+  flex-shrink: 0;
+}
+.panel-tab {
+  flex: 1;
+  padding: 8px 4px;
+  font-size: 11px;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  color: var(--muted);
+  cursor: pointer;
+  transition: color .15s, border-color .15s;
+}
+.panel-tab.active { color: var(--text); border-bottom-color: var(--blue); }
+.panel-tab:hover:not(.active) { color: var(--text); }
+
+/* Raw data rows */
+.raw-data-row {
+  display: flex;
+  gap: 6px;
+  padding: 4px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 10px;
+  align-items: baseline;
+}
+.raw-data-row:last-child { border-bottom: none; }
+.raw-data-date { color: var(--muted); width: 54px; flex-shrink: 0; font-variant-numeric: tabular-nums; }
+.raw-data-val  { font-weight: bold; color: var(--text); min-width: 52px; flex-shrink: 0; }
+.raw-data-lieu { color: var(--muted); flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 9px; }
+
+/* Data loading spinner */
+.data-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 24px 0;
+}
+.data-spinner {
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--border);
+  border-top-color: var(--blue);
+  border-radius: 50%;
+  animation: spin .7s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
 /* SCA Water Chart — animations */
 @keyframes scaDotIn {
   from { opacity: 0; transform: scale(0); }

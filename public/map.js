@@ -61,10 +61,28 @@ let compareMode   = false;
 let compareBase   = null;
 let showBottled   = false;
 let activeCommune = null;
+let activeTab     = 'params';
+let _rawDataCache = {};
 let _geojson      = null;
 let _deptGeojson  = null;
 let _theme        = localStorage.getItem('sca-theme') || 'dark';
 let _mapInitialized = false;
+
+// --- Hub'Eau raw data fetch ---
+
+async function _fetchRawData(insee) {
+  if (_rawDataCache[insee]) return _rawDataCache[insee];
+  try {
+    const url = `https://hubeau.eaufrance.fr/api/v1/qualite_eau_potable/resultats_dis?code_commune_insee=${insee}&size=200`;
+    const r = await fetch(url);
+    if (!r.ok) throw new Error(`HTTP ${r.status}`);
+    const data = await r.json();
+    _rawDataCache[insee] = data;
+    return data;
+  } catch (e) {
+    return { error: e.message, data: [], count: 0 };
+  }
+}
 
 // --- History ---
 
@@ -335,6 +353,7 @@ function selectCommune(commune) {
   }
 
   activeCommune = commune;
+  activeTab     = 'params';
   showBottled   = false;
   searchEl.value = commune.nom;
   closeDropdown();
@@ -344,7 +363,7 @@ function selectCommune(commune) {
   _saveHistory(commune);
   _pushState(commune);
   sheet?.open();
-  updatePanel(commune, generatedAt, totalScored, { showBottled });
+  updatePanel(commune, generatedAt, totalScored, { showBottled, activeTab });
 }
 
 // --- Search ---
@@ -574,7 +593,21 @@ async function init() {
     const action = e.target.closest('[data-action]')?.dataset?.action;
     if (!action) return;
 
-    if (action === 'compare' && activeCommune) {
+    if (action === 'switch-tab' && activeCommune) {
+      const tab = e.target.closest('[data-tab]')?.dataset?.tab;
+      if (!tab) return;
+      activeTab = tab;
+      if (tab === 'data') {
+        // Show loading state immediately, then fetch
+        updatePanel(activeCommune, generatedAt, totalScored, { showBottled, activeTab: 'data', rawData: null });
+        _fetchRawData(activeCommune.insee).then(data => {
+          if (activeTab === 'data' && activeCommune)
+            updatePanel(activeCommune, generatedAt, totalScored, { showBottled, activeTab: 'data', rawData: data });
+        });
+      } else {
+        updatePanel(activeCommune, generatedAt, totalScored, { showBottled, activeTab });
+      }
+    } else if (action === 'compare' && activeCommune) {
       compareMode = true;
       compareBase = activeCommune;
       showComparePending(activeCommune);
@@ -582,7 +615,7 @@ async function init() {
       compareMode = false;
       compareBase = null;
       if (activeCommune) {
-        updatePanel(activeCommune, generatedAt, totalScored, { showBottled });
+        updatePanel(activeCommune, generatedAt, totalScored, { showBottled, activeTab });
       } else {
         document.getElementById('panel-content').hidden = true;
         document.getElementById('panel-empty').hidden   = false;
@@ -590,7 +623,7 @@ async function init() {
       }
     } else if (action === 'toggle-bottled' && activeCommune) {
       showBottled = !showBottled;
-      updatePanel(activeCommune, generatedAt, totalScored, { showBottled });
+      updatePanel(activeCommune, generatedAt, totalScored, { showBottled, activeTab });
     } else if (action === 'select-commune') {
       const ins = e.target.closest('[data-insee]')?.dataset?.insee;
       const c   = communesData[ins] ?? arrData[ins];
