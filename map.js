@@ -91,7 +91,7 @@ async function _fetchParamData(insee, code) {
   if (_paramCache[key]) return _paramCache[key];
   try {
     const since = new Date(Date.now() - 5 * 365 * 24 * 3600 * 1000).toISOString().slice(0, 10);
-    const url = `https://hubeau.eaufrance.fr/api/v1/qualite_eau_potable/resultats_dis?code_commune_insee=${insee}&code_parametre=${code}&size=200&date_min_prelevement=${since}`;
+    const url = `https://hubeau.eaufrance.fr/api/v1/qualite_eau_potable/resultats_dis?code_commune_insee=${insee}&code_parametre=${code}&size=200&date_min_prelevement=${since}&sort=date_prelevement&order=asc`;
     const r = await fetch(url);
     if (!r.ok) throw new Error(`HTTP ${r.status}`);
     const data = await r.json();

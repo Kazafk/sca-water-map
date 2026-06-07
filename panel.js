@@ -133,11 +133,27 @@ const SEASON_SCA_RANGES = {
 };
 
 function _seasonalityChart(items, code) {
-  const pts = items
+  const raw = items
     .filter(r => r.code_parametre === code && r.resultat_numerique != null)
     .map(r => ({ v: r.resultat_numerique, d: new Date(r.date_prelevement) }))
     .filter(r => !isNaN(r.d.getTime()))
     .sort((a, b) => a.d - b.d);
+
+  if (raw.length < 2) return '';
+
+  // Aggregate to one point per month (median). Avoids stacking of many stations on same date.
+  const byMonth = {};
+  for (const p of raw) {
+    const key = `${p.d.getFullYear()}-${String(p.d.getMonth() + 1).padStart(2, '0')}`;
+    if (!byMonth[key]) byMonth[key] = { d: new Date(p.d.getFullYear(), p.d.getMonth(), 15), vals: [] };
+    byMonth[key].vals.push(p.v);
+  }
+  const pts = Object.values(byMonth)
+    .sort((a, b) => a.d - b.d)
+    .map(m => {
+      const sorted = [...m.vals].sort((a, b) => a - b);
+      return { v: sorted[Math.floor(sorted.length / 2)], d: m.d, n: m.vals.length };
+    });
 
   if (pts.length < 2) return '';
 
@@ -206,7 +222,9 @@ function _seasonalityChart(items, code) {
     stroke="var(--muted)" stroke-width=".8" stroke-dasharray="3,2" opacity=".5"/>`;
 
   const unit = items.find(r => r.code_parametre === code)?.libelle_unite ?? '';
-  const statsStr = `${pts.length} mes. · moy. ${avg.toFixed(dec)} · min ${rawMin.toFixed(dec)} · max ${rawMax.toFixed(dec)}${unit ? ' ' + unit : ''}`;
+  const rawN = raw.length;
+  const monthsNote = rawN > pts.length ? ` (${rawN} mes.)` : '';
+  const statsStr = `${pts.length} mois${monthsNote} · moy. ${avg.toFixed(dec)} · min ${rawMin.toFixed(dec)} · max ${rawMax.toFixed(dec)}${unit ? ' ' + unit : ''}`;
 
   return `
     <div style="font-size:8.5px;color:var(--muted);text-align:center;margin-bottom:3px">${_esc(statsStr)}</div>
