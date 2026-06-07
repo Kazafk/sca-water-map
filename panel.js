@@ -120,7 +120,116 @@ const SANDRE_LABELS = {
 
 const SANDRE_PRIORITY = ['1338','1335','1302','1374','1319','1337','1015','1016','1303','1350','1340','1339'];
 
-function _renderDataTab(rawData) {
+const SANDRE_SHORT = {
+  '1302': 'pH',    '1303': 'Cond.',  '1319': 'Na',    '1335': 'Alk',
+  '1337': 'Cl',    '1338': 'Ca',     '1339': 'Mg',    '1340': 'TH',
+  '1350': 'TH',    '1374': 'TDS',    '1015': 'Cl₂',   '1016': 'Cl tot.',
+};
+
+// SCA ideal ranges in Hub'Eau native units
+const SEASON_SCA_RANGES = {
+  '1338': { lo: 20.0, hi: 34.0 },  // Ca mg/L  (50/2.497 … 85/2.497)
+  '1335': { lo: 40,   hi: 70   },  // TAC mg/L CaCO₃
+  '1302': { lo: 6.5,  hi: 7.5  },  // pH
+  '1374': { lo: 75,   hi: 250  },  // TDS mg/L
+  '1319': { lo: 0,    hi: 30   },  // Na mg/L
+  '1337': { lo: 0,    hi: 75   },  // Cl mg/L
+  '1015': { lo: 0,    hi: 0.1  },  // Cl₂ mg/L
+  '1340': { lo: 5.0,  hi: 8.5  },  // TH °f
+  '1350': { lo: 5.0,  hi: 8.5  },  // TH °f
+};
+
+function _seasonalityChart(items, code) {
+  const pts = items
+    .filter(r => r.code_parametre === code && r.resultat_numerique != null)
+    .map(r => ({ v: r.resultat_numerique, d: new Date(r.date_prelevement) }))
+    .filter(r => !isNaN(r.d.getTime()))
+    .sort((a, b) => a.d - b.d);
+
+  if (pts.length < 2) return '';
+
+  const W=248, H=118, PL=30, PR=6, PT=8, PB=22;
+  const CW=W-PL-PR, CH=H-PT-PB;
+  const f = n => n.toFixed(1);
+
+  const dates  = pts.map(p => p.d.getTime());
+  const vals   = pts.map(p => p.v);
+  const minD   = Math.min(...dates), maxD = Math.max(...dates);
+  const rawMin = Math.min(...vals),  rawMax = Math.max(...vals);
+  const range  = SEASON_SCA_RANGES[code];
+
+  // Y scale: include SCA band in view
+  const dataSpan = rawMax - rawMin || 1;
+  const vLo = range ? Math.min(rawMin, range.lo) - dataSpan * 0.08 : rawMin - dataSpan * 0.12;
+  const vHi = range ? Math.max(rawMax, range.hi) + dataSpan * 0.08 : rawMax + dataSpan * 0.12;
+  const vSpan = vHi - vLo || 1;
+
+  const sx = d => PL + ((d - minD) / (maxD - minD || 1)) * CW;
+  const sy = v => PT + CH - ((v - vLo) / vSpan) * CH;
+
+  // SCA reference band
+  let refBand = '';
+  if (range) {
+    const ryT = Math.max(PT,    sy(Math.min(range.hi, vHi)));
+    const ryB = Math.min(PT+CH, sy(Math.max(range.lo, vLo)));
+    if (ryB > ryT)
+      refBand = `<rect x="${f(PL)}" y="${f(ryT)}" width="${f(CW)}" height="${f(ryB-ryT)}"
+        fill="var(--green)" fill-opacity=".12"/>`;
+  }
+
+  // Polyline
+  const polyPts = pts.map(p => `${f(sx(p.d.getTime()))},${f(sy(p.v))}`).join(' ');
+
+  // Dots — colored by SCA range
+  const dotEls = pts.map(p => {
+    const inRange = range ? p.v >= range.lo && p.v <= range.hi : true;
+    const tip = `${p.d.toLocaleDateString('fr-FR')} · ${p.v}`;
+    return `<circle cx="${f(sx(p.d.getTime()))}" cy="${f(sy(p.v))}" r="2.5"
+      fill="${inRange ? 'var(--green)' : 'var(--orange)'}"
+      stroke="var(--surface)" stroke-width="1"><title>${_esc(tip)}</title></circle>`;
+  }).join('');
+
+  // X labels (3 max)
+  const xIdxs = pts.length <= 3 ? pts.map((_, i) => i) : [0, Math.floor((pts.length-1)/2), pts.length-1];
+  const xLabels = xIdxs.map(i => {
+    const p = pts[i];
+    const lbl = p.d.toLocaleDateString('fr-FR', { month:'2-digit', year:'2-digit' });
+    return `<text x="${f(sx(p.d.getTime()))}" y="${f(PT+CH+9)}" fill="var(--muted)"
+      font-size="5.5" text-anchor="middle" font-family="sans-serif">${lbl}</text>`;
+  }).join('');
+
+  // Y labels (3 ticks)
+  const dec = rawMax < 2 ? 2 : rawMax < 10 ? 1 : 0;
+  const yLabels = [0, 0.5, 1].map(t => {
+    const v = vLo + vSpan * t;
+    return `<text x="${f(PL-3)}" y="${f(sy(v)+2.5)}" fill="var(--muted)"
+      font-size="5.5" text-anchor="end" font-family="sans-serif">${v.toFixed(dec)}</text>`;
+  }).join('');
+
+  // Average dashed line
+  const avg  = vals.reduce((a, b) => a + b, 0) / vals.length;
+  const avgY = f(sy(avg));
+  const avgLine = `<line x1="${f(PL)}" y1="${avgY}" x2="${f(PL+CW)}" y2="${avgY}"
+    stroke="var(--muted)" stroke-width=".8" stroke-dasharray="3,2" opacity=".5"/>`;
+
+  const unit = items.find(r => r.code_parametre === code)?.libelle_unite ?? '';
+  const statsStr = `${pts.length} mes. · moy. ${avg.toFixed(dec)} · min ${rawMin.toFixed(dec)} · max ${rawMax.toFixed(dec)}${unit ? ' ' + unit : ''}`;
+
+  return `
+    <div style="font-size:8.5px;color:var(--muted);text-align:center;margin-bottom:3px">${_esc(statsStr)}</div>
+    <svg viewBox="0 0 ${W} ${H}" style="width:100%;overflow:visible">
+      <rect width="${W}" height="${H}" fill="var(--bg)" rx="3"/>
+      ${refBand}
+      <line x1="${f(PL)}" y1="${f(PT)}" x2="${f(PL)}" y2="${f(PT+CH)}" stroke="var(--border)" stroke-width="1"/>
+      <line x1="${f(PL)}" y1="${f(PT+CH)}" x2="${f(PL+CW)}" y2="${f(PT+CH)}" stroke="var(--border)" stroke-width="1"/>
+      ${yLabels}${xLabels}${avgLine}
+      <polyline points="${polyPts}" fill="none" stroke="var(--blue)"
+        stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+      ${dotEls}
+    </svg>`;
+}
+
+function _renderDataTab(rawData, selectedCode) {
   if (rawData === null) {
     return `<div class="panel-section">
       <div class="data-loading">
@@ -145,52 +254,67 @@ function _renderDataTab(rawData) {
     </div>`;
   }
 
-  // Group by code_parametre, keep last 6 per param
-  const byCode = {};
-  for (const r of items) {
-    const code = r.code_parametre;
-    if (!byCode[code]) byCode[code] = [];
-    if (byCode[code].length < 6) byCode[code].push(r);
+  // Params with ≥2 numeric values (chartable), sorted by priority
+  const chartable = SANDRE_PRIORITY.filter(code =>
+    items.filter(r => r.code_parametre === code && r.resultat_numerique != null).length >= 2
+  );
+  // Append any remaining codes not in priority list
+  for (const code of [...new Set(items.map(r => r.code_parametre))]) {
+    if (!chartable.includes(code) &&
+        items.filter(r => r.code_parametre === code && r.resultat_numerique != null).length >= 2)
+      chartable.push(code);
   }
 
-  // Sort params: priority list first, then alphabetical by libelle
-  const codes = Object.keys(byCode).sort((a, b) => {
-    const ia = SANDRE_PRIORITY.indexOf(a), ib = SANDRE_PRIORITY.indexOf(b);
-    if (ia !== -1 && ib !== -1) return ia - ib;
-    if (ia !== -1) return -1;
-    if (ib !== -1) return  1;
-    return (byCode[a][0].libelle_parametre ?? a).localeCompare(byCode[b][0].libelle_parametre ?? b);
-  });
+  // Auto-select
+  if (!selectedCode || !chartable.includes(selectedCode))
+    selectedCode = chartable[0] ?? null;
+
+  // Pills
+  const pills = chartable.length > 1
+    ? `<div class="season-pills">${chartable.map(code => {
+        const lbl = SANDRE_SHORT[code] ?? (SANDRE_LABELS[code]?.split(/[\s(/]/)[0] ?? code);
+        return `<button class="season-pill${code === selectedCode ? ' active' : ''}"
+          data-action="select-season-param" data-code="${code}"
+          title="${_esc(SANDRE_LABELS[code] ?? code)}">${_esc(lbl)}</button>`;
+      }).join('')}</div>`
+    : '';
+
+  const chart = selectedCode ? _seasonalityChart(items, selectedCode) : '';
+  const label = selectedCode
+    ? (SANDRE_LABELS[selectedCode] ?? items.find(r => r.code_parametre === selectedCode)?.libelle_parametre ?? selectedCode)
+    : '';
+
+  const selRows = selectedCode
+    ? items.filter(r => r.code_parametre === selectedCode).slice(0, 6).map(r => {
+        const d   = r.date_prelevement
+          ? new Date(r.date_prelevement).toLocaleDateString('fr-FR', { day:'2-digit', month:'2-digit', year:'2-digit' })
+          : '—';
+        const num = r.resultat_numerique != null ? String(r.resultat_numerique) : (r.resultat_alphanumerique ?? '—');
+        const unit = r.libelle_unite ?? '';
+        const lieu = (r.nom_udi ?? r.libelle_commune ?? '').slice(0, 28);
+        return `<div class="raw-data-row">
+          <span class="raw-data-date">${d}</span>
+          <span class="raw-data-val">${_esc(num)}<span style="font-weight:normal;color:var(--muted);margin-left:2px">${_esc(unit)}</span></span>
+          <span class="raw-data-lieu" title="${_esc(lieu)}">${_esc(lieu)}</span>
+        </div>`;
+      }).join('')
+    : '';
 
   const total = rawData.count ?? items.length;
 
-  return codes.map(code => {
-    const rows    = byCode[code];
-    const label   = SANDRE_LABELS[code] ?? (rows[0].libelle_parametre ?? `Code ${code}`);
-    const rowsHtml = rows.map(r => {
-      const d   = r.date_prelevement
-        ? new Date(r.date_prelevement).toLocaleDateString('fr-FR', { day:'2-digit', month:'2-digit', year:'2-digit' })
-        : '—';
-      const val = r.resultat_numerique != null
-        ? String(r.resultat_numerique)
-        : (r.resultat_alphanumerique ?? '—');
-      const lieu = (r.nom_udi ?? r.libelle_commune ?? '').slice(0, 28);
-      return `<div class="raw-data-row">
-        <span class="raw-data-date">${d}</span>
-        <span class="raw-data-val">${_esc(val)}</span>
-        <span class="raw-data-lieu" title="${_esc(lieu)}">${_esc(lieu)}</span>
-      </div>`;
-    }).join('');
-    return `<div class="panel-section">
+  return `${pills}
+    ${chart ? `<div class="panel-section" style="padding-top:8px">${chart}</div>` : ''}
+    ${selectedCode ? `<div class="panel-section">
       <div class="panel-section-title">${_esc(label)}</div>
-      ${rowsHtml}
+      ${selRows || '<div style="color:var(--muted);font-size:10px">Aucune mesure numérique</div>'}
+    </div>` : ''}
+    <div style="padding:6px 14px 10px;font-size:9px;color:var(--muted);text-align:center">
+      ${total} mesure${total > 1 ? 's' : ''} au total ·
+      <a href="https://hubeau.eaufrance.fr" target="_blank" rel="noopener" style="color:var(--muted)">Hub'Eau</a>
     </div>`;
-  }).join('') + `<div style="padding:8px 14px;font-size:9px;color:var(--muted);text-align:center">
-    ${total} mesure${total > 1 ? 's' : ''} au total · <a href="https://hubeau.eaufrance.fr" target="_blank" rel="noopener" style="color:var(--muted)">Hub'Eau</a>
-  </div>`;
 }
 
-export function updatePanel(commune, generatedAt, totalScored, { showBottled = false, activeTab = 'params', rawData = undefined } = {}) {
+export function updatePanel(commune, generatedAt, totalScored, { showBottled = false, activeTab = 'params', rawData = undefined, selectedCode = null } = {}) {
   document.getElementById('panel-empty').hidden  = true;
   const content = document.getElementById('panel-content');
   content.hidden = false;
@@ -287,7 +411,7 @@ export function updatePanel(commune, generatedAt, totalScored, { showBottled = f
     </div>
 
     ${_renderTabs(activeTab)}
-    ${activeTab === 'params' ? paramsContent : _renderDataTab(rawData ?? null)}
+    ${activeTab === 'params' ? paramsContent : _renderDataTab(rawData ?? null, selectedCode)}
   `;
 }
 
