@@ -63,7 +63,8 @@ export function initBottomSheet(panelEl) {
     dragStart = null;
 
     if (wasTap) {
-      const up = { closed: 'peek', peek: 'half', half: 'full', full: 'closed' };
+      // Cycle : full→half, half→peek, peek→full (never close on tap)
+      const up = { closed: 'peek', peek: 'full', half: 'peek', full: 'half' };
       snapTo(up[state] || 'peek');
     } else {
       snapTo(nearestSnap(shownPx));
@@ -71,7 +72,8 @@ export function initBottomSheet(panelEl) {
   });
 
   return {
-    open:     () => snapTo('peek'),
+    open:     () => snapTo('half'),   // sélection commune → half par défaut
+    peek:     () => snapTo('peek'),   // déselection → peek
     close:    () => snapTo('closed'),
     getState: () => state,
   };
