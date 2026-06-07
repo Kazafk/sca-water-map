@@ -110,7 +110,7 @@ const SANDRE_LABELS = {
   '1337': 'Chlorures (mg/L)',
   '1347': 'TAC / Alcalinité (mmol/L)',
   '1350': 'Dureté TH (°f)',
-  '1374': 'Calcium (mg/L)',
+  '1374': 'Ca Hardness (mg/L CaCO₃)',
   '1375': 'Sodium (mg/L)',
 };
 
@@ -123,7 +123,7 @@ const SANDRE_SHORT = {
 
 // SCA ideal ranges in Hub'Eau native units (source: compute_scores.py convert_params)
 const SEASON_SCA_RANGES = {
-  '1374': { lo: 20.0, hi: 34.0 },  // Ca mg/L  (SCA 50–85 mg/L CaCO₃ ÷ 2.497)
+  '1374': { lo: 50,   hi: 85   },  // Ca Hardness mg/L CaCO₃ (pts from communes.json)
   '1347': { lo: 4.0,  hi: 7.0  },  // TAC mmol/L (SCA 40–70 mg/L CaCO₃ ÷ 10)
   '1302': { lo: 6.5,  hi: 7.5  },  // pH
   '1303': { lo: 115,  hi: 385  },  // Conductivité µS/cm (TDS 75–250 ÷ 0.65)
@@ -347,14 +347,15 @@ export function updatePanel(commune, generatedAt, totalScored, { showBottled = f
   const freshnessColor = ageDays < 180 ? '#2ecc71' : ageDays < 365 ? '#f39c12' : '#e74c3c';
   const freshnessTitle = ageDays < 180 ? 'données récentes' : ageDays < 365 ? 'données 6–12 mois' : 'données > 1 an';
 
-  // Ca pts from communes.json → formatted as Hub'Eau-like records for the seasonality chart
+  // Ca pts from communes.json → formatted for the seasonality chart.
+  // pts format: { ca (mg/L CaCO₃), alk (mg/L CaCO₃), d (YYYY-MM-DD), l }
   const communeCaPts = (pts || [])
-    .filter(p => p.v != null && p.d)
+    .filter(p => p.ca != null && p.d)
     .map(p => ({
       code_parametre: '1374',
-      resultat_numerique: p.v,
-      date_prelevement: p.d.length === 10 ? p.d + 'T12:00:00Z' : p.d,
-      libelle_unite: 'mg/L',
+      resultat_numerique: p.ca,
+      date_prelevement: p.d + 'T12:00:00Z',
+      libelle_unite: 'mg/L CaCO₃',
     }));
 
   const nMeasures  = pts?.length ?? 0;
