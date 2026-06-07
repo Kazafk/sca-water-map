@@ -102,41 +102,34 @@ function _renderTabs(activeTab) {
   </div>`;
 }
 
-// SANDRE param codes → display labels (for Hub'Eau resultats_dis)
+// SANDRE param codes → display labels (codes vérifiés via compute_scores.py)
 const SANDRE_LABELS = {
   '1302': 'pH',
   '1303': 'Conductivité (µS/cm)',
-  '1319': 'Sodium (mg/L)',
-  '1335': 'TAC / Alcalinité (mg/L)',
+  '1335': 'Chlore libre (mg/L)',
   '1337': 'Chlorures (mg/L)',
-  '1338': 'Calcium (mg/L)',
-  '1339': 'Magnésium (mg/L)',
-  '1340': 'Dureté TH (°f)',
-  '1350': 'Titre hydrotimétrique TH (°f)',
-  '1374': 'Résidu sec — TDS (mg/L)',
-  '1015': 'Chlore libre (mg/L)',
-  '1016': 'Chlore total (mg/L)',
+  '1347': 'TAC / Alcalinité (mmol/L)',
+  '1350': 'Dureté TH (°f)',
+  '1374': 'Calcium (mg/L)',
+  '1375': 'Sodium (mg/L)',
 };
 
-const SANDRE_PRIORITY = ['1338','1335','1302','1374','1319','1337','1015','1016','1303','1350','1340','1339'];
+const SANDRE_PRIORITY = ['1374','1347','1302','1350','1375','1337','1335','1303'];
 
 const SANDRE_SHORT = {
-  '1302': 'pH',    '1303': 'Cond.',  '1319': 'Na',    '1335': 'Alk',
-  '1337': 'Cl',    '1338': 'Ca',     '1339': 'Mg',    '1340': 'TH',
-  '1350': 'TH',    '1374': 'TDS',    '1015': 'Cl₂',   '1016': 'Cl tot.',
+  '1302': 'pH', '1303': 'Cond.', '1335': 'Cl₂', '1337': 'Cl⁻',
+  '1347': 'TAC', '1350': 'TH', '1374': 'Ca', '1375': 'Na',
 };
 
-// SCA ideal ranges in Hub'Eau native units
+// SCA ideal ranges in Hub'Eau native units (source: compute_scores.py convert_params)
 const SEASON_SCA_RANGES = {
-  '1338': { lo: 20.0, hi: 34.0 },  // Ca mg/L  (50/2.497 … 85/2.497)
-  '1335': { lo: 40,   hi: 70   },  // TAC mg/L CaCO₃
+  '1374': { lo: 20.0, hi: 34.0 },  // Ca mg/L  (SCA 50–85 mg/L CaCO₃ ÷ 2.497)
+  '1347': { lo: 4.0,  hi: 7.0  },  // TAC mmol/L (SCA 40–70 mg/L CaCO₃ ÷ 10)
   '1302': { lo: 6.5,  hi: 7.5  },  // pH
-  '1374': { lo: 75,   hi: 250  },  // TDS mg/L
-  '1319': { lo: 0,    hi: 30   },  // Na mg/L
+  '1303': { lo: 115,  hi: 385  },  // Conductivité µS/cm (TDS 75–250 ÷ 0.65)
+  '1375': { lo: 0,    hi: 30   },  // Na mg/L
   '1337': { lo: 0,    hi: 75   },  // Cl mg/L
-  '1015': { lo: 0,    hi: 0.1  },  // Cl₂ mg/L
-  '1340': { lo: 5.0,  hi: 8.5  },  // TH °f
-  '1350': { lo: 5.0,  hi: 8.5  },  // TH °f
+  '1335': { lo: 0,    hi: 0.1  },  // Cl₂ mg/L
 };
 
 function _seasonalityChart(items, code) {
@@ -229,7 +222,7 @@ function _seasonalityChart(items, code) {
     </svg>`;
 }
 
-function _renderDataTab(rawData, selectedCode) {
+function _renderDataTab(rawData, selectedCode, paramData = null) {
   if (rawData === null) {
     return `<div class="panel-section">
       <div class="data-loading">
@@ -254,16 +247,10 @@ function _renderDataTab(rawData, selectedCode) {
     </div>`;
   }
 
-  // Params with ≥2 numeric values (chartable), sorted by priority
+  // Params with ≥1 numeric value (chartable), limited to known priority codes
   const chartable = SANDRE_PRIORITY.filter(code =>
-    items.filter(r => r.code_parametre === code && r.resultat_numerique != null).length >= 2
+    items.filter(r => r.code_parametre === code && r.resultat_numerique != null).length >= 1
   );
-  // Append any remaining codes not in priority list
-  for (const code of [...new Set(items.map(r => r.code_parametre))]) {
-    if (!chartable.includes(code) &&
-        items.filter(r => r.code_parametre === code && r.resultat_numerique != null).length >= 2)
-      chartable.push(code);
-  }
 
   // Auto-select
   if (!selectedCode || !chartable.includes(selectedCode))
@@ -279,7 +266,13 @@ function _renderDataTab(rawData, selectedCode) {
       }).join('')}</div>`
     : '';
 
-  const chart = selectedCode ? _seasonalityChart(items, selectedCode) : '';
+  // Use per-parameter historical data for chart if available, else fall back to summary items
+  const chartItems = paramData === 'loading' ? null : (paramData?.data ?? items);
+  const chartLoadingNote = paramData === 'loading'
+    ? `<div style="font-size:9px;color:var(--muted);text-align:center;padding:4px 0">
+        <span class="data-spinner" style="width:10px;height:10px;border-width:1.5px;margin-right:4px"></span>Chargement historique…</div>`
+    : '';
+  const chart = selectedCode && chartItems ? _seasonalityChart(chartItems, selectedCode) : '';
   const label = selectedCode
     ? (SANDRE_LABELS[selectedCode] ?? items.find(r => r.code_parametre === selectedCode)?.libelle_parametre ?? selectedCode)
     : '';
@@ -303,6 +296,7 @@ function _renderDataTab(rawData, selectedCode) {
   const total = rawData.count ?? items.length;
 
   return `${pills}
+    ${chartLoadingNote}
     ${chart ? `<div class="panel-section" style="padding-top:8px">${chart}</div>` : ''}
     ${selectedCode ? `<div class="panel-section">
       <div class="panel-section-title">${_esc(label)}</div>
@@ -314,7 +308,7 @@ function _renderDataTab(rawData, selectedCode) {
     </div>`;
 }
 
-export function updatePanel(commune, generatedAt, totalScored, { showBottled = false, activeTab = 'params', rawData = undefined, selectedCode = null } = {}) {
+export function updatePanel(commune, generatedAt, totalScored, { showBottled = false, activeTab = 'params', rawData = undefined, selectedCode = null, paramData = null } = {}) {
   document.getElementById('panel-empty').hidden  = true;
   const content = document.getElementById('panel-content');
   content.hidden = false;
@@ -411,7 +405,7 @@ export function updatePanel(commune, generatedAt, totalScored, { showBottled = f
     </div>
 
     ${_renderTabs(activeTab)}
-    ${activeTab === 'params' ? paramsContent : _renderDataTab(rawData ?? null, selectedCode)}
+    ${activeTab === 'params' ? paramsContent : _renderDataTab(rawData ?? null, selectedCode, paramData)}
   `;
 }
 
