@@ -61,8 +61,9 @@ let compareMode   = false;
 let compareBase   = null;
 let showBottled   = false;
 let activeCommune = null;
-let activeTab     = 'params';
-let _rawDataCache = {};
+let activeTab          = 'params';
+let selectedSandreCode = null;
+let _rawDataCache      = {};
 let _geojson      = null;
 let _deptGeojson  = null;
 let _theme        = localStorage.getItem('sca-theme') || 'dark';
@@ -352,9 +353,10 @@ function selectCommune(commune) {
     return;
   }
 
-  activeCommune = commune;
-  activeTab     = 'params';
-  showBottled   = false;
+  activeCommune      = commune;
+  activeTab          = 'params';
+  selectedSandreCode = null;
+  showBottled        = false;
   searchEl.value = commune.nom;
   closeDropdown();
   if (viewMode !== 'communes') { viewMode = 'communes'; _applyViewMode(); }
@@ -598,14 +600,20 @@ async function init() {
       if (!tab) return;
       activeTab = tab;
       if (tab === 'data') {
-        // Show loading state immediately, then fetch
-        updatePanel(activeCommune, generatedAt, totalScored, { showBottled, activeTab: 'data', rawData: null });
+        updatePanel(activeCommune, generatedAt, totalScored, { showBottled, activeTab: 'data', rawData: null, selectedCode: selectedSandreCode });
         _fetchRawData(activeCommune.insee).then(data => {
           if (activeTab === 'data' && activeCommune)
-            updatePanel(activeCommune, generatedAt, totalScored, { showBottled, activeTab: 'data', rawData: data });
+            updatePanel(activeCommune, generatedAt, totalScored, { showBottled, activeTab: 'data', rawData: data, selectedCode: selectedSandreCode });
         });
       } else {
         updatePanel(activeCommune, generatedAt, totalScored, { showBottled, activeTab });
+      }
+    } else if (action === 'select-season-param' && activeCommune) {
+      const code = e.target.closest('[data-code]')?.dataset?.code;
+      if (code) {
+        selectedSandreCode = code;
+        const cached = _rawDataCache[activeCommune.insee] ?? null;
+        updatePanel(activeCommune, generatedAt, totalScored, { showBottled, activeTab: 'data', rawData: cached, selectedCode: code });
       }
     } else if (action === 'compare' && activeCommune) {
       compareMode = true;
@@ -615,7 +623,7 @@ async function init() {
       compareMode = false;
       compareBase = null;
       if (activeCommune) {
-        updatePanel(activeCommune, generatedAt, totalScored, { showBottled, activeTab });
+        updatePanel(activeCommune, generatedAt, totalScored, { showBottled, activeTab, selectedCode: selectedSandreCode });
       } else {
         document.getElementById('panel-content').hidden = true;
         document.getElementById('panel-empty').hidden   = false;
@@ -623,7 +631,7 @@ async function init() {
       }
     } else if (action === 'toggle-bottled' && activeCommune) {
       showBottled = !showBottled;
-      updatePanel(activeCommune, generatedAt, totalScored, { showBottled, activeTab });
+      updatePanel(activeCommune, generatedAt, totalScored, { showBottled, activeTab, selectedCode: selectedSandreCode });
     } else if (action === 'select-commune') {
       const ins = e.target.closest('[data-insee]')?.dataset?.insee;
       const c   = communesData[ins] ?? arrData[ins];
