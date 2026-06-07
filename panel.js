@@ -240,7 +240,7 @@ function _seasonalityChart(items, code) {
     </svg>`;
 }
 
-function _renderDataTab(rawData, selectedCode, paramData = null) {
+function _renderDataTab(rawData, selectedCode) {
   if (rawData === null) {
     return `<div class="panel-section">
       <div class="data-loading">
@@ -284,13 +284,7 @@ function _renderDataTab(rawData, selectedCode, paramData = null) {
       }).join('')}</div>`
     : '';
 
-  // Use per-parameter historical data for chart if available, else fall back to summary items
-  const chartItems = paramData === 'loading' ? null : (paramData?.data ?? items);
-  const chartLoadingNote = paramData === 'loading'
-    ? `<div style="font-size:9px;color:var(--muted);text-align:center;padding:4px 0">
-        <span class="data-spinner" style="width:10px;height:10px;border-width:1.5px;margin-right:4px"></span>Chargement historique…</div>`
-    : '';
-  const chart = selectedCode && chartItems ? _seasonalityChart(chartItems, selectedCode) : '';
+  const chart = selectedCode ? _seasonalityChart(items, selectedCode) : '';
   const label = selectedCode
     ? (SANDRE_LABELS[selectedCode] ?? items.find(r => r.code_parametre === selectedCode)?.libelle_parametre ?? selectedCode)
     : '';
@@ -314,7 +308,6 @@ function _renderDataTab(rawData, selectedCode, paramData = null) {
   const total = rawData.count ?? items.length;
 
   return `${pills}
-    ${chartLoadingNote}
     ${chart ? `<div class="panel-section" style="padding-top:8px">${chart}</div>` : ''}
     ${selectedCode ? `<div class="panel-section">
       <div class="panel-section-title">${_esc(label)}</div>
@@ -326,7 +319,7 @@ function _renderDataTab(rawData, selectedCode, paramData = null) {
     </div>`;
 }
 
-export function updatePanel(commune, generatedAt, totalScored, { showBottled = false, activeTab = 'params', rawData = undefined, selectedCode = null, paramData = null } = {}) {
+export function updatePanel(commune, generatedAt, totalScored, { showBottled = false, activeTab = 'params', rawData = undefined, selectedCode = null } = {}) {
   document.getElementById('panel-empty').hidden  = true;
   const content = document.getElementById('panel-content');
   content.hidden = false;
@@ -423,7 +416,7 @@ export function updatePanel(commune, generatedAt, totalScored, { showBottled = f
     </div>
 
     ${_renderTabs(activeTab)}
-    ${activeTab === 'params' ? paramsContent : _renderDataTab(rawData ?? null, selectedCode, paramData)}
+    ${activeTab === 'params' ? paramsContent : _renderDataTab(rawData ?? null, selectedCode)}
   `;
 }
 

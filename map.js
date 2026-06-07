@@ -64,7 +64,6 @@ let activeCommune = null;
 let activeTab          = 'params';
 let selectedSandreCode = null;
 let _rawDataCache      = {};
-let _paramCache        = {};
 let _geojson      = null;
 let _deptGeojson  = null;
 let _theme        = localStorage.getItem('sca-theme') || 'dark';
@@ -75,27 +74,14 @@ let _mapInitialized = false;
 async function _fetchRawData(insee) {
   if (_rawDataCache[insee]) return _rawDataCache[insee];
   try {
-    const url = `https://hubeau.eaufrance.fr/api/v1/qualite_eau_potable/resultats_dis?code_commune_insee=${insee}&size=200`;
+    // Fetch 5 years of data sorted oldest-first — the monthly aggregation in the chart
+    // then produces seasonal buckets even when many stations measure on the same day.
+    const since = new Date(Date.now() - 5 * 365 * 24 * 3600 * 1000).toISOString().slice(0, 10);
+    const url = `https://hubeau.eaufrance.fr/api/v1/qualite_eau_potable/resultats_dis?code_commune_insee=${insee}&size=500&date_min_prelevement=${since}&sort=date_prelevement&order=asc`;
     const r = await fetch(url);
     if (!r.ok) throw new Error(`HTTP ${r.status}`);
     const data = await r.json();
     _rawDataCache[insee] = data;
-    return data;
-  } catch (e) {
-    return { error: e.message, data: [], count: 0 };
-  }
-}
-
-async function _fetchParamData(insee, code) {
-  const key = `${insee}_${code}`;
-  if (_paramCache[key]) return _paramCache[key];
-  try {
-    const since = new Date(Date.now() - 5 * 365 * 24 * 3600 * 1000).toISOString().slice(0, 10);
-    const url = `https://hubeau.eaufrance.fr/api/v1/qualite_eau_potable/resultats_dis?code_commune_insee=${insee}&code_parametre=${code}&size=200&date_min_prelevement=${since}&sort=date_prelevement&order=asc`;
-    const r = await fetch(url);
-    if (!r.ok) throw new Error(`HTTP ${r.status}`);
-    const data = await r.json();
-    _paramCache[key] = data;
     return data;
   } catch (e) {
     return { error: e.message, data: [], count: 0 };
@@ -374,7 +360,6 @@ function selectCommune(commune) {
   activeTab          = 'params';
   selectedSandreCode = null;
   showBottled        = false;
-  // Keep _paramCache and _rawDataCache — they're keyed by INSEE and persist across communes
   searchEl.value = commune.nom;
   closeDropdown();
   if (viewMode !== 'communes') { viewMode = 'communes'; _applyViewMode(); }
@@ -621,30 +606,8 @@ async function init() {
         const insee = activeCommune.insee;
         updatePanel(activeCommune, generatedAt, totalScored, { showBottled, activeTab: 'data', rawData: null, selectedCode: selectedSandreCode });
         _fetchRawData(insee).then(rawData => {
-          if (activeTab !== 'data' || !activeCommune || activeCommune.insee !== insee) return;
-          // Determine which code will be auto-selected (first priority code with data)
-          const PRIORITY_CODES = ['1374','1347','1302','1350','1375','1337','1335','1303'];
-          const items = rawData?.data ?? [];
-          const firstCode = selectedSandreCode ?? PRIORITY_CODES.find(c =>
-            items.some(r => r.code_parametre === c && r.resultat_numerique != null)
-          ) ?? null;
-          if (firstCode && !selectedSandreCode) selectedSandreCode = firstCode;
-          const pKey = firstCode ? `${insee}_${firstCode}` : null;
-          const pCached = pKey ? (_paramCache[pKey] ?? null) : null;
-          updatePanel(activeCommune, generatedAt, totalScored, {
-            showBottled, activeTab: 'data', rawData,
-            selectedCode: selectedSandreCode,
-            paramData: firstCode ? (pCached ?? 'loading') : null,
-          });
-          if (firstCode && !pCached) {
-            _fetchParamData(insee, firstCode).then(pdata => {
-              if (activeTab === 'data' && activeCommune?.insee === insee && selectedSandreCode === firstCode)
-                updatePanel(activeCommune, generatedAt, totalScored, {
-                  showBottled, activeTab: 'data', rawData,
-                  selectedCode: firstCode, paramData: pdata,
-                });
-            });
-          }
+          if (activeTab === 'data' && activeCommune?.insee === insee)
+            updatePanel(activeCommune, generatedAt, totalScored, { showBottled, activeTab: 'data', rawData, selectedCode: selectedSandreCode });
         });
       } else {
         updatePanel(activeCommune, generatedAt, totalScored, { showBottled, activeTab });
@@ -653,23 +616,8 @@ async function init() {
       const code = e.target.closest('[data-code]')?.dataset?.code;
       if (code) {
         selectedSandreCode = code;
-        const insee  = activeCommune.insee;
-        const cached = _rawDataCache[insee] ?? null;
-        const pKey   = `${insee}_${code}`;
-        const pCached = _paramCache[pKey] ?? null;
-        // Show immediately with existing data (or loading state for chart)
-        updatePanel(activeCommune, generatedAt, totalScored, {
-          showBottled, activeTab: 'data', rawData: cached, selectedCode: code,
-          paramData: pCached ?? 'loading',
-        });
-        if (!pCached) {
-          _fetchParamData(insee, code).then(pdata => {
-            if (activeTab === 'data' && activeCommune?.insee === insee && selectedSandreCode === code)
-              updatePanel(activeCommune, generatedAt, totalScored, {
-                showBottled, activeTab: 'data', rawData: cached, selectedCode: code, paramData: pdata,
-              });
-          });
-        }
+        const cached = _rawDataCache[activeCommune.insee] ?? null;
+        updatePanel(activeCommune, generatedAt, totalScored, { showBottled, activeTab: 'data', rawData: cached, selectedCode: code });
       }
     } else if (action === 'compare' && activeCommune) {
       compareMode = true;
