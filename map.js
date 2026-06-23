@@ -68,6 +68,7 @@ let _geojson      = null;
 let _deptGeojson  = null;
 let _theme        = localStorage.getItem('sca-theme') || 'dark';
 let _mapInitialized = false;
+let _topCommunes  = [];
 
 // --- Hub'Eau raw data fetch ---
 
@@ -97,24 +98,31 @@ function _renderHistory() {
   const emptyEl = document.getElementById('panel-empty');
   const history = JSON.parse(localStorage.getItem(HISTORY_KEY) || '[]')
     .map(ins => communesData[ins] ?? arrData[ins]).filter(Boolean);
-  if (!history.length) {
-    emptyEl.innerHTML = 'Cliquez sur une commune pour voir le détail';
-    emptyEl.hidden = false;
-    return;
-  }
-  emptyEl.innerHTML = `
-    <div style="padding:16px 14px">
-      <div style="font-size:9px;text-transform:uppercase;letter-spacing:.5px;color:var(--muted);margin-bottom:10px">Récemment consultées</div>
-      ${history.map(c => {
-        const cs    = cappedScore(c.score, c.params);
-        const col   = colorFromScore(cs);
-        const score = cs != null ? Math.round(cs * 100) + ' %' : '—';
-        return `<div class="history-row" data-insee="${c.insee}">
-          <span class="history-nom">${c.nom}</span>
-          <span style="color:${col};font-size:10px">${score}</span>
-        </div>`;
-      }).join('')}
+
+  const _row = (c) => {
+    const cs    = cappedScore(c.score, c.params);
+    const col   = colorFromScore(cs);
+    const score = cs != null ? Math.round(cs * 100) + ' %' : '—';
+    return `<div class="history-row" data-insee="${c.insee}">
+      <span class="history-nom">${c.nom}</span>
+      <span style="color:${col};font-size:10px">${score}</span>
     </div>`;
+  };
+
+  const _section = (label, items, topBorder) => `
+    <div style="padding:12px 14px${topBorder ? ';border-top:1px solid var(--border)' : ''}">
+      <div style="font-size:9px;text-transform:uppercase;letter-spacing:.5px;color:var(--muted);margin-bottom:10px">${label}</div>
+      ${items.map(_row).join('')}
+    </div>`;
+
+  if (!history.length && !_topCommunes.length) {
+    emptyEl.innerHTML = 'Cliquez sur une commune pour voir le détail';
+  } else {
+    emptyEl.innerHTML =
+      (history.length ? _section('Récemment consultées', history, false) : '') +
+      (_topCommunes.length ? _section('🏆 Meilleure qualité d\'eau', _topCommunes, history.length > 0) : '');
+  }
+
   emptyEl.hidden = false;
   emptyEl.querySelectorAll('.history-row').forEach(row => {
     row.addEventListener('click', () => {
@@ -431,6 +439,13 @@ async function init() {
   generatedAt  = communesJson.generated_at;
   totalScored  = communesJson.total_scored ?? 0;
   for (const c of communesJson.communes) communesData[c.insee] = c;
+
+  _topCommunes = Object.values(communesData)
+    .map(c => ({ c, cs: cappedScore(c.score, c.params) }))
+    .filter(({ cs }) => cs != null)
+    .sort((a, b) => b.cs - a.cs)
+    .slice(0, 5)
+    .map(({ c }) => c);
 
   for (const [arr, parent] of Object.entries(ARR_PARENT)) {
     if (communesData[parent]) arrData[arr] = { ...communesData[parent], insee: arr };
