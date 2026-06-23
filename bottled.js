@@ -72,9 +72,9 @@ const RAW = [
 ];
 
 // ── Compute params + scores ───────────────────────────────────────────────────
-const WATERS = RAW.map(w => {
+function computeEntry(w, curated = false) {
   const params = {
-    ca_hardness: w.calcium_mg_l != null    ? Math.round(w.calcium_mg_l    * 2.497 * 10) / 10 : null,
+    ca_hardness: w.calcium_mg_l    != null ? Math.round(w.calcium_mg_l    * 2.497  * 10) / 10 : null,
     alkalinity:  w.bicarbonate_mg_l != null ? Math.round(w.bicarbonate_mg_l * 0.8197 * 10) / 10 : null,
     ph:  w.ph,
     tds: w.tds_mg_l,
@@ -83,10 +83,21 @@ const WATERS = RAW.map(w => {
     cl2: 0,
   };
   const score = scoreFromParams(params);
-  return { ...w, params, score, color: colorFromScore(score), label: labelFromScore(score) };
-});
+  return { ...w, params, score, color: colorFromScore(score), label: labelFromScore(score), _curated: curated };
+}
 
-const ALL_PAYS = [...new Set(WATERS.map(w => w.pays))].sort((a, b) => a.localeCompare(b, 'fr'));
+const WATERS = RAW.map(w => computeEntry(w, true));
+
+// All waters = curated + mass (populated after fetch)
+let ALL_WATERS = WATERS;
+let massLoaded = false;
+
+// Top pays by count (capped to top 25 for the filter pills)
+function allPays() {
+  const counts = {};
+  for (const w of ALL_WATERS) counts[w.pays] = (counts[w.pays] || 0) + 1;
+  return Object.entries(counts).sort((a, b) => b[1] - a[1]).slice(0, 25).map(([p]) => p);
+}
 
 // ── State ─────────────────────────────────────────────────────────────────────
 let S = {
@@ -99,11 +110,13 @@ let S = {
   sortCol: 'score',
   sortDir: 'desc',
   selectedId: null,
+  page: 0,
+  perPage: 50,
 };
 
 // ── Filtering + sorting ───────────────────────────────────────────────────────
 function filtered() {
-  return WATERS.filter(w => {
+  return ALL_WATERS.filter(w => {
     if (S.search) {
       const q = S.search.toLowerCase();
       if (![w.nom, w.pays, w.ville_origine, w.entreprise].some(s => s.toLowerCase().includes(q))) return false;
@@ -175,17 +188,21 @@ function renderChart(vis) {
     `<line x1="${f(PL-3)}" y1="${f(sy(v))}" x2="${f(PL)}" y2="${f(sy(v))}" stroke="var(--border)" stroke-width="1"/>
      <text x="${f(PL-5)}" y="${f(sy(v)+2.5)}" fill="var(--muted)" font-size="7" text-anchor="end" font-family="sans-serif">${v}</text>`).join('');
 
-  // All water dots
-  const dots = WATERS.map(w => {
+  // Chart: curated dots (always) + filtered mass dots with Ca+Bic
+  const chartWaters = ALL_WATERS.filter(w =>
+    w._curated || (visIds.has(w.id) && w.params.ca_hardness != null && w.params.alkalinity != null)
+  );
+  const dots = chartWaters.map(w => {
     const { ca_hardness: ca, alkalinity: alk } = w.params;
     if (ca == null || alk == null) return '';
     const cx = sx(alk), cy = sy(ca);
-    const inView = visIds.has(w.id);
-    const isSel  = w.id === S.selectedId;
-    const opacity = inView ? 0.9 : 0.12;
-    const r = isSel ? 8 : 5.5;
+    const inView    = visIds.has(w.id);
+    const isSel     = w.id === S.selectedId;
+    const isCurated = w._curated;
+    const opacity = inView ? (isCurated ? 0.9 : 0.65) : 0.1;
+    const r      = isSel ? 8 : (isCurated ? 5.5 : 3);
     const stroke = isSel ? 'white' : 'var(--bg)';
-    const sw = isSel ? 2.5 : 1;
+    const sw     = isSel ? 2.5 : (isCurated ? 1 : 0.5);
     const tip = `${w.nom} (${w.pays})\n${w.label} — ${w.score != null ? Math.round(w.score*100)+'%' : 'N/A'}\nCa: ${ca.toFixed(0)} | Alk: ${alk.toFixed(0)} mg/L CaCO₃`;
     return `<circle cx="${f(cx)}" cy="${f(cy)}" r="${r}" fill="${w.color}" fill-opacity="${opacity}" stroke="${stroke}" stroke-width="${sw}" data-id="${_esc(w.id)}" style="cursor:pointer"><title>${_esc(tip)}</title></circle>`;
   }).join('');
@@ -236,12 +253,17 @@ function renderFilters() {
   const typeOpts  = ['Plate','Gazeuse'];
   const durOpts   = [['Très douce <17','tres_douce'],['Douce 17–50','douce'],['Idéale SCA 50–85','ideale'],['Dure 85–170','dure'],['Très dure >170','tres_dure']];
 
-  const cnt = filtered().length;
+  const cnt   = filtered().length;
+  const total = ALL_WATERS.length;
+  const loadBadge = massLoaded
+    ? `<span class="b-count">${total.toLocaleString('fr-FR')} réf.</span>`
+    : `<span class="b-count b-count-loading">⏳ Chargement…</span>`;
   return `
   <div class="b-filter-bar">
     <div class="b-search-row">
       <input id="b-search" type="text" placeholder="🔍  Rechercher eau, pays, source…" value="${_esc(S.search)}" autocomplete="off">
-      <span class="b-count">${cnt} eau${cnt!==1?'x':''}</span>
+      <span class="b-count">${cnt.toLocaleString('fr-FR')} résultat${cnt!==1?'s':''}</span>
+      ${loadBadge}
     </div>
     <div class="b-filter-group">
       <span class="b-filter-label">Note SCA</span>
@@ -261,7 +283,7 @@ function renderFilters() {
     </div>
     <div class="b-filter-group">
       <span class="b-filter-label">Pays</span>
-      <div class="season-pills b-pays-pills">${ALL_PAYS.map(v=>pill(v,S.pays.has(v),'pays',v,'pays')).join('')}</div>
+      <div class="season-pills b-pays-pills">${allPays().map(v=>pill(v,S.pays.has(v),'pays',v,'pays')).join('')}</div>
     </div>
   </div>`;
 }
@@ -362,7 +384,14 @@ function renderDetail(w) {
 }
 
 function renderTable(vis) {
-  const rows = sorted(vis).map(w => {
+  const allSorted = sorted(vis);
+  const total  = allSorted.length;
+  const pages  = Math.max(1, Math.ceil(total / S.perPage));
+  const page   = Math.min(S.page, pages - 1);
+  const start  = page * S.perPage;
+  const slice  = allSorted.slice(start, start + S.perPage);
+
+  const rows = slice.map(w => {
     const isSel = w.id === S.selectedId;
     const cells = COLS.map(c =>
       `<td style="text-align:${c.align}">${cellVal(w, c.key)}</td>`).join('');
@@ -377,11 +406,23 @@ function renderTable(vis) {
     return `<th class="b-th${isActive?' b-th-active':''}" data-sort="${col.key}" style="text-align:${col.align}">${_esc(col.label)}${arrow}</th>`;
   };
 
+  // Pagination footer
+  const from = total === 0 ? 0 : start + 1;
+  const to   = Math.min(start + S.perPage, total);
+  const pager = `<div class="b-pager">
+    <button class="b-pager-btn" data-page="${page-1}" ${page===0?'disabled':''}>←</button>
+    <span class="b-pager-info">${from.toLocaleString('fr-FR')}–${to.toLocaleString('fr-FR')} / ${total.toLocaleString('fr-FR')}</span>
+    <button class="b-pager-btn" data-page="${page+1}" ${page>=pages-1?'disabled':''}>→</button>
+  </div>`;
+
+  const noResults = `<tr><td colspan="${COLS.length}" class="b-no-results">Aucune eau ne correspond aux filtres</td></tr>`;
+
   return `<div class="b-table-wrap">
     <table class="b-table">
       <thead><tr>${COLS.map(thSort).join('')}</tr></thead>
-      <tbody>${rows || '<tr><td colspan="'+COLS.length+'" class="b-no-results">Aucune eau ne correspond aux filtres</td></tr>'}</tbody>
+      <tbody>${rows || noResults}</tbody>
     </table>
+    ${total > S.perPage ? pager : ''}
   </div>`;
 }
 
@@ -415,11 +456,12 @@ document.getElementById('filter-container').addEventListener('click', e => {
   const val   = btn.dataset.filterVal;
   const set   = S[group];
   set.has(val) ? set.delete(val) : set.add(val);
+  S.page = 0;
   render();
 });
 
 document.getElementById('filter-container').addEventListener('input', e => {
-  if (e.target.id === 'b-search') { S.search = e.target.value; render(); }
+  if (e.target.id === 'b-search') { S.search = e.target.value; S.page = 0; render(); }
 });
 
 document.getElementById('table-container').addEventListener('click', e => {
@@ -428,7 +470,15 @@ document.getElementById('table-container').addEventListener('click', e => {
     const col = th.dataset.sort;
     if (S.sortCol === col) S.sortDir = S.sortDir === 'asc' ? 'desc' : 'asc';
     else { S.sortCol = col; S.sortDir = col === 'nom' || col === 'pays' ? 'asc' : 'desc'; }
+    S.page = 0;
     render();
+    return;
+  }
+  const pgBtn = e.target.closest('[data-page]');
+  if (pgBtn && !pgBtn.disabled) {
+    S.page = parseInt(pgBtn.dataset.page, 10);
+    render();
+    document.getElementById('table-container').scrollIntoView({ behavior: 'smooth', block: 'start' });
     return;
   }
   const row = e.target.closest('.b-row');
@@ -439,5 +489,22 @@ document.getElementById('table-container').addEventListener('click', e => {
   }
 });
 
+// ── Mass data loader ─────────────────────────────────────────────────────────
+async function loadMassData() {
+  try {
+    const resp = await fetch('eaux_masse.json');
+    const raw  = await resp.json();
+    ALL_WATERS = [...WATERS, ...raw.map(w => computeEntry(w, false))];
+    massLoaded = true;
+    S.page = 0;
+    render();
+  } catch (e) {
+    console.error('Failed to load mass data:', e);
+    massLoaded = true;
+    render();
+  }
+}
+
 // ── Init ──────────────────────────────────────────────────────────────────────
 render();
+loadMassData();

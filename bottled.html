@@ -231,6 +231,35 @@
       line-height: 1.5;
     }
     .b-recipe-tip:last-child { border-bottom: none; }
+
+    /* ── Pagination ── */
+    .b-pager {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      padding: 10px 16px;
+      border-top: 1px solid var(--border);
+    }
+    .b-pager-btn {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      color: var(--text);
+      cursor: pointer;
+      font-size: 12px;
+      padding: 4px 10px;
+      transition: background .12s;
+    }
+    .b-pager-btn:hover:not(:disabled) { background: var(--surface); border-color: var(--blue); }
+    .b-pager-btn:disabled { opacity: .4; cursor: default; }
+    .b-pager-info {
+      font-size: 11px;
+      color: var(--muted);
+      font-variant-numeric: tabular-nums;
+      min-width: 140px;
+      text-align: center;
+    }
   </style>
 </head>
 <body>
@@ -252,7 +281,7 @@
 
     <!-- SCA Chart -->
     <div id="chart-section">
-      <div class="b-section-title">SCA Water Chart — 44 eaux du monde</div>
+      <div class="b-section-title">SCA Water Chart — eaux en bouteille du monde</div>
       <div id="chart-container"><!-- rendered by JS --></div>
       <div class="b-chart-legend">
         <div class="b-legend-item"><span class="b-legend-dot" style="background:#2ecc71"></span>Idéal SCA ≥ 75 %</div>
