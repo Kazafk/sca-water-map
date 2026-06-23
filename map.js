@@ -570,6 +570,7 @@ async function init() {
 
   // Home
   document.getElementById('btn-home').addEventListener('click', () => {
+    _deselectCommune();
     map.flyTo({ center: [2.35, 46.5], zoom: 5 });
   });
 
