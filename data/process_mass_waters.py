@@ -104,6 +104,9 @@ for w in data:
     nom = (w.get('nom') or '').strip()
     if not nom:
         continue
+    # Must be scorable (Ca + Bic required for SCA score)
+    if w.get('calcium_mg_l') is None or w.get('bicarbonate_mg_l') is None:
+        continue
 
     pays = PAYS_MAP.get(w.get('pays', ''), w.get('pays', ''))
 
