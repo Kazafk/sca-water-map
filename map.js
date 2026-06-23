@@ -370,7 +370,7 @@ function selectCommune(commune, { flyTo = false } = {}) {
   if (viewMode !== 'communes') { viewMode = 'communes'; _applyViewMode(); }
   if (map?.isStyleLoaded())
     map.setFilter('communes-selected', ['==', ['get', 'code'], commune.insee]);
-  if (flyTo && map?.isStyleLoaded())
+  if (flyTo && map)
     map.flyTo({ center: _communeCenter(commune.insee), zoom: 12 });
   _saveHistory(commune);
   _pushState(commune);
