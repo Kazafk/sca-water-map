@@ -253,31 +253,93 @@ def round_val(v):
         return int(r) if r == int(r) else r
     return v
 
+
+# ── Corrections / suppressions manuelles ─────────────────────────────────────
+# Entrées à supprimer après analyse (doublon ou erreur irréparable)
+DROP_IDS = {
+    # MONTCALM typo : off_5400113017486 ('Mont calm') a ca=3, bic=6.8 —
+    # toutes les valeurs sont ~10× trop petites (erreur de virgule décimale).
+    # off_3256225040629 ('Eau minérale MONTCALM 6x1,5l') couvre cette référence
+    # avec les valeurs correctes ca=30, bic=52. On supprime le doublon.
+    'off_5400113017486',
+}
+
+# id → overrides appliqués AVANT les filtres de validité
+CORRECTIONS = {}
+
+
+# ── Déduplication ─────────────────────────────────────────────────────────────
+import re, unicodedata as _ud
+
+def _norm_nom(s):
+    """Clé de déduplication : minuscules, sans accents, sans ponctuation/taille."""
+    # Supprimer mentions de volume (ex: "6x1,5l", "1.5l", "50cl")
+    s = re.sub(r'\b\d+[x×]\d[\d,\.]*\s*(?:ml|cl|l|lt)\b', '', s, flags=re.I)
+    s = re.sub(r'\b\d[\d,\.]*\s*(?:ml|cl|l|lt)\b', '', s, flags=re.I)
+    # Normaliser
+    s = _ud.normalize('NFD', s.lower())
+    s = ''.join(c for c in s if _ud.category(c) != 'Mn')   # strip diacritics
+    s = re.sub(r'[^a-z0-9]', '', s)
+    return s
+
+
+# ── Main ──────────────────────────────────────────────────────────────────────
 src = r'C:\Repos\bottled-water-db\eaux_bouteille.json'
 dst = os.path.join(os.path.dirname(__file__), '..', 'public', 'eaux_masse.json')
 
 with open(src, encoding='latin-1') as f:
     data = json.load(f)
 
-out = []
-skipped_name = 0
+raw_entries = []
+skipped = {'curated': 0, 'no_ca_bic': 0, 'zero_ca_bic': 0,
+           'bad_data': 0, 'empty_nom': 0}
+
 for w in data:
     wid = str(w.get('id', ''))
     if wid in CURATED_IDS:
+        skipped['curated'] += 1
         continue
-    # Must be scorable
-    if w.get('calcium_mg_l') is None or w.get('bicarbonate_mg_l') is None:
+    if wid in DROP_IDS:
+        skipped['curated'] += 1   # compte dans le même compteur
+        continue
+
+    # Corrections manuelles
+    if wid in CORRECTIONS:
+        w = {**w, **CORRECTIONS[wid]}
+
+    ca  = w.get('calcium_mg_l')
+    bic = w.get('bicarbonate_mg_l')
+    tds = w.get('tds_mg_l')
+
+    # Doit avoir Ca ET Bic non nuls
+    if ca is None or bic is None:
+        skipped['no_ca_bic'] += 1
+        continue
+    if ca == 0 or bic == 0:
+        skipped['zero_ca_bic'] += 1
+        continue
+
+    # Filtre données aberrantes : valeurs vraisemblablement dans la mauvaise unité
+    # (ex: Ca=0.02 avec TDS=0.5 → clairement en g/L au lieu de mg/L)
+    if ca < 0.3:
+        skipped['bad_data'] += 1
+        continue
+    if bic < 0.5:
+        skipped['bad_data'] += 1
+        continue
+    if tds is not None and tds < 2.0:
+        skipped['bad_data'] += 1
         continue
 
     nom = clean_nom(w.get('nom', ''))
     if not nom:
-        skipped_name += 1
+        skipped['empty_nom'] += 1
         continue
 
-    pays_raw  = fix_str(w.get('pays', ''))
-    pays      = PAYS_MAP.get(pays_raw, pays_raw) or 'Inconnu'
+    pays_raw = fix_str(w.get('pays', ''))
+    pays     = PAYS_MAP.get(pays_raw, pays_raw) or 'Inconnu'
 
-    out.append({
+    raw_entries.append({
         'id':               wid,
         'nom':              nom,
         'pays':             pays,
@@ -286,23 +348,51 @@ for w in data:
         'type_eau':         fix_str(w.get('type_eau'))  or 'Plate',
         'categorie':        fix_str(w.get('categorie')) or 'Source',
         'ph':               round_val(w.get('ph')),
-        'tds_mg_l':         round_val(w.get('tds_mg_l')),
-        'calcium_mg_l':     round_val(w.get('calcium_mg_l')),
+        'tds_mg_l':         round_val(tds),
+        'calcium_mg_l':     round_val(ca),
         'magnesium_mg_l':   round_val(w.get('magnesium_mg_l')),
         'sodium_mg_l':      round_val(w.get('sodium_mg_l')),
         'potassium_mg_l':   round_val(w.get('potassium_mg_l')),
-        'bicarbonate_mg_l': round_val(w.get('bicarbonate_mg_l')),
+        'bicarbonate_mg_l': round_val(bic),
         'sulfate_mg_l':     round_val(w.get('sulfate_mg_l')),
         'chlorure_mg_l':    round_val(w.get('chlorure_mg_l')),
         'silice_mg_l':      round_val(w.get('silice_mg_l')),
         'nitrate_mg_l':     round_val(w.get('nitrate_mg_l')),
+        '_norm': _norm_nom(nom),
     })
+
+# ── Déduplication : même nom normalisé + même (Ca, Bic) → garder un seul ──
+# On préfère l'entrée avec le plus de champs renseignés.
+DEDUP_FIELDS = ['ph','tds_mg_l','magnesium_mg_l','sodium_mg_l',
+                'potassium_mg_l','sulfate_mg_l','chlorure_mg_l']
+
+def _richness(e):
+    return sum(1 for f in DEDUP_FIELDS if e.get(f) is not None)
+
+from collections import defaultdict
+dedup_groups = defaultdict(list)
+for e in raw_entries:
+    key = (e['_norm'], e['calcium_mg_l'], e['bicarbonate_mg_l'])
+    dedup_groups[key].append(e)
+
+out = []
+dupes_removed = 0
+for key, group in dedup_groups.items():
+    best = max(group, key=_richness)
+    out.append(best)
+    dupes_removed += len(group) - 1
+
+# Supprimer la clé temporaire
+for e in out:
+    del e['_norm']
 
 compact = json.dumps(out, ensure_ascii=False, separators=(',', ':'))
 with open(dst, 'w', encoding='utf-8') as f:
     f.write(compact)
 
-print(f'Ecrit: {len(out)} entrees -> {dst}')
-print(f'Saute (nom vide apres nettoyage): {skipped_name}')
-print(f'Taille: {len(compact)//1024} KB')
+print(f'Source : {len(data)} entrees')
+print(f'Sautes  : {skipped}')
+print(f'Doublons supprimes : {dupes_removed}')
+print(f'Ecrit   : {len(out)} entrees -> {dst}')
+print(f'Taille  : {len(compact)//1024} KB')
 print('OK')
