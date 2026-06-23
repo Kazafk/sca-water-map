@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eaux en bouteille — SCA Water Map</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body { overflow: auto; }
+
+    /* ── Layout ── */
+    #bottled-layout {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 24px 16px 80px;
+    }
+
+    /* ── Chart section ── */
+    #chart-section {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 18px 20px 12px;
+      margin-bottom: 16px;
+    }
+    .b-section-title {
+      font-size: 12px;
+      font-weight: bold;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: .5px;
+      margin-bottom: 12px;
+    }
+    #chart-container { width: 100%; }
+
+    .b-chart-legend {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-top: 10px;
+      padding-top: 10px;
+      border-top: 1px solid var(--border);
+    }
+    .b-legend-item {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 10px;
+      color: var(--muted);
+    }
+    .b-legend-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    /* ── Filter bar ── */
+    .b-filter-bar {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 14px 16px;
+      margin-bottom: 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .b-search-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    #b-search {
+      flex: 1;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      color: var(--text);
+      padding: 6px 10px;
+      font-size: 12px;
+      outline: none;
+    }
+    #b-search:focus { border-color: var(--blue); }
+    .b-count {
+      font-size: 10px;
+      color: var(--muted);
+      white-space: nowrap;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 4px 8px;
+    }
+    .b-filter-group {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .b-filter-label {
+      font-size: 9px;
+      font-weight: bold;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: .5px;
+      padding-top: 3px;
+      min-width: 68px;
+      flex-shrink: 0;
+    }
+    .b-pays-pills {
+      overflow-x: auto;
+      flex-wrap: nowrap;
+      padding-bottom: 3px;
+    }
+
+    /* ── Table ── */
+    .b-table-wrap {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow-x: auto;
+    }
+    .b-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 12px;
+    }
+    .b-table thead {
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+    }
+    .b-th {
+      padding: 9px 12px;
+      font-size: 10px;
+      font-weight: bold;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: .4px;
+      cursor: pointer;
+      white-space: nowrap;
+      user-select: none;
+    }
+    .b-th:hover { color: var(--text); }
+    .b-th-active { color: var(--blue) !important; }
+    .b-table tbody tr { border-bottom: 1px solid var(--border); }
+    .b-table tbody tr:last-child:not(.b-detail-row) { border-bottom: none; }
+    .b-row { cursor: pointer; transition: background .12s; }
+    .b-row:hover { background: var(--bg); }
+    .b-row-sel { background: var(--bg) !important; }
+    .b-row td { padding: 8px 12px; vertical-align: middle; }
+    .b-detail-row td { padding: 0; }
+    .b-score-badge {
+      display: inline-block;
+      border-radius: 4px;
+      padding: 2px 6px;
+      font-size: 11px;
+      font-weight: bold;
+      font-variant-numeric: tabular-nums;
+    }
+    .b-type-badge {
+      display: inline-block;
+      background: var(--border);
+      color: var(--muted);
+      border-radius: 3px;
+      padding: 1px 4px;
+      font-size: 9px;
+      font-weight: bold;
+      margin-right: 2px;
+    }
+    .b-unit { color: var(--muted); font-size: 10px; }
+    .b-val-na { color: var(--muted); }
+    .b-no-results { text-align: center; color: var(--muted); padding: 24px; }
+
+    /* ── Detail panel ── */
+    .b-detail {
+      background: var(--bg);
+      border-top: 1px solid var(--border);
+      padding: 16px 16px 20px;
+      animation: fadeDown .18s ease;
+    }
+    @keyframes fadeDown {
+      from { opacity: 0; transform: translateY(-6px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .b-det-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 10px;
+    }
+    .b-det-name   { font-size: 15px; font-weight: bold; color: var(--text); }
+    .b-det-origin { font-size: 11px; color: var(--muted); margin-top: 2px; }
+    .b-det-type   { font-size: 10px; color: var(--muted); margin-top: 2px; }
+    .b-det-score  { text-align: right; }
+    .b-det-score-val { font-size: 22px; font-weight: bold; line-height: 1; }
+    .b-det-score-lbl { font-size: 10px; margin-top: 2px; }
+    .b-det-desc { font-size: 11px; color: var(--muted); line-height: 1.6; margin-bottom: 14px; border-bottom: 1px solid var(--border); padding-bottom: 12px; }
+    .b-det-params {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    @media (max-width: 600px) { .b-det-params { grid-template-columns: 1fr; } }
+    .b-det-section { }
+    .b-det-title {
+      font-size: 9px;
+      font-weight: bold;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: .5px;
+      margin-bottom: 8px;
+    }
+    .b-det-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 4px 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 11px;
+    }
+    .b-det-row:last-child { border-bottom: none; }
+    .b-det-label { color: var(--muted); }
+    .b-det-val   { color: var(--text); font-variant-numeric: tabular-nums; }
+    .b-det-ok   .b-det-label::before { content: '✓ '; color: var(--green); }
+    .b-det-warn .b-det-label::before { content: '↕ '; color: var(--orange); }
+    .b-recipe-tip {
+      font-size: 11px;
+      color: var(--muted);
+      padding: 4px 0;
+      border-bottom: 1px solid var(--border);
+      line-height: 1.5;
+    }
+    .b-recipe-tip:last-child { border-bottom: none; }
+  </style>
+</head>
+<body>
+  <!-- Thème appliqué immédiatement pour éviter le flash clair→sombre -->
+  <script>if(localStorage.getItem('sca-theme')==='light')document.body.dataset.theme='light';</script>
+  <header id="topbar">
+    <div id="brand">
+      <span id="brand-title">☕ SCA Water Map</span>
+      <span id="brand-subtitle">Eaux en bouteille — analyse SCA</span>
+    </div>
+    <div id="controls">
+      <button id="btn-theme" class="btn-icon" title="Basculer thème"></button>
+      <a href="index.html" class="btn-icon" style="text-decoration:none">🗺 Carte</a>
+      <a href="about.html" class="btn-icon" style="text-decoration:none">ℹ️ Méthode</a>
+    </div>
+  </header>
+
+  <div id="bottled-layout">
+
+    <!-- SCA Chart -->
+    <div id="chart-section">
+      <div class="b-section-title">SCA Water Chart — 44 eaux du monde</div>
+      <div id="chart-container"><!-- rendered by JS --></div>
+      <div class="b-chart-legend">
+        <div class="b-legend-item"><span class="b-legend-dot" style="background:#2ecc71"></span>Idéal SCA ≥ 75 %</div>
+        <div class="b-legend-item"><span class="b-legend-dot" style="background:#3498db"></span>Acceptable 50–75 %</div>
+        <div class="b-legend-item"><span class="b-legend-dot" style="background:#f39c12"></span>Hors plage 25–50 %</div>
+        <div class="b-legend-item"><span class="b-legend-dot" style="background:#e74c3c"></span>Très hors SCA &lt; 25 %</div>
+        <div class="b-legend-item"><span class="b-legend-dot" style="background:#2d2d2d;border:1px solid #555"></span>Données absentes</div>
+      </div>
+    </div>
+
+    <!-- Filters -->
+    <div id="filter-container"><!-- rendered by JS --></div>
+
+    <!-- Table -->
+    <div id="table-container"><!-- rendered by JS --></div>
+
+  </div>
+
+  <script>
+    (function () {
+      var btn = document.getElementById('btn-theme');
+      var theme = localStorage.getItem('sca-theme') || 'dark';
+      function applyTheme(t) {
+        document.body.dataset.theme = t === 'light' ? 'light' : '';
+        btn.textContent = t === 'light' ? '🌙' : '☀';
+        localStorage.setItem('sca-theme', t);
+      }
+      applyTheme(theme);
+      btn.addEventListener('click', function () {
+        theme = theme === 'dark' ? 'light' : 'dark';
+        applyTheme(theme);
+      });
+    })();
+  </script>
+  <script type="module" src="bottled.js"></script>
+</body>
+</html>
