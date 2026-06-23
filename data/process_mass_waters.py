@@ -186,6 +186,41 @@ def _extract_latin_from(s):
             return part
     return ''
 
+def strip_packaging(s):
+    """Remove volume/container references from a product name."""
+    # German retailer price descriptions (e.g. "0.50€ ( Angebot ) 5.99€ + Pfand")
+    s = re.sub(r'\s*\d[\d\s,\.]*\s*€.*$', '', s).strip()
+
+    # Parenthetical groups that contain a volume: (330 ML), (12 x 75 cl), (6x1,5l)
+    s = re.sub(r'\s*\([^)]*\b\d[\d,\.]*\s*(?:ml|cl|l|lt)\b[^)]*\)', '', s, flags=re.I)
+
+    # Multi-pack volumes: 6x1.5L, 12 x 1 l, pack de 6x50cl
+    s = re.sub(r'\b(?:pack\s+de\s+)?\d+\s*[x×]\s*\d[\d,\.]*\s*(?:ml|cl|l|lt)\b', '', s, flags=re.I)
+
+    # Alphanumeric code concatenated with volume: Spk500ml, Sportscap330ml
+    s = re.sub(r'\b[A-Za-z]+\d[\d,\.]*\s*(?:ml|cl|l|lt)\b', '', s, flags=re.I)
+
+    # Simple volumes: 0.5L, 1.5 L, 50cl, 500ml, 2 lt, 330 ML, 6L
+    s = re.sub(r'\b\d[\d,\.]*\s*(?:ml|cl|l|lt)\b', '', s, flags=re.I)
+
+    # Standalone container codes
+    s = re.sub(r'\bPET\b', '', s)
+    s = re.sub(r'\bEW\b', '', s)
+
+    # "Kiste" (German crate): strip leading occurrence, then mid/trailing + everything after
+    s = re.sub(r'^kiste\b\s*', '', s, flags=re.I)
+    s = re.sub(r'\s*,?\s*\bkiste\b.*$', '', s, flags=re.I)
+
+    # Variant/container descriptors
+    s = re.sub(r'\bsportscap\b', '', s, flags=re.I)
+    s = re.sub(r'\bsportcap\b', '', s, flags=re.I)
+    s = re.sub(r'\bcanette\b', '', s, flags=re.I)
+    s = re.sub(r'\bkids?\b', '', s, flags=re.I)
+    s = re.sub(r'\bpack\b', '', s, flags=re.I)
+
+    s = re.sub(r'\s+', ' ', s).strip(' -–—,.()')
+    return s
+
 def clean_nom(raw):
     """Fix encoding and extract a clean product name from OpenFoodFacts format."""
     s = fix_mojibake(str(raw or '').strip())
@@ -197,13 +232,14 @@ def clean_nom(raw):
         before, after = s.split(' - ', 1)
         before = before.strip()
         after  = after.strip()
+        after_stripped = strip_packaging(after)
 
         after_nonlatin  = has_non_latin(after)
         before_nonlatin = has_non_latin(before)
 
-        if not after_nonlatin and _is_useful_name(after):
+        if not after_nonlatin and _is_useful_name(after_stripped):
             # Clean Latin product name → use it
-            return after
+            return after_stripped
         elif not before_nonlatin:
             # Latin brand, non-Latin product → use Latin brand (first token)
             brand = before.split(',')[0].strip()
@@ -212,31 +248,30 @@ def clean_nom(raw):
                 after_tr = transliterate(after) if all(
                     _char_script(c) == 'CYRILLIC' or not c.strip() for c in after
                 ) else ''
-                return (brand + (' – ' + after_tr if after_tr else '')).strip(' –')
-            return brand
+                return strip_packaging((brand + (' – ' + after_tr if after_tr else '')).strip(' –'))
+            return strip_packaging(brand)
         else:
             # Both non-Latin: try to salvage Latin from before
             latin_brand = _extract_latin_from(before)
             if latin_brand:
-                return latin_brand
+                return strip_packaging(latin_brand)
             # Transliterate Cyrillic
             tr = transliterate(s)
             if not has_non_latin(tr):
-                # Clean up double spaces
-                return ' '.join(tr.split())
+                return strip_packaging(' '.join(tr.split()))
             # Remove non-Latin chars (Arabic/Hebrew/etc.)
             cleaned = ''.join(c for c in s if _char_script(c) == 'LATIN' or ord(c) < 128)
-            return ' '.join(cleaned.split()).strip(' -,')
+            return strip_packaging(' '.join(cleaned.split()).strip(' -,'))
 
     # No separator: just fix encoding and transliterate if needed
     if has_non_latin(s):
         tr = transliterate(s)
         if not has_non_latin(tr):
-            return ' '.join(tr.split())
+            return strip_packaging(' '.join(tr.split()))
         # Strip non-Latin (Arabic/Hebrew/CJK)
         s = ''.join(c for c in s if _char_script(c) == 'LATIN' or ord(c) < 128)
         s = ' '.join(s.split()).strip(' -,')
-    return s
+    return strip_packaging(s)
 
 
 def fix_str(s):
