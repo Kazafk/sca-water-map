@@ -119,7 +119,7 @@ function _renderHistory() {
   emptyEl.querySelectorAll('.history-row').forEach(row => {
     row.addEventListener('click', () => {
       const c = communesData[row.dataset.insee] ?? arrData[row.dataset.insee];
-      if (c) selectCommune(c);
+      if (c) selectCommune(c, { flyTo: true });
     });
   });
 }
@@ -344,7 +344,7 @@ function _deselectCommune() {
   sheet?.peek?.();
 }
 
-function selectCommune(commune) {
+function selectCommune(commune, { flyTo = false } = {}) {
   if (compareMode) {
     compareMode = false;
     updateComparePanel(compareBase, commune, generatedAt);
@@ -362,6 +362,8 @@ function selectCommune(commune) {
   if (viewMode !== 'communes') { viewMode = 'communes'; _applyViewMode(); }
   if (map?.isStyleLoaded())
     map.setFilter('communes-selected', ['==', ['get', 'code'], commune.insee]);
+  if (flyTo && map?.isStyleLoaded())
+    map.flyTo({ center: _communeCenter(commune.insee), zoom: 12 });
   _saveHistory(commune);
   _pushState(commune);
   sheet?.open();
@@ -390,7 +392,7 @@ function _buildDropdown(matches) {
     const col   = colorFromScore(commune.score);
     li.innerHTML = `${commune.nom}<span style="color:${col};float:right">${score}</span>`;
     li.dataset.insee = commune.insee;
-    li.addEventListener('mousedown', (e) => { e.preventDefault(); selectCommune(commune); });
+    li.addEventListener('mousedown', (e) => { e.preventDefault(); selectCommune(commune, { flyTo: true }); });
     dropdown.appendChild(li);
   }
   document.getElementById('search-wrapper').appendChild(dropdown);
@@ -682,7 +684,7 @@ async function init() {
       if (dropdownIndex >= 0 && items[dropdownIndex]) {
         const ins = items[dropdownIndex].dataset.insee;
         const c   = communesData[ins];
-        if (c) selectCommune(c);
+        if (c) selectCommune(c, { flyTo: true });
       }
     } else if (e.key === 'Escape') {
       closeDropdown();
