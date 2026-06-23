@@ -68,6 +68,7 @@ let _geojson      = null;
 let _deptGeojson  = null;
 let _theme        = localStorage.getItem('sca-theme') || 'dark';
 let _mapInitialized = false;
+let _topCommunes  = [];
 
 // --- Hub'Eau raw data fetch ---
 
@@ -97,29 +98,36 @@ function _renderHistory() {
   const emptyEl = document.getElementById('panel-empty');
   const history = JSON.parse(localStorage.getItem(HISTORY_KEY) || '[]')
     .map(ins => communesData[ins] ?? arrData[ins]).filter(Boolean);
-  if (!history.length) {
-    emptyEl.innerHTML = 'Cliquez sur une commune pour voir le détail';
-    emptyEl.hidden = false;
-    return;
-  }
-  emptyEl.innerHTML = `
-    <div style="padding:16px 14px">
-      <div style="font-size:9px;text-transform:uppercase;letter-spacing:.5px;color:var(--muted);margin-bottom:10px">Récemment consultées</div>
-      ${history.map(c => {
-        const cs    = cappedScore(c.score, c.params);
-        const col   = colorFromScore(cs);
-        const score = cs != null ? Math.round(cs * 100) + ' %' : '—';
-        return `<div class="history-row" data-insee="${c.insee}">
-          <span class="history-nom">${c.nom}</span>
-          <span style="color:${col};font-size:10px">${score}</span>
-        </div>`;
-      }).join('')}
+
+  const _row = (c) => {
+    const cs    = cappedScore(c.score, c.params);
+    const col   = colorFromScore(cs);
+    const score = cs != null ? Math.round(cs * 100) + ' %' : '—';
+    return `<div class="history-row" data-insee="${c.insee}">
+      <span class="history-nom">${c.nom}</span>
+      <span style="color:${col};font-size:10px">${score}</span>
     </div>`;
+  };
+
+  const _section = (label, items, topBorder) => `
+    <div style="padding:12px 14px${topBorder ? ';border-top:1px solid var(--border)' : ''}">
+      <div style="font-size:9px;text-transform:uppercase;letter-spacing:.5px;color:var(--muted);margin-bottom:10px">${label}</div>
+      ${items.map(_row).join('')}
+    </div>`;
+
+  if (!history.length && !_topCommunes.length) {
+    emptyEl.innerHTML = 'Cliquez sur une commune pour voir le détail';
+  } else {
+    emptyEl.innerHTML =
+      (history.length ? _section('Récemment consultées', history, false) : '') +
+      (_topCommunes.length ? _section('🏆 Meilleure qualité d\'eau', _topCommunes, history.length > 0) : '');
+  }
+
   emptyEl.hidden = false;
   emptyEl.querySelectorAll('.history-row').forEach(row => {
     row.addEventListener('click', () => {
       const c = communesData[row.dataset.insee] ?? arrData[row.dataset.insee];
-      if (c) selectCommune(c);
+      if (c) selectCommune(c, { flyTo: true });
     });
   });
 }
@@ -344,7 +352,7 @@ function _deselectCommune() {
   sheet?.peek?.();
 }
 
-function selectCommune(commune) {
+function selectCommune(commune, { flyTo = false } = {}) {
   if (compareMode) {
     compareMode = false;
     updateComparePanel(compareBase, commune, generatedAt);
@@ -362,6 +370,8 @@ function selectCommune(commune) {
   if (viewMode !== 'communes') { viewMode = 'communes'; _applyViewMode(); }
   if (map?.isStyleLoaded())
     map.setFilter('communes-selected', ['==', ['get', 'code'], commune.insee]);
+  if (flyTo && map?.isStyleLoaded())
+    map.flyTo({ center: _communeCenter(commune.insee), zoom: 12 });
   _saveHistory(commune);
   _pushState(commune);
   sheet?.open();
@@ -390,7 +400,7 @@ function _buildDropdown(matches) {
     const col   = colorFromScore(commune.score);
     li.innerHTML = `${commune.nom}<span style="color:${col};float:right">${score}</span>`;
     li.dataset.insee = commune.insee;
-    li.addEventListener('mousedown', (e) => { e.preventDefault(); selectCommune(commune); });
+    li.addEventListener('mousedown', (e) => { e.preventDefault(); selectCommune(commune, { flyTo: true }); });
     dropdown.appendChild(li);
   }
   document.getElementById('search-wrapper').appendChild(dropdown);
@@ -429,6 +439,13 @@ async function init() {
   generatedAt  = communesJson.generated_at;
   totalScored  = communesJson.total_scored ?? 0;
   for (const c of communesJson.communes) communesData[c.insee] = c;
+
+  _topCommunes = Object.values(communesData)
+    .map(c => ({ c, cs: cappedScore(c.score, c.params) }))
+    .filter(({ cs }) => cs != null)
+    .sort((a, b) => b.cs - a.cs)
+    .slice(0, 5)
+    .map(({ c }) => c);
 
   for (const [arr, parent] of Object.entries(ARR_PARENT)) {
     if (communesData[parent]) arrData[arr] = { ...communesData[parent], insee: arr };
@@ -568,6 +585,7 @@ async function init() {
 
   // Home
   document.getElementById('btn-home').addEventListener('click', () => {
+    _deselectCommune();
     map.flyTo({ center: [2.35, 46.5], zoom: 5 });
   });
 
@@ -683,7 +701,7 @@ async function init() {
       if (dropdownIndex >= 0 && items[dropdownIndex]) {
         const ins = items[dropdownIndex].dataset.insee;
         const c   = communesData[ins];
-        if (c) selectCommune(c);
+        if (c) selectCommune(c, { flyTo: true });
       }
     } else if (e.key === 'Escape') {
       closeDropdown();
