@@ -127,12 +127,14 @@ def convert_yaml(path: Path) -> dict | None:
 
     ca  = comp.get('calcium_mg_l')
     bic = comp.get('bicarbonate_mg_l')
-    # On garde les entrées sans Ca/Bic (elles apparaîtront avec score null dans le tableau)
-    # mais les valeurs doivent être numériques si présentes
     if ca is not None and not isinstance(ca, (int, float)):
         ca = None
     if bic is not None and not isinstance(bic, (int, float)):
         bic = None
+
+    # Exclure les entrées sans Ca ET sans Bic : score impossible, pas de valeur ajoutée
+    if ca is None and bic is None:
+        return None
 
     slug = data.get('slug') or path.stem
     country_en = data.get('country_origin', '')
