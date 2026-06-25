@@ -433,25 +433,10 @@ async function loadCuratedData() {
     const raw  = await resp.json();
     WATERS     = raw.map(w => computeEntry(w, true));
     ALL_WATERS = [...WATERS];
+    massLoaded = true;
     render();
   } catch (e) {
     console.error('Failed to load curated_waters.json:', e);
-    render();
-  }
-  loadMassData();
-}
-
-// ── Mass data loader ─────────────────────────────────────────────────────────
-async function loadMassData() {
-  try {
-    const resp = await fetch('eaux_masse.json');
-    const raw  = await resp.json();
-    ALL_WATERS = [...WATERS, ...raw.map(w => computeEntry(w, false))];
-    massLoaded = true;
-    S.page = 0;
-    render();
-  } catch (e) {
-    console.error('Failed to load mass data:', e);
     massLoaded = true;
     render();
   }
