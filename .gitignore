@@ -2,8 +2,6 @@
 public/communes.json
 data/geonames/
 data/geocoding_misses.csv
-public/world-cities.json
-public/world-countries.json
 
 # Python
 __pycache__/
