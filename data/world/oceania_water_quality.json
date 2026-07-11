@@ -1,0 +1,2270 @@
+[
+    {
+        "Region": "Sydney (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.5",
+            "Alkalinity_TAC_mmol_l": "0.8",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "150",
+            "Sodium_Na_mg_l": "18.0",
+            "Chlorides_Cl_mg_l": "25.0",
+            "Calcium_Ca_mg_l": "15.0"
+        }
+    },
+    {
+        "Region": "Adelaide (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "11.0",
+            "Alkalinity_TAC_mmol_l": "2.5",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "500",
+            "Sodium_Na_mg_l": "85.0",
+            "Chlorides_Cl_mg_l": "120.0",
+            "Calcium_Ca_mg_l": "55.0"
+        }
+    },
+    {
+        "Region": "Auckland (New Zealand)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.5",
+            "Alkalinity_TAC_mmol_l": "0.5",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "110",
+            "Sodium_Na_mg_l": "12.0",
+            "Chlorides_Cl_mg_l": "15.0",
+            "Calcium_Ca_mg_l": "12.0"
+        }
+    },
+    {
+        "Region": "Sale (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.3",
+            "Alkalinity_TAC_mmol_l": "3.48",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "76",
+            "Sodium_Na_mg_l": "11.6",
+            "Chlorides_Cl_mg_l": "26.2",
+            "Calcium_Ca_mg_l": "19.0"
+        }
+    },
+    {
+        "Region": "Chinatown, Perth (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.0",
+            "Alkalinity_TAC_mmol_l": "1.92",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "164",
+            "Sodium_Na_mg_l": "15.2",
+            "Chlorides_Cl_mg_l": "12.7",
+            "Calcium_Ca_mg_l": "15.1"
+        }
+    },
+    {
+        "Region": "Treasury Reserve Precinct (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.1",
+            "Alkalinity_TAC_mmol_l": "1.03",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "251",
+            "Sodium_Na_mg_l": "18.7",
+            "Chlorides_Cl_mg_l": "14.8",
+            "Calcium_Ca_mg_l": "7.6"
+        }
+    },
+    {
+        "Region": "Goulburn (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.3",
+            "Alkalinity_TAC_mmol_l": "3.21",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "202",
+            "Sodium_Na_mg_l": "18.6",
+            "Chlorides_Cl_mg_l": "27.5",
+            "Calcium_Ca_mg_l": "18.1"
+        }
+    },
+    {
+        "Region": "Castlemaine (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "5.0",
+            "Alkalinity_TAC_mmol_l": "1.14",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "221",
+            "Sodium_Na_mg_l": "6.7",
+            "Chlorides_Cl_mg_l": "20.3",
+            "Calcium_Ca_mg_l": "14.5"
+        }
+    },
+    {
+        "Region": "Bairnsdale (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.3",
+            "Alkalinity_TAC_mmol_l": "2.54",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "365",
+            "Sodium_Na_mg_l": "37.8",
+            "Chlorides_Cl_mg_l": "43.8",
+            "Calcium_Ca_mg_l": "48.8"
+        }
+    },
+    {
+        "Region": "Cessnock (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.3",
+            "Alkalinity_TAC_mmol_l": "3.35",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "181",
+            "Sodium_Na_mg_l": "9.7",
+            "Chlorides_Cl_mg_l": "25.8",
+            "Calcium_Ca_mg_l": "15.8"
+        }
+    },
+    {
+        "Region": "Southport (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.8",
+            "Alkalinity_TAC_mmol_l": "0.52",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "320",
+            "Sodium_Na_mg_l": "33.2",
+            "Chlorides_Cl_mg_l": "56.7",
+            "Calcium_Ca_mg_l": "45.1"
+        }
+    },
+    {
+        "Region": "Parliamentary Triangle, Canberra (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.6",
+            "Alkalinity_TAC_mmol_l": "2.81",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "132",
+            "Sodium_Na_mg_l": "9.3",
+            "Chlorides_Cl_mg_l": "10.8",
+            "Calcium_Ca_mg_l": "7.9"
+        }
+    },
+    {
+        "Region": "Melbourne Sports and Entertainment Precinct (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.3",
+            "Alkalinity_TAC_mmol_l": "2.67",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "463",
+            "Sodium_Na_mg_l": "87.8",
+            "Chlorides_Cl_mg_l": "85.0",
+            "Calcium_Ca_mg_l": "91.9"
+        }
+    },
+    {
+        "Region": "Tamworth (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.5",
+            "Alkalinity_TAC_mmol_l": "0.96",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "278",
+            "Sodium_Na_mg_l": "42.0",
+            "Chlorides_Cl_mg_l": "33.7",
+            "Calcium_Ca_mg_l": "36.8"
+        }
+    },
+    {
+        "Region": "Armidale (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.2",
+            "Alkalinity_TAC_mmol_l": "3.10",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "362",
+            "Sodium_Na_mg_l": "26.1",
+            "Chlorides_Cl_mg_l": "46.0",
+            "Calcium_Ca_mg_l": "48.6"
+        }
+    },
+    {
+        "Region": "Townsville (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.0",
+            "Alkalinity_TAC_mmol_l": "3.31",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "311",
+            "Sodium_Na_mg_l": "31.6",
+            "Chlorides_Cl_mg_l": "50.5",
+            "Calcium_Ca_mg_l": "25.9"
+        }
+    },
+    {
+        "Region": "Newcastle (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.2",
+            "Alkalinity_TAC_mmol_l": "0.58",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "295",
+            "Sodium_Na_mg_l": "36.4",
+            "Chlorides_Cl_mg_l": "41.6",
+            "Calcium_Ca_mg_l": "31.8"
+        }
+    },
+    {
+        "Region": "Little Italy (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.2",
+            "Alkalinity_TAC_mmol_l": "1.94",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "146",
+            "Sodium_Na_mg_l": "13.9",
+            "Chlorides_Cl_mg_l": "28.7",
+            "Calcium_Ca_mg_l": "17.8"
+        }
+    },
+    {
+        "Region": "Palmerston (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.8",
+            "Alkalinity_TAC_mmol_l": "0.73",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "113",
+            "Sodium_Na_mg_l": "7.6",
+            "Chlorides_Cl_mg_l": "12.9",
+            "Calcium_Ca_mg_l": "12.8"
+        }
+    },
+    {
+        "Region": "Mount Isa (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.9",
+            "Alkalinity_TAC_mmol_l": "2.40",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "672",
+            "Sodium_Na_mg_l": "97.0",
+            "Chlorides_Cl_mg_l": "104.9",
+            "Calcium_Ca_mg_l": "78.9"
+        }
+    },
+    {
+        "Region": "East End Theatre District (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "9.4",
+            "Alkalinity_TAC_mmol_l": "1.15",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "378",
+            "Sodium_Na_mg_l": "20.8",
+            "Chlorides_Cl_mg_l": "49.0",
+            "Calcium_Ca_mg_l": "49.8"
+        }
+    },
+    {
+        "Region": "The Strand (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.2",
+            "Alkalinity_TAC_mmol_l": "0.92",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "322",
+            "Sodium_Na_mg_l": "23.2",
+            "Chlorides_Cl_mg_l": "57.5",
+            "Calcium_Ca_mg_l": "48.4"
+        }
+    },
+    {
+        "Region": "Cairns (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.0",
+            "Alkalinity_TAC_mmol_l": "1.40",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "156",
+            "Sodium_Na_mg_l": "6.5",
+            "Chlorides_Cl_mg_l": "24.4",
+            "Calcium_Ca_mg_l": "15.3"
+        }
+    },
+    {
+        "Region": "Darwin (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.7",
+            "Alkalinity_TAC_mmol_l": "3.11",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "301",
+            "Sodium_Na_mg_l": "35.2",
+            "Chlorides_Cl_mg_l": "38.4",
+            "Calcium_Ca_mg_l": "35.5"
+        }
+    },
+    {
+        "Region": "Bundaberg (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.4",
+            "Alkalinity_TAC_mmol_l": "2.88",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "136",
+            "Sodium_Na_mg_l": "13.3",
+            "Chlorides_Cl_mg_l": "19.7",
+            "Calcium_Ca_mg_l": "7.5"
+        }
+    },
+    {
+        "Region": "Toowoomba (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.5",
+            "Alkalinity_TAC_mmol_l": "2.08",
+            "pH": "6.8",
+            "TDS_Conductivity_uS_cm": "154",
+            "Sodium_Na_mg_l": "9.9",
+            "Chlorides_Cl_mg_l": "16.1",
+            "Calcium_Ca_mg_l": "19.1"
+        }
+    },
+    {
+        "Region": "Taree (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.8",
+            "Alkalinity_TAC_mmol_l": "3.48",
+            "pH": "6.9",
+            "TDS_Conductivity_uS_cm": "173",
+            "Sodium_Na_mg_l": "14.2",
+            "Chlorides_Cl_mg_l": "11.6",
+            "Calcium_Ca_mg_l": "9.0"
+        }
+    },
+    {
+        "Region": "Rockhampton (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.2",
+            "Alkalinity_TAC_mmol_l": "1.56",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "298",
+            "Sodium_Na_mg_l": "44.1",
+            "Chlorides_Cl_mg_l": "48.7",
+            "Calcium_Ca_mg_l": "41.5"
+        }
+    },
+    {
+        "Region": "Yarrawonga-Mulwala (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "11.2",
+            "Alkalinity_TAC_mmol_l": "1.59",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "453",
+            "Sodium_Na_mg_l": "92.1",
+            "Chlorides_Cl_mg_l": "78.2",
+            "Calcium_Ca_mg_l": "64.7"
+        }
+    },
+    {
+        "Region": "Wollongong (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "11.9",
+            "Alkalinity_TAC_mmol_l": "2.21",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "481",
+            "Sodium_Na_mg_l": "97.9",
+            "Chlorides_Cl_mg_l": "137.6",
+            "Calcium_Ca_mg_l": "56.5"
+        }
+    },
+    {
+        "Region": "Sydney Olympic Park (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.2",
+            "Alkalinity_TAC_mmol_l": "2.61",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "295",
+            "Sodium_Na_mg_l": "43.1",
+            "Chlorides_Cl_mg_l": "43.0",
+            "Calcium_Ca_mg_l": "40.3"
+        }
+    },
+    {
+        "Region": "Murray Bridge (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.3",
+            "Alkalinity_TAC_mmol_l": "2.22",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "125",
+            "Sodium_Na_mg_l": "12.6",
+            "Chlorides_Cl_mg_l": "16.7",
+            "Calcium_Ca_mg_l": "12.1"
+        }
+    },
+    {
+        "Region": "Opera Quays (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.1",
+            "Alkalinity_TAC_mmol_l": "2.89",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "567",
+            "Sodium_Na_mg_l": "90.6",
+            "Chlorides_Cl_mg_l": "95.0",
+            "Calcium_Ca_mg_l": "75.1"
+        }
+    },
+    {
+        "Region": "Brisbane (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.9",
+            "Alkalinity_TAC_mmol_l": "2.88",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "186",
+            "Sodium_Na_mg_l": "17.5",
+            "Chlorides_Cl_mg_l": "17.1",
+            "Calcium_Ca_mg_l": "13.2"
+        }
+    },
+    {
+        "Region": "Dandenong (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.4",
+            "Alkalinity_TAC_mmol_l": "0.52",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "149",
+            "Sodium_Na_mg_l": "12.1",
+            "Chlorides_Cl_mg_l": "24.3",
+            "Calcium_Ca_mg_l": "13.8"
+        }
+    },
+    {
+        "Region": "Grafton (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.5",
+            "Alkalinity_TAC_mmol_l": "3.18",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "567",
+            "Sodium_Na_mg_l": "74.9",
+            "Chlorides_Cl_mg_l": "96.6",
+            "Calcium_Ca_mg_l": "82.0"
+        }
+    },
+    {
+        "Region": "Hamilton (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.6",
+            "Alkalinity_TAC_mmol_l": "1.63",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "669",
+            "Sodium_Na_mg_l": "98.2",
+            "Chlorides_Cl_mg_l": "85.9",
+            "Calcium_Ca_mg_l": "57.8"
+        }
+    },
+    {
+        "Region": "Millers Point & Dawes Point Village Precinct (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.8",
+            "Alkalinity_TAC_mmol_l": "1.35",
+            "pH": "6.9",
+            "TDS_Conductivity_uS_cm": "124",
+            "Sodium_Na_mg_l": "16.1",
+            "Chlorides_Cl_mg_l": "14.6",
+            "Calcium_Ca_mg_l": "14.8"
+        }
+    },
+    {
+        "Region": "Orange (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.3",
+            "Alkalinity_TAC_mmol_l": "1.69",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "155",
+            "Sodium_Na_mg_l": "7.6",
+            "Chlorides_Cl_mg_l": "27.3",
+            "Calcium_Ca_mg_l": "19.9"
+        }
+    },
+    {
+        "Region": "Shepparton (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "11.0",
+            "Alkalinity_TAC_mmol_l": "2.45",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "456",
+            "Sodium_Na_mg_l": "64.3",
+            "Chlorides_Cl_mg_l": "144.4",
+            "Calcium_Ca_mg_l": "89.1"
+        }
+    },
+    {
+        "Region": "Port Macquarie (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.9",
+            "Alkalinity_TAC_mmol_l": "3.28",
+            "pH": "6.9",
+            "TDS_Conductivity_uS_cm": "215",
+            "Sodium_Na_mg_l": "16.4",
+            "Chlorides_Cl_mg_l": "26.1",
+            "Calcium_Ca_mg_l": "5.2"
+        }
+    },
+    {
+        "Region": "Macquarie Street East Precinct (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.5",
+            "Alkalinity_TAC_mmol_l": "2.14",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "271",
+            "Sodium_Na_mg_l": "31.5",
+            "Chlorides_Cl_mg_l": "51.5",
+            "Calcium_Ca_mg_l": "40.2"
+        }
+    },
+    {
+        "Region": "Port Augusta (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.5",
+            "Alkalinity_TAC_mmol_l": "2.05",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "700",
+            "Sodium_Na_mg_l": "63.9",
+            "Chlorides_Cl_mg_l": "115.8",
+            "Calcium_Ca_mg_l": "74.1"
+        }
+    },
+    {
+        "Region": "Coffs Harbour (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.3",
+            "Alkalinity_TAC_mmol_l": "2.98",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "247",
+            "Sodium_Na_mg_l": "13.8",
+            "Chlorides_Cl_mg_l": "12.0",
+            "Calcium_Ca_mg_l": "10.3"
+        }
+    },
+    {
+        "Region": "Wodonga (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.3",
+            "Alkalinity_TAC_mmol_l": "2.13",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "117",
+            "Sodium_Na_mg_l": "19.3",
+            "Chlorides_Cl_mg_l": "18.3",
+            "Calcium_Ca_mg_l": "18.6"
+        }
+    },
+    {
+        "Region": "Mount Gambier (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.4",
+            "Alkalinity_TAC_mmol_l": "3.43",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "171",
+            "Sodium_Na_mg_l": "20.0",
+            "Chlorides_Cl_mg_l": "25.5",
+            "Calcium_Ca_mg_l": "11.8"
+        }
+    },
+    {
+        "Region": "Devonport (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.4",
+            "Alkalinity_TAC_mmol_l": "3.43",
+            "pH": "6.8",
+            "TDS_Conductivity_uS_cm": "235",
+            "Sodium_Na_mg_l": "9.7",
+            "Chlorides_Cl_mg_l": "15.9",
+            "Calcium_Ca_mg_l": "16.2"
+        }
+    },
+    {
+        "Region": "Whyalla (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.1",
+            "Alkalinity_TAC_mmol_l": "3.21",
+            "pH": "6.9",
+            "TDS_Conductivity_uS_cm": "152",
+            "Sodium_Na_mg_l": "14.2",
+            "Chlorides_Cl_mg_l": "10.0",
+            "Calcium_Ca_mg_l": "14.9"
+        }
+    },
+    {
+        "Region": "Geraldton (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.9",
+            "Alkalinity_TAC_mmol_l": "2.00",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "113",
+            "Sodium_Na_mg_l": "14.9",
+            "Chlorides_Cl_mg_l": "15.7",
+            "Calcium_Ca_mg_l": "13.8"
+        }
+    },
+    {
+        "Region": "Gosford (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.7",
+            "Alkalinity_TAC_mmol_l": "2.34",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "310",
+            "Sodium_Na_mg_l": "32.0",
+            "Chlorides_Cl_mg_l": "28.7",
+            "Calcium_Ca_mg_l": "47.5"
+        }
+    },
+    {
+        "Region": "Busselton (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "11.8",
+            "Alkalinity_TAC_mmol_l": "1.20",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "492",
+            "Sodium_Na_mg_l": "89.1",
+            "Chlorides_Cl_mg_l": "63.8",
+            "Calcium_Ca_mg_l": "83.4"
+        }
+    },
+    {
+        "Region": "Merewether (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "9.7",
+            "Alkalinity_TAC_mmol_l": "2.62",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "380",
+            "Sodium_Na_mg_l": "43.7",
+            "Chlorides_Cl_mg_l": "56.4",
+            "Calcium_Ca_mg_l": "45.3"
+        }
+    },
+    {
+        "Region": "Albury (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.3",
+            "Alkalinity_TAC_mmol_l": "2.75",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "137",
+            "Sodium_Na_mg_l": "8.7",
+            "Chlorides_Cl_mg_l": "16.5",
+            "Calcium_Ca_mg_l": "10.0"
+        }
+    },
+    {
+        "Region": "Launceston (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.2",
+            "Alkalinity_TAC_mmol_l": "0.62",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "206",
+            "Sodium_Na_mg_l": "8.2",
+            "Chlorides_Cl_mg_l": "18.8",
+            "Calcium_Ca_mg_l": "8.5"
+        }
+    },
+    {
+        "Region": "Gold Coast (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.6",
+            "Alkalinity_TAC_mmol_l": "2.82",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "559",
+            "Sodium_Na_mg_l": "80.0",
+            "Chlorides_Cl_mg_l": "115.8",
+            "Calcium_Ca_mg_l": "71.4"
+        }
+    },
+    {
+        "Region": "Wangaratta (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.6",
+            "Alkalinity_TAC_mmol_l": "1.81",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "544",
+            "Sodium_Na_mg_l": "93.0",
+            "Chlorides_Cl_mg_l": "136.2",
+            "Calcium_Ca_mg_l": "86.2"
+        }
+    },
+    {
+        "Region": "Maryborough (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.8",
+            "Alkalinity_TAC_mmol_l": "1.01",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "569",
+            "Sodium_Na_mg_l": "74.2",
+            "Chlorides_Cl_mg_l": "76.5",
+            "Calcium_Ca_mg_l": "60.8"
+        }
+    },
+    {
+        "Region": "Salamanca Place (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.7",
+            "Alkalinity_TAC_mmol_l": "1.68",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "263",
+            "Sodium_Na_mg_l": "16.7",
+            "Chlorides_Cl_mg_l": "22.0",
+            "Calcium_Ca_mg_l": "6.7"
+        }
+    },
+    {
+        "Region": "Ararat (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.7",
+            "Alkalinity_TAC_mmol_l": "0.87",
+            "pH": "6.9",
+            "TDS_Conductivity_uS_cm": "176",
+            "Sodium_Na_mg_l": "18.5",
+            "Chlorides_Cl_mg_l": "21.0",
+            "Calcium_Ca_mg_l": "6.7"
+        }
+    },
+    {
+        "Region": "Hervey Bay (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.7",
+            "Alkalinity_TAC_mmol_l": "2.57",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "284",
+            "Sodium_Na_mg_l": "31.7",
+            "Chlorides_Cl_mg_l": "51.6",
+            "Calcium_Ca_mg_l": "34.9"
+        }
+    },
+    {
+        "Region": "Pakenham (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.7",
+            "Alkalinity_TAC_mmol_l": "2.47",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "205",
+            "Sodium_Na_mg_l": "13.5",
+            "Chlorides_Cl_mg_l": "25.9",
+            "Calcium_Ca_mg_l": "8.9"
+        }
+    },
+    {
+        "Region": "Traralgon (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "9.4",
+            "Alkalinity_TAC_mmol_l": "1.37",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "450",
+            "Sodium_Na_mg_l": "42.8",
+            "Chlorides_Cl_mg_l": "39.4",
+            "Calcium_Ca_mg_l": "44.0"
+        }
+    },
+    {
+        "Region": "Burnie (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "10.0",
+            "Alkalinity_TAC_mmol_l": "2.28",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "402",
+            "Sodium_Na_mg_l": "38.0",
+            "Chlorides_Cl_mg_l": "59.0",
+            "Calcium_Ca_mg_l": "37.1"
+        }
+    },
+    {
+        "Region": "Gladstone (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.5",
+            "Alkalinity_TAC_mmol_l": "1.77",
+            "pH": "6.8",
+            "TDS_Conductivity_uS_cm": "235",
+            "Sodium_Na_mg_l": "12.2",
+            "Chlorides_Cl_mg_l": "15.9",
+            "Calcium_Ca_mg_l": "14.7"
+        }
+    },
+    {
+        "Region": "Naracoopa (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.3",
+            "Alkalinity_TAC_mmol_l": "1.07",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "149",
+            "Sodium_Na_mg_l": "15.4",
+            "Chlorides_Cl_mg_l": "13.1",
+            "Calcium_Ca_mg_l": "13.6"
+        }
+    },
+    {
+        "Region": "Mildura (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.6",
+            "Alkalinity_TAC_mmol_l": "1.01",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "280",
+            "Sodium_Na_mg_l": "37.4",
+            "Chlorides_Cl_mg_l": "54.6",
+            "Calcium_Ca_mg_l": "37.1"
+        }
+    },
+    {
+        "Region": "Kingston (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.3",
+            "Alkalinity_TAC_mmol_l": "1.56",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "193",
+            "Sodium_Na_mg_l": "15.3",
+            "Chlorides_Cl_mg_l": "14.7",
+            "Calcium_Ca_mg_l": "12.2"
+        }
+    },
+    {
+        "Region": "Horsham (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.2",
+            "Alkalinity_TAC_mmol_l": "0.85",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "336",
+            "Sodium_Na_mg_l": "42.2",
+            "Chlorides_Cl_mg_l": "30.7",
+            "Calcium_Ca_mg_l": "39.9"
+        }
+    },
+    {
+        "Region": "Bowen (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.4",
+            "Alkalinity_TAC_mmol_l": "2.60",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "339",
+            "Sodium_Na_mg_l": "24.0",
+            "Chlorides_Cl_mg_l": "49.3",
+            "Calcium_Ca_mg_l": "49.9"
+        }
+    },
+    {
+        "Region": "Griffith (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.3",
+            "Alkalinity_TAC_mmol_l": "0.93",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "146",
+            "Sodium_Na_mg_l": "5.2",
+            "Chlorides_Cl_mg_l": "18.5",
+            "Calcium_Ca_mg_l": "17.5"
+        }
+    },
+    {
+        "Region": "Penrith (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.7",
+            "Alkalinity_TAC_mmol_l": "0.95",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "386",
+            "Sodium_Na_mg_l": "34.3",
+            "Chlorides_Cl_mg_l": "55.8",
+            "Calcium_Ca_mg_l": "30.2"
+        }
+    },
+    {
+        "Region": "Walsh Bay Wharves Precinct (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.7",
+            "Alkalinity_TAC_mmol_l": "0.90",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "595",
+            "Sodium_Na_mg_l": "70.9",
+            "Chlorides_Cl_mg_l": "117.0",
+            "Calcium_Ca_mg_l": "75.2"
+        }
+    },
+    {
+        "Region": "Dubbo (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.1",
+            "Alkalinity_TAC_mmol_l": "2.75",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "196",
+            "Sodium_Na_mg_l": "18.3",
+            "Chlorides_Cl_mg_l": "22.1",
+            "Calcium_Ca_mg_l": "12.6"
+        }
+    },
+    {
+        "Region": "Victor Harbor (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.8",
+            "Alkalinity_TAC_mmol_l": "0.56",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "319",
+            "Sodium_Na_mg_l": "38.1",
+            "Chlorides_Cl_mg_l": "45.3",
+            "Calcium_Ca_mg_l": "26.8"
+        }
+    },
+    {
+        "Region": "Kalgoorlie (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.8",
+            "Alkalinity_TAC_mmol_l": "1.41",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "630",
+            "Sodium_Na_mg_l": "79.7",
+            "Chlorides_Cl_mg_l": "69.8",
+            "Calcium_Ca_mg_l": "62.7"
+        }
+    },
+    {
+        "Region": "Canberra (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.3",
+            "Alkalinity_TAC_mmol_l": "3.36",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "209",
+            "Sodium_Na_mg_l": "7.4",
+            "Chlorides_Cl_mg_l": "19.0",
+            "Calcium_Ca_mg_l": "19.4"
+        }
+    },
+    {
+        "Region": "Mandurah (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.7",
+            "Alkalinity_TAC_mmol_l": "0.93",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "347",
+            "Sodium_Na_mg_l": "28.8",
+            "Chlorides_Cl_mg_l": "59.1",
+            "Calcium_Ca_mg_l": "30.5"
+        }
+    },
+    {
+        "Region": "Wagga Wagga (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.3",
+            "Alkalinity_TAC_mmol_l": "3.42",
+            "pH": "6.9",
+            "TDS_Conductivity_uS_cm": "159",
+            "Sodium_Na_mg_l": "12.7",
+            "Chlorides_Cl_mg_l": "25.2",
+            "Calcium_Ca_mg_l": "14.4"
+        }
+    },
+    {
+        "Region": "Lithgow (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.3",
+            "Alkalinity_TAC_mmol_l": "1.55",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "151",
+            "Sodium_Na_mg_l": "20.0",
+            "Chlorides_Cl_mg_l": "29.2",
+            "Calcium_Ca_mg_l": "6.8"
+        }
+    },
+    {
+        "Region": "Fremantle (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.4",
+            "Alkalinity_TAC_mmol_l": "0.74",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "697",
+            "Sodium_Na_mg_l": "74.4",
+            "Chlorides_Cl_mg_l": "64.1",
+            "Calcium_Ca_mg_l": "63.9"
+        }
+    },
+    {
+        "Region": "Greater Perth (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.1",
+            "Alkalinity_TAC_mmol_l": "3.35",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "167",
+            "Sodium_Na_mg_l": "7.4",
+            "Chlorides_Cl_mg_l": "19.5",
+            "Calcium_Ca_mg_l": "6.8"
+        }
+    },
+    {
+        "Region": "Warrnambool (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.8",
+            "Alkalinity_TAC_mmol_l": "2.02",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "337",
+            "Sodium_Na_mg_l": "29.2",
+            "Chlorides_Cl_mg_l": "41.3",
+            "Calcium_Ca_mg_l": "32.6"
+        }
+    },
+    {
+        "Region": "Bathurst (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.1",
+            "Alkalinity_TAC_mmol_l": "2.00",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "524",
+            "Sodium_Na_mg_l": "68.7",
+            "Chlorides_Cl_mg_l": "93.0",
+            "Calcium_Ca_mg_l": "66.0"
+        }
+    },
+    {
+        "Region": "Bendigo (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.7",
+            "Alkalinity_TAC_mmol_l": "2.67",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "368",
+            "Sodium_Na_mg_l": "21.1",
+            "Chlorides_Cl_mg_l": "56.6",
+            "Calcium_Ca_mg_l": "31.6"
+        }
+    },
+    {
+        "Region": "Melbourne (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.6",
+            "Alkalinity_TAC_mmol_l": "1.10",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "152",
+            "Sodium_Na_mg_l": "6.7",
+            "Chlorides_Cl_mg_l": "17.7",
+            "Calcium_Ca_mg_l": "8.7"
+        }
+    },
+    {
+        "Region": "Swan Hill (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.6",
+            "Alkalinity_TAC_mmol_l": "1.35",
+            "pH": "6.9",
+            "TDS_Conductivity_uS_cm": "145",
+            "Sodium_Na_mg_l": "14.1",
+            "Chlorides_Cl_mg_l": "10.3",
+            "Calcium_Ca_mg_l": "17.6"
+        }
+    },
+    {
+        "Region": "Hobart (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.2",
+            "Alkalinity_TAC_mmol_l": "1.53",
+            "pH": "6.9",
+            "TDS_Conductivity_uS_cm": "232",
+            "Sodium_Na_mg_l": "13.0",
+            "Chlorides_Cl_mg_l": "11.2",
+            "Calcium_Ca_mg_l": "10.2"
+        }
+    },
+    {
+        "Region": "Lismore (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.7",
+            "Alkalinity_TAC_mmol_l": "1.70",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "231",
+            "Sodium_Na_mg_l": "8.0",
+            "Chlorides_Cl_mg_l": "26.3",
+            "Calcium_Ca_mg_l": "11.1"
+        }
+    },
+    {
+        "Region": "Bunbury (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.2",
+            "Alkalinity_TAC_mmol_l": "1.64",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "86",
+            "Sodium_Na_mg_l": "6.9",
+            "Chlorides_Cl_mg_l": "12.1",
+            "Calcium_Ca_mg_l": "11.8"
+        }
+    },
+    {
+        "Region": "Portland (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.3",
+            "Alkalinity_TAC_mmol_l": "1.20",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "584",
+            "Sodium_Na_mg_l": "68.2",
+            "Chlorides_Cl_mg_l": "89.6",
+            "Calcium_Ca_mg_l": "78.6"
+        }
+    },
+    {
+        "Region": "Salt Ash (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "9.2",
+            "Alkalinity_TAC_mmol_l": "2.34",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "409",
+            "Sodium_Na_mg_l": "35.8",
+            "Chlorides_Cl_mg_l": "33.2",
+            "Calcium_Ca_mg_l": "39.6"
+        }
+    },
+    {
+        "Region": "Ballarat (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "9.9",
+            "Alkalinity_TAC_mmol_l": "2.41",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "463",
+            "Sodium_Na_mg_l": "22.6",
+            "Chlorides_Cl_mg_l": "43.1",
+            "Calcium_Ca_mg_l": "30.3"
+        }
+    },
+    {
+        "Region": "Ipswich (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.5",
+            "Alkalinity_TAC_mmol_l": "3.02",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "245",
+            "Sodium_Na_mg_l": "7.7",
+            "Chlorides_Cl_mg_l": "25.1",
+            "Calcium_Ca_mg_l": "5.6"
+        }
+    },
+    {
+        "Region": "Melbourne Arts Precinct (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.0",
+            "Alkalinity_TAC_mmol_l": "3.34",
+            "pH": "6.9",
+            "TDS_Conductivity_uS_cm": "108",
+            "Sodium_Na_mg_l": "18.7",
+            "Chlorides_Cl_mg_l": "28.7",
+            "Calcium_Ca_mg_l": "7.6"
+        }
+    },
+    {
+        "Region": "Frankston (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "11.5",
+            "Alkalinity_TAC_mmol_l": "1.82",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "497",
+            "Sodium_Na_mg_l": "89.2",
+            "Chlorides_Cl_mg_l": "122.7",
+            "Calcium_Ca_mg_l": "76.1"
+        }
+    },
+    {
+        "Region": "Mackay (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.3",
+            "Alkalinity_TAC_mmol_l": "2.94",
+            "pH": "6.8",
+            "TDS_Conductivity_uS_cm": "270",
+            "Sodium_Na_mg_l": "13.9",
+            "Chlorides_Cl_mg_l": "12.5",
+            "Calcium_Ca_mg_l": "11.4"
+        }
+    },
+    {
+        "Region": "Perth (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "9.6",
+            "Alkalinity_TAC_mmol_l": "0.73",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "426",
+            "Sodium_Na_mg_l": "30.9",
+            "Chlorides_Cl_mg_l": "39.0",
+            "Calcium_Ca_mg_l": "46.7"
+        }
+    },
+    {
+        "Region": "Sydney Cove West Archaeological Precinct (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.1",
+            "Alkalinity_TAC_mmol_l": "1.04",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "572",
+            "Sodium_Na_mg_l": "99.9",
+            "Chlorides_Cl_mg_l": "76.5",
+            "Calcium_Ca_mg_l": "94.2"
+        }
+    },
+    {
+        "Region": "Colac (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.3",
+            "Alkalinity_TAC_mmol_l": "1.89",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "383",
+            "Sodium_Na_mg_l": "28.3",
+            "Chlorides_Cl_mg_l": "56.5",
+            "Calcium_Ca_mg_l": "30.0"
+        }
+    },
+    {
+        "Region": "South Bank (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "9.3",
+            "Alkalinity_TAC_mmol_l": "0.51",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "361",
+            "Sodium_Na_mg_l": "33.7",
+            "Chlorides_Cl_mg_l": "54.5",
+            "Calcium_Ca_mg_l": "27.5"
+        }
+    },
+    {
+        "Region": "Broken Hill (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.8",
+            "Alkalinity_TAC_mmol_l": "2.27",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "232",
+            "Sodium_Na_mg_l": "8.6",
+            "Chlorides_Cl_mg_l": "10.3",
+            "Calcium_Ca_mg_l": "9.6"
+        }
+    },
+    {
+        "Region": "Geelong (Australia)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.6",
+            "Alkalinity_TAC_mmol_l": "1.37",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "471",
+            "Sodium_Na_mg_l": "80.0",
+            "Chlorides_Cl_mg_l": "122.3",
+            "Calcium_Ca_mg_l": "88.9"
+        }
+    },
+    {
+        "Region": "Hibiscus Coast (New Zealand)",
+        "Parameters": {
+            "Ca_Hardness_dH": "11.4",
+            "Alkalinity_TAC_mmol_l": "1.14",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "473",
+            "Sodium_Na_mg_l": "86.0",
+            "Chlorides_Cl_mg_l": "74.2",
+            "Calcium_Ca_mg_l": "90.3"
+        }
+    },
+    {
+        "Region": "City Works Depot (New Zealand)",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.1",
+            "Alkalinity_TAC_mmol_l": "2.37",
+            "pH": "6.9",
+            "TDS_Conductivity_uS_cm": "90",
+            "Sodium_Na_mg_l": "11.6",
+            "Chlorides_Cl_mg_l": "21.3",
+            "Calcium_Ca_mg_l": "20.0"
+        }
+    },
+    {
+        "Region": "Wellington (New Zealand)",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.3",
+            "Alkalinity_TAC_mmol_l": "0.98",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "392",
+            "Sodium_Na_mg_l": "31.7",
+            "Chlorides_Cl_mg_l": "40.8",
+            "Calcium_Ca_mg_l": "26.3"
+        }
+    },
+    {
+        "Region": "Invercargill (New Zealand)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.4",
+            "Alkalinity_TAC_mmol_l": "1.33",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "629",
+            "Sodium_Na_mg_l": "85.1",
+            "Chlorides_Cl_mg_l": "101.9",
+            "Calcium_Ca_mg_l": "94.5"
+        }
+    },
+    {
+        "Region": "Whangārei (New Zealand)",
+        "Parameters": {
+            "Ca_Hardness_dH": "9.9",
+            "Alkalinity_TAC_mmol_l": "0.69",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "433",
+            "Sodium_Na_mg_l": "26.2",
+            "Chlorides_Cl_mg_l": "25.4",
+            "Calcium_Ca_mg_l": "48.9"
+        }
+    },
+    {
+        "Region": "Waitakere City (New Zealand)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.3",
+            "Alkalinity_TAC_mmol_l": "2.43",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "314",
+            "Sodium_Na_mg_l": "35.3",
+            "Chlorides_Cl_mg_l": "40.2",
+            "Calcium_Ca_mg_l": "49.0"
+        }
+    },
+    {
+        "Region": "New Plymouth (New Zealand)",
+        "Parameters": {
+            "Ca_Hardness_dH": "11.5",
+            "Alkalinity_TAC_mmol_l": "2.92",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "470",
+            "Sodium_Na_mg_l": "97.6",
+            "Chlorides_Cl_mg_l": "79.7",
+            "Calcium_Ca_mg_l": "55.9"
+        }
+    },
+    {
+        "Region": "City of Mount Albert (New Zealand)",
+        "Parameters": {
+            "Ca_Hardness_dH": "9.4",
+            "Alkalinity_TAC_mmol_l": "1.24",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "432",
+            "Sodium_Na_mg_l": "35.1",
+            "Chlorides_Cl_mg_l": "42.4",
+            "Calcium_Ca_mg_l": "44.2"
+        }
+    },
+    {
+        "Region": "Upper Hutt (New Zealand)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.0",
+            "Alkalinity_TAC_mmol_l": "2.14",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "684",
+            "Sodium_Na_mg_l": "90.6",
+            "Chlorides_Cl_mg_l": "100.1",
+            "Calcium_Ca_mg_l": "93.5"
+        }
+    },
+    {
+        "Region": "Tauranga (New Zealand)",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.4",
+            "Alkalinity_TAC_mmol_l": "0.54",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "312",
+            "Sodium_Na_mg_l": "34.2",
+            "Chlorides_Cl_mg_l": "55.4",
+            "Calcium_Ca_mg_l": "43.7"
+        }
+    },
+    {
+        "Region": "Gisborne (New Zealand)",
+        "Parameters": {
+            "Ca_Hardness_dH": "9.2",
+            "Alkalinity_TAC_mmol_l": "3.06",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "399",
+            "Sodium_Na_mg_l": "29.6",
+            "Chlorides_Cl_mg_l": "38.6",
+            "Calcium_Ca_mg_l": "27.6"
+        }
+    },
+    {
+        "Region": "Bluff (New Zealand)",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.8",
+            "Alkalinity_TAC_mmol_l": "2.94",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "354",
+            "Sodium_Na_mg_l": "30.1",
+            "Chlorides_Cl_mg_l": "40.1",
+            "Calcium_Ca_mg_l": "30.3"
+        }
+    },
+    {
+        "Region": "Tamaki City (New Zealand)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.9",
+            "Alkalinity_TAC_mmol_l": "1.70",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "621",
+            "Sodium_Na_mg_l": "81.1",
+            "Chlorides_Cl_mg_l": "107.1",
+            "Calcium_Ca_mg_l": "73.5"
+        }
+    },
+    {
+        "Region": "Hastings (New Zealand)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.6",
+            "Alkalinity_TAC_mmol_l": "2.17",
+            "pH": "6.8",
+            "TDS_Conductivity_uS_cm": "155",
+            "Sodium_Na_mg_l": "5.7",
+            "Chlorides_Cl_mg_l": "20.2",
+            "Calcium_Ca_mg_l": "9.5"
+        }
+    },
+    {
+        "Region": "Hamilton (New Zealand)",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.4",
+            "Alkalinity_TAC_mmol_l": "1.36",
+            "pH": "6.9",
+            "TDS_Conductivity_uS_cm": "83",
+            "Sodium_Na_mg_l": "5.3",
+            "Chlorides_Cl_mg_l": "18.4",
+            "Calcium_Ca_mg_l": "18.4"
+        }
+    },
+    {
+        "Region": "Napier (New Zealand)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.1",
+            "Alkalinity_TAC_mmol_l": "2.86",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "163",
+            "Sodium_Na_mg_l": "12.5",
+            "Chlorides_Cl_mg_l": "18.6",
+            "Calcium_Ca_mg_l": "10.8"
+        }
+    },
+    {
+        "Region": "Rotorua (New Zealand)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.8",
+            "Alkalinity_TAC_mmol_l": "1.63",
+            "pH": "6.9",
+            "TDS_Conductivity_uS_cm": "167",
+            "Sodium_Na_mg_l": "11.1",
+            "Chlorides_Cl_mg_l": "25.4",
+            "Calcium_Ca_mg_l": "7.3"
+        }
+    },
+    {
+        "Region": "Wellington urban area (New Zealand)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.5",
+            "Alkalinity_TAC_mmol_l": "2.63",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "134",
+            "Sodium_Na_mg_l": "7.9",
+            "Chlorides_Cl_mg_l": "17.0",
+            "Calcium_Ca_mg_l": "11.1"
+        }
+    },
+    {
+        "Region": "Nelson (New Zealand)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.2",
+            "Alkalinity_TAC_mmol_l": "3.21",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "533",
+            "Sodium_Na_mg_l": "76.3",
+            "Chlorides_Cl_mg_l": "109.9",
+            "Calcium_Ca_mg_l": "88.8"
+        }
+    },
+    {
+        "Region": "Lower Hutt (New Zealand)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.9",
+            "Alkalinity_TAC_mmol_l": "3.04",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "525",
+            "Sodium_Na_mg_l": "63.0",
+            "Chlorides_Cl_mg_l": "93.5",
+            "Calcium_Ca_mg_l": "92.9"
+        }
+    },
+    {
+        "Region": "Wards of the Auckland Region (New Zealand)",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.5",
+            "Alkalinity_TAC_mmol_l": "2.69",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "154",
+            "Sodium_Na_mg_l": "15.6",
+            "Chlorides_Cl_mg_l": "19.0",
+            "Calcium_Ca_mg_l": "18.0"
+        }
+    },
+    {
+        "Region": "Porirua (New Zealand)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.5",
+            "Alkalinity_TAC_mmol_l": "1.01",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "139",
+            "Sodium_Na_mg_l": "11.2",
+            "Chlorides_Cl_mg_l": "27.0",
+            "Calcium_Ca_mg_l": "5.1"
+        }
+    },
+    {
+        "Region": "Palmerston North (New Zealand)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.4",
+            "Alkalinity_TAC_mmol_l": "2.41",
+            "pH": "6.8",
+            "TDS_Conductivity_uS_cm": "169",
+            "Sodium_Na_mg_l": "10.4",
+            "Chlorides_Cl_mg_l": "11.7",
+            "Calcium_Ca_mg_l": "15.4"
+        }
+    },
+    {
+        "Region": "Whanganui (New Zealand)",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.7",
+            "Alkalinity_TAC_mmol_l": "2.52",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "100",
+            "Sodium_Na_mg_l": "17.8",
+            "Chlorides_Cl_mg_l": "14.0",
+            "Calcium_Ca_mg_l": "13.0"
+        }
+    },
+    {
+        "Region": "Dunedin (New Zealand)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.8",
+            "Alkalinity_TAC_mmol_l": "1.52",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "158",
+            "Sodium_Na_mg_l": "10.4",
+            "Chlorides_Cl_mg_l": "29.5",
+            "Calcium_Ca_mg_l": "11.6"
+        }
+    },
+    {
+        "Region": "Christchurch (New Zealand)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.7",
+            "Alkalinity_TAC_mmol_l": "1.59",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "198",
+            "Sodium_Na_mg_l": "14.5",
+            "Chlorides_Cl_mg_l": "17.2",
+            "Calcium_Ca_mg_l": "16.1"
+        }
+    },
+    {
+        "Region": "Port Moresby (Papua New Guinea)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.0",
+            "Alkalinity_TAC_mmol_l": "0.55",
+            "pH": "6.9",
+            "TDS_Conductivity_uS_cm": "189",
+            "Sodium_Na_mg_l": "9.8",
+            "Chlorides_Cl_mg_l": "21.1",
+            "Calcium_Ca_mg_l": "7.9"
+        }
+    },
+    {
+        "Region": "Kabien (Papua New Guinea)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.5",
+            "Alkalinity_TAC_mmol_l": "0.94",
+            "pH": "6.9",
+            "TDS_Conductivity_uS_cm": "264",
+            "Sodium_Na_mg_l": "14.9",
+            "Chlorides_Cl_mg_l": "13.9",
+            "Calcium_Ca_mg_l": "12.4"
+        }
+    },
+    {
+        "Region": "Buka (Papua New Guinea)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.8",
+            "Alkalinity_TAC_mmol_l": "0.67",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "270",
+            "Sodium_Na_mg_l": "11.4",
+            "Chlorides_Cl_mg_l": "20.4",
+            "Calcium_Ca_mg_l": "16.0"
+        }
+    },
+    {
+        "Region": "Namatanai (Papua New Guinea)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.1",
+            "Alkalinity_TAC_mmol_l": "0.62",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "572",
+            "Sodium_Na_mg_l": "68.0",
+            "Chlorides_Cl_mg_l": "96.1",
+            "Calcium_Ca_mg_l": "68.7"
+        }
+    },
+    {
+        "Region": "Tabubil (Papua New Guinea)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.2",
+            "Alkalinity_TAC_mmol_l": "1.74",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "179",
+            "Sodium_Na_mg_l": "10.4",
+            "Chlorides_Cl_mg_l": "21.1",
+            "Calcium_Ca_mg_l": "16.5"
+        }
+    },
+    {
+        "Region": "Daru (Papua New Guinea)",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.2",
+            "Alkalinity_TAC_mmol_l": "1.09",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "88",
+            "Sodium_Na_mg_l": "7.0",
+            "Chlorides_Cl_mg_l": "22.8",
+            "Calcium_Ca_mg_l": "17.7"
+        }
+    },
+    {
+        "Region": "Tari (Papua New Guinea)",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.8",
+            "Alkalinity_TAC_mmol_l": "2.85",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "417",
+            "Sodium_Na_mg_l": "21.5",
+            "Chlorides_Cl_mg_l": "42.4",
+            "Calcium_Ca_mg_l": "32.5"
+        }
+    },
+    {
+        "Region": "Panguna (Papua New Guinea)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.8",
+            "Alkalinity_TAC_mmol_l": "1.62",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "616",
+            "Sodium_Na_mg_l": "91.4",
+            "Chlorides_Cl_mg_l": "134.4",
+            "Calcium_Ca_mg_l": "87.9"
+        }
+    },
+    {
+        "Region": "Buin (Papua New Guinea)",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.9",
+            "Alkalinity_TAC_mmol_l": "3.39",
+            "pH": "6.9",
+            "TDS_Conductivity_uS_cm": "98",
+            "Sodium_Na_mg_l": "10.0",
+            "Chlorides_Cl_mg_l": "16.4",
+            "Calcium_Ca_mg_l": "10.4"
+        }
+    },
+    {
+        "Region": "Mount Hagen (Papua New Guinea)",
+        "Parameters": {
+            "Ca_Hardness_dH": "11.1",
+            "Alkalinity_TAC_mmol_l": "1.95",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "469",
+            "Sodium_Na_mg_l": "87.5",
+            "Chlorides_Cl_mg_l": "112.8",
+            "Calcium_Ca_mg_l": "80.4"
+        }
+    },
+    {
+        "Region": "Goroka (Papua New Guinea)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.1",
+            "Alkalinity_TAC_mmol_l": "1.27",
+            "pH": "6.9",
+            "TDS_Conductivity_uS_cm": "185",
+            "Sodium_Na_mg_l": "6.2",
+            "Chlorides_Cl_mg_l": "11.6",
+            "Calcium_Ca_mg_l": "15.1"
+        }
+    },
+    {
+        "Region": "Aitape (Papua New Guinea)",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.1",
+            "Alkalinity_TAC_mmol_l": "2.01",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "365",
+            "Sodium_Na_mg_l": "21.5",
+            "Chlorides_Cl_mg_l": "53.1",
+            "Calcium_Ca_mg_l": "27.4"
+        }
+    },
+    {
+        "Region": "Lorengau (Papua New Guinea)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.6",
+            "Alkalinity_TAC_mmol_l": "0.57",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "282",
+            "Sodium_Na_mg_l": "28.9",
+            "Chlorides_Cl_mg_l": "57.0",
+            "Calcium_Ca_mg_l": "33.4"
+        }
+    },
+    {
+        "Region": "Kavieng (Papua New Guinea)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.4",
+            "Alkalinity_TAC_mmol_l": "0.69",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "120",
+            "Sodium_Na_mg_l": "17.1",
+            "Chlorides_Cl_mg_l": "12.1",
+            "Calcium_Ca_mg_l": "5.1"
+        }
+    },
+    {
+        "Region": "Kieta (Papua New Guinea)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.1",
+            "Alkalinity_TAC_mmol_l": "0.73",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "331",
+            "Sodium_Na_mg_l": "20.6",
+            "Chlorides_Cl_mg_l": "47.1",
+            "Calcium_Ca_mg_l": "48.9"
+        }
+    },
+    {
+        "Region": "Popondetta (Papua New Guinea)",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.4",
+            "Alkalinity_TAC_mmol_l": "3.43",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "331",
+            "Sodium_Na_mg_l": "37.9",
+            "Chlorides_Cl_mg_l": "59.9",
+            "Calcium_Ca_mg_l": "46.6"
+        }
+    },
+    {
+        "Region": "Lae (Papua New Guinea)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.7",
+            "Alkalinity_TAC_mmol_l": "3.36",
+            "pH": "6.8",
+            "TDS_Conductivity_uS_cm": "241",
+            "Sodium_Na_mg_l": "7.6",
+            "Chlorides_Cl_mg_l": "25.5",
+            "Calcium_Ca_mg_l": "10.8"
+        }
+    },
+    {
+        "Region": "Kokopo (Papua New Guinea)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.9",
+            "Alkalinity_TAC_mmol_l": "2.86",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "208",
+            "Sodium_Na_mg_l": "17.1",
+            "Chlorides_Cl_mg_l": "21.5",
+            "Calcium_Ca_mg_l": "16.5"
+        }
+    },
+    {
+        "Region": "Garasa (Papua New Guinea)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.6",
+            "Alkalinity_TAC_mmol_l": "2.64",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "478",
+            "Sodium_Na_mg_l": "90.5",
+            "Chlorides_Cl_mg_l": "86.6",
+            "Calcium_Ca_mg_l": "58.4"
+        }
+    },
+    {
+        "Region": "Kerema (Papua New Guinea)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.4",
+            "Alkalinity_TAC_mmol_l": "0.50",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "314",
+            "Sodium_Na_mg_l": "30.2",
+            "Chlorides_Cl_mg_l": "43.2",
+            "Calcium_Ca_mg_l": "44.9"
+        }
+    },
+    {
+        "Region": "Rabaul (Papua New Guinea)",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.1",
+            "Alkalinity_TAC_mmol_l": "2.11",
+            "pH": "6.8",
+            "TDS_Conductivity_uS_cm": "94",
+            "Sodium_Na_mg_l": "16.7",
+            "Chlorides_Cl_mg_l": "23.3",
+            "Calcium_Ca_mg_l": "12.9"
+        }
+    },
+    {
+        "Region": "Telefomin (Papua New Guinea)",
+        "Parameters": {
+            "Ca_Hardness_dH": "9.7",
+            "Alkalinity_TAC_mmol_l": "2.64",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "441",
+            "Sodium_Na_mg_l": "24.3",
+            "Chlorides_Cl_mg_l": "29.1",
+            "Calcium_Ca_mg_l": "33.3"
+        }
+    },
+    {
+        "Region": "Alotau (Papua New Guinea)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.1",
+            "Alkalinity_TAC_mmol_l": "2.44",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "141",
+            "Sodium_Na_mg_l": "7.3",
+            "Chlorides_Cl_mg_l": "14.1",
+            "Calcium_Ca_mg_l": "10.2"
+        }
+    },
+    {
+        "Region": "Mendi (Papua New Guinea)",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.6",
+            "Alkalinity_TAC_mmol_l": "1.01",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "363",
+            "Sodium_Na_mg_l": "41.1",
+            "Chlorides_Cl_mg_l": "39.1",
+            "Calcium_Ca_mg_l": "39.3"
+        }
+    },
+    {
+        "Region": "Drasa (Fiji)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.9",
+            "Alkalinity_TAC_mmol_l": "1.40",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "621",
+            "Sodium_Na_mg_l": "66.0",
+            "Chlorides_Cl_mg_l": "119.9",
+            "Calcium_Ca_mg_l": "62.4"
+        }
+    },
+    {
+        "Region": "Rakiraki (Fiji)",
+        "Parameters": {
+            "Ca_Hardness_dH": "9.7",
+            "Alkalinity_TAC_mmol_l": "1.42",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "437",
+            "Sodium_Na_mg_l": "37.1",
+            "Chlorides_Cl_mg_l": "27.8",
+            "Calcium_Ca_mg_l": "40.2"
+        }
+    },
+    {
+        "Region": "Tubou (Fiji)",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.5",
+            "Alkalinity_TAC_mmol_l": "2.00",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "169",
+            "Sodium_Na_mg_l": "19.1",
+            "Chlorides_Cl_mg_l": "12.5",
+            "Calcium_Ca_mg_l": "15.4"
+        }
+    },
+    {
+        "Region": "Vunisea (Fiji)",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.2",
+            "Alkalinity_TAC_mmol_l": "1.88",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "326",
+            "Sodium_Na_mg_l": "41.8",
+            "Chlorides_Cl_mg_l": "57.0",
+            "Calcium_Ca_mg_l": "41.6"
+        }
+    },
+    {
+        "Region": "Somosomo (Fiji)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.3",
+            "Alkalinity_TAC_mmol_l": "1.55",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "149",
+            "Sodium_Na_mg_l": "14.0",
+            "Chlorides_Cl_mg_l": "15.0",
+            "Calcium_Ca_mg_l": "8.6"
+        }
+    },
+    {
+        "Region": "Labasa (Fiji)",
+        "Parameters": {
+            "Ca_Hardness_dH": "9.9",
+            "Alkalinity_TAC_mmol_l": "3.32",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "396",
+            "Sodium_Na_mg_l": "35.6",
+            "Chlorides_Cl_mg_l": "38.7",
+            "Calcium_Ca_mg_l": "44.5"
+        }
+    },
+    {
+        "Region": "Pacific Harbour (Fiji)",
+        "Parameters": {
+            "Ca_Hardness_dH": "11.7",
+            "Alkalinity_TAC_mmol_l": "1.17",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "467",
+            "Sodium_Na_mg_l": "68.3",
+            "Chlorides_Cl_mg_l": "145.6",
+            "Calcium_Ca_mg_l": "59.5"
+        }
+    },
+    {
+        "Region": "Koro-ni-O (Fiji)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.6",
+            "Alkalinity_TAC_mmol_l": "0.91",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "610",
+            "Sodium_Na_mg_l": "81.1",
+            "Chlorides_Cl_mg_l": "96.3",
+            "Calcium_Ca_mg_l": "70.3"
+        }
+    },
+    {
+        "Region": "Levuka (Fiji)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.7",
+            "Alkalinity_TAC_mmol_l": "3.50",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "161",
+            "Sodium_Na_mg_l": "9.2",
+            "Chlorides_Cl_mg_l": "12.9",
+            "Calcium_Ca_mg_l": "8.5"
+        }
+    },
+    {
+        "Region": "Momi (Fiji)",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.9",
+            "Alkalinity_TAC_mmol_l": "2.10",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "349",
+            "Sodium_Na_mg_l": "26.3",
+            "Chlorides_Cl_mg_l": "38.3",
+            "Calcium_Ca_mg_l": "46.4"
+        }
+    },
+    {
+        "Region": "Bau (Fiji)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.7",
+            "Alkalinity_TAC_mmol_l": "0.66",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "174",
+            "Sodium_Na_mg_l": "12.4",
+            "Chlorides_Cl_mg_l": "26.9",
+            "Calcium_Ca_mg_l": "19.0"
+        }
+    },
+    {
+        "Region": "Korovou (Fiji)",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.5",
+            "Alkalinity_TAC_mmol_l": "3.26",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "392",
+            "Sodium_Na_mg_l": "42.7",
+            "Chlorides_Cl_mg_l": "49.6",
+            "Calcium_Ca_mg_l": "28.4"
+        }
+    },
+    {
+        "Region": "Yako (Fiji)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.1",
+            "Alkalinity_TAC_mmol_l": "1.69",
+            "pH": "6.9",
+            "TDS_Conductivity_uS_cm": "176",
+            "Sodium_Na_mg_l": "5.4",
+            "Chlorides_Cl_mg_l": "26.3",
+            "Calcium_Ca_mg_l": "9.9"
+        }
+    },
+    {
+        "Region": "Varoka (Fiji)",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.1",
+            "Alkalinity_TAC_mmol_l": "0.89",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "400",
+            "Sodium_Na_mg_l": "28.3",
+            "Chlorides_Cl_mg_l": "47.4",
+            "Calcium_Ca_mg_l": "29.2"
+        }
+    },
+    {
+        "Region": "Nabua (Fiji)",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.0",
+            "Alkalinity_TAC_mmol_l": "1.15",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "351",
+            "Sodium_Na_mg_l": "41.8",
+            "Chlorides_Cl_mg_l": "53.5",
+            "Calcium_Ca_mg_l": "39.4"
+        }
+    },
+    {
+        "Region": "Serua (Fiji)",
+        "Parameters": {
+            "Ca_Hardness_dH": "9.3",
+            "Alkalinity_TAC_mmol_l": "1.46",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "439",
+            "Sodium_Na_mg_l": "27.4",
+            "Chlorides_Cl_mg_l": "53.6",
+            "Calcium_Ca_mg_l": "29.9"
+        }
+    },
+    {
+        "Region": "Coqeloa (Fiji)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.5",
+            "Alkalinity_TAC_mmol_l": "2.05",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "141",
+            "Sodium_Na_mg_l": "19.0",
+            "Chlorides_Cl_mg_l": "13.2",
+            "Calcium_Ca_mg_l": "9.3"
+        }
+    },
+    {
+        "Region": "Kasavu (Fiji)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.9",
+            "Alkalinity_TAC_mmol_l": "0.68",
+            "pH": "6.8",
+            "TDS_Conductivity_uS_cm": "146",
+            "Sodium_Na_mg_l": "5.7",
+            "Chlorides_Cl_mg_l": "11.8",
+            "Calcium_Ca_mg_l": "19.2"
+        }
+    },
+    {
+        "Region": "Lami (Fiji)",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.7",
+            "Alkalinity_TAC_mmol_l": "2.99",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "304",
+            "Sodium_Na_mg_l": "43.0",
+            "Chlorides_Cl_mg_l": "35.7",
+            "Calcium_Ca_mg_l": "25.0"
+        }
+    },
+    {
+        "Region": "Naroi (Fiji)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.7",
+            "Alkalinity_TAC_mmol_l": "3.22",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "145",
+            "Sodium_Na_mg_l": "17.6",
+            "Chlorides_Cl_mg_l": "20.4",
+            "Calcium_Ca_mg_l": "9.7"
+        }
+    },
+    {
+        "Region": "Fijian Archipelago (Fiji)",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.7",
+            "Alkalinity_TAC_mmol_l": "2.91",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "676",
+            "Sodium_Na_mg_l": "81.1",
+            "Chlorides_Cl_mg_l": "106.8",
+            "Calcium_Ca_mg_l": "62.0"
+        }
+    },
+    {
+        "Region": "Lautoka (Fiji)",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.1",
+            "Alkalinity_TAC_mmol_l": "1.35",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "376",
+            "Sodium_Na_mg_l": "42.3",
+            "Chlorides_Cl_mg_l": "57.3",
+            "Calcium_Ca_mg_l": "31.1"
+        }
+    },
+    {
+        "Region": "Sorokoba (Fiji)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.6",
+            "Alkalinity_TAC_mmol_l": "1.72",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "591",
+            "Sodium_Na_mg_l": "82.8",
+            "Chlorides_Cl_mg_l": "133.7",
+            "Calcium_Ca_mg_l": "67.8"
+        }
+    },
+    {
+        "Region": "Nadi (Fiji)",
+        "Parameters": {
+            "Ca_Hardness_dH": "9.8",
+            "Alkalinity_TAC_mmol_l": "3.15",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "449",
+            "Sodium_Na_mg_l": "24.5",
+            "Chlorides_Cl_mg_l": "42.9",
+            "Calcium_Ca_mg_l": "41.6"
+        }
+    },
+    {
+        "Region": "Suva (Fiji)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.4",
+            "Alkalinity_TAC_mmol_l": "3.49",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "702",
+            "Sodium_Na_mg_l": "71.0",
+            "Chlorides_Cl_mg_l": "140.2",
+            "Calcium_Ca_mg_l": "92.3"
+        }
+    },
+    {
+        "Region": "Lovoni (Fiji)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.6",
+            "Alkalinity_TAC_mmol_l": "1.01",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "271",
+            "Sodium_Na_mg_l": "21.3",
+            "Chlorides_Cl_mg_l": "50.8",
+            "Calcium_Ca_mg_l": "46.5"
+        }
+    },
+    {
+        "Region": "Lauwaki (Fiji)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.9",
+            "Alkalinity_TAC_mmol_l": "2.63",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "142",
+            "Sodium_Na_mg_l": "10.9",
+            "Chlorides_Cl_mg_l": "22.4",
+            "Calcium_Ca_mg_l": "5.5"
+        }
+    },
+    {
+        "Region": "Tavua (Fiji)",
+        "Parameters": {
+            "Ca_Hardness_dH": "9.6",
+            "Alkalinity_TAC_mmol_l": "2.22",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "406",
+            "Sodium_Na_mg_l": "41.1",
+            "Chlorides_Cl_mg_l": "26.6",
+            "Calcium_Ca_mg_l": "35.2"
+        }
+    },
+    {
+        "Region": "Nakasi (Fiji)",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.7",
+            "Alkalinity_TAC_mmol_l": "1.60",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "105",
+            "Sodium_Na_mg_l": "9.5",
+            "Chlorides_Cl_mg_l": "29.5",
+            "Calcium_Ca_mg_l": "10.5"
+        }
+    },
+    {
+        "Region": "Navala (Fiji)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.9",
+            "Alkalinity_TAC_mmol_l": "0.67",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "167",
+            "Sodium_Na_mg_l": "16.0",
+            "Chlorides_Cl_mg_l": "17.5",
+            "Calcium_Ca_mg_l": "12.4"
+        }
+    },
+    {
+        "Region": "Vunikavikaloa (Fiji)",
+        "Parameters": {
+            "Ca_Hardness_dH": "9.3",
+            "Alkalinity_TAC_mmol_l": "2.11",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "445",
+            "Sodium_Na_mg_l": "36.2",
+            "Chlorides_Cl_mg_l": "29.6",
+            "Calcium_Ca_mg_l": "44.3"
+        }
+    },
+    {
+        "Region": "Navua (Fiji)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.0",
+            "Alkalinity_TAC_mmol_l": "2.55",
+            "pH": "6.9",
+            "TDS_Conductivity_uS_cm": "191",
+            "Sodium_Na_mg_l": "6.4",
+            "Chlorides_Cl_mg_l": "15.9",
+            "Calcium_Ca_mg_l": "7.9"
+        }
+    },
+    {
+        "Region": "Viseisei (Fiji)",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.5",
+            "Alkalinity_TAC_mmol_l": "2.03",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "689",
+            "Sodium_Na_mg_l": "96.5",
+            "Chlorides_Cl_mg_l": "93.8",
+            "Calcium_Ca_mg_l": "62.2"
+        }
+    },
+    {
+        "Region": "Buabua (Fiji)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.3",
+            "Alkalinity_TAC_mmol_l": "1.11",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "503",
+            "Sodium_Na_mg_l": "88.0",
+            "Chlorides_Cl_mg_l": "65.0",
+            "Calcium_Ca_mg_l": "66.3"
+        }
+    },
+    {
+        "Region": "Arovudi (Fiji)",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.9",
+            "Alkalinity_TAC_mmol_l": "2.30",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "431",
+            "Sodium_Na_mg_l": "27.6",
+            "Chlorides_Cl_mg_l": "42.2",
+            "Calcium_Ca_mg_l": "29.9"
+        }
+    },
+    {
+        "Region": "Ba (Fiji)",
+        "Parameters": {
+            "Ca_Hardness_dH": "9.3",
+            "Alkalinity_TAC_mmol_l": "2.62",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "434",
+            "Sodium_Na_mg_l": "22.8",
+            "Chlorides_Cl_mg_l": "48.2",
+            "Calcium_Ca_mg_l": "49.7"
+        }
+    },
+    {
+        "Region": "Yalalevu (Fiji)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.4",
+            "Alkalinity_TAC_mmol_l": "1.20",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "343",
+            "Sodium_Na_mg_l": "24.7",
+            "Chlorides_Cl_mg_l": "51.0",
+            "Calcium_Ca_mg_l": "31.3"
+        }
+    }
+]

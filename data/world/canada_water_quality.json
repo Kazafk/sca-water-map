@@ -1,0 +1,2354 @@
+[
+    {
+        "Region": "Toronto",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.5",
+            "Alkalinity_TAC_mmol_l": "1.8",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "280",
+            "Sodium_Na_mg_l": "15.0",
+            "Chlorides_Cl_mg_l": "25.0",
+            "Calcium_Ca_mg_l": "38.0"
+        }
+    },
+    {
+        "Region": "Vancouver",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.5",
+            "Alkalinity_TAC_mmol_l": "0.3",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "50",
+            "Sodium_Na_mg_l": "2.0",
+            "Chlorides_Cl_mg_l": "3.0",
+            "Calcium_Ca_mg_l": "8.0"
+        }
+    },
+    {
+        "Region": "Calgary",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.0",
+            "Alkalinity_TAC_mmol_l": "2.5",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "400",
+            "Sodium_Na_mg_l": "10.0",
+            "Chlorides_Cl_mg_l": "12.0",
+            "Calcium_Ca_mg_l": "60.0"
+        }
+    },
+    {
+        "Region": "Camrose (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.2",
+            "Alkalinity_TAC_mmol_l": "3.46",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "391",
+            "Sodium_Na_mg_l": "49.7",
+            "Chlorides_Cl_mg_l": "54.7",
+            "Calcium_Ca_mg_l": "69.8"
+        }
+    },
+    {
+        "Region": "Peterborough (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.1",
+            "Alkalinity_TAC_mmol_l": "2.84",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "551",
+            "Sodium_Na_mg_l": "34.3",
+            "Chlorides_Cl_mg_l": "49.5",
+            "Calcium_Ca_mg_l": "82.0"
+        }
+    },
+    {
+        "Region": "Cambridge (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.4",
+            "Alkalinity_TAC_mmol_l": "1.28",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "418",
+            "Sodium_Na_mg_l": "30.6",
+            "Chlorides_Cl_mg_l": "54.0",
+            "Calcium_Ca_mg_l": "63.8"
+        }
+    },
+    {
+        "Region": "Belleville (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.2",
+            "Alkalinity_TAC_mmol_l": "1.86",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "447",
+            "Sodium_Na_mg_l": "20.4",
+            "Chlorides_Cl_mg_l": "25.9",
+            "Calcium_Ca_mg_l": "82.6"
+        }
+    },
+    {
+        "Region": "Prince Rupert (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.7",
+            "Alkalinity_TAC_mmol_l": "3.21",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "291",
+            "Sodium_Na_mg_l": "21.3",
+            "Chlorides_Cl_mg_l": "16.4",
+            "Calcium_Ca_mg_l": "39.0"
+        }
+    },
+    {
+        "Region": "Dauphin (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.0",
+            "Alkalinity_TAC_mmol_l": "2.60",
+            "pH": "6.9",
+            "TDS_Conductivity_uS_cm": "113",
+            "Sodium_Na_mg_l": "3.4",
+            "Chlorides_Cl_mg_l": "7.5",
+            "Calcium_Ca_mg_l": "15.9"
+        }
+    },
+    {
+        "Region": "Weyburn (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.7",
+            "Alkalinity_TAC_mmol_l": "2.67",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "150",
+            "Sodium_Na_mg_l": "9.8",
+            "Chlorides_Cl_mg_l": "8.3",
+            "Calcium_Ca_mg_l": "10.8"
+        }
+    },
+    {
+        "Region": "Laval (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.8",
+            "Alkalinity_TAC_mmol_l": "2.27",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "132",
+            "Sodium_Na_mg_l": "5.6",
+            "Chlorides_Cl_mg_l": "9.2",
+            "Calcium_Ca_mg_l": "17.8"
+        }
+    },
+    {
+        "Region": "Airdrie (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.7",
+            "Alkalinity_TAC_mmol_l": "1.36",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "257",
+            "Sodium_Na_mg_l": "19.1",
+            "Chlorides_Cl_mg_l": "26.2",
+            "Calcium_Ca_mg_l": "33.0"
+        }
+    },
+    {
+        "Region": "Cranbrook (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "11.7",
+            "Alkalinity_TAC_mmol_l": "2.78",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "370",
+            "Sodium_Na_mg_l": "27.7",
+            "Chlorides_Cl_mg_l": "29.9",
+            "Calcium_Ca_mg_l": "65.8"
+        }
+    },
+    {
+        "Region": "Prince George (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.3",
+            "Alkalinity_TAC_mmol_l": "1.44",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "322",
+            "Sodium_Na_mg_l": "13.3",
+            "Chlorides_Cl_mg_l": "25.4",
+            "Calcium_Ca_mg_l": "33.3"
+        }
+    },
+    {
+        "Region": "Strathcona (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.7",
+            "Alkalinity_TAC_mmol_l": "2.74",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "147",
+            "Sodium_Na_mg_l": "9.0",
+            "Chlorides_Cl_mg_l": "7.8",
+            "Calcium_Ca_mg_l": "9.8"
+        }
+    },
+    {
+        "Region": "Martensville (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.7",
+            "Alkalinity_TAC_mmol_l": "2.27",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "579",
+            "Sodium_Na_mg_l": "35.1",
+            "Chlorides_Cl_mg_l": "33.9",
+            "Calcium_Ca_mg_l": "69.3"
+        }
+    },
+    {
+        "Region": "Port Arthur (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.8",
+            "Alkalinity_TAC_mmol_l": "2.69",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "291",
+            "Sodium_Na_mg_l": "18.1",
+            "Chlorides_Cl_mg_l": "22.6",
+            "Calcium_Ca_mg_l": "37.9"
+        }
+    },
+    {
+        "Region": "County of Brant (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.0",
+            "Alkalinity_TAC_mmol_l": "3.24",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "298",
+            "Sodium_Na_mg_l": "17.5",
+            "Chlorides_Cl_mg_l": "26.8",
+            "Calcium_Ca_mg_l": "28.7"
+        }
+    },
+    {
+        "Region": "Dryden (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.9",
+            "Alkalinity_TAC_mmol_l": "1.43",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "589",
+            "Sodium_Na_mg_l": "31.9",
+            "Chlorides_Cl_mg_l": "36.6",
+            "Calcium_Ca_mg_l": "85.6"
+        }
+    },
+    {
+        "Region": "Kingsgate (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.2",
+            "Alkalinity_TAC_mmol_l": "0.52",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "285",
+            "Sodium_Na_mg_l": "12.7",
+            "Chlorides_Cl_mg_l": "18.4",
+            "Calcium_Ca_mg_l": "32.4"
+        }
+    },
+    {
+        "Region": "Clarence-Rockland (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.1",
+            "Alkalinity_TAC_mmol_l": "1.03",
+            "pH": "6.9",
+            "TDS_Conductivity_uS_cm": "116",
+            "Sodium_Na_mg_l": "4.2",
+            "Chlorides_Cl_mg_l": "10.5",
+            "Calcium_Ca_mg_l": "6.7"
+        }
+    },
+    {
+        "Region": "Chilliwack (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.6",
+            "Alkalinity_TAC_mmol_l": "1.95",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "265",
+            "Sodium_Na_mg_l": "15.3",
+            "Chlorides_Cl_mg_l": "34.3",
+            "Calcium_Ca_mg_l": "41.0"
+        }
+    },
+    {
+        "Region": "New Westminster (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.4",
+            "Alkalinity_TAC_mmol_l": "0.69",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "231",
+            "Sodium_Na_mg_l": "19.5",
+            "Chlorides_Cl_mg_l": "22.5",
+            "Calcium_Ca_mg_l": "35.7"
+        }
+    },
+    {
+        "Region": "Hamilton (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.3",
+            "Alkalinity_TAC_mmol_l": "2.92",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "598",
+            "Sodium_Na_mg_l": "26.0",
+            "Chlorides_Cl_mg_l": "39.4",
+            "Calcium_Ca_mg_l": "67.3"
+        }
+    },
+    {
+        "Region": "Merritt (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.6",
+            "Alkalinity_TAC_mmol_l": "2.12",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "132",
+            "Sodium_Na_mg_l": "8.2",
+            "Chlorides_Cl_mg_l": "13.3",
+            "Calcium_Ca_mg_l": "9.0"
+        }
+    },
+    {
+        "Region": "Fort St. John (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.3",
+            "Alkalinity_TAC_mmol_l": "0.89",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "219",
+            "Sodium_Na_mg_l": "20.7",
+            "Chlorides_Cl_mg_l": "32.6",
+            "Calcium_Ca_mg_l": "37.3"
+        }
+    },
+    {
+        "Region": "Summerside (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.4",
+            "Alkalinity_TAC_mmol_l": "3.05",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "439",
+            "Sodium_Na_mg_l": "47.4",
+            "Chlorides_Cl_mg_l": "37.7",
+            "Calcium_Ca_mg_l": "73.8"
+        }
+    },
+    {
+        "Region": "Welland (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.1",
+            "Alkalinity_TAC_mmol_l": "3.11",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "94",
+            "Sodium_Na_mg_l": "4.6",
+            "Chlorides_Cl_mg_l": "14.2",
+            "Calcium_Ca_mg_l": "13.5"
+        }
+    },
+    {
+        "Region": "Chapais (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.9",
+            "Alkalinity_TAC_mmol_l": "2.42",
+            "pH": "6.8",
+            "TDS_Conductivity_uS_cm": "78",
+            "Sodium_Na_mg_l": "7.0",
+            "Chlorides_Cl_mg_l": "12.3",
+            "Calcium_Ca_mg_l": "14.7"
+        }
+    },
+    {
+        "Region": "Trail (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.7",
+            "Alkalinity_TAC_mmol_l": "0.79",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "95",
+            "Sodium_Na_mg_l": "2.9",
+            "Chlorides_Cl_mg_l": "8.2",
+            "Calcium_Ca_mg_l": "11.2"
+        }
+    },
+    {
+        "Region": "Fort Erie (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.2",
+            "Alkalinity_TAC_mmol_l": "2.45",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "54",
+            "Sodium_Na_mg_l": "7.3",
+            "Chlorides_Cl_mg_l": "5.2",
+            "Calcium_Ca_mg_l": "9.9"
+        }
+    },
+    {
+        "Region": "Burlington (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.2",
+            "Alkalinity_TAC_mmol_l": "2.63",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "129",
+            "Sodium_Na_mg_l": "4.0",
+            "Chlorides_Cl_mg_l": "12.6",
+            "Calcium_Ca_mg_l": "12.6"
+        }
+    },
+    {
+        "Region": "Charlottetown (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.4",
+            "Alkalinity_TAC_mmol_l": "1.78",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "106",
+            "Sodium_Na_mg_l": "8.7",
+            "Chlorides_Cl_mg_l": "5.5",
+            "Calcium_Ca_mg_l": "15.4"
+        }
+    },
+    {
+        "Region": "Melville (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.7",
+            "Alkalinity_TAC_mmol_l": "2.20",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "450",
+            "Sodium_Na_mg_l": "38.1",
+            "Chlorides_Cl_mg_l": "51.3",
+            "Calcium_Ca_mg_l": "55.6"
+        }
+    },
+    {
+        "Region": "Abercorn (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.5",
+            "Alkalinity_TAC_mmol_l": "1.69",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "119",
+            "Sodium_Na_mg_l": "2.2",
+            "Chlorides_Cl_mg_l": "5.4",
+            "Calcium_Ca_mg_l": "12.3"
+        }
+    },
+    {
+        "Region": "Swift Current (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.9",
+            "Alkalinity_TAC_mmol_l": "3.28",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "442",
+            "Sodium_Na_mg_l": "40.0",
+            "Chlorides_Cl_mg_l": "49.8",
+            "Calcium_Ca_mg_l": "75.4"
+        }
+    },
+    {
+        "Region": "Langford (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.2",
+            "Alkalinity_TAC_mmol_l": "2.64",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "250",
+            "Sodium_Na_mg_l": "20.0",
+            "Chlorides_Cl_mg_l": "22.2",
+            "Calcium_Ca_mg_l": "38.2"
+        }
+    },
+    {
+        "Region": "Richmond Hill (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.5",
+            "Alkalinity_TAC_mmol_l": "0.79",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "255",
+            "Sodium_Na_mg_l": "15.3",
+            "Chlorides_Cl_mg_l": "27.1",
+            "Calcium_Ca_mg_l": "27.3"
+        }
+    },
+    {
+        "Region": "North Battleford (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.3",
+            "Alkalinity_TAC_mmol_l": "1.62",
+            "pH": "6.9",
+            "TDS_Conductivity_uS_cm": "90",
+            "Sodium_Na_mg_l": "5.2",
+            "Chlorides_Cl_mg_l": "5.9",
+            "Calcium_Ca_mg_l": "19.9"
+        }
+    },
+    {
+        "Region": "Morden (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.6",
+            "Alkalinity_TAC_mmol_l": "0.84",
+            "pH": "6.8",
+            "TDS_Conductivity_uS_cm": "131",
+            "Sodium_Na_mg_l": "3.6",
+            "Chlorides_Cl_mg_l": "14.4",
+            "Calcium_Ca_mg_l": "16.8"
+        }
+    },
+    {
+        "Region": "Lloydminster (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.4",
+            "Alkalinity_TAC_mmol_l": "1.97",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "307",
+            "Sodium_Na_mg_l": "13.2",
+            "Chlorides_Cl_mg_l": "15.7",
+            "Calcium_Ca_mg_l": "35.2"
+        }
+    },
+    {
+        "Region": "Frontenac Islands (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.4",
+            "Alkalinity_TAC_mmol_l": "3.29",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "300",
+            "Sodium_Na_mg_l": "12.1",
+            "Chlorides_Cl_mg_l": "25.4",
+            "Calcium_Ca_mg_l": "31.8"
+        }
+    },
+    {
+        "Region": "Revelstoke (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.2",
+            "Alkalinity_TAC_mmol_l": "2.94",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "299",
+            "Sodium_Na_mg_l": "10.9",
+            "Chlorides_Cl_mg_l": "31.1",
+            "Calcium_Ca_mg_l": "32.6"
+        }
+    },
+    {
+        "Region": "Cold Lake (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.1",
+            "Alkalinity_TAC_mmol_l": "0.53",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "104",
+            "Sodium_Na_mg_l": "2.1",
+            "Chlorides_Cl_mg_l": "3.7",
+            "Calcium_Ca_mg_l": "16.2"
+        }
+    },
+    {
+        "Region": "Campbellton (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.7",
+            "Alkalinity_TAC_mmol_l": "1.17",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "88",
+            "Sodium_Na_mg_l": "6.1",
+            "Chlorides_Cl_mg_l": "4.1",
+            "Calcium_Ca_mg_l": "16.3"
+        }
+    },
+    {
+        "Region": "Fort Frances (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "5.6",
+            "Alkalinity_TAC_mmol_l": "3.40",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "216",
+            "Sodium_Na_mg_l": "19.3",
+            "Chlorides_Cl_mg_l": "15.9",
+            "Calcium_Ca_mg_l": "27.5"
+        }
+    },
+    {
+        "Region": "Moose Jaw (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "11.1",
+            "Alkalinity_TAC_mmol_l": "1.83",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "374",
+            "Sodium_Na_mg_l": "32.7",
+            "Chlorides_Cl_mg_l": "48.5",
+            "Calcium_Ca_mg_l": "50.2"
+        }
+    },
+    {
+        "Region": "Sarnia (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "10.4",
+            "Alkalinity_TAC_mmol_l": "2.29",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "362",
+            "Sodium_Na_mg_l": "44.3",
+            "Chlorides_Cl_mg_l": "54.7",
+            "Calcium_Ca_mg_l": "89.1"
+        }
+    },
+    {
+        "Region": "Powell River (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.6",
+            "Alkalinity_TAC_mmol_l": "1.13",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "323",
+            "Sodium_Na_mg_l": "18.5",
+            "Chlorides_Cl_mg_l": "18.5",
+            "Calcium_Ca_mg_l": "40.9"
+        }
+    },
+    {
+        "Region": "Salmon Arm (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.6",
+            "Alkalinity_TAC_mmol_l": "1.32",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "321",
+            "Sodium_Na_mg_l": "17.4",
+            "Chlorides_Cl_mg_l": "20.6",
+            "Calcium_Ca_mg_l": "39.0"
+        }
+    },
+    {
+        "Region": "Côte Saint-Luc (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.7",
+            "Alkalinity_TAC_mmol_l": "1.95",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "554",
+            "Sodium_Na_mg_l": "34.0",
+            "Chlorides_Cl_mg_l": "54.1",
+            "Calcium_Ca_mg_l": "67.0"
+        }
+    },
+    {
+        "Region": "Delta (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.9",
+            "Alkalinity_TAC_mmol_l": "0.73",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "183",
+            "Sodium_Na_mg_l": "5.7",
+            "Chlorides_Cl_mg_l": "10.7",
+            "Calcium_Ca_mg_l": "12.7"
+        }
+    },
+    {
+        "Region": "Lévis (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.0",
+            "Alkalinity_TAC_mmol_l": "0.62",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "259",
+            "Sodium_Na_mg_l": "19.2",
+            "Chlorides_Cl_mg_l": "22.2",
+            "Calcium_Ca_mg_l": "32.2"
+        }
+    },
+    {
+        "Region": "Dartmouth (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.1",
+            "Alkalinity_TAC_mmol_l": "2.71",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "170",
+            "Sodium_Na_mg_l": "2.3",
+            "Chlorides_Cl_mg_l": "4.3",
+            "Calcium_Ca_mg_l": "13.7"
+        }
+    },
+    {
+        "Region": "Wetaskiwin (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.9",
+            "Alkalinity_TAC_mmol_l": "1.27",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "443",
+            "Sodium_Na_mg_l": "31.2",
+            "Chlorides_Cl_mg_l": "25.4",
+            "Calcium_Ca_mg_l": "80.6"
+        }
+    },
+    {
+        "Region": "Edmonton (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "5.8",
+            "Alkalinity_TAC_mmol_l": "0.86",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "237",
+            "Sodium_Na_mg_l": "14.5",
+            "Chlorides_Cl_mg_l": "34.5",
+            "Calcium_Ca_mg_l": "27.6"
+        }
+    },
+    {
+        "Region": "Brockville (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.0",
+            "Alkalinity_TAC_mmol_l": "1.44",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "135",
+            "Sodium_Na_mg_l": "4.5",
+            "Chlorides_Cl_mg_l": "6.9",
+            "Calcium_Ca_mg_l": "11.4"
+        }
+    },
+    {
+        "Region": "Grande Prairie (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.4",
+            "Alkalinity_TAC_mmol_l": "0.58",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "279",
+            "Sodium_Na_mg_l": "23.1",
+            "Chlorides_Cl_mg_l": "19.3",
+            "Calcium_Ca_mg_l": "44.7"
+        }
+    },
+    {
+        "Region": "Portage la Prairie (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.9",
+            "Alkalinity_TAC_mmol_l": "2.27",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "518",
+            "Sodium_Na_mg_l": "36.5",
+            "Chlorides_Cl_mg_l": "47.3",
+            "Calcium_Ca_mg_l": "71.0"
+        }
+    },
+    {
+        "Region": "Windsor (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "5.8",
+            "Alkalinity_TAC_mmol_l": "1.04",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "237",
+            "Sodium_Na_mg_l": "24.3",
+            "Chlorides_Cl_mg_l": "20.9",
+            "Calcium_Ca_mg_l": "39.4"
+        }
+    },
+    {
+        "Region": "Iqaluit (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.2",
+            "Alkalinity_TAC_mmol_l": "2.32",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "465",
+            "Sodium_Na_mg_l": "45.4",
+            "Chlorides_Cl_mg_l": "46.7",
+            "Calcium_Ca_mg_l": "67.1"
+        }
+    },
+    {
+        "Region": "Mission (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "5.0",
+            "Alkalinity_TAC_mmol_l": "0.57",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "206",
+            "Sodium_Na_mg_l": "24.1",
+            "Chlorides_Cl_mg_l": "29.4",
+            "Calcium_Ca_mg_l": "25.8"
+        }
+    },
+    {
+        "Region": "Fort William (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.6",
+            "Alkalinity_TAC_mmol_l": "1.55",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "120",
+            "Sodium_Na_mg_l": "5.5",
+            "Chlorides_Cl_mg_l": "2.5",
+            "Calcium_Ca_mg_l": "6.0"
+        }
+    },
+    {
+        "Region": "Yorkton (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.4",
+            "Alkalinity_TAC_mmol_l": "3.23",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "525",
+            "Sodium_Na_mg_l": "30.7",
+            "Chlorides_Cl_mg_l": "41.5",
+            "Calcium_Ca_mg_l": "55.5"
+        }
+    },
+    {
+        "Region": "Montreal (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.9",
+            "Alkalinity_TAC_mmol_l": "2.59",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "579",
+            "Sodium_Na_mg_l": "32.8",
+            "Chlorides_Cl_mg_l": "39.0",
+            "Calcium_Ca_mg_l": "64.6"
+        }
+    },
+    {
+        "Region": "Medicine Hat (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.2",
+            "Alkalinity_TAC_mmol_l": "1.91",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "242",
+            "Sodium_Na_mg_l": "11.2",
+            "Chlorides_Cl_mg_l": "31.5",
+            "Calcium_Ca_mg_l": "29.2"
+        }
+    },
+    {
+        "Region": "Quebec City (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.0",
+            "Alkalinity_TAC_mmol_l": "3.42",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "125",
+            "Sodium_Na_mg_l": "7.7",
+            "Chlorides_Cl_mg_l": "3.6",
+            "Calcium_Ca_mg_l": "15.5"
+        }
+    },
+    {
+        "Region": "Kitchener (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.2",
+            "Alkalinity_TAC_mmol_l": "0.79",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "80",
+            "Sodium_Na_mg_l": "4.5",
+            "Chlorides_Cl_mg_l": "11.2",
+            "Calcium_Ca_mg_l": "11.2"
+        }
+    },
+    {
+        "Region": "Regina (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.7",
+            "Alkalinity_TAC_mmol_l": "2.32",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "557",
+            "Sodium_Na_mg_l": "44.5",
+            "Chlorides_Cl_mg_l": "34.6",
+            "Calcium_Ca_mg_l": "87.9"
+        }
+    },
+    {
+        "Region": "North Vancouver (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.4",
+            "Alkalinity_TAC_mmol_l": "2.47",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "252",
+            "Sodium_Na_mg_l": "23.3",
+            "Chlorides_Cl_mg_l": "22.8",
+            "Calcium_Ca_mg_l": "33.7"
+        }
+    },
+    {
+        "Region": "Cochrane (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.6",
+            "Alkalinity_TAC_mmol_l": "2.08",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "504",
+            "Sodium_Na_mg_l": "30.1",
+            "Chlorides_Cl_mg_l": "41.1",
+            "Calcium_Ca_mg_l": "72.8"
+        }
+    },
+    {
+        "Region": "Yellowknife (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "11.5",
+            "Alkalinity_TAC_mmol_l": "2.97",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "382",
+            "Sodium_Na_mg_l": "35.7",
+            "Chlorides_Cl_mg_l": "44.7",
+            "Calcium_Ca_mg_l": "65.1"
+        }
+    },
+    {
+        "Region": "Fredericton (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.9",
+            "Alkalinity_TAC_mmol_l": "1.60",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "495",
+            "Sodium_Na_mg_l": "44.5",
+            "Chlorides_Cl_mg_l": "30.8",
+            "Calcium_Ca_mg_l": "73.8"
+        }
+    },
+    {
+        "Region": "Saskatoon (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.7",
+            "Alkalinity_TAC_mmol_l": "1.95",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "287",
+            "Sodium_Na_mg_l": "19.0",
+            "Chlorides_Cl_mg_l": "24.0",
+            "Calcium_Ca_mg_l": "42.1"
+        }
+    },
+    {
+        "Region": "Brandon (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.6",
+            "Alkalinity_TAC_mmol_l": "1.58",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "91",
+            "Sodium_Na_mg_l": "3.5",
+            "Chlorides_Cl_mg_l": "6.5",
+            "Calcium_Ca_mg_l": "6.8"
+        }
+    },
+    {
+        "Region": "Cornwall (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.2",
+            "Alkalinity_TAC_mmol_l": "1.63",
+            "pH": "6.9",
+            "TDS_Conductivity_uS_cm": "108",
+            "Sodium_Na_mg_l": "9.7",
+            "Chlorides_Cl_mg_l": "13.9",
+            "Calcium_Ca_mg_l": "10.7"
+        }
+    },
+    {
+        "Region": "Sydney (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.7",
+            "Alkalinity_TAC_mmol_l": "2.83",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "255",
+            "Sodium_Na_mg_l": "17.7",
+            "Chlorides_Cl_mg_l": "34.6",
+            "Calcium_Ca_mg_l": "34.6"
+        }
+    },
+    {
+        "Region": "Terrace (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.5",
+            "Alkalinity_TAC_mmol_l": "1.26",
+            "pH": "6.9",
+            "TDS_Conductivity_uS_cm": "137",
+            "Sodium_Na_mg_l": "5.2",
+            "Chlorides_Cl_mg_l": "9.8",
+            "Calcium_Ca_mg_l": "7.6"
+        }
+    },
+    {
+        "Region": "Richmond (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.6",
+            "Alkalinity_TAC_mmol_l": "2.38",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "577",
+            "Sodium_Na_mg_l": "32.0",
+            "Chlorides_Cl_mg_l": "59.8",
+            "Calcium_Ca_mg_l": "58.0"
+        }
+    },
+    {
+        "Region": "Lambton Shores (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.7",
+            "Alkalinity_TAC_mmol_l": "1.68",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "102",
+            "Sodium_Na_mg_l": "9.8",
+            "Chlorides_Cl_mg_l": "8.0",
+            "Calcium_Ca_mg_l": "9.3"
+        }
+    },
+    {
+        "Region": "Colwood (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "11.4",
+            "Alkalinity_TAC_mmol_l": "2.55",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "394",
+            "Sodium_Na_mg_l": "34.5",
+            "Chlorides_Cl_mg_l": "54.1",
+            "Calcium_Ca_mg_l": "83.0"
+        }
+    },
+    {
+        "Region": "Port Colborne (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "5.5",
+            "Alkalinity_TAC_mmol_l": "0.98",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "243",
+            "Sodium_Na_mg_l": "24.0",
+            "Chlorides_Cl_mg_l": "28.2",
+            "Calcium_Ca_mg_l": "44.2"
+        }
+    },
+    {
+        "Region": "Tatamagouche (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.0",
+            "Alkalinity_TAC_mmol_l": "2.48",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "237",
+            "Sodium_Na_mg_l": "20.2",
+            "Chlorides_Cl_mg_l": "24.4",
+            "Calcium_Ca_mg_l": "28.0"
+        }
+    },
+    {
+        "Region": "Pickering (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.7",
+            "Alkalinity_TAC_mmol_l": "1.45",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "162",
+            "Sodium_Na_mg_l": "9.1",
+            "Chlorides_Cl_mg_l": "14.3",
+            "Calcium_Ca_mg_l": "12.9"
+        }
+    },
+    {
+        "Region": "Spruce Grove (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.9",
+            "Alkalinity_TAC_mmol_l": "1.81",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "105",
+            "Sodium_Na_mg_l": "2.8",
+            "Chlorides_Cl_mg_l": "13.6",
+            "Calcium_Ca_mg_l": "14.5"
+        }
+    },
+    {
+        "Region": "Brantford (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.3",
+            "Alkalinity_TAC_mmol_l": "2.70",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "230",
+            "Sodium_Na_mg_l": "10.8",
+            "Chlorides_Cl_mg_l": "20.6",
+            "Calcium_Ca_mg_l": "29.0"
+        }
+    },
+    {
+        "Region": "Thunder Bay (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "5.9",
+            "Alkalinity_TAC_mmol_l": "1.46",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "226",
+            "Sodium_Na_mg_l": "12.9",
+            "Chlorides_Cl_mg_l": "31.6",
+            "Calcium_Ca_mg_l": "26.2"
+        }
+    },
+    {
+        "Region": "Warman (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.0",
+            "Alkalinity_TAC_mmol_l": "1.36",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "135",
+            "Sodium_Na_mg_l": "9.6",
+            "Chlorides_Cl_mg_l": "4.4",
+            "Calcium_Ca_mg_l": "7.4"
+        }
+    },
+    {
+        "Region": "Flin Flon (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.7",
+            "Alkalinity_TAC_mmol_l": "0.62",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "118",
+            "Sodium_Na_mg_l": "7.5",
+            "Chlorides_Cl_mg_l": "5.1",
+            "Calcium_Ca_mg_l": "17.8"
+        }
+    },
+    {
+        "Region": "St. Catharines (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "11.5",
+            "Alkalinity_TAC_mmol_l": "2.60",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "397",
+            "Sodium_Na_mg_l": "25.7",
+            "Chlorides_Cl_mg_l": "52.9",
+            "Calcium_Ca_mg_l": "63.9"
+        }
+    },
+    {
+        "Region": "Rossland (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.2",
+            "Alkalinity_TAC_mmol_l": "3.11",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "404",
+            "Sodium_Na_mg_l": "32.6",
+            "Chlorides_Cl_mg_l": "29.2",
+            "Calcium_Ca_mg_l": "87.5"
+        }
+    },
+    {
+        "Region": "Saint John (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.5",
+            "Alkalinity_TAC_mmol_l": "1.68",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "260",
+            "Sodium_Na_mg_l": "13.0",
+            "Chlorides_Cl_mg_l": "31.2",
+            "Calcium_Ca_mg_l": "26.3"
+        }
+    },
+    {
+        "Region": "Corner Brook (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.9",
+            "Alkalinity_TAC_mmol_l": "1.10",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "475",
+            "Sodium_Na_mg_l": "26.3",
+            "Chlorides_Cl_mg_l": "31.8",
+            "Calcium_Ca_mg_l": "62.3"
+        }
+    },
+    {
+        "Region": "Timmins (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.7",
+            "Alkalinity_TAC_mmol_l": "3.50",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "146",
+            "Sodium_Na_mg_l": "8.1",
+            "Chlorides_Cl_mg_l": "3.3",
+            "Calcium_Ca_mg_l": "15.7"
+        }
+    },
+    {
+        "Region": "Selkirk (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.8",
+            "Alkalinity_TAC_mmol_l": "2.12",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "570",
+            "Sodium_Na_mg_l": "37.8",
+            "Chlorides_Cl_mg_l": "36.8",
+            "Calcium_Ca_mg_l": "76.9"
+        }
+    },
+    {
+        "Region": "Enderby (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.1",
+            "Alkalinity_TAC_mmol_l": "2.90",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "90",
+            "Sodium_Na_mg_l": "4.8",
+            "Chlorides_Cl_mg_l": "9.6",
+            "Calcium_Ca_mg_l": "9.8"
+        }
+    },
+    {
+        "Region": "Waterloo (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.9",
+            "Alkalinity_TAC_mmol_l": "1.59",
+            "pH": "6.9",
+            "TDS_Conductivity_uS_cm": "116",
+            "Sodium_Na_mg_l": "7.6",
+            "Chlorides_Cl_mg_l": "11.0",
+            "Calcium_Ca_mg_l": "11.5"
+        }
+    },
+    {
+        "Region": "Williams Lake (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.3",
+            "Alkalinity_TAC_mmol_l": "1.83",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "448",
+            "Sodium_Na_mg_l": "20.0",
+            "Chlorides_Cl_mg_l": "54.8",
+            "Calcium_Ca_mg_l": "63.8"
+        }
+    },
+    {
+        "Region": "Kingston (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.6",
+            "Alkalinity_TAC_mmol_l": "3.17",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "316",
+            "Sodium_Na_mg_l": "22.7",
+            "Chlorides_Cl_mg_l": "22.0",
+            "Calcium_Ca_mg_l": "39.8"
+        }
+    },
+    {
+        "Region": "Barrie (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.7",
+            "Alkalinity_TAC_mmol_l": "2.55",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "111",
+            "Sodium_Na_mg_l": "2.3",
+            "Chlorides_Cl_mg_l": "6.5",
+            "Calcium_Ca_mg_l": "11.9"
+        }
+    },
+    {
+        "Region": "Port Coquitlam (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.8",
+            "Alkalinity_TAC_mmol_l": "2.72",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "187",
+            "Sodium_Na_mg_l": "2.9",
+            "Chlorides_Cl_mg_l": "13.9",
+            "Calcium_Ca_mg_l": "12.6"
+        }
+    },
+    {
+        "Region": "Ottawa (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.6",
+            "Alkalinity_TAC_mmol_l": "0.52",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "120",
+            "Sodium_Na_mg_l": "5.5",
+            "Chlorides_Cl_mg_l": "13.6",
+            "Calcium_Ca_mg_l": "5.7"
+        }
+    },
+    {
+        "Region": "Vernon (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.7",
+            "Alkalinity_TAC_mmol_l": "2.82",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "527",
+            "Sodium_Na_mg_l": "20.1",
+            "Chlorides_Cl_mg_l": "37.1",
+            "Calcium_Ca_mg_l": "84.2"
+        }
+    },
+    {
+        "Region": "Pierrefonds (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.1",
+            "Alkalinity_TAC_mmol_l": "2.32",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "446",
+            "Sodium_Na_mg_l": "38.6",
+            "Chlorides_Cl_mg_l": "30.7",
+            "Calcium_Ca_mg_l": "83.5"
+        }
+    },
+    {
+        "Region": "Duncan (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.9",
+            "Alkalinity_TAC_mmol_l": "2.65",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "277",
+            "Sodium_Na_mg_l": "14.5",
+            "Chlorides_Cl_mg_l": "23.1",
+            "Calcium_Ca_mg_l": "38.8"
+        }
+    },
+    {
+        "Region": "Orillia (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.5",
+            "Alkalinity_TAC_mmol_l": "2.41",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "521",
+            "Sodium_Na_mg_l": "38.5",
+            "Chlorides_Cl_mg_l": "31.5",
+            "Calcium_Ca_mg_l": "79.5"
+        }
+    },
+    {
+        "Region": "Portland (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.2",
+            "Alkalinity_TAC_mmol_l": "1.67",
+            "pH": "6.8",
+            "TDS_Conductivity_uS_cm": "59",
+            "Sodium_Na_mg_l": "6.4",
+            "Chlorides_Cl_mg_l": "12.3",
+            "Calcium_Ca_mg_l": "7.5"
+        }
+    },
+    {
+        "Region": "Maple Ridge (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.9",
+            "Alkalinity_TAC_mmol_l": "2.97",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "419",
+            "Sodium_Na_mg_l": "29.2",
+            "Chlorides_Cl_mg_l": "54.0",
+            "Calcium_Ca_mg_l": "67.5"
+        }
+    },
+    {
+        "Region": "London (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.0",
+            "Alkalinity_TAC_mmol_l": "0.97",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "478",
+            "Sodium_Na_mg_l": "28.0",
+            "Chlorides_Cl_mg_l": "25.2",
+            "Calcium_Ca_mg_l": "56.7"
+        }
+    },
+    {
+        "Region": "Lethbridge (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.2",
+            "Alkalinity_TAC_mmol_l": "0.68",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "216",
+            "Sodium_Na_mg_l": "12.3",
+            "Chlorides_Cl_mg_l": "17.1",
+            "Calcium_Ca_mg_l": "29.2"
+        }
+    },
+    {
+        "Region": "White Rock (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.1",
+            "Alkalinity_TAC_mmol_l": "1.03",
+            "pH": "6.9",
+            "TDS_Conductivity_uS_cm": "120",
+            "Sodium_Na_mg_l": "9.0",
+            "Chlorides_Cl_mg_l": "4.6",
+            "Calcium_Ca_mg_l": "5.2"
+        }
+    },
+    {
+        "Region": "Thorold (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.8",
+            "Alkalinity_TAC_mmol_l": "0.62",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "160",
+            "Sodium_Na_mg_l": "2.6",
+            "Chlorides_Cl_mg_l": "4.7",
+            "Calcium_Ca_mg_l": "8.4"
+        }
+    },
+    {
+        "Region": "Quinte West (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.8",
+            "Alkalinity_TAC_mmol_l": "1.60",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "292",
+            "Sodium_Na_mg_l": "23.9",
+            "Chlorides_Cl_mg_l": "27.3",
+            "Calcium_Ca_mg_l": "36.9"
+        }
+    },
+    {
+        "Region": "Stratford (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.2",
+            "Alkalinity_TAC_mmol_l": "3.01",
+            "pH": "6.9",
+            "TDS_Conductivity_uS_cm": "128",
+            "Sodium_Na_mg_l": "6.6",
+            "Chlorides_Cl_mg_l": "7.3",
+            "Calcium_Ca_mg_l": "12.9"
+        }
+    },
+    {
+        "Region": "Humboldt (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.7",
+            "Alkalinity_TAC_mmol_l": "1.02",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "140",
+            "Sodium_Na_mg_l": "7.5",
+            "Chlorides_Cl_mg_l": "13.5",
+            "Calcium_Ca_mg_l": "16.3"
+        }
+    },
+    {
+        "Region": "Norfolk County (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.6",
+            "Alkalinity_TAC_mmol_l": "2.45",
+            "pH": "6.8",
+            "TDS_Conductivity_uS_cm": "136",
+            "Sodium_Na_mg_l": "7.1",
+            "Chlorides_Cl_mg_l": "11.1",
+            "Calcium_Ca_mg_l": "17.1"
+        }
+    },
+    {
+        "Region": "Dawson Creek (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.8",
+            "Alkalinity_TAC_mmol_l": "0.81",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "516",
+            "Sodium_Na_mg_l": "27.3",
+            "Chlorides_Cl_mg_l": "49.7",
+            "Calcium_Ca_mg_l": "53.1"
+        }
+    },
+    {
+        "Region": "Kelowna (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.1",
+            "Alkalinity_TAC_mmol_l": "1.25",
+            "pH": "6.9",
+            "TDS_Conductivity_uS_cm": "80",
+            "Sodium_Na_mg_l": "8.7",
+            "Chlorides_Cl_mg_l": "14.9",
+            "Calcium_Ca_mg_l": "6.2"
+        }
+    },
+    {
+        "Region": "Fort Saskatchewan (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.8",
+            "Alkalinity_TAC_mmol_l": "0.62",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "463",
+            "Sodium_Na_mg_l": "34.6",
+            "Chlorides_Cl_mg_l": "42.3",
+            "Calcium_Ca_mg_l": "64.2"
+        }
+    },
+    {
+        "Region": "Armstrong (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.4",
+            "Alkalinity_TAC_mmol_l": "0.80",
+            "pH": "6.9",
+            "TDS_Conductivity_uS_cm": "77",
+            "Sodium_Na_mg_l": "3.2",
+            "Chlorides_Cl_mg_l": "11.8",
+            "Calcium_Ca_mg_l": "6.5"
+        }
+    },
+    {
+        "Region": "St. John's (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.7",
+            "Alkalinity_TAC_mmol_l": "3.11",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "536",
+            "Sodium_Na_mg_l": "47.9",
+            "Chlorides_Cl_mg_l": "39.6",
+            "Calcium_Ca_mg_l": "52.7"
+        }
+    },
+    {
+        "Region": "Terrebonne (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.7",
+            "Alkalinity_TAC_mmol_l": "3.15",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "556",
+            "Sodium_Na_mg_l": "26.9",
+            "Chlorides_Cl_mg_l": "52.8",
+            "Calcium_Ca_mg_l": "77.3"
+        }
+    },
+    {
+        "Region": "Campbell River (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "11.8",
+            "Alkalinity_TAC_mmol_l": "2.09",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "430",
+            "Sodium_Na_mg_l": "34.8",
+            "Chlorides_Cl_mg_l": "48.7",
+            "Calcium_Ca_mg_l": "51.9"
+        }
+    },
+    {
+        "Region": "Point Edward (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "5.3",
+            "Alkalinity_TAC_mmol_l": "1.51",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "234",
+            "Sodium_Na_mg_l": "24.7",
+            "Chlorides_Cl_mg_l": "15.3",
+            "Calcium_Ca_mg_l": "39.4"
+        }
+    },
+    {
+        "Region": "Markham (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.4",
+            "Alkalinity_TAC_mmol_l": "1.46",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "536",
+            "Sodium_Na_mg_l": "39.4",
+            "Chlorides_Cl_mg_l": "33.3",
+            "Calcium_Ca_mg_l": "81.5"
+        }
+    },
+    {
+        "Region": "St. Albert (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.3",
+            "Alkalinity_TAC_mmol_l": "2.61",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "458",
+            "Sodium_Na_mg_l": "29.6",
+            "Chlorides_Cl_mg_l": "36.8",
+            "Calcium_Ca_mg_l": "79.3"
+        }
+    },
+    {
+        "Region": "Leduc (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.5",
+            "Alkalinity_TAC_mmol_l": "1.14",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "492",
+            "Sodium_Na_mg_l": "29.6",
+            "Chlorides_Cl_mg_l": "48.1",
+            "Calcium_Ca_mg_l": "67.7"
+        }
+    },
+    {
+        "Region": "Melfort (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.6",
+            "Alkalinity_TAC_mmol_l": "1.76",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "464",
+            "Sodium_Na_mg_l": "28.6",
+            "Chlorides_Cl_mg_l": "50.8",
+            "Calcium_Ca_mg_l": "70.2"
+        }
+    },
+    {
+        "Region": "Pembroke (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "10.4",
+            "Alkalinity_TAC_mmol_l": "2.60",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "341",
+            "Sodium_Na_mg_l": "38.0",
+            "Chlorides_Cl_mg_l": "32.3",
+            "Calcium_Ca_mg_l": "66.9"
+        }
+    },
+    {
+        "Region": "Chartierville (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.4",
+            "Alkalinity_TAC_mmol_l": "2.55",
+            "pH": "6.9",
+            "TDS_Conductivity_uS_cm": "115",
+            "Sodium_Na_mg_l": "3.7",
+            "Chlorides_Cl_mg_l": "9.7",
+            "Calcium_Ca_mg_l": "16.2"
+        }
+    },
+    {
+        "Region": "Trenton (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.0",
+            "Alkalinity_TAC_mmol_l": "2.06",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "133",
+            "Sodium_Na_mg_l": "9.7",
+            "Chlorides_Cl_mg_l": "8.3",
+            "Calcium_Ca_mg_l": "14.3"
+        }
+    },
+    {
+        "Region": "Port Alberni (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.1",
+            "Alkalinity_TAC_mmol_l": "1.72",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "499",
+            "Sodium_Na_mg_l": "38.0",
+            "Chlorides_Cl_mg_l": "32.8",
+            "Calcium_Ca_mg_l": "71.6"
+        }
+    },
+    {
+        "Region": "Mount Pearl (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "11.1",
+            "Alkalinity_TAC_mmol_l": "0.95",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "410",
+            "Sodium_Na_mg_l": "39.9",
+            "Chlorides_Cl_mg_l": "32.2",
+            "Calcium_Ca_mg_l": "64.2"
+        }
+    },
+    {
+        "Region": "Victoria (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.2",
+            "Alkalinity_TAC_mmol_l": "1.76",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "462",
+            "Sodium_Na_mg_l": "41.3",
+            "Chlorides_Cl_mg_l": "25.2",
+            "Calcium_Ca_mg_l": "56.2"
+        }
+    },
+    {
+        "Region": "Nanaimo (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.9",
+            "Alkalinity_TAC_mmol_l": "3.05",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "313",
+            "Sodium_Na_mg_l": "11.0",
+            "Chlorides_Cl_mg_l": "25.3",
+            "Calcium_Ca_mg_l": "25.1"
+        }
+    },
+    {
+        "Region": "Penticton (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.4",
+            "Alkalinity_TAC_mmol_l": "1.55",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "480",
+            "Sodium_Na_mg_l": "38.0",
+            "Chlorides_Cl_mg_l": "30.2",
+            "Calcium_Ca_mg_l": "62.7"
+        }
+    },
+    {
+        "Region": "Abbotsford (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.0",
+            "Alkalinity_TAC_mmol_l": "3.44",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "114",
+            "Sodium_Na_mg_l": "2.3",
+            "Chlorides_Cl_mg_l": "9.1",
+            "Calcium_Ca_mg_l": "11.0"
+        }
+    },
+    {
+        "Region": "Owen Sound (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.0",
+            "Alkalinity_TAC_mmol_l": "2.91",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "237",
+            "Sodium_Na_mg_l": "19.6",
+            "Chlorides_Cl_mg_l": "30.1",
+            "Calcium_Ca_mg_l": "35.8"
+        }
+    },
+    {
+        "Region": "Whitehorse (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "5.0",
+            "Alkalinity_TAC_mmol_l": "3.08",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "185",
+            "Sodium_Na_mg_l": "23.7",
+            "Chlorides_Cl_mg_l": "28.7",
+            "Calcium_Ca_mg_l": "32.7"
+        }
+    },
+    {
+        "Region": "Greenwood (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.1",
+            "Alkalinity_TAC_mmol_l": "2.06",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "458",
+            "Sodium_Na_mg_l": "32.9",
+            "Chlorides_Cl_mg_l": "27.6",
+            "Calcium_Ca_mg_l": "59.4"
+        }
+    },
+    {
+        "Region": "Prince Albert (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.8",
+            "Alkalinity_TAC_mmol_l": "2.59",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "488",
+            "Sodium_Na_mg_l": "32.4",
+            "Chlorides_Cl_mg_l": "56.4",
+            "Calcium_Ca_mg_l": "64.0"
+        }
+    },
+    {
+        "Region": "Temiskaming Shores (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.6",
+            "Alkalinity_TAC_mmol_l": "0.80",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "539",
+            "Sodium_Na_mg_l": "37.1",
+            "Chlorides_Cl_mg_l": "31.7",
+            "Calcium_Ca_mg_l": "82.8"
+        }
+    },
+    {
+        "Region": "Beaumont (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.5",
+            "Alkalinity_TAC_mmol_l": "1.98",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "584",
+            "Sodium_Na_mg_l": "24.7",
+            "Chlorides_Cl_mg_l": "47.4",
+            "Calcium_Ca_mg_l": "82.0"
+        }
+    },
+    {
+        "Region": "Nelway (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.7",
+            "Alkalinity_TAC_mmol_l": "3.32",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "253",
+            "Sodium_Na_mg_l": "17.9",
+            "Chlorides_Cl_mg_l": "31.3",
+            "Calcium_Ca_mg_l": "36.4"
+        }
+    },
+    {
+        "Region": "Chatham-Kent (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.1",
+            "Alkalinity_TAC_mmol_l": "1.88",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "235",
+            "Sodium_Na_mg_l": "24.6",
+            "Chlorides_Cl_mg_l": "26.6",
+            "Calcium_Ca_mg_l": "39.1"
+        }
+    },
+    {
+        "Region": "Nelson (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.2",
+            "Alkalinity_TAC_mmol_l": "2.09",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "284",
+            "Sodium_Na_mg_l": "11.4",
+            "Chlorides_Cl_mg_l": "32.2",
+            "Calcium_Ca_mg_l": "41.3"
+        }
+    },
+    {
+        "Region": "Bathurst (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.2",
+            "Alkalinity_TAC_mmol_l": "3.02",
+            "pH": "6.9",
+            "TDS_Conductivity_uS_cm": "70",
+            "Sodium_Na_mg_l": "9.2",
+            "Chlorides_Cl_mg_l": "7.3",
+            "Calcium_Ca_mg_l": "6.0"
+        }
+    },
+    {
+        "Region": "Mississauga (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.3",
+            "Alkalinity_TAC_mmol_l": "2.16",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "578",
+            "Sodium_Na_mg_l": "38.0",
+            "Chlorides_Cl_mg_l": "36.6",
+            "Calcium_Ca_mg_l": "54.9"
+        }
+    },
+    {
+        "Region": "Kamloops (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.3",
+            "Alkalinity_TAC_mmol_l": "2.06",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "101",
+            "Sodium_Na_mg_l": "4.0",
+            "Chlorides_Cl_mg_l": "13.6",
+            "Calcium_Ca_mg_l": "17.8"
+        }
+    },
+    {
+        "Region": "Grand Forks (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.4",
+            "Alkalinity_TAC_mmol_l": "0.73",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "276",
+            "Sodium_Na_mg_l": "16.8",
+            "Chlorides_Cl_mg_l": "20.3",
+            "Calcium_Ca_mg_l": "41.0"
+        }
+    },
+    {
+        "Region": "Kawartha Lakes (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "10.5",
+            "Alkalinity_TAC_mmol_l": "3.17",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "372",
+            "Sodium_Na_mg_l": "27.7",
+            "Chlorides_Cl_mg_l": "30.0",
+            "Calcium_Ca_mg_l": "70.1"
+        }
+    },
+    {
+        "Region": "North Bay (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.3",
+            "Alkalinity_TAC_mmol_l": "1.82",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "91",
+            "Sodium_Na_mg_l": "9.4",
+            "Chlorides_Cl_mg_l": "13.9",
+            "Calcium_Ca_mg_l": "9.5"
+        }
+    },
+    {
+        "Region": "Sept-Îles (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.4",
+            "Alkalinity_TAC_mmol_l": "3.35",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "323",
+            "Sodium_Na_mg_l": "14.2",
+            "Chlorides_Cl_mg_l": "25.6",
+            "Calcium_Ca_mg_l": "37.1"
+        }
+    },
+    {
+        "Region": "Thompson (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.5",
+            "Alkalinity_TAC_mmol_l": "0.53",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "67",
+            "Sodium_Na_mg_l": "10.0",
+            "Chlorides_Cl_mg_l": "12.3",
+            "Calcium_Ca_mg_l": "15.6"
+        }
+    },
+    {
+        "Region": "Gatineau (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.2",
+            "Alkalinity_TAC_mmol_l": "3.23",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "295",
+            "Sodium_Na_mg_l": "15.5",
+            "Chlorides_Cl_mg_l": "31.5",
+            "Calcium_Ca_mg_l": "26.2"
+        }
+    },
+    {
+        "Region": "Coquitlam (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.8",
+            "Alkalinity_TAC_mmol_l": "2.67",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "155",
+            "Sodium_Na_mg_l": "4.5",
+            "Chlorides_Cl_mg_l": "8.6",
+            "Calcium_Ca_mg_l": "5.2"
+        }
+    },
+    {
+        "Region": "Dieppe (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.5",
+            "Alkalinity_TAC_mmol_l": "3.11",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "231",
+            "Sodium_Na_mg_l": "17.8",
+            "Chlorides_Cl_mg_l": "24.4",
+            "Calcium_Ca_mg_l": "32.0"
+        }
+    },
+    {
+        "Region": "Surrey (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.7",
+            "Alkalinity_TAC_mmol_l": "3.42",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "522",
+            "Sodium_Na_mg_l": "37.9",
+            "Chlorides_Cl_mg_l": "57.2",
+            "Calcium_Ca_mg_l": "75.4"
+        }
+    },
+    {
+        "Region": "Pitt Meadows (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.6",
+            "Alkalinity_TAC_mmol_l": "2.16",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "154",
+            "Sodium_Na_mg_l": "2.5",
+            "Chlorides_Cl_mg_l": "10.3",
+            "Calcium_Ca_mg_l": "14.0"
+        }
+    },
+    {
+        "Region": "Winkler (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.0",
+            "Alkalinity_TAC_mmol_l": "3.12",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "309",
+            "Sodium_Na_mg_l": "19.0",
+            "Chlorides_Cl_mg_l": "34.9",
+            "Calcium_Ca_mg_l": "26.2"
+        }
+    },
+    {
+        "Region": "Oshawa (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.5",
+            "Alkalinity_TAC_mmol_l": "2.14",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "281",
+            "Sodium_Na_mg_l": "22.8",
+            "Chlorides_Cl_mg_l": "21.4",
+            "Calcium_Ca_mg_l": "31.6"
+        }
+    },
+    {
+        "Region": "Lacombe (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.1",
+            "Alkalinity_TAC_mmol_l": "2.71",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "525",
+            "Sodium_Na_mg_l": "35.2",
+            "Chlorides_Cl_mg_l": "45.9",
+            "Calcium_Ca_mg_l": "86.3"
+        }
+    },
+    {
+        "Region": "Kimberley (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "11.7",
+            "Alkalinity_TAC_mmol_l": "2.77",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "379",
+            "Sodium_Na_mg_l": "40.6",
+            "Chlorides_Cl_mg_l": "42.9",
+            "Calcium_Ca_mg_l": "71.8"
+        }
+    },
+    {
+        "Region": "Chestermere (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.9",
+            "Alkalinity_TAC_mmol_l": "2.83",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "109",
+            "Sodium_Na_mg_l": "2.4",
+            "Chlorides_Cl_mg_l": "11.6",
+            "Calcium_Ca_mg_l": "11.3"
+        }
+    },
+    {
+        "Region": "Brampton (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.2",
+            "Alkalinity_TAC_mmol_l": "2.43",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "138",
+            "Sodium_Na_mg_l": "8.3",
+            "Chlorides_Cl_mg_l": "3.4",
+            "Calcium_Ca_mg_l": "6.1"
+        }
+    },
+    {
+        "Region": "Moncton (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.8",
+            "Alkalinity_TAC_mmol_l": "2.51",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "482",
+            "Sodium_Na_mg_l": "34.7",
+            "Chlorides_Cl_mg_l": "36.5",
+            "Calcium_Ca_mg_l": "69.7"
+        }
+    },
+    {
+        "Region": "Courtenay (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.3",
+            "Alkalinity_TAC_mmol_l": "0.52",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "280",
+            "Sodium_Na_mg_l": "20.2",
+            "Chlorides_Cl_mg_l": "22.9",
+            "Calcium_Ca_mg_l": "43.2"
+        }
+    },
+    {
+        "Region": "Burnaby (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.2",
+            "Alkalinity_TAC_mmol_l": "1.33",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "243",
+            "Sodium_Na_mg_l": "11.2",
+            "Chlorides_Cl_mg_l": "34.6",
+            "Calcium_Ca_mg_l": "41.8"
+        }
+    },
+    {
+        "Region": "Miramichi (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.7",
+            "Alkalinity_TAC_mmol_l": "2.79",
+            "pH": "6.9",
+            "TDS_Conductivity_uS_cm": "144",
+            "Sodium_Na_mg_l": "5.5",
+            "Chlorides_Cl_mg_l": "11.2",
+            "Calcium_Ca_mg_l": "17.8"
+        }
+    },
+    {
+        "Region": "Red Deer (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "11.2",
+            "Alkalinity_TAC_mmol_l": "0.58",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "399",
+            "Sodium_Na_mg_l": "20.4",
+            "Chlorides_Cl_mg_l": "53.2",
+            "Calcium_Ca_mg_l": "55.7"
+        }
+    },
+    {
+        "Region": "St. Stephen (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "11.2",
+            "Alkalinity_TAC_mmol_l": "1.37",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "406",
+            "Sodium_Na_mg_l": "49.2",
+            "Chlorides_Cl_mg_l": "25.3",
+            "Calcium_Ca_mg_l": "54.8"
+        }
+    },
+    {
+        "Region": "Langley (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.8",
+            "Alkalinity_TAC_mmol_l": "1.39",
+            "pH": "6.9",
+            "TDS_Conductivity_uS_cm": "100",
+            "Sodium_Na_mg_l": "6.8",
+            "Chlorides_Cl_mg_l": "13.1",
+            "Calcium_Ca_mg_l": "14.2"
+        }
+    },
+    {
+        "Region": "Sherbrooke (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "5.9",
+            "Alkalinity_TAC_mmol_l": "2.93",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "196",
+            "Sodium_Na_mg_l": "14.7",
+            "Chlorides_Cl_mg_l": "18.6",
+            "Calcium_Ca_mg_l": "43.4"
+        }
+    },
+    {
+        "Region": "Vaughan (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.0",
+            "Alkalinity_TAC_mmol_l": "1.23",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "469",
+            "Sodium_Na_mg_l": "26.0",
+            "Chlorides_Cl_mg_l": "45.1",
+            "Calcium_Ca_mg_l": "59.4"
+        }
+    },
+    {
+        "Region": "Winnipeg (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.6",
+            "Alkalinity_TAC_mmol_l": "2.19",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "268",
+            "Sodium_Na_mg_l": "24.7",
+            "Chlorides_Cl_mg_l": "22.9",
+            "Calcium_Ca_mg_l": "28.7"
+        }
+    },
+    {
+        "Region": "St. Croix (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.6",
+            "Alkalinity_TAC_mmol_l": "2.59",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "488",
+            "Sodium_Na_mg_l": "36.1",
+            "Chlorides_Cl_mg_l": "32.5",
+            "Calcium_Ca_mg_l": "76.1"
+        }
+    },
+    {
+        "Region": "Greater Sudbury (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.9",
+            "Alkalinity_TAC_mmol_l": "2.69",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "100",
+            "Sodium_Na_mg_l": "7.5",
+            "Chlorides_Cl_mg_l": "3.0",
+            "Calcium_Ca_mg_l": "12.8"
+        }
+    },
+    {
+        "Region": "Woodstock (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.3",
+            "Alkalinity_TAC_mmol_l": "2.99",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "287",
+            "Sodium_Na_mg_l": "11.1",
+            "Chlorides_Cl_mg_l": "19.4",
+            "Calcium_Ca_mg_l": "34.6"
+        }
+    },
+    {
+        "Region": "Beebe Plain (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.7",
+            "Alkalinity_TAC_mmol_l": "1.86",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "341",
+            "Sodium_Na_mg_l": "23.3",
+            "Chlorides_Cl_mg_l": "33.1",
+            "Calcium_Ca_mg_l": "31.9"
+        }
+    },
+    {
+        "Region": "Arvida (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "5.4",
+            "Alkalinity_TAC_mmol_l": "1.72",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "189",
+            "Sodium_Na_mg_l": "12.0",
+            "Chlorides_Cl_mg_l": "31.5",
+            "Calcium_Ca_mg_l": "31.2"
+        }
+    },
+    {
+        "Region": "Niagara Falls (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.4",
+            "Alkalinity_TAC_mmol_l": "1.23",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "491",
+            "Sodium_Na_mg_l": "24.9",
+            "Chlorides_Cl_mg_l": "59.4",
+            "Calcium_Ca_mg_l": "53.6"
+        }
+    },
+    {
+        "Region": "Castlegar (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.5",
+            "Alkalinity_TAC_mmol_l": "1.64",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "135",
+            "Sodium_Na_mg_l": "3.1",
+            "Chlorides_Cl_mg_l": "5.0",
+            "Calcium_Ca_mg_l": "12.8"
+        }
+    },
+    {
+        "Region": "Trois-Rivières (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.5",
+            "Alkalinity_TAC_mmol_l": "2.15",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "510",
+            "Sodium_Na_mg_l": "25.1",
+            "Chlorides_Cl_mg_l": "31.0",
+            "Calcium_Ca_mg_l": "52.8"
+        }
+    },
+    {
+        "Region": "Guelph (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.2",
+            "Alkalinity_TAC_mmol_l": "2.34",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "526",
+            "Sodium_Na_mg_l": "45.0",
+            "Chlorides_Cl_mg_l": "29.7",
+            "Calcium_Ca_mg_l": "85.2"
+        }
+    },
+    {
+        "Region": "Qualicum Beach (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.8",
+            "Alkalinity_TAC_mmol_l": "1.16",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "130",
+            "Sodium_Na_mg_l": "9.3",
+            "Chlorides_Cl_mg_l": "6.4",
+            "Calcium_Ca_mg_l": "11.0"
+        }
+    },
+    {
+        "Region": "Saguenay (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.4",
+            "Alkalinity_TAC_mmol_l": "3.22",
+            "pH": "6.9",
+            "TDS_Conductivity_uS_cm": "142",
+            "Sodium_Na_mg_l": "6.5",
+            "Chlorides_Cl_mg_l": "8.5",
+            "Calcium_Ca_mg_l": "13.0"
+        }
+    },
+    {
+        "Region": "West Kelowna (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.1",
+            "Alkalinity_TAC_mmol_l": "1.59",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "309",
+            "Sodium_Na_mg_l": "18.3",
+            "Chlorides_Cl_mg_l": "21.0",
+            "Calcium_Ca_mg_l": "35.8"
+        }
+    },
+    {
+        "Region": "Fernie (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "5.3",
+            "Alkalinity_TAC_mmol_l": "1.66",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "232",
+            "Sodium_Na_mg_l": "15.4",
+            "Chlorides_Cl_mg_l": "30.8",
+            "Calcium_Ca_mg_l": "26.9"
+        }
+    },
+    {
+        "Region": "Port Moody (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.0",
+            "Alkalinity_TAC_mmol_l": "3.05",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "139",
+            "Sodium_Na_mg_l": "4.9",
+            "Chlorides_Cl_mg_l": "3.5",
+            "Calcium_Ca_mg_l": "13.9"
+        }
+    },
+    {
+        "Region": "Meadow Lake (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.4",
+            "Alkalinity_TAC_mmol_l": "1.83",
+            "pH": "6.9",
+            "TDS_Conductivity_uS_cm": "90",
+            "Sodium_Na_mg_l": "9.0",
+            "Chlorides_Cl_mg_l": "5.0",
+            "Calcium_Ca_mg_l": "15.2"
+        }
+    },
+    {
+        "Region": "Brooks (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.2",
+            "Alkalinity_TAC_mmol_l": "3.04",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "285",
+            "Sodium_Na_mg_l": "13.6",
+            "Chlorides_Cl_mg_l": "33.2",
+            "Calcium_Ca_mg_l": "27.5"
+        }
+    },
+    {
+        "Region": "Estevan (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.8",
+            "Alkalinity_TAC_mmol_l": "1.94",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "306",
+            "Sodium_Na_mg_l": "14.5",
+            "Chlorides_Cl_mg_l": "18.1",
+            "Calcium_Ca_mg_l": "43.2"
+        }
+    },
+    {
+        "Region": "Monchy (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.4",
+            "Alkalinity_TAC_mmol_l": "0.74",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "289",
+            "Sodium_Na_mg_l": "11.8",
+            "Chlorides_Cl_mg_l": "16.9",
+            "Calcium_Ca_mg_l": "31.8"
+        }
+    },
+    {
+        "Region": "Steinbach (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.7",
+            "Alkalinity_TAC_mmol_l": "2.08",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "288",
+            "Sodium_Na_mg_l": "13.5",
+            "Chlorides_Cl_mg_l": "23.8",
+            "Calcium_Ca_mg_l": "34.3"
+        }
+    },
+    {
+        "Region": "Sault Ste. Marie (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.6",
+            "Alkalinity_TAC_mmol_l": "1.01",
+            "pH": "6.8",
+            "TDS_Conductivity_uS_cm": "93",
+            "Sodium_Na_mg_l": "7.3",
+            "Chlorides_Cl_mg_l": "14.3",
+            "Calcium_Ca_mg_l": "17.6"
+        }
+    },
+    {
+        "Region": "Parksville (Canada)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.1",
+            "Alkalinity_TAC_mmol_l": "3.14",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "110",
+            "Sodium_Na_mg_l": "3.9",
+            "Chlorides_Cl_mg_l": "7.6",
+            "Calcium_Ca_mg_l": "9.8"
+        }
+    }
+]

@@ -1,0 +1,4142 @@
+[
+    {
+        "Region": "Amsterdam (Waternet)",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.8",
+            "Alkalinity_TAC_mmol_l": "2.5",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "350",
+            "Sodium_Na_mg_l": "20.0",
+            "Chlorides_Cl_mg_l": "30.0",
+            "Calcium_Ca_mg_l": "45.0"
+        }
+    },
+    {
+        "Region": "Utrecht/Gelderland (Vitens)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.0 - 9.0",
+            "Alkalinity_TAC_mmol_l": "2.0",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "300",
+            "Sodium_Na_mg_l": "15.0",
+            "Chlorides_Cl_mg_l": "20.0",
+            "Calcium_Ca_mg_l": "40.0"
+        }
+    },
+    {
+        "Region": "Rotterdam (Evides)",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.5",
+            "Alkalinity_TAC_mmol_l": "3.0",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "400",
+            "Sodium_Na_mg_l": "25.0",
+            "Chlorides_Cl_mg_l": "35.0",
+            "Calcium_Ca_mg_l": "50.0"
+        }
+    },
+    {
+        "Region": "Gemeente 1",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.2",
+            "Alkalinity_TAC_mmol_l": "2.11",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "344",
+            "Sodium_Na_mg_l": "28.1",
+            "Chlorides_Cl_mg_l": "15.9",
+            "Calcium_Ca_mg_l": "46.8"
+        }
+    },
+    {
+        "Region": "Gemeente 2",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.6",
+            "Alkalinity_TAC_mmol_l": "2.80",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "327",
+            "Sodium_Na_mg_l": "28.7",
+            "Chlorides_Cl_mg_l": "21.7",
+            "Calcium_Ca_mg_l": "43.2"
+        }
+    },
+    {
+        "Region": "Gemeente 3",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.1",
+            "Alkalinity_TAC_mmol_l": "2.22",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "352",
+            "Sodium_Na_mg_l": "21.1",
+            "Chlorides_Cl_mg_l": "29.1",
+            "Calcium_Ca_mg_l": "44.1"
+        }
+    },
+    {
+        "Region": "Gemeente 4",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.8",
+            "Alkalinity_TAC_mmol_l": "2.12",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "318",
+            "Sodium_Na_mg_l": "26.2",
+            "Chlorides_Cl_mg_l": "24.5",
+            "Calcium_Ca_mg_l": "49.9"
+        }
+    },
+    {
+        "Region": "Gemeente 5",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.3",
+            "Alkalinity_TAC_mmol_l": "2.83",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "348",
+            "Sodium_Na_mg_l": "17.7",
+            "Chlorides_Cl_mg_l": "18.4",
+            "Calcium_Ca_mg_l": "48.5"
+        }
+    },
+    {
+        "Region": "Gemeente 6",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.9",
+            "Alkalinity_TAC_mmol_l": "2.70",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "349",
+            "Sodium_Na_mg_l": "18.8",
+            "Chlorides_Cl_mg_l": "20.0",
+            "Calcium_Ca_mg_l": "42.6"
+        }
+    },
+    {
+        "Region": "Gemeente 7",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.6",
+            "Alkalinity_TAC_mmol_l": "2.27",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "311",
+            "Sodium_Na_mg_l": "24.4",
+            "Chlorides_Cl_mg_l": "26.8",
+            "Calcium_Ca_mg_l": "48.4"
+        }
+    },
+    {
+        "Region": "Gemeente 8",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.4",
+            "Alkalinity_TAC_mmol_l": "2.92",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "365",
+            "Sodium_Na_mg_l": "18.7",
+            "Chlorides_Cl_mg_l": "24.6",
+            "Calcium_Ca_mg_l": "43.2"
+        }
+    },
+    {
+        "Region": "Gemeente 9",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.9",
+            "Alkalinity_TAC_mmol_l": "2.50",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "328",
+            "Sodium_Na_mg_l": "17.7",
+            "Chlorides_Cl_mg_l": "26.1",
+            "Calcium_Ca_mg_l": "43.8"
+        }
+    },
+    {
+        "Region": "Gemeente 10",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.1",
+            "Alkalinity_TAC_mmol_l": "2.18",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "357",
+            "Sodium_Na_mg_l": "22.3",
+            "Chlorides_Cl_mg_l": "18.4",
+            "Calcium_Ca_mg_l": "48.4"
+        }
+    },
+    {
+        "Region": "Gemeente 11",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.4",
+            "Alkalinity_TAC_mmol_l": "2.53",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "334",
+            "Sodium_Na_mg_l": "16.5",
+            "Chlorides_Cl_mg_l": "18.5",
+            "Calcium_Ca_mg_l": "42.7"
+        }
+    },
+    {
+        "Region": "Gemeente 12",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.8",
+            "Alkalinity_TAC_mmol_l": "2.15",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "339",
+            "Sodium_Na_mg_l": "28.2",
+            "Chlorides_Cl_mg_l": "29.3",
+            "Calcium_Ca_mg_l": "44.4"
+        }
+    },
+    {
+        "Region": "Gemeente 13",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.3",
+            "Alkalinity_TAC_mmol_l": "2.80",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "357",
+            "Sodium_Na_mg_l": "23.2",
+            "Chlorides_Cl_mg_l": "22.1",
+            "Calcium_Ca_mg_l": "42.7"
+        }
+    },
+    {
+        "Region": "Gemeente 14",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.1",
+            "Alkalinity_TAC_mmol_l": "2.88",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "362",
+            "Sodium_Na_mg_l": "23.8",
+            "Chlorides_Cl_mg_l": "26.5",
+            "Calcium_Ca_mg_l": "45.2"
+        }
+    },
+    {
+        "Region": "Gemeente 15",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.0",
+            "Alkalinity_TAC_mmol_l": "2.17",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "326",
+            "Sodium_Na_mg_l": "21.7",
+            "Chlorides_Cl_mg_l": "27.3",
+            "Calcium_Ca_mg_l": "47.4"
+        }
+    },
+    {
+        "Region": "Gemeente 16",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.7",
+            "Alkalinity_TAC_mmol_l": "2.85",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "336",
+            "Sodium_Na_mg_l": "15.1",
+            "Chlorides_Cl_mg_l": "25.9",
+            "Calcium_Ca_mg_l": "42.1"
+        }
+    },
+    {
+        "Region": "Gemeente 17",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.8",
+            "Alkalinity_TAC_mmol_l": "2.10",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "326",
+            "Sodium_Na_mg_l": "26.6",
+            "Chlorides_Cl_mg_l": "17.0",
+            "Calcium_Ca_mg_l": "45.8"
+        }
+    },
+    {
+        "Region": "Gemeente 18",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.5",
+            "Alkalinity_TAC_mmol_l": "2.60",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "304",
+            "Sodium_Na_mg_l": "19.6",
+            "Chlorides_Cl_mg_l": "27.9",
+            "Calcium_Ca_mg_l": "40.2"
+        }
+    },
+    {
+        "Region": "Gemeente 19",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.7",
+            "Alkalinity_TAC_mmol_l": "2.34",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "318",
+            "Sodium_Na_mg_l": "25.9",
+            "Chlorides_Cl_mg_l": "26.4",
+            "Calcium_Ca_mg_l": "47.4"
+        }
+    },
+    {
+        "Region": "Gemeente 20",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.1",
+            "Alkalinity_TAC_mmol_l": "2.08",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "342",
+            "Sodium_Na_mg_l": "24.7",
+            "Chlorides_Cl_mg_l": "16.3",
+            "Calcium_Ca_mg_l": "42.0"
+        }
+    },
+    {
+        "Region": "Gemeente 21",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.2",
+            "Alkalinity_TAC_mmol_l": "2.95",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "336",
+            "Sodium_Na_mg_l": "20.1",
+            "Chlorides_Cl_mg_l": "15.1",
+            "Calcium_Ca_mg_l": "41.7"
+        }
+    },
+    {
+        "Region": "Gemeente 22",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.7",
+            "Alkalinity_TAC_mmol_l": "2.21",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "309",
+            "Sodium_Na_mg_l": "15.5",
+            "Chlorides_Cl_mg_l": "16.9",
+            "Calcium_Ca_mg_l": "46.8"
+        }
+    },
+    {
+        "Region": "Gemeente 23",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.3",
+            "Alkalinity_TAC_mmol_l": "2.87",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "364",
+            "Sodium_Na_mg_l": "28.2",
+            "Chlorides_Cl_mg_l": "16.7",
+            "Calcium_Ca_mg_l": "46.7"
+        }
+    },
+    {
+        "Region": "Gemeente 24",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.9",
+            "Alkalinity_TAC_mmol_l": "2.06",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "349",
+            "Sodium_Na_mg_l": "24.5",
+            "Chlorides_Cl_mg_l": "21.8",
+            "Calcium_Ca_mg_l": "49.0"
+        }
+    },
+    {
+        "Region": "Gemeente 25",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.1",
+            "Alkalinity_TAC_mmol_l": "2.06",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "332",
+            "Sodium_Na_mg_l": "20.0",
+            "Chlorides_Cl_mg_l": "26.6",
+            "Calcium_Ca_mg_l": "40.4"
+        }
+    },
+    {
+        "Region": "Gemeente 26",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.5",
+            "Alkalinity_TAC_mmol_l": "2.67",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "352",
+            "Sodium_Na_mg_l": "17.9",
+            "Chlorides_Cl_mg_l": "23.7",
+            "Calcium_Ca_mg_l": "40.9"
+        }
+    },
+    {
+        "Region": "Gemeente 27",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.6",
+            "Alkalinity_TAC_mmol_l": "2.12",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "323",
+            "Sodium_Na_mg_l": "19.9",
+            "Chlorides_Cl_mg_l": "22.4",
+            "Calcium_Ca_mg_l": "44.7"
+        }
+    },
+    {
+        "Region": "Gemeente 28",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.6",
+            "Alkalinity_TAC_mmol_l": "2.93",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "345",
+            "Sodium_Na_mg_l": "27.7",
+            "Chlorides_Cl_mg_l": "20.7",
+            "Calcium_Ca_mg_l": "46.0"
+        }
+    },
+    {
+        "Region": "Gemeente 29",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.1",
+            "Alkalinity_TAC_mmol_l": "2.33",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "362",
+            "Sodium_Na_mg_l": "23.1",
+            "Chlorides_Cl_mg_l": "23.8",
+            "Calcium_Ca_mg_l": "47.9"
+        }
+    },
+    {
+        "Region": "Gemeente 30",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.2",
+            "Alkalinity_TAC_mmol_l": "2.68",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "355",
+            "Sodium_Na_mg_l": "20.0",
+            "Chlorides_Cl_mg_l": "22.9",
+            "Calcium_Ca_mg_l": "40.5"
+        }
+    },
+    {
+        "Region": "Gemeente 31",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.6",
+            "Alkalinity_TAC_mmol_l": "2.03",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "336",
+            "Sodium_Na_mg_l": "18.6",
+            "Chlorides_Cl_mg_l": "23.6",
+            "Calcium_Ca_mg_l": "47.0"
+        }
+    },
+    {
+        "Region": "Gemeente 32",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.3",
+            "Alkalinity_TAC_mmol_l": "2.82",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "367",
+            "Sodium_Na_mg_l": "27.9",
+            "Chlorides_Cl_mg_l": "19.2",
+            "Calcium_Ca_mg_l": "44.7"
+        }
+    },
+    {
+        "Region": "Gemeente 33",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.2",
+            "Alkalinity_TAC_mmol_l": "3.00",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "341",
+            "Sodium_Na_mg_l": "28.8",
+            "Chlorides_Cl_mg_l": "28.6",
+            "Calcium_Ca_mg_l": "44.7"
+        }
+    },
+    {
+        "Region": "Gemeente 34",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.4",
+            "Alkalinity_TAC_mmol_l": "2.77",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "338",
+            "Sodium_Na_mg_l": "24.6",
+            "Chlorides_Cl_mg_l": "19.7",
+            "Calcium_Ca_mg_l": "40.5"
+        }
+    },
+    {
+        "Region": "Gemeente 35",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.4",
+            "Alkalinity_TAC_mmol_l": "2.30",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "333",
+            "Sodium_Na_mg_l": "17.8",
+            "Chlorides_Cl_mg_l": "21.0",
+            "Calcium_Ca_mg_l": "48.1"
+        }
+    },
+    {
+        "Region": "Gemeente 36",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.8",
+            "Alkalinity_TAC_mmol_l": "2.24",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "336",
+            "Sodium_Na_mg_l": "21.3",
+            "Chlorides_Cl_mg_l": "26.3",
+            "Calcium_Ca_mg_l": "41.5"
+        }
+    },
+    {
+        "Region": "Gemeente 37",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.0",
+            "Alkalinity_TAC_mmol_l": "2.35",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "349",
+            "Sodium_Na_mg_l": "26.6",
+            "Chlorides_Cl_mg_l": "27.4",
+            "Calcium_Ca_mg_l": "47.1"
+        }
+    },
+    {
+        "Region": "Gemeente 38",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.2",
+            "Alkalinity_TAC_mmol_l": "2.29",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "350",
+            "Sodium_Na_mg_l": "22.8",
+            "Chlorides_Cl_mg_l": "20.8",
+            "Calcium_Ca_mg_l": "46.8"
+        }
+    },
+    {
+        "Region": "Gemeente 39",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.2",
+            "Alkalinity_TAC_mmol_l": "2.61",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "337",
+            "Sodium_Na_mg_l": "27.4",
+            "Chlorides_Cl_mg_l": "18.6",
+            "Calcium_Ca_mg_l": "44.5"
+        }
+    },
+    {
+        "Region": "Gemeente 40",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.2",
+            "Alkalinity_TAC_mmol_l": "2.63",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "336",
+            "Sodium_Na_mg_l": "25.8",
+            "Chlorides_Cl_mg_l": "19.9",
+            "Calcium_Ca_mg_l": "44.8"
+        }
+    },
+    {
+        "Region": "Gemeente 41",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.3",
+            "Alkalinity_TAC_mmol_l": "2.64",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "349",
+            "Sodium_Na_mg_l": "17.4",
+            "Chlorides_Cl_mg_l": "15.3",
+            "Calcium_Ca_mg_l": "45.7"
+        }
+    },
+    {
+        "Region": "Gemeente 42",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.0",
+            "Alkalinity_TAC_mmol_l": "2.85",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "334",
+            "Sodium_Na_mg_l": "19.6",
+            "Chlorides_Cl_mg_l": "19.2",
+            "Calcium_Ca_mg_l": "49.3"
+        }
+    },
+    {
+        "Region": "Gemeente 43",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.2",
+            "Alkalinity_TAC_mmol_l": "2.96",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "358",
+            "Sodium_Na_mg_l": "27.9",
+            "Chlorides_Cl_mg_l": "15.2",
+            "Calcium_Ca_mg_l": "49.4"
+        }
+    },
+    {
+        "Region": "Gemeente 44",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.9",
+            "Alkalinity_TAC_mmol_l": "2.70",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "328",
+            "Sodium_Na_mg_l": "16.7",
+            "Chlorides_Cl_mg_l": "20.9",
+            "Calcium_Ca_mg_l": "44.5"
+        }
+    },
+    {
+        "Region": "Gemeente 45",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.9",
+            "Alkalinity_TAC_mmol_l": "2.13",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "344",
+            "Sodium_Na_mg_l": "20.3",
+            "Chlorides_Cl_mg_l": "21.2",
+            "Calcium_Ca_mg_l": "48.5"
+        }
+    },
+    {
+        "Region": "Gemeente 46",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.4",
+            "Alkalinity_TAC_mmol_l": "2.71",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "339",
+            "Sodium_Na_mg_l": "28.8",
+            "Chlorides_Cl_mg_l": "20.4",
+            "Calcium_Ca_mg_l": "46.6"
+        }
+    },
+    {
+        "Region": "Gemeente 47",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.4",
+            "Alkalinity_TAC_mmol_l": "2.48",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "339",
+            "Sodium_Na_mg_l": "26.2",
+            "Chlorides_Cl_mg_l": "26.2",
+            "Calcium_Ca_mg_l": "41.6"
+        }
+    },
+    {
+        "Region": "Gemeente 48",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.2",
+            "Alkalinity_TAC_mmol_l": "2.73",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "339",
+            "Sodium_Na_mg_l": "28.2",
+            "Chlorides_Cl_mg_l": "20.3",
+            "Calcium_Ca_mg_l": "42.2"
+        }
+    },
+    {
+        "Region": "Gemeente 49",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.4",
+            "Alkalinity_TAC_mmol_l": "2.71",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "374",
+            "Sodium_Na_mg_l": "18.1",
+            "Chlorides_Cl_mg_l": "25.3",
+            "Calcium_Ca_mg_l": "41.6"
+        }
+    },
+    {
+        "Region": "Gemeente 50",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.5",
+            "Alkalinity_TAC_mmol_l": "2.10",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "332",
+            "Sodium_Na_mg_l": "19.7",
+            "Chlorides_Cl_mg_l": "18.0",
+            "Calcium_Ca_mg_l": "47.8"
+        }
+    },
+    {
+        "Region": "Gemeente 51",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.2",
+            "Alkalinity_TAC_mmol_l": "2.15",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "352",
+            "Sodium_Na_mg_l": "16.8",
+            "Chlorides_Cl_mg_l": "27.8",
+            "Calcium_Ca_mg_l": "47.5"
+        }
+    },
+    {
+        "Region": "Gemeente 52",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.0",
+            "Alkalinity_TAC_mmol_l": "2.99",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "340",
+            "Sodium_Na_mg_l": "26.1",
+            "Chlorides_Cl_mg_l": "17.2",
+            "Calcium_Ca_mg_l": "47.5"
+        }
+    },
+    {
+        "Region": "Gemeente 53",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.8",
+            "Alkalinity_TAC_mmol_l": "2.85",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "323",
+            "Sodium_Na_mg_l": "20.3",
+            "Chlorides_Cl_mg_l": "24.9",
+            "Calcium_Ca_mg_l": "41.1"
+        }
+    },
+    {
+        "Region": "Gemeente 54",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.5",
+            "Alkalinity_TAC_mmol_l": "2.08",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "326",
+            "Sodium_Na_mg_l": "28.5",
+            "Chlorides_Cl_mg_l": "15.3",
+            "Calcium_Ca_mg_l": "46.7"
+        }
+    },
+    {
+        "Region": "Gemeente 55",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.5",
+            "Alkalinity_TAC_mmol_l": "2.80",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "341",
+            "Sodium_Na_mg_l": "15.2",
+            "Chlorides_Cl_mg_l": "21.4",
+            "Calcium_Ca_mg_l": "40.2"
+        }
+    },
+    {
+        "Region": "Gemeente 56",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.7",
+            "Alkalinity_TAC_mmol_l": "2.72",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "344",
+            "Sodium_Na_mg_l": "17.4",
+            "Chlorides_Cl_mg_l": "25.0",
+            "Calcium_Ca_mg_l": "42.4"
+        }
+    },
+    {
+        "Region": "Gemeente 57",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.6",
+            "Alkalinity_TAC_mmol_l": "2.71",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "327",
+            "Sodium_Na_mg_l": "25.8",
+            "Chlorides_Cl_mg_l": "17.3",
+            "Calcium_Ca_mg_l": "41.1"
+        }
+    },
+    {
+        "Region": "Gemeente 58",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.2",
+            "Alkalinity_TAC_mmol_l": "2.99",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "347",
+            "Sodium_Na_mg_l": "20.8",
+            "Chlorides_Cl_mg_l": "18.7",
+            "Calcium_Ca_mg_l": "44.6"
+        }
+    },
+    {
+        "Region": "Gemeente 59",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.4",
+            "Alkalinity_TAC_mmol_l": "2.68",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "371",
+            "Sodium_Na_mg_l": "18.1",
+            "Chlorides_Cl_mg_l": "29.3",
+            "Calcium_Ca_mg_l": "49.8"
+        }
+    },
+    {
+        "Region": "Gemeente 60",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.4",
+            "Alkalinity_TAC_mmol_l": "2.71",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "374",
+            "Sodium_Na_mg_l": "28.0",
+            "Chlorides_Cl_mg_l": "20.9",
+            "Calcium_Ca_mg_l": "43.6"
+        }
+    },
+    {
+        "Region": "Gemeente 61",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.6",
+            "Alkalinity_TAC_mmol_l": "2.93",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "317",
+            "Sodium_Na_mg_l": "25.4",
+            "Chlorides_Cl_mg_l": "24.3",
+            "Calcium_Ca_mg_l": "48.6"
+        }
+    },
+    {
+        "Region": "Gemeente 62",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.9",
+            "Alkalinity_TAC_mmol_l": "2.35",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "318",
+            "Sodium_Na_mg_l": "15.2",
+            "Chlorides_Cl_mg_l": "29.4",
+            "Calcium_Ca_mg_l": "42.4"
+        }
+    },
+    {
+        "Region": "Gemeente 63",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.9",
+            "Alkalinity_TAC_mmol_l": "2.87",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "352",
+            "Sodium_Na_mg_l": "27.7",
+            "Chlorides_Cl_mg_l": "17.1",
+            "Calcium_Ca_mg_l": "46.4"
+        }
+    },
+    {
+        "Region": "Gemeente 64",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.4",
+            "Alkalinity_TAC_mmol_l": "2.85",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "363",
+            "Sodium_Na_mg_l": "23.4",
+            "Chlorides_Cl_mg_l": "18.7",
+            "Calcium_Ca_mg_l": "41.4"
+        }
+    },
+    {
+        "Region": "Gemeente 65",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.8",
+            "Alkalinity_TAC_mmol_l": "2.33",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "322",
+            "Sodium_Na_mg_l": "16.1",
+            "Chlorides_Cl_mg_l": "20.6",
+            "Calcium_Ca_mg_l": "48.9"
+        }
+    },
+    {
+        "Region": "Gemeente 66",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.6",
+            "Alkalinity_TAC_mmol_l": "2.27",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "310",
+            "Sodium_Na_mg_l": "21.6",
+            "Chlorides_Cl_mg_l": "17.7",
+            "Calcium_Ca_mg_l": "46.4"
+        }
+    },
+    {
+        "Region": "Gemeente 67",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.3",
+            "Alkalinity_TAC_mmol_l": "2.68",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "342",
+            "Sodium_Na_mg_l": "25.0",
+            "Chlorides_Cl_mg_l": "25.0",
+            "Calcium_Ca_mg_l": "42.8"
+        }
+    },
+    {
+        "Region": "Gemeente 68",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.2",
+            "Alkalinity_TAC_mmol_l": "2.07",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "350",
+            "Sodium_Na_mg_l": "21.4",
+            "Chlorides_Cl_mg_l": "19.2",
+            "Calcium_Ca_mg_l": "48.6"
+        }
+    },
+    {
+        "Region": "Gemeente 69",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.4",
+            "Alkalinity_TAC_mmol_l": "2.96",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "371",
+            "Sodium_Na_mg_l": "21.5",
+            "Chlorides_Cl_mg_l": "15.1",
+            "Calcium_Ca_mg_l": "50.0"
+        }
+    },
+    {
+        "Region": "Gemeente 70",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.0",
+            "Alkalinity_TAC_mmol_l": "2.38",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "351",
+            "Sodium_Na_mg_l": "20.5",
+            "Chlorides_Cl_mg_l": "22.0",
+            "Calcium_Ca_mg_l": "47.2"
+        }
+    },
+    {
+        "Region": "Gemeente 71",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.1",
+            "Alkalinity_TAC_mmol_l": "2.35",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "333",
+            "Sodium_Na_mg_l": "21.6",
+            "Chlorides_Cl_mg_l": "23.8",
+            "Calcium_Ca_mg_l": "43.6"
+        }
+    },
+    {
+        "Region": "Gemeente 72",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.0",
+            "Alkalinity_TAC_mmol_l": "2.82",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "320",
+            "Sodium_Na_mg_l": "29.0",
+            "Chlorides_Cl_mg_l": "29.8",
+            "Calcium_Ca_mg_l": "47.3"
+        }
+    },
+    {
+        "Region": "Gemeente 73",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.9",
+            "Alkalinity_TAC_mmol_l": "2.06",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "341",
+            "Sodium_Na_mg_l": "24.1",
+            "Chlorides_Cl_mg_l": "24.7",
+            "Calcium_Ca_mg_l": "40.6"
+        }
+    },
+    {
+        "Region": "Gemeente 74",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.4",
+            "Alkalinity_TAC_mmol_l": "2.78",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "345",
+            "Sodium_Na_mg_l": "22.4",
+            "Chlorides_Cl_mg_l": "18.1",
+            "Calcium_Ca_mg_l": "42.1"
+        }
+    },
+    {
+        "Region": "Gemeente 75",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.7",
+            "Alkalinity_TAC_mmol_l": "2.12",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "341",
+            "Sodium_Na_mg_l": "27.5",
+            "Chlorides_Cl_mg_l": "18.8",
+            "Calcium_Ca_mg_l": "46.5"
+        }
+    },
+    {
+        "Region": "Gemeente 76",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.8",
+            "Alkalinity_TAC_mmol_l": "2.74",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "318",
+            "Sodium_Na_mg_l": "24.3",
+            "Chlorides_Cl_mg_l": "27.8",
+            "Calcium_Ca_mg_l": "45.2"
+        }
+    },
+    {
+        "Region": "Gemeente 77",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.4",
+            "Alkalinity_TAC_mmol_l": "2.76",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "371",
+            "Sodium_Na_mg_l": "22.4",
+            "Chlorides_Cl_mg_l": "18.3",
+            "Calcium_Ca_mg_l": "46.7"
+        }
+    },
+    {
+        "Region": "Gemeente 78",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.7",
+            "Alkalinity_TAC_mmol_l": "2.11",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "312",
+            "Sodium_Na_mg_l": "16.1",
+            "Chlorides_Cl_mg_l": "28.9",
+            "Calcium_Ca_mg_l": "49.4"
+        }
+    },
+    {
+        "Region": "Gemeente 79",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.5",
+            "Alkalinity_TAC_mmol_l": "2.85",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "333",
+            "Sodium_Na_mg_l": "25.4",
+            "Chlorides_Cl_mg_l": "18.2",
+            "Calcium_Ca_mg_l": "47.5"
+        }
+    },
+    {
+        "Region": "Gemeente 80",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.2",
+            "Alkalinity_TAC_mmol_l": "2.48",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "348",
+            "Sodium_Na_mg_l": "20.3",
+            "Chlorides_Cl_mg_l": "27.2",
+            "Calcium_Ca_mg_l": "49.1"
+        }
+    },
+    {
+        "Region": "Gemeente 81",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.2",
+            "Alkalinity_TAC_mmol_l": "2.32",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "359",
+            "Sodium_Na_mg_l": "19.5",
+            "Chlorides_Cl_mg_l": "22.6",
+            "Calcium_Ca_mg_l": "44.6"
+        }
+    },
+    {
+        "Region": "Gemeente 82",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.5",
+            "Alkalinity_TAC_mmol_l": "2.41",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "304",
+            "Sodium_Na_mg_l": "15.9",
+            "Chlorides_Cl_mg_l": "20.0",
+            "Calcium_Ca_mg_l": "41.0"
+        }
+    },
+    {
+        "Region": "Gemeente 83",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.0",
+            "Alkalinity_TAC_mmol_l": "2.96",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "358",
+            "Sodium_Na_mg_l": "15.2",
+            "Chlorides_Cl_mg_l": "18.7",
+            "Calcium_Ca_mg_l": "47.8"
+        }
+    },
+    {
+        "Region": "Gemeente 84",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.9",
+            "Alkalinity_TAC_mmol_l": "2.99",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "335",
+            "Sodium_Na_mg_l": "26.9",
+            "Chlorides_Cl_mg_l": "25.3",
+            "Calcium_Ca_mg_l": "48.5"
+        }
+    },
+    {
+        "Region": "Gemeente 85",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.4",
+            "Alkalinity_TAC_mmol_l": "2.70",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "333",
+            "Sodium_Na_mg_l": "21.2",
+            "Chlorides_Cl_mg_l": "23.1",
+            "Calcium_Ca_mg_l": "42.5"
+        }
+    },
+    {
+        "Region": "Gemeente 86",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.1",
+            "Alkalinity_TAC_mmol_l": "2.82",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "350",
+            "Sodium_Na_mg_l": "22.4",
+            "Chlorides_Cl_mg_l": "24.9",
+            "Calcium_Ca_mg_l": "47.8"
+        }
+    },
+    {
+        "Region": "Gemeente 87",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.2",
+            "Alkalinity_TAC_mmol_l": "2.88",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "350",
+            "Sodium_Na_mg_l": "27.8",
+            "Chlorides_Cl_mg_l": "23.6",
+            "Calcium_Ca_mg_l": "46.7"
+        }
+    },
+    {
+        "Region": "Gemeente 88",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.4",
+            "Alkalinity_TAC_mmol_l": "2.74",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "347",
+            "Sodium_Na_mg_l": "18.2",
+            "Chlorides_Cl_mg_l": "23.2",
+            "Calcium_Ca_mg_l": "43.3"
+        }
+    },
+    {
+        "Region": "Gemeente 89",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.0",
+            "Alkalinity_TAC_mmol_l": "2.62",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "338",
+            "Sodium_Na_mg_l": "24.4",
+            "Chlorides_Cl_mg_l": "27.6",
+            "Calcium_Ca_mg_l": "40.3"
+        }
+    },
+    {
+        "Region": "Gemeente 90",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.2",
+            "Alkalinity_TAC_mmol_l": "2.38",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "337",
+            "Sodium_Na_mg_l": "27.6",
+            "Chlorides_Cl_mg_l": "22.5",
+            "Calcium_Ca_mg_l": "46.7"
+        }
+    },
+    {
+        "Region": "Gemeente 91",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.9",
+            "Alkalinity_TAC_mmol_l": "2.70",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "343",
+            "Sodium_Na_mg_l": "22.6",
+            "Chlorides_Cl_mg_l": "26.9",
+            "Calcium_Ca_mg_l": "49.1"
+        }
+    },
+    {
+        "Region": "Gemeente 92",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.4",
+            "Alkalinity_TAC_mmol_l": "2.40",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "337",
+            "Sodium_Na_mg_l": "17.3",
+            "Chlorides_Cl_mg_l": "16.1",
+            "Calcium_Ca_mg_l": "48.3"
+        }
+    },
+    {
+        "Region": "Gemeente 93",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.6",
+            "Alkalinity_TAC_mmol_l": "2.45",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "318",
+            "Sodium_Na_mg_l": "21.8",
+            "Chlorides_Cl_mg_l": "29.4",
+            "Calcium_Ca_mg_l": "46.6"
+        }
+    },
+    {
+        "Region": "Gemeente 94",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.2",
+            "Alkalinity_TAC_mmol_l": "2.07",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "362",
+            "Sodium_Na_mg_l": "22.2",
+            "Chlorides_Cl_mg_l": "28.2",
+            "Calcium_Ca_mg_l": "48.4"
+        }
+    },
+    {
+        "Region": "Gemeente 95",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.5",
+            "Alkalinity_TAC_mmol_l": "2.66",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "375",
+            "Sodium_Na_mg_l": "18.5",
+            "Chlorides_Cl_mg_l": "24.5",
+            "Calcium_Ca_mg_l": "44.5"
+        }
+    },
+    {
+        "Region": "Gemeente 96",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.7",
+            "Alkalinity_TAC_mmol_l": "2.21",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "347",
+            "Sodium_Na_mg_l": "20.2",
+            "Chlorides_Cl_mg_l": "19.1",
+            "Calcium_Ca_mg_l": "46.4"
+        }
+    },
+    {
+        "Region": "Gemeente 97",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.7",
+            "Alkalinity_TAC_mmol_l": "2.11",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "328",
+            "Sodium_Na_mg_l": "24.3",
+            "Chlorides_Cl_mg_l": "29.9",
+            "Calcium_Ca_mg_l": "49.3"
+        }
+    },
+    {
+        "Region": "Gemeente 98",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.8",
+            "Alkalinity_TAC_mmol_l": "2.44",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "336",
+            "Sodium_Na_mg_l": "27.1",
+            "Chlorides_Cl_mg_l": "22.0",
+            "Calcium_Ca_mg_l": "40.5"
+        }
+    },
+    {
+        "Region": "Gemeente 99",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.9",
+            "Alkalinity_TAC_mmol_l": "2.58",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "320",
+            "Sodium_Na_mg_l": "24.6",
+            "Chlorides_Cl_mg_l": "22.7",
+            "Calcium_Ca_mg_l": "47.4"
+        }
+    },
+    {
+        "Region": "Gemeente 100",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.3",
+            "Alkalinity_TAC_mmol_l": "2.71",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "351",
+            "Sodium_Na_mg_l": "17.1",
+            "Chlorides_Cl_mg_l": "16.6",
+            "Calcium_Ca_mg_l": "48.1"
+        }
+    },
+    {
+        "Region": "Gemeente 101",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.0",
+            "Alkalinity_TAC_mmol_l": "2.06",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "332",
+            "Sodium_Na_mg_l": "24.4",
+            "Chlorides_Cl_mg_l": "24.6",
+            "Calcium_Ca_mg_l": "42.7"
+        }
+    },
+    {
+        "Region": "Gemeente 102",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.4",
+            "Alkalinity_TAC_mmol_l": "2.86",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "340",
+            "Sodium_Na_mg_l": "28.8",
+            "Chlorides_Cl_mg_l": "23.4",
+            "Calcium_Ca_mg_l": "44.9"
+        }
+    },
+    {
+        "Region": "Gemeente 103",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.1",
+            "Alkalinity_TAC_mmol_l": "2.34",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "323",
+            "Sodium_Na_mg_l": "23.2",
+            "Chlorides_Cl_mg_l": "15.5",
+            "Calcium_Ca_mg_l": "46.5"
+        }
+    },
+    {
+        "Region": "Gemeente 104",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.3",
+            "Alkalinity_TAC_mmol_l": "2.17",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "362",
+            "Sodium_Na_mg_l": "16.5",
+            "Chlorides_Cl_mg_l": "17.4",
+            "Calcium_Ca_mg_l": "44.9"
+        }
+    },
+    {
+        "Region": "Gemeente 105",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.7",
+            "Alkalinity_TAC_mmol_l": "2.17",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "311",
+            "Sodium_Na_mg_l": "26.9",
+            "Chlorides_Cl_mg_l": "22.4",
+            "Calcium_Ca_mg_l": "48.9"
+        }
+    },
+    {
+        "Region": "Gemeente 106",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.0",
+            "Alkalinity_TAC_mmol_l": "2.63",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "360",
+            "Sodium_Na_mg_l": "22.1",
+            "Chlorides_Cl_mg_l": "21.0",
+            "Calcium_Ca_mg_l": "40.3"
+        }
+    },
+    {
+        "Region": "Gemeente 107",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.6",
+            "Alkalinity_TAC_mmol_l": "2.84",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "325",
+            "Sodium_Na_mg_l": "28.0",
+            "Chlorides_Cl_mg_l": "25.6",
+            "Calcium_Ca_mg_l": "45.0"
+        }
+    },
+    {
+        "Region": "Gemeente 108",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.4",
+            "Alkalinity_TAC_mmol_l": "2.94",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "348",
+            "Sodium_Na_mg_l": "28.0",
+            "Chlorides_Cl_mg_l": "17.6",
+            "Calcium_Ca_mg_l": "41.2"
+        }
+    },
+    {
+        "Region": "Gemeente 109",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.1",
+            "Alkalinity_TAC_mmol_l": "2.85",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "347",
+            "Sodium_Na_mg_l": "23.0",
+            "Chlorides_Cl_mg_l": "24.5",
+            "Calcium_Ca_mg_l": "43.7"
+        }
+    },
+    {
+        "Region": "Gemeente 110",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.9",
+            "Alkalinity_TAC_mmol_l": "2.11",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "316",
+            "Sodium_Na_mg_l": "22.8",
+            "Chlorides_Cl_mg_l": "19.6",
+            "Calcium_Ca_mg_l": "46.3"
+        }
+    },
+    {
+        "Region": "Gemeente 111",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.4",
+            "Alkalinity_TAC_mmol_l": "2.97",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "351",
+            "Sodium_Na_mg_l": "27.1",
+            "Chlorides_Cl_mg_l": "23.1",
+            "Calcium_Ca_mg_l": "40.7"
+        }
+    },
+    {
+        "Region": "Gemeente 112",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.4",
+            "Alkalinity_TAC_mmol_l": "2.97",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "334",
+            "Sodium_Na_mg_l": "16.6",
+            "Chlorides_Cl_mg_l": "23.4",
+            "Calcium_Ca_mg_l": "49.1"
+        }
+    },
+    {
+        "Region": "Gemeente 113",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.1",
+            "Alkalinity_TAC_mmol_l": "2.08",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "346",
+            "Sodium_Na_mg_l": "19.0",
+            "Chlorides_Cl_mg_l": "19.6",
+            "Calcium_Ca_mg_l": "42.9"
+        }
+    },
+    {
+        "Region": "Gemeente 114",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.3",
+            "Alkalinity_TAC_mmol_l": "2.42",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "342",
+            "Sodium_Na_mg_l": "27.1",
+            "Chlorides_Cl_mg_l": "19.3",
+            "Calcium_Ca_mg_l": "42.2"
+        }
+    },
+    {
+        "Region": "Gemeente 115",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.6",
+            "Alkalinity_TAC_mmol_l": "2.59",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "331",
+            "Sodium_Na_mg_l": "20.4",
+            "Chlorides_Cl_mg_l": "23.0",
+            "Calcium_Ca_mg_l": "44.5"
+        }
+    },
+    {
+        "Region": "Gemeente 116",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.8",
+            "Alkalinity_TAC_mmol_l": "2.35",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "312",
+            "Sodium_Na_mg_l": "19.5",
+            "Chlorides_Cl_mg_l": "22.7",
+            "Calcium_Ca_mg_l": "42.3"
+        }
+    },
+    {
+        "Region": "Gemeente 117",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.0",
+            "Alkalinity_TAC_mmol_l": "2.55",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "337",
+            "Sodium_Na_mg_l": "15.6",
+            "Chlorides_Cl_mg_l": "19.5",
+            "Calcium_Ca_mg_l": "45.1"
+        }
+    },
+    {
+        "Region": "Gemeente 118",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.3",
+            "Alkalinity_TAC_mmol_l": "2.22",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "338",
+            "Sodium_Na_mg_l": "22.6",
+            "Chlorides_Cl_mg_l": "17.7",
+            "Calcium_Ca_mg_l": "47.1"
+        }
+    },
+    {
+        "Region": "Gemeente 119",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.0",
+            "Alkalinity_TAC_mmol_l": "2.88",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "351",
+            "Sodium_Na_mg_l": "20.9",
+            "Chlorides_Cl_mg_l": "25.2",
+            "Calcium_Ca_mg_l": "46.5"
+        }
+    },
+    {
+        "Region": "Gemeente 120",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.2",
+            "Alkalinity_TAC_mmol_l": "2.48",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "351",
+            "Sodium_Na_mg_l": "25.3",
+            "Chlorides_Cl_mg_l": "15.1",
+            "Calcium_Ca_mg_l": "49.2"
+        }
+    },
+    {
+        "Region": "Gemeente 121",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.6",
+            "Alkalinity_TAC_mmol_l": "2.32",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "328",
+            "Sodium_Na_mg_l": "16.4",
+            "Chlorides_Cl_mg_l": "21.8",
+            "Calcium_Ca_mg_l": "49.4"
+        }
+    },
+    {
+        "Region": "Gemeente 122",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.7",
+            "Alkalinity_TAC_mmol_l": "2.97",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "339",
+            "Sodium_Na_mg_l": "26.9",
+            "Chlorides_Cl_mg_l": "27.2",
+            "Calcium_Ca_mg_l": "47.1"
+        }
+    },
+    {
+        "Region": "Gemeente 123",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.2",
+            "Alkalinity_TAC_mmol_l": "2.62",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "328",
+            "Sodium_Na_mg_l": "19.4",
+            "Chlorides_Cl_mg_l": "22.9",
+            "Calcium_Ca_mg_l": "48.4"
+        }
+    },
+    {
+        "Region": "Gemeente 124",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.0",
+            "Alkalinity_TAC_mmol_l": "2.44",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "331",
+            "Sodium_Na_mg_l": "25.9",
+            "Chlorides_Cl_mg_l": "22.4",
+            "Calcium_Ca_mg_l": "48.9"
+        }
+    },
+    {
+        "Region": "Gemeente 125",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.7",
+            "Alkalinity_TAC_mmol_l": "2.33",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "320",
+            "Sodium_Na_mg_l": "27.5",
+            "Chlorides_Cl_mg_l": "22.3",
+            "Calcium_Ca_mg_l": "46.5"
+        }
+    },
+    {
+        "Region": "Gemeente 126",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.4",
+            "Alkalinity_TAC_mmol_l": "2.62",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "347",
+            "Sodium_Na_mg_l": "28.9",
+            "Chlorides_Cl_mg_l": "24.4",
+            "Calcium_Ca_mg_l": "47.7"
+        }
+    },
+    {
+        "Region": "Gemeente 127",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.2",
+            "Alkalinity_TAC_mmol_l": "2.32",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "367",
+            "Sodium_Na_mg_l": "20.7",
+            "Chlorides_Cl_mg_l": "19.9",
+            "Calcium_Ca_mg_l": "40.2"
+        }
+    },
+    {
+        "Region": "Gemeente 128",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.7",
+            "Alkalinity_TAC_mmol_l": "2.74",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "348",
+            "Sodium_Na_mg_l": "20.1",
+            "Chlorides_Cl_mg_l": "24.1",
+            "Calcium_Ca_mg_l": "44.6"
+        }
+    },
+    {
+        "Region": "Gemeente 129",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.2",
+            "Alkalinity_TAC_mmol_l": "2.18",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "336",
+            "Sodium_Na_mg_l": "23.2",
+            "Chlorides_Cl_mg_l": "25.7",
+            "Calcium_Ca_mg_l": "42.2"
+        }
+    },
+    {
+        "Region": "Gemeente 130",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.5",
+            "Alkalinity_TAC_mmol_l": "2.82",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "332",
+            "Sodium_Na_mg_l": "17.5",
+            "Chlorides_Cl_mg_l": "25.5",
+            "Calcium_Ca_mg_l": "47.8"
+        }
+    },
+    {
+        "Region": "Gemeente 131",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.0",
+            "Alkalinity_TAC_mmol_l": "2.56",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "321",
+            "Sodium_Na_mg_l": "28.0",
+            "Chlorides_Cl_mg_l": "26.2",
+            "Calcium_Ca_mg_l": "41.3"
+        }
+    },
+    {
+        "Region": "Gemeente 132",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.5",
+            "Alkalinity_TAC_mmol_l": "2.49",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "370",
+            "Sodium_Na_mg_l": "22.7",
+            "Chlorides_Cl_mg_l": "18.7",
+            "Calcium_Ca_mg_l": "44.4"
+        }
+    },
+    {
+        "Region": "Gemeente 133",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.3",
+            "Alkalinity_TAC_mmol_l": "2.65",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "358",
+            "Sodium_Na_mg_l": "29.9",
+            "Chlorides_Cl_mg_l": "16.5",
+            "Calcium_Ca_mg_l": "46.4"
+        }
+    },
+    {
+        "Region": "Gemeente 134",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.6",
+            "Alkalinity_TAC_mmol_l": "2.70",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "305",
+            "Sodium_Na_mg_l": "24.7",
+            "Chlorides_Cl_mg_l": "19.1",
+            "Calcium_Ca_mg_l": "40.7"
+        }
+    },
+    {
+        "Region": "Gemeente 135",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.9",
+            "Alkalinity_TAC_mmol_l": "2.20",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "331",
+            "Sodium_Na_mg_l": "25.8",
+            "Chlorides_Cl_mg_l": "18.7",
+            "Calcium_Ca_mg_l": "47.2"
+        }
+    },
+    {
+        "Region": "Gemeente 136",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.4",
+            "Alkalinity_TAC_mmol_l": "2.59",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "354",
+            "Sodium_Na_mg_l": "29.4",
+            "Chlorides_Cl_mg_l": "25.3",
+            "Calcium_Ca_mg_l": "41.9"
+        }
+    },
+    {
+        "Region": "Gemeente 137",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.8",
+            "Alkalinity_TAC_mmol_l": "2.17",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "337",
+            "Sodium_Na_mg_l": "19.7",
+            "Chlorides_Cl_mg_l": "28.0",
+            "Calcium_Ca_mg_l": "48.9"
+        }
+    },
+    {
+        "Region": "Gemeente 138",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.9",
+            "Alkalinity_TAC_mmol_l": "2.42",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "344",
+            "Sodium_Na_mg_l": "25.7",
+            "Chlorides_Cl_mg_l": "25.8",
+            "Calcium_Ca_mg_l": "45.3"
+        }
+    },
+    {
+        "Region": "Gemeente 139",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.7",
+            "Alkalinity_TAC_mmol_l": "2.53",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "320",
+            "Sodium_Na_mg_l": "16.6",
+            "Chlorides_Cl_mg_l": "24.5",
+            "Calcium_Ca_mg_l": "44.5"
+        }
+    },
+    {
+        "Region": "Gemeente 140",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.7",
+            "Alkalinity_TAC_mmol_l": "2.54",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "339",
+            "Sodium_Na_mg_l": "16.6",
+            "Chlorides_Cl_mg_l": "27.6",
+            "Calcium_Ca_mg_l": "47.5"
+        }
+    },
+    {
+        "Region": "Gemeente 141",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.3",
+            "Alkalinity_TAC_mmol_l": "2.81",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "359",
+            "Sodium_Na_mg_l": "19.0",
+            "Chlorides_Cl_mg_l": "23.9",
+            "Calcium_Ca_mg_l": "44.4"
+        }
+    },
+    {
+        "Region": "Gemeente 142",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.9",
+            "Alkalinity_TAC_mmol_l": "2.11",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "352",
+            "Sodium_Na_mg_l": "17.3",
+            "Chlorides_Cl_mg_l": "20.6",
+            "Calcium_Ca_mg_l": "47.5"
+        }
+    },
+    {
+        "Region": "Gemeente 143",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.3",
+            "Alkalinity_TAC_mmol_l": "2.63",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "339",
+            "Sodium_Na_mg_l": "15.6",
+            "Chlorides_Cl_mg_l": "21.9",
+            "Calcium_Ca_mg_l": "41.9"
+        }
+    },
+    {
+        "Region": "Gemeente 144",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.9",
+            "Alkalinity_TAC_mmol_l": "2.74",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "355",
+            "Sodium_Na_mg_l": "18.9",
+            "Chlorides_Cl_mg_l": "18.9",
+            "Calcium_Ca_mg_l": "47.0"
+        }
+    },
+    {
+        "Region": "Gemeente 145",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.0",
+            "Alkalinity_TAC_mmol_l": "2.42",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "335",
+            "Sodium_Na_mg_l": "17.4",
+            "Chlorides_Cl_mg_l": "16.0",
+            "Calcium_Ca_mg_l": "45.5"
+        }
+    },
+    {
+        "Region": "Gemeente 146",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.7",
+            "Alkalinity_TAC_mmol_l": "2.34",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "319",
+            "Sodium_Na_mg_l": "22.2",
+            "Chlorides_Cl_mg_l": "28.6",
+            "Calcium_Ca_mg_l": "44.5"
+        }
+    },
+    {
+        "Region": "Gemeente 147",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.0",
+            "Alkalinity_TAC_mmol_l": "2.06",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "322",
+            "Sodium_Na_mg_l": "20.8",
+            "Chlorides_Cl_mg_l": "28.7",
+            "Calcium_Ca_mg_l": "46.9"
+        }
+    },
+    {
+        "Region": "Gemeente 148",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.8",
+            "Alkalinity_TAC_mmol_l": "2.79",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "315",
+            "Sodium_Na_mg_l": "28.8",
+            "Chlorides_Cl_mg_l": "15.4",
+            "Calcium_Ca_mg_l": "41.4"
+        }
+    },
+    {
+        "Region": "Gemeente 149",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.7",
+            "Alkalinity_TAC_mmol_l": "2.18",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "321",
+            "Sodium_Na_mg_l": "22.7",
+            "Chlorides_Cl_mg_l": "15.4",
+            "Calcium_Ca_mg_l": "46.8"
+        }
+    },
+    {
+        "Region": "Gemeente 150",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.5",
+            "Alkalinity_TAC_mmol_l": "2.01",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "310",
+            "Sodium_Na_mg_l": "26.6",
+            "Chlorides_Cl_mg_l": "19.5",
+            "Calcium_Ca_mg_l": "42.1"
+        }
+    },
+    {
+        "Region": "Gemeente 151",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.9",
+            "Alkalinity_TAC_mmol_l": "2.55",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "323",
+            "Sodium_Na_mg_l": "27.7",
+            "Chlorides_Cl_mg_l": "16.7",
+            "Calcium_Ca_mg_l": "46.1"
+        }
+    },
+    {
+        "Region": "Gemeente 152",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.8",
+            "Alkalinity_TAC_mmol_l": "2.75",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "353",
+            "Sodium_Na_mg_l": "17.6",
+            "Chlorides_Cl_mg_l": "29.0",
+            "Calcium_Ca_mg_l": "47.2"
+        }
+    },
+    {
+        "Region": "Gemeente 153",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.5",
+            "Alkalinity_TAC_mmol_l": "2.92",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "304",
+            "Sodium_Na_mg_l": "19.3",
+            "Chlorides_Cl_mg_l": "28.7",
+            "Calcium_Ca_mg_l": "49.8"
+        }
+    },
+    {
+        "Region": "Gemeente 154",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.1",
+            "Alkalinity_TAC_mmol_l": "2.91",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "342",
+            "Sodium_Na_mg_l": "22.0",
+            "Chlorides_Cl_mg_l": "22.4",
+            "Calcium_Ca_mg_l": "40.4"
+        }
+    },
+    {
+        "Region": "Gemeente 155",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.2",
+            "Alkalinity_TAC_mmol_l": "2.34",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "343",
+            "Sodium_Na_mg_l": "24.7",
+            "Chlorides_Cl_mg_l": "20.3",
+            "Calcium_Ca_mg_l": "41.7"
+        }
+    },
+    {
+        "Region": "Gemeente 156",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.3",
+            "Alkalinity_TAC_mmol_l": "2.48",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "354",
+            "Sodium_Na_mg_l": "23.6",
+            "Chlorides_Cl_mg_l": "15.0",
+            "Calcium_Ca_mg_l": "43.2"
+        }
+    },
+    {
+        "Region": "Gemeente 157",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.2",
+            "Alkalinity_TAC_mmol_l": "2.83",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "326",
+            "Sodium_Na_mg_l": "26.5",
+            "Chlorides_Cl_mg_l": "21.9",
+            "Calcium_Ca_mg_l": "42.2"
+        }
+    },
+    {
+        "Region": "Gemeente 158",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.3",
+            "Alkalinity_TAC_mmol_l": "2.71",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "346",
+            "Sodium_Na_mg_l": "16.3",
+            "Chlorides_Cl_mg_l": "28.0",
+            "Calcium_Ca_mg_l": "41.7"
+        }
+    },
+    {
+        "Region": "Gemeente 159",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.4",
+            "Alkalinity_TAC_mmol_l": "2.22",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "370",
+            "Sodium_Na_mg_l": "17.4",
+            "Chlorides_Cl_mg_l": "25.2",
+            "Calcium_Ca_mg_l": "41.9"
+        }
+    },
+    {
+        "Region": "Gemeente 160",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.7",
+            "Alkalinity_TAC_mmol_l": "2.07",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "326",
+            "Sodium_Na_mg_l": "18.4",
+            "Chlorides_Cl_mg_l": "19.3",
+            "Calcium_Ca_mg_l": "48.8"
+        }
+    },
+    {
+        "Region": "Gemeente 161",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.5",
+            "Alkalinity_TAC_mmol_l": "2.57",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "345",
+            "Sodium_Na_mg_l": "21.9",
+            "Chlorides_Cl_mg_l": "25.1",
+            "Calcium_Ca_mg_l": "45.4"
+        }
+    },
+    {
+        "Region": "Gemeente 162",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.1",
+            "Alkalinity_TAC_mmol_l": "2.25",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "339",
+            "Sodium_Na_mg_l": "21.6",
+            "Chlorides_Cl_mg_l": "26.0",
+            "Calcium_Ca_mg_l": "45.4"
+        }
+    },
+    {
+        "Region": "Gemeente 163",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.9",
+            "Alkalinity_TAC_mmol_l": "2.79",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "330",
+            "Sodium_Na_mg_l": "17.3",
+            "Chlorides_Cl_mg_l": "24.3",
+            "Calcium_Ca_mg_l": "42.9"
+        }
+    },
+    {
+        "Region": "Gemeente 164",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.3",
+            "Alkalinity_TAC_mmol_l": "2.36",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "367",
+            "Sodium_Na_mg_l": "16.9",
+            "Chlorides_Cl_mg_l": "18.5",
+            "Calcium_Ca_mg_l": "45.1"
+        }
+    },
+    {
+        "Region": "Gemeente 165",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.1",
+            "Alkalinity_TAC_mmol_l": "2.51",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "359",
+            "Sodium_Na_mg_l": "29.8",
+            "Chlorides_Cl_mg_l": "22.8",
+            "Calcium_Ca_mg_l": "45.2"
+        }
+    },
+    {
+        "Region": "Gemeente 166",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.3",
+            "Alkalinity_TAC_mmol_l": "2.43",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "331",
+            "Sodium_Na_mg_l": "20.4",
+            "Chlorides_Cl_mg_l": "21.6",
+            "Calcium_Ca_mg_l": "46.0"
+        }
+    },
+    {
+        "Region": "Gemeente 167",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.4",
+            "Alkalinity_TAC_mmol_l": "2.27",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "370",
+            "Sodium_Na_mg_l": "20.4",
+            "Chlorides_Cl_mg_l": "26.9",
+            "Calcium_Ca_mg_l": "45.9"
+        }
+    },
+    {
+        "Region": "Gemeente 168",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.7",
+            "Alkalinity_TAC_mmol_l": "2.10",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "339",
+            "Sodium_Na_mg_l": "17.1",
+            "Chlorides_Cl_mg_l": "25.6",
+            "Calcium_Ca_mg_l": "47.7"
+        }
+    },
+    {
+        "Region": "Gemeente 169",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.5",
+            "Alkalinity_TAC_mmol_l": "2.36",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "374",
+            "Sodium_Na_mg_l": "15.5",
+            "Chlorides_Cl_mg_l": "19.6",
+            "Calcium_Ca_mg_l": "42.6"
+        }
+    },
+    {
+        "Region": "Gemeente 170",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.7",
+            "Alkalinity_TAC_mmol_l": "2.37",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "330",
+            "Sodium_Na_mg_l": "20.2",
+            "Chlorides_Cl_mg_l": "23.0",
+            "Calcium_Ca_mg_l": "49.0"
+        }
+    },
+    {
+        "Region": "Gemeente 171",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.3",
+            "Alkalinity_TAC_mmol_l": "2.17",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "354",
+            "Sodium_Na_mg_l": "21.7",
+            "Chlorides_Cl_mg_l": "21.6",
+            "Calcium_Ca_mg_l": "48.8"
+        }
+    },
+    {
+        "Region": "Gemeente 172",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.7",
+            "Alkalinity_TAC_mmol_l": "2.00",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "329",
+            "Sodium_Na_mg_l": "18.5",
+            "Chlorides_Cl_mg_l": "26.7",
+            "Calcium_Ca_mg_l": "49.3"
+        }
+    },
+    {
+        "Region": "Gemeente 173",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.0",
+            "Alkalinity_TAC_mmol_l": "2.96",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "333",
+            "Sodium_Na_mg_l": "18.8",
+            "Chlorides_Cl_mg_l": "15.5",
+            "Calcium_Ca_mg_l": "45.5"
+        }
+    },
+    {
+        "Region": "Gemeente 174",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.4",
+            "Alkalinity_TAC_mmol_l": "2.19",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "363",
+            "Sodium_Na_mg_l": "29.2",
+            "Chlorides_Cl_mg_l": "16.9",
+            "Calcium_Ca_mg_l": "41.2"
+        }
+    },
+    {
+        "Region": "Gemeente 175",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.8",
+            "Alkalinity_TAC_mmol_l": "2.43",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "350",
+            "Sodium_Na_mg_l": "23.4",
+            "Chlorides_Cl_mg_l": "22.2",
+            "Calcium_Ca_mg_l": "48.9"
+        }
+    },
+    {
+        "Region": "Gemeente 176",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.8",
+            "Alkalinity_TAC_mmol_l": "2.69",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "318",
+            "Sodium_Na_mg_l": "27.5",
+            "Chlorides_Cl_mg_l": "19.2",
+            "Calcium_Ca_mg_l": "49.2"
+        }
+    },
+    {
+        "Region": "Gemeente 177",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.3",
+            "Alkalinity_TAC_mmol_l": "2.47",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "342",
+            "Sodium_Na_mg_l": "22.2",
+            "Chlorides_Cl_mg_l": "26.9",
+            "Calcium_Ca_mg_l": "46.9"
+        }
+    },
+    {
+        "Region": "Gemeente 178",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.5",
+            "Alkalinity_TAC_mmol_l": "2.30",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "319",
+            "Sodium_Na_mg_l": "28.4",
+            "Chlorides_Cl_mg_l": "17.2",
+            "Calcium_Ca_mg_l": "47.2"
+        }
+    },
+    {
+        "Region": "Gemeente 179",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.9",
+            "Alkalinity_TAC_mmol_l": "2.53",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "349",
+            "Sodium_Na_mg_l": "19.3",
+            "Chlorides_Cl_mg_l": "16.7",
+            "Calcium_Ca_mg_l": "45.1"
+        }
+    },
+    {
+        "Region": "Gemeente 180",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.1",
+            "Alkalinity_TAC_mmol_l": "2.22",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "362",
+            "Sodium_Na_mg_l": "15.8",
+            "Chlorides_Cl_mg_l": "27.8",
+            "Calcium_Ca_mg_l": "49.6"
+        }
+    },
+    {
+        "Region": "Gemeente 181",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.4",
+            "Alkalinity_TAC_mmol_l": "2.67",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "361",
+            "Sodium_Na_mg_l": "29.1",
+            "Chlorides_Cl_mg_l": "17.4",
+            "Calcium_Ca_mg_l": "49.5"
+        }
+    },
+    {
+        "Region": "Gemeente 182",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.7",
+            "Alkalinity_TAC_mmol_l": "2.91",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "342",
+            "Sodium_Na_mg_l": "21.5",
+            "Chlorides_Cl_mg_l": "29.3",
+            "Calcium_Ca_mg_l": "41.7"
+        }
+    },
+    {
+        "Region": "Gemeente 183",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.8",
+            "Alkalinity_TAC_mmol_l": "2.15",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "339",
+            "Sodium_Na_mg_l": "18.7",
+            "Chlorides_Cl_mg_l": "23.2",
+            "Calcium_Ca_mg_l": "40.5"
+        }
+    },
+    {
+        "Region": "Gemeente 184",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.1",
+            "Alkalinity_TAC_mmol_l": "2.90",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "362",
+            "Sodium_Na_mg_l": "25.9",
+            "Chlorides_Cl_mg_l": "27.3",
+            "Calcium_Ca_mg_l": "49.3"
+        }
+    },
+    {
+        "Region": "Gemeente 185",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.5",
+            "Alkalinity_TAC_mmol_l": "2.78",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "304",
+            "Sodium_Na_mg_l": "21.7",
+            "Chlorides_Cl_mg_l": "20.1",
+            "Calcium_Ca_mg_l": "40.9"
+        }
+    },
+    {
+        "Region": "Gemeente 186",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.5",
+            "Alkalinity_TAC_mmol_l": "2.29",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "344",
+            "Sodium_Na_mg_l": "29.8",
+            "Chlorides_Cl_mg_l": "21.5",
+            "Calcium_Ca_mg_l": "45.3"
+        }
+    },
+    {
+        "Region": "Gemeente 187",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.1",
+            "Alkalinity_TAC_mmol_l": "2.18",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "342",
+            "Sodium_Na_mg_l": "24.0",
+            "Chlorides_Cl_mg_l": "28.4",
+            "Calcium_Ca_mg_l": "47.2"
+        }
+    },
+    {
+        "Region": "Gemeente 188",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.5",
+            "Alkalinity_TAC_mmol_l": "2.03",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "332",
+            "Sodium_Na_mg_l": "24.3",
+            "Chlorides_Cl_mg_l": "28.2",
+            "Calcium_Ca_mg_l": "45.4"
+        }
+    },
+    {
+        "Region": "Gemeente 189",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.5",
+            "Alkalinity_TAC_mmol_l": "2.82",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "350",
+            "Sodium_Na_mg_l": "23.0",
+            "Chlorides_Cl_mg_l": "19.8",
+            "Calcium_Ca_mg_l": "49.1"
+        }
+    },
+    {
+        "Region": "Gemeente 190",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.2",
+            "Alkalinity_TAC_mmol_l": "2.99",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "337",
+            "Sodium_Na_mg_l": "29.0",
+            "Chlorides_Cl_mg_l": "24.2",
+            "Calcium_Ca_mg_l": "49.6"
+        }
+    },
+    {
+        "Region": "Gemeente 191",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.8",
+            "Alkalinity_TAC_mmol_l": "2.03",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "331",
+            "Sodium_Na_mg_l": "24.3",
+            "Chlorides_Cl_mg_l": "23.6",
+            "Calcium_Ca_mg_l": "42.5"
+        }
+    },
+    {
+        "Region": "Gemeente 192",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.8",
+            "Alkalinity_TAC_mmol_l": "2.63",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "327",
+            "Sodium_Na_mg_l": "29.7",
+            "Chlorides_Cl_mg_l": "25.1",
+            "Calcium_Ca_mg_l": "47.4"
+        }
+    },
+    {
+        "Region": "Gemeente 193",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.7",
+            "Alkalinity_TAC_mmol_l": "2.24",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "336",
+            "Sodium_Na_mg_l": "20.6",
+            "Chlorides_Cl_mg_l": "25.0",
+            "Calcium_Ca_mg_l": "49.0"
+        }
+    },
+    {
+        "Region": "Gemeente 194",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.5",
+            "Alkalinity_TAC_mmol_l": "2.92",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "374",
+            "Sodium_Na_mg_l": "17.5",
+            "Chlorides_Cl_mg_l": "28.1",
+            "Calcium_Ca_mg_l": "42.7"
+        }
+    },
+    {
+        "Region": "Gemeente 195",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.7",
+            "Alkalinity_TAC_mmol_l": "2.63",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "322",
+            "Sodium_Na_mg_l": "22.7",
+            "Chlorides_Cl_mg_l": "26.0",
+            "Calcium_Ca_mg_l": "48.2"
+        }
+    },
+    {
+        "Region": "Gemeente 196",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.0",
+            "Alkalinity_TAC_mmol_l": "2.01",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "346",
+            "Sodium_Na_mg_l": "23.8",
+            "Chlorides_Cl_mg_l": "22.2",
+            "Calcium_Ca_mg_l": "47.1"
+        }
+    },
+    {
+        "Region": "Gemeente 197",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.5",
+            "Alkalinity_TAC_mmol_l": "2.29",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "343",
+            "Sodium_Na_mg_l": "21.0",
+            "Chlorides_Cl_mg_l": "16.4",
+            "Calcium_Ca_mg_l": "41.0"
+        }
+    },
+    {
+        "Region": "Gemeente 198",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.6",
+            "Alkalinity_TAC_mmol_l": "2.07",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "333",
+            "Sodium_Na_mg_l": "15.4",
+            "Chlorides_Cl_mg_l": "19.7",
+            "Calcium_Ca_mg_l": "46.9"
+        }
+    },
+    {
+        "Region": "Gemeente 199",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.7",
+            "Alkalinity_TAC_mmol_l": "2.10",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "328",
+            "Sodium_Na_mg_l": "18.0",
+            "Chlorides_Cl_mg_l": "21.8",
+            "Calcium_Ca_mg_l": "44.0"
+        }
+    },
+    {
+        "Region": "Gemeente 200",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.1",
+            "Alkalinity_TAC_mmol_l": "2.13",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "354",
+            "Sodium_Na_mg_l": "21.4",
+            "Chlorides_Cl_mg_l": "28.1",
+            "Calcium_Ca_mg_l": "42.3"
+        }
+    },
+    {
+        "Region": "Gemeente 201",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.8",
+            "Alkalinity_TAC_mmol_l": "2.85",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "336",
+            "Sodium_Na_mg_l": "19.5",
+            "Chlorides_Cl_mg_l": "28.2",
+            "Calcium_Ca_mg_l": "47.0"
+        }
+    },
+    {
+        "Region": "Gemeente 202",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.9",
+            "Alkalinity_TAC_mmol_l": "2.07",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "339",
+            "Sodium_Na_mg_l": "17.8",
+            "Chlorides_Cl_mg_l": "28.9",
+            "Calcium_Ca_mg_l": "40.3"
+        }
+    },
+    {
+        "Region": "Gemeente 203",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.1",
+            "Alkalinity_TAC_mmol_l": "2.75",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "323",
+            "Sodium_Na_mg_l": "27.2",
+            "Chlorides_Cl_mg_l": "25.2",
+            "Calcium_Ca_mg_l": "44.1"
+        }
+    },
+    {
+        "Region": "Gemeente 204",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.1",
+            "Alkalinity_TAC_mmol_l": "2.15",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "327",
+            "Sodium_Na_mg_l": "28.6",
+            "Chlorides_Cl_mg_l": "24.5",
+            "Calcium_Ca_mg_l": "44.7"
+        }
+    },
+    {
+        "Region": "Gemeente 205",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.8",
+            "Alkalinity_TAC_mmol_l": "2.00",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "315",
+            "Sodium_Na_mg_l": "27.8",
+            "Chlorides_Cl_mg_l": "17.0",
+            "Calcium_Ca_mg_l": "43.2"
+        }
+    },
+    {
+        "Region": "Gemeente 206",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.1",
+            "Alkalinity_TAC_mmol_l": "2.69",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "326",
+            "Sodium_Na_mg_l": "16.3",
+            "Chlorides_Cl_mg_l": "24.8",
+            "Calcium_Ca_mg_l": "43.6"
+        }
+    },
+    {
+        "Region": "Gemeente 207",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.0",
+            "Alkalinity_TAC_mmol_l": "2.77",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "356",
+            "Sodium_Na_mg_l": "26.3",
+            "Chlorides_Cl_mg_l": "19.4",
+            "Calcium_Ca_mg_l": "44.4"
+        }
+    },
+    {
+        "Region": "Gemeente 208",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.0",
+            "Alkalinity_TAC_mmol_l": "2.56",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "355",
+            "Sodium_Na_mg_l": "16.6",
+            "Chlorides_Cl_mg_l": "18.3",
+            "Calcium_Ca_mg_l": "45.1"
+        }
+    },
+    {
+        "Region": "Gemeente 209",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.7",
+            "Alkalinity_TAC_mmol_l": "2.53",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "350",
+            "Sodium_Na_mg_l": "21.0",
+            "Chlorides_Cl_mg_l": "17.9",
+            "Calcium_Ca_mg_l": "40.3"
+        }
+    },
+    {
+        "Region": "Gemeente 210",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.1",
+            "Alkalinity_TAC_mmol_l": "2.05",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "337",
+            "Sodium_Na_mg_l": "23.9",
+            "Chlorides_Cl_mg_l": "21.2",
+            "Calcium_Ca_mg_l": "48.3"
+        }
+    },
+    {
+        "Region": "Gemeente 211",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.4",
+            "Alkalinity_TAC_mmol_l": "2.88",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "351",
+            "Sodium_Na_mg_l": "23.7",
+            "Chlorides_Cl_mg_l": "17.1",
+            "Calcium_Ca_mg_l": "46.0"
+        }
+    },
+    {
+        "Region": "Gemeente 212",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.6",
+            "Alkalinity_TAC_mmol_l": "2.38",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "326",
+            "Sodium_Na_mg_l": "27.8",
+            "Chlorides_Cl_mg_l": "26.1",
+            "Calcium_Ca_mg_l": "49.8"
+        }
+    },
+    {
+        "Region": "Gemeente 213",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.1",
+            "Alkalinity_TAC_mmol_l": "2.42",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "338",
+            "Sodium_Na_mg_l": "24.8",
+            "Chlorides_Cl_mg_l": "22.3",
+            "Calcium_Ca_mg_l": "47.0"
+        }
+    },
+    {
+        "Region": "Gemeente 214",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.5",
+            "Alkalinity_TAC_mmol_l": "2.35",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "311",
+            "Sodium_Na_mg_l": "25.7",
+            "Chlorides_Cl_mg_l": "21.4",
+            "Calcium_Ca_mg_l": "44.3"
+        }
+    },
+    {
+        "Region": "Gemeente 215",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.1",
+            "Alkalinity_TAC_mmol_l": "2.08",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "346",
+            "Sodium_Na_mg_l": "23.7",
+            "Chlorides_Cl_mg_l": "29.1",
+            "Calcium_Ca_mg_l": "46.7"
+        }
+    },
+    {
+        "Region": "Gemeente 216",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.8",
+            "Alkalinity_TAC_mmol_l": "2.03",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "314",
+            "Sodium_Na_mg_l": "22.7",
+            "Chlorides_Cl_mg_l": "20.6",
+            "Calcium_Ca_mg_l": "48.9"
+        }
+    },
+    {
+        "Region": "Gemeente 217",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.5",
+            "Alkalinity_TAC_mmol_l": "2.98",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "308",
+            "Sodium_Na_mg_l": "22.6",
+            "Chlorides_Cl_mg_l": "19.2",
+            "Calcium_Ca_mg_l": "45.7"
+        }
+    },
+    {
+        "Region": "Gemeente 218",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.0",
+            "Alkalinity_TAC_mmol_l": "2.81",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "320",
+            "Sodium_Na_mg_l": "15.1",
+            "Chlorides_Cl_mg_l": "28.0",
+            "Calcium_Ca_mg_l": "45.4"
+        }
+    },
+    {
+        "Region": "Gemeente 219",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.8",
+            "Alkalinity_TAC_mmol_l": "2.19",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "333",
+            "Sodium_Na_mg_l": "20.9",
+            "Chlorides_Cl_mg_l": "30.0",
+            "Calcium_Ca_mg_l": "46.9"
+        }
+    },
+    {
+        "Region": "Gemeente 220",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.9",
+            "Alkalinity_TAC_mmol_l": "2.82",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "350",
+            "Sodium_Na_mg_l": "18.3",
+            "Chlorides_Cl_mg_l": "21.9",
+            "Calcium_Ca_mg_l": "47.1"
+        }
+    },
+    {
+        "Region": "Gemeente 221",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.8",
+            "Alkalinity_TAC_mmol_l": "2.10",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "317",
+            "Sodium_Na_mg_l": "22.5",
+            "Chlorides_Cl_mg_l": "21.1",
+            "Calcium_Ca_mg_l": "42.7"
+        }
+    },
+    {
+        "Region": "Gemeente 222",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.0",
+            "Alkalinity_TAC_mmol_l": "2.75",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "348",
+            "Sodium_Na_mg_l": "26.7",
+            "Chlorides_Cl_mg_l": "18.4",
+            "Calcium_Ca_mg_l": "41.7"
+        }
+    },
+    {
+        "Region": "Gemeente 223",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.0",
+            "Alkalinity_TAC_mmol_l": "2.43",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "342",
+            "Sodium_Na_mg_l": "27.8",
+            "Chlorides_Cl_mg_l": "16.7",
+            "Calcium_Ca_mg_l": "48.8"
+        }
+    },
+    {
+        "Region": "Gemeente 224",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.3",
+            "Alkalinity_TAC_mmol_l": "2.34",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "335",
+            "Sodium_Na_mg_l": "25.5",
+            "Chlorides_Cl_mg_l": "16.7",
+            "Calcium_Ca_mg_l": "43.8"
+        }
+    },
+    {
+        "Region": "Gemeente 225",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.0",
+            "Alkalinity_TAC_mmol_l": "2.86",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "349",
+            "Sodium_Na_mg_l": "20.9",
+            "Chlorides_Cl_mg_l": "24.8",
+            "Calcium_Ca_mg_l": "49.6"
+        }
+    },
+    {
+        "Region": "Gemeente 226",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.0",
+            "Alkalinity_TAC_mmol_l": "2.00",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "353",
+            "Sodium_Na_mg_l": "19.6",
+            "Chlorides_Cl_mg_l": "15.5",
+            "Calcium_Ca_mg_l": "42.4"
+        }
+    },
+    {
+        "Region": "Gemeente 227",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.1",
+            "Alkalinity_TAC_mmol_l": "2.51",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "351",
+            "Sodium_Na_mg_l": "17.4",
+            "Chlorides_Cl_mg_l": "25.9",
+            "Calcium_Ca_mg_l": "46.9"
+        }
+    },
+    {
+        "Region": "Gemeente 228",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.9",
+            "Alkalinity_TAC_mmol_l": "2.06",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "348",
+            "Sodium_Na_mg_l": "15.8",
+            "Chlorides_Cl_mg_l": "25.6",
+            "Calcium_Ca_mg_l": "42.8"
+        }
+    },
+    {
+        "Region": "Gemeente 229",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.5",
+            "Alkalinity_TAC_mmol_l": "2.50",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "317",
+            "Sodium_Na_mg_l": "16.9",
+            "Chlorides_Cl_mg_l": "25.8",
+            "Calcium_Ca_mg_l": "44.2"
+        }
+    },
+    {
+        "Region": "Gemeente 230",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.6",
+            "Alkalinity_TAC_mmol_l": "2.22",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "323",
+            "Sodium_Na_mg_l": "22.4",
+            "Chlorides_Cl_mg_l": "23.8",
+            "Calcium_Ca_mg_l": "49.5"
+        }
+    },
+    {
+        "Region": "Gemeente 231",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.4",
+            "Alkalinity_TAC_mmol_l": "2.63",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "367",
+            "Sodium_Na_mg_l": "17.6",
+            "Chlorides_Cl_mg_l": "23.2",
+            "Calcium_Ca_mg_l": "40.1"
+        }
+    },
+    {
+        "Region": "Gemeente 232",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.6",
+            "Alkalinity_TAC_mmol_l": "2.59",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "314",
+            "Sodium_Na_mg_l": "20.3",
+            "Chlorides_Cl_mg_l": "17.6",
+            "Calcium_Ca_mg_l": "42.1"
+        }
+    },
+    {
+        "Region": "Gemeente 233",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.8",
+            "Alkalinity_TAC_mmol_l": "2.71",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "314",
+            "Sodium_Na_mg_l": "21.8",
+            "Chlorides_Cl_mg_l": "19.4",
+            "Calcium_Ca_mg_l": "49.1"
+        }
+    },
+    {
+        "Region": "Gemeente 234",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.6",
+            "Alkalinity_TAC_mmol_l": "2.90",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "329",
+            "Sodium_Na_mg_l": "21.8",
+            "Chlorides_Cl_mg_l": "19.7",
+            "Calcium_Ca_mg_l": "46.4"
+        }
+    },
+    {
+        "Region": "Gemeente 235",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.9",
+            "Alkalinity_TAC_mmol_l": "2.56",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "318",
+            "Sodium_Na_mg_l": "26.5",
+            "Chlorides_Cl_mg_l": "23.4",
+            "Calcium_Ca_mg_l": "49.3"
+        }
+    },
+    {
+        "Region": "Gemeente 236",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.8",
+            "Alkalinity_TAC_mmol_l": "2.74",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "343",
+            "Sodium_Na_mg_l": "25.5",
+            "Chlorides_Cl_mg_l": "20.3",
+            "Calcium_Ca_mg_l": "42.8"
+        }
+    },
+    {
+        "Region": "Gemeente 237",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.4",
+            "Alkalinity_TAC_mmol_l": "2.45",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "358",
+            "Sodium_Na_mg_l": "23.4",
+            "Chlorides_Cl_mg_l": "28.6",
+            "Calcium_Ca_mg_l": "44.5"
+        }
+    },
+    {
+        "Region": "Gemeente 238",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.3",
+            "Alkalinity_TAC_mmol_l": "2.56",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "365",
+            "Sodium_Na_mg_l": "16.2",
+            "Chlorides_Cl_mg_l": "17.9",
+            "Calcium_Ca_mg_l": "41.6"
+        }
+    },
+    {
+        "Region": "Gemeente 239",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.6",
+            "Alkalinity_TAC_mmol_l": "2.07",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "313",
+            "Sodium_Na_mg_l": "15.9",
+            "Chlorides_Cl_mg_l": "17.8",
+            "Calcium_Ca_mg_l": "46.3"
+        }
+    },
+    {
+        "Region": "Gemeente 240",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.8",
+            "Alkalinity_TAC_mmol_l": "2.54",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "346",
+            "Sodium_Na_mg_l": "17.1",
+            "Chlorides_Cl_mg_l": "16.0",
+            "Calcium_Ca_mg_l": "43.0"
+        }
+    },
+    {
+        "Region": "Gemeente 241",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.4",
+            "Alkalinity_TAC_mmol_l": "2.44",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "369",
+            "Sodium_Na_mg_l": "20.9",
+            "Chlorides_Cl_mg_l": "25.9",
+            "Calcium_Ca_mg_l": "40.9"
+        }
+    },
+    {
+        "Region": "Gemeente 242",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.3",
+            "Alkalinity_TAC_mmol_l": "2.66",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "348",
+            "Sodium_Na_mg_l": "23.1",
+            "Chlorides_Cl_mg_l": "20.8",
+            "Calcium_Ca_mg_l": "41.3"
+        }
+    },
+    {
+        "Region": "Gemeente 243",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.1",
+            "Alkalinity_TAC_mmol_l": "2.15",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "356",
+            "Sodium_Na_mg_l": "27.5",
+            "Chlorides_Cl_mg_l": "17.6",
+            "Calcium_Ca_mg_l": "41.6"
+        }
+    },
+    {
+        "Region": "Gemeente 244",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.2",
+            "Alkalinity_TAC_mmol_l": "2.70",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "349",
+            "Sodium_Na_mg_l": "27.0",
+            "Chlorides_Cl_mg_l": "19.1",
+            "Calcium_Ca_mg_l": "44.4"
+        }
+    },
+    {
+        "Region": "Gemeente 245",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.0",
+            "Alkalinity_TAC_mmol_l": "2.10",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "329",
+            "Sodium_Na_mg_l": "20.0",
+            "Chlorides_Cl_mg_l": "29.0",
+            "Calcium_Ca_mg_l": "46.6"
+        }
+    },
+    {
+        "Region": "Gemeente 246",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.8",
+            "Alkalinity_TAC_mmol_l": "2.78",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "321",
+            "Sodium_Na_mg_l": "22.6",
+            "Chlorides_Cl_mg_l": "19.6",
+            "Calcium_Ca_mg_l": "49.4"
+        }
+    },
+    {
+        "Region": "Gemeente 247",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.2",
+            "Alkalinity_TAC_mmol_l": "2.33",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "326",
+            "Sodium_Na_mg_l": "19.9",
+            "Chlorides_Cl_mg_l": "23.0",
+            "Calcium_Ca_mg_l": "47.0"
+        }
+    },
+    {
+        "Region": "Gemeente 248",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.5",
+            "Alkalinity_TAC_mmol_l": "2.63",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "340",
+            "Sodium_Na_mg_l": "29.7",
+            "Chlorides_Cl_mg_l": "28.7",
+            "Calcium_Ca_mg_l": "40.1"
+        }
+    },
+    {
+        "Region": "Gemeente 249",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.9",
+            "Alkalinity_TAC_mmol_l": "2.46",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "337",
+            "Sodium_Na_mg_l": "20.2",
+            "Chlorides_Cl_mg_l": "16.3",
+            "Calcium_Ca_mg_l": "45.7"
+        }
+    },
+    {
+        "Region": "Gemeente 250",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.8",
+            "Alkalinity_TAC_mmol_l": "2.71",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "331",
+            "Sodium_Na_mg_l": "21.0",
+            "Chlorides_Cl_mg_l": "24.3",
+            "Calcium_Ca_mg_l": "40.9"
+        }
+    },
+    {
+        "Region": "Gemeente 251",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.4",
+            "Alkalinity_TAC_mmol_l": "2.66",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "363",
+            "Sodium_Na_mg_l": "16.4",
+            "Chlorides_Cl_mg_l": "24.8",
+            "Calcium_Ca_mg_l": "41.8"
+        }
+    },
+    {
+        "Region": "Gemeente 252",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.5",
+            "Alkalinity_TAC_mmol_l": "2.43",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "374",
+            "Sodium_Na_mg_l": "22.1",
+            "Chlorides_Cl_mg_l": "16.3",
+            "Calcium_Ca_mg_l": "46.0"
+        }
+    },
+    {
+        "Region": "Gemeente 253",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.1",
+            "Alkalinity_TAC_mmol_l": "2.46",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "336",
+            "Sodium_Na_mg_l": "19.5",
+            "Chlorides_Cl_mg_l": "20.0",
+            "Calcium_Ca_mg_l": "47.4"
+        }
+    },
+    {
+        "Region": "Gemeente 254",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.6",
+            "Alkalinity_TAC_mmol_l": "2.31",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "309",
+            "Sodium_Na_mg_l": "29.7",
+            "Chlorides_Cl_mg_l": "29.9",
+            "Calcium_Ca_mg_l": "45.8"
+        }
+    },
+    {
+        "Region": "Gemeente 255",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.1",
+            "Alkalinity_TAC_mmol_l": "2.35",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "349",
+            "Sodium_Na_mg_l": "24.4",
+            "Chlorides_Cl_mg_l": "22.3",
+            "Calcium_Ca_mg_l": "48.0"
+        }
+    },
+    {
+        "Region": "Gemeente 256",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.4",
+            "Alkalinity_TAC_mmol_l": "2.33",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "365",
+            "Sodium_Na_mg_l": "22.5",
+            "Chlorides_Cl_mg_l": "23.8",
+            "Calcium_Ca_mg_l": "46.3"
+        }
+    },
+    {
+        "Region": "Gemeente 257",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.6",
+            "Alkalinity_TAC_mmol_l": "2.86",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "344",
+            "Sodium_Na_mg_l": "22.2",
+            "Chlorides_Cl_mg_l": "16.0",
+            "Calcium_Ca_mg_l": "44.2"
+        }
+    },
+    {
+        "Region": "Gemeente 258",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.0",
+            "Alkalinity_TAC_mmol_l": "2.02",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "327",
+            "Sodium_Na_mg_l": "29.3",
+            "Chlorides_Cl_mg_l": "23.2",
+            "Calcium_Ca_mg_l": "49.6"
+        }
+    },
+    {
+        "Region": "Gemeente 259",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.5",
+            "Alkalinity_TAC_mmol_l": "2.19",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "336",
+            "Sodium_Na_mg_l": "17.9",
+            "Chlorides_Cl_mg_l": "17.7",
+            "Calcium_Ca_mg_l": "47.9"
+        }
+    },
+    {
+        "Region": "Gemeente 260",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.7",
+            "Alkalinity_TAC_mmol_l": "2.71",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "348",
+            "Sodium_Na_mg_l": "30.0",
+            "Chlorides_Cl_mg_l": "18.0",
+            "Calcium_Ca_mg_l": "48.7"
+        }
+    },
+    {
+        "Region": "Gemeente 261",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.0",
+            "Alkalinity_TAC_mmol_l": "2.73",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "346",
+            "Sodium_Na_mg_l": "16.7",
+            "Chlorides_Cl_mg_l": "16.5",
+            "Calcium_Ca_mg_l": "46.1"
+        }
+    },
+    {
+        "Region": "Gemeente 262",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.2",
+            "Alkalinity_TAC_mmol_l": "2.12",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "349",
+            "Sodium_Na_mg_l": "17.5",
+            "Chlorides_Cl_mg_l": "20.0",
+            "Calcium_Ca_mg_l": "42.0"
+        }
+    },
+    {
+        "Region": "Gemeente 263",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.4",
+            "Alkalinity_TAC_mmol_l": "2.99",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "343",
+            "Sodium_Na_mg_l": "28.3",
+            "Chlorides_Cl_mg_l": "20.3",
+            "Calcium_Ca_mg_l": "40.2"
+        }
+    },
+    {
+        "Region": "Gemeente 264",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.2",
+            "Alkalinity_TAC_mmol_l": "2.31",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "347",
+            "Sodium_Na_mg_l": "16.9",
+            "Chlorides_Cl_mg_l": "30.0",
+            "Calcium_Ca_mg_l": "50.0"
+        }
+    },
+    {
+        "Region": "Gemeente 265",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.8",
+            "Alkalinity_TAC_mmol_l": "2.97",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "330",
+            "Sodium_Na_mg_l": "24.1",
+            "Chlorides_Cl_mg_l": "23.5",
+            "Calcium_Ca_mg_l": "49.1"
+        }
+    },
+    {
+        "Region": "Gemeente 266",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.5",
+            "Alkalinity_TAC_mmol_l": "2.62",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "309",
+            "Sodium_Na_mg_l": "24.2",
+            "Chlorides_Cl_mg_l": "21.1",
+            "Calcium_Ca_mg_l": "43.7"
+        }
+    },
+    {
+        "Region": "Gemeente 267",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.1",
+            "Alkalinity_TAC_mmol_l": "2.03",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "332",
+            "Sodium_Na_mg_l": "27.2",
+            "Chlorides_Cl_mg_l": "16.3",
+            "Calcium_Ca_mg_l": "45.6"
+        }
+    },
+    {
+        "Region": "Gemeente 268",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.8",
+            "Alkalinity_TAC_mmol_l": "2.34",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "351",
+            "Sodium_Na_mg_l": "17.1",
+            "Chlorides_Cl_mg_l": "27.2",
+            "Calcium_Ca_mg_l": "45.6"
+        }
+    },
+    {
+        "Region": "Gemeente 269",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.0",
+            "Alkalinity_TAC_mmol_l": "2.26",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "334",
+            "Sodium_Na_mg_l": "17.0",
+            "Chlorides_Cl_mg_l": "23.6",
+            "Calcium_Ca_mg_l": "48.3"
+        }
+    },
+    {
+        "Region": "Gemeente 270",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.2",
+            "Alkalinity_TAC_mmol_l": "2.49",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "346",
+            "Sodium_Na_mg_l": "29.7",
+            "Chlorides_Cl_mg_l": "18.7",
+            "Calcium_Ca_mg_l": "46.3"
+        }
+    },
+    {
+        "Region": "Gemeente 271",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.8",
+            "Alkalinity_TAC_mmol_l": "2.56",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "344",
+            "Sodium_Na_mg_l": "17.8",
+            "Chlorides_Cl_mg_l": "19.0",
+            "Calcium_Ca_mg_l": "48.8"
+        }
+    },
+    {
+        "Region": "Gemeente 272",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.8",
+            "Alkalinity_TAC_mmol_l": "2.17",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "325",
+            "Sodium_Na_mg_l": "20.9",
+            "Chlorides_Cl_mg_l": "29.4",
+            "Calcium_Ca_mg_l": "49.4"
+        }
+    },
+    {
+        "Region": "Gemeente 273",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.5",
+            "Alkalinity_TAC_mmol_l": "2.98",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "344",
+            "Sodium_Na_mg_l": "18.1",
+            "Chlorides_Cl_mg_l": "24.7",
+            "Calcium_Ca_mg_l": "45.9"
+        }
+    },
+    {
+        "Region": "Gemeente 274",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.1",
+            "Alkalinity_TAC_mmol_l": "2.76",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "337",
+            "Sodium_Na_mg_l": "15.6",
+            "Chlorides_Cl_mg_l": "25.5",
+            "Calcium_Ca_mg_l": "45.4"
+        }
+    },
+    {
+        "Region": "Gemeente 275",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.3",
+            "Alkalinity_TAC_mmol_l": "2.64",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "353",
+            "Sodium_Na_mg_l": "29.3",
+            "Chlorides_Cl_mg_l": "23.9",
+            "Calcium_Ca_mg_l": "48.4"
+        }
+    },
+    {
+        "Region": "Gemeente 276",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.7",
+            "Alkalinity_TAC_mmol_l": "2.28",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "336",
+            "Sodium_Na_mg_l": "22.7",
+            "Chlorides_Cl_mg_l": "29.5",
+            "Calcium_Ca_mg_l": "41.1"
+        }
+    },
+    {
+        "Region": "Gemeente 277",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.2",
+            "Alkalinity_TAC_mmol_l": "2.90",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "345",
+            "Sodium_Na_mg_l": "16.5",
+            "Chlorides_Cl_mg_l": "19.8",
+            "Calcium_Ca_mg_l": "44.5"
+        }
+    },
+    {
+        "Region": "Gemeente 278",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.7",
+            "Alkalinity_TAC_mmol_l": "2.06",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "342",
+            "Sodium_Na_mg_l": "19.0",
+            "Chlorides_Cl_mg_l": "22.1",
+            "Calcium_Ca_mg_l": "46.4"
+        }
+    },
+    {
+        "Region": "Gemeente 279",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.0",
+            "Alkalinity_TAC_mmol_l": "2.92",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "331",
+            "Sodium_Na_mg_l": "19.9",
+            "Chlorides_Cl_mg_l": "17.2",
+            "Calcium_Ca_mg_l": "46.9"
+        }
+    },
+    {
+        "Region": "Gemeente 280",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.5",
+            "Alkalinity_TAC_mmol_l": "2.84",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "302",
+            "Sodium_Na_mg_l": "29.3",
+            "Chlorides_Cl_mg_l": "28.1",
+            "Calcium_Ca_mg_l": "43.5"
+        }
+    },
+    {
+        "Region": "Gemeente 281",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.8",
+            "Alkalinity_TAC_mmol_l": "2.80",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "326",
+            "Sodium_Na_mg_l": "29.0",
+            "Chlorides_Cl_mg_l": "29.7",
+            "Calcium_Ca_mg_l": "42.8"
+        }
+    },
+    {
+        "Region": "Gemeente 282",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.2",
+            "Alkalinity_TAC_mmol_l": "2.11",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "345",
+            "Sodium_Na_mg_l": "25.1",
+            "Chlorides_Cl_mg_l": "17.3",
+            "Calcium_Ca_mg_l": "48.1"
+        }
+    },
+    {
+        "Region": "Gemeente 283",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.2",
+            "Alkalinity_TAC_mmol_l": "2.95",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "360",
+            "Sodium_Na_mg_l": "28.3",
+            "Chlorides_Cl_mg_l": "28.1",
+            "Calcium_Ca_mg_l": "42.7"
+        }
+    },
+    {
+        "Region": "Gemeente 284",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.2",
+            "Alkalinity_TAC_mmol_l": "2.00",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "342",
+            "Sodium_Na_mg_l": "25.2",
+            "Chlorides_Cl_mg_l": "24.5",
+            "Calcium_Ca_mg_l": "49.3"
+        }
+    },
+    {
+        "Region": "Gemeente 285",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.4",
+            "Alkalinity_TAC_mmol_l": "2.12",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "349",
+            "Sodium_Na_mg_l": "22.3",
+            "Chlorides_Cl_mg_l": "29.2",
+            "Calcium_Ca_mg_l": "47.1"
+        }
+    },
+    {
+        "Region": "Gemeente 286",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.7",
+            "Alkalinity_TAC_mmol_l": "2.81",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "324",
+            "Sodium_Na_mg_l": "26.3",
+            "Chlorides_Cl_mg_l": "17.8",
+            "Calcium_Ca_mg_l": "45.9"
+        }
+    },
+    {
+        "Region": "Gemeente 287",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.2",
+            "Alkalinity_TAC_mmol_l": "2.07",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "354",
+            "Sodium_Na_mg_l": "28.8",
+            "Chlorides_Cl_mg_l": "26.6",
+            "Calcium_Ca_mg_l": "48.6"
+        }
+    },
+    {
+        "Region": "Gemeente 288",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.5",
+            "Alkalinity_TAC_mmol_l": "2.67",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "338",
+            "Sodium_Na_mg_l": "19.5",
+            "Chlorides_Cl_mg_l": "21.0",
+            "Calcium_Ca_mg_l": "44.7"
+        }
+    },
+    {
+        "Region": "Gemeente 289",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.8",
+            "Alkalinity_TAC_mmol_l": "2.33",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "319",
+            "Sodium_Na_mg_l": "28.9",
+            "Chlorides_Cl_mg_l": "25.3",
+            "Calcium_Ca_mg_l": "44.5"
+        }
+    },
+    {
+        "Region": "Gemeente 290",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.1",
+            "Alkalinity_TAC_mmol_l": "2.39",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "324",
+            "Sodium_Na_mg_l": "18.3",
+            "Chlorides_Cl_mg_l": "17.5",
+            "Calcium_Ca_mg_l": "42.1"
+        }
+    },
+    {
+        "Region": "Gemeente 291",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.3",
+            "Alkalinity_TAC_mmol_l": "2.19",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "358",
+            "Sodium_Na_mg_l": "18.5",
+            "Chlorides_Cl_mg_l": "24.6",
+            "Calcium_Ca_mg_l": "47.2"
+        }
+    },
+    {
+        "Region": "Gemeente 292",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.6",
+            "Alkalinity_TAC_mmol_l": "2.92",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "314",
+            "Sodium_Na_mg_l": "29.2",
+            "Chlorides_Cl_mg_l": "30.0",
+            "Calcium_Ca_mg_l": "46.0"
+        }
+    },
+    {
+        "Region": "Gemeente 293",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.3",
+            "Alkalinity_TAC_mmol_l": "2.75",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "362",
+            "Sodium_Na_mg_l": "25.6",
+            "Chlorides_Cl_mg_l": "28.1",
+            "Calcium_Ca_mg_l": "45.4"
+        }
+    },
+    {
+        "Region": "Gemeente 294",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.2",
+            "Alkalinity_TAC_mmol_l": "2.53",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "339",
+            "Sodium_Na_mg_l": "29.9",
+            "Chlorides_Cl_mg_l": "18.8",
+            "Calcium_Ca_mg_l": "49.9"
+        }
+    },
+    {
+        "Region": "Gemeente 295",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.9",
+            "Alkalinity_TAC_mmol_l": "2.22",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "325",
+            "Sodium_Na_mg_l": "25.6",
+            "Chlorides_Cl_mg_l": "26.6",
+            "Calcium_Ca_mg_l": "41.4"
+        }
+    },
+    {
+        "Region": "Gemeente 296",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.3",
+            "Alkalinity_TAC_mmol_l": "2.21",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "357",
+            "Sodium_Na_mg_l": "27.3",
+            "Chlorides_Cl_mg_l": "26.1",
+            "Calcium_Ca_mg_l": "43.4"
+        }
+    },
+    {
+        "Region": "Gemeente 297",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.1",
+            "Alkalinity_TAC_mmol_l": "2.21",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "325",
+            "Sodium_Na_mg_l": "16.8",
+            "Chlorides_Cl_mg_l": "16.6",
+            "Calcium_Ca_mg_l": "49.8"
+        }
+    },
+    {
+        "Region": "Gemeente 298",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.8",
+            "Alkalinity_TAC_mmol_l": "2.85",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "316",
+            "Sodium_Na_mg_l": "17.6",
+            "Chlorides_Cl_mg_l": "20.9",
+            "Calcium_Ca_mg_l": "46.2"
+        }
+    },
+    {
+        "Region": "Gemeente 299",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.4",
+            "Alkalinity_TAC_mmol_l": "2.26",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "363",
+            "Sodium_Na_mg_l": "25.5",
+            "Chlorides_Cl_mg_l": "20.1",
+            "Calcium_Ca_mg_l": "47.5"
+        }
+    },
+    {
+        "Region": "Gemeente 300",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.8",
+            "Alkalinity_TAC_mmol_l": "2.58",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "320",
+            "Sodium_Na_mg_l": "24.3",
+            "Chlorides_Cl_mg_l": "20.0",
+            "Calcium_Ca_mg_l": "43.1"
+        }
+    },
+    {
+        "Region": "Gemeente 301",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.8",
+            "Alkalinity_TAC_mmol_l": "2.27",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "315",
+            "Sodium_Na_mg_l": "21.9",
+            "Chlorides_Cl_mg_l": "27.7",
+            "Calcium_Ca_mg_l": "44.0"
+        }
+    },
+    {
+        "Region": "Gemeente 302",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.0",
+            "Alkalinity_TAC_mmol_l": "2.01",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "346",
+            "Sodium_Na_mg_l": "29.2",
+            "Chlorides_Cl_mg_l": "26.9",
+            "Calcium_Ca_mg_l": "44.0"
+        }
+    },
+    {
+        "Region": "Gemeente 303",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.4",
+            "Alkalinity_TAC_mmol_l": "2.89",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "370",
+            "Sodium_Na_mg_l": "23.1",
+            "Chlorides_Cl_mg_l": "17.3",
+            "Calcium_Ca_mg_l": "41.0"
+        }
+    },
+    {
+        "Region": "Gemeente 304",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.7",
+            "Alkalinity_TAC_mmol_l": "2.36",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "309",
+            "Sodium_Na_mg_l": "20.5",
+            "Chlorides_Cl_mg_l": "21.2",
+            "Calcium_Ca_mg_l": "44.0"
+        }
+    },
+    {
+        "Region": "Gemeente 305",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.7",
+            "Alkalinity_TAC_mmol_l": "2.49",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "315",
+            "Sodium_Na_mg_l": "20.1",
+            "Chlorides_Cl_mg_l": "19.7",
+            "Calcium_Ca_mg_l": "41.4"
+        }
+    },
+    {
+        "Region": "Gemeente 306",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.4",
+            "Alkalinity_TAC_mmol_l": "2.14",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "335",
+            "Sodium_Na_mg_l": "27.9",
+            "Chlorides_Cl_mg_l": "25.0",
+            "Calcium_Ca_mg_l": "45.0"
+        }
+    },
+    {
+        "Region": "Gemeente 307",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.0",
+            "Alkalinity_TAC_mmol_l": "2.81",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "320",
+            "Sodium_Na_mg_l": "22.9",
+            "Chlorides_Cl_mg_l": "27.8",
+            "Calcium_Ca_mg_l": "43.1"
+        }
+    },
+    {
+        "Region": "Gemeente 308",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.3",
+            "Alkalinity_TAC_mmol_l": "2.65",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "363",
+            "Sodium_Na_mg_l": "27.0",
+            "Chlorides_Cl_mg_l": "25.9",
+            "Calcium_Ca_mg_l": "42.6"
+        }
+    },
+    {
+        "Region": "Gemeente 309",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.2",
+            "Alkalinity_TAC_mmol_l": "2.40",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "367",
+            "Sodium_Na_mg_l": "29.1",
+            "Chlorides_Cl_mg_l": "25.4",
+            "Calcium_Ca_mg_l": "42.6"
+        }
+    },
+    {
+        "Region": "Gemeente 310",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.4",
+            "Alkalinity_TAC_mmol_l": "2.22",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "368",
+            "Sodium_Na_mg_l": "26.9",
+            "Chlorides_Cl_mg_l": "15.5",
+            "Calcium_Ca_mg_l": "46.0"
+        }
+    },
+    {
+        "Region": "Gemeente 311",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.8",
+            "Alkalinity_TAC_mmol_l": "2.91",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "329",
+            "Sodium_Na_mg_l": "23.3",
+            "Chlorides_Cl_mg_l": "20.9",
+            "Calcium_Ca_mg_l": "40.8"
+        }
+    },
+    {
+        "Region": "Gemeente 312",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.9",
+            "Alkalinity_TAC_mmol_l": "2.10",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "354",
+            "Sodium_Na_mg_l": "29.8",
+            "Chlorides_Cl_mg_l": "16.0",
+            "Calcium_Ca_mg_l": "42.2"
+        }
+    },
+    {
+        "Region": "Gemeente 313",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.4",
+            "Alkalinity_TAC_mmol_l": "2.58",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "338",
+            "Sodium_Na_mg_l": "29.5",
+            "Chlorides_Cl_mg_l": "27.3",
+            "Calcium_Ca_mg_l": "49.5"
+        }
+    },
+    {
+        "Region": "Gemeente 314",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.6",
+            "Alkalinity_TAC_mmol_l": "2.80",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "309",
+            "Sodium_Na_mg_l": "29.1",
+            "Chlorides_Cl_mg_l": "16.4",
+            "Calcium_Ca_mg_l": "40.4"
+        }
+    },
+    {
+        "Region": "Gemeente 315",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.4",
+            "Alkalinity_TAC_mmol_l": "2.80",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "352",
+            "Sodium_Na_mg_l": "28.4",
+            "Chlorides_Cl_mg_l": "24.9",
+            "Calcium_Ca_mg_l": "47.3"
+        }
+    },
+    {
+        "Region": "Gemeente 316",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.3",
+            "Alkalinity_TAC_mmol_l": "2.78",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "360",
+            "Sodium_Na_mg_l": "28.7",
+            "Chlorides_Cl_mg_l": "26.7",
+            "Calcium_Ca_mg_l": "40.2"
+        }
+    },
+    {
+        "Region": "Gemeente 317",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.8",
+            "Alkalinity_TAC_mmol_l": "2.14",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "343",
+            "Sodium_Na_mg_l": "26.1",
+            "Chlorides_Cl_mg_l": "25.0",
+            "Calcium_Ca_mg_l": "42.5"
+        }
+    },
+    {
+        "Region": "Gemeente 318",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.2",
+            "Alkalinity_TAC_mmol_l": "2.73",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "337",
+            "Sodium_Na_mg_l": "24.7",
+            "Chlorides_Cl_mg_l": "15.8",
+            "Calcium_Ca_mg_l": "44.5"
+        }
+    },
+    {
+        "Region": "Gemeente 319",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.1",
+            "Alkalinity_TAC_mmol_l": "2.18",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "340",
+            "Sodium_Na_mg_l": "28.4",
+            "Chlorides_Cl_mg_l": "20.3",
+            "Calcium_Ca_mg_l": "47.1"
+        }
+    },
+    {
+        "Region": "Gemeente 320",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.5",
+            "Alkalinity_TAC_mmol_l": "2.64",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "342",
+            "Sodium_Na_mg_l": "15.4",
+            "Chlorides_Cl_mg_l": "23.5",
+            "Calcium_Ca_mg_l": "47.4"
+        }
+    },
+    {
+        "Region": "Gemeente 321",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.7",
+            "Alkalinity_TAC_mmol_l": "2.78",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "349",
+            "Sodium_Na_mg_l": "17.4",
+            "Chlorides_Cl_mg_l": "23.8",
+            "Calcium_Ca_mg_l": "46.5"
+        }
+    },
+    {
+        "Region": "Gemeente 322",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.2",
+            "Alkalinity_TAC_mmol_l": "2.25",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "361",
+            "Sodium_Na_mg_l": "29.9",
+            "Chlorides_Cl_mg_l": "17.5",
+            "Calcium_Ca_mg_l": "44.8"
+        }
+    },
+    {
+        "Region": "Gemeente 323",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.3",
+            "Alkalinity_TAC_mmol_l": "2.97",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "330",
+            "Sodium_Na_mg_l": "28.2",
+            "Chlorides_Cl_mg_l": "20.0",
+            "Calcium_Ca_mg_l": "47.2"
+        }
+    },
+    {
+        "Region": "Gemeente 324",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.8",
+            "Alkalinity_TAC_mmol_l": "2.76",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "316",
+            "Sodium_Na_mg_l": "17.8",
+            "Chlorides_Cl_mg_l": "19.4",
+            "Calcium_Ca_mg_l": "43.5"
+        }
+    },
+    {
+        "Region": "Gemeente 325",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.2",
+            "Alkalinity_TAC_mmol_l": "2.36",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "355",
+            "Sodium_Na_mg_l": "25.8",
+            "Chlorides_Cl_mg_l": "23.2",
+            "Calcium_Ca_mg_l": "47.3"
+        }
+    },
+    {
+        "Region": "Gemeente 326",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.5",
+            "Alkalinity_TAC_mmol_l": "2.87",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "315",
+            "Sodium_Na_mg_l": "21.8",
+            "Chlorides_Cl_mg_l": "28.8",
+            "Calcium_Ca_mg_l": "40.2"
+        }
+    },
+    {
+        "Region": "Gemeente 327",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.6",
+            "Alkalinity_TAC_mmol_l": "2.96",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "340",
+            "Sodium_Na_mg_l": "24.8",
+            "Chlorides_Cl_mg_l": "28.0",
+            "Calcium_Ca_mg_l": "47.2"
+        }
+    },
+    {
+        "Region": "Gemeente 328",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.1",
+            "Alkalinity_TAC_mmol_l": "2.92",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "329",
+            "Sodium_Na_mg_l": "21.2",
+            "Chlorides_Cl_mg_l": "25.3",
+            "Calcium_Ca_mg_l": "42.5"
+        }
+    },
+    {
+        "Region": "Gemeente 329",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.1",
+            "Alkalinity_TAC_mmol_l": "2.93",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "330",
+            "Sodium_Na_mg_l": "20.3",
+            "Chlorides_Cl_mg_l": "18.6",
+            "Calcium_Ca_mg_l": "46.6"
+        }
+    },
+    {
+        "Region": "Gemeente 330",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.7",
+            "Alkalinity_TAC_mmol_l": "3.00",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "340",
+            "Sodium_Na_mg_l": "24.4",
+            "Chlorides_Cl_mg_l": "26.2",
+            "Calcium_Ca_mg_l": "49.5"
+        }
+    },
+    {
+        "Region": "Gemeente 331",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.1",
+            "Alkalinity_TAC_mmol_l": "2.16",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "360",
+            "Sodium_Na_mg_l": "22.6",
+            "Chlorides_Cl_mg_l": "26.7",
+            "Calcium_Ca_mg_l": "48.7"
+        }
+    },
+    {
+        "Region": "Gemeente 332",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.3",
+            "Alkalinity_TAC_mmol_l": "2.33",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "359",
+            "Sodium_Na_mg_l": "26.3",
+            "Chlorides_Cl_mg_l": "22.1",
+            "Calcium_Ca_mg_l": "43.7"
+        }
+    },
+    {
+        "Region": "Gemeente 333",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.7",
+            "Alkalinity_TAC_mmol_l": "2.93",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "347",
+            "Sodium_Na_mg_l": "25.1",
+            "Chlorides_Cl_mg_l": "16.5",
+            "Calcium_Ca_mg_l": "43.9"
+        }
+    },
+    {
+        "Region": "Gemeente 334",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.9",
+            "Alkalinity_TAC_mmol_l": "2.34",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "356",
+            "Sodium_Na_mg_l": "19.9",
+            "Chlorides_Cl_mg_l": "22.1",
+            "Calcium_Ca_mg_l": "49.9"
+        }
+    },
+    {
+        "Region": "Gemeente 335",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.2",
+            "Alkalinity_TAC_mmol_l": "2.85",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "365",
+            "Sodium_Na_mg_l": "16.5",
+            "Chlorides_Cl_mg_l": "24.7",
+            "Calcium_Ca_mg_l": "41.9"
+        }
+    },
+    {
+        "Region": "Gemeente 336",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.2",
+            "Alkalinity_TAC_mmol_l": "2.87",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "326",
+            "Sodium_Na_mg_l": "23.3",
+            "Chlorides_Cl_mg_l": "25.8",
+            "Calcium_Ca_mg_l": "44.3"
+        }
+    },
+    {
+        "Region": "Gemeente 337",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.1",
+            "Alkalinity_TAC_mmol_l": "2.67",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "346",
+            "Sodium_Na_mg_l": "24.4",
+            "Chlorides_Cl_mg_l": "17.9",
+            "Calcium_Ca_mg_l": "41.1"
+        }
+    },
+    {
+        "Region": "Gemeente 338",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.9",
+            "Alkalinity_TAC_mmol_l": "2.99",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "323",
+            "Sodium_Na_mg_l": "16.9",
+            "Chlorides_Cl_mg_l": "18.4",
+            "Calcium_Ca_mg_l": "42.3"
+        }
+    },
+    {
+        "Region": "Gemeente 339",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.6",
+            "Alkalinity_TAC_mmol_l": "2.48",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "333",
+            "Sodium_Na_mg_l": "28.1",
+            "Chlorides_Cl_mg_l": "21.9",
+            "Calcium_Ca_mg_l": "43.1"
+        }
+    },
+    {
+        "Region": "Gemeente 340",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.9",
+            "Alkalinity_TAC_mmol_l": "2.64",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "332",
+            "Sodium_Na_mg_l": "15.2",
+            "Chlorides_Cl_mg_l": "25.0",
+            "Calcium_Ca_mg_l": "46.7"
+        }
+    },
+    {
+        "Region": "Gemeente 341",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.7",
+            "Alkalinity_TAC_mmol_l": "2.16",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "341",
+            "Sodium_Na_mg_l": "22.4",
+            "Chlorides_Cl_mg_l": "18.4",
+            "Calcium_Ca_mg_l": "43.2"
+        }
+    },
+    {
+        "Region": "Gemeente 342",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.3",
+            "Alkalinity_TAC_mmol_l": "2.53",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "369",
+            "Sodium_Na_mg_l": "29.0",
+            "Chlorides_Cl_mg_l": "28.5",
+            "Calcium_Ca_mg_l": "40.7"
+        }
+    }
+]

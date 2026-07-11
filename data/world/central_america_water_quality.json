@@ -1,0 +1,3614 @@
+[
+    {
+        "Region": "Mexico City (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.0",
+            "Alkalinity_TAC_mmol_l": "3.5",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "600",
+            "Sodium_Na_mg_l": "60.0",
+            "Chlorides_Cl_mg_l": "75.0",
+            "Calcium_Ca_mg_l": "85.0"
+        }
+    },
+    {
+        "Region": "San José (Costa Rica)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.0",
+            "Alkalinity_TAC_mmol_l": "1.0",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "150",
+            "Sodium_Na_mg_l": "10.0",
+            "Chlorides_Cl_mg_l": "12.0",
+            "Calcium_Ca_mg_l": "25.0"
+        }
+    },
+    {
+        "Region": "Panama City (Panama)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.0",
+            "Alkalinity_TAC_mmol_l": "1.5",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "210",
+            "Sodium_Na_mg_l": "15.0",
+            "Chlorides_Cl_mg_l": "18.0",
+            "Calcium_Ca_mg_l": "35.0"
+        }
+    },
+    {
+        "Region": "Cancun (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.8",
+            "Alkalinity_TAC_mmol_l": "3.78",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "478",
+            "Sodium_Na_mg_l": "47.9",
+            "Chlorides_Cl_mg_l": "79.5",
+            "Calcium_Ca_mg_l": "81.1"
+        }
+    },
+    {
+        "Region": "Rosarito (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.7",
+            "Alkalinity_TAC_mmol_l": "2.04",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "462",
+            "Sodium_Na_mg_l": "53.5",
+            "Chlorides_Cl_mg_l": "76.9",
+            "Calcium_Ca_mg_l": "61.8"
+        }
+    },
+    {
+        "Region": "Kanasín (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "18.3",
+            "Alkalinity_TAC_mmol_l": "2.37",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "610",
+            "Sodium_Na_mg_l": "32.6",
+            "Chlorides_Cl_mg_l": "63.2",
+            "Calcium_Ca_mg_l": "122.4"
+        }
+    },
+    {
+        "Region": "San Luis Potosí (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.5",
+            "Alkalinity_TAC_mmol_l": "1.51",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "165",
+            "Sodium_Na_mg_l": "10.8",
+            "Chlorides_Cl_mg_l": "23.5",
+            "Calcium_Ca_mg_l": "23.8"
+        }
+    },
+    {
+        "Region": "Valladolid (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.6",
+            "Alkalinity_TAC_mmol_l": "3.11",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "265",
+            "Sodium_Na_mg_l": "8.1",
+            "Chlorides_Cl_mg_l": "10.1",
+            "Calcium_Ca_mg_l": "35.9"
+        }
+    },
+    {
+        "Region": "Reynosa (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.3",
+            "Alkalinity_TAC_mmol_l": "1.57",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "182",
+            "Sodium_Na_mg_l": "9.7",
+            "Chlorides_Cl_mg_l": "22.8",
+            "Calcium_Ca_mg_l": "44.4"
+        }
+    },
+    {
+        "Region": "Tlatelolco (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.0",
+            "Alkalinity_TAC_mmol_l": "3.46",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "174",
+            "Sodium_Na_mg_l": "11.4",
+            "Chlorides_Cl_mg_l": "13.6",
+            "Calcium_Ca_mg_l": "38.4"
+        }
+    },
+    {
+        "Region": "San Pablo del Monte (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.0",
+            "Alkalinity_TAC_mmol_l": "2.53",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "453",
+            "Sodium_Na_mg_l": "42.6",
+            "Chlorides_Cl_mg_l": "71.6",
+            "Calcium_Ca_mg_l": "69.3"
+        }
+    },
+    {
+        "Region": "Torreón (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.4",
+            "Alkalinity_TAC_mmol_l": "3.40",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "238",
+            "Sodium_Na_mg_l": "7.6",
+            "Chlorides_Cl_mg_l": "12.8",
+            "Calcium_Ca_mg_l": "43.6"
+        }
+    },
+    {
+        "Region": "San José Pibtuch (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.2",
+            "Alkalinity_TAC_mmol_l": "3.26",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "217",
+            "Sodium_Na_mg_l": "6.8",
+            "Chlorides_Cl_mg_l": "19.2",
+            "Calcium_Ca_mg_l": "39.3"
+        }
+    },
+    {
+        "Region": "Avenida Guerrero (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.5",
+            "Alkalinity_TAC_mmol_l": "3.21",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "197",
+            "Sodium_Na_mg_l": "5.3",
+            "Chlorides_Cl_mg_l": "14.8",
+            "Calcium_Ca_mg_l": "18.1"
+        }
+    },
+    {
+        "Region": "Coatlichan (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.5",
+            "Alkalinity_TAC_mmol_l": "3.16",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "252",
+            "Sodium_Na_mg_l": "7.3",
+            "Chlorides_Cl_mg_l": "23.1",
+            "Calcium_Ca_mg_l": "44.8"
+        }
+    },
+    {
+        "Region": "Ciudad del Carmen (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.5",
+            "Alkalinity_TAC_mmol_l": "1.45",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "183",
+            "Sodium_Na_mg_l": "9.7",
+            "Chlorides_Cl_mg_l": "15.6",
+            "Calcium_Ca_mg_l": "43.5"
+        }
+    },
+    {
+        "Region": "Sabinas Hidalgo (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.9",
+            "Alkalinity_TAC_mmol_l": "1.58",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "339",
+            "Sodium_Na_mg_l": "9.2",
+            "Chlorides_Cl_mg_l": "21.7",
+            "Calcium_Ca_mg_l": "44.0"
+        }
+    },
+    {
+        "Region": "Villa de Álvarez (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.6",
+            "Alkalinity_TAC_mmol_l": "3.03",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "518",
+            "Sodium_Na_mg_l": "23.4",
+            "Chlorides_Cl_mg_l": "48.6",
+            "Calcium_Ca_mg_l": "127.5"
+        }
+    },
+    {
+        "Region": "Izamal (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "18.8",
+            "Alkalinity_TAC_mmol_l": "3.96",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "629",
+            "Sodium_Na_mg_l": "43.4",
+            "Chlorides_Cl_mg_l": "59.7",
+            "Calcium_Ca_mg_l": "142.6"
+        }
+    },
+    {
+        "Region": "Ticul (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.7",
+            "Alkalinity_TAC_mmol_l": "1.31",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "186",
+            "Sodium_Na_mg_l": "12.9",
+            "Chlorides_Cl_mg_l": "16.7",
+            "Calcium_Ca_mg_l": "44.3"
+        }
+    },
+    {
+        "Region": "Malacachtépec Momoxco (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.5",
+            "Alkalinity_TAC_mmol_l": "1.05",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "566",
+            "Sodium_Na_mg_l": "28.0",
+            "Chlorides_Cl_mg_l": "45.4",
+            "Calcium_Ca_mg_l": "91.4"
+        }
+    },
+    {
+        "Region": "Tuxtla Gutiérrez (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "20.4",
+            "Alkalinity_TAC_mmol_l": "2.42",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "681",
+            "Sodium_Na_mg_l": "31.6",
+            "Chlorides_Cl_mg_l": "56.0",
+            "Calcium_Ca_mg_l": "103.4"
+        }
+    },
+    {
+        "Region": "Cacaxtla (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.3",
+            "Alkalinity_TAC_mmol_l": "3.97",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "252",
+            "Sodium_Na_mg_l": "6.7",
+            "Chlorides_Cl_mg_l": "14.1",
+            "Calcium_Ca_mg_l": "35.0"
+        }
+    },
+    {
+        "Region": "Gimnasio Multidisciplinario Nuevo Laredo (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "18.5",
+            "Alkalinity_TAC_mmol_l": "2.05",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "607",
+            "Sodium_Na_mg_l": "25.0",
+            "Chlorides_Cl_mg_l": "53.0",
+            "Calcium_Ca_mg_l": "127.8"
+        }
+    },
+    {
+        "Region": "Algodones (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.0",
+            "Alkalinity_TAC_mmol_l": "2.83",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "475",
+            "Sodium_Na_mg_l": "56.6",
+            "Chlorides_Cl_mg_l": "82.7",
+            "Calcium_Ca_mg_l": "72.6"
+        }
+    },
+    {
+        "Region": "Tlajomulco de Zuñiga (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "24.7",
+            "Alkalinity_TAC_mmol_l": "3.39",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "796",
+            "Sodium_Na_mg_l": "44.0",
+            "Chlorides_Cl_mg_l": "58.6",
+            "Calcium_Ca_mg_l": "134.7"
+        }
+    },
+    {
+        "Region": "Sonoyta (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.4",
+            "Alkalinity_TAC_mmol_l": "1.73",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "336",
+            "Sodium_Na_mg_l": "10.5",
+            "Chlorides_Cl_mg_l": "22.0",
+            "Calcium_Ca_mg_l": "18.6"
+        }
+    },
+    {
+        "Region": "Santiago de Querétaro (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "10.5",
+            "Alkalinity_TAC_mmol_l": "1.74",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "390",
+            "Sodium_Na_mg_l": "57.6",
+            "Chlorides_Cl_mg_l": "62.0",
+            "Calcium_Ca_mg_l": "63.8"
+        }
+    },
+    {
+        "Region": "Tenochtitlan (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "10.8",
+            "Alkalinity_TAC_mmol_l": "1.45",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "389",
+            "Sodium_Na_mg_l": "74.6",
+            "Chlorides_Cl_mg_l": "62.8",
+            "Calcium_Ca_mg_l": "58.8"
+        }
+    },
+    {
+        "Region": "Saltillo (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "5.2",
+            "Alkalinity_TAC_mmol_l": "2.05",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "200",
+            "Sodium_Na_mg_l": "6.5",
+            "Chlorides_Cl_mg_l": "11.0",
+            "Calcium_Ca_mg_l": "39.8"
+        }
+    },
+    {
+        "Region": "Monterrey (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.7",
+            "Alkalinity_TAC_mmol_l": "1.26",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "314",
+            "Sodium_Na_mg_l": "5.8",
+            "Chlorides_Cl_mg_l": "17.8",
+            "Calcium_Ca_mg_l": "43.2"
+        }
+    },
+    {
+        "Region": "Jaltipan de Morelos (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "11.9",
+            "Alkalinity_TAC_mmol_l": "3.30",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "391",
+            "Sodium_Na_mg_l": "56.3",
+            "Chlorides_Cl_mg_l": "60.2",
+            "Calcium_Ca_mg_l": "66.7"
+        }
+    },
+    {
+        "Region": "Tepexpan (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "5.4",
+            "Alkalinity_TAC_mmol_l": "1.90",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "207",
+            "Sodium_Na_mg_l": "8.0",
+            "Chlorides_Cl_mg_l": "22.7",
+            "Calcium_Ca_mg_l": "21.8"
+        }
+    },
+    {
+        "Region": "Anapra (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.2",
+            "Alkalinity_TAC_mmol_l": "3.76",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "244",
+            "Sodium_Na_mg_l": "6.4",
+            "Chlorides_Cl_mg_l": "19.6",
+            "Calcium_Ca_mg_l": "20.0"
+        }
+    },
+    {
+        "Region": "Mezquital (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.5",
+            "Alkalinity_TAC_mmol_l": "1.44",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "170",
+            "Sodium_Na_mg_l": "9.7",
+            "Chlorides_Cl_mg_l": "10.3",
+            "Calcium_Ca_mg_l": "18.2"
+        }
+    },
+    {
+        "Region": "Hunuma (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "23.6",
+            "Alkalinity_TAC_mmol_l": "1.12",
+            "pH": "8.2",
+            "TDS_Conductivity_uS_cm": "750",
+            "Sodium_Na_mg_l": "21.3",
+            "Chlorides_Cl_mg_l": "47.0",
+            "Calcium_Ca_mg_l": "127.0"
+        }
+    },
+    {
+        "Region": "Túxpan (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "5.1",
+            "Alkalinity_TAC_mmol_l": "3.51",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "222",
+            "Sodium_Na_mg_l": "12.4",
+            "Chlorides_Cl_mg_l": "19.7",
+            "Calcium_Ca_mg_l": "26.6"
+        }
+    },
+    {
+        "Region": "Guadalupe (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "5.2",
+            "Alkalinity_TAC_mmol_l": "1.06",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "251",
+            "Sodium_Na_mg_l": "10.9",
+            "Chlorides_Cl_mg_l": "24.4",
+            "Calcium_Ca_mg_l": "41.6"
+        }
+    },
+    {
+        "Region": "Piedras Negras (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "18.2",
+            "Alkalinity_TAC_mmol_l": "1.13",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "589",
+            "Sodium_Na_mg_l": "28.7",
+            "Chlorides_Cl_mg_l": "36.9",
+            "Calcium_Ca_mg_l": "127.4"
+        }
+    },
+    {
+        "Region": "Ciudad de Armería (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "11.6",
+            "Alkalinity_TAC_mmol_l": "1.59",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "403",
+            "Sodium_Na_mg_l": "52.3",
+            "Chlorides_Cl_mg_l": "59.5",
+            "Calcium_Ca_mg_l": "78.7"
+        }
+    },
+    {
+        "Region": "Subteniente López (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "11.9",
+            "Alkalinity_TAC_mmol_l": "1.45",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "408",
+            "Sodium_Na_mg_l": "32.3",
+            "Chlorides_Cl_mg_l": "41.8",
+            "Calcium_Ca_mg_l": "73.8"
+        }
+    },
+    {
+        "Region": "Progreso (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "19.8",
+            "Alkalinity_TAC_mmol_l": "3.98",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "656",
+            "Sodium_Na_mg_l": "22.2",
+            "Chlorides_Cl_mg_l": "38.4",
+            "Calcium_Ca_mg_l": "135.7"
+        }
+    },
+    {
+        "Region": "Compuertas Borough, Baja California (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.2",
+            "Alkalinity_TAC_mmol_l": "2.26",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "461",
+            "Sodium_Na_mg_l": "57.0",
+            "Chlorides_Cl_mg_l": "55.1",
+            "Calcium_Ca_mg_l": "66.9"
+        }
+    },
+    {
+        "Region": "Otompan (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "24.0",
+            "Alkalinity_TAC_mmol_l": "3.12",
+            "pH": "8.2",
+            "TDS_Conductivity_uS_cm": "778",
+            "Sodium_Na_mg_l": "47.0",
+            "Chlorides_Cl_mg_l": "39.6",
+            "Calcium_Ca_mg_l": "124.4"
+        }
+    },
+    {
+        "Region": "Ojinaga Municipality (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.5",
+            "Alkalinity_TAC_mmol_l": "1.99",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "308",
+            "Sodium_Na_mg_l": "11.2",
+            "Chlorides_Cl_mg_l": "23.2",
+            "Calcium_Ca_mg_l": "41.2"
+        }
+    },
+    {
+        "Region": "Tijuana (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "10.8",
+            "Alkalinity_TAC_mmol_l": "1.78",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "384",
+            "Sodium_Na_mg_l": "35.9",
+            "Chlorides_Cl_mg_l": "56.2",
+            "Calcium_Ca_mg_l": "55.1"
+        }
+    },
+    {
+        "Region": "Zapopan (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.2",
+            "Alkalinity_TAC_mmol_l": "2.19",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "292",
+            "Sodium_Na_mg_l": "7.8",
+            "Chlorides_Cl_mg_l": "24.6",
+            "Calcium_Ca_mg_l": "32.0"
+        }
+    },
+    {
+        "Region": "San José del Cabo (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.8",
+            "Alkalinity_TAC_mmol_l": "1.68",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "488",
+            "Sodium_Na_mg_l": "77.2",
+            "Chlorides_Cl_mg_l": "79.2",
+            "Calcium_Ca_mg_l": "84.2"
+        }
+    },
+    {
+        "Region": "Tecate (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.5",
+            "Alkalinity_TAC_mmol_l": "1.18",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "278",
+            "Sodium_Na_mg_l": "7.8",
+            "Chlorides_Cl_mg_l": "14.3",
+            "Calcium_Ca_mg_l": "26.8"
+        }
+    },
+    {
+        "Region": "Ciudad Deportiva (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "5.3",
+            "Alkalinity_TAC_mmol_l": "2.51",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "214",
+            "Sodium_Na_mg_l": "14.7",
+            "Chlorides_Cl_mg_l": "25.0",
+            "Calcium_Ca_mg_l": "15.3"
+        }
+    },
+    {
+        "Region": "La Barca (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "22.4",
+            "Alkalinity_TAC_mmol_l": "3.14",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "724",
+            "Sodium_Na_mg_l": "22.3",
+            "Chlorides_Cl_mg_l": "43.3",
+            "Calcium_Ca_mg_l": "131.8"
+        }
+    },
+    {
+        "Region": "Las Delicias (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "11.0",
+            "Alkalinity_TAC_mmol_l": "1.67",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "427",
+            "Sodium_Na_mg_l": "75.7",
+            "Chlorides_Cl_mg_l": "47.1",
+            "Calcium_Ca_mg_l": "59.0"
+        }
+    },
+    {
+        "Region": "Puerto San Carlos (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.3",
+            "Alkalinity_TAC_mmol_l": "1.34",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "483",
+            "Sodium_Na_mg_l": "69.8",
+            "Chlorides_Cl_mg_l": "55.6",
+            "Calcium_Ca_mg_l": "84.3"
+        }
+    },
+    {
+        "Region": "Acapulco de Juárez (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "21.7",
+            "Alkalinity_TAC_mmol_l": "2.34",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "718",
+            "Sodium_Na_mg_l": "29.6",
+            "Chlorides_Cl_mg_l": "40.5",
+            "Calcium_Ca_mg_l": "111.9"
+        }
+    },
+    {
+        "Region": "Victoria de Durango (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.7",
+            "Alkalinity_TAC_mmol_l": "2.60",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "237",
+            "Sodium_Na_mg_l": "7.9",
+            "Chlorides_Cl_mg_l": "15.5",
+            "Calcium_Ca_mg_l": "21.8"
+        }
+    },
+    {
+        "Region": "La Chinesca (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "18.1",
+            "Alkalinity_TAC_mmol_l": "2.76",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "621",
+            "Sodium_Na_mg_l": "37.2",
+            "Chlorides_Cl_mg_l": "62.0",
+            "Calcium_Ca_mg_l": "117.1"
+        }
+    },
+    {
+        "Region": "Cuzamá (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "18.2",
+            "Alkalinity_TAC_mmol_l": "3.06",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "644",
+            "Sodium_Na_mg_l": "41.4",
+            "Chlorides_Cl_mg_l": "38.8",
+            "Calcium_Ca_mg_l": "118.6"
+        }
+    },
+    {
+        "Region": "Agua Prieta (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.7",
+            "Alkalinity_TAC_mmol_l": "3.85",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "472",
+            "Sodium_Na_mg_l": "62.8",
+            "Chlorides_Cl_mg_l": "79.7",
+            "Calcium_Ca_mg_l": "77.8"
+        }
+    },
+    {
+        "Region": "La Paz (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "24.4",
+            "Alkalinity_TAC_mmol_l": "1.29",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "778",
+            "Sodium_Na_mg_l": "49.0",
+            "Chlorides_Cl_mg_l": "39.0",
+            "Calcium_Ca_mg_l": "94.2"
+        }
+    },
+    {
+        "Region": "Tlaquepaque (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.5",
+            "Alkalinity_TAC_mmol_l": "1.69",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "501",
+            "Sodium_Na_mg_l": "50.2",
+            "Chlorides_Cl_mg_l": "48.0",
+            "Calcium_Ca_mg_l": "60.5"
+        }
+    },
+    {
+        "Region": "Ciudad del Conocimiento, UAEH (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "18.5",
+            "Alkalinity_TAC_mmol_l": "1.79",
+            "pH": "8.1",
+            "TDS_Conductivity_uS_cm": "649",
+            "Sodium_Na_mg_l": "23.0",
+            "Chlorides_Cl_mg_l": "42.4",
+            "Calcium_Ca_mg_l": "106.0"
+        }
+    },
+    {
+        "Region": "Xaltocan (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.5",
+            "Alkalinity_TAC_mmol_l": "1.36",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "464",
+            "Sodium_Na_mg_l": "67.6",
+            "Chlorides_Cl_mg_l": "52.1",
+            "Calcium_Ca_mg_l": "68.7"
+        }
+    },
+    {
+        "Region": "Ciudad Miguel Alemán (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.0",
+            "Alkalinity_TAC_mmol_l": "3.00",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "298",
+            "Sodium_Na_mg_l": "12.5",
+            "Chlorides_Cl_mg_l": "10.8",
+            "Calcium_Ca_mg_l": "15.4"
+        }
+    },
+    {
+        "Region": "Cabo San Lucas (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "19.8",
+            "Alkalinity_TAC_mmol_l": "3.17",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "673",
+            "Sodium_Na_mg_l": "24.8",
+            "Chlorides_Cl_mg_l": "54.4",
+            "Calcium_Ca_mg_l": "98.4"
+        }
+    },
+    {
+        "Region": "Kohunlich (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.6",
+            "Alkalinity_TAC_mmol_l": "1.98",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "141",
+            "Sodium_Na_mg_l": "7.8",
+            "Chlorides_Cl_mg_l": "22.1",
+            "Calcium_Ca_mg_l": "15.7"
+        }
+    },
+    {
+        "Region": "Anáhuac Municipality (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.3",
+            "Alkalinity_TAC_mmol_l": "3.87",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "332",
+            "Sodium_Na_mg_l": "7.4",
+            "Chlorides_Cl_mg_l": "14.4",
+            "Calcium_Ca_mg_l": "44.7"
+        }
+    },
+    {
+        "Region": "Mexicali (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.0",
+            "Alkalinity_TAC_mmol_l": "2.94",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "340",
+            "Sodium_Na_mg_l": "14.1",
+            "Chlorides_Cl_mg_l": "20.6",
+            "Calcium_Ca_mg_l": "35.1"
+        }
+    },
+    {
+        "Region": "Mapimí (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "24.9",
+            "Alkalinity_TAC_mmol_l": "3.68",
+            "pH": "8.1",
+            "TDS_Conductivity_uS_cm": "785",
+            "Sodium_Na_mg_l": "35.5",
+            "Chlorides_Cl_mg_l": "63.2",
+            "Calcium_Ca_mg_l": "135.2"
+        }
+    },
+    {
+        "Region": "Tizatlan (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.2",
+            "Alkalinity_TAC_mmol_l": "1.56",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "462",
+            "Sodium_Na_mg_l": "60.7",
+            "Chlorides_Cl_mg_l": "87.5",
+            "Calcium_Ca_mg_l": "84.8"
+        }
+    },
+    {
+        "Region": "Tapachula de Córdova y Ordóñez (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "19.2",
+            "Alkalinity_TAC_mmol_l": "1.25",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "641",
+            "Sodium_Na_mg_l": "48.5",
+            "Chlorides_Cl_mg_l": "50.9",
+            "Calcium_Ca_mg_l": "147.3"
+        }
+    },
+    {
+        "Region": "Punta Prieta (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "10.2",
+            "Alkalinity_TAC_mmol_l": "2.49",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "387",
+            "Sodium_Na_mg_l": "48.2",
+            "Chlorides_Cl_mg_l": "53.4",
+            "Calcium_Ca_mg_l": "83.4"
+        }
+    },
+    {
+        "Region": "Cuauhtémoc (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "22.4",
+            "Alkalinity_TAC_mmol_l": "3.07",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "702",
+            "Sodium_Na_mg_l": "23.9",
+            "Chlorides_Cl_mg_l": "59.8",
+            "Calcium_Ca_mg_l": "93.9"
+        }
+    },
+    {
+        "Region": "Miguel Alemán (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.8",
+            "Alkalinity_TAC_mmol_l": "2.52",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "415",
+            "Sodium_Na_mg_l": "77.5",
+            "Chlorides_Cl_mg_l": "54.6",
+            "Calcium_Ca_mg_l": "84.3"
+        }
+    },
+    {
+        "Region": "Guadalupe, Baja California (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.1",
+            "Alkalinity_TAC_mmol_l": "1.63",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "282",
+            "Sodium_Na_mg_l": "6.5",
+            "Chlorides_Cl_mg_l": "16.7",
+            "Calcium_Ca_mg_l": "33.0"
+        }
+    },
+    {
+        "Region": "Irapuato (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "24.0",
+            "Alkalinity_TAC_mmol_l": "2.96",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "789",
+            "Sodium_Na_mg_l": "44.2",
+            "Chlorides_Cl_mg_l": "37.5",
+            "Calcium_Ca_mg_l": "104.0"
+        }
+    },
+    {
+        "Region": "Ocotlán (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.0",
+            "Alkalinity_TAC_mmol_l": "3.49",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "595",
+            "Sodium_Na_mg_l": "30.5",
+            "Chlorides_Cl_mg_l": "59.0",
+            "Calcium_Ca_mg_l": "125.4"
+        }
+    },
+    {
+        "Region": "Tilantongo (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.6",
+            "Alkalinity_TAC_mmol_l": "3.20",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "276",
+            "Sodium_Na_mg_l": "6.9",
+            "Chlorides_Cl_mg_l": "23.7",
+            "Calcium_Ca_mg_l": "29.2"
+        }
+    },
+    {
+        "Region": "Tepezalá (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "23.2",
+            "Alkalinity_TAC_mmol_l": "3.40",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "766",
+            "Sodium_Na_mg_l": "45.4",
+            "Chlorides_Cl_mg_l": "32.8",
+            "Calcium_Ca_mg_l": "149.0"
+        }
+    },
+    {
+        "Region": "Villa Jesús María (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.0",
+            "Alkalinity_TAC_mmol_l": "2.08",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "303",
+            "Sodium_Na_mg_l": "7.4",
+            "Chlorides_Cl_mg_l": "22.4",
+            "Calcium_Ca_mg_l": "23.9"
+        }
+    },
+    {
+        "Region": "Comitán de Domínguez (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.4",
+            "Alkalinity_TAC_mmol_l": "2.24",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "135",
+            "Sodium_Na_mg_l": "10.1",
+            "Chlorides_Cl_mg_l": "20.2",
+            "Calcium_Ca_mg_l": "30.4"
+        }
+    },
+    {
+        "Region": "Aguascalientes City (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.8",
+            "Alkalinity_TAC_mmol_l": "2.59",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "306",
+            "Sodium_Na_mg_l": "6.7",
+            "Chlorides_Cl_mg_l": "15.4",
+            "Calcium_Ca_mg_l": "19.2"
+        }
+    },
+    {
+        "Region": "Mazatlán (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "5.7",
+            "Alkalinity_TAC_mmol_l": "1.79",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "245",
+            "Sodium_Na_mg_l": "5.3",
+            "Chlorides_Cl_mg_l": "15.3",
+            "Calcium_Ca_mg_l": "39.9"
+        }
+    },
+    {
+        "Region": "Senecu (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "10.9",
+            "Alkalinity_TAC_mmol_l": "2.98",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "388",
+            "Sodium_Na_mg_l": "53.6",
+            "Chlorides_Cl_mg_l": "66.0",
+            "Calcium_Ca_mg_l": "58.1"
+        }
+    },
+    {
+        "Region": "Tlaltenango de Sánchez Román (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.4",
+            "Alkalinity_TAC_mmol_l": "3.66",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "553",
+            "Sodium_Na_mg_l": "45.2",
+            "Chlorides_Cl_mg_l": "64.2",
+            "Calcium_Ca_mg_l": "131.4"
+        }
+    },
+    {
+        "Region": "Zamora de Hidalgo (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "5.1",
+            "Alkalinity_TAC_mmol_l": "2.19",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "185",
+            "Sodium_Na_mg_l": "9.5",
+            "Chlorides_Cl_mg_l": "11.8",
+            "Calcium_Ca_mg_l": "43.1"
+        }
+    },
+    {
+        "Region": "León de Los Aldama (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "24.0",
+            "Alkalinity_TAC_mmol_l": "3.76",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "770",
+            "Sodium_Na_mg_l": "46.3",
+            "Chlorides_Cl_mg_l": "37.5",
+            "Calcium_Ca_mg_l": "99.8"
+        }
+    },
+    {
+        "Region": "Ciudad Juárez (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.0",
+            "Alkalinity_TAC_mmol_l": "3.95",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "285",
+            "Sodium_Na_mg_l": "7.3",
+            "Chlorides_Cl_mg_l": "13.2",
+            "Calcium_Ca_mg_l": "28.4"
+        }
+    },
+    {
+        "Region": "San Luis Río Colorado (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "5.4",
+            "Alkalinity_TAC_mmol_l": "2.29",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "241",
+            "Sodium_Na_mg_l": "14.0",
+            "Chlorides_Cl_mg_l": "16.1",
+            "Calcium_Ca_mg_l": "17.4"
+        }
+    },
+    {
+        "Region": "Colima (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "22.8",
+            "Alkalinity_TAC_mmol_l": "1.35",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "746",
+            "Sodium_Na_mg_l": "38.3",
+            "Chlorides_Cl_mg_l": "30.3",
+            "Calcium_Ca_mg_l": "146.1"
+        }
+    },
+    {
+        "Region": "Ocotelolco (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "5.1",
+            "Alkalinity_TAC_mmol_l": "2.35",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "231",
+            "Sodium_Na_mg_l": "6.8",
+            "Chlorides_Cl_mg_l": "18.9",
+            "Calcium_Ca_mg_l": "33.1"
+        }
+    },
+    {
+        "Region": "Veracruz (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "10.3",
+            "Alkalinity_TAC_mmol_l": "3.16",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "408",
+            "Sodium_Na_mg_l": "37.0",
+            "Chlorides_Cl_mg_l": "49.1",
+            "Calcium_Ca_mg_l": "80.9"
+        }
+    },
+    {
+        "Region": "Real de Asientos (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "22.1",
+            "Alkalinity_TAC_mmol_l": "1.17",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "703",
+            "Sodium_Na_mg_l": "43.5",
+            "Chlorides_Cl_mg_l": "50.9",
+            "Calcium_Ca_mg_l": "140.4"
+        }
+    },
+    {
+        "Region": "Zapotitlán Salinas (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.7",
+            "Alkalinity_TAC_mmol_l": "1.71",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "229",
+            "Sodium_Na_mg_l": "10.1",
+            "Chlorides_Cl_mg_l": "20.1",
+            "Calcium_Ca_mg_l": "33.1"
+        }
+    },
+    {
+        "Region": "Santa María del Oro (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.0",
+            "Alkalinity_TAC_mmol_l": "3.33",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "500",
+            "Sodium_Na_mg_l": "55.3",
+            "Chlorides_Cl_mg_l": "82.0",
+            "Calcium_Ca_mg_l": "54.4"
+        }
+    },
+    {
+        "Region": "San Jerónimo (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.3",
+            "Alkalinity_TAC_mmol_l": "1.86",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "131",
+            "Sodium_Na_mg_l": "10.4",
+            "Chlorides_Cl_mg_l": "14.5",
+            "Calcium_Ca_mg_l": "29.9"
+        }
+    },
+    {
+        "Region": "Ciudad Acuña (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.1",
+            "Alkalinity_TAC_mmol_l": "3.86",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "217",
+            "Sodium_Na_mg_l": "5.2",
+            "Chlorides_Cl_mg_l": "13.6",
+            "Calcium_Ca_mg_l": "40.7"
+        }
+    },
+    {
+        "Region": "Gómez Palacio (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.8",
+            "Alkalinity_TAC_mmol_l": "1.50",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "500",
+            "Sodium_Na_mg_l": "53.4",
+            "Chlorides_Cl_mg_l": "82.0",
+            "Calcium_Ca_mg_l": "73.2"
+        }
+    },
+    {
+        "Region": "Ocosingo (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.0",
+            "Alkalinity_TAC_mmol_l": "2.91",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "246",
+            "Sodium_Na_mg_l": "7.8",
+            "Chlorides_Cl_mg_l": "17.3",
+            "Calcium_Ca_mg_l": "37.1"
+        }
+    },
+    {
+        "Region": "San Francisco de Campeche (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.1",
+            "Alkalinity_TAC_mmol_l": "2.27",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "257",
+            "Sodium_Na_mg_l": "14.9",
+            "Chlorides_Cl_mg_l": "14.3",
+            "Calcium_Ca_mg_l": "26.4"
+        }
+    },
+    {
+        "Region": "San Cristóbal de Las Casas (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.7",
+            "Alkalinity_TAC_mmol_l": "1.72",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "620",
+            "Sodium_Na_mg_l": "31.4",
+            "Chlorides_Cl_mg_l": "60.5",
+            "Calcium_Ca_mg_l": "132.2"
+        }
+    },
+    {
+        "Region": "Lázaro Cárdenas (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.2",
+            "Alkalinity_TAC_mmol_l": "1.76",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "162",
+            "Sodium_Na_mg_l": "7.2",
+            "Chlorides_Cl_mg_l": "19.6",
+            "Calcium_Ca_mg_l": "15.9"
+        }
+    },
+    {
+        "Region": "Xalapa (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "11.0",
+            "Alkalinity_TAC_mmol_l": "3.68",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "381",
+            "Sodium_Na_mg_l": "53.9",
+            "Chlorides_Cl_mg_l": "40.8",
+            "Calcium_Ca_mg_l": "82.1"
+        }
+    },
+    {
+        "Region": "Campestre (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.1",
+            "Alkalinity_TAC_mmol_l": "2.16",
+            "pH": "8.1",
+            "TDS_Conductivity_uS_cm": "565",
+            "Sodium_Na_mg_l": "44.1",
+            "Chlorides_Cl_mg_l": "32.5",
+            "Calcium_Ca_mg_l": "140.7"
+        }
+    },
+    {
+        "Region": "Toluca de Lerdo (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.7",
+            "Alkalinity_TAC_mmol_l": "2.85",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "245",
+            "Sodium_Na_mg_l": "13.5",
+            "Chlorides_Cl_mg_l": "17.9",
+            "Calcium_Ca_mg_l": "16.6"
+        }
+    },
+    {
+        "Region": "Zacatecas (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "22.5",
+            "Alkalinity_TAC_mmol_l": "2.87",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "730",
+            "Sodium_Na_mg_l": "24.9",
+            "Chlorides_Cl_mg_l": "60.7",
+            "Calcium_Ca_mg_l": "136.4"
+        }
+    },
+    {
+        "Region": "Homún Municipality (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.9",
+            "Alkalinity_TAC_mmol_l": "3.90",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "189",
+            "Sodium_Na_mg_l": "8.5",
+            "Chlorides_Cl_mg_l": "11.6",
+            "Calcium_Ca_mg_l": "41.2"
+        }
+    },
+    {
+        "Region": "Minatitlán (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "24.1",
+            "Alkalinity_TAC_mmol_l": "1.43",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "811",
+            "Sodium_Na_mg_l": "44.5",
+            "Chlorides_Cl_mg_l": "39.6",
+            "Calcium_Ca_mg_l": "109.6"
+        }
+    },
+    {
+        "Region": "Ensenada (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "23.7",
+            "Alkalinity_TAC_mmol_l": "1.16",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "776",
+            "Sodium_Na_mg_l": "39.6",
+            "Chlorides_Cl_mg_l": "69.6",
+            "Calcium_Ca_mg_l": "128.6"
+        }
+    },
+    {
+        "Region": "Chichen Itza (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.1",
+            "Alkalinity_TAC_mmol_l": "2.37",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "247",
+            "Sodium_Na_mg_l": "14.7",
+            "Chlorides_Cl_mg_l": "11.0",
+            "Calcium_Ca_mg_l": "29.8"
+        }
+    },
+    {
+        "Region": "Colonia del Sol (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.2",
+            "Alkalinity_TAC_mmol_l": "3.02",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "456",
+            "Sodium_Na_mg_l": "50.2",
+            "Chlorides_Cl_mg_l": "82.7",
+            "Calcium_Ca_mg_l": "63.3"
+        }
+    },
+    {
+        "Region": "Culiacán (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "19.4",
+            "Alkalinity_TAC_mmol_l": "3.96",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "680",
+            "Sodium_Na_mg_l": "41.9",
+            "Chlorides_Cl_mg_l": "40.4",
+            "Calcium_Ca_mg_l": "144.7"
+        }
+    },
+    {
+        "Region": "Chalco (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.3",
+            "Alkalinity_TAC_mmol_l": "3.09",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "194",
+            "Sodium_Na_mg_l": "12.1",
+            "Chlorides_Cl_mg_l": "11.9",
+            "Calcium_Ca_mg_l": "38.2"
+        }
+    },
+    {
+        "Region": "Rivera del Bravo (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "11.5",
+            "Alkalinity_TAC_mmol_l": "1.14",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "385",
+            "Sodium_Na_mg_l": "79.4",
+            "Chlorides_Cl_mg_l": "64.0",
+            "Calcium_Ca_mg_l": "72.3"
+        }
+    },
+    {
+        "Region": "Ciudad Cuauhtémoc (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "18.3",
+            "Alkalinity_TAC_mmol_l": "2.96",
+            "pH": "8.1",
+            "TDS_Conductivity_uS_cm": "624",
+            "Sodium_Na_mg_l": "46.4",
+            "Chlorides_Cl_mg_l": "60.5",
+            "Calcium_Ca_mg_l": "121.6"
+        }
+    },
+    {
+        "Region": "Nueva Ciudad Guerrero (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.6",
+            "Alkalinity_TAC_mmol_l": "1.49",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "146",
+            "Sodium_Na_mg_l": "11.1",
+            "Chlorides_Cl_mg_l": "11.4",
+            "Calcium_Ca_mg_l": "34.8"
+        }
+    },
+    {
+        "Region": "Cataviña (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.0",
+            "Alkalinity_TAC_mmol_l": "2.09",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "462",
+            "Sodium_Na_mg_l": "54.1",
+            "Chlorides_Cl_mg_l": "87.3",
+            "Calcium_Ca_mg_l": "64.0"
+        }
+    },
+    {
+        "Region": "Heroica Matamoros (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.3",
+            "Alkalinity_TAC_mmol_l": "3.86",
+            "pH": "8.1",
+            "TDS_Conductivity_uS_cm": "546",
+            "Sodium_Na_mg_l": "39.8",
+            "Chlorides_Cl_mg_l": "42.3",
+            "Calcium_Ca_mg_l": "120.4"
+        }
+    },
+    {
+        "Region": "Hermosillo (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.0",
+            "Alkalinity_TAC_mmol_l": "3.88",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "159",
+            "Sodium_Na_mg_l": "13.4",
+            "Chlorides_Cl_mg_l": "14.1",
+            "Calcium_Ca_mg_l": "43.4"
+        }
+    },
+    {
+        "Region": "Fresnillo (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "18.2",
+            "Alkalinity_TAC_mmol_l": "2.18",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "578",
+            "Sodium_Na_mg_l": "20.3",
+            "Chlorides_Cl_mg_l": "41.1",
+            "Calcium_Ca_mg_l": "117.0"
+        }
+    },
+    {
+        "Region": "Paseo Reforma (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.1",
+            "Alkalinity_TAC_mmol_l": "2.57",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "155",
+            "Sodium_Na_mg_l": "7.2",
+            "Chlorides_Cl_mg_l": "15.3",
+            "Calcium_Ca_mg_l": "34.2"
+        }
+    },
+    {
+        "Region": "Chaveña (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "18.9",
+            "Alkalinity_TAC_mmol_l": "1.98",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "603",
+            "Sodium_Na_mg_l": "24.8",
+            "Chlorides_Cl_mg_l": "67.3",
+            "Calcium_Ca_mg_l": "115.6"
+        }
+    },
+    {
+        "Region": "Mérida (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "21.5",
+            "Alkalinity_TAC_mmol_l": "2.74",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "684",
+            "Sodium_Na_mg_l": "30.1",
+            "Chlorides_Cl_mg_l": "42.9",
+            "Calcium_Ca_mg_l": "118.1"
+        }
+    },
+    {
+        "Region": "Chinkultic (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "5.7",
+            "Alkalinity_TAC_mmol_l": "1.17",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "238",
+            "Sodium_Na_mg_l": "7.7",
+            "Chlorides_Cl_mg_l": "11.2",
+            "Calcium_Ca_mg_l": "33.9"
+        }
+    },
+    {
+        "Region": "Umán (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.9",
+            "Alkalinity_TAC_mmol_l": "1.63",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "238",
+            "Sodium_Na_mg_l": "8.1",
+            "Chlorides_Cl_mg_l": "16.6",
+            "Calcium_Ca_mg_l": "18.4"
+        }
+    },
+    {
+        "Region": "Ambos Nogales (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "5.0",
+            "Alkalinity_TAC_mmol_l": "1.23",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "243",
+            "Sodium_Na_mg_l": "8.9",
+            "Chlorides_Cl_mg_l": "19.8",
+            "Calcium_Ca_mg_l": "17.0"
+        }
+    },
+    {
+        "Region": "Nombre de Dios (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "25.0",
+            "Alkalinity_TAC_mmol_l": "1.34",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "800",
+            "Sodium_Na_mg_l": "49.2",
+            "Chlorides_Cl_mg_l": "59.2",
+            "Calcium_Ca_mg_l": "110.4"
+        }
+    },
+    {
+        "Region": "Villahermosa (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.4",
+            "Alkalinity_TAC_mmol_l": "3.56",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "318",
+            "Sodium_Na_mg_l": "13.2",
+            "Chlorides_Cl_mg_l": "13.4",
+            "Calcium_Ca_mg_l": "20.6"
+        }
+    },
+    {
+        "Region": "Ciudad Obregón (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.9",
+            "Alkalinity_TAC_mmol_l": "1.76",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "479",
+            "Sodium_Na_mg_l": "42.7",
+            "Chlorides_Cl_mg_l": "84.5",
+            "Calcium_Ca_mg_l": "62.9"
+        }
+    },
+    {
+        "Region": "La Salina, Baja California (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.1",
+            "Alkalinity_TAC_mmol_l": "3.59",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "244",
+            "Sodium_Na_mg_l": "14.4",
+            "Chlorides_Cl_mg_l": "16.2",
+            "Calcium_Ca_mg_l": "16.6"
+        }
+    },
+    {
+        "Region": "Greater Mexico City (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "5.1",
+            "Alkalinity_TAC_mmol_l": "1.85",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "231",
+            "Sodium_Na_mg_l": "5.3",
+            "Chlorides_Cl_mg_l": "12.3",
+            "Calcium_Ca_mg_l": "28.5"
+        }
+    },
+    {
+        "Region": "Puerto Vallarta (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.5",
+            "Alkalinity_TAC_mmol_l": "1.98",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "561",
+            "Sodium_Na_mg_l": "37.3",
+            "Chlorides_Cl_mg_l": "38.3",
+            "Calcium_Ca_mg_l": "88.7"
+        }
+    },
+    {
+        "Region": "El Paso–Juárez (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.1",
+            "Alkalinity_TAC_mmol_l": "2.99",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "305",
+            "Sodium_Na_mg_l": "6.8",
+            "Chlorides_Cl_mg_l": "21.7",
+            "Calcium_Ca_mg_l": "33.4"
+        }
+    },
+    {
+        "Region": "Tepeticpac (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.0",
+            "Alkalinity_TAC_mmol_l": "1.31",
+            "pH": "8.2",
+            "TDS_Conductivity_uS_cm": "571",
+            "Sodium_Na_mg_l": "37.1",
+            "Chlorides_Cl_mg_l": "58.3",
+            "Calcium_Ca_mg_l": "135.9"
+        }
+    },
+    {
+        "Region": "Ti'ho (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.8",
+            "Alkalinity_TAC_mmol_l": "1.21",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "296",
+            "Sodium_Na_mg_l": "10.8",
+            "Chlorides_Cl_mg_l": "22.0",
+            "Calcium_Ca_mg_l": "23.6"
+        }
+    },
+    {
+        "Region": "Chilpancingo de los Bravo (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.5",
+            "Alkalinity_TAC_mmol_l": "2.06",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "299",
+            "Sodium_Na_mg_l": "14.7",
+            "Chlorides_Cl_mg_l": "10.2",
+            "Calcium_Ca_mg_l": "40.2"
+        }
+    },
+    {
+        "Region": "Tepic (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "11.2",
+            "Alkalinity_TAC_mmol_l": "1.01",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "404",
+            "Sodium_Na_mg_l": "77.3",
+            "Chlorides_Cl_mg_l": "75.3",
+            "Calcium_Ca_mg_l": "74.0"
+        }
+    },
+    {
+        "Region": "Tekax (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.6",
+            "Alkalinity_TAC_mmol_l": "2.86",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "489",
+            "Sodium_Na_mg_l": "47.9",
+            "Chlorides_Cl_mg_l": "46.8",
+            "Calcium_Ca_mg_l": "61.3"
+        }
+    },
+    {
+        "Region": "Tonalá (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.1",
+            "Alkalinity_TAC_mmol_l": "3.42",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "219",
+            "Sodium_Na_mg_l": "7.5",
+            "Chlorides_Cl_mg_l": "10.9",
+            "Calcium_Ca_mg_l": "27.6"
+        }
+    },
+    {
+        "Region": "Chihuahua City (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "11.1",
+            "Alkalinity_TAC_mmol_l": "1.16",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "418",
+            "Sodium_Na_mg_l": "64.1",
+            "Chlorides_Cl_mg_l": "62.8",
+            "Calcium_Ca_mg_l": "76.2"
+        }
+    },
+    {
+        "Region": "Nuevo Laredo (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.9",
+            "Alkalinity_TAC_mmol_l": "1.85",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "284",
+            "Sodium_Na_mg_l": "8.4",
+            "Chlorides_Cl_mg_l": "22.6",
+            "Calcium_Ca_mg_l": "22.8"
+        }
+    },
+    {
+        "Region": "Chetumal (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "10.6",
+            "Alkalinity_TAC_mmol_l": "3.92",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "414",
+            "Sodium_Na_mg_l": "47.5",
+            "Chlorides_Cl_mg_l": "53.4",
+            "Calcium_Ca_mg_l": "69.8"
+        }
+    },
+    {
+        "Region": "San Telmo, Baja California (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "11.7",
+            "Alkalinity_TAC_mmol_l": "1.80",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "435",
+            "Sodium_Na_mg_l": "60.9",
+            "Chlorides_Cl_mg_l": "81.4",
+            "Calcium_Ca_mg_l": "64.7"
+        }
+    },
+    {
+        "Region": "Instituto Tecnológico de Nogales (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.8",
+            "Alkalinity_TAC_mmol_l": "3.96",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "289",
+            "Sodium_Na_mg_l": "10.3",
+            "Chlorides_Cl_mg_l": "22.1",
+            "Calcium_Ca_mg_l": "31.5"
+        }
+    },
+    {
+        "Region": "Vicente Guerrero (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.6",
+            "Alkalinity_TAC_mmol_l": "3.23",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "581",
+            "Sodium_Na_mg_l": "31.7",
+            "Chlorides_Cl_mg_l": "50.3",
+            "Calcium_Ca_mg_l": "147.8"
+        }
+    },
+    {
+        "Region": "Santo Tomás (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.8",
+            "Alkalinity_TAC_mmol_l": "1.99",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "460",
+            "Sodium_Na_mg_l": "76.6",
+            "Chlorides_Cl_mg_l": "45.3",
+            "Calcium_Ca_mg_l": "53.4"
+        }
+    },
+    {
+        "Region": "Heroica Nogales (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "18.8",
+            "Alkalinity_TAC_mmol_l": "1.11",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "654",
+            "Sodium_Na_mg_l": "25.6",
+            "Chlorides_Cl_mg_l": "64.4",
+            "Calcium_Ca_mg_l": "137.4"
+        }
+    },
+    {
+        "Region": "Manzanillo (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.8",
+            "Alkalinity_TAC_mmol_l": "3.29",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "530",
+            "Sodium_Na_mg_l": "22.2",
+            "Chlorides_Cl_mg_l": "61.9",
+            "Calcium_Ca_mg_l": "100.2"
+        }
+    },
+    {
+        "Region": "Naolinco (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "19.7",
+            "Alkalinity_TAC_mmol_l": "2.97",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "668",
+            "Sodium_Na_mg_l": "27.3",
+            "Chlorides_Cl_mg_l": "37.8",
+            "Calcium_Ca_mg_l": "108.4"
+        }
+    },
+    {
+        "Region": "El Refugio, Baja California (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.2",
+            "Alkalinity_TAC_mmol_l": "3.44",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "598",
+            "Sodium_Na_mg_l": "35.9",
+            "Chlorides_Cl_mg_l": "68.1",
+            "Calcium_Ca_mg_l": "122.9"
+        }
+    },
+    {
+        "Region": "Navojoa (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.5",
+            "Alkalinity_TAC_mmol_l": "2.43",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "187",
+            "Sodium_Na_mg_l": "14.1",
+            "Chlorides_Cl_mg_l": "14.3",
+            "Calcium_Ca_mg_l": "41.6"
+        }
+    },
+    {
+        "Region": "Garita Kilómetro 26 (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.0",
+            "Alkalinity_TAC_mmol_l": "3.59",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "186",
+            "Sodium_Na_mg_l": "7.2",
+            "Chlorides_Cl_mg_l": "10.4",
+            "Calcium_Ca_mg_l": "42.3"
+        }
+    },
+    {
+        "Region": "Quiahuiztlan (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.8",
+            "Alkalinity_TAC_mmol_l": "2.79",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "233",
+            "Sodium_Na_mg_l": "10.3",
+            "Chlorides_Cl_mg_l": "14.8",
+            "Calcium_Ca_mg_l": "42.3"
+        }
+    },
+    {
+        "Region": "Guadalajara (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "11.9",
+            "Alkalinity_TAC_mmol_l": "3.11",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "452",
+            "Sodium_Na_mg_l": "44.2",
+            "Chlorides_Cl_mg_l": "60.9",
+            "Calcium_Ca_mg_l": "77.9"
+        }
+    },
+    {
+        "Region": "Córdoba (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.0",
+            "Alkalinity_TAC_mmol_l": "1.39",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "464",
+            "Sodium_Na_mg_l": "44.3",
+            "Chlorides_Cl_mg_l": "68.8",
+            "Calcium_Ca_mg_l": "53.4"
+        }
+    },
+    {
+        "Region": "Ciudad Hidalgo (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.7",
+            "Alkalinity_TAC_mmol_l": "2.68",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "191",
+            "Sodium_Na_mg_l": "13.2",
+            "Chlorides_Cl_mg_l": "19.0",
+            "Calcium_Ca_mg_l": "16.1"
+        }
+    },
+    {
+        "Region": "El Rosario, Baja California (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.0",
+            "Alkalinity_TAC_mmol_l": "2.51",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "178",
+            "Sodium_Na_mg_l": "11.0",
+            "Chlorides_Cl_mg_l": "18.6",
+            "Calcium_Ca_mg_l": "39.6"
+        }
+    },
+    {
+        "Region": "Guanajuato (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.7",
+            "Alkalinity_TAC_mmol_l": "2.60",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "516",
+            "Sodium_Na_mg_l": "50.7",
+            "Chlorides_Cl_mg_l": "83.1",
+            "Calcium_Ca_mg_l": "67.7"
+        }
+    },
+    {
+        "Region": "Ocozocoautla de Espinosa (Mexico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.5",
+            "Alkalinity_TAC_mmol_l": "3.98",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "182",
+            "Sodium_Na_mg_l": "11.3",
+            "Chlorides_Cl_mg_l": "18.8",
+            "Calcium_Ca_mg_l": "34.4"
+        }
+    },
+    {
+        "Region": "Holtun (Guatemala)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.9",
+            "Alkalinity_TAC_mmol_l": "1.47",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "522",
+            "Sodium_Na_mg_l": "74.8",
+            "Chlorides_Cl_mg_l": "80.2",
+            "Calcium_Ca_mg_l": "73.7"
+        }
+    },
+    {
+        "Region": "Guastatoya (Guatemala)",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.1",
+            "Alkalinity_TAC_mmol_l": "1.48",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "553",
+            "Sodium_Na_mg_l": "45.6",
+            "Chlorides_Cl_mg_l": "61.6",
+            "Calcium_Ca_mg_l": "109.1"
+        }
+    },
+    {
+        "Region": "Salcajá (Guatemala)",
+        "Parameters": {
+            "Ca_Hardness_dH": "11.7",
+            "Alkalinity_TAC_mmol_l": "2.50",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "425",
+            "Sodium_Na_mg_l": "50.9",
+            "Chlorides_Cl_mg_l": "85.4",
+            "Calcium_Ca_mg_l": "59.2"
+        }
+    },
+    {
+        "Region": "Saint Thomas of Castilla (Guatemala)",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.7",
+            "Alkalinity_TAC_mmol_l": "2.43",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "308",
+            "Sodium_Na_mg_l": "7.5",
+            "Chlorides_Cl_mg_l": "11.3",
+            "Calcium_Ca_mg_l": "32.1"
+        }
+    },
+    {
+        "Region": "Obero (Guatemala)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.8",
+            "Alkalinity_TAC_mmol_l": "1.16",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "476",
+            "Sodium_Na_mg_l": "60.8",
+            "Chlorides_Cl_mg_l": "83.1",
+            "Calcium_Ca_mg_l": "77.5"
+        }
+    },
+    {
+        "Region": "Panajachel (Guatemala)",
+        "Parameters": {
+            "Ca_Hardness_dH": "11.3",
+            "Alkalinity_TAC_mmol_l": "1.29",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "373",
+            "Sodium_Na_mg_l": "41.5",
+            "Chlorides_Cl_mg_l": "58.1",
+            "Calcium_Ca_mg_l": "72.5"
+        }
+    },
+    {
+        "Region": "Jalapa (Guatemala)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.1",
+            "Alkalinity_TAC_mmol_l": "2.09",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "136",
+            "Sodium_Na_mg_l": "6.7",
+            "Chlorides_Cl_mg_l": "15.8",
+            "Calcium_Ca_mg_l": "41.7"
+        }
+    },
+    {
+        "Region": "Mundo Perdido (Guatemala)",
+        "Parameters": {
+            "Ca_Hardness_dH": "10.5",
+            "Alkalinity_TAC_mmol_l": "3.05",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "368",
+            "Sodium_Na_mg_l": "59.7",
+            "Chlorides_Cl_mg_l": "60.7",
+            "Calcium_Ca_mg_l": "56.1"
+        }
+    },
+    {
+        "Region": "San Cristóbal Verapaz (Guatemala)",
+        "Parameters": {
+            "Ca_Hardness_dH": "21.8",
+            "Alkalinity_TAC_mmol_l": "2.48",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "709",
+            "Sodium_Na_mg_l": "44.8",
+            "Chlorides_Cl_mg_l": "41.6",
+            "Calcium_Ca_mg_l": "102.2"
+        }
+    },
+    {
+        "Region": "Melchor de Mencos (Guatemala)",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.6",
+            "Alkalinity_TAC_mmol_l": "3.24",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "257",
+            "Sodium_Na_mg_l": "13.7",
+            "Chlorides_Cl_mg_l": "22.3",
+            "Calcium_Ca_mg_l": "41.4"
+        }
+    },
+    {
+        "Region": "Salamá (Guatemala)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.9",
+            "Alkalinity_TAC_mmol_l": "3.26",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "259",
+            "Sodium_Na_mg_l": "7.6",
+            "Chlorides_Cl_mg_l": "20.5",
+            "Calcium_Ca_mg_l": "36.7"
+        }
+    },
+    {
+        "Region": "Totonicapán (Guatemala)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.9",
+            "Alkalinity_TAC_mmol_l": "3.77",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "536",
+            "Sodium_Na_mg_l": "25.0",
+            "Chlorides_Cl_mg_l": "38.4",
+            "Calcium_Ca_mg_l": "127.4"
+        }
+    },
+    {
+        "Region": "Nuevo San Carlos (Guatemala)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.6",
+            "Alkalinity_TAC_mmol_l": "2.95",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "499",
+            "Sodium_Na_mg_l": "42.7",
+            "Chlorides_Cl_mg_l": "64.5",
+            "Calcium_Ca_mg_l": "84.6"
+        }
+    },
+    {
+        "Region": "Villa Nueva (Guatemala)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.5",
+            "Alkalinity_TAC_mmol_l": "2.75",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "591",
+            "Sodium_Na_mg_l": "33.6",
+            "Chlorides_Cl_mg_l": "58.2",
+            "Calcium_Ca_mg_l": "136.1"
+        }
+    },
+    {
+        "Region": "Santa Cruz del Quiché (Guatemala)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.0",
+            "Alkalinity_TAC_mmol_l": "3.66",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "463",
+            "Sodium_Na_mg_l": "75.1",
+            "Chlorides_Cl_mg_l": "46.6",
+            "Calcium_Ca_mg_l": "79.3"
+        }
+    },
+    {
+        "Region": "El Naranjo (Guatemala)",
+        "Parameters": {
+            "Ca_Hardness_dH": "22.4",
+            "Alkalinity_TAC_mmol_l": "3.90",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "770",
+            "Sodium_Na_mg_l": "37.3",
+            "Chlorides_Cl_mg_l": "49.7",
+            "Calcium_Ca_mg_l": "142.5"
+        }
+    },
+    {
+        "Region": "Puerto Barrios (Guatemala)",
+        "Parameters": {
+            "Ca_Hardness_dH": "19.9",
+            "Alkalinity_TAC_mmol_l": "2.22",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "655",
+            "Sodium_Na_mg_l": "46.5",
+            "Chlorides_Cl_mg_l": "64.4",
+            "Calcium_Ca_mg_l": "147.2"
+        }
+    },
+    {
+        "Region": "Mixco (Guatemala)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.1",
+            "Alkalinity_TAC_mmol_l": "1.62",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "153",
+            "Sodium_Na_mg_l": "11.3",
+            "Chlorides_Cl_mg_l": "10.9",
+            "Calcium_Ca_mg_l": "27.7"
+        }
+    },
+    {
+        "Region": "Antigua Guatemala (Guatemala)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.7",
+            "Alkalinity_TAC_mmol_l": "1.45",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "461",
+            "Sodium_Na_mg_l": "61.1",
+            "Chlorides_Cl_mg_l": "52.5",
+            "Calcium_Ca_mg_l": "72.2"
+        }
+    },
+    {
+        "Region": "Ciudad Tecún Umán (Guatemala)",
+        "Parameters": {
+            "Ca_Hardness_dH": "22.3",
+            "Alkalinity_TAC_mmol_l": "1.91",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "754",
+            "Sodium_Na_mg_l": "29.6",
+            "Chlorides_Cl_mg_l": "48.4",
+            "Calcium_Ca_mg_l": "127.7"
+        }
+    },
+    {
+        "Region": "Quetzaltenango (Guatemala)",
+        "Parameters": {
+            "Ca_Hardness_dH": "10.9",
+            "Alkalinity_TAC_mmol_l": "3.81",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "407",
+            "Sodium_Na_mg_l": "73.8",
+            "Chlorides_Cl_mg_l": "47.3",
+            "Calcium_Ca_mg_l": "63.7"
+        }
+    },
+    {
+        "Region": "San Juan Ostuncalco (Guatemala)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.8",
+            "Alkalinity_TAC_mmol_l": "3.28",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "253",
+            "Sodium_Na_mg_l": "11.8",
+            "Chlorides_Cl_mg_l": "23.7",
+            "Calcium_Ca_mg_l": "18.1"
+        }
+    },
+    {
+        "Region": "Retalhuleu (Guatemala)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.5",
+            "Alkalinity_TAC_mmol_l": "3.08",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "491",
+            "Sodium_Na_mg_l": "35.2",
+            "Chlorides_Cl_mg_l": "41.7",
+            "Calcium_Ca_mg_l": "72.7"
+        }
+    },
+    {
+        "Region": "Nixtun Ch'ich' (Guatemala)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.1",
+            "Alkalinity_TAC_mmol_l": "1.73",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "476",
+            "Sodium_Na_mg_l": "31.2",
+            "Chlorides_Cl_mg_l": "79.3",
+            "Calcium_Ca_mg_l": "64.8"
+        }
+    },
+    {
+        "Region": "Guatemala City (Guatemala)",
+        "Parameters": {
+            "Ca_Hardness_dH": "10.4",
+            "Alkalinity_TAC_mmol_l": "2.07",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "354",
+            "Sodium_Na_mg_l": "31.6",
+            "Chlorides_Cl_mg_l": "48.3",
+            "Calcium_Ca_mg_l": "62.2"
+        }
+    },
+    {
+        "Region": "Sacatepéquez (Guatemala)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.7",
+            "Alkalinity_TAC_mmol_l": "3.54",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "515",
+            "Sodium_Na_mg_l": "28.3",
+            "Chlorides_Cl_mg_l": "54.1",
+            "Calcium_Ca_mg_l": "90.6"
+        }
+    },
+    {
+        "Region": "Escuintla (Guatemala)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.9",
+            "Alkalinity_TAC_mmol_l": "3.46",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "478",
+            "Sodium_Na_mg_l": "65.6",
+            "Chlorides_Cl_mg_l": "67.2",
+            "Calcium_Ca_mg_l": "51.7"
+        }
+    },
+    {
+        "Region": "La Mesilla (Guatemala)",
+        "Parameters": {
+            "Ca_Hardness_dH": "24.1",
+            "Alkalinity_TAC_mmol_l": "3.62",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "796",
+            "Sodium_Na_mg_l": "36.0",
+            "Chlorides_Cl_mg_l": "62.1",
+            "Calcium_Ca_mg_l": "91.9"
+        }
+    },
+    {
+        "Region": "Villa Canales (Guatemala)",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.8",
+            "Alkalinity_TAC_mmol_l": "3.98",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "334",
+            "Sodium_Na_mg_l": "8.8",
+            "Chlorides_Cl_mg_l": "19.3",
+            "Calcium_Ca_mg_l": "25.1"
+        }
+    },
+    {
+        "Region": "Esquipulas (Guatemala)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.2",
+            "Alkalinity_TAC_mmol_l": "1.19",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "485",
+            "Sodium_Na_mg_l": "79.7",
+            "Chlorides_Cl_mg_l": "71.7",
+            "Calcium_Ca_mg_l": "54.5"
+        }
+    },
+    {
+        "Region": "Huehuetenango (Guatemala)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.2",
+            "Alkalinity_TAC_mmol_l": "1.75",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "538",
+            "Sodium_Na_mg_l": "46.4",
+            "Chlorides_Cl_mg_l": "35.0",
+            "Calcium_Ca_mg_l": "146.6"
+        }
+    },
+    {
+        "Region": "Santa Elena (Belize)",
+        "Parameters": {
+            "Ca_Hardness_dH": "22.9",
+            "Alkalinity_TAC_mmol_l": "2.38",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "742",
+            "Sodium_Na_mg_l": "22.0",
+            "Chlorides_Cl_mg_l": "45.7",
+            "Calcium_Ca_mg_l": "126.0"
+        }
+    },
+    {
+        "Region": "Benque Viejo del Carmen (Belize)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.6",
+            "Alkalinity_TAC_mmol_l": "2.35",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "410",
+            "Sodium_Na_mg_l": "55.1",
+            "Chlorides_Cl_mg_l": "67.5",
+            "Calcium_Ca_mg_l": "84.1"
+        }
+    },
+    {
+        "Region": "San Pedro Town (Belize)",
+        "Parameters": {
+            "Ca_Hardness_dH": "18.5",
+            "Alkalinity_TAC_mmol_l": "3.03",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "610",
+            "Sodium_Na_mg_l": "39.0",
+            "Chlorides_Cl_mg_l": "65.1",
+            "Calcium_Ca_mg_l": "110.7"
+        }
+    },
+    {
+        "Region": "San Ignacio (Belize)",
+        "Parameters": {
+            "Ca_Hardness_dH": "21.0",
+            "Alkalinity_TAC_mmol_l": "3.48",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "728",
+            "Sodium_Na_mg_l": "40.1",
+            "Chlorides_Cl_mg_l": "40.9",
+            "Calcium_Ca_mg_l": "136.3"
+        }
+    },
+    {
+        "Region": "Belize City (Belize)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.7",
+            "Alkalinity_TAC_mmol_l": "3.95",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "293",
+            "Sodium_Na_mg_l": "10.9",
+            "Chlorides_Cl_mg_l": "15.5",
+            "Calcium_Ca_mg_l": "19.2"
+        }
+    },
+    {
+        "Region": "La Milpa (Belize)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.1",
+            "Alkalinity_TAC_mmol_l": "2.07",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "181",
+            "Sodium_Na_mg_l": "10.1",
+            "Chlorides_Cl_mg_l": "11.4",
+            "Calcium_Ca_mg_l": "15.8"
+        }
+    },
+    {
+        "Region": "Caracol Caana (Belize)",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.2",
+            "Alkalinity_TAC_mmol_l": "2.87",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "572",
+            "Sodium_Na_mg_l": "34.0",
+            "Chlorides_Cl_mg_l": "66.7",
+            "Calcium_Ca_mg_l": "90.3"
+        }
+    },
+    {
+        "Region": "Consejo (Belize)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.2",
+            "Alkalinity_TAC_mmol_l": "3.28",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "410",
+            "Sodium_Na_mg_l": "63.1",
+            "Chlorides_Cl_mg_l": "81.2",
+            "Calcium_Ca_mg_l": "58.4"
+        }
+    },
+    {
+        "Region": "Belmopan (Belize)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.0",
+            "Alkalinity_TAC_mmol_l": "1.67",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "451",
+            "Sodium_Na_mg_l": "31.6",
+            "Chlorides_Cl_mg_l": "53.9",
+            "Calcium_Ca_mg_l": "72.3"
+        }
+    },
+    {
+        "Region": "Punta Gorda (Belize)",
+        "Parameters": {
+            "Ca_Hardness_dH": "22.4",
+            "Alkalinity_TAC_mmol_l": "3.93",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "731",
+            "Sodium_Na_mg_l": "46.9",
+            "Chlorides_Cl_mg_l": "47.4",
+            "Calcium_Ca_mg_l": "129.0"
+        }
+    },
+    {
+        "Region": "Dangriga (Belize)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.8",
+            "Alkalinity_TAC_mmol_l": "2.86",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "628",
+            "Sodium_Na_mg_l": "21.2",
+            "Chlorides_Cl_mg_l": "61.7",
+            "Calcium_Ca_mg_l": "118.5"
+        }
+    },
+    {
+        "Region": "Corozal (Belize)",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.9",
+            "Alkalinity_TAC_mmol_l": "2.93",
+            "pH": "8.1",
+            "TDS_Conductivity_uS_cm": "550",
+            "Sodium_Na_mg_l": "26.3",
+            "Chlorides_Cl_mg_l": "32.5",
+            "Calcium_Ca_mg_l": "97.2"
+        }
+    },
+    {
+        "Region": "Coxen Hole (Honduras)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.4",
+            "Alkalinity_TAC_mmol_l": "1.75",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "494",
+            "Sodium_Na_mg_l": "70.5",
+            "Chlorides_Cl_mg_l": "67.5",
+            "Calcium_Ca_mg_l": "74.3"
+        }
+    },
+    {
+        "Region": "Juticalpa (Honduras)",
+        "Parameters": {
+            "Ca_Hardness_dH": "19.9",
+            "Alkalinity_TAC_mmol_l": "2.43",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "647",
+            "Sodium_Na_mg_l": "43.8",
+            "Chlorides_Cl_mg_l": "62.6",
+            "Calcium_Ca_mg_l": "145.8"
+        }
+    },
+    {
+        "Region": "Santa Rosa de Copán (Honduras)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.9",
+            "Alkalinity_TAC_mmol_l": "1.07",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "484",
+            "Sodium_Na_mg_l": "42.0",
+            "Chlorides_Cl_mg_l": "59.6",
+            "Calcium_Ca_mg_l": "51.6"
+        }
+    },
+    {
+        "Region": "Ocotepeque (Honduras)",
+        "Parameters": {
+            "Ca_Hardness_dH": "11.4",
+            "Alkalinity_TAC_mmol_l": "2.09",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "433",
+            "Sodium_Na_mg_l": "37.6",
+            "Chlorides_Cl_mg_l": "77.6",
+            "Calcium_Ca_mg_l": "83.7"
+        }
+    },
+    {
+        "Region": "Santa Bárbara (Honduras)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.7",
+            "Alkalinity_TAC_mmol_l": "3.54",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "483",
+            "Sodium_Na_mg_l": "68.2",
+            "Chlorides_Cl_mg_l": "62.0",
+            "Calcium_Ca_mg_l": "76.2"
+        }
+    },
+    {
+        "Region": "Comayagua (Honduras)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.6",
+            "Alkalinity_TAC_mmol_l": "3.53",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "532",
+            "Sodium_Na_mg_l": "24.8",
+            "Chlorides_Cl_mg_l": "46.3",
+            "Calcium_Ca_mg_l": "116.0"
+        }
+    },
+    {
+        "Region": "Nacaome (Honduras)",
+        "Parameters": {
+            "Ca_Hardness_dH": "20.8",
+            "Alkalinity_TAC_mmol_l": "3.48",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "691",
+            "Sodium_Na_mg_l": "34.1",
+            "Chlorides_Cl_mg_l": "49.4",
+            "Calcium_Ca_mg_l": "113.7"
+        }
+    },
+    {
+        "Region": "Trujillo (Honduras)",
+        "Parameters": {
+            "Ca_Hardness_dH": "10.5",
+            "Alkalinity_TAC_mmol_l": "2.64",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "358",
+            "Sodium_Na_mg_l": "31.4",
+            "Chlorides_Cl_mg_l": "57.8",
+            "Calcium_Ca_mg_l": "50.6"
+        }
+    },
+    {
+        "Region": "Yuscarán (Honduras)",
+        "Parameters": {
+            "Ca_Hardness_dH": "21.2",
+            "Alkalinity_TAC_mmol_l": "2.34",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "666",
+            "Sodium_Na_mg_l": "43.7",
+            "Chlorides_Cl_mg_l": "41.9",
+            "Calcium_Ca_mg_l": "100.3"
+        }
+    },
+    {
+        "Region": "La Paz (Honduras)",
+        "Parameters": {
+            "Ca_Hardness_dH": "24.8",
+            "Alkalinity_TAC_mmol_l": "3.29",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "841",
+            "Sodium_Na_mg_l": "39.1",
+            "Chlorides_Cl_mg_l": "61.3",
+            "Calcium_Ca_mg_l": "140.0"
+        }
+    },
+    {
+        "Region": "San Pedro Sula (Honduras)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.9",
+            "Alkalinity_TAC_mmol_l": "1.69",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "286",
+            "Sodium_Na_mg_l": "5.5",
+            "Chlorides_Cl_mg_l": "18.7",
+            "Calcium_Ca_mg_l": "19.5"
+        }
+    },
+    {
+        "Region": "Gracias (Honduras)",
+        "Parameters": {
+            "Ca_Hardness_dH": "10.5",
+            "Alkalinity_TAC_mmol_l": "3.64",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "374",
+            "Sodium_Na_mg_l": "72.4",
+            "Chlorides_Cl_mg_l": "85.2",
+            "Calcium_Ca_mg_l": "78.2"
+        }
+    },
+    {
+        "Region": "Próspera (Honduras)",
+        "Parameters": {
+            "Ca_Hardness_dH": "11.2",
+            "Alkalinity_TAC_mmol_l": "1.44",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "421",
+            "Sodium_Na_mg_l": "76.9",
+            "Chlorides_Cl_mg_l": "76.0",
+            "Calcium_Ca_mg_l": "53.2"
+        }
+    },
+    {
+        "Region": "Tegucigalpa (Honduras)",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.3",
+            "Alkalinity_TAC_mmol_l": "3.87",
+            "pH": "8.1",
+            "TDS_Conductivity_uS_cm": "564",
+            "Sodium_Na_mg_l": "20.1",
+            "Chlorides_Cl_mg_l": "49.4",
+            "Calcium_Ca_mg_l": "95.7"
+        }
+    },
+    {
+        "Region": "Yoro (Honduras)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.8",
+            "Alkalinity_TAC_mmol_l": "2.42",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "487",
+            "Sodium_Na_mg_l": "37.1",
+            "Chlorides_Cl_mg_l": "87.8",
+            "Calcium_Ca_mg_l": "75.7"
+        }
+    },
+    {
+        "Region": "Ilanga (Honduras)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.0",
+            "Alkalinity_TAC_mmol_l": "1.78",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "157",
+            "Sodium_Na_mg_l": "8.9",
+            "Chlorides_Cl_mg_l": "17.9",
+            "Calcium_Ca_mg_l": "22.3"
+        }
+    },
+    {
+        "Region": "Puerto Lempira (Honduras)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.2",
+            "Alkalinity_TAC_mmol_l": "3.31",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "482",
+            "Sodium_Na_mg_l": "60.9",
+            "Chlorides_Cl_mg_l": "59.0",
+            "Calcium_Ca_mg_l": "65.9"
+        }
+    },
+    {
+        "Region": "La Ceiba (Honduras)",
+        "Parameters": {
+            "Ca_Hardness_dH": "21.8",
+            "Alkalinity_TAC_mmol_l": "2.81",
+            "pH": "8.2",
+            "TDS_Conductivity_uS_cm": "719",
+            "Sodium_Na_mg_l": "28.0",
+            "Chlorides_Cl_mg_l": "45.2",
+            "Calcium_Ca_mg_l": "119.6"
+        }
+    },
+    {
+        "Region": "La Esperanza (Honduras)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.2",
+            "Alkalinity_TAC_mmol_l": "3.21",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "183",
+            "Sodium_Na_mg_l": "10.9",
+            "Chlorides_Cl_mg_l": "22.6",
+            "Calcium_Ca_mg_l": "21.3"
+        }
+    },
+    {
+        "Region": "Choluteca (Honduras)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.7",
+            "Alkalinity_TAC_mmol_l": "2.00",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "191",
+            "Sodium_Na_mg_l": "6.3",
+            "Chlorides_Cl_mg_l": "20.4",
+            "Calcium_Ca_mg_l": "38.7"
+        }
+    },
+    {
+        "Region": "La Brea (Honduras)",
+        "Parameters": {
+            "Ca_Hardness_dH": "19.7",
+            "Alkalinity_TAC_mmol_l": "2.98",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "641",
+            "Sodium_Na_mg_l": "30.9",
+            "Chlorides_Cl_mg_l": "46.1",
+            "Calcium_Ca_mg_l": "147.1"
+        }
+    },
+    {
+        "Region": "San Miguel (El Salvador)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.5",
+            "Alkalinity_TAC_mmol_l": "3.59",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "437",
+            "Sodium_Na_mg_l": "79.6",
+            "Chlorides_Cl_mg_l": "85.6",
+            "Calcium_Ca_mg_l": "69.9"
+        }
+    },
+    {
+        "Region": "Ahuachapán (El Salvador)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.9",
+            "Alkalinity_TAC_mmol_l": "3.52",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "433",
+            "Sodium_Na_mg_l": "38.2",
+            "Chlorides_Cl_mg_l": "56.6",
+            "Calcium_Ca_mg_l": "51.8"
+        }
+    },
+    {
+        "Region": "San Salvador (El Salvador)",
+        "Parameters": {
+            "Ca_Hardness_dH": "23.9",
+            "Alkalinity_TAC_mmol_l": "1.04",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "752",
+            "Sodium_Na_mg_l": "24.6",
+            "Chlorides_Cl_mg_l": "69.1",
+            "Calcium_Ca_mg_l": "113.2"
+        }
+    },
+    {
+        "Region": "Chalatenango (El Salvador)",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.8",
+            "Alkalinity_TAC_mmol_l": "3.73",
+            "pH": "8.1",
+            "TDS_Conductivity_uS_cm": "578",
+            "Sodium_Na_mg_l": "34.3",
+            "Chlorides_Cl_mg_l": "30.9",
+            "Calcium_Ca_mg_l": "93.4"
+        }
+    },
+    {
+        "Region": "Cojutepeque (El Salvador)",
+        "Parameters": {
+            "Ca_Hardness_dH": "5.0",
+            "Alkalinity_TAC_mmol_l": "3.74",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "246",
+            "Sodium_Na_mg_l": "11.8",
+            "Chlorides_Cl_mg_l": "16.0",
+            "Calcium_Ca_mg_l": "44.5"
+        }
+    },
+    {
+        "Region": "Sensuntepeque (El Salvador)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.2",
+            "Alkalinity_TAC_mmol_l": "1.74",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "215",
+            "Sodium_Na_mg_l": "8.9",
+            "Chlorides_Cl_mg_l": "14.4",
+            "Calcium_Ca_mg_l": "15.5"
+        }
+    },
+    {
+        "Region": "Usulután (El Salvador)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.0",
+            "Alkalinity_TAC_mmol_l": "1.26",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "512",
+            "Sodium_Na_mg_l": "41.7",
+            "Chlorides_Cl_mg_l": "37.7",
+            "Calcium_Ca_mg_l": "133.5"
+        }
+    },
+    {
+        "Region": "La Unión (El Salvador)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.9",
+            "Alkalinity_TAC_mmol_l": "2.78",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "542",
+            "Sodium_Na_mg_l": "78.4",
+            "Chlorides_Cl_mg_l": "53.7",
+            "Calcium_Ca_mg_l": "63.9"
+        }
+    },
+    {
+        "Region": "Zacatecoluca (El Salvador)",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.1",
+            "Alkalinity_TAC_mmol_l": "3.54",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "309",
+            "Sodium_Na_mg_l": "14.9",
+            "Chlorides_Cl_mg_l": "13.5",
+            "Calcium_Ca_mg_l": "41.1"
+        }
+    },
+    {
+        "Region": "Santa Ana (El Salvador)",
+        "Parameters": {
+            "Ca_Hardness_dH": "20.8",
+            "Alkalinity_TAC_mmol_l": "3.62",
+            "pH": "8.1",
+            "TDS_Conductivity_uS_cm": "689",
+            "Sodium_Na_mg_l": "39.5",
+            "Chlorides_Cl_mg_l": "59.5",
+            "Calcium_Ca_mg_l": "104.5"
+        }
+    },
+    {
+        "Region": "San Francisco Gotera (El Salvador)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.2",
+            "Alkalinity_TAC_mmol_l": "1.12",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "491",
+            "Sodium_Na_mg_l": "48.8",
+            "Chlorides_Cl_mg_l": "68.8",
+            "Calcium_Ca_mg_l": "58.2"
+        }
+    },
+    {
+        "Region": "Santa Tecla (El Salvador)",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.0",
+            "Alkalinity_TAC_mmol_l": "2.45",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "559",
+            "Sodium_Na_mg_l": "23.7",
+            "Chlorides_Cl_mg_l": "58.8",
+            "Calcium_Ca_mg_l": "147.4"
+        }
+    },
+    {
+        "Region": "Acajutla (El Salvador)",
+        "Parameters": {
+            "Ca_Hardness_dH": "23.1",
+            "Alkalinity_TAC_mmol_l": "3.14",
+            "pH": "8.1",
+            "TDS_Conductivity_uS_cm": "765",
+            "Sodium_Na_mg_l": "44.6",
+            "Chlorides_Cl_mg_l": "31.0",
+            "Calcium_Ca_mg_l": "137.2"
+        }
+    },
+    {
+        "Region": "San Vicente (El Salvador)",
+        "Parameters": {
+            "Ca_Hardness_dH": "20.1",
+            "Alkalinity_TAC_mmol_l": "2.75",
+            "pH": "8.1",
+            "TDS_Conductivity_uS_cm": "679",
+            "Sodium_Na_mg_l": "30.9",
+            "Chlorides_Cl_mg_l": "34.6",
+            "Calcium_Ca_mg_l": "88.1"
+        }
+    },
+    {
+        "Region": "Sonsonate (El Salvador)",
+        "Parameters": {
+            "Ca_Hardness_dH": "11.8",
+            "Alkalinity_TAC_mmol_l": "2.69",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "392",
+            "Sodium_Na_mg_l": "46.7",
+            "Chlorides_Cl_mg_l": "85.2",
+            "Calcium_Ca_mg_l": "57.9"
+        }
+    },
+    {
+        "Region": "Boaco (Nicaragua)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.8",
+            "Alkalinity_TAC_mmol_l": "3.11",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "423",
+            "Sodium_Na_mg_l": "78.1",
+            "Chlorides_Cl_mg_l": "64.8",
+            "Calcium_Ca_mg_l": "76.2"
+        }
+    },
+    {
+        "Region": "Bluefields (Nicaragua)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.9",
+            "Alkalinity_TAC_mmol_l": "1.02",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "206",
+            "Sodium_Na_mg_l": "5.3",
+            "Chlorides_Cl_mg_l": "17.7",
+            "Calcium_Ca_mg_l": "24.3"
+        }
+    },
+    {
+        "Region": "Matagalpa City (Nicaragua)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.4",
+            "Alkalinity_TAC_mmol_l": "2.78",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "435",
+            "Sodium_Na_mg_l": "78.6",
+            "Chlorides_Cl_mg_l": "65.0",
+            "Calcium_Ca_mg_l": "62.8"
+        }
+    },
+    {
+        "Region": "Jinotega City (Nicaragua)",
+        "Parameters": {
+            "Ca_Hardness_dH": "23.9",
+            "Alkalinity_TAC_mmol_l": "3.18",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "777",
+            "Sodium_Na_mg_l": "37.8",
+            "Chlorides_Cl_mg_l": "53.5",
+            "Calcium_Ca_mg_l": "126.3"
+        }
+    },
+    {
+        "Region": "Rivas (Nicaragua)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.7",
+            "Alkalinity_TAC_mmol_l": "3.42",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "196",
+            "Sodium_Na_mg_l": "10.1",
+            "Chlorides_Cl_mg_l": "17.8",
+            "Calcium_Ca_mg_l": "16.4"
+        }
+    },
+    {
+        "Region": "Managua (City) (Nicaragua)",
+        "Parameters": {
+            "Ca_Hardness_dH": "22.0",
+            "Alkalinity_TAC_mmol_l": "2.26",
+            "pH": "8.1",
+            "TDS_Conductivity_uS_cm": "714",
+            "Sodium_Na_mg_l": "35.6",
+            "Chlorides_Cl_mg_l": "44.6",
+            "Calcium_Ca_mg_l": "117.5"
+        }
+    },
+    {
+        "Region": "Juigalpa (Nicaragua)",
+        "Parameters": {
+            "Ca_Hardness_dH": "21.0",
+            "Alkalinity_TAC_mmol_l": "3.39",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "661",
+            "Sodium_Na_mg_l": "29.2",
+            "Chlorides_Cl_mg_l": "50.0",
+            "Calcium_Ca_mg_l": "145.9"
+        }
+    },
+    {
+        "Region": "Puerto Cabezas (Nicaragua)",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.2",
+            "Alkalinity_TAC_mmol_l": "1.26",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "345",
+            "Sodium_Na_mg_l": "14.9",
+            "Chlorides_Cl_mg_l": "14.3",
+            "Calcium_Ca_mg_l": "38.7"
+        }
+    },
+    {
+        "Region": "Granada (City) (Nicaragua)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.3",
+            "Alkalinity_TAC_mmol_l": "1.96",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "236",
+            "Sodium_Na_mg_l": "12.2",
+            "Chlorides_Cl_mg_l": "20.7",
+            "Calcium_Ca_mg_l": "37.5"
+        }
+    },
+    {
+        "Region": "Chinandega (Nicaragua)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.4",
+            "Alkalinity_TAC_mmol_l": "3.00",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "173",
+            "Sodium_Na_mg_l": "6.9",
+            "Chlorides_Cl_mg_l": "21.8",
+            "Calcium_Ca_mg_l": "28.1"
+        }
+    },
+    {
+        "Region": "San Carlos (Nicaragua)",
+        "Parameters": {
+            "Ca_Hardness_dH": "21.4",
+            "Alkalinity_TAC_mmol_l": "2.40",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "685",
+            "Sodium_Na_mg_l": "37.6",
+            "Chlorides_Cl_mg_l": "62.6",
+            "Calcium_Ca_mg_l": "135.3"
+        }
+    },
+    {
+        "Region": "León (Nicaragua)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.3",
+            "Alkalinity_TAC_mmol_l": "2.98",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "146",
+            "Sodium_Na_mg_l": "5.7",
+            "Chlorides_Cl_mg_l": "23.8",
+            "Calcium_Ca_mg_l": "21.4"
+        }
+    },
+    {
+        "Region": "San Carlos (City) (Nicaragua)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.0",
+            "Alkalinity_TAC_mmol_l": "3.44",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "456",
+            "Sodium_Na_mg_l": "58.1",
+            "Chlorides_Cl_mg_l": "83.8",
+            "Calcium_Ca_mg_l": "65.3"
+        }
+    },
+    {
+        "Region": "Matagalpa (Nicaragua)",
+        "Parameters": {
+            "Ca_Hardness_dH": "18.3",
+            "Alkalinity_TAC_mmol_l": "1.58",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "625",
+            "Sodium_Na_mg_l": "32.7",
+            "Chlorides_Cl_mg_l": "66.3",
+            "Calcium_Ca_mg_l": "132.2"
+        }
+    },
+    {
+        "Region": "Jinotepe (City) (Nicaragua)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.7",
+            "Alkalinity_TAC_mmol_l": "2.62",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "502",
+            "Sodium_Na_mg_l": "55.6",
+            "Chlorides_Cl_mg_l": "88.2",
+            "Calcium_Ca_mg_l": "71.6"
+        }
+    },
+    {
+        "Region": "Jinotega (Nicaragua)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.8",
+            "Alkalinity_TAC_mmol_l": "2.81",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "530",
+            "Sodium_Na_mg_l": "39.5",
+            "Chlorides_Cl_mg_l": "44.6",
+            "Calcium_Ca_mg_l": "78.0"
+        }
+    },
+    {
+        "Region": "Estelí (Nicaragua)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.2",
+            "Alkalinity_TAC_mmol_l": "3.86",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "493",
+            "Sodium_Na_mg_l": "41.4",
+            "Chlorides_Cl_mg_l": "84.4",
+            "Calcium_Ca_mg_l": "50.9"
+        }
+    },
+    {
+        "Region": "Granada (Nicaragua)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.4",
+            "Alkalinity_TAC_mmol_l": "3.53",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "602",
+            "Sodium_Na_mg_l": "44.8",
+            "Chlorides_Cl_mg_l": "36.5",
+            "Calcium_Ca_mg_l": "87.1"
+        }
+    },
+    {
+        "Region": "Matagalpa (City) (Nicaragua)",
+        "Parameters": {
+            "Ca_Hardness_dH": "23.7",
+            "Alkalinity_TAC_mmol_l": "2.45",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "753",
+            "Sodium_Na_mg_l": "34.7",
+            "Chlorides_Cl_mg_l": "58.5",
+            "Calcium_Ca_mg_l": "144.7"
+        }
+    },
+    {
+        "Region": "Ocotal (Nicaragua)",
+        "Parameters": {
+            "Ca_Hardness_dH": "23.6",
+            "Alkalinity_TAC_mmol_l": "2.83",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "744",
+            "Sodium_Na_mg_l": "31.1",
+            "Chlorides_Cl_mg_l": "47.0",
+            "Calcium_Ca_mg_l": "126.2"
+        }
+    },
+    {
+        "Region": "Masaya (Nicaragua)",
+        "Parameters": {
+            "Ca_Hardness_dH": "10.8",
+            "Alkalinity_TAC_mmol_l": "3.87",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "390",
+            "Sodium_Na_mg_l": "68.7",
+            "Chlorides_Cl_mg_l": "75.6",
+            "Calcium_Ca_mg_l": "63.2"
+        }
+    },
+    {
+        "Region": "Jinotepe (Nicaragua)",
+        "Parameters": {
+            "Ca_Hardness_dH": "19.0",
+            "Alkalinity_TAC_mmol_l": "1.21",
+            "pH": "8.1",
+            "TDS_Conductivity_uS_cm": "612",
+            "Sodium_Na_mg_l": "43.8",
+            "Chlorides_Cl_mg_l": "63.0",
+            "Calcium_Ca_mg_l": "90.8"
+        }
+    },
+    {
+        "Region": "Managua (Nicaragua)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.1",
+            "Alkalinity_TAC_mmol_l": "1.45",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "147",
+            "Sodium_Na_mg_l": "10.3",
+            "Chlorides_Cl_mg_l": "13.6",
+            "Calcium_Ca_mg_l": "41.1"
+        }
+    },
+    {
+        "Region": "León (City) (Nicaragua)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.5",
+            "Alkalinity_TAC_mmol_l": "3.07",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "592",
+            "Sodium_Na_mg_l": "35.0",
+            "Chlorides_Cl_mg_l": "42.6",
+            "Calcium_Ca_mg_l": "103.6"
+        }
+    },
+    {
+        "Region": "Ciudad El Doral (Nicaragua)",
+        "Parameters": {
+            "Ca_Hardness_dH": "11.8",
+            "Alkalinity_TAC_mmol_l": "3.91",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "445",
+            "Sodium_Na_mg_l": "72.9",
+            "Chlorides_Cl_mg_l": "75.7",
+            "Calcium_Ca_mg_l": "50.3"
+        }
+    },
+    {
+        "Region": "Bilwi (Nicaragua)",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.1",
+            "Alkalinity_TAC_mmol_l": "2.27",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "283",
+            "Sodium_Na_mg_l": "14.3",
+            "Chlorides_Cl_mg_l": "19.5",
+            "Calcium_Ca_mg_l": "17.4"
+        }
+    },
+    {
+        "Region": "Ocotal (City) (Nicaragua)",
+        "Parameters": {
+            "Ca_Hardness_dH": "10.3",
+            "Alkalinity_TAC_mmol_l": "2.58",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "405",
+            "Sodium_Na_mg_l": "78.3",
+            "Chlorides_Cl_mg_l": "46.2",
+            "Calcium_Ca_mg_l": "78.6"
+        }
+    },
+    {
+        "Region": "Somoto (Nicaragua)",
+        "Parameters": {
+            "Ca_Hardness_dH": "20.4",
+            "Alkalinity_TAC_mmol_l": "1.89",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "648",
+            "Sodium_Na_mg_l": "35.3",
+            "Chlorides_Cl_mg_l": "45.1",
+            "Calcium_Ca_mg_l": "89.3"
+        }
+    },
+    {
+        "Region": "Chinandega (city) (Nicaragua)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.6",
+            "Alkalinity_TAC_mmol_l": "3.43",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "447",
+            "Sodium_Na_mg_l": "44.4",
+            "Chlorides_Cl_mg_l": "84.7",
+            "Calcium_Ca_mg_l": "50.3"
+        }
+    },
+    {
+        "Region": "Limón (Costa Rica)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.5",
+            "Alkalinity_TAC_mmol_l": "2.62",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "253",
+            "Sodium_Na_mg_l": "6.5",
+            "Chlorides_Cl_mg_l": "24.6",
+            "Calcium_Ca_mg_l": "41.7"
+        }
+    },
+    {
+        "Region": "Brasilito (Costa Rica)",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.2",
+            "Alkalinity_TAC_mmol_l": "2.54",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "284",
+            "Sodium_Na_mg_l": "5.6",
+            "Chlorides_Cl_mg_l": "19.6",
+            "Calcium_Ca_mg_l": "30.9"
+        }
+    },
+    {
+        "Region": "San Juan (Costa Rica)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.9",
+            "Alkalinity_TAC_mmol_l": "1.49",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "503",
+            "Sodium_Na_mg_l": "69.0",
+            "Chlorides_Cl_mg_l": "55.5",
+            "Calcium_Ca_mg_l": "63.8"
+        }
+    },
+    {
+        "Region": "Santiago (Costa Rica)",
+        "Parameters": {
+            "Ca_Hardness_dH": "20.3",
+            "Alkalinity_TAC_mmol_l": "1.39",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "703",
+            "Sodium_Na_mg_l": "41.4",
+            "Chlorides_Cl_mg_l": "41.8",
+            "Calcium_Ca_mg_l": "112.2"
+        }
+    },
+    {
+        "Region": "Buenos Aires (Costa Rica)",
+        "Parameters": {
+            "Ca_Hardness_dH": "19.7",
+            "Alkalinity_TAC_mmol_l": "3.85",
+            "pH": "8.1",
+            "TDS_Conductivity_uS_cm": "672",
+            "Sodium_Na_mg_l": "40.6",
+            "Chlorides_Cl_mg_l": "34.7",
+            "Calcium_Ca_mg_l": "146.9"
+        }
+    },
+    {
+        "Region": "Alajuela (Costa Rica)",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.3",
+            "Alkalinity_TAC_mmol_l": "2.62",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "333",
+            "Sodium_Na_mg_l": "11.5",
+            "Chlorides_Cl_mg_l": "18.0",
+            "Calcium_Ca_mg_l": "21.5"
+        }
+    },
+    {
+        "Region": "El Roble (Costa Rica)",
+        "Parameters": {
+            "Ca_Hardness_dH": "18.9",
+            "Alkalinity_TAC_mmol_l": "2.96",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "648",
+            "Sodium_Na_mg_l": "28.9",
+            "Chlorides_Cl_mg_l": "49.4",
+            "Calcium_Ca_mg_l": "132.0"
+        }
+    },
+    {
+        "Region": "Ciudad Cortés (Costa Rica)",
+        "Parameters": {
+            "Ca_Hardness_dH": "11.1",
+            "Alkalinity_TAC_mmol_l": "3.26",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "418",
+            "Sodium_Na_mg_l": "48.7",
+            "Chlorides_Cl_mg_l": "54.5",
+            "Calcium_Ca_mg_l": "68.7"
+        }
+    },
+    {
+        "Region": "Puntarenas (Costa Rica)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.9",
+            "Alkalinity_TAC_mmol_l": "3.24",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "272",
+            "Sodium_Na_mg_l": "8.1",
+            "Chlorides_Cl_mg_l": "17.5",
+            "Calcium_Ca_mg_l": "28.2"
+        }
+    },
+    {
+        "Region": "Zarcero (Costa Rica)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.5",
+            "Alkalinity_TAC_mmol_l": "1.52",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "269",
+            "Sodium_Na_mg_l": "11.6",
+            "Chlorides_Cl_mg_l": "13.6",
+            "Calcium_Ca_mg_l": "29.8"
+        }
+    },
+    {
+        "Region": "Santa Ana (Costa Rica)",
+        "Parameters": {
+            "Ca_Hardness_dH": "23.0",
+            "Alkalinity_TAC_mmol_l": "2.28",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "763",
+            "Sodium_Na_mg_l": "25.1",
+            "Chlorides_Cl_mg_l": "52.9",
+            "Calcium_Ca_mg_l": "91.1"
+        }
+    },
+    {
+        "Region": "Heredia (Costa Rica)",
+        "Parameters": {
+            "Ca_Hardness_dH": "11.8",
+            "Alkalinity_TAC_mmol_l": "1.70",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "394",
+            "Sodium_Na_mg_l": "59.7",
+            "Chlorides_Cl_mg_l": "69.7",
+            "Calcium_Ca_mg_l": "71.7"
+        }
+    },
+    {
+        "Region": "Sixaola (Costa Rica)",
+        "Parameters": {
+            "Ca_Hardness_dH": "20.2",
+            "Alkalinity_TAC_mmol_l": "2.36",
+            "pH": "8.1",
+            "TDS_Conductivity_uS_cm": "667",
+            "Sodium_Na_mg_l": "27.6",
+            "Chlorides_Cl_mg_l": "40.7",
+            "Calcium_Ca_mg_l": "127.5"
+        }
+    },
+    {
+        "Region": "Cartago (Costa Rica)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.8",
+            "Alkalinity_TAC_mmol_l": "2.10",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "189",
+            "Sodium_Na_mg_l": "5.7",
+            "Chlorides_Cl_mg_l": "22.6",
+            "Calcium_Ca_mg_l": "27.7"
+        }
+    },
+    {
+        "Region": "Desamparados (Costa Rica)",
+        "Parameters": {
+            "Ca_Hardness_dH": "21.2",
+            "Alkalinity_TAC_mmol_l": "3.31",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "688",
+            "Sodium_Na_mg_l": "33.4",
+            "Chlorides_Cl_mg_l": "50.6",
+            "Calcium_Ca_mg_l": "125.3"
+        }
+    },
+    {
+        "Region": "Ciudad Universitaria Rodrigo Facio Brenes (Costa Rica)",
+        "Parameters": {
+            "Ca_Hardness_dH": "11.4",
+            "Alkalinity_TAC_mmol_l": "2.15",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "377",
+            "Sodium_Na_mg_l": "62.3",
+            "Chlorides_Cl_mg_l": "75.7",
+            "Calcium_Ca_mg_l": "82.5"
+        }
+    },
+    {
+        "Region": "Guápiles (Costa Rica)",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.2",
+            "Alkalinity_TAC_mmol_l": "1.71",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "313",
+            "Sodium_Na_mg_l": "11.3",
+            "Chlorides_Cl_mg_l": "24.0",
+            "Calcium_Ca_mg_l": "16.4"
+        }
+    },
+    {
+        "Region": "Paso Canoas (Costa Rica)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.2",
+            "Alkalinity_TAC_mmol_l": "1.88",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "235",
+            "Sodium_Na_mg_l": "12.3",
+            "Chlorides_Cl_mg_l": "17.0",
+            "Calcium_Ca_mg_l": "29.5"
+        }
+    },
+    {
+        "Region": "Bribri (Costa Rica)",
+        "Parameters": {
+            "Ca_Hardness_dH": "5.5",
+            "Alkalinity_TAC_mmol_l": "1.64",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "230",
+            "Sodium_Na_mg_l": "9.6",
+            "Chlorides_Cl_mg_l": "10.5",
+            "Calcium_Ca_mg_l": "33.0"
+        }
+    },
+    {
+        "Region": "Bocas del Toro (Panama)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.7",
+            "Alkalinity_TAC_mmol_l": "3.10",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "232",
+            "Sodium_Na_mg_l": "10.5",
+            "Chlorides_Cl_mg_l": "16.5",
+            "Calcium_Ca_mg_l": "38.2"
+        }
+    },
+    {
+        "Region": "Penonomé (Panama)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.1",
+            "Alkalinity_TAC_mmol_l": "3.84",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "470",
+            "Sodium_Na_mg_l": "54.6",
+            "Chlorides_Cl_mg_l": "50.8",
+            "Calcium_Ca_mg_l": "79.8"
+        }
+    },
+    {
+        "Region": "Chitré (Panama)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.4",
+            "Alkalinity_TAC_mmol_l": "1.20",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "408",
+            "Sodium_Na_mg_l": "56.7",
+            "Chlorides_Cl_mg_l": "51.6",
+            "Calcium_Ca_mg_l": "76.2"
+        }
+    },
+    {
+        "Region": "Santiago de Veraguas (Panama)",
+        "Parameters": {
+            "Ca_Hardness_dH": "5.9",
+            "Alkalinity_TAC_mmol_l": "1.38",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "249",
+            "Sodium_Na_mg_l": "6.3",
+            "Chlorides_Cl_mg_l": "20.0",
+            "Calcium_Ca_mg_l": "29.2"
+        }
+    },
+    {
+        "Region": "Natá de los Caballeros (Panama)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.5",
+            "Alkalinity_TAC_mmol_l": "1.80",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "199",
+            "Sodium_Na_mg_l": "6.8",
+            "Chlorides_Cl_mg_l": "11.0",
+            "Calcium_Ca_mg_l": "22.1"
+        }
+    },
+    {
+        "Region": "Las Tablas (Panama)",
+        "Parameters": {
+            "Ca_Hardness_dH": "5.9",
+            "Alkalinity_TAC_mmol_l": "1.63",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "229",
+            "Sodium_Na_mg_l": "6.9",
+            "Chlorides_Cl_mg_l": "19.7",
+            "Calcium_Ca_mg_l": "30.6"
+        }
+    },
+    {
+        "Region": "Portobelo (Panama)",
+        "Parameters": {
+            "Ca_Hardness_dH": "18.3",
+            "Alkalinity_TAC_mmol_l": "2.49",
+            "pH": "8.2",
+            "TDS_Conductivity_uS_cm": "643",
+            "Sodium_Na_mg_l": "34.2",
+            "Chlorides_Cl_mg_l": "61.4",
+            "Calcium_Ca_mg_l": "112.9"
+        }
+    },
+    {
+        "Region": "Las Cumbres (Panama)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.2",
+            "Alkalinity_TAC_mmol_l": "2.49",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "267",
+            "Sodium_Na_mg_l": "10.6",
+            "Chlorides_Cl_mg_l": "16.6",
+            "Calcium_Ca_mg_l": "23.5"
+        }
+    },
+    {
+        "Region": "David (Panama)",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.2",
+            "Alkalinity_TAC_mmol_l": "1.75",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "249",
+            "Sodium_Na_mg_l": "10.1",
+            "Chlorides_Cl_mg_l": "20.3",
+            "Calcium_Ca_mg_l": "32.7"
+        }
+    },
+    {
+        "Region": "La Chorrera (Panama)",
+        "Parameters": {
+            "Ca_Hardness_dH": "20.4",
+            "Alkalinity_TAC_mmol_l": "2.66",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "641",
+            "Sodium_Na_mg_l": "41.9",
+            "Chlorides_Cl_mg_l": "32.6",
+            "Calcium_Ca_mg_l": "109.1"
+        }
+    },
+    {
+        "Region": "Balboa (Panama)",
+        "Parameters": {
+            "Ca_Hardness_dH": "11.1",
+            "Alkalinity_TAC_mmol_l": "2.76",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "392",
+            "Sodium_Na_mg_l": "69.0",
+            "Chlorides_Cl_mg_l": "40.3",
+            "Calcium_Ca_mg_l": "73.8"
+        }
+    },
+    {
+        "Region": "Río Sereno (Panama)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.5",
+            "Alkalinity_TAC_mmol_l": "2.39",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "493",
+            "Sodium_Na_mg_l": "40.7",
+            "Chlorides_Cl_mg_l": "50.1",
+            "Calcium_Ca_mg_l": "52.0"
+        }
+    },
+    {
+        "Region": "Puerto Armuelles (Panama)",
+        "Parameters": {
+            "Ca_Hardness_dH": "11.4",
+            "Alkalinity_TAC_mmol_l": "2.11",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "385",
+            "Sodium_Na_mg_l": "40.9",
+            "Chlorides_Cl_mg_l": "50.4",
+            "Calcium_Ca_mg_l": "55.1"
+        }
+    },
+    {
+        "Region": "Paso Canoas (Panama)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.3",
+            "Alkalinity_TAC_mmol_l": "1.27",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "410",
+            "Sodium_Na_mg_l": "36.6",
+            "Chlorides_Cl_mg_l": "57.4",
+            "Calcium_Ca_mg_l": "61.4"
+        }
+    },
+    {
+        "Region": "Colón City (Panama)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.9",
+            "Alkalinity_TAC_mmol_l": "2.13",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "477",
+            "Sodium_Na_mg_l": "37.7",
+            "Chlorides_Cl_mg_l": "87.7",
+            "Calcium_Ca_mg_l": "54.2"
+        }
+    },
+    {
+        "Region": "Guabito (Panama)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.4",
+            "Alkalinity_TAC_mmol_l": "2.33",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "242",
+            "Sodium_Na_mg_l": "5.2",
+            "Chlorides_Cl_mg_l": "16.8",
+            "Calcium_Ca_mg_l": "41.2"
+        }
+    }
+]

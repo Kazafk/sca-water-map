@@ -1,0 +1,4034 @@
+[
+    {
+        "Region": "Beijing (Beijing Waterworks)",
+        "Parameters": {
+            "Ca_Hardness_dH": "26.0",
+            "Alkalinity_TAC_mmol_l": "4.8",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "680",
+            "Sodium_Na_mg_l": "35.0",
+            "Chlorides_Cl_mg_l": "45.0",
+            "Calcium_Ca_mg_l": "120.0"
+        }
+    },
+    {
+        "Region": "Shanghai (Shanghai Water)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.5",
+            "Alkalinity_TAC_mmol_l": "3.1",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "420",
+            "Sodium_Na_mg_l": "28.0",
+            "Chlorides_Cl_mg_l": "38.0",
+            "Calcium_Ca_mg_l": "85.0"
+        }
+    },
+    {
+        "Region": "Guangzhou (Guangzhou Water)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.0",
+            "Alkalinity_TAC_mmol_l": "2.4",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "310",
+            "Sodium_Na_mg_l": "18.0",
+            "Chlorides_Cl_mg_l": "25.0",
+            "Calcium_Ca_mg_l": "65.0"
+        }
+    },
+    {
+        "Region": "Jiamusi (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "20.6",
+            "Alkalinity_TAC_mmol_l": "3.38",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "750",
+            "Sodium_Na_mg_l": "42.7",
+            "Chlorides_Cl_mg_l": "54.2",
+            "Calcium_Ca_mg_l": "145.8"
+        }
+    },
+    {
+        "Region": "Guangzhou Direct-controlled Municipality (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.6",
+            "Alkalinity_TAC_mmol_l": "4.29",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "577",
+            "Sodium_Na_mg_l": "28.8",
+            "Chlorides_Cl_mg_l": "19.1",
+            "Calcium_Ca_mg_l": "75.3"
+        }
+    },
+    {
+        "Region": "Benxi (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "29.2",
+            "Alkalinity_TAC_mmol_l": "2.80",
+            "pH": "8.1",
+            "TDS_Conductivity_uS_cm": "984",
+            "Sodium_Na_mg_l": "26.8",
+            "Chlorides_Cl_mg_l": "43.5",
+            "Calcium_Ca_mg_l": "99.1"
+        }
+    },
+    {
+        "Region": "Guang'an (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "27.6",
+            "Alkalinity_TAC_mmol_l": "3.28",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "924",
+            "Sodium_Na_mg_l": "46.2",
+            "Chlorides_Cl_mg_l": "66.4",
+            "Calcium_Ca_mg_l": "127.7"
+        }
+    },
+    {
+        "Region": "Hunchun (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.5",
+            "Alkalinity_TAC_mmol_l": "3.97",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "501",
+            "Sodium_Na_mg_l": "29.7",
+            "Chlorides_Cl_mg_l": "18.3",
+            "Calcium_Ca_mg_l": "76.8"
+        }
+    },
+    {
+        "Region": "Yanyi Wei (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.4",
+            "Alkalinity_TAC_mmol_l": "4.57",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "495",
+            "Sodium_Na_mg_l": "15.4",
+            "Chlorides_Cl_mg_l": "28.0",
+            "Calcium_Ca_mg_l": "63.4"
+        }
+    },
+    {
+        "Region": "Tianjin (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "10.8",
+            "Alkalinity_TAC_mmol_l": "4.76",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "423",
+            "Sodium_Na_mg_l": "27.5",
+            "Chlorides_Cl_mg_l": "24.2",
+            "Calcium_Ca_mg_l": "80.0"
+        }
+    },
+    {
+        "Region": "Zibo (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "21.1",
+            "Alkalinity_TAC_mmol_l": "4.11",
+            "pH": "8.1",
+            "TDS_Conductivity_uS_cm": "728",
+            "Sodium_Na_mg_l": "24.5",
+            "Chlorides_Cl_mg_l": "38.6",
+            "Calcium_Ca_mg_l": "90.1"
+        }
+    },
+    {
+        "Region": "Leshan (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "26.6",
+            "Alkalinity_TAC_mmol_l": "3.06",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "927",
+            "Sodium_Na_mg_l": "24.5",
+            "Chlorides_Cl_mg_l": "56.2",
+            "Calcium_Ca_mg_l": "98.4"
+        }
+    },
+    {
+        "Region": "Yantai (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "10.5",
+            "Alkalinity_TAC_mmol_l": "3.35",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "412",
+            "Sodium_Na_mg_l": "16.6",
+            "Chlorides_Cl_mg_l": "26.7",
+            "Calcium_Ca_mg_l": "61.5"
+        }
+    },
+    {
+        "Region": "Yuxi (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "28.5",
+            "Alkalinity_TAC_mmol_l": "3.04",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "983",
+            "Sodium_Na_mg_l": "26.5",
+            "Chlorides_Cl_mg_l": "66.0",
+            "Calcium_Ca_mg_l": "99.2"
+        }
+    },
+    {
+        "Region": "Xingning (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.7",
+            "Alkalinity_TAC_mmol_l": "3.43",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "595",
+            "Sodium_Na_mg_l": "29.1",
+            "Chlorides_Cl_mg_l": "26.2",
+            "Calcium_Ca_mg_l": "60.2"
+        }
+    },
+    {
+        "Region": "Fushun (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.5",
+            "Alkalinity_TAC_mmol_l": "3.83",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "480",
+            "Sodium_Na_mg_l": "22.0",
+            "Chlorides_Cl_mg_l": "34.9",
+            "Calcium_Ca_mg_l": "61.1"
+        }
+    },
+    {
+        "Region": "Loudi (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "10.4",
+            "Alkalinity_TAC_mmol_l": "3.15",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "453",
+            "Sodium_Na_mg_l": "20.7",
+            "Chlorides_Cl_mg_l": "23.8",
+            "Calcium_Ca_mg_l": "56.1"
+        }
+    },
+    {
+        "Region": "Weiting Wei (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.3",
+            "Alkalinity_TAC_mmol_l": "2.90",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "652",
+            "Sodium_Na_mg_l": "16.4",
+            "Chlorides_Cl_mg_l": "23.1",
+            "Calcium_Ca_mg_l": "50.1"
+        }
+    },
+    {
+        "Region": "Pu'er City (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "21.8",
+            "Alkalinity_TAC_mmol_l": "3.82",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "755",
+            "Sodium_Na_mg_l": "44.4",
+            "Chlorides_Cl_mg_l": "51.9",
+            "Calcium_Ca_mg_l": "103.4"
+        }
+    },
+    {
+        "Region": "Manzhouli (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.3",
+            "Alkalinity_TAC_mmol_l": "4.23",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "494",
+            "Sodium_Na_mg_l": "11.9",
+            "Chlorides_Cl_mg_l": "23.8",
+            "Calcium_Ca_mg_l": "58.0"
+        }
+    },
+    {
+        "Region": "Foshan (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "11.3",
+            "Alkalinity_TAC_mmol_l": "4.25",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "397",
+            "Sodium_Na_mg_l": "13.8",
+            "Chlorides_Cl_mg_l": "17.7",
+            "Calcium_Ca_mg_l": "73.0"
+        }
+    },
+    {
+        "Region": "Hami (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "25.1",
+            "Alkalinity_TAC_mmol_l": "3.77",
+            "pH": "8.1",
+            "TDS_Conductivity_uS_cm": "837",
+            "Sodium_Na_mg_l": "39.9",
+            "Chlorides_Cl_mg_l": "58.2",
+            "Calcium_Ca_mg_l": "138.7"
+        }
+    },
+    {
+        "Region": "Jingdezhen (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "28.8",
+            "Alkalinity_TAC_mmol_l": "3.67",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "929",
+            "Sodium_Na_mg_l": "45.3",
+            "Chlorides_Cl_mg_l": "32.4",
+            "Calcium_Ca_mg_l": "144.6"
+        }
+    },
+    {
+        "Region": "Jiyuan (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.7",
+            "Alkalinity_TAC_mmol_l": "4.14",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "534",
+            "Sodium_Na_mg_l": "21.3",
+            "Chlorides_Cl_mg_l": "23.1",
+            "Calcium_Ca_mg_l": "75.0"
+        }
+    },
+    {
+        "Region": "Banpo (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.8",
+            "Alkalinity_TAC_mmol_l": "4.10",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "594",
+            "Sodium_Na_mg_l": "21.1",
+            "Chlorides_Cl_mg_l": "19.6",
+            "Calcium_Ca_mg_l": "86.6"
+        }
+    },
+    {
+        "Region": "Changde (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "10.6",
+            "Alkalinity_TAC_mmol_l": "4.26",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "391",
+            "Sodium_Na_mg_l": "12.0",
+            "Chlorides_Cl_mg_l": "32.5",
+            "Calcium_Ca_mg_l": "85.1"
+        }
+    },
+    {
+        "Region": "Taiyuan (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.1",
+            "Alkalinity_TAC_mmol_l": "3.57",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "617",
+            "Sodium_Na_mg_l": "22.4",
+            "Chlorides_Cl_mg_l": "34.4",
+            "Calcium_Ca_mg_l": "62.5"
+        }
+    },
+    {
+        "Region": "Hechi (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.3",
+            "Alkalinity_TAC_mmol_l": "2.53",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "464",
+            "Sodium_Na_mg_l": "13.2",
+            "Chlorides_Cl_mg_l": "20.2",
+            "Calcium_Ca_mg_l": "86.8"
+        }
+    },
+    {
+        "Region": "Stone City (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "19.4",
+            "Alkalinity_TAC_mmol_l": "2.83",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "648",
+            "Sodium_Na_mg_l": "27.2",
+            "Chlorides_Cl_mg_l": "54.7",
+            "Calcium_Ca_mg_l": "105.8"
+        }
+    },
+    {
+        "Region": "Yangzhou (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "10.7",
+            "Alkalinity_TAC_mmol_l": "4.69",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "464",
+            "Sodium_Na_mg_l": "22.6",
+            "Chlorides_Cl_mg_l": "34.4",
+            "Calcium_Ca_mg_l": "50.3"
+        }
+    },
+    {
+        "Region": "Oupuyang Village (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.7",
+            "Alkalinity_TAC_mmol_l": "2.61",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "572",
+            "Sodium_Na_mg_l": "14.5",
+            "Chlorides_Cl_mg_l": "19.8",
+            "Calcium_Ca_mg_l": "59.3"
+        }
+    },
+    {
+        "Region": "Jinan (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "25.6",
+            "Alkalinity_TAC_mmol_l": "3.34",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "850",
+            "Sodium_Na_mg_l": "28.9",
+            "Chlorides_Cl_mg_l": "32.7",
+            "Calcium_Ca_mg_l": "141.8"
+        }
+    },
+    {
+        "Region": "Chifeng (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.6",
+            "Alkalinity_TAC_mmol_l": "2.71",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "559",
+            "Sodium_Na_mg_l": "21.1",
+            "Chlorides_Cl_mg_l": "22.0",
+            "Calcium_Ca_mg_l": "54.0"
+        }
+    },
+    {
+        "Region": "Taoyuan County (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.1",
+            "Alkalinity_TAC_mmol_l": "3.97",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "556",
+            "Sodium_Na_mg_l": "23.9",
+            "Chlorides_Cl_mg_l": "34.4",
+            "Calcium_Ca_mg_l": "60.2"
+        }
+    },
+    {
+        "Region": "Sanmenxia (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.6",
+            "Alkalinity_TAC_mmol_l": "4.54",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "583",
+            "Sodium_Na_mg_l": "25.5",
+            "Chlorides_Cl_mg_l": "33.8",
+            "Calcium_Ca_mg_l": "65.3"
+        }
+    },
+    {
+        "Region": "Liangxiang University Town (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "22.7",
+            "Alkalinity_TAC_mmol_l": "3.60",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "780",
+            "Sodium_Na_mg_l": "21.9",
+            "Chlorides_Cl_mg_l": "66.7",
+            "Calcium_Ca_mg_l": "126.3"
+        }
+    },
+    {
+        "Region": "Ma'anshan (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "11.8",
+            "Alkalinity_TAC_mmol_l": "3.30",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "484",
+            "Sodium_Na_mg_l": "21.9",
+            "Chlorides_Cl_mg_l": "18.4",
+            "Calcium_Ca_mg_l": "60.9"
+        }
+    },
+    {
+        "Region": "Xingtai (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "29.6",
+            "Alkalinity_TAC_mmol_l": "4.35",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "982",
+            "Sodium_Na_mg_l": "49.8",
+            "Chlorides_Cl_mg_l": "57.7",
+            "Calcium_Ca_mg_l": "118.8"
+        }
+    },
+    {
+        "Region": "Daliang (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "11.9",
+            "Alkalinity_TAC_mmol_l": "3.41",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "468",
+            "Sodium_Na_mg_l": "22.3",
+            "Chlorides_Cl_mg_l": "29.3",
+            "Calcium_Ca_mg_l": "82.7"
+        }
+    },
+    {
+        "Region": "Wuzhou (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "25.3",
+            "Alkalinity_TAC_mmol_l": "3.14",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "858",
+            "Sodium_Na_mg_l": "45.6",
+            "Chlorides_Cl_mg_l": "31.3",
+            "Calcium_Ca_mg_l": "108.3"
+        }
+    },
+    {
+        "Region": "Siping (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "10.3",
+            "Alkalinity_TAC_mmol_l": "3.62",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "382",
+            "Sodium_Na_mg_l": "29.4",
+            "Chlorides_Cl_mg_l": "15.8",
+            "Calcium_Ca_mg_l": "69.6"
+        }
+    },
+    {
+        "Region": "Guiyang (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.3",
+            "Alkalinity_TAC_mmol_l": "2.92",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "534",
+            "Sodium_Na_mg_l": "24.6",
+            "Chlorides_Cl_mg_l": "33.6",
+            "Calcium_Ca_mg_l": "70.3"
+        }
+    },
+    {
+        "Region": "Dazhou (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.0",
+            "Alkalinity_TAC_mmol_l": "4.75",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "516",
+            "Sodium_Na_mg_l": "11.2",
+            "Chlorides_Cl_mg_l": "17.8",
+            "Calcium_Ca_mg_l": "73.1"
+        }
+    },
+    {
+        "Region": "Beihai (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "11.4",
+            "Alkalinity_TAC_mmol_l": "2.99",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "456",
+            "Sodium_Na_mg_l": "12.2",
+            "Chlorides_Cl_mg_l": "19.3",
+            "Calcium_Ca_mg_l": "61.2"
+        }
+    },
+    {
+        "Region": "Huizhou (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.8",
+            "Alkalinity_TAC_mmol_l": "3.36",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "667",
+            "Sodium_Na_mg_l": "10.2",
+            "Chlorides_Cl_mg_l": "29.2",
+            "Calcium_Ca_mg_l": "50.9"
+        }
+    },
+    {
+        "Region": "Chang'an, Tang Empire (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.9",
+            "Alkalinity_TAC_mmol_l": "3.04",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "605",
+            "Sodium_Na_mg_l": "17.2",
+            "Chlorides_Cl_mg_l": "17.9",
+            "Calcium_Ca_mg_l": "69.1"
+        }
+    },
+    {
+        "Region": "Ya'an (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "11.3",
+            "Alkalinity_TAC_mmol_l": "3.64",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "486",
+            "Sodium_Na_mg_l": "25.8",
+            "Chlorides_Cl_mg_l": "31.8",
+            "Calcium_Ca_mg_l": "51.7"
+        }
+    },
+    {
+        "Region": "Linyi (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "19.9",
+            "Alkalinity_TAC_mmol_l": "4.00",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "717",
+            "Sodium_Na_mg_l": "47.6",
+            "Chlorides_Cl_mg_l": "68.3",
+            "Calcium_Ca_mg_l": "106.5"
+        }
+    },
+    {
+        "Region": "Yingtan (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.7",
+            "Alkalinity_TAC_mmol_l": "3.48",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "587",
+            "Sodium_Na_mg_l": "13.6",
+            "Chlorides_Cl_mg_l": "30.5",
+            "Calcium_Ca_mg_l": "65.2"
+        }
+    },
+    {
+        "Region": "Yueyang (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.7",
+            "Alkalinity_TAC_mmol_l": "4.66",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "538",
+            "Sodium_Na_mg_l": "17.4",
+            "Chlorides_Cl_mg_l": "27.6",
+            "Calcium_Ca_mg_l": "74.4"
+        }
+    },
+    {
+        "Region": "Liaoyuan (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "19.4",
+            "Alkalinity_TAC_mmol_l": "2.82",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "716",
+            "Sodium_Na_mg_l": "49.3",
+            "Chlorides_Cl_mg_l": "51.5",
+            "Calcium_Ca_mg_l": "148.0"
+        }
+    },
+    {
+        "Region": "Wuzhong (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.3",
+            "Alkalinity_TAC_mmol_l": "4.06",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "516",
+            "Sodium_Na_mg_l": "22.3",
+            "Chlorides_Cl_mg_l": "29.5",
+            "Calcium_Ca_mg_l": "77.6"
+        }
+    },
+    {
+        "Region": "Yangzuomie City Ruins (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "28.8",
+            "Alkalinity_TAC_mmol_l": "4.22",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "945",
+            "Sodium_Na_mg_l": "24.6",
+            "Chlorides_Cl_mg_l": "66.0",
+            "Calcium_Ca_mg_l": "130.6"
+        }
+    },
+    {
+        "Region": "Huludao (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "26.9",
+            "Alkalinity_TAC_mmol_l": "4.80",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "902",
+            "Sodium_Na_mg_l": "28.6",
+            "Chlorides_Cl_mg_l": "48.4",
+            "Calcium_Ca_mg_l": "109.1"
+        }
+    },
+    {
+        "Region": "Luohe (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.6",
+            "Alkalinity_TAC_mmol_l": "3.48",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "591",
+            "Sodium_Na_mg_l": "14.3",
+            "Chlorides_Cl_mg_l": "24.5",
+            "Calcium_Ca_mg_l": "54.7"
+        }
+    },
+    {
+        "Region": "Kaifeng (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "10.7",
+            "Alkalinity_TAC_mmol_l": "4.51",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "466",
+            "Sodium_Na_mg_l": "20.6",
+            "Chlorides_Cl_mg_l": "32.2",
+            "Calcium_Ca_mg_l": "56.7"
+        }
+    },
+    {
+        "Region": "Turpan (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.9",
+            "Alkalinity_TAC_mmol_l": "3.31",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "614",
+            "Sodium_Na_mg_l": "28.0",
+            "Chlorides_Cl_mg_l": "30.4",
+            "Calcium_Ca_mg_l": "73.5"
+        }
+    },
+    {
+        "Region": "The Old City of Luoyang in Han and Wei Dynasties (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "25.9",
+            "Alkalinity_TAC_mmol_l": "4.20",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "922",
+            "Sodium_Na_mg_l": "31.6",
+            "Chlorides_Cl_mg_l": "53.7",
+            "Calcium_Ca_mg_l": "142.7"
+        }
+    },
+    {
+        "Region": "Hanzhong (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.9",
+            "Alkalinity_TAC_mmol_l": "3.54",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "536",
+            "Sodium_Na_mg_l": "13.7",
+            "Chlorides_Cl_mg_l": "27.5",
+            "Calcium_Ca_mg_l": "50.7"
+        }
+    },
+    {
+        "Region": "Kashgar (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "27.4",
+            "Alkalinity_TAC_mmol_l": "3.01",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "941",
+            "Sodium_Na_mg_l": "34.4",
+            "Chlorides_Cl_mg_l": "49.4",
+            "Calcium_Ca_mg_l": "147.4"
+        }
+    },
+    {
+        "Region": "Zhongshan (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "10.3",
+            "Alkalinity_TAC_mmol_l": "4.39",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "359",
+            "Sodium_Na_mg_l": "19.9",
+            "Chlorides_Cl_mg_l": "25.0",
+            "Calcium_Ca_mg_l": "61.4"
+        }
+    },
+    {
+        "Region": "Yingkou (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.6",
+            "Alkalinity_TAC_mmol_l": "4.47",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "514",
+            "Sodium_Na_mg_l": "15.8",
+            "Chlorides_Cl_mg_l": "20.3",
+            "Calcium_Ca_mg_l": "71.7"
+        }
+    },
+    {
+        "Region": "Golmud (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "11.9",
+            "Alkalinity_TAC_mmol_l": "3.27",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "421",
+            "Sodium_Na_mg_l": "18.4",
+            "Chlorides_Cl_mg_l": "32.4",
+            "Calcium_Ca_mg_l": "73.1"
+        }
+    },
+    {
+        "Region": "Daqing (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "28.5",
+            "Alkalinity_TAC_mmol_l": "4.35",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "970",
+            "Sodium_Na_mg_l": "46.5",
+            "Chlorides_Cl_mg_l": "69.3",
+            "Calcium_Ca_mg_l": "134.5"
+        }
+    },
+    {
+        "Region": "Fuxin (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.7",
+            "Alkalinity_TAC_mmol_l": "4.20",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "476",
+            "Sodium_Na_mg_l": "19.6",
+            "Chlorides_Cl_mg_l": "32.9",
+            "Calcium_Ca_mg_l": "54.2"
+        }
+    },
+    {
+        "Region": "Luohu Port (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "21.9",
+            "Alkalinity_TAC_mmol_l": "4.18",
+            "pH": "8.2",
+            "TDS_Conductivity_uS_cm": "741",
+            "Sodium_Na_mg_l": "36.1",
+            "Chlorides_Cl_mg_l": "65.4",
+            "Calcium_Ca_mg_l": "113.4"
+        }
+    },
+    {
+        "Region": "Khorgos (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "10.3",
+            "Alkalinity_TAC_mmol_l": "4.32",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "393",
+            "Sodium_Na_mg_l": "19.6",
+            "Chlorides_Cl_mg_l": "17.6",
+            "Calcium_Ca_mg_l": "75.6"
+        }
+    },
+    {
+        "Region": "Wuhu (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "27.7",
+            "Alkalinity_TAC_mmol_l": "4.91",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "948",
+            "Sodium_Na_mg_l": "35.6",
+            "Chlorides_Cl_mg_l": "62.7",
+            "Calcium_Ca_mg_l": "108.7"
+        }
+    },
+    {
+        "Region": "Heihe (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.0",
+            "Alkalinity_TAC_mmol_l": "3.42",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "462",
+            "Sodium_Na_mg_l": "11.1",
+            "Chlorides_Cl_mg_l": "32.6",
+            "Calcium_Ca_mg_l": "52.0"
+        }
+    },
+    {
+        "Region": "Huzhou (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.8",
+            "Alkalinity_TAC_mmol_l": "2.98",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "646",
+            "Sodium_Na_mg_l": "25.6",
+            "Chlorides_Cl_mg_l": "34.0",
+            "Calcium_Ca_mg_l": "52.7"
+        }
+    },
+    {
+        "Region": "Shahe Higher Education Park (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "10.1",
+            "Alkalinity_TAC_mmol_l": "3.48",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "396",
+            "Sodium_Na_mg_l": "14.1",
+            "Chlorides_Cl_mg_l": "21.2",
+            "Calcium_Ca_mg_l": "62.5"
+        }
+    },
+    {
+        "Region": "Yongzhou (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.4",
+            "Alkalinity_TAC_mmol_l": "4.41",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "583",
+            "Sodium_Na_mg_l": "20.7",
+            "Chlorides_Cl_mg_l": "31.5",
+            "Calcium_Ca_mg_l": "60.9"
+        }
+    },
+    {
+        "Region": "Dandong (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "23.4",
+            "Alkalinity_TAC_mmol_l": "2.73",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "816",
+            "Sodium_Na_mg_l": "47.6",
+            "Chlorides_Cl_mg_l": "49.7",
+            "Calcium_Ca_mg_l": "139.7"
+        }
+    },
+    {
+        "Region": "Xinzhou (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.9",
+            "Alkalinity_TAC_mmol_l": "3.93",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "608",
+            "Sodium_Na_mg_l": "26.2",
+            "Chlorides_Cl_mg_l": "25.9",
+            "Calcium_Ca_mg_l": "75.9"
+        }
+    },
+    {
+        "Region": "Xiangyang (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "23.0",
+            "Alkalinity_TAC_mmol_l": "4.24",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "771",
+            "Sodium_Na_mg_l": "32.0",
+            "Chlorides_Cl_mg_l": "44.5",
+            "Calcium_Ca_mg_l": "127.7"
+        }
+    },
+    {
+        "Region": "Ulanhot (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "11.5",
+            "Alkalinity_TAC_mmol_l": "3.80",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "445",
+            "Sodium_Na_mg_l": "21.8",
+            "Chlorides_Cl_mg_l": "34.6",
+            "Calcium_Ca_mg_l": "60.8"
+        }
+    },
+    {
+        "Region": "Yibin (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "18.2",
+            "Alkalinity_TAC_mmol_l": "3.17",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "664",
+            "Sodium_Na_mg_l": "38.4",
+            "Chlorides_Cl_mg_l": "64.6",
+            "Calcium_Ca_mg_l": "129.1"
+        }
+    },
+    {
+        "Region": "Ancient City of Fenghuang (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.7",
+            "Alkalinity_TAC_mmol_l": "4.77",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "559",
+            "Sodium_Na_mg_l": "20.0",
+            "Chlorides_Cl_mg_l": "17.7",
+            "Calcium_Ca_mg_l": "75.1"
+        }
+    },
+    {
+        "Region": "Xichang Wei (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "25.3",
+            "Alkalinity_TAC_mmol_l": "3.69",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "854",
+            "Sodium_Na_mg_l": "36.5",
+            "Chlorides_Cl_mg_l": "69.3",
+            "Calcium_Ca_mg_l": "133.9"
+        }
+    },
+    {
+        "Region": "Shuangyashan (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "28.2",
+            "Alkalinity_TAC_mmol_l": "3.68",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "918",
+            "Sodium_Na_mg_l": "29.9",
+            "Chlorides_Cl_mg_l": "42.7",
+            "Calcium_Ca_mg_l": "94.2"
+        }
+    },
+    {
+        "Region": "Yangcheng (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.1",
+            "Alkalinity_TAC_mmol_l": "4.80",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "491",
+            "Sodium_Na_mg_l": "13.1",
+            "Chlorides_Cl_mg_l": "28.0",
+            "Calcium_Ca_mg_l": "70.5"
+        }
+    },
+    {
+        "Region": "Lüliang (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.4",
+            "Alkalinity_TAC_mmol_l": "4.29",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "578",
+            "Sodium_Na_mg_l": "14.9",
+            "Chlorides_Cl_mg_l": "27.4",
+            "Calcium_Ca_mg_l": "72.4"
+        }
+    },
+    {
+        "Region": "Kokdala (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "22.8",
+            "Alkalinity_TAC_mmol_l": "4.00",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "799",
+            "Sodium_Na_mg_l": "29.3",
+            "Chlorides_Cl_mg_l": "42.8",
+            "Calcium_Ca_mg_l": "147.3"
+        }
+    },
+    {
+        "Region": "Suifenhe (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.9",
+            "Alkalinity_TAC_mmol_l": "2.54",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "471",
+            "Sodium_Na_mg_l": "28.9",
+            "Chlorides_Cl_mg_l": "27.7",
+            "Calcium_Ca_mg_l": "61.5"
+        }
+    },
+    {
+        "Region": "Gungnae (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.4",
+            "Alkalinity_TAC_mmol_l": "3.17",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "498",
+            "Sodium_Na_mg_l": "10.2",
+            "Chlorides_Cl_mg_l": "18.9",
+            "Calcium_Ca_mg_l": "88.9"
+        }
+    },
+    {
+        "Region": "Jinhua (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.0",
+            "Alkalinity_TAC_mmol_l": "2.69",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "515",
+            "Sodium_Na_mg_l": "29.8",
+            "Chlorides_Cl_mg_l": "21.8",
+            "Calcium_Ca_mg_l": "78.9"
+        }
+    },
+    {
+        "Region": "Suzhou (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "25.4",
+            "Alkalinity_TAC_mmol_l": "3.47",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "882",
+            "Sodium_Na_mg_l": "28.1",
+            "Chlorides_Cl_mg_l": "69.8",
+            "Calcium_Ca_mg_l": "108.9"
+        }
+    },
+    {
+        "Region": "Sansha (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.8",
+            "Alkalinity_TAC_mmol_l": "2.69",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "522",
+            "Sodium_Na_mg_l": "15.7",
+            "Chlorides_Cl_mg_l": "15.4",
+            "Calcium_Ca_mg_l": "73.4"
+        }
+    },
+    {
+        "Region": "Pingliang (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "20.7",
+            "Alkalinity_TAC_mmol_l": "4.66",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "702",
+            "Sodium_Na_mg_l": "20.4",
+            "Chlorides_Cl_mg_l": "37.3",
+            "Calcium_Ca_mg_l": "135.3"
+        }
+    },
+    {
+        "Region": "Beijing (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "19.7",
+            "Alkalinity_TAC_mmol_l": "3.66",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "678",
+            "Sodium_Na_mg_l": "33.1",
+            "Chlorides_Cl_mg_l": "69.8",
+            "Calcium_Ca_mg_l": "148.8"
+        }
+    },
+    {
+        "Region": "Pingxiang (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "20.2",
+            "Alkalinity_TAC_mmol_l": "2.92",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "745",
+            "Sodium_Na_mg_l": "42.0",
+            "Chlorides_Cl_mg_l": "69.9",
+            "Calcium_Ca_mg_l": "131.1"
+        }
+    },
+    {
+        "Region": "Baoguo (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.1",
+            "Alkalinity_TAC_mmol_l": "4.94",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "648",
+            "Sodium_Na_mg_l": "29.5",
+            "Chlorides_Cl_mg_l": "17.9",
+            "Calcium_Ca_mg_l": "72.7"
+        }
+    },
+    {
+        "Region": "Nanchang (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.2",
+            "Alkalinity_TAC_mmol_l": "4.46",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "554",
+            "Sodium_Na_mg_l": "22.4",
+            "Chlorides_Cl_mg_l": "22.7",
+            "Calcium_Ca_mg_l": "70.1"
+        }
+    },
+    {
+        "Region": "Jiujiang (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.2",
+            "Alkalinity_TAC_mmol_l": "4.91",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "623",
+            "Sodium_Na_mg_l": "16.7",
+            "Chlorides_Cl_mg_l": "25.6",
+            "Calcium_Ca_mg_l": "61.0"
+        }
+    },
+    {
+        "Region": "Ancient City of Jingzhou (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "11.1",
+            "Alkalinity_TAC_mmol_l": "3.49",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "398",
+            "Sodium_Na_mg_l": "10.3",
+            "Chlorides_Cl_mg_l": "19.9",
+            "Calcium_Ca_mg_l": "89.5"
+        }
+    },
+    {
+        "Region": "Heze (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.9",
+            "Alkalinity_TAC_mmol_l": "4.71",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "560",
+            "Sodium_Na_mg_l": "19.1",
+            "Chlorides_Cl_mg_l": "15.3",
+            "Calcium_Ca_mg_l": "79.5"
+        }
+    },
+    {
+        "Region": "Shimao (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "10.7",
+            "Alkalinity_TAC_mmol_l": "2.88",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "378",
+            "Sodium_Na_mg_l": "14.4",
+            "Chlorides_Cl_mg_l": "15.6",
+            "Calcium_Ca_mg_l": "73.7"
+        }
+    },
+    {
+        "Region": "Guangyuan (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "19.2",
+            "Alkalinity_TAC_mmol_l": "2.77",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "684",
+            "Sodium_Na_mg_l": "38.5",
+            "Chlorides_Cl_mg_l": "53.2",
+            "Calcium_Ca_mg_l": "108.9"
+        }
+    },
+    {
+        "Region": "Yinchuan (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "29.1",
+            "Alkalinity_TAC_mmol_l": "4.66",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "964",
+            "Sodium_Na_mg_l": "45.8",
+            "Chlorides_Cl_mg_l": "69.0",
+            "Calcium_Ca_mg_l": "94.4"
+        }
+    },
+    {
+        "Region": "Baicheng (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "10.6",
+            "Alkalinity_TAC_mmol_l": "4.40",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "460",
+            "Sodium_Na_mg_l": "15.9",
+            "Chlorides_Cl_mg_l": "34.0",
+            "Calcium_Ca_mg_l": "65.6"
+        }
+    },
+    {
+        "Region": "Bijiang (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.4",
+            "Alkalinity_TAC_mmol_l": "4.22",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "513",
+            "Sodium_Na_mg_l": "28.3",
+            "Chlorides_Cl_mg_l": "18.0",
+            "Calcium_Ca_mg_l": "74.3"
+        }
+    },
+    {
+        "Region": "Jinyong (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "28.7",
+            "Alkalinity_TAC_mmol_l": "3.49",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "986",
+            "Sodium_Na_mg_l": "28.8",
+            "Chlorides_Cl_mg_l": "37.6",
+            "Calcium_Ca_mg_l": "121.3"
+        }
+    },
+    {
+        "Region": "Ziyang (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.7",
+            "Alkalinity_TAC_mmol_l": "3.89",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "570",
+            "Sodium_Na_mg_l": "24.2",
+            "Chlorides_Cl_mg_l": "24.9",
+            "Calcium_Ca_mg_l": "55.0"
+        }
+    },
+    {
+        "Region": "Bengbu (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.9",
+            "Alkalinity_TAC_mmol_l": "3.00",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "629",
+            "Sodium_Na_mg_l": "13.4",
+            "Chlorides_Cl_mg_l": "20.7",
+            "Calcium_Ca_mg_l": "54.3"
+        }
+    },
+    {
+        "Region": "Laibin (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.5",
+            "Alkalinity_TAC_mmol_l": "3.84",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "594",
+            "Sodium_Na_mg_l": "26.4",
+            "Chlorides_Cl_mg_l": "32.1",
+            "Calcium_Ca_mg_l": "59.2"
+        }
+    },
+    {
+        "Region": "Jiuquan (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "22.9",
+            "Alkalinity_TAC_mmol_l": "3.95",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "822",
+            "Sodium_Na_mg_l": "48.3",
+            "Chlorides_Cl_mg_l": "37.1",
+            "Calcium_Ca_mg_l": "93.5"
+        }
+    },
+    {
+        "Region": "Hunjiang City (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "20.8",
+            "Alkalinity_TAC_mmol_l": "4.95",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "680",
+            "Sodium_Na_mg_l": "24.2",
+            "Chlorides_Cl_mg_l": "52.0",
+            "Calcium_Ca_mg_l": "120.6"
+        }
+    },
+    {
+        "Region": "Harbin (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.5",
+            "Alkalinity_TAC_mmol_l": "2.53",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "608",
+            "Sodium_Na_mg_l": "25.7",
+            "Chlorides_Cl_mg_l": "33.0",
+            "Calcium_Ca_mg_l": "89.7"
+        }
+    },
+    {
+        "Region": "Hefei (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "27.1",
+            "Alkalinity_TAC_mmol_l": "3.09",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "937",
+            "Sodium_Na_mg_l": "46.7",
+            "Chlorides_Cl_mg_l": "58.3",
+            "Calcium_Ca_mg_l": "106.9"
+        }
+    },
+    {
+        "Region": "Lhasa (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "22.7",
+            "Alkalinity_TAC_mmol_l": "4.44",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "761",
+            "Sodium_Na_mg_l": "34.5",
+            "Chlorides_Cl_mg_l": "63.4",
+            "Calcium_Ca_mg_l": "145.4"
+        }
+    },
+    {
+        "Region": "Dongsheng Wei (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.3",
+            "Alkalinity_TAC_mmol_l": "4.99",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "485",
+            "Sodium_Na_mg_l": "19.7",
+            "Chlorides_Cl_mg_l": "27.0",
+            "Calcium_Ca_mg_l": "75.4"
+        }
+    },
+    {
+        "Region": "Jinzhong (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.1",
+            "Alkalinity_TAC_mmol_l": "3.45",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "442",
+            "Sodium_Na_mg_l": "10.5",
+            "Chlorides_Cl_mg_l": "27.7",
+            "Calcium_Ca_mg_l": "70.6"
+        }
+    },
+    {
+        "Region": "Zhengzhou (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.6",
+            "Alkalinity_TAC_mmol_l": "3.57",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "478",
+            "Sodium_Na_mg_l": "25.4",
+            "Chlorides_Cl_mg_l": "21.5",
+            "Calcium_Ca_mg_l": "51.5"
+        }
+    },
+    {
+        "Region": "Binzhou (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "28.3",
+            "Alkalinity_TAC_mmol_l": "4.05",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "978",
+            "Sodium_Na_mg_l": "42.7",
+            "Chlorides_Cl_mg_l": "57.9",
+            "Calcium_Ca_mg_l": "101.3"
+        }
+    },
+    {
+        "Region": "Tieling (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.0",
+            "Alkalinity_TAC_mmol_l": "3.89",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "476",
+            "Sodium_Na_mg_l": "12.4",
+            "Chlorides_Cl_mg_l": "15.0",
+            "Calcium_Ca_mg_l": "69.7"
+        }
+    },
+    {
+        "Region": "Xiamen (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.8",
+            "Alkalinity_TAC_mmol_l": "4.86",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "580",
+            "Sodium_Na_mg_l": "25.6",
+            "Chlorides_Cl_mg_l": "25.7",
+            "Calcium_Ca_mg_l": "71.0"
+        }
+    },
+    {
+        "Region": "Futian Port (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "30.0",
+            "Alkalinity_TAC_mmol_l": "3.32",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "1023",
+            "Sodium_Na_mg_l": "21.6",
+            "Chlorides_Cl_mg_l": "54.3",
+            "Calcium_Ca_mg_l": "90.7"
+        }
+    },
+    {
+        "Region": "Zhangzhou (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "27.6",
+            "Alkalinity_TAC_mmol_l": "4.68",
+            "pH": "8.1",
+            "TDS_Conductivity_uS_cm": "955",
+            "Sodium_Na_mg_l": "25.9",
+            "Chlorides_Cl_mg_l": "60.6",
+            "Calcium_Ca_mg_l": "132.8"
+        }
+    },
+    {
+        "Region": "Rui'an (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "21.4",
+            "Alkalinity_TAC_mmol_l": "3.48",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "734",
+            "Sodium_Na_mg_l": "30.2",
+            "Chlorides_Cl_mg_l": "67.9",
+            "Calcium_Ca_mg_l": "135.7"
+        }
+    },
+    {
+        "Region": "Yiyang (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "26.4",
+            "Alkalinity_TAC_mmol_l": "4.76",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "929",
+            "Sodium_Na_mg_l": "32.9",
+            "Chlorides_Cl_mg_l": "53.5",
+            "Calcium_Ca_mg_l": "141.5"
+        }
+    },
+    {
+        "Region": "Shizuishan (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.4",
+            "Alkalinity_TAC_mmol_l": "4.12",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "560",
+            "Sodium_Na_mg_l": "14.2",
+            "Chlorides_Cl_mg_l": "20.8",
+            "Calcium_Ca_mg_l": "62.2"
+        }
+    },
+    {
+        "Region": "Anyang (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "23.8",
+            "Alkalinity_TAC_mmol_l": "3.01",
+            "pH": "8.1",
+            "TDS_Conductivity_uS_cm": "837",
+            "Sodium_Na_mg_l": "42.5",
+            "Chlorides_Cl_mg_l": "68.1",
+            "Calcium_Ca_mg_l": "103.8"
+        }
+    },
+    {
+        "Region": "Xiaogan (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.1",
+            "Alkalinity_TAC_mmol_l": "3.72",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "503",
+            "Sodium_Na_mg_l": "26.5",
+            "Chlorides_Cl_mg_l": "32.5",
+            "Calcium_Ca_mg_l": "81.9"
+        }
+    },
+    {
+        "Region": "Lincang (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "11.8",
+            "Alkalinity_TAC_mmol_l": "4.91",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "420",
+            "Sodium_Na_mg_l": "22.8",
+            "Chlorides_Cl_mg_l": "20.7",
+            "Calcium_Ca_mg_l": "79.9"
+        }
+    },
+    {
+        "Region": "Lishui (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.8",
+            "Alkalinity_TAC_mmol_l": "2.68",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "649",
+            "Sodium_Na_mg_l": "15.1",
+            "Chlorides_Cl_mg_l": "22.4",
+            "Calcium_Ca_mg_l": "77.2"
+        }
+    },
+    {
+        "Region": "Zaozhuang (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "11.4",
+            "Alkalinity_TAC_mmol_l": "4.92",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "485",
+            "Sodium_Na_mg_l": "17.9",
+            "Chlorides_Cl_mg_l": "23.8",
+            "Calcium_Ca_mg_l": "72.2"
+        }
+    },
+    {
+        "Region": "Yangquan (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.2",
+            "Alkalinity_TAC_mmol_l": "2.81",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "504",
+            "Sodium_Na_mg_l": "22.2",
+            "Chlorides_Cl_mg_l": "34.2",
+            "Calcium_Ca_mg_l": "68.5"
+        }
+    },
+    {
+        "Region": "Sha Tau Kok (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.2",
+            "Alkalinity_TAC_mmol_l": "4.95",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "508",
+            "Sodium_Na_mg_l": "25.9",
+            "Chlorides_Cl_mg_l": "16.0",
+            "Calcium_Ca_mg_l": "74.8"
+        }
+    },
+    {
+        "Region": "Leiyang (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "10.4",
+            "Alkalinity_TAC_mmol_l": "4.20",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "420",
+            "Sodium_Na_mg_l": "22.1",
+            "Chlorides_Cl_mg_l": "20.9",
+            "Calcium_Ca_mg_l": "65.5"
+        }
+    },
+    {
+        "Region": "Linjiang (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "23.0",
+            "Alkalinity_TAC_mmol_l": "4.35",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "772",
+            "Sodium_Na_mg_l": "45.0",
+            "Chlorides_Cl_mg_l": "32.9",
+            "Calcium_Ca_mg_l": "123.6"
+        }
+    },
+    {
+        "Region": "Changzhi (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.0",
+            "Alkalinity_TAC_mmol_l": "2.54",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "522",
+            "Sodium_Na_mg_l": "13.5",
+            "Chlorides_Cl_mg_l": "25.7",
+            "Calcium_Ca_mg_l": "55.0"
+        }
+    },
+    {
+        "Region": "Tongling (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.7",
+            "Alkalinity_TAC_mmol_l": "3.28",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "650",
+            "Sodium_Na_mg_l": "16.8",
+            "Chlorides_Cl_mg_l": "22.8",
+            "Calcium_Ca_mg_l": "51.9"
+        }
+    },
+    {
+        "Region": "Ji'an (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.8",
+            "Alkalinity_TAC_mmol_l": "4.44",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "532",
+            "Sodium_Na_mg_l": "24.2",
+            "Chlorides_Cl_mg_l": "15.0",
+            "Calcium_Ca_mg_l": "81.0"
+        }
+    },
+    {
+        "Region": "Lion City (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "11.7",
+            "Alkalinity_TAC_mmol_l": "4.87",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "463",
+            "Sodium_Na_mg_l": "14.2",
+            "Chlorides_Cl_mg_l": "17.4",
+            "Calcium_Ca_mg_l": "59.1"
+        }
+    },
+    {
+        "Region": "Danzhou (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.4",
+            "Alkalinity_TAC_mmol_l": "4.05",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "552",
+            "Sodium_Na_mg_l": "12.6",
+            "Chlorides_Cl_mg_l": "32.0",
+            "Calcium_Ca_mg_l": "66.3"
+        }
+    },
+    {
+        "Region": "Nanping (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.9",
+            "Alkalinity_TAC_mmol_l": "4.60",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "592",
+            "Sodium_Na_mg_l": "26.5",
+            "Chlorides_Cl_mg_l": "28.1",
+            "Calcium_Ca_mg_l": "69.7"
+        }
+    },
+    {
+        "Region": "Anshan (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.7",
+            "Alkalinity_TAC_mmol_l": "3.51",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "567",
+            "Sodium_Na_mg_l": "23.6",
+            "Chlorides_Cl_mg_l": "15.5",
+            "Calcium_Ca_mg_l": "57.7"
+        }
+    },
+    {
+        "Region": "Fuzhou (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "21.3",
+            "Alkalinity_TAC_mmol_l": "2.65",
+            "pH": "8.1",
+            "TDS_Conductivity_uS_cm": "757",
+            "Sodium_Na_mg_l": "32.1",
+            "Chlorides_Cl_mg_l": "35.6",
+            "Calcium_Ca_mg_l": "113.3"
+        }
+    },
+    {
+        "Region": "Kashgar Old City (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.7",
+            "Alkalinity_TAC_mmol_l": "3.53",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "472",
+            "Sodium_Na_mg_l": "17.2",
+            "Chlorides_Cl_mg_l": "21.7",
+            "Calcium_Ca_mg_l": "83.0"
+        }
+    },
+    {
+        "Region": "Shanwei (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "21.5",
+            "Alkalinity_TAC_mmol_l": "4.23",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "760",
+            "Sodium_Na_mg_l": "46.4",
+            "Chlorides_Cl_mg_l": "53.4",
+            "Calcium_Ca_mg_l": "113.8"
+        }
+    },
+    {
+        "Region": "Shangluo (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.1",
+            "Alkalinity_TAC_mmol_l": "2.95",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "521",
+            "Sodium_Na_mg_l": "25.6",
+            "Chlorides_Cl_mg_l": "33.4",
+            "Calcium_Ca_mg_l": "71.9"
+        }
+    },
+    {
+        "Region": "Nanjing (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "25.7",
+            "Alkalinity_TAC_mmol_l": "3.78",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "862",
+            "Sodium_Na_mg_l": "25.7",
+            "Chlorides_Cl_mg_l": "46.5",
+            "Calcium_Ca_mg_l": "113.7"
+        }
+    },
+    {
+        "Region": "Linfen (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.0",
+            "Alkalinity_TAC_mmol_l": "3.63",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "587",
+            "Sodium_Na_mg_l": "10.5",
+            "Chlorides_Cl_mg_l": "21.8",
+            "Calcium_Ca_mg_l": "78.1"
+        }
+    },
+    {
+        "Region": "Suihua (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.0",
+            "Alkalinity_TAC_mmol_l": "2.52",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "623",
+            "Sodium_Na_mg_l": "28.8",
+            "Chlorides_Cl_mg_l": "20.7",
+            "Calcium_Ca_mg_l": "78.7"
+        }
+    },
+    {
+        "Region": "Hohhot (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.3",
+            "Alkalinity_TAC_mmol_l": "4.41",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "568",
+            "Sodium_Na_mg_l": "18.8",
+            "Chlorides_Cl_mg_l": "24.0",
+            "Calcium_Ca_mg_l": "55.9"
+        }
+    },
+    {
+        "Region": "Hegang (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.2",
+            "Alkalinity_TAC_mmol_l": "3.45",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "625",
+            "Sodium_Na_mg_l": "22.6",
+            "Chlorides_Cl_mg_l": "15.6",
+            "Calcium_Ca_mg_l": "71.1"
+        }
+    },
+    {
+        "Region": "Hailar City (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "28.0",
+            "Alkalinity_TAC_mmol_l": "4.53",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "890",
+            "Sodium_Na_mg_l": "22.6",
+            "Chlorides_Cl_mg_l": "46.8",
+            "Calcium_Ca_mg_l": "130.8"
+        }
+    },
+    {
+        "Region": "Zunyi (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "23.1",
+            "Alkalinity_TAC_mmol_l": "4.91",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "789",
+            "Sodium_Na_mg_l": "46.3",
+            "Chlorides_Cl_mg_l": "43.3",
+            "Calcium_Ca_mg_l": "137.7"
+        }
+    },
+    {
+        "Region": "Cangzhou (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.5",
+            "Alkalinity_TAC_mmol_l": "3.87",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "474",
+            "Sodium_Na_mg_l": "16.9",
+            "Chlorides_Cl_mg_l": "29.3",
+            "Calcium_Ca_mg_l": "66.8"
+        }
+    },
+    {
+        "Region": "Dali Old Town (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "22.0",
+            "Alkalinity_TAC_mmol_l": "2.92",
+            "pH": "8.1",
+            "TDS_Conductivity_uS_cm": "799",
+            "Sodium_Na_mg_l": "34.9",
+            "Chlorides_Cl_mg_l": "35.8",
+            "Calcium_Ca_mg_l": "103.2"
+        }
+    },
+    {
+        "Region": "Loulan Kingdom (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "10.9",
+            "Alkalinity_TAC_mmol_l": "4.12",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "452",
+            "Sodium_Na_mg_l": "15.0",
+            "Chlorides_Cl_mg_l": "27.0",
+            "Calcium_Ca_mg_l": "87.9"
+        }
+    },
+    {
+        "Region": "Fuyang (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "29.6",
+            "Alkalinity_TAC_mmol_l": "4.83",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "990",
+            "Sodium_Na_mg_l": "29.5",
+            "Chlorides_Cl_mg_l": "47.3",
+            "Calcium_Ca_mg_l": "99.9"
+        }
+    },
+    {
+        "Region": "Jining (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.9",
+            "Alkalinity_TAC_mmol_l": "3.50",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "519",
+            "Sodium_Na_mg_l": "13.7",
+            "Chlorides_Cl_mg_l": "17.1",
+            "Calcium_Ca_mg_l": "62.5"
+        }
+    },
+    {
+        "Region": "Ankang (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.2",
+            "Alkalinity_TAC_mmol_l": "4.63",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "475",
+            "Sodium_Na_mg_l": "11.5",
+            "Chlorides_Cl_mg_l": "29.0",
+            "Calcium_Ca_mg_l": "77.5"
+        }
+    },
+    {
+        "Region": "Taizhou (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "10.7",
+            "Alkalinity_TAC_mmol_l": "4.18",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "381",
+            "Sodium_Na_mg_l": "25.4",
+            "Chlorides_Cl_mg_l": "34.7",
+            "Calcium_Ca_mg_l": "84.9"
+        }
+    },
+    {
+        "Region": "Nagqu (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "28.5",
+            "Alkalinity_TAC_mmol_l": "2.72",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "912",
+            "Sodium_Na_mg_l": "33.2",
+            "Chlorides_Cl_mg_l": "68.1",
+            "Calcium_Ca_mg_l": "99.8"
+        }
+    },
+    {
+        "Region": "Chaozhou (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.4",
+            "Alkalinity_TAC_mmol_l": "4.38",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "599",
+            "Sodium_Na_mg_l": "13.1",
+            "Chlorides_Cl_mg_l": "20.8",
+            "Calcium_Ca_mg_l": "52.2"
+        }
+    },
+    {
+        "Region": "Qinhuangdao (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "11.1",
+            "Alkalinity_TAC_mmol_l": "3.90",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "425",
+            "Sodium_Na_mg_l": "12.1",
+            "Chlorides_Cl_mg_l": "33.3",
+            "Calcium_Ca_mg_l": "78.5"
+        }
+    },
+    {
+        "Region": "Yanjing (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "29.1",
+            "Alkalinity_TAC_mmol_l": "3.62",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "977",
+            "Sodium_Na_mg_l": "30.1",
+            "Chlorides_Cl_mg_l": "63.2",
+            "Calcium_Ca_mg_l": "140.9"
+        }
+    },
+    {
+        "Region": "Kinchau walled town (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "26.5",
+            "Alkalinity_TAC_mmol_l": "3.72",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "870",
+            "Sodium_Na_mg_l": "32.8",
+            "Chlorides_Cl_mg_l": "68.7",
+            "Calcium_Ca_mg_l": "111.0"
+        }
+    },
+    {
+        "Region": "Wenzhou (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.2",
+            "Alkalinity_TAC_mmol_l": "4.16",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "526",
+            "Sodium_Na_mg_l": "20.1",
+            "Chlorides_Cl_mg_l": "18.9",
+            "Calcium_Ca_mg_l": "77.5"
+        }
+    },
+    {
+        "Region": "Shuhe (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.4",
+            "Alkalinity_TAC_mmol_l": "4.35",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "440",
+            "Sodium_Na_mg_l": "11.7",
+            "Chlorides_Cl_mg_l": "27.6",
+            "Calcium_Ca_mg_l": "52.7"
+        }
+    },
+    {
+        "Region": "Shenzhen (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.6",
+            "Alkalinity_TAC_mmol_l": "2.93",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "568",
+            "Sodium_Na_mg_l": "23.2",
+            "Chlorides_Cl_mg_l": "22.6",
+            "Calcium_Ca_mg_l": "50.9"
+        }
+    },
+    {
+        "Region": "Nanyang (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "28.5",
+            "Alkalinity_TAC_mmol_l": "3.45",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "909",
+            "Sodium_Na_mg_l": "47.6",
+            "Chlorides_Cl_mg_l": "64.2",
+            "Calcium_Ca_mg_l": "101.6"
+        }
+    },
+    {
+        "Region": "Luzhou (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "25.0",
+            "Alkalinity_TAC_mmol_l": "4.40",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "871",
+            "Sodium_Na_mg_l": "49.0",
+            "Chlorides_Cl_mg_l": "64.0",
+            "Calcium_Ca_mg_l": "141.3"
+        }
+    },
+    {
+        "Region": "Huainan (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "18.4",
+            "Alkalinity_TAC_mmol_l": "2.76",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "645",
+            "Sodium_Na_mg_l": "48.9",
+            "Chlorides_Cl_mg_l": "32.1",
+            "Calcium_Ca_mg_l": "131.4"
+        }
+    },
+    {
+        "Region": "Pudong (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "22.9",
+            "Alkalinity_TAC_mmol_l": "4.40",
+            "pH": "8.1",
+            "TDS_Conductivity_uS_cm": "821",
+            "Sodium_Na_mg_l": "34.5",
+            "Chlorides_Cl_mg_l": "50.0",
+            "Calcium_Ca_mg_l": "121.1"
+        }
+    },
+    {
+        "Region": "Haikou (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "20.6",
+            "Alkalinity_TAC_mmol_l": "5.00",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "704",
+            "Sodium_Na_mg_l": "35.0",
+            "Chlorides_Cl_mg_l": "42.9",
+            "Calcium_Ca_mg_l": "134.8"
+        }
+    },
+    {
+        "Region": "Chengde (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.2",
+            "Alkalinity_TAC_mmol_l": "4.87",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "491",
+            "Sodium_Na_mg_l": "16.2",
+            "Chlorides_Cl_mg_l": "27.4",
+            "Calcium_Ca_mg_l": "59.1"
+        }
+    },
+    {
+        "Region": "Zhenjiang (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.2",
+            "Alkalinity_TAC_mmol_l": "3.68",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "539",
+            "Sodium_Na_mg_l": "26.8",
+            "Chlorides_Cl_mg_l": "21.4",
+            "Calcium_Ca_mg_l": "81.5"
+        }
+    },
+    {
+        "Region": "Shantou (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "11.1",
+            "Alkalinity_TAC_mmol_l": "3.01",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "399",
+            "Sodium_Na_mg_l": "28.9",
+            "Chlorides_Cl_mg_l": "24.9",
+            "Calcium_Ca_mg_l": "61.1"
+        }
+    },
+    {
+        "Region": "Malingquzhen (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.3",
+            "Alkalinity_TAC_mmol_l": "2.85",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "667",
+            "Sodium_Na_mg_l": "12.0",
+            "Chlorides_Cl_mg_l": "29.7",
+            "Calcium_Ca_mg_l": "73.1"
+        }
+    },
+    {
+        "Region": "Ningbo (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "22.3",
+            "Alkalinity_TAC_mmol_l": "3.14",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "818",
+            "Sodium_Na_mg_l": "32.6",
+            "Chlorides_Cl_mg_l": "43.3",
+            "Calcium_Ca_mg_l": "106.0"
+        }
+    },
+    {
+        "Region": "Weiyuan Fortress (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "10.5",
+            "Alkalinity_TAC_mmol_l": "4.92",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "442",
+            "Sodium_Na_mg_l": "15.9",
+            "Chlorides_Cl_mg_l": "15.4",
+            "Calcium_Ca_mg_l": "59.1"
+        }
+    },
+    {
+        "Region": "Hebi (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "26.3",
+            "Alkalinity_TAC_mmol_l": "2.71",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "927",
+            "Sodium_Na_mg_l": "23.9",
+            "Chlorides_Cl_mg_l": "30.8",
+            "Calcium_Ca_mg_l": "143.6"
+        }
+    },
+    {
+        "Region": "Yongcheng (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.0",
+            "Alkalinity_TAC_mmol_l": "2.51",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "491",
+            "Sodium_Na_mg_l": "15.7",
+            "Chlorides_Cl_mg_l": "27.9",
+            "Calcium_Ca_mg_l": "72.6"
+        }
+    },
+    {
+        "Region": "Tangshan (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.7",
+            "Alkalinity_TAC_mmol_l": "3.02",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "471",
+            "Sodium_Na_mg_l": "17.2",
+            "Chlorides_Cl_mg_l": "20.3",
+            "Calcium_Ca_mg_l": "65.5"
+        }
+    },
+    {
+        "Region": "Changsha (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "22.9",
+            "Alkalinity_TAC_mmol_l": "3.92",
+            "pH": "8.2",
+            "TDS_Conductivity_uS_cm": "815",
+            "Sodium_Na_mg_l": "22.1",
+            "Chlorides_Cl_mg_l": "37.4",
+            "Calcium_Ca_mg_l": "102.0"
+        }
+    },
+    {
+        "Region": "Bayannur (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "22.1",
+            "Alkalinity_TAC_mmol_l": "3.05",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "771",
+            "Sodium_Na_mg_l": "31.5",
+            "Chlorides_Cl_mg_l": "57.2",
+            "Calcium_Ca_mg_l": "106.8"
+        }
+    },
+    {
+        "Region": "Huangshan (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "27.0",
+            "Alkalinity_TAC_mmol_l": "2.61",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "907",
+            "Sodium_Na_mg_l": "27.2",
+            "Chlorides_Cl_mg_l": "60.6",
+            "Calcium_Ca_mg_l": "92.6"
+        }
+    },
+    {
+        "Region": "Pingdingshan (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "11.2",
+            "Alkalinity_TAC_mmol_l": "3.39",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "449",
+            "Sodium_Na_mg_l": "28.4",
+            "Chlorides_Cl_mg_l": "33.9",
+            "Calcium_Ca_mg_l": "78.6"
+        }
+    },
+    {
+        "Region": "Xiaoshangqiao (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.3",
+            "Alkalinity_TAC_mmol_l": "3.40",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "459",
+            "Sodium_Na_mg_l": "17.2",
+            "Chlorides_Cl_mg_l": "31.5",
+            "Calcium_Ca_mg_l": "60.6"
+        }
+    },
+    {
+        "Region": "Shanghai (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "20.7",
+            "Alkalinity_TAC_mmol_l": "4.63",
+            "pH": "8.2",
+            "TDS_Conductivity_uS_cm": "760",
+            "Sodium_Na_mg_l": "38.4",
+            "Chlorides_Cl_mg_l": "35.1",
+            "Calcium_Ca_mg_l": "91.1"
+        }
+    },
+    {
+        "Region": "Bazhong (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "18.0",
+            "Alkalinity_TAC_mmol_l": "4.55",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "663",
+            "Sodium_Na_mg_l": "20.3",
+            "Chlorides_Cl_mg_l": "26.4",
+            "Calcium_Ca_mg_l": "52.9"
+        }
+    },
+    {
+        "Region": "Bozhou (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.3",
+            "Alkalinity_TAC_mmol_l": "4.37",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "620",
+            "Sodium_Na_mg_l": "24.5",
+            "Chlorides_Cl_mg_l": "16.9",
+            "Calcium_Ca_mg_l": "65.1"
+        }
+    },
+    {
+        "Region": "Panjin (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.4",
+            "Alkalinity_TAC_mmol_l": "2.86",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "492",
+            "Sodium_Na_mg_l": "26.5",
+            "Chlorides_Cl_mg_l": "22.4",
+            "Calcium_Ca_mg_l": "52.4"
+        }
+    },
+    {
+        "Region": "Huangshi (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.0",
+            "Alkalinity_TAC_mmol_l": "2.62",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "412",
+            "Sodium_Na_mg_l": "29.4",
+            "Chlorides_Cl_mg_l": "15.7",
+            "Calcium_Ca_mg_l": "52.9"
+        }
+    },
+    {
+        "Region": "Huanggang (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.7",
+            "Alkalinity_TAC_mmol_l": "3.99",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "571",
+            "Sodium_Na_mg_l": "19.9",
+            "Chlorides_Cl_mg_l": "22.8",
+            "Calcium_Ca_mg_l": "70.2"
+        }
+    },
+    {
+        "Region": "Ezhou (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "10.6",
+            "Alkalinity_TAC_mmol_l": "2.62",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "414",
+            "Sodium_Na_mg_l": "29.6",
+            "Chlorides_Cl_mg_l": "21.8",
+            "Calcium_Ca_mg_l": "58.5"
+        }
+    },
+    {
+        "Region": "Fangchenggang (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "24.6",
+            "Alkalinity_TAC_mmol_l": "4.41",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "796",
+            "Sodium_Na_mg_l": "20.2",
+            "Chlorides_Cl_mg_l": "35.0",
+            "Calcium_Ca_mg_l": "95.5"
+        }
+    },
+    {
+        "Region": "Nanchong (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "11.8",
+            "Alkalinity_TAC_mmol_l": "4.23",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "494",
+            "Sodium_Na_mg_l": "21.3",
+            "Chlorides_Cl_mg_l": "33.4",
+            "Calcium_Ca_mg_l": "53.7"
+        }
+    },
+    {
+        "Region": "Barkol Kazakh Autonomous County (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.2",
+            "Alkalinity_TAC_mmol_l": "4.31",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "535",
+            "Sodium_Na_mg_l": "28.9",
+            "Chlorides_Cl_mg_l": "30.9",
+            "Calcium_Ca_mg_l": "68.7"
+        }
+    },
+    {
+        "Region": "Xinxiang (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.7",
+            "Alkalinity_TAC_mmol_l": "3.23",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "607",
+            "Sodium_Na_mg_l": "22.1",
+            "Chlorides_Cl_mg_l": "25.3",
+            "Calcium_Ca_mg_l": "85.4"
+        }
+    },
+    {
+        "Region": "Zhanjiang (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "29.1",
+            "Alkalinity_TAC_mmol_l": "2.60",
+            "pH": "8.1",
+            "TDS_Conductivity_uS_cm": "952",
+            "Sodium_Na_mg_l": "33.7",
+            "Chlorides_Cl_mg_l": "41.7",
+            "Calcium_Ca_mg_l": "114.5"
+        }
+    },
+    {
+        "Region": "Zhaoqing (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.7",
+            "Alkalinity_TAC_mmol_l": "3.28",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "527",
+            "Sodium_Na_mg_l": "28.4",
+            "Chlorides_Cl_mg_l": "20.5",
+            "Calcium_Ca_mg_l": "81.1"
+        }
+    },
+    {
+        "Region": "Zhongwei (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "18.2",
+            "Alkalinity_TAC_mmol_l": "2.92",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "655",
+            "Sodium_Na_mg_l": "20.1",
+            "Chlorides_Cl_mg_l": "64.7",
+            "Calcium_Ca_mg_l": "132.4"
+        }
+    },
+    {
+        "Region": "Huanggang Port (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.3",
+            "Alkalinity_TAC_mmol_l": "4.28",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "564",
+            "Sodium_Na_mg_l": "26.6",
+            "Chlorides_Cl_mg_l": "32.8",
+            "Calcium_Ca_mg_l": "62.1"
+        }
+    },
+    {
+        "Region": "Longyan (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.3",
+            "Alkalinity_TAC_mmol_l": "3.19",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "596",
+            "Sodium_Na_mg_l": "15.1",
+            "Chlorides_Cl_mg_l": "17.7",
+            "Calcium_Ca_mg_l": "80.6"
+        }
+    },
+    {
+        "Region": "Sanming (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.3",
+            "Alkalinity_TAC_mmol_l": "3.55",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "457",
+            "Sodium_Na_mg_l": "20.6",
+            "Chlorides_Cl_mg_l": "27.7",
+            "Calcium_Ca_mg_l": "56.8"
+        }
+    },
+    {
+        "Region": "Songyuan (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "24.7",
+            "Alkalinity_TAC_mmol_l": "3.59",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "809",
+            "Sodium_Na_mg_l": "21.8",
+            "Chlorides_Cl_mg_l": "48.8",
+            "Calcium_Ca_mg_l": "148.2"
+        }
+    },
+    {
+        "Region": "Shenzhen Bay Port (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.2",
+            "Alkalinity_TAC_mmol_l": "4.09",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "639",
+            "Sodium_Na_mg_l": "12.2",
+            "Chlorides_Cl_mg_l": "15.6",
+            "Calcium_Ca_mg_l": "65.8"
+        }
+    },
+    {
+        "Region": "Xuzhou (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.7",
+            "Alkalinity_TAC_mmol_l": "4.94",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "521",
+            "Sodium_Na_mg_l": "21.8",
+            "Chlorides_Cl_mg_l": "32.6",
+            "Calcium_Ca_mg_l": "74.8"
+        }
+    },
+    {
+        "Region": "Zhangjiajie (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "24.4",
+            "Alkalinity_TAC_mmol_l": "2.59",
+            "pH": "8.2",
+            "TDS_Conductivity_uS_cm": "790",
+            "Sodium_Na_mg_l": "21.7",
+            "Chlorides_Cl_mg_l": "49.1",
+            "Calcium_Ca_mg_l": "102.8"
+        }
+    },
+    {
+        "Region": "Deyang (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.4",
+            "Alkalinity_TAC_mmol_l": "4.75",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "495",
+            "Sodium_Na_mg_l": "19.8",
+            "Chlorides_Cl_mg_l": "24.3",
+            "Calcium_Ca_mg_l": "70.4"
+        }
+    },
+    {
+        "Region": "Tongchuan (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "11.9",
+            "Alkalinity_TAC_mmol_l": "2.96",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "416",
+            "Sodium_Na_mg_l": "28.0",
+            "Chlorides_Cl_mg_l": "28.4",
+            "Calcium_Ca_mg_l": "87.3"
+        }
+    },
+    {
+        "Region": "Zigong (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "18.0",
+            "Alkalinity_TAC_mmol_l": "3.67",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "658",
+            "Sodium_Na_mg_l": "25.7",
+            "Chlorides_Cl_mg_l": "63.3",
+            "Calcium_Ca_mg_l": "102.8"
+        }
+    },
+    {
+        "Region": "Songjiang University Town (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "23.3",
+            "Alkalinity_TAC_mmol_l": "2.82",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "823",
+            "Sodium_Na_mg_l": "23.7",
+            "Chlorides_Cl_mg_l": "50.8",
+            "Calcium_Ca_mg_l": "149.6"
+        }
+    },
+    {
+        "Region": "Chuzhou (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.3",
+            "Alkalinity_TAC_mmol_l": "4.44",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "523",
+            "Sodium_Na_mg_l": "29.6",
+            "Chlorides_Cl_mg_l": "17.1",
+            "Calcium_Ca_mg_l": "62.8"
+        }
+    },
+    {
+        "Region": "Ulanqab (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.3",
+            "Alkalinity_TAC_mmol_l": "3.81",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "483",
+            "Sodium_Na_mg_l": "26.6",
+            "Chlorides_Cl_mg_l": "25.0",
+            "Calcium_Ca_mg_l": "53.5"
+        }
+    },
+    {
+        "Region": "Yichun (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "11.7",
+            "Alkalinity_TAC_mmol_l": "2.80",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "402",
+            "Sodium_Na_mg_l": "26.9",
+            "Chlorides_Cl_mg_l": "27.7",
+            "Calcium_Ca_mg_l": "51.7"
+        }
+    },
+    {
+        "Region": "Hengshui (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "26.0",
+            "Alkalinity_TAC_mmol_l": "3.22",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "840",
+            "Sodium_Na_mg_l": "28.7",
+            "Chlorides_Cl_mg_l": "50.2",
+            "Calcium_Ca_mg_l": "125.4"
+        }
+    },
+    {
+        "Region": "Baoding (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.3",
+            "Alkalinity_TAC_mmol_l": "4.80",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "617",
+            "Sodium_Na_mg_l": "11.3",
+            "Chlorides_Cl_mg_l": "27.8",
+            "Calcium_Ca_mg_l": "63.8"
+        }
+    },
+    {
+        "Region": "Zhuhai (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "27.0",
+            "Alkalinity_TAC_mmol_l": "3.07",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "934",
+            "Sodium_Na_mg_l": "40.8",
+            "Chlorides_Cl_mg_l": "41.5",
+            "Calcium_Ca_mg_l": "147.8"
+        }
+    },
+    {
+        "Region": "Zhaotong (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.3",
+            "Alkalinity_TAC_mmol_l": "3.21",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "497",
+            "Sodium_Na_mg_l": "26.2",
+            "Chlorides_Cl_mg_l": "27.2",
+            "Calcium_Ca_mg_l": "72.0"
+        }
+    },
+    {
+        "Region": "Tai Po New Town (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.9",
+            "Alkalinity_TAC_mmol_l": "2.74",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "482",
+            "Sodium_Na_mg_l": "24.0",
+            "Chlorides_Cl_mg_l": "15.6",
+            "Calcium_Ca_mg_l": "83.2"
+        }
+    },
+    {
+        "Region": "Nantong (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "10.2",
+            "Alkalinity_TAC_mmol_l": "4.23",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "426",
+            "Sodium_Na_mg_l": "16.2",
+            "Chlorides_Cl_mg_l": "17.4",
+            "Calcium_Ca_mg_l": "63.9"
+        }
+    },
+    {
+        "Region": "Shangqiu (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "29.7",
+            "Alkalinity_TAC_mmol_l": "3.03",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "971",
+            "Sodium_Na_mg_l": "36.0",
+            "Chlorides_Cl_mg_l": "49.7",
+            "Calcium_Ca_mg_l": "91.0"
+        }
+    },
+    {
+        "Region": "Wangcheng (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "22.6",
+            "Alkalinity_TAC_mmol_l": "4.79",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "812",
+            "Sodium_Na_mg_l": "35.1",
+            "Chlorides_Cl_mg_l": "58.0",
+            "Calcium_Ca_mg_l": "95.6"
+        }
+    },
+    {
+        "Region": "Hezhou (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.6",
+            "Alkalinity_TAC_mmol_l": "2.56",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "559",
+            "Sodium_Na_mg_l": "15.6",
+            "Chlorides_Cl_mg_l": "15.6",
+            "Calcium_Ca_mg_l": "52.3"
+        }
+    },
+    {
+        "Region": "Luoyang (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.2",
+            "Alkalinity_TAC_mmol_l": "4.59",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "584",
+            "Sodium_Na_mg_l": "17.5",
+            "Chlorides_Cl_mg_l": "34.5",
+            "Calcium_Ca_mg_l": "52.7"
+        }
+    },
+    {
+        "Region": "Tonghua (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "30.0",
+            "Alkalinity_TAC_mmol_l": "3.25",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "955",
+            "Sodium_Na_mg_l": "27.1",
+            "Chlorides_Cl_mg_l": "45.7",
+            "Calcium_Ca_mg_l": "147.0"
+        }
+    },
+    {
+        "Region": "Yueqing (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "25.5",
+            "Alkalinity_TAC_mmol_l": "3.70",
+            "pH": "8.1",
+            "TDS_Conductivity_uS_cm": "906",
+            "Sodium_Na_mg_l": "26.6",
+            "Chlorides_Cl_mg_l": "55.4",
+            "Calcium_Ca_mg_l": "97.6"
+        }
+    },
+    {
+        "Region": "Tongliao (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "27.7",
+            "Alkalinity_TAC_mmol_l": "4.86",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "906",
+            "Sodium_Na_mg_l": "25.2",
+            "Chlorides_Cl_mg_l": "33.5",
+            "Calcium_Ca_mg_l": "118.7"
+        }
+    },
+    {
+        "Region": "Suizhou (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "11.0",
+            "Alkalinity_TAC_mmol_l": "4.03",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "454",
+            "Sodium_Na_mg_l": "10.1",
+            "Chlorides_Cl_mg_l": "29.3",
+            "Calcium_Ca_mg_l": "62.2"
+        }
+    },
+    {
+        "Region": "Jiayuguan City (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "11.8",
+            "Alkalinity_TAC_mmol_l": "3.26",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "489",
+            "Sodium_Na_mg_l": "26.2",
+            "Chlorides_Cl_mg_l": "26.3",
+            "Calcium_Ca_mg_l": "83.8"
+        }
+    },
+    {
+        "Region": "Lijiang (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.7",
+            "Alkalinity_TAC_mmol_l": "4.22",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "636",
+            "Sodium_Na_mg_l": "21.7",
+            "Chlorides_Cl_mg_l": "23.5",
+            "Calcium_Ca_mg_l": "51.7"
+        }
+    },
+    {
+        "Region": "Shangrao (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "18.1",
+            "Alkalinity_TAC_mmol_l": "4.33",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "659",
+            "Sodium_Na_mg_l": "40.6",
+            "Chlorides_Cl_mg_l": "35.9",
+            "Calcium_Ca_mg_l": "113.0"
+        }
+    },
+    {
+        "Region": "Beiguozhuang (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.8",
+            "Alkalinity_TAC_mmol_l": "4.02",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "469",
+            "Sodium_Na_mg_l": "22.2",
+            "Chlorides_Cl_mg_l": "32.6",
+            "Calcium_Ca_mg_l": "73.3"
+        }
+    },
+    {
+        "Region": "Jieyang (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "25.6",
+            "Alkalinity_TAC_mmol_l": "3.59",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "861",
+            "Sodium_Na_mg_l": "21.8",
+            "Chlorides_Cl_mg_l": "30.8",
+            "Calcium_Ca_mg_l": "102.9"
+        }
+    },
+    {
+        "Region": "Penggao Wei (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "18.1",
+            "Alkalinity_TAC_mmol_l": "4.14",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "607",
+            "Sodium_Na_mg_l": "26.7",
+            "Chlorides_Cl_mg_l": "53.2",
+            "Calcium_Ca_mg_l": "93.3"
+        }
+    },
+    {
+        "Region": "Kunming (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.4",
+            "Alkalinity_TAC_mmol_l": "2.91",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "597",
+            "Sodium_Na_mg_l": "21.1",
+            "Chlorides_Cl_mg_l": "17.4",
+            "Calcium_Ca_mg_l": "57.7"
+        }
+    },
+    {
+        "Region": "Chizhou (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "29.0",
+            "Alkalinity_TAC_mmol_l": "4.31",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "987",
+            "Sodium_Na_mg_l": "23.6",
+            "Chlorides_Cl_mg_l": "43.8",
+            "Calcium_Ca_mg_l": "126.5"
+        }
+    },
+    {
+        "Region": "Jiaozuo (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.3",
+            "Alkalinity_TAC_mmol_l": "4.99",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "515",
+            "Sodium_Na_mg_l": "23.2",
+            "Chlorides_Cl_mg_l": "29.5",
+            "Calcium_Ca_mg_l": "78.3"
+        }
+    },
+    {
+        "Region": "Hengyang (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.2",
+            "Alkalinity_TAC_mmol_l": "2.98",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "598",
+            "Sodium_Na_mg_l": "13.4",
+            "Chlorides_Cl_mg_l": "18.5",
+            "Calcium_Ca_mg_l": "62.5"
+        }
+    },
+    {
+        "Region": "Baiyin (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.7",
+            "Alkalinity_TAC_mmol_l": "3.88",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "592",
+            "Sodium_Na_mg_l": "21.4",
+            "Chlorides_Cl_mg_l": "25.4",
+            "Calcium_Ca_mg_l": "50.8"
+        }
+    },
+    {
+        "Region": "Anqing (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.0",
+            "Alkalinity_TAC_mmol_l": "4.11",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "419",
+            "Sodium_Na_mg_l": "20.2",
+            "Chlorides_Cl_mg_l": "32.3",
+            "Calcium_Ca_mg_l": "51.2"
+        }
+    },
+    {
+        "Region": "Heheng (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.5",
+            "Alkalinity_TAC_mmol_l": "2.67",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "553",
+            "Sodium_Na_mg_l": "21.2",
+            "Chlorides_Cl_mg_l": "24.9",
+            "Calcium_Ca_mg_l": "69.9"
+        }
+    },
+    {
+        "Region": "Mudanjiang (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.2",
+            "Alkalinity_TAC_mmol_l": "3.65",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "591",
+            "Sodium_Na_mg_l": "29.2",
+            "Chlorides_Cl_mg_l": "24.6",
+            "Calcium_Ca_mg_l": "50.4"
+        }
+    },
+    {
+        "Region": "Xiguan (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.5",
+            "Alkalinity_TAC_mmol_l": "4.92",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "651",
+            "Sodium_Na_mg_l": "13.6",
+            "Chlorides_Cl_mg_l": "23.1",
+            "Calcium_Ca_mg_l": "64.7"
+        }
+    },
+    {
+        "Region": "Weihai (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "26.5",
+            "Alkalinity_TAC_mmol_l": "3.42",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "875",
+            "Sodium_Na_mg_l": "46.5",
+            "Chlorides_Cl_mg_l": "35.5",
+            "Calcium_Ca_mg_l": "133.7"
+        }
+    },
+    {
+        "Region": "Guiping (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.5",
+            "Alkalinity_TAC_mmol_l": "2.73",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "543",
+            "Sodium_Na_mg_l": "11.9",
+            "Chlorides_Cl_mg_l": "21.7",
+            "Calcium_Ca_mg_l": "88.9"
+        }
+    },
+    {
+        "Region": "Datong (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.8",
+            "Alkalinity_TAC_mmol_l": "3.69",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "677",
+            "Sodium_Na_mg_l": "21.3",
+            "Chlorides_Cl_mg_l": "28.6",
+            "Calcium_Ca_mg_l": "65.2"
+        }
+    },
+    {
+        "Region": "Changzhou Science and Education City (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.9",
+            "Alkalinity_TAC_mmol_l": "3.94",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "475",
+            "Sodium_Na_mg_l": "22.3",
+            "Chlorides_Cl_mg_l": "20.8",
+            "Calcium_Ca_mg_l": "64.6"
+        }
+    },
+    {
+        "Region": "Tianshui (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.0",
+            "Alkalinity_TAC_mmol_l": "3.70",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "544",
+            "Sodium_Na_mg_l": "26.8",
+            "Chlorides_Cl_mg_l": "31.8",
+            "Calcium_Ca_mg_l": "69.0"
+        }
+    },
+    {
+        "Region": "Haidong (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "11.7",
+            "Alkalinity_TAC_mmol_l": "4.13",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "487",
+            "Sodium_Na_mg_l": "22.5",
+            "Chlorides_Cl_mg_l": "24.1",
+            "Calcium_Ca_mg_l": "55.9"
+        }
+    },
+    {
+        "Region": "Beiliu (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.8",
+            "Alkalinity_TAC_mmol_l": "2.63",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "591",
+            "Sodium_Na_mg_l": "26.0",
+            "Chlorides_Cl_mg_l": "27.1",
+            "Calcium_Ca_mg_l": "56.9"
+        }
+    },
+    {
+        "Region": "Guangzhou (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.7",
+            "Alkalinity_TAC_mmol_l": "3.43",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "538",
+            "Sodium_Na_mg_l": "24.4",
+            "Chlorides_Cl_mg_l": "31.6",
+            "Calcium_Ca_mg_l": "76.6"
+        }
+    },
+    {
+        "Region": "Jimei School Village (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "20.2",
+            "Alkalinity_TAC_mmol_l": "3.21",
+            "pH": "8.1",
+            "TDS_Conductivity_uS_cm": "718",
+            "Sodium_Na_mg_l": "26.1",
+            "Chlorides_Cl_mg_l": "66.7",
+            "Calcium_Ca_mg_l": "147.0"
+        }
+    },
+    {
+        "Region": "Jiaxing (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.3",
+            "Alkalinity_TAC_mmol_l": "3.09",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "570",
+            "Sodium_Na_mg_l": "23.6",
+            "Chlorides_Cl_mg_l": "33.6",
+            "Calcium_Ca_mg_l": "53.3"
+        }
+    },
+    {
+        "Region": "Liao Shangjing archaelogical site (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.2",
+            "Alkalinity_TAC_mmol_l": "4.10",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "615",
+            "Sodium_Na_mg_l": "23.6",
+            "Chlorides_Cl_mg_l": "24.8",
+            "Calcium_Ca_mg_l": "58.9"
+        }
+    },
+    {
+        "Region": "Alashankou (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.1",
+            "Alkalinity_TAC_mmol_l": "3.88",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "546",
+            "Sodium_Na_mg_l": "20.1",
+            "Chlorides_Cl_mg_l": "25.5",
+            "Calcium_Ca_mg_l": "89.3"
+        }
+    },
+    {
+        "Region": "Wuxi (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "20.5",
+            "Alkalinity_TAC_mmol_l": "3.60",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "688",
+            "Sodium_Na_mg_l": "21.8",
+            "Chlorides_Cl_mg_l": "62.0",
+            "Calcium_Ca_mg_l": "149.9"
+        }
+    },
+    {
+        "Region": "Liaocheng (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "18.3",
+            "Alkalinity_TAC_mmol_l": "4.49",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "662",
+            "Sodium_Na_mg_l": "41.6",
+            "Chlorides_Cl_mg_l": "35.8",
+            "Calcium_Ca_mg_l": "137.5"
+        }
+    },
+    {
+        "Region": "Ye (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.6",
+            "Alkalinity_TAC_mmol_l": "2.80",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "544",
+            "Sodium_Na_mg_l": "14.5",
+            "Chlorides_Cl_mg_l": "18.3",
+            "Calcium_Ca_mg_l": "88.0"
+        }
+    },
+    {
+        "Region": "Fuqi (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "23.1",
+            "Alkalinity_TAC_mmol_l": "3.25",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "832",
+            "Sodium_Na_mg_l": "35.8",
+            "Chlorides_Cl_mg_l": "35.6",
+            "Calcium_Ca_mg_l": "135.5"
+        }
+    },
+    {
+        "Region": "Dingxi (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.3",
+            "Alkalinity_TAC_mmol_l": "4.47",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "459",
+            "Sodium_Na_mg_l": "12.6",
+            "Chlorides_Cl_mg_l": "34.7",
+            "Calcium_Ca_mg_l": "52.0"
+        }
+    },
+    {
+        "Region": "Ansi City (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.4",
+            "Alkalinity_TAC_mmol_l": "3.82",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "500",
+            "Sodium_Na_mg_l": "22.0",
+            "Chlorides_Cl_mg_l": "30.5",
+            "Calcium_Ca_mg_l": "64.7"
+        }
+    },
+    {
+        "Region": "Ordos City (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "11.2",
+            "Alkalinity_TAC_mmol_l": "4.57",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "390",
+            "Sodium_Na_mg_l": "14.7",
+            "Chlorides_Cl_mg_l": "24.6",
+            "Calcium_Ca_mg_l": "60.2"
+        }
+    },
+    {
+        "Region": "Dongying (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "11.7",
+            "Alkalinity_TAC_mmol_l": "4.80",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "485",
+            "Sodium_Na_mg_l": "10.2",
+            "Chlorides_Cl_mg_l": "24.5",
+            "Calcium_Ca_mg_l": "83.8"
+        }
+    },
+    {
+        "Region": "Hulunbuir (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.2",
+            "Alkalinity_TAC_mmol_l": "4.76",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "597",
+            "Sodium_Na_mg_l": "20.7",
+            "Chlorides_Cl_mg_l": "28.1",
+            "Calcium_Ca_mg_l": "77.8"
+        }
+    },
+    {
+        "Region": "Baoji (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "26.6",
+            "Alkalinity_TAC_mmol_l": "3.88",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "908",
+            "Sodium_Na_mg_l": "47.7",
+            "Chlorides_Cl_mg_l": "64.1",
+            "Calcium_Ca_mg_l": "129.1"
+        }
+    },
+    {
+        "Region": "Panzhihua (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.3",
+            "Alkalinity_TAC_mmol_l": "3.21",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "484",
+            "Sodium_Na_mg_l": "26.7",
+            "Chlorides_Cl_mg_l": "25.8",
+            "Calcium_Ca_mg_l": "86.7"
+        }
+    },
+    {
+        "Region": "Putian (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "18.9",
+            "Alkalinity_TAC_mmol_l": "4.04",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "638",
+            "Sodium_Na_mg_l": "38.1",
+            "Chlorides_Cl_mg_l": "43.4",
+            "Calcium_Ca_mg_l": "145.7"
+        }
+    },
+    {
+        "Region": "Yuzaitan Wei (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "10.7",
+            "Alkalinity_TAC_mmol_l": "2.55",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "377",
+            "Sodium_Na_mg_l": "23.2",
+            "Chlorides_Cl_mg_l": "33.8",
+            "Calcium_Ca_mg_l": "65.0"
+        }
+    },
+    {
+        "Region": "Xuchang (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.1",
+            "Alkalinity_TAC_mmol_l": "3.64",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "565",
+            "Sodium_Na_mg_l": "23.6",
+            "Chlorides_Cl_mg_l": "25.1",
+            "Calcium_Ca_mg_l": "54.6"
+        }
+    },
+    {
+        "Region": "Ürümqi (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "10.8",
+            "Alkalinity_TAC_mmol_l": "3.82",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "408",
+            "Sodium_Na_mg_l": "17.7",
+            "Chlorides_Cl_mg_l": "17.8",
+            "Calcium_Ca_mg_l": "82.9"
+        }
+    },
+    {
+        "Region": "Macau (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "19.7",
+            "Alkalinity_TAC_mmol_l": "4.80",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "666",
+            "Sodium_Na_mg_l": "24.0",
+            "Chlorides_Cl_mg_l": "57.1",
+            "Calcium_Ca_mg_l": "124.4"
+        }
+    },
+    {
+        "Region": "Tacheng (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "20.5",
+            "Alkalinity_TAC_mmol_l": "2.78",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "689",
+            "Sodium_Na_mg_l": "30.0",
+            "Chlorides_Cl_mg_l": "61.0",
+            "Calcium_Ca_mg_l": "120.7"
+        }
+    },
+    {
+        "Region": "Ancient Linzi (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.0",
+            "Alkalinity_TAC_mmol_l": "4.56",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "410",
+            "Sodium_Na_mg_l": "13.1",
+            "Chlorides_Cl_mg_l": "21.4",
+            "Calcium_Ca_mg_l": "50.5"
+        }
+    },
+    {
+        "Region": "Jingmen (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.4",
+            "Alkalinity_TAC_mmol_l": "3.53",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "556",
+            "Sodium_Na_mg_l": "14.9",
+            "Chlorides_Cl_mg_l": "29.5",
+            "Calcium_Ca_mg_l": "89.2"
+        }
+    },
+    {
+        "Region": "Yuncheng (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.4",
+            "Alkalinity_TAC_mmol_l": "4.06",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "551",
+            "Sodium_Na_mg_l": "20.4",
+            "Chlorides_Cl_mg_l": "31.2",
+            "Calcium_Ca_mg_l": "66.0"
+        }
+    },
+    {
+        "Region": "Yangjiang (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.2",
+            "Alkalinity_TAC_mmol_l": "4.75",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "517",
+            "Sodium_Na_mg_l": "16.3",
+            "Chlorides_Cl_mg_l": "20.0",
+            "Calcium_Ca_mg_l": "57.2"
+        }
+    },
+    {
+        "Region": "Liuzhou (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "20.5",
+            "Alkalinity_TAC_mmol_l": "2.64",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "741",
+            "Sodium_Na_mg_l": "33.6",
+            "Chlorides_Cl_mg_l": "33.7",
+            "Calcium_Ca_mg_l": "143.7"
+        }
+    },
+    {
+        "Region": "Ruili (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.9",
+            "Alkalinity_TAC_mmol_l": "4.04",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "543",
+            "Sodium_Na_mg_l": "24.8",
+            "Chlorides_Cl_mg_l": "28.3",
+            "Calcium_Ca_mg_l": "81.0"
+        }
+    },
+    {
+        "Region": "Jinchang (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "10.6",
+            "Alkalinity_TAC_mmol_l": "4.62",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "438",
+            "Sodium_Na_mg_l": "21.0",
+            "Chlorides_Cl_mg_l": "18.1",
+            "Calcium_Ca_mg_l": "75.4"
+        }
+    },
+    {
+        "Region": "Maoming (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.6",
+            "Alkalinity_TAC_mmol_l": "4.50",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "521",
+            "Sodium_Na_mg_l": "13.7",
+            "Chlorides_Cl_mg_l": "22.3",
+            "Calcium_Ca_mg_l": "72.9"
+        }
+    },
+    {
+        "Region": "Lianyungang (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.7",
+            "Alkalinity_TAC_mmol_l": "4.87",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "535",
+            "Sodium_Na_mg_l": "27.1",
+            "Chlorides_Cl_mg_l": "28.8",
+            "Calcium_Ca_mg_l": "61.7"
+        }
+    },
+    {
+        "Region": "Zuzhou Ancient City (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "22.6",
+            "Alkalinity_TAC_mmol_l": "4.65",
+            "pH": "8.1",
+            "TDS_Conductivity_uS_cm": "825",
+            "Sodium_Na_mg_l": "37.0",
+            "Chlorides_Cl_mg_l": "60.3",
+            "Calcium_Ca_mg_l": "107.2"
+        }
+    },
+    {
+        "Region": "Hangzhou (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.8",
+            "Alkalinity_TAC_mmol_l": "2.63",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "674",
+            "Sodium_Na_mg_l": "11.0",
+            "Chlorides_Cl_mg_l": "25.0",
+            "Calcium_Ca_mg_l": "86.0"
+        }
+    },
+    {
+        "Region": "Changchun (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "18.9",
+            "Alkalinity_TAC_mmol_l": "2.81",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "661",
+            "Sodium_Na_mg_l": "25.6",
+            "Chlorides_Cl_mg_l": "37.7",
+            "Calcium_Ca_mg_l": "99.0"
+        }
+    },
+    {
+        "Region": "Meizhou (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.4",
+            "Alkalinity_TAC_mmol_l": "4.48",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "516",
+            "Sodium_Na_mg_l": "19.8",
+            "Chlorides_Cl_mg_l": "23.8",
+            "Calcium_Ca_mg_l": "73.0"
+        }
+    },
+    {
+        "Region": "Jilin City (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.4",
+            "Alkalinity_TAC_mmol_l": "3.34",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "447",
+            "Sodium_Na_mg_l": "19.1",
+            "Chlorides_Cl_mg_l": "20.8",
+            "Calcium_Ca_mg_l": "79.7"
+        }
+    },
+    {
+        "Region": "Tieli (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.4",
+            "Alkalinity_TAC_mmol_l": "2.73",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "591",
+            "Sodium_Na_mg_l": "17.2",
+            "Chlorides_Cl_mg_l": "27.0",
+            "Calcium_Ca_mg_l": "76.3"
+        }
+    },
+    {
+        "Region": "Jixi (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.1",
+            "Alkalinity_TAC_mmol_l": "4.81",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "571",
+            "Sodium_Na_mg_l": "11.8",
+            "Chlorides_Cl_mg_l": "19.2",
+            "Calcium_Ca_mg_l": "67.0"
+        }
+    },
+    {
+        "Region": "Shenyang (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.9",
+            "Alkalinity_TAC_mmol_l": "2.59",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "599",
+            "Sodium_Na_mg_l": "19.1",
+            "Chlorides_Cl_mg_l": "18.1",
+            "Calcium_Ca_mg_l": "68.1"
+        }
+    },
+    {
+        "Region": "Puyang (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "11.3",
+            "Alkalinity_TAC_mmol_l": "4.64",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "427",
+            "Sodium_Na_mg_l": "28.6",
+            "Chlorides_Cl_mg_l": "16.2",
+            "Calcium_Ca_mg_l": "88.4"
+        }
+    },
+    {
+        "Region": "Xanadu (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "28.9",
+            "Alkalinity_TAC_mmol_l": "3.61",
+            "pH": "8.2",
+            "TDS_Conductivity_uS_cm": "962",
+            "Sodium_Na_mg_l": "48.4",
+            "Chlorides_Cl_mg_l": "65.6",
+            "Calcium_Ca_mg_l": "133.3"
+        }
+    },
+    {
+        "Region": "Liaoyang (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.4",
+            "Alkalinity_TAC_mmol_l": "2.90",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "619",
+            "Sodium_Na_mg_l": "24.3",
+            "Chlorides_Cl_mg_l": "16.1",
+            "Calcium_Ca_mg_l": "88.9"
+        }
+    },
+    {
+        "Region": "Xianyang (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.3",
+            "Alkalinity_TAC_mmol_l": "4.24",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "579",
+            "Sodium_Na_mg_l": "13.6",
+            "Chlorides_Cl_mg_l": "23.3",
+            "Calcium_Ca_mg_l": "87.3"
+        }
+    },
+    {
+        "Region": "Shihezi (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.4",
+            "Alkalinity_TAC_mmol_l": "4.33",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "608",
+            "Sodium_Na_mg_l": "22.3",
+            "Chlorides_Cl_mg_l": "15.3",
+            "Calcium_Ca_mg_l": "66.9"
+        }
+    },
+    {
+        "Region": "Handan, Zhao (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "11.2",
+            "Alkalinity_TAC_mmol_l": "4.18",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "442",
+            "Sodium_Na_mg_l": "10.6",
+            "Chlorides_Cl_mg_l": "31.9",
+            "Calcium_Ca_mg_l": "69.5"
+        }
+    },
+    {
+        "Region": "Suining (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.0",
+            "Alkalinity_TAC_mmol_l": "3.99",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "520",
+            "Sodium_Na_mg_l": "10.4",
+            "Chlorides_Cl_mg_l": "29.5",
+            "Calcium_Ca_mg_l": "73.8"
+        }
+    },
+    {
+        "Region": "Zhoushan (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "21.0",
+            "Alkalinity_TAC_mmol_l": "3.06",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "700",
+            "Sodium_Na_mg_l": "23.5",
+            "Chlorides_Cl_mg_l": "69.0",
+            "Calcium_Ca_mg_l": "101.7"
+        }
+    },
+    {
+        "Region": "Laiyang (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "19.2",
+            "Alkalinity_TAC_mmol_l": "4.11",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "676",
+            "Sodium_Na_mg_l": "46.9",
+            "Chlorides_Cl_mg_l": "68.0",
+            "Calcium_Ca_mg_l": "141.5"
+        }
+    },
+    {
+        "Region": "Rizhao (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "18.5",
+            "Alkalinity_TAC_mmol_l": "4.82",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "702",
+            "Sodium_Na_mg_l": "26.1",
+            "Chlorides_Cl_mg_l": "36.0",
+            "Calcium_Ca_mg_l": "94.7"
+        }
+    },
+    {
+        "Region": "Yidu (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "22.0",
+            "Alkalinity_TAC_mmol_l": "3.00",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "764",
+            "Sodium_Na_mg_l": "46.0",
+            "Chlorides_Cl_mg_l": "47.0",
+            "Calcium_Ca_mg_l": "148.8"
+        }
+    },
+    {
+        "Region": "Chengdu (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "22.0",
+            "Alkalinity_TAC_mmol_l": "4.52",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "790",
+            "Sodium_Na_mg_l": "20.8",
+            "Chlorides_Cl_mg_l": "59.7",
+            "Calcium_Ca_mg_l": "120.4"
+        }
+    },
+    {
+        "Region": "Shijiazhuang (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.8",
+            "Alkalinity_TAC_mmol_l": "4.73",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "472",
+            "Sodium_Na_mg_l": "26.0",
+            "Chlorides_Cl_mg_l": "27.9",
+            "Calcium_Ca_mg_l": "82.8"
+        }
+    },
+    {
+        "Region": "Ju (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.3",
+            "Alkalinity_TAC_mmol_l": "4.31",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "493",
+            "Sodium_Na_mg_l": "14.6",
+            "Chlorides_Cl_mg_l": "22.0",
+            "Calcium_Ca_mg_l": "80.4"
+        }
+    },
+    {
+        "Region": "Heyuan (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.3",
+            "Alkalinity_TAC_mmol_l": "2.69",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "491",
+            "Sodium_Na_mg_l": "26.5",
+            "Chlorides_Cl_mg_l": "26.1",
+            "Calcium_Ca_mg_l": "69.0"
+        }
+    },
+    {
+        "Region": "Xining (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.5",
+            "Alkalinity_TAC_mmol_l": "2.52",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "556",
+            "Sodium_Na_mg_l": "10.6",
+            "Chlorides_Cl_mg_l": "22.5",
+            "Calcium_Ca_mg_l": "77.2"
+        }
+    },
+    {
+        "Region": "Anshun (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "22.9",
+            "Alkalinity_TAC_mmol_l": "4.00",
+            "pH": "8.2",
+            "TDS_Conductivity_uS_cm": "799",
+            "Sodium_Na_mg_l": "45.0",
+            "Chlorides_Cl_mg_l": "58.1",
+            "Calcium_Ca_mg_l": "123.4"
+        }
+    },
+    {
+        "Region": "Weishan (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "21.7",
+            "Alkalinity_TAC_mmol_l": "3.65",
+            "pH": "8.1",
+            "TDS_Conductivity_uS_cm": "782",
+            "Sodium_Na_mg_l": "43.1",
+            "Chlorides_Cl_mg_l": "64.5",
+            "Calcium_Ca_mg_l": "115.9"
+        }
+    },
+    {
+        "Region": "Wenling (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "10.3",
+            "Alkalinity_TAC_mmol_l": "4.42",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "365",
+            "Sodium_Na_mg_l": "29.9",
+            "Chlorides_Cl_mg_l": "31.4",
+            "Calcium_Ca_mg_l": "63.7"
+        }
+    },
+    {
+        "Region": "Shuozhou (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "18.6",
+            "Alkalinity_TAC_mmol_l": "3.19",
+            "pH": "8.2",
+            "TDS_Conductivity_uS_cm": "611",
+            "Sodium_Na_mg_l": "28.3",
+            "Chlorides_Cl_mg_l": "61.6",
+            "Calcium_Ca_mg_l": "103.2"
+        }
+    },
+    {
+        "Region": "Tongren (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.3",
+            "Alkalinity_TAC_mmol_l": "3.75",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "468",
+            "Sodium_Na_mg_l": "17.7",
+            "Chlorides_Cl_mg_l": "17.6",
+            "Calcium_Ca_mg_l": "79.4"
+        }
+    },
+    {
+        "Region": "Guilin (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.8",
+            "Alkalinity_TAC_mmol_l": "4.03",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "543",
+            "Sodium_Na_mg_l": "15.8",
+            "Chlorides_Cl_mg_l": "34.5",
+            "Calcium_Ca_mg_l": "88.2"
+        }
+    },
+    {
+        "Region": "Bulayïq (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "28.7",
+            "Alkalinity_TAC_mmol_l": "3.39",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "950",
+            "Sodium_Na_mg_l": "37.6",
+            "Chlorides_Cl_mg_l": "39.5",
+            "Calcium_Ca_mg_l": "134.0"
+        }
+    },
+    {
+        "Region": "Nanning (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.5",
+            "Alkalinity_TAC_mmol_l": "3.51",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "576",
+            "Sodium_Na_mg_l": "10.2",
+            "Chlorides_Cl_mg_l": "23.4",
+            "Calcium_Ca_mg_l": "76.0"
+        }
+    },
+    {
+        "Region": "Bijie (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.3",
+            "Alkalinity_TAC_mmol_l": "4.54",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "494",
+            "Sodium_Na_mg_l": "20.4",
+            "Chlorides_Cl_mg_l": "21.6",
+            "Calcium_Ca_mg_l": "72.9"
+        }
+    },
+    {
+        "Region": "Lhoka (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.3",
+            "Alkalinity_TAC_mmol_l": "3.52",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "648",
+            "Sodium_Na_mg_l": "18.0",
+            "Chlorides_Cl_mg_l": "21.2",
+            "Calcium_Ca_mg_l": "57.7"
+        }
+    },
+    {
+        "Region": "Langfang (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.6",
+            "Alkalinity_TAC_mmol_l": "2.98",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "606",
+            "Sodium_Na_mg_l": "10.1",
+            "Chlorides_Cl_mg_l": "24.7",
+            "Calcium_Ca_mg_l": "51.0"
+        }
+    },
+    {
+        "Region": "Xiangtan (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.0",
+            "Alkalinity_TAC_mmol_l": "3.88",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "566",
+            "Sodium_Na_mg_l": "19.6",
+            "Chlorides_Cl_mg_l": "15.4",
+            "Calcium_Ca_mg_l": "80.8"
+        }
+    },
+    {
+        "Region": "Wushi (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "30.0",
+            "Alkalinity_TAC_mmol_l": "3.69",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "974",
+            "Sodium_Na_mg_l": "22.2",
+            "Chlorides_Cl_mg_l": "59.5",
+            "Calcium_Ca_mg_l": "105.3"
+        }
+    },
+    {
+        "Region": "Xiadu (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "26.4",
+            "Alkalinity_TAC_mmol_l": "2.73",
+            "pH": "8.1",
+            "TDS_Conductivity_uS_cm": "875",
+            "Sodium_Na_mg_l": "49.0",
+            "Chlorides_Cl_mg_l": "42.4",
+            "Calcium_Ca_mg_l": "145.8"
+        }
+    },
+    {
+        "Region": "Yuyao City (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.8",
+            "Alkalinity_TAC_mmol_l": "4.99",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "598",
+            "Sodium_Na_mg_l": "21.9",
+            "Chlorides_Cl_mg_l": "26.4",
+            "Calcium_Ca_mg_l": "79.5"
+        }
+    },
+    {
+        "Region": "Huaibei (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.5",
+            "Alkalinity_TAC_mmol_l": "4.45",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "536",
+            "Sodium_Na_mg_l": "24.5",
+            "Chlorides_Cl_mg_l": "22.7",
+            "Calcium_Ca_mg_l": "82.7"
+        }
+    },
+    {
+        "Region": "Nyingchi (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.9",
+            "Alkalinity_TAC_mmol_l": "4.69",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "606",
+            "Sodium_Na_mg_l": "25.2",
+            "Chlorides_Cl_mg_l": "26.9",
+            "Calcium_Ca_mg_l": "61.8"
+        }
+    },
+    {
+        "Region": "Yinxu (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "25.9",
+            "Alkalinity_TAC_mmol_l": "4.80",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "892",
+            "Sodium_Na_mg_l": "41.2",
+            "Chlorides_Cl_mg_l": "52.5",
+            "Calcium_Ca_mg_l": "140.6"
+        }
+    },
+    {
+        "Region": "Wuwei (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "20.2",
+            "Alkalinity_TAC_mmol_l": "3.65",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "654",
+            "Sodium_Na_mg_l": "37.1",
+            "Chlorides_Cl_mg_l": "35.5",
+            "Calcium_Ca_mg_l": "99.2"
+        }
+    },
+    {
+        "Region": "Sanya (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "28.8",
+            "Alkalinity_TAC_mmol_l": "4.08",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "924",
+            "Sodium_Na_mg_l": "28.1",
+            "Chlorides_Cl_mg_l": "39.3",
+            "Calcium_Ca_mg_l": "108.2"
+        }
+    },
+    {
+        "Region": "Wuhai (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "29.9",
+            "Alkalinity_TAC_mmol_l": "4.19",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "990",
+            "Sodium_Na_mg_l": "48.5",
+            "Chlorides_Cl_mg_l": "65.2",
+            "Calcium_Ca_mg_l": "147.1"
+        }
+    },
+    {
+        "Region": "Chongzuo (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "11.6",
+            "Alkalinity_TAC_mmol_l": "4.37",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "459",
+            "Sodium_Na_mg_l": "24.0",
+            "Chlorides_Cl_mg_l": "26.4",
+            "Calcium_Ca_mg_l": "60.7"
+        }
+    },
+    {
+        "Region": "Shaoxing (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.2",
+            "Alkalinity_TAC_mmol_l": "4.87",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "555",
+            "Sodium_Na_mg_l": "20.2",
+            "Chlorides_Cl_mg_l": "29.7",
+            "Calcium_Ca_mg_l": "62.0"
+        }
+    },
+    {
+        "Region": "Weinan (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "18.3",
+            "Alkalinity_TAC_mmol_l": "2.61",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "599",
+            "Sodium_Na_mg_l": "44.7",
+            "Chlorides_Cl_mg_l": "41.9",
+            "Calcium_Ca_mg_l": "108.8"
+        }
+    },
+    {
+        "Region": "Baotou (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "10.4",
+            "Alkalinity_TAC_mmol_l": "4.65",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "412",
+            "Sodium_Na_mg_l": "17.7",
+            "Chlorides_Cl_mg_l": "24.2",
+            "Calcium_Ca_mg_l": "87.6"
+        }
+    },
+    {
+        "Region": "Erkeshtam (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "11.5",
+            "Alkalinity_TAC_mmol_l": "3.95",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "421",
+            "Sodium_Na_mg_l": "27.0",
+            "Chlorides_Cl_mg_l": "32.2",
+            "Calcium_Ca_mg_l": "68.2"
+        }
+    },
+    {
+        "Region": "Lanzhou (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "18.5",
+            "Alkalinity_TAC_mmol_l": "4.30",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "645",
+            "Sodium_Na_mg_l": "24.1",
+            "Chlorides_Cl_mg_l": "45.4",
+            "Calcium_Ca_mg_l": "132.1"
+        }
+    },
+    {
+        "Region": "Dezhou (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "11.7",
+            "Alkalinity_TAC_mmol_l": "3.45",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "420",
+            "Sodium_Na_mg_l": "14.3",
+            "Chlorides_Cl_mg_l": "27.3",
+            "Calcium_Ca_mg_l": "76.0"
+        }
+    },
+    {
+        "Region": "Fuyong Ferry Terminal (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "11.7",
+            "Alkalinity_TAC_mmol_l": "4.89",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "438",
+            "Sodium_Na_mg_l": "21.5",
+            "Chlorides_Cl_mg_l": "24.2",
+            "Calcium_Ca_mg_l": "64.1"
+        }
+    },
+    {
+        "Region": "Chaoyang (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "24.9",
+            "Alkalinity_TAC_mmol_l": "4.32",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "827",
+            "Sodium_Na_mg_l": "22.9",
+            "Chlorides_Cl_mg_l": "39.0",
+            "Calcium_Ca_mg_l": "148.9"
+        }
+    },
+    {
+        "Region": "Jiangmen (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.1",
+            "Alkalinity_TAC_mmol_l": "3.84",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "577",
+            "Sodium_Na_mg_l": "14.6",
+            "Chlorides_Cl_mg_l": "21.7",
+            "Calcium_Ca_mg_l": "56.3"
+        }
+    },
+    {
+        "Region": "Shiyan (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "29.7",
+            "Alkalinity_TAC_mmol_l": "4.77",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "1036",
+            "Sodium_Na_mg_l": "35.3",
+            "Chlorides_Cl_mg_l": "32.1",
+            "Calcium_Ca_mg_l": "124.1"
+        }
+    },
+    {
+        "Region": "Site of Capital of Kingdom Zheng and Han (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "10.5",
+            "Alkalinity_TAC_mmol_l": "3.44",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "446",
+            "Sodium_Na_mg_l": "21.0",
+            "Chlorides_Cl_mg_l": "34.7",
+            "Calcium_Ca_mg_l": "59.6"
+        }
+    },
+    {
+        "Region": "Shaoyang (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.8",
+            "Alkalinity_TAC_mmol_l": "3.82",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "526",
+            "Sodium_Na_mg_l": "24.5",
+            "Chlorides_Cl_mg_l": "30.5",
+            "Calcium_Ca_mg_l": "81.8"
+        }
+    },
+    {
+        "Region": "Xudu (China)",
+        "Parameters": {
+            "Ca_Hardness_dH": "11.1",
+            "Alkalinity_TAC_mmol_l": "3.63",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "425",
+            "Sodium_Na_mg_l": "20.1",
+            "Chlorides_Cl_mg_l": "26.8",
+            "Calcium_Ca_mg_l": "85.0"
+        }
+    }
+]

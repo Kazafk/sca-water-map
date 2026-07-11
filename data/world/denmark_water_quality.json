@@ -1,0 +1,1190 @@
+[
+    {
+        "Region": "København (HOFOR)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.0 - 25.0",
+            "Alkalinity_TAC_mmol_l": "6.5",
+            "pH": "7.5 - 7.8",
+            "TDS_Conductivity_uS_cm": "750",
+            "Sodium_Na_mg_l": "40.0",
+            "Chlorides_Cl_mg_l": "55.0",
+            "Calcium_Ca_mg_l": "120.0"
+        }
+    },
+    {
+        "Region": "Aarhus (Aarhus Vand)",
+        "Parameters": {
+            "Ca_Hardness_dH": "11.0 - 20.0",
+            "Alkalinity_TAC_mmol_l": "5.5",
+            "pH": "7.4 - 7.6",
+            "TDS_Conductivity_uS_cm": "600",
+            "Sodium_Na_mg_l": "25.0",
+            "Chlorides_Cl_mg_l": "35.0",
+            "Calcium_Ca_mg_l": "95.0"
+        }
+    },
+    {
+        "Region": "Aabenraa",
+        "Parameters": {
+            "Ca_Hardness_dH": "20.9",
+            "Alkalinity_TAC_mmol_l": "6.21",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "815",
+            "Sodium_Na_mg_l": "29.7",
+            "Chlorides_Cl_mg_l": "59.0",
+            "Calcium_Ca_mg_l": "100.2"
+        }
+    },
+    {
+        "Region": "Aalborg",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.3",
+            "Alkalinity_TAC_mmol_l": "6.24",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "622",
+            "Sodium_Na_mg_l": "37.9",
+            "Chlorides_Cl_mg_l": "53.3",
+            "Calcium_Ca_mg_l": "127.3"
+        }
+    },
+    {
+        "Region": "Albertslund",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.1",
+            "Alkalinity_TAC_mmol_l": "4.59",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "689",
+            "Sodium_Na_mg_l": "29.5",
+            "Chlorides_Cl_mg_l": "43.5",
+            "Calcium_Ca_mg_l": "106.7"
+        }
+    },
+    {
+        "Region": "Allerød",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.0",
+            "Alkalinity_TAC_mmol_l": "4.54",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "620",
+            "Sodium_Na_mg_l": "36.8",
+            "Chlorides_Cl_mg_l": "45.4",
+            "Calcium_Ca_mg_l": "112.1"
+        }
+    },
+    {
+        "Region": "Assens",
+        "Parameters": {
+            "Ca_Hardness_dH": "21.2",
+            "Alkalinity_TAC_mmol_l": "5.15",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "794",
+            "Sodium_Na_mg_l": "27.1",
+            "Chlorides_Cl_mg_l": "39.6",
+            "Calcium_Ca_mg_l": "136.1"
+        }
+    },
+    {
+        "Region": "Ballerup",
+        "Parameters": {
+            "Ca_Hardness_dH": "18.3",
+            "Alkalinity_TAC_mmol_l": "5.72",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "728",
+            "Sodium_Na_mg_l": "24.9",
+            "Chlorides_Cl_mg_l": "43.6",
+            "Calcium_Ca_mg_l": "108.6"
+        }
+    },
+    {
+        "Region": "Billund",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.7",
+            "Alkalinity_TAC_mmol_l": "4.32",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "679",
+            "Sodium_Na_mg_l": "22.0",
+            "Chlorides_Cl_mg_l": "32.6",
+            "Calcium_Ca_mg_l": "123.0"
+        }
+    },
+    {
+        "Region": "Bornholm",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.0",
+            "Alkalinity_TAC_mmol_l": "4.16",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "614",
+            "Sodium_Na_mg_l": "34.7",
+            "Chlorides_Cl_mg_l": "24.8",
+            "Calcium_Ca_mg_l": "113.3"
+        }
+    },
+    {
+        "Region": "Brøndby",
+        "Parameters": {
+            "Ca_Hardness_dH": "21.3",
+            "Alkalinity_TAC_mmol_l": "5.25",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "800",
+            "Sodium_Na_mg_l": "39.0",
+            "Chlorides_Cl_mg_l": "33.5",
+            "Calcium_Ca_mg_l": "120.9"
+        }
+    },
+    {
+        "Region": "Brønderslev",
+        "Parameters": {
+            "Ca_Hardness_dH": "20.6",
+            "Alkalinity_TAC_mmol_l": "5.08",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "785",
+            "Sodium_Na_mg_l": "19.5",
+            "Chlorides_Cl_mg_l": "40.1",
+            "Calcium_Ca_mg_l": "141.8"
+        }
+    },
+    {
+        "Region": "Copenhagen",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.0",
+            "Alkalinity_TAC_mmol_l": "5.95",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "592",
+            "Sodium_Na_mg_l": "18.8",
+            "Chlorides_Cl_mg_l": "49.2",
+            "Calcium_Ca_mg_l": "114.2"
+        }
+    },
+    {
+        "Region": "Dragør",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.3",
+            "Alkalinity_TAC_mmol_l": "4.07",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "665",
+            "Sodium_Na_mg_l": "34.9",
+            "Chlorides_Cl_mg_l": "44.2",
+            "Calcium_Ca_mg_l": "139.9"
+        }
+    },
+    {
+        "Region": "Egedal",
+        "Parameters": {
+            "Ca_Hardness_dH": "18.2",
+            "Alkalinity_TAC_mmol_l": "4.36",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "690",
+            "Sodium_Na_mg_l": "39.2",
+            "Chlorides_Cl_mg_l": "21.5",
+            "Calcium_Ca_mg_l": "107.2"
+        }
+    },
+    {
+        "Region": "Esbjerg",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.7",
+            "Alkalinity_TAC_mmol_l": "4.29",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "632",
+            "Sodium_Na_mg_l": "23.2",
+            "Chlorides_Cl_mg_l": "50.0",
+            "Calcium_Ca_mg_l": "142.1"
+        }
+    },
+    {
+        "Region": "Faaborg-Midtfyn",
+        "Parameters": {
+            "Ca_Hardness_dH": "18.8",
+            "Alkalinity_TAC_mmol_l": "5.63",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "716",
+            "Sodium_Na_mg_l": "20.3",
+            "Chlorides_Cl_mg_l": "34.9",
+            "Calcium_Ca_mg_l": "137.7"
+        }
+    },
+    {
+        "Region": "Fanø",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.3",
+            "Alkalinity_TAC_mmol_l": "5.93",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "671",
+            "Sodium_Na_mg_l": "19.3",
+            "Chlorides_Cl_mg_l": "39.4",
+            "Calcium_Ca_mg_l": "104.2"
+        }
+    },
+    {
+        "Region": "Favrskov",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.4",
+            "Alkalinity_TAC_mmol_l": "5.48",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "679",
+            "Sodium_Na_mg_l": "17.9",
+            "Chlorides_Cl_mg_l": "23.9",
+            "Calcium_Ca_mg_l": "122.7"
+        }
+    },
+    {
+        "Region": "Faxe",
+        "Parameters": {
+            "Ca_Hardness_dH": "18.1",
+            "Alkalinity_TAC_mmol_l": "5.30",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "729",
+            "Sodium_Na_mg_l": "26.6",
+            "Chlorides_Cl_mg_l": "47.3",
+            "Calcium_Ca_mg_l": "144.6"
+        }
+    },
+    {
+        "Region": "Fredensborg",
+        "Parameters": {
+            "Ca_Hardness_dH": "21.1",
+            "Alkalinity_TAC_mmol_l": "4.33",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "793",
+            "Sodium_Na_mg_l": "24.1",
+            "Chlorides_Cl_mg_l": "28.5",
+            "Calcium_Ca_mg_l": "117.4"
+        }
+    },
+    {
+        "Region": "Fredericia",
+        "Parameters": {
+            "Ca_Hardness_dH": "19.3",
+            "Alkalinity_TAC_mmol_l": "5.50",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "762",
+            "Sodium_Na_mg_l": "33.4",
+            "Chlorides_Cl_mg_l": "43.0",
+            "Calcium_Ca_mg_l": "127.5"
+        }
+    },
+    {
+        "Region": "Frederiksberg",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.8",
+            "Alkalinity_TAC_mmol_l": "5.93",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "644",
+            "Sodium_Na_mg_l": "32.0",
+            "Chlorides_Cl_mg_l": "23.0",
+            "Calcium_Ca_mg_l": "125.2"
+        }
+    },
+    {
+        "Region": "Frederikshavn",
+        "Parameters": {
+            "Ca_Hardness_dH": "19.8",
+            "Alkalinity_TAC_mmol_l": "5.93",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "746",
+            "Sodium_Na_mg_l": "28.6",
+            "Chlorides_Cl_mg_l": "39.1",
+            "Calcium_Ca_mg_l": "149.7"
+        }
+    },
+    {
+        "Region": "Frederikssund",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.5",
+            "Alkalinity_TAC_mmol_l": "4.78",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "668",
+            "Sodium_Na_mg_l": "17.0",
+            "Chlorides_Cl_mg_l": "41.2",
+            "Calcium_Ca_mg_l": "113.0"
+        }
+    },
+    {
+        "Region": "Furesø",
+        "Parameters": {
+            "Ca_Hardness_dH": "18.3",
+            "Alkalinity_TAC_mmol_l": "5.88",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "711",
+            "Sodium_Na_mg_l": "15.5",
+            "Chlorides_Cl_mg_l": "32.0",
+            "Calcium_Ca_mg_l": "134.5"
+        }
+    },
+    {
+        "Region": "Gentofte",
+        "Parameters": {
+            "Ca_Hardness_dH": "18.6",
+            "Alkalinity_TAC_mmol_l": "6.15",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "717",
+            "Sodium_Na_mg_l": "36.8",
+            "Chlorides_Cl_mg_l": "59.8",
+            "Calcium_Ca_mg_l": "108.3"
+        }
+    },
+    {
+        "Region": "Gladsaxe",
+        "Parameters": {
+            "Ca_Hardness_dH": "21.1",
+            "Alkalinity_TAC_mmol_l": "5.89",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "789",
+            "Sodium_Na_mg_l": "16.4",
+            "Chlorides_Cl_mg_l": "30.1",
+            "Calcium_Ca_mg_l": "120.6"
+        }
+    },
+    {
+        "Region": "Glostrup",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.3",
+            "Alkalinity_TAC_mmol_l": "4.68",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "639",
+            "Sodium_Na_mg_l": "28.5",
+            "Chlorides_Cl_mg_l": "28.1",
+            "Calcium_Ca_mg_l": "127.2"
+        }
+    },
+    {
+        "Region": "Greve",
+        "Parameters": {
+            "Ca_Hardness_dH": "21.4",
+            "Alkalinity_TAC_mmol_l": "6.40",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "812",
+            "Sodium_Na_mg_l": "15.7",
+            "Chlorides_Cl_mg_l": "39.8",
+            "Calcium_Ca_mg_l": "117.1"
+        }
+    },
+    {
+        "Region": "Gribskov",
+        "Parameters": {
+            "Ca_Hardness_dH": "18.6",
+            "Alkalinity_TAC_mmol_l": "4.71",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "721",
+            "Sodium_Na_mg_l": "36.6",
+            "Chlorides_Cl_mg_l": "57.4",
+            "Calcium_Ca_mg_l": "111.9"
+        }
+    },
+    {
+        "Region": "Guldborgsund",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.4",
+            "Alkalinity_TAC_mmol_l": "5.30",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "641",
+            "Sodium_Na_mg_l": "23.3",
+            "Chlorides_Cl_mg_l": "55.0",
+            "Calcium_Ca_mg_l": "107.0"
+        }
+    },
+    {
+        "Region": "Haderslev",
+        "Parameters": {
+            "Ca_Hardness_dH": "22.0",
+            "Alkalinity_TAC_mmol_l": "5.32",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "836",
+            "Sodium_Na_mg_l": "33.9",
+            "Chlorides_Cl_mg_l": "20.4",
+            "Calcium_Ca_mg_l": "127.4"
+        }
+    },
+    {
+        "Region": "Halsnæs",
+        "Parameters": {
+            "Ca_Hardness_dH": "21.5",
+            "Alkalinity_TAC_mmol_l": "5.79",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "834",
+            "Sodium_Na_mg_l": "25.7",
+            "Chlorides_Cl_mg_l": "28.0",
+            "Calcium_Ca_mg_l": "140.2"
+        }
+    },
+    {
+        "Region": "Hedensted",
+        "Parameters": {
+            "Ca_Hardness_dH": "21.6",
+            "Alkalinity_TAC_mmol_l": "6.10",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "843",
+            "Sodium_Na_mg_l": "29.1",
+            "Chlorides_Cl_mg_l": "39.8",
+            "Calcium_Ca_mg_l": "103.8"
+        }
+    },
+    {
+        "Region": "Helsingør",
+        "Parameters": {
+            "Ca_Hardness_dH": "19.3",
+            "Alkalinity_TAC_mmol_l": "5.24",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "753",
+            "Sodium_Na_mg_l": "33.2",
+            "Chlorides_Cl_mg_l": "57.0",
+            "Calcium_Ca_mg_l": "147.8"
+        }
+    },
+    {
+        "Region": "Herlev",
+        "Parameters": {
+            "Ca_Hardness_dH": "18.6",
+            "Alkalinity_TAC_mmol_l": "4.77",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "721",
+            "Sodium_Na_mg_l": "21.2",
+            "Chlorides_Cl_mg_l": "58.1",
+            "Calcium_Ca_mg_l": "110.8"
+        }
+    },
+    {
+        "Region": "Herning",
+        "Parameters": {
+            "Ca_Hardness_dH": "20.7",
+            "Alkalinity_TAC_mmol_l": "4.76",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "814",
+            "Sodium_Na_mg_l": "37.1",
+            "Chlorides_Cl_mg_l": "25.6",
+            "Calcium_Ca_mg_l": "138.0"
+        }
+    },
+    {
+        "Region": "Hillerød",
+        "Parameters": {
+            "Ca_Hardness_dH": "20.3",
+            "Alkalinity_TAC_mmol_l": "4.81",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "771",
+            "Sodium_Na_mg_l": "39.9",
+            "Chlorides_Cl_mg_l": "23.4",
+            "Calcium_Ca_mg_l": "125.6"
+        }
+    },
+    {
+        "Region": "Hjørring",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.1",
+            "Alkalinity_TAC_mmol_l": "5.01",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "676",
+            "Sodium_Na_mg_l": "26.6",
+            "Chlorides_Cl_mg_l": "38.9",
+            "Calcium_Ca_mg_l": "103.1"
+        }
+    },
+    {
+        "Region": "Holbæk",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.0",
+            "Alkalinity_TAC_mmol_l": "5.85",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "572",
+            "Sodium_Na_mg_l": "33.2",
+            "Chlorides_Cl_mg_l": "50.2",
+            "Calcium_Ca_mg_l": "121.7"
+        }
+    },
+    {
+        "Region": "Holstebro",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.7",
+            "Alkalinity_TAC_mmol_l": "4.15",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "633",
+            "Sodium_Na_mg_l": "22.6",
+            "Chlorides_Cl_mg_l": "31.3",
+            "Calcium_Ca_mg_l": "115.2"
+        }
+    },
+    {
+        "Region": "Horsens",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.7",
+            "Alkalinity_TAC_mmol_l": "4.91",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "604",
+            "Sodium_Na_mg_l": "25.3",
+            "Chlorides_Cl_mg_l": "40.9",
+            "Calcium_Ca_mg_l": "125.9"
+        }
+    },
+    {
+        "Region": "Hvidovre",
+        "Parameters": {
+            "Ca_Hardness_dH": "18.2",
+            "Alkalinity_TAC_mmol_l": "6.10",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "734",
+            "Sodium_Na_mg_l": "28.3",
+            "Chlorides_Cl_mg_l": "58.3",
+            "Calcium_Ca_mg_l": "144.5"
+        }
+    },
+    {
+        "Region": "Høje-Taastrup",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.2",
+            "Alkalinity_TAC_mmol_l": "5.87",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "656",
+            "Sodium_Na_mg_l": "19.3",
+            "Chlorides_Cl_mg_l": "36.5",
+            "Calcium_Ca_mg_l": "114.0"
+        }
+    },
+    {
+        "Region": "Hørsholm",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.3",
+            "Alkalinity_TAC_mmol_l": "6.36",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "600",
+            "Sodium_Na_mg_l": "39.0",
+            "Chlorides_Cl_mg_l": "53.3",
+            "Calcium_Ca_mg_l": "141.1"
+        }
+    },
+    {
+        "Region": "Ikast-Brande",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.5",
+            "Alkalinity_TAC_mmol_l": "4.21",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "599",
+            "Sodium_Na_mg_l": "26.8",
+            "Chlorides_Cl_mg_l": "55.3",
+            "Calcium_Ca_mg_l": "133.9"
+        }
+    },
+    {
+        "Region": "Ishøj",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.6",
+            "Alkalinity_TAC_mmol_l": "4.03",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "565",
+            "Sodium_Na_mg_l": "16.2",
+            "Chlorides_Cl_mg_l": "46.4",
+            "Calcium_Ca_mg_l": "107.9"
+        }
+    },
+    {
+        "Region": "Jammerbugt",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.8",
+            "Alkalinity_TAC_mmol_l": "5.78",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "648",
+            "Sodium_Na_mg_l": "16.5",
+            "Chlorides_Cl_mg_l": "37.5",
+            "Calcium_Ca_mg_l": "102.9"
+        }
+    },
+    {
+        "Region": "Kalundborg",
+        "Parameters": {
+            "Ca_Hardness_dH": "18.8",
+            "Alkalinity_TAC_mmol_l": "5.64",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "717",
+            "Sodium_Na_mg_l": "17.3",
+            "Chlorides_Cl_mg_l": "45.9",
+            "Calcium_Ca_mg_l": "143.7"
+        }
+    },
+    {
+        "Region": "Kerteminde",
+        "Parameters": {
+            "Ca_Hardness_dH": "18.1",
+            "Alkalinity_TAC_mmol_l": "4.32",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "710",
+            "Sodium_Na_mg_l": "24.5",
+            "Chlorides_Cl_mg_l": "57.2",
+            "Calcium_Ca_mg_l": "145.0"
+        }
+    },
+    {
+        "Region": "Kolding",
+        "Parameters": {
+            "Ca_Hardness_dH": "18.9",
+            "Alkalinity_TAC_mmol_l": "5.44",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "738",
+            "Sodium_Na_mg_l": "17.5",
+            "Chlorides_Cl_mg_l": "57.5",
+            "Calcium_Ca_mg_l": "145.0"
+        }
+    },
+    {
+        "Region": "Køge",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.5",
+            "Alkalinity_TAC_mmol_l": "4.07",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "634",
+            "Sodium_Na_mg_l": "35.6",
+            "Chlorides_Cl_mg_l": "34.2",
+            "Calcium_Ca_mg_l": "105.1"
+        }
+    },
+    {
+        "Region": "Langeland",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.6",
+            "Alkalinity_TAC_mmol_l": "4.32",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "623",
+            "Sodium_Na_mg_l": "20.1",
+            "Chlorides_Cl_mg_l": "34.3",
+            "Calcium_Ca_mg_l": "148.6"
+        }
+    },
+    {
+        "Region": "Lejre",
+        "Parameters": {
+            "Ca_Hardness_dH": "19.0",
+            "Alkalinity_TAC_mmol_l": "5.67",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "731",
+            "Sodium_Na_mg_l": "37.9",
+            "Chlorides_Cl_mg_l": "35.8",
+            "Calcium_Ca_mg_l": "116.5"
+        }
+    },
+    {
+        "Region": "Lemvig",
+        "Parameters": {
+            "Ca_Hardness_dH": "18.0",
+            "Alkalinity_TAC_mmol_l": "4.09",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "702",
+            "Sodium_Na_mg_l": "39.6",
+            "Chlorides_Cl_mg_l": "58.6",
+            "Calcium_Ca_mg_l": "106.6"
+        }
+    },
+    {
+        "Region": "Lolland",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.3",
+            "Alkalinity_TAC_mmol_l": "4.13",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "552",
+            "Sodium_Na_mg_l": "39.2",
+            "Chlorides_Cl_mg_l": "30.1",
+            "Calcium_Ca_mg_l": "130.2"
+        }
+    },
+    {
+        "Region": "Lyngby-Taarbæk",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.6",
+            "Alkalinity_TAC_mmol_l": "5.21",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "655",
+            "Sodium_Na_mg_l": "37.1",
+            "Chlorides_Cl_mg_l": "27.5",
+            "Calcium_Ca_mg_l": "138.7"
+        }
+    },
+    {
+        "Region": "Læsø",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.7",
+            "Alkalinity_TAC_mmol_l": "6.26",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "620",
+            "Sodium_Na_mg_l": "15.6",
+            "Chlorides_Cl_mg_l": "30.8",
+            "Calcium_Ca_mg_l": "139.6"
+        }
+    },
+    {
+        "Region": "Mariagerfjord",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.7",
+            "Alkalinity_TAC_mmol_l": "5.34",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "577",
+            "Sodium_Na_mg_l": "34.3",
+            "Chlorides_Cl_mg_l": "22.2",
+            "Calcium_Ca_mg_l": "124.2"
+        }
+    },
+    {
+        "Region": "Middelfart",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.2",
+            "Alkalinity_TAC_mmol_l": "4.86",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "662",
+            "Sodium_Na_mg_l": "28.6",
+            "Chlorides_Cl_mg_l": "46.9",
+            "Calcium_Ca_mg_l": "136.9"
+        }
+    },
+    {
+        "Region": "Morsø",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.9",
+            "Alkalinity_TAC_mmol_l": "5.34",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "690",
+            "Sodium_Na_mg_l": "22.1",
+            "Chlorides_Cl_mg_l": "40.8",
+            "Calcium_Ca_mg_l": "122.8"
+        }
+    },
+    {
+        "Region": "Norddjurs",
+        "Parameters": {
+            "Ca_Hardness_dH": "19.0",
+            "Alkalinity_TAC_mmol_l": "4.01",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "750",
+            "Sodium_Na_mg_l": "26.5",
+            "Chlorides_Cl_mg_l": "50.5",
+            "Calcium_Ca_mg_l": "114.8"
+        }
+    },
+    {
+        "Region": "Nordfyn",
+        "Parameters": {
+            "Ca_Hardness_dH": "18.6",
+            "Alkalinity_TAC_mmol_l": "4.89",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "723",
+            "Sodium_Na_mg_l": "26.4",
+            "Chlorides_Cl_mg_l": "36.1",
+            "Calcium_Ca_mg_l": "102.1"
+        }
+    },
+    {
+        "Region": "Nyborg",
+        "Parameters": {
+            "Ca_Hardness_dH": "20.4",
+            "Alkalinity_TAC_mmol_l": "4.87",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "784",
+            "Sodium_Na_mg_l": "39.9",
+            "Chlorides_Cl_mg_l": "49.4",
+            "Calcium_Ca_mg_l": "141.7"
+        }
+    },
+    {
+        "Region": "Næstved",
+        "Parameters": {
+            "Ca_Hardness_dH": "21.8",
+            "Alkalinity_TAC_mmol_l": "5.74",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "816",
+            "Sodium_Na_mg_l": "23.5",
+            "Chlorides_Cl_mg_l": "53.3",
+            "Calcium_Ca_mg_l": "103.0"
+        }
+    },
+    {
+        "Region": "Odder",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.8",
+            "Alkalinity_TAC_mmol_l": "5.75",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "615",
+            "Sodium_Na_mg_l": "30.8",
+            "Chlorides_Cl_mg_l": "56.8",
+            "Calcium_Ca_mg_l": "149.4"
+        }
+    },
+    {
+        "Region": "Odense",
+        "Parameters": {
+            "Ca_Hardness_dH": "21.8",
+            "Alkalinity_TAC_mmol_l": "6.31",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "845",
+            "Sodium_Na_mg_l": "25.8",
+            "Chlorides_Cl_mg_l": "47.7",
+            "Calcium_Ca_mg_l": "105.9"
+        }
+    },
+    {
+        "Region": "Odsherred",
+        "Parameters": {
+            "Ca_Hardness_dH": "18.6",
+            "Alkalinity_TAC_mmol_l": "4.06",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "705",
+            "Sodium_Na_mg_l": "20.2",
+            "Chlorides_Cl_mg_l": "57.1",
+            "Calcium_Ca_mg_l": "112.4"
+        }
+    },
+    {
+        "Region": "Randers",
+        "Parameters": {
+            "Ca_Hardness_dH": "20.5",
+            "Alkalinity_TAC_mmol_l": "5.92",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "785",
+            "Sodium_Na_mg_l": "27.4",
+            "Chlorides_Cl_mg_l": "55.8",
+            "Calcium_Ca_mg_l": "132.2"
+        }
+    },
+    {
+        "Region": "Rebild",
+        "Parameters": {
+            "Ca_Hardness_dH": "20.7",
+            "Alkalinity_TAC_mmol_l": "5.31",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "817",
+            "Sodium_Na_mg_l": "24.3",
+            "Chlorides_Cl_mg_l": "44.1",
+            "Calcium_Ca_mg_l": "120.9"
+        }
+    },
+    {
+        "Region": "Ringkøbing-Skjern",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.8",
+            "Alkalinity_TAC_mmol_l": "6.35",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "569",
+            "Sodium_Na_mg_l": "17.6",
+            "Chlorides_Cl_mg_l": "31.3",
+            "Calcium_Ca_mg_l": "115.3"
+        }
+    },
+    {
+        "Region": "Ringsted",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.3",
+            "Alkalinity_TAC_mmol_l": "5.61",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "583",
+            "Sodium_Na_mg_l": "24.7",
+            "Chlorides_Cl_mg_l": "54.2",
+            "Calcium_Ca_mg_l": "105.6"
+        }
+    },
+    {
+        "Region": "Roskilde",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.2",
+            "Alkalinity_TAC_mmol_l": "5.41",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "679",
+            "Sodium_Na_mg_l": "21.6",
+            "Chlorides_Cl_mg_l": "43.9",
+            "Calcium_Ca_mg_l": "107.2"
+        }
+    },
+    {
+        "Region": "Rudersdal",
+        "Parameters": {
+            "Ca_Hardness_dH": "18.6",
+            "Alkalinity_TAC_mmol_l": "4.01",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "737",
+            "Sodium_Na_mg_l": "17.6",
+            "Chlorides_Cl_mg_l": "52.2",
+            "Calcium_Ca_mg_l": "134.7"
+        }
+    },
+    {
+        "Region": "Rødovre",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.5",
+            "Alkalinity_TAC_mmol_l": "5.97",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "641",
+            "Sodium_Na_mg_l": "21.0",
+            "Chlorides_Cl_mg_l": "49.5",
+            "Calcium_Ca_mg_l": "143.4"
+        }
+    },
+    {
+        "Region": "Samsø",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.8",
+            "Alkalinity_TAC_mmol_l": "5.03",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "636",
+            "Sodium_Na_mg_l": "30.6",
+            "Chlorides_Cl_mg_l": "21.3",
+            "Calcium_Ca_mg_l": "142.5"
+        }
+    },
+    {
+        "Region": "Silkeborg",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.7",
+            "Alkalinity_TAC_mmol_l": "6.22",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "637",
+            "Sodium_Na_mg_l": "31.9",
+            "Chlorides_Cl_mg_l": "46.4",
+            "Calcium_Ca_mg_l": "137.5"
+        }
+    },
+    {
+        "Region": "Skanderborg",
+        "Parameters": {
+            "Ca_Hardness_dH": "18.9",
+            "Alkalinity_TAC_mmol_l": "4.79",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "722",
+            "Sodium_Na_mg_l": "16.5",
+            "Chlorides_Cl_mg_l": "49.1",
+            "Calcium_Ca_mg_l": "100.1"
+        }
+    },
+    {
+        "Region": "Skive",
+        "Parameters": {
+            "Ca_Hardness_dH": "19.9",
+            "Alkalinity_TAC_mmol_l": "4.77",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "789",
+            "Sodium_Na_mg_l": "32.9",
+            "Chlorides_Cl_mg_l": "23.7",
+            "Calcium_Ca_mg_l": "127.2"
+        }
+    },
+    {
+        "Region": "Slagelse",
+        "Parameters": {
+            "Ca_Hardness_dH": "18.0",
+            "Alkalinity_TAC_mmol_l": "4.43",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "713",
+            "Sodium_Na_mg_l": "24.9",
+            "Chlorides_Cl_mg_l": "29.3",
+            "Calcium_Ca_mg_l": "101.1"
+        }
+    },
+    {
+        "Region": "Solrød",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.7",
+            "Alkalinity_TAC_mmol_l": "4.30",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "621",
+            "Sodium_Na_mg_l": "36.0",
+            "Chlorides_Cl_mg_l": "24.9",
+            "Calcium_Ca_mg_l": "123.5"
+        }
+    },
+    {
+        "Region": "Sorø",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.1",
+            "Alkalinity_TAC_mmol_l": "6.39",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "589",
+            "Sodium_Na_mg_l": "23.2",
+            "Chlorides_Cl_mg_l": "45.3",
+            "Calcium_Ca_mg_l": "104.6"
+        }
+    },
+    {
+        "Region": "Stevns",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.2",
+            "Alkalinity_TAC_mmol_l": "6.23",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "593",
+            "Sodium_Na_mg_l": "24.4",
+            "Chlorides_Cl_mg_l": "49.8",
+            "Calcium_Ca_mg_l": "127.5"
+        }
+    },
+    {
+        "Region": "Struer",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.6",
+            "Alkalinity_TAC_mmol_l": "5.82",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "610",
+            "Sodium_Na_mg_l": "35.3",
+            "Chlorides_Cl_mg_l": "59.2",
+            "Calcium_Ca_mg_l": "142.7"
+        }
+    },
+    {
+        "Region": "Svendborg",
+        "Parameters": {
+            "Ca_Hardness_dH": "20.2",
+            "Alkalinity_TAC_mmol_l": "6.42",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "763",
+            "Sodium_Na_mg_l": "39.0",
+            "Chlorides_Cl_mg_l": "58.4",
+            "Calcium_Ca_mg_l": "148.4"
+        }
+    },
+    {
+        "Region": "Syddjurs",
+        "Parameters": {
+            "Ca_Hardness_dH": "20.0",
+            "Alkalinity_TAC_mmol_l": "4.29",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "787",
+            "Sodium_Na_mg_l": "33.2",
+            "Chlorides_Cl_mg_l": "54.5",
+            "Calcium_Ca_mg_l": "121.6"
+        }
+    },
+    {
+        "Region": "Sønderborg",
+        "Parameters": {
+            "Ca_Hardness_dH": "19.8",
+            "Alkalinity_TAC_mmol_l": "4.47",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "790",
+            "Sodium_Na_mg_l": "18.0",
+            "Chlorides_Cl_mg_l": "49.9",
+            "Calcium_Ca_mg_l": "128.0"
+        }
+    },
+    {
+        "Region": "Thisted",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.2",
+            "Alkalinity_TAC_mmol_l": "6.42",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "700",
+            "Sodium_Na_mg_l": "33.3",
+            "Chlorides_Cl_mg_l": "46.5",
+            "Calcium_Ca_mg_l": "124.2"
+        }
+    },
+    {
+        "Region": "Tårnby",
+        "Parameters": {
+            "Ca_Hardness_dH": "21.6",
+            "Alkalinity_TAC_mmol_l": "5.70",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "852",
+            "Sodium_Na_mg_l": "18.3",
+            "Chlorides_Cl_mg_l": "45.7",
+            "Calcium_Ca_mg_l": "116.8"
+        }
+    },
+    {
+        "Region": "Tønder",
+        "Parameters": {
+            "Ca_Hardness_dH": "21.1",
+            "Alkalinity_TAC_mmol_l": "4.57",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "808",
+            "Sodium_Na_mg_l": "16.9",
+            "Chlorides_Cl_mg_l": "47.5",
+            "Calcium_Ca_mg_l": "134.7"
+        }
+    },
+    {
+        "Region": "Vallensbæk",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.6",
+            "Alkalinity_TAC_mmol_l": "4.73",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "621",
+            "Sodium_Na_mg_l": "31.7",
+            "Chlorides_Cl_mg_l": "53.3",
+            "Calcium_Ca_mg_l": "117.0"
+        }
+    },
+    {
+        "Region": "Varde",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.1",
+            "Alkalinity_TAC_mmol_l": "5.23",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "580",
+            "Sodium_Na_mg_l": "23.5",
+            "Chlorides_Cl_mg_l": "48.1",
+            "Calcium_Ca_mg_l": "127.1"
+        }
+    },
+    {
+        "Region": "Vejen",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.8",
+            "Alkalinity_TAC_mmol_l": "5.80",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "633",
+            "Sodium_Na_mg_l": "38.5",
+            "Chlorides_Cl_mg_l": "26.6",
+            "Calcium_Ca_mg_l": "134.0"
+        }
+    },
+    {
+        "Region": "Vejle",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.6",
+            "Alkalinity_TAC_mmol_l": "4.22",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "580",
+            "Sodium_Na_mg_l": "31.8",
+            "Chlorides_Cl_mg_l": "24.8",
+            "Calcium_Ca_mg_l": "121.9"
+        }
+    },
+    {
+        "Region": "Vesthimmerland",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.8",
+            "Alkalinity_TAC_mmol_l": "5.21",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "671",
+            "Sodium_Na_mg_l": "16.3",
+            "Chlorides_Cl_mg_l": "44.4",
+            "Calcium_Ca_mg_l": "127.3"
+        }
+    },
+    {
+        "Region": "Viborg",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.5",
+            "Alkalinity_TAC_mmol_l": "6.44",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "665",
+            "Sodium_Na_mg_l": "24.1",
+            "Chlorides_Cl_mg_l": "47.6",
+            "Calcium_Ca_mg_l": "149.4"
+        }
+    },
+    {
+        "Region": "Vordingborg",
+        "Parameters": {
+            "Ca_Hardness_dH": "19.2",
+            "Alkalinity_TAC_mmol_l": "4.24",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "743",
+            "Sodium_Na_mg_l": "34.0",
+            "Chlorides_Cl_mg_l": "40.8",
+            "Calcium_Ca_mg_l": "144.0"
+        }
+    },
+    {
+        "Region": "Ærø",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.1",
+            "Alkalinity_TAC_mmol_l": "6.49",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "620",
+            "Sodium_Na_mg_l": "32.9",
+            "Chlorides_Cl_mg_l": "26.5",
+            "Calcium_Ca_mg_l": "142.8"
+        }
+    }
+]

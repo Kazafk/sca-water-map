@@ -1,0 +1,398 @@
+[
+    {
+        "Region": "Dublin (Uisce Éireann - Leinster)",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.0",
+            "Alkalinity_TAC_mmol_l": "3.2",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "460",
+            "Sodium_Na_mg_l": "18.0",
+            "Chlorides_Cl_mg_l": "25.0",
+            "Calcium_Ca_mg_l": "90.0"
+        }
+    },
+    {
+        "Region": "Cork (Uisce Éireann - Munster)",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.0",
+            "Alkalinity_TAC_mmol_l": "1.5",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "210",
+            "Sodium_Na_mg_l": "12.0",
+            "Chlorides_Cl_mg_l": "15.0",
+            "Calcium_Ca_mg_l": "45.0"
+        }
+    },
+    {
+        "Region": "Galway (Uisce Éireann - Connacht)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.0",
+            "Alkalinity_TAC_mmol_l": "2.8",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "410",
+            "Sodium_Na_mg_l": "15.0",
+            "Chlorides_Cl_mg_l": "20.0",
+            "Calcium_Ca_mg_l": "80.0"
+        }
+    },
+    {
+        "Region": "Dunmurry West (Ireland)",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.1",
+            "Alkalinity_TAC_mmol_l": "2.85",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "530",
+            "Sodium_Na_mg_l": "20.9",
+            "Chlorides_Cl_mg_l": "27.8",
+            "Calcium_Ca_mg_l": "86.8"
+        }
+    },
+    {
+        "Region": "Malahide (Ireland)",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.6",
+            "Alkalinity_TAC_mmol_l": "1.63",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "310",
+            "Sodium_Na_mg_l": "10.6",
+            "Chlorides_Cl_mg_l": "12.8",
+            "Calcium_Ca_mg_l": "34.7"
+        }
+    },
+    {
+        "Region": "Maynooth (Ireland)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.1",
+            "Alkalinity_TAC_mmol_l": "2.67",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "487",
+            "Sodium_Na_mg_l": "14.3",
+            "Chlorides_Cl_mg_l": "15.2",
+            "Calcium_Ca_mg_l": "93.6"
+        }
+    },
+    {
+        "Region": "Glengarriff (Ireland)",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.6",
+            "Alkalinity_TAC_mmol_l": "3.38",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "300",
+            "Sodium_Na_mg_l": "13.9",
+            "Chlorides_Cl_mg_l": "14.1",
+            "Calcium_Ca_mg_l": "20.6"
+        }
+    },
+    {
+        "Region": "Cork (Ireland)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.4",
+            "Alkalinity_TAC_mmol_l": "2.36",
+            "pH": "6.9",
+            "TDS_Conductivity_uS_cm": "267",
+            "Sodium_Na_mg_l": "13.5",
+            "Chlorides_Cl_mg_l": "17.6",
+            "Calcium_Ca_mg_l": "49.9"
+        }
+    },
+    {
+        "Region": "Fatima (Ireland)",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.2",
+            "Alkalinity_TAC_mmol_l": "1.83",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "583",
+            "Sodium_Na_mg_l": "21.8",
+            "Chlorides_Cl_mg_l": "17.1",
+            "Calcium_Ca_mg_l": "78.2"
+        }
+    },
+    {
+        "Region": "Dublin (Ireland)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.9",
+            "Alkalinity_TAC_mmol_l": "3.21",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "159",
+            "Sodium_Na_mg_l": "13.0",
+            "Chlorides_Cl_mg_l": "19.1",
+            "Calcium_Ca_mg_l": "18.0"
+        }
+    },
+    {
+        "Region": "Blacklion (Ireland)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.3",
+            "Alkalinity_TAC_mmol_l": "3.32",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "194",
+            "Sodium_Na_mg_l": "6.3",
+            "Chlorides_Cl_mg_l": "16.9",
+            "Calcium_Ca_mg_l": "18.2"
+        }
+    },
+    {
+        "Region": "Ballyconnell (Ireland)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.2",
+            "Alkalinity_TAC_mmol_l": "3.41",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "486",
+            "Sodium_Na_mg_l": "18.3",
+            "Chlorides_Cl_mg_l": "17.1",
+            "Calcium_Ca_mg_l": "87.6"
+        }
+    },
+    {
+        "Region": "Newcastle West (Ireland)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.6",
+            "Alkalinity_TAC_mmol_l": "2.77",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "297",
+            "Sodium_Na_mg_l": "12.0",
+            "Chlorides_Cl_mg_l": "18.1",
+            "Calcium_Ca_mg_l": "21.7"
+        }
+    },
+    {
+        "Region": "Muff (Ireland)",
+        "Parameters": {
+            "Ca_Hardness_dH": "5.3",
+            "Alkalinity_TAC_mmol_l": "2.26",
+            "pH": "6.9",
+            "TDS_Conductivity_uS_cm": "242",
+            "Sodium_Na_mg_l": "6.9",
+            "Chlorides_Cl_mg_l": "14.1",
+            "Calcium_Ca_mg_l": "37.6"
+        }
+    },
+    {
+        "Region": "Galway (Ireland)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.4",
+            "Alkalinity_TAC_mmol_l": "2.36",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "552",
+            "Sodium_Na_mg_l": "24.7",
+            "Chlorides_Cl_mg_l": "17.2",
+            "Calcium_Ca_mg_l": "82.4"
+        }
+    },
+    {
+        "Region": "Donegal (Ireland)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.0",
+            "Alkalinity_TAC_mmol_l": "2.96",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "544",
+            "Sodium_Na_mg_l": "24.9",
+            "Chlorides_Cl_mg_l": "28.2",
+            "Calcium_Ca_mg_l": "93.9"
+        }
+    },
+    {
+        "Region": "Blackrock (Ireland)",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.2",
+            "Alkalinity_TAC_mmol_l": "2.35",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "338",
+            "Sodium_Na_mg_l": "9.8",
+            "Chlorides_Cl_mg_l": "15.1",
+            "Calcium_Ca_mg_l": "48.6"
+        }
+    },
+    {
+        "Region": "Omeath (Ireland)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.5",
+            "Alkalinity_TAC_mmol_l": "2.97",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "242",
+            "Sodium_Na_mg_l": "10.3",
+            "Chlorides_Cl_mg_l": "13.2",
+            "Calcium_Ca_mg_l": "46.3"
+        }
+    },
+    {
+        "Region": "International Financial Services Centre (Ireland)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.8",
+            "Alkalinity_TAC_mmol_l": "2.75",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "607",
+            "Sodium_Na_mg_l": "22.1",
+            "Chlorides_Cl_mg_l": "25.3",
+            "Calcium_Ca_mg_l": "87.5"
+        }
+    },
+    {
+        "Region": "Kilkenny (Ireland)",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.6",
+            "Alkalinity_TAC_mmol_l": "2.82",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "538",
+            "Sodium_Na_mg_l": "11.7",
+            "Chlorides_Cl_mg_l": "16.9",
+            "Calcium_Ca_mg_l": "74.1"
+        }
+    },
+    {
+        "Region": "Limerick (Ireland)",
+        "Parameters": {
+            "Ca_Hardness_dH": "5.3",
+            "Alkalinity_TAC_mmol_l": "1.07",
+            "pH": "6.9",
+            "TDS_Conductivity_uS_cm": "228",
+            "Sodium_Na_mg_l": "13.7",
+            "Chlorides_Cl_mg_l": "11.3",
+            "Calcium_Ca_mg_l": "16.8"
+        }
+    },
+    {
+        "Region": "Carrickmacross (Ireland)",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.4",
+            "Alkalinity_TAC_mmol_l": "2.14",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "307",
+            "Sodium_Na_mg_l": "6.6",
+            "Chlorides_Cl_mg_l": "12.9",
+            "Calcium_Ca_mg_l": "23.4"
+        }
+    },
+    {
+        "Region": "Galway City (Ireland)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.0",
+            "Alkalinity_TAC_mmol_l": "2.58",
+            "pH": "6.9",
+            "TDS_Conductivity_uS_cm": "280",
+            "Sodium_Na_mg_l": "6.4",
+            "Chlorides_Cl_mg_l": "18.5",
+            "Calcium_Ca_mg_l": "18.0"
+        }
+    },
+    {
+        "Region": "Clones (Ireland)",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.9",
+            "Alkalinity_TAC_mmol_l": "2.46",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "343",
+            "Sodium_Na_mg_l": "8.3",
+            "Chlorides_Cl_mg_l": "18.3",
+            "Calcium_Ca_mg_l": "18.6"
+        }
+    },
+    {
+        "Region": "Lifford (Ireland)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.9",
+            "Alkalinity_TAC_mmol_l": "1.86",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "446",
+            "Sodium_Na_mg_l": "20.3",
+            "Chlorides_Cl_mg_l": "21.2",
+            "Calcium_Ca_mg_l": "83.9"
+        }
+    },
+    {
+        "Region": "Pettigo (Ireland)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.0",
+            "Alkalinity_TAC_mmol_l": "3.17",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "181",
+            "Sodium_Na_mg_l": "8.0",
+            "Chlorides_Cl_mg_l": "13.0",
+            "Calcium_Ca_mg_l": "26.0"
+        }
+    },
+    {
+        "Region": "Under Secretary's Lodge (Ireland)",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.0",
+            "Alkalinity_TAC_mmol_l": "2.52",
+            "pH": "6.9",
+            "TDS_Conductivity_uS_cm": "280",
+            "Sodium_Na_mg_l": "9.2",
+            "Chlorides_Cl_mg_l": "16.5",
+            "Calcium_Ca_mg_l": "19.4"
+        }
+    },
+    {
+        "Region": "Eblana (Ireland)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.5",
+            "Alkalinity_TAC_mmol_l": "1.24",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "472",
+            "Sodium_Na_mg_l": "21.7",
+            "Chlorides_Cl_mg_l": "25.3",
+            "Calcium_Ca_mg_l": "91.5"
+        }
+    },
+    {
+        "Region": "Waterford (Ireland)",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.3",
+            "Alkalinity_TAC_mmol_l": "3.24",
+            "pH": "6.9",
+            "TDS_Conductivity_uS_cm": "322",
+            "Sodium_Na_mg_l": "5.3",
+            "Chlorides_Cl_mg_l": "15.8",
+            "Calcium_Ca_mg_l": "44.1"
+        }
+    },
+    {
+        "Region": "Abbeyleix (Ireland)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.3",
+            "Alkalinity_TAC_mmol_l": "3.38",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "443",
+            "Sodium_Na_mg_l": "21.0",
+            "Chlorides_Cl_mg_l": "28.6",
+            "Calcium_Ca_mg_l": "70.9"
+        }
+    },
+    {
+        "Region": "Drogheda (Ireland)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.9",
+            "Alkalinity_TAC_mmol_l": "2.85",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "278",
+            "Sodium_Na_mg_l": "10.7",
+            "Chlorides_Cl_mg_l": "13.0",
+            "Calcium_Ca_mg_l": "15.6"
+        }
+    },
+    {
+        "Region": "Dublin City (Ireland)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.1",
+            "Alkalinity_TAC_mmol_l": "1.09",
+            "pH": "6.8",
+            "TDS_Conductivity_uS_cm": "154",
+            "Sodium_Na_mg_l": "8.5",
+            "Chlorides_Cl_mg_l": "18.2",
+            "Calcium_Ca_mg_l": "39.6"
+        }
+    },
+    {
+        "Region": "Killiney (Ireland)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.9",
+            "Alkalinity_TAC_mmol_l": "1.50",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "535",
+            "Sodium_Na_mg_l": "24.9",
+            "Chlorides_Cl_mg_l": "21.6",
+            "Calcium_Ca_mg_l": "76.2"
+        }
+    }
+]

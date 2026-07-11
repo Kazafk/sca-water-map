@@ -1,0 +1,4166 @@
+[
+    {
+        "Region": "Oslo (Vann- og avløpsetaten)",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.9 - 2.8",
+            "Alkalinity_TAC_mmol_l": "0.6",
+            "pH": "7.37 - 8.00",
+            "TDS_Conductivity_uS_cm": "90",
+            "Sodium_Na_mg_l": "3.5",
+            "Chlorides_Cl_mg_l": "4.0",
+            "Calcium_Ca_mg_l": "12.0"
+        }
+    },
+    {
+        "Region": "Bergen (Bergen Vann)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.3 - 2.9",
+            "Alkalinity_TAC_mmol_l": "0.5",
+            "pH": "7.7 - 8.1",
+            "TDS_Conductivity_uS_cm": "110",
+            "Sodium_Na_mg_l": "4.0",
+            "Chlorides_Cl_mg_l": "3.5",
+            "Calcium_Ca_mg_l": "14.0"
+        }
+    },
+    {
+        "Region": "Trondheim kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.0 - 3.0",
+            "Alkalinity_TAC_mmol_l": "0.7",
+            "pH": "7.5 - 8.0",
+            "TDS_Conductivity_uS_cm": "120",
+            "Sodium_Na_mg_l": "5.0",
+            "Chlorides_Cl_mg_l": "5.5",
+            "Calcium_Ca_mg_l": "15.0"
+        }
+    },
+    {
+        "Region": "Bodø kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.2",
+            "Alkalinity_TAC_mmol_l": "1.09",
+            "pH": "8.1",
+            "TDS_Conductivity_uS_cm": "87",
+            "Sodium_Na_mg_l": "4.1",
+            "Chlorides_Cl_mg_l": "4.1",
+            "Calcium_Ca_mg_l": "19.2"
+        }
+    },
+    {
+        "Region": "Verdal kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.7",
+            "Alkalinity_TAC_mmol_l": "0.91",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "77",
+            "Sodium_Na_mg_l": "11.2",
+            "Chlorides_Cl_mg_l": "14.8",
+            "Calcium_Ca_mg_l": "19.6"
+        }
+    },
+    {
+        "Region": "Vik kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.6",
+            "Alkalinity_TAC_mmol_l": "0.94",
+            "pH": "8.1",
+            "TDS_Conductivity_uS_cm": "93",
+            "Sodium_Na_mg_l": "3.3",
+            "Chlorides_Cl_mg_l": "5.8",
+            "Calcium_Ca_mg_l": "20.0"
+        }
+    },
+    {
+        "Region": "Vefsn kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.4",
+            "Alkalinity_TAC_mmol_l": "1.28",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "89",
+            "Sodium_Na_mg_l": "14.8",
+            "Chlorides_Cl_mg_l": "3.5",
+            "Calcium_Ca_mg_l": "16.7"
+        }
+    },
+    {
+        "Region": "Overhalla kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.7",
+            "Alkalinity_TAC_mmol_l": "1.47",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "72",
+            "Sodium_Na_mg_l": "11.0",
+            "Chlorides_Cl_mg_l": "11.6",
+            "Calcium_Ca_mg_l": "13.1"
+        }
+    },
+    {
+        "Region": "Kragerø kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.6",
+            "Alkalinity_TAC_mmol_l": "0.87",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "58",
+            "Sodium_Na_mg_l": "12.9",
+            "Chlorides_Cl_mg_l": "8.1",
+            "Calcium_Ca_mg_l": "16.9"
+        }
+    },
+    {
+        "Region": "Lyngen kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.2",
+            "Alkalinity_TAC_mmol_l": "1.16",
+            "pH": "8.2",
+            "TDS_Conductivity_uS_cm": "50",
+            "Sodium_Na_mg_l": "7.1",
+            "Chlorides_Cl_mg_l": "14.7",
+            "Calcium_Ca_mg_l": "17.4"
+        }
+    },
+    {
+        "Region": "Stranda kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.0",
+            "Alkalinity_TAC_mmol_l": "0.69",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "125",
+            "Sodium_Na_mg_l": "8.3",
+            "Chlorides_Cl_mg_l": "9.7",
+            "Calcium_Ca_mg_l": "9.6"
+        }
+    },
+    {
+        "Region": "Tjeldsund kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.2",
+            "Alkalinity_TAC_mmol_l": "1.48",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "85",
+            "Sodium_Na_mg_l": "5.7",
+            "Chlorides_Cl_mg_l": "7.7",
+            "Calcium_Ca_mg_l": "12.9"
+        }
+    },
+    {
+        "Region": "Sandefjord kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.8",
+            "Alkalinity_TAC_mmol_l": "1.19",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "115",
+            "Sodium_Na_mg_l": "4.0",
+            "Chlorides_Cl_mg_l": "10.8",
+            "Calcium_Ca_mg_l": "6.9"
+        }
+    },
+    {
+        "Region": "Lillestrøm kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.1",
+            "Alkalinity_TAC_mmol_l": "0.94",
+            "pH": "8.1",
+            "TDS_Conductivity_uS_cm": "53",
+            "Sodium_Na_mg_l": "10.2",
+            "Chlorides_Cl_mg_l": "7.4",
+            "Calcium_Ca_mg_l": "15.2"
+        }
+    },
+    {
+        "Region": "Etnedal kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.7",
+            "Alkalinity_TAC_mmol_l": "1.14",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "83",
+            "Sodium_Na_mg_l": "12.7",
+            "Chlorides_Cl_mg_l": "6.1",
+            "Calcium_Ca_mg_l": "9.3"
+        }
+    },
+    {
+        "Region": "Leka kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.5",
+            "Alkalinity_TAC_mmol_l": "0.90",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "95",
+            "Sodium_Na_mg_l": "11.2",
+            "Chlorides_Cl_mg_l": "4.1",
+            "Calcium_Ca_mg_l": "5.8"
+        }
+    },
+    {
+        "Region": "Kvæfjord kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.9",
+            "Alkalinity_TAC_mmol_l": "0.94",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "96",
+            "Sodium_Na_mg_l": "7.4",
+            "Chlorides_Cl_mg_l": "10.9",
+            "Calcium_Ca_mg_l": "12.8"
+        }
+    },
+    {
+        "Region": "Lavangen kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.7",
+            "Alkalinity_TAC_mmol_l": "0.68",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "111",
+            "Sodium_Na_mg_l": "3.7",
+            "Chlorides_Cl_mg_l": "11.1",
+            "Calcium_Ca_mg_l": "5.3"
+        }
+    },
+    {
+        "Region": "Vestvågøy kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.1",
+            "Alkalinity_TAC_mmol_l": "1.11",
+            "pH": "8.3",
+            "TDS_Conductivity_uS_cm": "93",
+            "Sodium_Na_mg_l": "4.5",
+            "Chlorides_Cl_mg_l": "13.3",
+            "Calcium_Ca_mg_l": "8.2"
+        }
+    },
+    {
+        "Region": "Lier kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.7",
+            "Alkalinity_TAC_mmol_l": "0.74",
+            "pH": "8.2",
+            "TDS_Conductivity_uS_cm": "117",
+            "Sodium_Na_mg_l": "7.5",
+            "Chlorides_Cl_mg_l": "7.6",
+            "Calcium_Ca_mg_l": "24.6"
+        }
+    },
+    {
+        "Region": "Kvinnherad kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.3",
+            "Alkalinity_TAC_mmol_l": "1.04",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "74",
+            "Sodium_Na_mg_l": "11.8",
+            "Chlorides_Cl_mg_l": "10.4",
+            "Calcium_Ca_mg_l": "21.0"
+        }
+    },
+    {
+        "Region": "Karlsøy kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.4",
+            "Alkalinity_TAC_mmol_l": "1.09",
+            "pH": "8.3",
+            "TDS_Conductivity_uS_cm": "70",
+            "Sodium_Na_mg_l": "10.9",
+            "Chlorides_Cl_mg_l": "4.4",
+            "Calcium_Ca_mg_l": "10.6"
+        }
+    },
+    {
+        "Region": "Flesberg kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.9",
+            "Alkalinity_TAC_mmol_l": "1.48",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "76",
+            "Sodium_Na_mg_l": "8.7",
+            "Chlorides_Cl_mg_l": "6.3",
+            "Calcium_Ca_mg_l": "9.2"
+        }
+    },
+    {
+        "Region": "Lødingen kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.4",
+            "Alkalinity_TAC_mmol_l": "1.21",
+            "pH": "8.1",
+            "TDS_Conductivity_uS_cm": "106",
+            "Sodium_Na_mg_l": "11.0",
+            "Chlorides_Cl_mg_l": "10.5",
+            "Calcium_Ca_mg_l": "17.5"
+        }
+    },
+    {
+        "Region": "Giske kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.0",
+            "Alkalinity_TAC_mmol_l": "0.51",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "76",
+            "Sodium_Na_mg_l": "6.7",
+            "Chlorides_Cl_mg_l": "3.8",
+            "Calcium_Ca_mg_l": "7.2"
+        }
+    },
+    {
+        "Region": "Vang kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.3",
+            "Alkalinity_TAC_mmol_l": "0.61",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "85",
+            "Sodium_Na_mg_l": "13.3",
+            "Chlorides_Cl_mg_l": "4.3",
+            "Calcium_Ca_mg_l": "19.4"
+        }
+    },
+    {
+        "Region": "Averøy kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.5",
+            "Alkalinity_TAC_mmol_l": "0.86",
+            "pH": "8.5",
+            "TDS_Conductivity_uS_cm": "68",
+            "Sodium_Na_mg_l": "4.0",
+            "Chlorides_Cl_mg_l": "2.6",
+            "Calcium_Ca_mg_l": "16.2"
+        }
+    },
+    {
+        "Region": "Tynset kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.5",
+            "Alkalinity_TAC_mmol_l": "0.51",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "118",
+            "Sodium_Na_mg_l": "5.8",
+            "Chlorides_Cl_mg_l": "9.9",
+            "Calcium_Ca_mg_l": "11.1"
+        }
+    },
+    {
+        "Region": "Rollag kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.9",
+            "Alkalinity_TAC_mmol_l": "0.63",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "97",
+            "Sodium_Na_mg_l": "10.9",
+            "Chlorides_Cl_mg_l": "11.9",
+            "Calcium_Ca_mg_l": "23.6"
+        }
+    },
+    {
+        "Region": "Alstahaug kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.3",
+            "Alkalinity_TAC_mmol_l": "1.31",
+            "pH": "8.3",
+            "TDS_Conductivity_uS_cm": "89",
+            "Sodium_Na_mg_l": "13.7",
+            "Chlorides_Cl_mg_l": "9.3",
+            "Calcium_Ca_mg_l": "7.0"
+        }
+    },
+    {
+        "Region": "Holmestrand kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.5",
+            "Alkalinity_TAC_mmol_l": "0.89",
+            "pH": "8.1",
+            "TDS_Conductivity_uS_cm": "82",
+            "Sodium_Na_mg_l": "15.0",
+            "Chlorides_Cl_mg_l": "8.6",
+            "Calcium_Ca_mg_l": "10.4"
+        }
+    },
+    {
+        "Region": "Vestby kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.1",
+            "Alkalinity_TAC_mmol_l": "1.32",
+            "pH": "8.1",
+            "TDS_Conductivity_uS_cm": "100",
+            "Sodium_Na_mg_l": "7.0",
+            "Chlorides_Cl_mg_l": "9.4",
+            "Calcium_Ca_mg_l": "16.3"
+        }
+    },
+    {
+        "Region": "Jevnaker kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.2",
+            "Alkalinity_TAC_mmol_l": "0.60",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "127",
+            "Sodium_Na_mg_l": "13.4",
+            "Chlorides_Cl_mg_l": "14.3",
+            "Calcium_Ca_mg_l": "8.4"
+        }
+    },
+    {
+        "Region": "Vestre_Toten kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.9",
+            "Alkalinity_TAC_mmol_l": "0.64",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "81",
+            "Sodium_Na_mg_l": "11.6",
+            "Chlorides_Cl_mg_l": "10.2",
+            "Calcium_Ca_mg_l": "15.6"
+        }
+    },
+    {
+        "Region": "Hamarøy kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.2",
+            "Alkalinity_TAC_mmol_l": "1.06",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "103",
+            "Sodium_Na_mg_l": "10.4",
+            "Chlorides_Cl_mg_l": "9.1",
+            "Calcium_Ca_mg_l": "11.6"
+        }
+    },
+    {
+        "Region": "Bærum kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.8",
+            "Alkalinity_TAC_mmol_l": "0.77",
+            "pH": "8.3",
+            "TDS_Conductivity_uS_cm": "118",
+            "Sodium_Na_mg_l": "2.5",
+            "Chlorides_Cl_mg_l": "7.1",
+            "Calcium_Ca_mg_l": "13.0"
+        }
+    },
+    {
+        "Region": "Hvaler kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.7",
+            "Alkalinity_TAC_mmol_l": "0.82",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "100",
+            "Sodium_Na_mg_l": "4.4",
+            "Chlorides_Cl_mg_l": "8.2",
+            "Calcium_Ca_mg_l": "8.0"
+        }
+    },
+    {
+        "Region": "Evenes kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.9",
+            "Alkalinity_TAC_mmol_l": "1.09",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "105",
+            "Sodium_Na_mg_l": "11.2",
+            "Chlorides_Cl_mg_l": "12.0",
+            "Calcium_Ca_mg_l": "7.7"
+        }
+    },
+    {
+        "Region": "Dovre kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.2",
+            "Alkalinity_TAC_mmol_l": "0.69",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "118",
+            "Sodium_Na_mg_l": "10.8",
+            "Chlorides_Cl_mg_l": "4.9",
+            "Calcium_Ca_mg_l": "18.3"
+        }
+    },
+    {
+        "Region": "Steigen kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.3",
+            "Alkalinity_TAC_mmol_l": "0.80",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "90",
+            "Sodium_Na_mg_l": "7.6",
+            "Chlorides_Cl_mg_l": "2.2",
+            "Calcium_Ca_mg_l": "16.7"
+        }
+    },
+    {
+        "Region": "Kinn kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.7",
+            "Alkalinity_TAC_mmol_l": "1.19",
+            "pH": "8.3",
+            "TDS_Conductivity_uS_cm": "76",
+            "Sodium_Na_mg_l": "9.2",
+            "Chlorides_Cl_mg_l": "4.8",
+            "Calcium_Ca_mg_l": "6.1"
+        }
+    },
+    {
+        "Region": "Gratangen kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.0",
+            "Alkalinity_TAC_mmol_l": "0.69",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "126",
+            "Sodium_Na_mg_l": "12.3",
+            "Chlorides_Cl_mg_l": "14.1",
+            "Calcium_Ca_mg_l": "24.2"
+        }
+    },
+    {
+        "Region": "Ringerike kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.2",
+            "Alkalinity_TAC_mmol_l": "1.00",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "52",
+            "Sodium_Na_mg_l": "12.5",
+            "Chlorides_Cl_mg_l": "5.6",
+            "Calcium_Ca_mg_l": "15.8"
+        }
+    },
+    {
+        "Region": "Sirdal kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.3",
+            "Alkalinity_TAC_mmol_l": "1.21",
+            "pH": "8.3",
+            "TDS_Conductivity_uS_cm": "52",
+            "Sodium_Na_mg_l": "14.5",
+            "Chlorides_Cl_mg_l": "2.6",
+            "Calcium_Ca_mg_l": "20.6"
+        }
+    },
+    {
+        "Region": "Haugesund kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.1",
+            "Alkalinity_TAC_mmol_l": "1.04",
+            "pH": "8.3",
+            "TDS_Conductivity_uS_cm": "60",
+            "Sodium_Na_mg_l": "10.3",
+            "Chlorides_Cl_mg_l": "11.3",
+            "Calcium_Ca_mg_l": "7.4"
+        }
+    },
+    {
+        "Region": "Stavanger kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.8",
+            "Alkalinity_TAC_mmol_l": "0.68",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "103",
+            "Sodium_Na_mg_l": "10.2",
+            "Chlorides_Cl_mg_l": "2.6",
+            "Calcium_Ca_mg_l": "24.1"
+        }
+    },
+    {
+        "Region": "Orkland kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.8",
+            "Alkalinity_TAC_mmol_l": "1.05",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "92",
+            "Sodium_Na_mg_l": "13.1",
+            "Chlorides_Cl_mg_l": "13.4",
+            "Calcium_Ca_mg_l": "5.6"
+        }
+    },
+    {
+        "Region": "Namsskogan kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.1",
+            "Alkalinity_TAC_mmol_l": "1.46",
+            "pH": "8.4",
+            "TDS_Conductivity_uS_cm": "51",
+            "Sodium_Na_mg_l": "10.4",
+            "Chlorides_Cl_mg_l": "6.8",
+            "Calcium_Ca_mg_l": "7.3"
+        }
+    },
+    {
+        "Region": "Gulen kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.6",
+            "Alkalinity_TAC_mmol_l": "0.60",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "94",
+            "Sodium_Na_mg_l": "6.3",
+            "Chlorides_Cl_mg_l": "13.4",
+            "Calcium_Ca_mg_l": "16.8"
+        }
+    },
+    {
+        "Region": "Siljan kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.7",
+            "Alkalinity_TAC_mmol_l": "0.77",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "117",
+            "Sodium_Na_mg_l": "4.9",
+            "Chlorides_Cl_mg_l": "5.8",
+            "Calcium_Ca_mg_l": "8.2"
+        }
+    },
+    {
+        "Region": "Asker kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.4",
+            "Alkalinity_TAC_mmol_l": "0.73",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "82",
+            "Sodium_Na_mg_l": "8.8",
+            "Chlorides_Cl_mg_l": "5.2",
+            "Calcium_Ca_mg_l": "12.5"
+        }
+    },
+    {
+        "Region": "Sandnes kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.4",
+            "Alkalinity_TAC_mmol_l": "0.75",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "74",
+            "Sodium_Na_mg_l": "10.1",
+            "Chlorides_Cl_mg_l": "10.4",
+            "Calcium_Ca_mg_l": "24.3"
+        }
+    },
+    {
+        "Region": "Stad kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.5",
+            "Alkalinity_TAC_mmol_l": "1.05",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "94",
+            "Sodium_Na_mg_l": "12.2",
+            "Chlorides_Cl_mg_l": "9.0",
+            "Calcium_Ca_mg_l": "7.3"
+        }
+    },
+    {
+        "Region": "Nesbyen kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.4",
+            "Alkalinity_TAC_mmol_l": "1.00",
+            "pH": "8.4",
+            "TDS_Conductivity_uS_cm": "67",
+            "Sodium_Na_mg_l": "9.1",
+            "Chlorides_Cl_mg_l": "8.1",
+            "Calcium_Ca_mg_l": "22.1"
+        }
+    },
+    {
+        "Region": "Alta kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.0",
+            "Alkalinity_TAC_mmol_l": "0.66",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "46",
+            "Sodium_Na_mg_l": "9.2",
+            "Chlorides_Cl_mg_l": "2.9",
+            "Calcium_Ca_mg_l": "24.2"
+        }
+    },
+    {
+        "Region": "Bygland kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.8",
+            "Alkalinity_TAC_mmol_l": "0.50",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "87",
+            "Sodium_Na_mg_l": "12.1",
+            "Chlorides_Cl_mg_l": "11.3",
+            "Calcium_Ca_mg_l": "21.1"
+        }
+    },
+    {
+        "Region": "Namsos kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.1",
+            "Alkalinity_TAC_mmol_l": "0.55",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "108",
+            "Sodium_Na_mg_l": "9.3",
+            "Chlorides_Cl_mg_l": "13.1",
+            "Calcium_Ca_mg_l": "23.9"
+        }
+    },
+    {
+        "Region": "Ørsta kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.8",
+            "Alkalinity_TAC_mmol_l": "0.85",
+            "pH": "8.2",
+            "TDS_Conductivity_uS_cm": "86",
+            "Sodium_Na_mg_l": "6.6",
+            "Chlorides_Cl_mg_l": "5.5",
+            "Calcium_Ca_mg_l": "23.0"
+        }
+    },
+    {
+        "Region": "Aurland kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.4",
+            "Alkalinity_TAC_mmol_l": "0.71",
+            "pH": "8.2",
+            "TDS_Conductivity_uS_cm": "86",
+            "Sodium_Na_mg_l": "2.7",
+            "Chlorides_Cl_mg_l": "6.4",
+            "Calcium_Ca_mg_l": "10.9"
+        }
+    },
+    {
+        "Region": "Haram kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.1",
+            "Alkalinity_TAC_mmol_l": "1.15",
+            "pH": "8.3",
+            "TDS_Conductivity_uS_cm": "70",
+            "Sodium_Na_mg_l": "11.6",
+            "Chlorides_Cl_mg_l": "6.1",
+            "Calcium_Ca_mg_l": "23.9"
+        }
+    },
+    {
+        "Region": "Osen kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.2",
+            "Alkalinity_TAC_mmol_l": "0.52",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "83",
+            "Sodium_Na_mg_l": "5.5",
+            "Chlorides_Cl_mg_l": "6.7",
+            "Calcium_Ca_mg_l": "18.2"
+        }
+    },
+    {
+        "Region": "Lunner kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.5",
+            "Alkalinity_TAC_mmol_l": "0.81",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "78",
+            "Sodium_Na_mg_l": "13.3",
+            "Chlorides_Cl_mg_l": "13.1",
+            "Calcium_Ca_mg_l": "6.1"
+        }
+    },
+    {
+        "Region": "Nesseby kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.4",
+            "Alkalinity_TAC_mmol_l": "1.44",
+            "pH": "8.3",
+            "TDS_Conductivity_uS_cm": "86",
+            "Sodium_Na_mg_l": "2.8",
+            "Chlorides_Cl_mg_l": "7.6",
+            "Calcium_Ca_mg_l": "5.4"
+        }
+    },
+    {
+        "Region": "Vaksdal kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.9",
+            "Alkalinity_TAC_mmol_l": "0.68",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "127",
+            "Sodium_Na_mg_l": "5.5",
+            "Chlorides_Cl_mg_l": "14.0",
+            "Calcium_Ca_mg_l": "23.2"
+        }
+    },
+    {
+        "Region": "Stor-Elvdal kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.6",
+            "Alkalinity_TAC_mmol_l": "1.08",
+            "pH": "8.4",
+            "TDS_Conductivity_uS_cm": "81",
+            "Sodium_Na_mg_l": "6.8",
+            "Chlorides_Cl_mg_l": "2.7",
+            "Calcium_Ca_mg_l": "9.3"
+        }
+    },
+    {
+        "Region": "Frogn kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.0",
+            "Alkalinity_TAC_mmol_l": "0.51",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "125",
+            "Sodium_Na_mg_l": "3.9",
+            "Chlorides_Cl_mg_l": "14.5",
+            "Calcium_Ca_mg_l": "14.3"
+        }
+    },
+    {
+        "Region": "Hyllestad kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.4",
+            "Alkalinity_TAC_mmol_l": "0.69",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "89",
+            "Sodium_Na_mg_l": "14.8",
+            "Chlorides_Cl_mg_l": "4.3",
+            "Calcium_Ca_mg_l": "6.4"
+        }
+    },
+    {
+        "Region": "Kåfjord kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.0",
+            "Alkalinity_TAC_mmol_l": "1.31",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "59",
+            "Sodium_Na_mg_l": "11.7",
+            "Chlorides_Cl_mg_l": "9.4",
+            "Calcium_Ca_mg_l": "23.7"
+        }
+    },
+    {
+        "Region": "Indre_Fosen kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.5",
+            "Alkalinity_TAC_mmol_l": "1.14",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "57",
+            "Sodium_Na_mg_l": "7.8",
+            "Chlorides_Cl_mg_l": "6.1",
+            "Calcium_Ca_mg_l": "12.6"
+        }
+    },
+    {
+        "Region": "Øygarden kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.7",
+            "Alkalinity_TAC_mmol_l": "0.98",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "118",
+            "Sodium_Na_mg_l": "9.5",
+            "Chlorides_Cl_mg_l": "2.6",
+            "Calcium_Ca_mg_l": "14.3"
+        }
+    },
+    {
+        "Region": "Vestre_Slidre kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.0",
+            "Alkalinity_TAC_mmol_l": "0.60",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "100",
+            "Sodium_Na_mg_l": "8.7",
+            "Chlorides_Cl_mg_l": "9.8",
+            "Calcium_Ca_mg_l": "12.7"
+        }
+    },
+    {
+        "Region": "Rakkestad kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.2",
+            "Alkalinity_TAC_mmol_l": "1.18",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "93",
+            "Sodium_Na_mg_l": "7.0",
+            "Chlorides_Cl_mg_l": "10.3",
+            "Calcium_Ca_mg_l": "21.6"
+        }
+    },
+    {
+        "Region": "Røros kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.0",
+            "Alkalinity_TAC_mmol_l": "0.66",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "77",
+            "Sodium_Na_mg_l": "10.1",
+            "Chlorides_Cl_mg_l": "6.4",
+            "Calcium_Ca_mg_l": "10.8"
+        }
+    },
+    {
+        "Region": "Nord-Fron kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.5",
+            "Alkalinity_TAC_mmol_l": "0.56",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "126",
+            "Sodium_Na_mg_l": "4.4",
+            "Chlorides_Cl_mg_l": "2.4",
+            "Calcium_Ca_mg_l": "13.8"
+        }
+    },
+    {
+        "Region": "Hjartdal kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.6",
+            "Alkalinity_TAC_mmol_l": "0.79",
+            "pH": "8.3",
+            "TDS_Conductivity_uS_cm": "85",
+            "Sodium_Na_mg_l": "7.1",
+            "Chlorides_Cl_mg_l": "7.4",
+            "Calcium_Ca_mg_l": "6.0"
+        }
+    },
+    {
+        "Region": "Birkenes kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.8",
+            "Alkalinity_TAC_mmol_l": "0.55",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "68",
+            "Sodium_Na_mg_l": "11.7",
+            "Chlorides_Cl_mg_l": "13.5",
+            "Calcium_Ca_mg_l": "9.1"
+        }
+    },
+    {
+        "Region": "Indre_Østfold kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.7",
+            "Alkalinity_TAC_mmol_l": "0.90",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "105",
+            "Sodium_Na_mg_l": "5.5",
+            "Chlorides_Cl_mg_l": "2.6",
+            "Calcium_Ca_mg_l": "12.5"
+        }
+    },
+    {
+        "Region": "Flatanger kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.3",
+            "Alkalinity_TAC_mmol_l": "0.72",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "78",
+            "Sodium_Na_mg_l": "5.4",
+            "Chlorides_Cl_mg_l": "7.6",
+            "Calcium_Ca_mg_l": "14.5"
+        }
+    },
+    {
+        "Region": "Nordreisa kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.7",
+            "Alkalinity_TAC_mmol_l": "1.16",
+            "pH": "8.4",
+            "TDS_Conductivity_uS_cm": "113",
+            "Sodium_Na_mg_l": "10.6",
+            "Chlorides_Cl_mg_l": "6.4",
+            "Calcium_Ca_mg_l": "5.6"
+        }
+    },
+    {
+        "Region": "Malvik kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.7",
+            "Alkalinity_TAC_mmol_l": "0.76",
+            "pH": "8.4",
+            "TDS_Conductivity_uS_cm": "95",
+            "Sodium_Na_mg_l": "13.1",
+            "Chlorides_Cl_mg_l": "6.9",
+            "Calcium_Ca_mg_l": "14.2"
+        }
+    },
+    {
+        "Region": "Ulvik kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.2",
+            "Alkalinity_TAC_mmol_l": "1.07",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "96",
+            "Sodium_Na_mg_l": "6.1",
+            "Chlorides_Cl_mg_l": "12.7",
+            "Calcium_Ca_mg_l": "18.7"
+        }
+    },
+    {
+        "Region": "Hurdal kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.4",
+            "Alkalinity_TAC_mmol_l": "1.35",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "133",
+            "Sodium_Na_mg_l": "13.1",
+            "Chlorides_Cl_mg_l": "7.4",
+            "Calcium_Ca_mg_l": "5.3"
+        }
+    },
+    {
+        "Region": "Tønsberg kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.2",
+            "Alkalinity_TAC_mmol_l": "0.67",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "131",
+            "Sodium_Na_mg_l": "11.9",
+            "Chlorides_Cl_mg_l": "12.0",
+            "Calcium_Ca_mg_l": "23.7"
+        }
+    },
+    {
+        "Region": "Midt-Telemark kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.1",
+            "Alkalinity_TAC_mmol_l": "0.68",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "117",
+            "Sodium_Na_mg_l": "2.8",
+            "Chlorides_Cl_mg_l": "6.5",
+            "Calcium_Ca_mg_l": "9.6"
+        }
+    },
+    {
+        "Region": "Tysvær kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.2",
+            "Alkalinity_TAC_mmol_l": "0.86",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "54",
+            "Sodium_Na_mg_l": "14.7",
+            "Chlorides_Cl_mg_l": "8.3",
+            "Calcium_Ca_mg_l": "8.8"
+        }
+    },
+    {
+        "Region": "Grong kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.9",
+            "Alkalinity_TAC_mmol_l": "0.96",
+            "pH": "8.4",
+            "TDS_Conductivity_uS_cm": "123",
+            "Sodium_Na_mg_l": "8.9",
+            "Chlorides_Cl_mg_l": "12.8",
+            "Calcium_Ca_mg_l": "10.0"
+        }
+    },
+    {
+        "Region": "Evje_og_Hornnes kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.9",
+            "Alkalinity_TAC_mmol_l": "1.18",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "115",
+            "Sodium_Na_mg_l": "6.0",
+            "Chlorides_Cl_mg_l": "5.7",
+            "Calcium_Ca_mg_l": "12.3"
+        }
+    },
+    {
+        "Region": "Fjord kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.0",
+            "Alkalinity_TAC_mmol_l": "1.00",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "127",
+            "Sodium_Na_mg_l": "6.2",
+            "Chlorides_Cl_mg_l": "5.9",
+            "Calcium_Ca_mg_l": "14.9"
+        }
+    },
+    {
+        "Region": "Ullensvang kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.0",
+            "Alkalinity_TAC_mmol_l": "0.94",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "112",
+            "Sodium_Na_mg_l": "8.7",
+            "Chlorides_Cl_mg_l": "14.9",
+            "Calcium_Ca_mg_l": "9.3"
+        }
+    },
+    {
+        "Region": "Saltdal kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.3",
+            "Alkalinity_TAC_mmol_l": "1.06",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "72",
+            "Sodium_Na_mg_l": "7.7",
+            "Chlorides_Cl_mg_l": "5.5",
+            "Calcium_Ca_mg_l": "13.1"
+        }
+    },
+    {
+        "Region": "Hå kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.5",
+            "Alkalinity_TAC_mmol_l": "0.56",
+            "pH": "8.4",
+            "TDS_Conductivity_uS_cm": "65",
+            "Sodium_Na_mg_l": "11.1",
+            "Chlorides_Cl_mg_l": "3.1",
+            "Calcium_Ca_mg_l": "8.1"
+        }
+    },
+    {
+        "Region": "Folldal kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.2",
+            "Alkalinity_TAC_mmol_l": "1.49",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "97",
+            "Sodium_Na_mg_l": "10.6",
+            "Chlorides_Cl_mg_l": "9.6",
+            "Calcium_Ca_mg_l": "14.3"
+        }
+    },
+    {
+        "Region": "Trysil kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.5",
+            "Alkalinity_TAC_mmol_l": "1.30",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "97",
+            "Sodium_Na_mg_l": "14.0",
+            "Chlorides_Cl_mg_l": "11.8",
+            "Calcium_Ca_mg_l": "13.5"
+        }
+    },
+    {
+        "Region": "Bokn kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.4",
+            "Alkalinity_TAC_mmol_l": "1.08",
+            "pH": "8.3",
+            "TDS_Conductivity_uS_cm": "70",
+            "Sodium_Na_mg_l": "4.4",
+            "Chlorides_Cl_mg_l": "8.0",
+            "Calcium_Ca_mg_l": "15.8"
+        }
+    },
+    {
+        "Region": "Engerdal kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.7",
+            "Alkalinity_TAC_mmol_l": "1.45",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "86",
+            "Sodium_Na_mg_l": "5.8",
+            "Chlorides_Cl_mg_l": "5.1",
+            "Calcium_Ca_mg_l": "7.4"
+        }
+    },
+    {
+        "Region": "Fauske kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.8",
+            "Alkalinity_TAC_mmol_l": "0.51",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "122",
+            "Sodium_Na_mg_l": "8.1",
+            "Chlorides_Cl_mg_l": "14.8",
+            "Calcium_Ca_mg_l": "18.2"
+        }
+    },
+    {
+        "Region": "Midtre_Gauldal kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.7",
+            "Alkalinity_TAC_mmol_l": "1.43",
+            "pH": "8.2",
+            "TDS_Conductivity_uS_cm": "110",
+            "Sodium_Na_mg_l": "8.7",
+            "Chlorides_Cl_mg_l": "4.5",
+            "Calcium_Ca_mg_l": "19.4"
+        }
+    },
+    {
+        "Region": "Lærdal kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.3",
+            "Alkalinity_TAC_mmol_l": "1.21",
+            "pH": "8.4",
+            "TDS_Conductivity_uS_cm": "47",
+            "Sodium_Na_mg_l": "4.3",
+            "Chlorides_Cl_mg_l": "3.3",
+            "Calcium_Ca_mg_l": "6.7"
+        }
+    },
+    {
+        "Region": "Utsira kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.9",
+            "Alkalinity_TAC_mmol_l": "0.81",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "117",
+            "Sodium_Na_mg_l": "9.5",
+            "Chlorides_Cl_mg_l": "5.0",
+            "Calcium_Ca_mg_l": "15.5"
+        }
+    },
+    {
+        "Region": "Sula kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.0",
+            "Alkalinity_TAC_mmol_l": "0.72",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "70",
+            "Sodium_Na_mg_l": "11.9",
+            "Chlorides_Cl_mg_l": "10.8",
+            "Calcium_Ca_mg_l": "20.1"
+        }
+    },
+    {
+        "Region": "Steinkjer kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.1",
+            "Alkalinity_TAC_mmol_l": "1.00",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "43",
+            "Sodium_Na_mg_l": "9.8",
+            "Chlorides_Cl_mg_l": "3.2",
+            "Calcium_Ca_mg_l": "20.5"
+        }
+    },
+    {
+        "Region": "Sarpsborg kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.4",
+            "Alkalinity_TAC_mmol_l": "0.96",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "134",
+            "Sodium_Na_mg_l": "6.5",
+            "Chlorides_Cl_mg_l": "10.7",
+            "Calcium_Ca_mg_l": "21.9"
+        }
+    },
+    {
+        "Region": "Nesna kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.7",
+            "Alkalinity_TAC_mmol_l": "1.31",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "71",
+            "Sodium_Na_mg_l": "14.0",
+            "Chlorides_Cl_mg_l": "8.4",
+            "Calcium_Ca_mg_l": "20.5"
+        }
+    },
+    {
+        "Region": "Alvdal kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.5",
+            "Alkalinity_TAC_mmol_l": "0.80",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "75",
+            "Sodium_Na_mg_l": "4.6",
+            "Chlorides_Cl_mg_l": "6.2",
+            "Calcium_Ca_mg_l": "8.4"
+        }
+    },
+    {
+        "Region": "Fyresdal kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.4",
+            "Alkalinity_TAC_mmol_l": "1.30",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "69",
+            "Sodium_Na_mg_l": "10.0",
+            "Chlorides_Cl_mg_l": "10.4",
+            "Calcium_Ca_mg_l": "15.2"
+        }
+    },
+    {
+        "Region": "Røst kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.1",
+            "Alkalinity_TAC_mmol_l": "0.84",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "79",
+            "Sodium_Na_mg_l": "12.5",
+            "Chlorides_Cl_mg_l": "2.2",
+            "Calcium_Ca_mg_l": "15.9"
+        }
+    },
+    {
+        "Region": "Høyanger kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.6",
+            "Alkalinity_TAC_mmol_l": "1.09",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "64",
+            "Sodium_Na_mg_l": "10.3",
+            "Chlorides_Cl_mg_l": "8.1",
+            "Calcium_Ca_mg_l": "24.9"
+        }
+    },
+    {
+        "Region": "Vinje kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.0",
+            "Alkalinity_TAC_mmol_l": "0.56",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "88",
+            "Sodium_Na_mg_l": "4.7",
+            "Chlorides_Cl_mg_l": "10.9",
+            "Calcium_Ca_mg_l": "17.8"
+        }
+    },
+    {
+        "Region": "Masfjorden kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.8",
+            "Alkalinity_TAC_mmol_l": "1.07",
+            "pH": "8.4",
+            "TDS_Conductivity_uS_cm": "106",
+            "Sodium_Na_mg_l": "13.6",
+            "Chlorides_Cl_mg_l": "12.5",
+            "Calcium_Ca_mg_l": "21.1"
+        }
+    },
+    {
+        "Region": "Inderøy kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.1",
+            "Alkalinity_TAC_mmol_l": "0.79",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "131",
+            "Sodium_Na_mg_l": "11.9",
+            "Chlorides_Cl_mg_l": "4.6",
+            "Calcium_Ca_mg_l": "6.5"
+        }
+    },
+    {
+        "Region": "Porsgrunn kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.4",
+            "Alkalinity_TAC_mmol_l": "0.91",
+            "pH": "8.3",
+            "TDS_Conductivity_uS_cm": "61",
+            "Sodium_Na_mg_l": "6.0",
+            "Chlorides_Cl_mg_l": "13.3",
+            "Calcium_Ca_mg_l": "7.4"
+        }
+    },
+    {
+        "Region": "Rindal kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.4",
+            "Alkalinity_TAC_mmol_l": "0.94",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "81",
+            "Sodium_Na_mg_l": "4.7",
+            "Chlorides_Cl_mg_l": "6.7",
+            "Calcium_Ca_mg_l": "17.9"
+        }
+    },
+    {
+        "Region": "Narvik kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.2",
+            "Alkalinity_TAC_mmol_l": "1.08",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "80",
+            "Sodium_Na_mg_l": "13.4",
+            "Chlorides_Cl_mg_l": "11.3",
+            "Calcium_Ca_mg_l": "8.8"
+        }
+    },
+    {
+        "Region": "Storfjord kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.1",
+            "Alkalinity_TAC_mmol_l": "0.95",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "61",
+            "Sodium_Na_mg_l": "9.8",
+            "Chlorides_Cl_mg_l": "5.5",
+            "Calcium_Ca_mg_l": "6.1"
+        }
+    },
+    {
+        "Region": "Levanger kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.7",
+            "Alkalinity_TAC_mmol_l": "1.44",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "114",
+            "Sodium_Na_mg_l": "3.1",
+            "Chlorides_Cl_mg_l": "8.2",
+            "Calcium_Ca_mg_l": "8.9"
+        }
+    },
+    {
+        "Region": "Berlevåg kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.4",
+            "Alkalinity_TAC_mmol_l": "0.69",
+            "pH": "8.1",
+            "TDS_Conductivity_uS_cm": "134",
+            "Sodium_Na_mg_l": "12.4",
+            "Chlorides_Cl_mg_l": "11.9",
+            "Calcium_Ca_mg_l": "8.9"
+        }
+    },
+    {
+        "Region": "Enebakk kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.7",
+            "Alkalinity_TAC_mmol_l": "1.44",
+            "pH": "8.4",
+            "TDS_Conductivity_uS_cm": "115",
+            "Sodium_Na_mg_l": "2.3",
+            "Chlorides_Cl_mg_l": "9.5",
+            "Calcium_Ca_mg_l": "22.0"
+        }
+    },
+    {
+        "Region": "Hamar kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.8",
+            "Alkalinity_TAC_mmol_l": "0.73",
+            "pH": "8.4",
+            "TDS_Conductivity_uS_cm": "118",
+            "Sodium_Na_mg_l": "4.0",
+            "Chlorides_Cl_mg_l": "2.7",
+            "Calcium_Ca_mg_l": "15.8"
+        }
+    },
+    {
+        "Region": "Hol kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.3",
+            "Alkalinity_TAC_mmol_l": "0.63",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "64",
+            "Sodium_Na_mg_l": "12.3",
+            "Chlorides_Cl_mg_l": "4.8",
+            "Calcium_Ca_mg_l": "11.2"
+        }
+    },
+    {
+        "Region": "Kvænangen kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.6",
+            "Alkalinity_TAC_mmol_l": "0.96",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "84",
+            "Sodium_Na_mg_l": "13.6",
+            "Chlorides_Cl_mg_l": "4.3",
+            "Calcium_Ca_mg_l": "12.7"
+        }
+    },
+    {
+        "Region": "Loppa kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.3",
+            "Alkalinity_TAC_mmol_l": "1.09",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "92",
+            "Sodium_Na_mg_l": "6.1",
+            "Chlorides_Cl_mg_l": "11.0",
+            "Calcium_Ca_mg_l": "23.7"
+        }
+    },
+    {
+        "Region": "Nord-Odal kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.5",
+            "Alkalinity_TAC_mmol_l": "1.00",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "89",
+            "Sodium_Na_mg_l": "13.0",
+            "Chlorides_Cl_mg_l": "11.3",
+            "Calcium_Ca_mg_l": "12.1"
+        }
+    },
+    {
+        "Region": "Valle kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.1",
+            "Alkalinity_TAC_mmol_l": "0.57",
+            "pH": "8.1",
+            "TDS_Conductivity_uS_cm": "119",
+            "Sodium_Na_mg_l": "5.1",
+            "Chlorides_Cl_mg_l": "7.2",
+            "Calcium_Ca_mg_l": "13.4"
+        }
+    },
+    {
+        "Region": "Gjerstad kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.0",
+            "Alkalinity_TAC_mmol_l": "0.82",
+            "pH": "8.1",
+            "TDS_Conductivity_uS_cm": "125",
+            "Sodium_Na_mg_l": "4.1",
+            "Chlorides_Cl_mg_l": "5.1",
+            "Calcium_Ca_mg_l": "17.8"
+        }
+    },
+    {
+        "Region": "Lurøy kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.4",
+            "Alkalinity_TAC_mmol_l": "0.62",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "128",
+            "Sodium_Na_mg_l": "11.5",
+            "Chlorides_Cl_mg_l": "11.6",
+            "Calcium_Ca_mg_l": "20.5"
+        }
+    },
+    {
+        "Region": "Sokndal kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.7",
+            "Alkalinity_TAC_mmol_l": "0.63",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "66",
+            "Sodium_Na_mg_l": "10.9",
+            "Chlorides_Cl_mg_l": "2.5",
+            "Calcium_Ca_mg_l": "20.2"
+        }
+    },
+    {
+        "Region": "Froland kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.2",
+            "Alkalinity_TAC_mmol_l": "0.72",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "113",
+            "Sodium_Na_mg_l": "7.0",
+            "Chlorides_Cl_mg_l": "2.6",
+            "Calcium_Ca_mg_l": "7.3"
+        }
+    },
+    {
+        "Region": "Melhus kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.8",
+            "Alkalinity_TAC_mmol_l": "1.21",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "66",
+            "Sodium_Na_mg_l": "9.3",
+            "Chlorides_Cl_mg_l": "8.7",
+            "Calcium_Ca_mg_l": "11.0"
+        }
+    },
+    {
+        "Region": "Sør-Odal kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.5",
+            "Alkalinity_TAC_mmol_l": "1.24",
+            "pH": "8.4",
+            "TDS_Conductivity_uS_cm": "93",
+            "Sodium_Na_mg_l": "3.9",
+            "Chlorides_Cl_mg_l": "11.5",
+            "Calcium_Ca_mg_l": "10.2"
+        }
+    },
+    {
+        "Region": "Porsanger kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.2",
+            "Alkalinity_TAC_mmol_l": "1.29",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "72",
+            "Sodium_Na_mg_l": "4.4",
+            "Chlorides_Cl_mg_l": "3.6",
+            "Calcium_Ca_mg_l": "7.7"
+        }
+    },
+    {
+        "Region": "Eidfjord kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.1",
+            "Alkalinity_TAC_mmol_l": "1.43",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "52",
+            "Sodium_Na_mg_l": "6.0",
+            "Chlorides_Cl_mg_l": "4.1",
+            "Calcium_Ca_mg_l": "17.0"
+        }
+    },
+    {
+        "Region": "Suldal kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.5",
+            "Alkalinity_TAC_mmol_l": "0.63",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "134",
+            "Sodium_Na_mg_l": "8.9",
+            "Chlorides_Cl_mg_l": "12.4",
+            "Calcium_Ca_mg_l": "11.5"
+        }
+    },
+    {
+        "Region": "Gjesdal kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.1",
+            "Alkalinity_TAC_mmol_l": "0.51",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "125",
+            "Sodium_Na_mg_l": "11.9",
+            "Chlorides_Cl_mg_l": "12.2",
+            "Calcium_Ca_mg_l": "12.7"
+        }
+    },
+    {
+        "Region": "Hemsedal kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.7",
+            "Alkalinity_TAC_mmol_l": "1.33",
+            "pH": "8.3",
+            "TDS_Conductivity_uS_cm": "102",
+            "Sodium_Na_mg_l": "4.2",
+            "Chlorides_Cl_mg_l": "13.1",
+            "Calcium_Ca_mg_l": "17.7"
+        }
+    },
+    {
+        "Region": "Frøya kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.1",
+            "Alkalinity_TAC_mmol_l": "0.74",
+            "pH": "8.3",
+            "TDS_Conductivity_uS_cm": "117",
+            "Sodium_Na_mg_l": "10.0",
+            "Chlorides_Cl_mg_l": "11.1",
+            "Calcium_Ca_mg_l": "5.6"
+        }
+    },
+    {
+        "Region": "Elverum kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.3",
+            "Alkalinity_TAC_mmol_l": "1.48",
+            "pH": "8.1",
+            "TDS_Conductivity_uS_cm": "135",
+            "Sodium_Na_mg_l": "4.7",
+            "Chlorides_Cl_mg_l": "13.1",
+            "Calcium_Ca_mg_l": "19.3"
+        }
+    },
+    {
+        "Region": "Råde kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.5",
+            "Alkalinity_TAC_mmol_l": "0.97",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "71",
+            "Sodium_Na_mg_l": "4.7",
+            "Chlorides_Cl_mg_l": "4.2",
+            "Calcium_Ca_mg_l": "13.0"
+        }
+    },
+    {
+        "Region": "Sveio kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.8",
+            "Alkalinity_TAC_mmol_l": "1.27",
+            "pH": "8.3",
+            "TDS_Conductivity_uS_cm": "67",
+            "Sodium_Na_mg_l": "2.2",
+            "Chlorides_Cl_mg_l": "13.1",
+            "Calcium_Ca_mg_l": "14.2"
+        }
+    },
+    {
+        "Region": "Karmøy kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.2",
+            "Alkalinity_TAC_mmol_l": "0.69",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "112",
+            "Sodium_Na_mg_l": "12.4",
+            "Chlorides_Cl_mg_l": "7.7",
+            "Calcium_Ca_mg_l": "14.6"
+        }
+    },
+    {
+        "Region": "Nannestad kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.5",
+            "Alkalinity_TAC_mmol_l": "1.17",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "57",
+            "Sodium_Na_mg_l": "5.1",
+            "Chlorides_Cl_mg_l": "9.5",
+            "Calcium_Ca_mg_l": "24.9"
+        }
+    },
+    {
+        "Region": "Frosta kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.5",
+            "Alkalinity_TAC_mmol_l": "0.81",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "136",
+            "Sodium_Na_mg_l": "5.2",
+            "Chlorides_Cl_mg_l": "10.2",
+            "Calcium_Ca_mg_l": "21.4"
+        }
+    },
+    {
+        "Region": "Sortland kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.1",
+            "Alkalinity_TAC_mmol_l": "1.34",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "120",
+            "Sodium_Na_mg_l": "2.3",
+            "Chlorides_Cl_mg_l": "9.9",
+            "Calcium_Ca_mg_l": "7.3"
+        }
+    },
+    {
+        "Region": "Nesodden kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.3",
+            "Alkalinity_TAC_mmol_l": "0.69",
+            "pH": "8.1",
+            "TDS_Conductivity_uS_cm": "86",
+            "Sodium_Na_mg_l": "11.2",
+            "Chlorides_Cl_mg_l": "14.2",
+            "Calcium_Ca_mg_l": "19.6"
+        }
+    },
+    {
+        "Region": "Ulstein kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.5",
+            "Alkalinity_TAC_mmol_l": "1.25",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "91",
+            "Sodium_Na_mg_l": "3.7",
+            "Chlorides_Cl_mg_l": "5.0",
+            "Calcium_Ca_mg_l": "17.0"
+        }
+    },
+    {
+        "Region": "Vegårshei kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.0",
+            "Alkalinity_TAC_mmol_l": "1.45",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "85",
+            "Sodium_Na_mg_l": "7.4",
+            "Chlorides_Cl_mg_l": "6.5",
+            "Calcium_Ca_mg_l": "16.2"
+        }
+    },
+    {
+        "Region": "Åfjord kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.1",
+            "Alkalinity_TAC_mmol_l": "0.56",
+            "pH": "8.2",
+            "TDS_Conductivity_uS_cm": "52",
+            "Sodium_Na_mg_l": "15.0",
+            "Chlorides_Cl_mg_l": "12.9",
+            "Calcium_Ca_mg_l": "22.0"
+        }
+    },
+    {
+        "Region": "Larvik kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.1",
+            "Alkalinity_TAC_mmol_l": "1.14",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "122",
+            "Sodium_Na_mg_l": "10.7",
+            "Chlorides_Cl_mg_l": "4.0",
+            "Calcium_Ca_mg_l": "10.9"
+        }
+    },
+    {
+        "Region": "Færder kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.7",
+            "Alkalinity_TAC_mmol_l": "0.88",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "83",
+            "Sodium_Na_mg_l": "2.6",
+            "Chlorides_Cl_mg_l": "12.8",
+            "Calcium_Ca_mg_l": "19.5"
+        }
+    },
+    {
+        "Region": "Værøy kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.0",
+            "Alkalinity_TAC_mmol_l": "1.43",
+            "pH": "8.2",
+            "TDS_Conductivity_uS_cm": "48",
+            "Sodium_Na_mg_l": "9.0",
+            "Chlorides_Cl_mg_l": "3.8",
+            "Calcium_Ca_mg_l": "16.2"
+        }
+    },
+    {
+        "Region": "Karasjok kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.2",
+            "Alkalinity_TAC_mmol_l": "1.20",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "108",
+            "Sodium_Na_mg_l": "6.5",
+            "Chlorides_Cl_mg_l": "12.1",
+            "Calcium_Ca_mg_l": "5.9"
+        }
+    },
+    {
+        "Region": "Lillehammer kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.2",
+            "Alkalinity_TAC_mmol_l": "1.32",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "91",
+            "Sodium_Na_mg_l": "10.7",
+            "Chlorides_Cl_mg_l": "4.3",
+            "Calcium_Ca_mg_l": "9.0"
+        }
+    },
+    {
+        "Region": "Rælingen kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.9",
+            "Alkalinity_TAC_mmol_l": "1.14",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "120",
+            "Sodium_Na_mg_l": "10.2",
+            "Chlorides_Cl_mg_l": "10.8",
+            "Calcium_Ca_mg_l": "14.4"
+        }
+    },
+    {
+        "Region": "Vanylven kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.5",
+            "Alkalinity_TAC_mmol_l": "1.16",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "103",
+            "Sodium_Na_mg_l": "10.9",
+            "Chlorides_Cl_mg_l": "14.7",
+            "Calcium_Ca_mg_l": "20.6"
+        }
+    },
+    {
+        "Region": "Hadsel kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.7",
+            "Alkalinity_TAC_mmol_l": "0.90",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "76",
+            "Sodium_Na_mg_l": "9.7",
+            "Chlorides_Cl_mg_l": "10.7",
+            "Calcium_Ca_mg_l": "9.1"
+        }
+    },
+    {
+        "Region": "Hole kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.5",
+            "Alkalinity_TAC_mmol_l": "1.40",
+            "pH": "8.1",
+            "TDS_Conductivity_uS_cm": "105",
+            "Sodium_Na_mg_l": "3.1",
+            "Chlorides_Cl_mg_l": "7.0",
+            "Calcium_Ca_mg_l": "8.3"
+        }
+    },
+    {
+        "Region": "Rendalen kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.1",
+            "Alkalinity_TAC_mmol_l": "1.37",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "101",
+            "Sodium_Na_mg_l": "14.6",
+            "Chlorides_Cl_mg_l": "6.1",
+            "Calcium_Ca_mg_l": "13.2"
+        }
+    },
+    {
+        "Region": "Ål kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.1",
+            "Alkalinity_TAC_mmol_l": "1.43",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "77",
+            "Sodium_Na_mg_l": "8.2",
+            "Chlorides_Cl_mg_l": "6.0",
+            "Calcium_Ca_mg_l": "9.4"
+        }
+    },
+    {
+        "Region": "Askøy kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.0",
+            "Alkalinity_TAC_mmol_l": "1.42",
+            "pH": "8.1",
+            "TDS_Conductivity_uS_cm": "79",
+            "Sodium_Na_mg_l": "2.1",
+            "Chlorides_Cl_mg_l": "10.3",
+            "Calcium_Ca_mg_l": "6.7"
+        }
+    },
+    {
+        "Region": "Moskenes kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.4",
+            "Alkalinity_TAC_mmol_l": "0.56",
+            "pH": "8.5",
+            "TDS_Conductivity_uS_cm": "138",
+            "Sodium_Na_mg_l": "6.0",
+            "Chlorides_Cl_mg_l": "6.9",
+            "Calcium_Ca_mg_l": "5.9"
+        }
+    },
+    {
+        "Region": "Beiarn kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.3",
+            "Alkalinity_TAC_mmol_l": "1.27",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "101",
+            "Sodium_Na_mg_l": "5.3",
+            "Chlorides_Cl_mg_l": "11.4",
+            "Calcium_Ca_mg_l": "20.3"
+        }
+    },
+    {
+        "Region": "Fredrikstad kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.0",
+            "Alkalinity_TAC_mmol_l": "1.19",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "98",
+            "Sodium_Na_mg_l": "14.7",
+            "Chlorides_Cl_mg_l": "5.5",
+            "Calcium_Ca_mg_l": "7.6"
+        }
+    },
+    {
+        "Region": "Tysnes kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.0",
+            "Alkalinity_TAC_mmol_l": "1.37",
+            "pH": "8.1",
+            "TDS_Conductivity_uS_cm": "70",
+            "Sodium_Na_mg_l": "5.9",
+            "Chlorides_Cl_mg_l": "8.2",
+            "Calcium_Ca_mg_l": "5.4"
+        }
+    },
+    {
+        "Region": "Tokke kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.2",
+            "Alkalinity_TAC_mmol_l": "0.55",
+            "pH": "8.4",
+            "TDS_Conductivity_uS_cm": "76",
+            "Sodium_Na_mg_l": "13.3",
+            "Chlorides_Cl_mg_l": "6.2",
+            "Calcium_Ca_mg_l": "5.4"
+        }
+    },
+    {
+        "Region": "Sør-Aurdal kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.2",
+            "Alkalinity_TAC_mmol_l": "0.69",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "117",
+            "Sodium_Na_mg_l": "8.0",
+            "Chlorides_Cl_mg_l": "3.7",
+            "Calcium_Ca_mg_l": "14.7"
+        }
+    },
+    {
+        "Region": "Gol kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.7",
+            "Alkalinity_TAC_mmol_l": "1.33",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "105",
+            "Sodium_Na_mg_l": "10.2",
+            "Chlorides_Cl_mg_l": "14.5",
+            "Calcium_Ca_mg_l": "9.4"
+        }
+    },
+    {
+        "Region": "Iveland kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.4",
+            "Alkalinity_TAC_mmol_l": "1.11",
+            "pH": "8.1",
+            "TDS_Conductivity_uS_cm": "124",
+            "Sodium_Na_mg_l": "10.5",
+            "Chlorides_Cl_mg_l": "2.1",
+            "Calcium_Ca_mg_l": "14.2"
+        }
+    },
+    {
+        "Region": "Bømlo kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.5",
+            "Alkalinity_TAC_mmol_l": "1.26",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "92",
+            "Sodium_Na_mg_l": "5.1",
+            "Chlorides_Cl_mg_l": "10.4",
+            "Calcium_Ca_mg_l": "24.3"
+        }
+    },
+    {
+        "Region": "Meløy kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.0",
+            "Alkalinity_TAC_mmol_l": "0.57",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "45",
+            "Sodium_Na_mg_l": "12.8",
+            "Chlorides_Cl_mg_l": "10.9",
+            "Calcium_Ca_mg_l": "9.6"
+        }
+    },
+    {
+        "Region": "Aukra kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.6",
+            "Alkalinity_TAC_mmol_l": "0.72",
+            "pH": "8.4",
+            "TDS_Conductivity_uS_cm": "70",
+            "Sodium_Na_mg_l": "6.5",
+            "Chlorides_Cl_mg_l": "6.8",
+            "Calcium_Ca_mg_l": "18.0"
+        }
+    },
+    {
+        "Region": "Marker kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.8",
+            "Alkalinity_TAC_mmol_l": "1.01",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "65",
+            "Sodium_Na_mg_l": "12.4",
+            "Chlorides_Cl_mg_l": "14.4",
+            "Calcium_Ca_mg_l": "12.5"
+        }
+    },
+    {
+        "Region": "Træna kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.7",
+            "Alkalinity_TAC_mmol_l": "0.61",
+            "pH": "8.5",
+            "TDS_Conductivity_uS_cm": "81",
+            "Sodium_Na_mg_l": "8.3",
+            "Chlorides_Cl_mg_l": "7.4",
+            "Calcium_Ca_mg_l": "17.7"
+        }
+    },
+    {
+        "Region": "Voss kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.7",
+            "Alkalinity_TAC_mmol_l": "1.28",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "109",
+            "Sodium_Na_mg_l": "4.4",
+            "Chlorides_Cl_mg_l": "5.6",
+            "Calcium_Ca_mg_l": "21.6"
+        }
+    },
+    {
+        "Region": "Flekkefjord kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.6",
+            "Alkalinity_TAC_mmol_l": "0.57",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "109",
+            "Sodium_Na_mg_l": "11.9",
+            "Chlorides_Cl_mg_l": "2.9",
+            "Calcium_Ca_mg_l": "12.8"
+        }
+    },
+    {
+        "Region": "Lebesby kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.9",
+            "Alkalinity_TAC_mmol_l": "0.53",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "108",
+            "Sodium_Na_mg_l": "5.0",
+            "Chlorides_Cl_mg_l": "9.4",
+            "Calcium_Ca_mg_l": "11.5"
+        }
+    },
+    {
+        "Region": "Strand kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.5",
+            "Alkalinity_TAC_mmol_l": "0.65",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "144",
+            "Sodium_Na_mg_l": "13.7",
+            "Chlorides_Cl_mg_l": "14.0",
+            "Calcium_Ca_mg_l": "23.1"
+        }
+    },
+    {
+        "Region": "Bardu kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.2",
+            "Alkalinity_TAC_mmol_l": "1.33",
+            "pH": "8.2",
+            "TDS_Conductivity_uS_cm": "54",
+            "Sodium_Na_mg_l": "10.3",
+            "Chlorides_Cl_mg_l": "13.8",
+            "Calcium_Ca_mg_l": "16.7"
+        }
+    },
+    {
+        "Region": "Ringebu kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.1",
+            "Alkalinity_TAC_mmol_l": "0.77",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "76",
+            "Sodium_Na_mg_l": "8.2",
+            "Chlorides_Cl_mg_l": "4.1",
+            "Calcium_Ca_mg_l": "8.9"
+        }
+    },
+    {
+        "Region": "Ørland kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.8",
+            "Alkalinity_TAC_mmol_l": "1.44",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "109",
+            "Sodium_Na_mg_l": "7.6",
+            "Chlorides_Cl_mg_l": "8.7",
+            "Calcium_Ca_mg_l": "5.2"
+        }
+    },
+    {
+        "Region": "Time kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.7",
+            "Alkalinity_TAC_mmol_l": "1.35",
+            "pH": "8.5",
+            "TDS_Conductivity_uS_cm": "81",
+            "Sodium_Na_mg_l": "12.9",
+            "Chlorides_Cl_mg_l": "8.8",
+            "Calcium_Ca_mg_l": "19.3"
+        }
+    },
+    {
+        "Region": "Nome kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.3",
+            "Alkalinity_TAC_mmol_l": "0.90",
+            "pH": "8.4",
+            "TDS_Conductivity_uS_cm": "138",
+            "Sodium_Na_mg_l": "9.0",
+            "Chlorides_Cl_mg_l": "14.0",
+            "Calcium_Ca_mg_l": "7.6"
+        }
+    },
+    {
+        "Region": "Grimstad kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.0",
+            "Alkalinity_TAC_mmol_l": "1.24",
+            "pH": "8.5",
+            "TDS_Conductivity_uS_cm": "99",
+            "Sodium_Na_mg_l": "5.0",
+            "Chlorides_Cl_mg_l": "7.1",
+            "Calcium_Ca_mg_l": "9.7"
+        }
+    },
+    {
+        "Region": "Gloppen kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.4",
+            "Alkalinity_TAC_mmol_l": "1.47",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "122",
+            "Sodium_Na_mg_l": "12.5",
+            "Chlorides_Cl_mg_l": "9.2",
+            "Calcium_Ca_mg_l": "14.9"
+        }
+    },
+    {
+        "Region": "Risør kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.4",
+            "Alkalinity_TAC_mmol_l": "0.70",
+            "pH": "8.3",
+            "TDS_Conductivity_uS_cm": "55",
+            "Sodium_Na_mg_l": "9.8",
+            "Chlorides_Cl_mg_l": "12.2",
+            "Calcium_Ca_mg_l": "11.4"
+        }
+    },
+    {
+        "Region": "Kongsberg kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.5",
+            "Alkalinity_TAC_mmol_l": "0.98",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "118",
+            "Sodium_Na_mg_l": "7.4",
+            "Chlorides_Cl_mg_l": "5.8",
+            "Calcium_Ca_mg_l": "14.8"
+        }
+    },
+    {
+        "Region": "Rennebu kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.0",
+            "Alkalinity_TAC_mmol_l": "1.03",
+            "pH": "8.1",
+            "TDS_Conductivity_uS_cm": "63",
+            "Sodium_Na_mg_l": "14.5",
+            "Chlorides_Cl_mg_l": "13.7",
+            "Calcium_Ca_mg_l": "17.0"
+        }
+    },
+    {
+        "Region": "Årdal kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.1",
+            "Alkalinity_TAC_mmol_l": "1.23",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "45",
+            "Sodium_Na_mg_l": "4.9",
+            "Chlorides_Cl_mg_l": "6.1",
+            "Calcium_Ca_mg_l": "12.8"
+        }
+    },
+    {
+        "Region": "Horten kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.9",
+            "Alkalinity_TAC_mmol_l": "1.37",
+            "pH": "8.3",
+            "TDS_Conductivity_uS_cm": "91",
+            "Sodium_Na_mg_l": "13.7",
+            "Chlorides_Cl_mg_l": "5.1",
+            "Calcium_Ca_mg_l": "9.2"
+        }
+    },
+    {
+        "Region": "Gran kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.9",
+            "Alkalinity_TAC_mmol_l": "1.17",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "108",
+            "Sodium_Na_mg_l": "9.9",
+            "Chlorides_Cl_mg_l": "11.8",
+            "Calcium_Ca_mg_l": "7.0"
+        }
+    },
+    {
+        "Region": "Kvitsøy kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.1",
+            "Alkalinity_TAC_mmol_l": "0.96",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "88",
+            "Sodium_Na_mg_l": "8.8",
+            "Chlorides_Cl_mg_l": "11.9",
+            "Calcium_Ca_mg_l": "7.5"
+        }
+    },
+    {
+        "Region": "Øyer kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.1",
+            "Alkalinity_TAC_mmol_l": "0.79",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "132",
+            "Sodium_Na_mg_l": "4.0",
+            "Chlorides_Cl_mg_l": "3.0",
+            "Calcium_Ca_mg_l": "17.6"
+        }
+    },
+    {
+        "Region": "Fjaler kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.4",
+            "Alkalinity_TAC_mmol_l": "1.00",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "81",
+            "Sodium_Na_mg_l": "9.6",
+            "Chlorides_Cl_mg_l": "13.0",
+            "Calcium_Ca_mg_l": "16.7"
+        }
+    },
+    {
+        "Region": "Kvam kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.1",
+            "Alkalinity_TAC_mmol_l": "1.04",
+            "pH": "8.5",
+            "TDS_Conductivity_uS_cm": "43",
+            "Sodium_Na_mg_l": "12.8",
+            "Chlorides_Cl_mg_l": "15.0",
+            "Calcium_Ca_mg_l": "6.3"
+        }
+    },
+    {
+        "Region": "Sauda kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.9",
+            "Alkalinity_TAC_mmol_l": "0.93",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "126",
+            "Sodium_Na_mg_l": "14.0",
+            "Chlorides_Cl_mg_l": "12.6",
+            "Calcium_Ca_mg_l": "8.2"
+        }
+    },
+    {
+        "Region": "Vågan kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.2",
+            "Alkalinity_TAC_mmol_l": "0.54",
+            "pH": "8.4",
+            "TDS_Conductivity_uS_cm": "109",
+            "Sodium_Na_mg_l": "10.2",
+            "Chlorides_Cl_mg_l": "12.0",
+            "Calcium_Ca_mg_l": "21.4"
+        }
+    },
+    {
+        "Region": "Nærøysund kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.5",
+            "Alkalinity_TAC_mmol_l": "1.26",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "139",
+            "Sodium_Na_mg_l": "12.4",
+            "Chlorides_Cl_mg_l": "6.7",
+            "Calcium_Ca_mg_l": "9.9"
+        }
+    },
+    {
+        "Region": "Hammerfest kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.2",
+            "Alkalinity_TAC_mmol_l": "1.46",
+            "pH": "8.2",
+            "TDS_Conductivity_uS_cm": "112",
+            "Sodium_Na_mg_l": "7.6",
+            "Chlorides_Cl_mg_l": "7.2",
+            "Calcium_Ca_mg_l": "16.8"
+        }
+    },
+    {
+        "Region": "Hitra kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.2",
+            "Alkalinity_TAC_mmol_l": "1.14",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "127",
+            "Sodium_Na_mg_l": "7.4",
+            "Chlorides_Cl_mg_l": "5.3",
+            "Calcium_Ca_mg_l": "12.6"
+        }
+    },
+    {
+        "Region": "Bindal kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.8",
+            "Alkalinity_TAC_mmol_l": "0.96",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "92",
+            "Sodium_Na_mg_l": "8.8",
+            "Chlorides_Cl_mg_l": "5.4",
+            "Calcium_Ca_mg_l": "14.4"
+        }
+    },
+    {
+        "Region": "Skiptvet kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.8",
+            "Alkalinity_TAC_mmol_l": "1.36",
+            "pH": "8.2",
+            "TDS_Conductivity_uS_cm": "112",
+            "Sodium_Na_mg_l": "13.7",
+            "Chlorides_Cl_mg_l": "5.3",
+            "Calcium_Ca_mg_l": "6.7"
+        }
+    },
+    {
+        "Region": "Vevelstad kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.2",
+            "Alkalinity_TAC_mmol_l": "0.70",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "69",
+            "Sodium_Na_mg_l": "4.2",
+            "Chlorides_Cl_mg_l": "14.2",
+            "Calcium_Ca_mg_l": "22.0"
+        }
+    },
+    {
+        "Region": "Bjørnafjorden kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.2",
+            "Alkalinity_TAC_mmol_l": "0.66",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "74",
+            "Sodium_Na_mg_l": "3.9",
+            "Chlorides_Cl_mg_l": "3.9",
+            "Calcium_Ca_mg_l": "17.2"
+        }
+    },
+    {
+        "Region": "Holtålen kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.1",
+            "Alkalinity_TAC_mmol_l": "0.58",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "89",
+            "Sodium_Na_mg_l": "8.4",
+            "Chlorides_Cl_mg_l": "14.6",
+            "Calcium_Ca_mg_l": "8.0"
+        }
+    },
+    {
+        "Region": "Samnanger kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.2",
+            "Alkalinity_TAC_mmol_l": "1.39",
+            "pH": "8.2",
+            "TDS_Conductivity_uS_cm": "103",
+            "Sodium_Na_mg_l": "4.0",
+            "Chlorides_Cl_mg_l": "12.4",
+            "Calcium_Ca_mg_l": "16.2"
+        }
+    },
+    {
+        "Region": "Notodden kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.7",
+            "Alkalinity_TAC_mmol_l": "1.05",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "121",
+            "Sodium_Na_mg_l": "5.8",
+            "Chlorides_Cl_mg_l": "13.6",
+            "Calcium_Ca_mg_l": "11.1"
+        }
+    },
+    {
+        "Region": "Kviteseid kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.3",
+            "Alkalinity_TAC_mmol_l": "0.69",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "131",
+            "Sodium_Na_mg_l": "13.2",
+            "Chlorides_Cl_mg_l": "10.0",
+            "Calcium_Ca_mg_l": "7.2"
+        }
+    },
+    {
+        "Region": "Austrheim kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.2",
+            "Alkalinity_TAC_mmol_l": "0.51",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "98",
+            "Sodium_Na_mg_l": "4.0",
+            "Chlorides_Cl_mg_l": "2.5",
+            "Calcium_Ca_mg_l": "9.3"
+        }
+    },
+    {
+        "Region": "Lyngdal kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.5",
+            "Alkalinity_TAC_mmol_l": "0.75",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "96",
+            "Sodium_Na_mg_l": "2.6",
+            "Chlorides_Cl_mg_l": "7.8",
+            "Calcium_Ca_mg_l": "9.5"
+        }
+    },
+    {
+        "Region": "Harstad kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.6",
+            "Alkalinity_TAC_mmol_l": "0.59",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "72",
+            "Sodium_Na_mg_l": "3.0",
+            "Chlorides_Cl_mg_l": "9.3",
+            "Calcium_Ca_mg_l": "23.7"
+        }
+    },
+    {
+        "Region": "Nord-Aurdal kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.2",
+            "Alkalinity_TAC_mmol_l": "1.33",
+            "pH": "8.4",
+            "TDS_Conductivity_uS_cm": "85",
+            "Sodium_Na_mg_l": "9.9",
+            "Chlorides_Cl_mg_l": "9.0",
+            "Calcium_Ca_mg_l": "14.4"
+        }
+    },
+    {
+        "Region": "Gausdal kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.4",
+            "Alkalinity_TAC_mmol_l": "0.89",
+            "pH": "8.4",
+            "TDS_Conductivity_uS_cm": "75",
+            "Sodium_Na_mg_l": "12.4",
+            "Chlorides_Cl_mg_l": "5.5",
+            "Calcium_Ca_mg_l": "22.3"
+        }
+    },
+    {
+        "Region": "Rana kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.5",
+            "Alkalinity_TAC_mmol_l": "0.51",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "136",
+            "Sodium_Na_mg_l": "7.7",
+            "Chlorides_Cl_mg_l": "9.8",
+            "Calcium_Ca_mg_l": "13.2"
+        }
+    },
+    {
+        "Region": "Hjelmeland kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.5",
+            "Alkalinity_TAC_mmol_l": "1.15",
+            "pH": "8.2",
+            "TDS_Conductivity_uS_cm": "136",
+            "Sodium_Na_mg_l": "6.4",
+            "Chlorides_Cl_mg_l": "12.6",
+            "Calcium_Ca_mg_l": "12.2"
+        }
+    },
+    {
+        "Region": "Tingvoll kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.0",
+            "Alkalinity_TAC_mmol_l": "0.96",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "77",
+            "Sodium_Na_mg_l": "8.0",
+            "Chlorides_Cl_mg_l": "10.3",
+            "Calcium_Ca_mg_l": "9.5"
+        }
+    },
+    {
+        "Region": "Osterøy kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.4",
+            "Alkalinity_TAC_mmol_l": "1.16",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "139",
+            "Sodium_Na_mg_l": "6.6",
+            "Chlorides_Cl_mg_l": "11.3",
+            "Calcium_Ca_mg_l": "23.4"
+        }
+    },
+    {
+        "Region": "Surnadal kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.1",
+            "Alkalinity_TAC_mmol_l": "1.25",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "117",
+            "Sodium_Na_mg_l": "2.3",
+            "Chlorides_Cl_mg_l": "6.3",
+            "Calcium_Ca_mg_l": "13.4"
+        }
+    },
+    {
+        "Region": "Skien kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.0",
+            "Alkalinity_TAC_mmol_l": "0.95",
+            "pH": "8.1",
+            "TDS_Conductivity_uS_cm": "108",
+            "Sodium_Na_mg_l": "7.7",
+            "Chlorides_Cl_mg_l": "13.2",
+            "Calcium_Ca_mg_l": "14.0"
+        }
+    },
+    {
+        "Region": "Åmli kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.3",
+            "Alkalinity_TAC_mmol_l": "1.02",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "117",
+            "Sodium_Na_mg_l": "12.7",
+            "Chlorides_Cl_mg_l": "9.4",
+            "Calcium_Ca_mg_l": "22.1"
+        }
+    },
+    {
+        "Region": "Stjørdal kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.9",
+            "Alkalinity_TAC_mmol_l": "1.33",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "93",
+            "Sodium_Na_mg_l": "13.0",
+            "Chlorides_Cl_mg_l": "2.0",
+            "Calcium_Ca_mg_l": "10.2"
+        }
+    },
+    {
+        "Region": "Hægebostad kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.7",
+            "Alkalinity_TAC_mmol_l": "0.94",
+            "pH": "8.4",
+            "TDS_Conductivity_uS_cm": "98",
+            "Sodium_Na_mg_l": "7.7",
+            "Chlorides_Cl_mg_l": "11.6",
+            "Calcium_Ca_mg_l": "16.1"
+        }
+    },
+    {
+        "Region": "Båtsfjord kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.1",
+            "Alkalinity_TAC_mmol_l": "0.94",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "129",
+            "Sodium_Na_mg_l": "4.2",
+            "Chlorides_Cl_mg_l": "6.1",
+            "Calcium_Ca_mg_l": "7.5"
+        }
+    },
+    {
+        "Region": "Sigdal kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.0",
+            "Alkalinity_TAC_mmol_l": "0.72",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "81",
+            "Sodium_Na_mg_l": "5.4",
+            "Chlorides_Cl_mg_l": "2.7",
+            "Calcium_Ca_mg_l": "24.9"
+        }
+    },
+    {
+        "Region": "Vestnes kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.4",
+            "Alkalinity_TAC_mmol_l": "0.90",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "57",
+            "Sodium_Na_mg_l": "7.6",
+            "Chlorides_Cl_mg_l": "14.8",
+            "Calcium_Ca_mg_l": "20.5"
+        }
+    },
+    {
+        "Region": "Balsfjord kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.1",
+            "Alkalinity_TAC_mmol_l": "0.65",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "87",
+            "Sodium_Na_mg_l": "6.7",
+            "Chlorides_Cl_mg_l": "9.3",
+            "Calcium_Ca_mg_l": "16.6"
+        }
+    },
+    {
+        "Region": "Grue kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.5",
+            "Alkalinity_TAC_mmol_l": "0.67",
+            "pH": "8.3",
+            "TDS_Conductivity_uS_cm": "85",
+            "Sodium_Na_mg_l": "13.2",
+            "Chlorides_Cl_mg_l": "4.3",
+            "Calcium_Ca_mg_l": "10.0"
+        }
+    },
+    {
+        "Region": "Modum kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.7",
+            "Alkalinity_TAC_mmol_l": "1.40",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "76",
+            "Sodium_Na_mg_l": "10.1",
+            "Chlorides_Cl_mg_l": "4.1",
+            "Calcium_Ca_mg_l": "5.1"
+        }
+    },
+    {
+        "Region": "Brønnøy kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.7",
+            "Alkalinity_TAC_mmol_l": "1.37",
+            "pH": "8.5",
+            "TDS_Conductivity_uS_cm": "116",
+            "Sodium_Na_mg_l": "13.3",
+            "Chlorides_Cl_mg_l": "13.7",
+            "Calcium_Ca_mg_l": "23.4"
+        }
+    },
+    {
+        "Region": "Måsøy kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.7",
+            "Alkalinity_TAC_mmol_l": "1.23",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "114",
+            "Sodium_Na_mg_l": "4.2",
+            "Chlorides_Cl_mg_l": "12.2",
+            "Calcium_Ca_mg_l": "23.9"
+        }
+    },
+    {
+        "Region": "Tolga kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.4",
+            "Alkalinity_TAC_mmol_l": "1.35",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "119",
+            "Sodium_Na_mg_l": "10.9",
+            "Chlorides_Cl_mg_l": "14.8",
+            "Calcium_Ca_mg_l": "14.6"
+        }
+    },
+    {
+        "Region": "Hareid kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.3",
+            "Alkalinity_TAC_mmol_l": "1.20",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "124",
+            "Sodium_Na_mg_l": "12.7",
+            "Chlorides_Cl_mg_l": "6.3",
+            "Calcium_Ca_mg_l": "12.8"
+        }
+    },
+    {
+        "Region": "Stord kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.6",
+            "Alkalinity_TAC_mmol_l": "1.16",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "64",
+            "Sodium_Na_mg_l": "4.3",
+            "Chlorides_Cl_mg_l": "9.6",
+            "Calcium_Ca_mg_l": "20.8"
+        }
+    },
+    {
+        "Region": "Gildeskål kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.6",
+            "Alkalinity_TAC_mmol_l": "1.37",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "109",
+            "Sodium_Na_mg_l": "2.2",
+            "Chlorides_Cl_mg_l": "6.8",
+            "Calcium_Ca_mg_l": "13.8"
+        }
+    },
+    {
+        "Region": "Nordre_Land kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.4",
+            "Alkalinity_TAC_mmol_l": "1.00",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "122",
+            "Sodium_Na_mg_l": "5.0",
+            "Chlorides_Cl_mg_l": "5.0",
+            "Calcium_Ca_mg_l": "9.8"
+        }
+    },
+    {
+        "Region": "Øvre_Eiker kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.2",
+            "Alkalinity_TAC_mmol_l": "0.93",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "81",
+            "Sodium_Na_mg_l": "14.8",
+            "Chlorides_Cl_mg_l": "8.6",
+            "Calcium_Ca_mg_l": "19.7"
+        }
+    },
+    {
+        "Region": "Østre_Toten kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.4",
+            "Alkalinity_TAC_mmol_l": "1.25",
+            "pH": "8.2",
+            "TDS_Conductivity_uS_cm": "129",
+            "Sodium_Na_mg_l": "9.0",
+            "Chlorides_Cl_mg_l": "3.3",
+            "Calcium_Ca_mg_l": "14.0"
+        }
+    },
+    {
+        "Region": "Senja kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.4",
+            "Alkalinity_TAC_mmol_l": "0.69",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "77",
+            "Sodium_Na_mg_l": "9.6",
+            "Chlorides_Cl_mg_l": "10.1",
+            "Calcium_Ca_mg_l": "9.0"
+        }
+    },
+    {
+        "Region": "Flå kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.2",
+            "Alkalinity_TAC_mmol_l": "0.81",
+            "pH": "8.2",
+            "TDS_Conductivity_uS_cm": "72",
+            "Sodium_Na_mg_l": "5.5",
+            "Chlorides_Cl_mg_l": "6.1",
+            "Calcium_Ca_mg_l": "8.2"
+        }
+    },
+    {
+        "Region": "Solund kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.7",
+            "Alkalinity_TAC_mmol_l": "0.51",
+            "pH": "8.5",
+            "TDS_Conductivity_uS_cm": "94",
+            "Sodium_Na_mg_l": "14.3",
+            "Chlorides_Cl_mg_l": "4.7",
+            "Calcium_Ca_mg_l": "6.0"
+        }
+    },
+    {
+        "Region": "Tromsø kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.5",
+            "Alkalinity_TAC_mmol_l": "0.75",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "138",
+            "Sodium_Na_mg_l": "14.8",
+            "Chlorides_Cl_mg_l": "8.3",
+            "Calcium_Ca_mg_l": "5.3"
+        }
+    },
+    {
+        "Region": "Kristiansand kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.5",
+            "Alkalinity_TAC_mmol_l": "0.91",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "135",
+            "Sodium_Na_mg_l": "3.3",
+            "Chlorides_Cl_mg_l": "12.0",
+            "Calcium_Ca_mg_l": "7.1"
+        }
+    },
+    {
+        "Region": "Snåsa kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.0",
+            "Alkalinity_TAC_mmol_l": "1.33",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "111",
+            "Sodium_Na_mg_l": "11.1",
+            "Chlorides_Cl_mg_l": "13.8",
+            "Calcium_Ca_mg_l": "18.4"
+        }
+    },
+    {
+        "Region": "Modalen kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.9",
+            "Alkalinity_TAC_mmol_l": "1.13",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "101",
+            "Sodium_Na_mg_l": "7.8",
+            "Chlorides_Cl_mg_l": "11.3",
+            "Calcium_Ca_mg_l": "16.5"
+        }
+    },
+    {
+        "Region": "Seljord kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.5",
+            "Alkalinity_TAC_mmol_l": "0.75",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "142",
+            "Sodium_Na_mg_l": "4.2",
+            "Chlorides_Cl_mg_l": "2.7",
+            "Calcium_Ca_mg_l": "23.8"
+        }
+    },
+    {
+        "Region": "Målselv kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.9",
+            "Alkalinity_TAC_mmol_l": "1.26",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "121",
+            "Sodium_Na_mg_l": "6.7",
+            "Chlorides_Cl_mg_l": "3.4",
+            "Calcium_Ca_mg_l": "5.3"
+        }
+    },
+    {
+        "Region": "Rauma kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.0",
+            "Alkalinity_TAC_mmol_l": "1.08",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "92",
+            "Sodium_Na_mg_l": "5.9",
+            "Chlorides_Cl_mg_l": "12.2",
+            "Calcium_Ca_mg_l": "8.8"
+        }
+    },
+    {
+        "Region": "Sør-Fron kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.5",
+            "Alkalinity_TAC_mmol_l": "0.64",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "69",
+            "Sodium_Na_mg_l": "6.2",
+            "Chlorides_Cl_mg_l": "10.5",
+            "Calcium_Ca_mg_l": "18.1"
+        }
+    },
+    {
+        "Region": "Lesja kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.3",
+            "Alkalinity_TAC_mmol_l": "1.07",
+            "pH": "8.1",
+            "TDS_Conductivity_uS_cm": "110",
+            "Sodium_Na_mg_l": "4.1",
+            "Chlorides_Cl_mg_l": "4.1",
+            "Calcium_Ca_mg_l": "24.3"
+        }
+    },
+    {
+        "Region": "Skjervøy kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.2",
+            "Alkalinity_TAC_mmol_l": "1.20",
+            "pH": "8.2",
+            "TDS_Conductivity_uS_cm": "125",
+            "Sodium_Na_mg_l": "8.5",
+            "Chlorides_Cl_mg_l": "7.2",
+            "Calcium_Ca_mg_l": "5.3"
+        }
+    },
+    {
+        "Region": "Fitjar kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.9",
+            "Alkalinity_TAC_mmol_l": "1.02",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "92",
+            "Sodium_Na_mg_l": "11.8",
+            "Chlorides_Cl_mg_l": "14.7",
+            "Calcium_Ca_mg_l": "5.7"
+        }
+    },
+    {
+        "Region": "Gamvik kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.1",
+            "Alkalinity_TAC_mmol_l": "1.47",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "111",
+            "Sodium_Na_mg_l": "11.9",
+            "Chlorides_Cl_mg_l": "10.5",
+            "Calcium_Ca_mg_l": "13.9"
+        }
+    },
+    {
+        "Region": "Drangedal kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.1",
+            "Alkalinity_TAC_mmol_l": "0.80",
+            "pH": "8.2",
+            "TDS_Conductivity_uS_cm": "86",
+            "Sodium_Na_mg_l": "10.2",
+            "Chlorides_Cl_mg_l": "2.6",
+            "Calcium_Ca_mg_l": "15.8"
+        }
+    },
+    {
+        "Region": "Leirfjord kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.7",
+            "Alkalinity_TAC_mmol_l": "1.20",
+            "pH": "8.2",
+            "TDS_Conductivity_uS_cm": "112",
+            "Sodium_Na_mg_l": "14.9",
+            "Chlorides_Cl_mg_l": "2.3",
+            "Calcium_Ca_mg_l": "11.4"
+        }
+    },
+    {
+        "Region": "Lørenskog kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.4",
+            "Alkalinity_TAC_mmol_l": "0.93",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "122",
+            "Sodium_Na_mg_l": "9.4",
+            "Chlorides_Cl_mg_l": "13.6",
+            "Calcium_Ca_mg_l": "12.5"
+        }
+    },
+    {
+        "Region": "Løten kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.9",
+            "Alkalinity_TAC_mmol_l": "1.22",
+            "pH": "8.1",
+            "TDS_Conductivity_uS_cm": "108",
+            "Sodium_Na_mg_l": "7.5",
+            "Chlorides_Cl_mg_l": "12.3",
+            "Calcium_Ca_mg_l": "14.1"
+        }
+    },
+    {
+        "Region": "Eidskog kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.8",
+            "Alkalinity_TAC_mmol_l": "0.68",
+            "pH": "8.4",
+            "TDS_Conductivity_uS_cm": "77",
+            "Sodium_Na_mg_l": "9.8",
+            "Chlorides_Cl_mg_l": "11.9",
+            "Calcium_Ca_mg_l": "6.5"
+        }
+    },
+    {
+        "Region": "Vardø kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.8",
+            "Alkalinity_TAC_mmol_l": "1.00",
+            "pH": "8.1",
+            "TDS_Conductivity_uS_cm": "92",
+            "Sodium_Na_mg_l": "9.9",
+            "Chlorides_Cl_mg_l": "9.6",
+            "Calcium_Ca_mg_l": "22.5"
+        }
+    },
+    {
+        "Region": "Volda kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.2",
+            "Alkalinity_TAC_mmol_l": "0.59",
+            "pH": "8.1",
+            "TDS_Conductivity_uS_cm": "90",
+            "Sodium_Na_mg_l": "5.4",
+            "Chlorides_Cl_mg_l": "7.7",
+            "Calcium_Ca_mg_l": "23.3"
+        }
+    },
+    {
+        "Region": "Bamble kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.3",
+            "Alkalinity_TAC_mmol_l": "1.48",
+            "pH": "8.1",
+            "TDS_Conductivity_uS_cm": "103",
+            "Sodium_Na_mg_l": "14.1",
+            "Chlorides_Cl_mg_l": "2.5",
+            "Calcium_Ca_mg_l": "21.8"
+        }
+    },
+    {
+        "Region": "Ullensaker kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.3",
+            "Alkalinity_TAC_mmol_l": "1.43",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "81",
+            "Sodium_Na_mg_l": "8.3",
+            "Chlorides_Cl_mg_l": "4.4",
+            "Calcium_Ca_mg_l": "19.1"
+        }
+    },
+    {
+        "Region": "Heim kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.4",
+            "Alkalinity_TAC_mmol_l": "0.92",
+            "pH": "8.1",
+            "TDS_Conductivity_uS_cm": "86",
+            "Sodium_Na_mg_l": "11.7",
+            "Chlorides_Cl_mg_l": "4.4",
+            "Calcium_Ca_mg_l": "6.3"
+        }
+    },
+    {
+        "Region": "Aure kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.4",
+            "Alkalinity_TAC_mmol_l": "0.92",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "138",
+            "Sodium_Na_mg_l": "10.5",
+            "Chlorides_Cl_mg_l": "11.5",
+            "Calcium_Ca_mg_l": "10.2"
+        }
+    },
+    {
+        "Region": "Sørreisa kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.8",
+            "Alkalinity_TAC_mmol_l": "0.88",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "101",
+            "Sodium_Na_mg_l": "6.7",
+            "Chlorides_Cl_mg_l": "4.2",
+            "Calcium_Ca_mg_l": "20.5"
+        }
+    },
+    {
+        "Region": "Skaun kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.9",
+            "Alkalinity_TAC_mmol_l": "1.03",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "86",
+            "Sodium_Na_mg_l": "12.8",
+            "Chlorides_Cl_mg_l": "3.3",
+            "Calcium_Ca_mg_l": "17.2"
+        }
+    },
+    {
+        "Region": "Stange kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.1",
+            "Alkalinity_TAC_mmol_l": "1.31",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "103",
+            "Sodium_Na_mg_l": "10.4",
+            "Chlorides_Cl_mg_l": "8.0",
+            "Calcium_Ca_mg_l": "17.9"
+        }
+    },
+    {
+        "Region": "Øystre_Slidre kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.6",
+            "Alkalinity_TAC_mmol_l": "0.73",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "62",
+            "Sodium_Na_mg_l": "9.1",
+            "Chlorides_Cl_mg_l": "3.3",
+            "Calcium_Ca_mg_l": "9.5"
+        }
+    },
+    {
+        "Region": "Dønna kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.0",
+            "Alkalinity_TAC_mmol_l": "0.89",
+            "pH": "8.1",
+            "TDS_Conductivity_uS_cm": "69",
+            "Sodium_Na_mg_l": "13.9",
+            "Chlorides_Cl_mg_l": "9.8",
+            "Calcium_Ca_mg_l": "22.6"
+        }
+    },
+    {
+        "Region": "Orkdal kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.0",
+            "Alkalinity_TAC_mmol_l": "0.54",
+            "pH": "8.5",
+            "TDS_Conductivity_uS_cm": "43",
+            "Sodium_Na_mg_l": "10.5",
+            "Chlorides_Cl_mg_l": "2.2",
+            "Calcium_Ca_mg_l": "6.2"
+        }
+    },
+    {
+        "Region": "Hemnes kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.5",
+            "Alkalinity_TAC_mmol_l": "0.69",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "94",
+            "Sodium_Na_mg_l": "5.2",
+            "Chlorides_Cl_mg_l": "6.1",
+            "Calcium_Ca_mg_l": "7.1"
+        }
+    },
+    {
+        "Region": "Sør-Varanger kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.0",
+            "Alkalinity_TAC_mmol_l": "1.10",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "71",
+            "Sodium_Na_mg_l": "6.3",
+            "Chlorides_Cl_mg_l": "6.1",
+            "Calcium_Ca_mg_l": "6.8"
+        }
+    },
+    {
+        "Region": "Bjerkreim kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.2",
+            "Alkalinity_TAC_mmol_l": "1.44",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "70",
+            "Sodium_Na_mg_l": "5.0",
+            "Chlorides_Cl_mg_l": "8.0",
+            "Calcium_Ca_mg_l": "11.9"
+        }
+    },
+    {
+        "Region": "Fedje kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.0",
+            "Alkalinity_TAC_mmol_l": "1.15",
+            "pH": "8.4",
+            "TDS_Conductivity_uS_cm": "76",
+            "Sodium_Na_mg_l": "11.9",
+            "Chlorides_Cl_mg_l": "4.4",
+            "Calcium_Ca_mg_l": "24.8"
+        }
+    },
+    {
+        "Region": "Øksnes kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.7",
+            "Alkalinity_TAC_mmol_l": "1.48",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "64",
+            "Sodium_Na_mg_l": "5.3",
+            "Chlorides_Cl_mg_l": "10.7",
+            "Calcium_Ca_mg_l": "22.5"
+        }
+    },
+    {
+        "Region": "Meråker kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.2",
+            "Alkalinity_TAC_mmol_l": "0.88",
+            "pH": "8.3",
+            "TDS_Conductivity_uS_cm": "126",
+            "Sodium_Na_mg_l": "13.2",
+            "Chlorides_Cl_mg_l": "13.2",
+            "Calcium_Ca_mg_l": "7.3"
+        }
+    },
+    {
+        "Region": "Austevoll kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.5",
+            "Alkalinity_TAC_mmol_l": "1.31",
+            "pH": "8.3",
+            "TDS_Conductivity_uS_cm": "55",
+            "Sodium_Na_mg_l": "6.6",
+            "Chlorides_Cl_mg_l": "13.7",
+            "Calcium_Ca_mg_l": "7.6"
+        }
+    },
+    {
+        "Region": "Hattfjelldal kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.1",
+            "Alkalinity_TAC_mmol_l": "1.22",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "94",
+            "Sodium_Na_mg_l": "12.5",
+            "Chlorides_Cl_mg_l": "3.2",
+            "Calcium_Ca_mg_l": "13.8"
+        }
+    },
+    {
+        "Region": "Åsnes kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.2",
+            "Alkalinity_TAC_mmol_l": "1.41",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "76",
+            "Sodium_Na_mg_l": "9.7",
+            "Chlorides_Cl_mg_l": "3.9",
+            "Calcium_Ca_mg_l": "8.3"
+        }
+    },
+    {
+        "Region": "Hustadvika kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.5",
+            "Alkalinity_TAC_mmol_l": "1.13",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "127",
+            "Sodium_Na_mg_l": "6.3",
+            "Chlorides_Cl_mg_l": "10.5",
+            "Calcium_Ca_mg_l": "17.0"
+        }
+    },
+    {
+        "Region": "Etne kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.5",
+            "Alkalinity_TAC_mmol_l": "0.87",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "71",
+            "Sodium_Na_mg_l": "14.9",
+            "Chlorides_Cl_mg_l": "13.0",
+            "Calcium_Ca_mg_l": "10.1"
+        }
+    },
+    {
+        "Region": "Oppdal kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.0",
+            "Alkalinity_TAC_mmol_l": "1.20",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "102",
+            "Sodium_Na_mg_l": "13.9",
+            "Chlorides_Cl_mg_l": "8.9",
+            "Calcium_Ca_mg_l": "17.0"
+        }
+    },
+    {
+        "Region": "Sogndal kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.0",
+            "Alkalinity_TAC_mmol_l": "1.08",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "103",
+            "Sodium_Na_mg_l": "14.5",
+            "Chlorides_Cl_mg_l": "13.9",
+            "Calcium_Ca_mg_l": "10.0"
+        }
+    },
+    {
+        "Region": "Eidsvoll kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.6",
+            "Alkalinity_TAC_mmol_l": "0.58",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "97",
+            "Sodium_Na_mg_l": "7.1",
+            "Chlorides_Cl_mg_l": "9.7",
+            "Calcium_Ca_mg_l": "18.5"
+        }
+    },
+    {
+        "Region": "Smøla kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.4",
+            "Alkalinity_TAC_mmol_l": "0.87",
+            "pH": "8.4",
+            "TDS_Conductivity_uS_cm": "79",
+            "Sodium_Na_mg_l": "10.2",
+            "Chlorides_Cl_mg_l": "14.7",
+            "Calcium_Ca_mg_l": "15.1"
+        }
+    },
+    {
+        "Region": "Nordkapp kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.2",
+            "Alkalinity_TAC_mmol_l": "1.29",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "62",
+            "Sodium_Na_mg_l": "9.4",
+            "Chlorides_Cl_mg_l": "9.0",
+            "Calcium_Ca_mg_l": "10.0"
+        }
+    },
+    {
+        "Region": "Sunndal kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.4",
+            "Alkalinity_TAC_mmol_l": "0.90",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "133",
+            "Sodium_Na_mg_l": "9.9",
+            "Chlorides_Cl_mg_l": "4.5",
+            "Calcium_Ca_mg_l": "6.7"
+        }
+    },
+    {
+        "Region": "Nissedal kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.2",
+            "Alkalinity_TAC_mmol_l": "0.91",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "87",
+            "Sodium_Na_mg_l": "5.8",
+            "Chlorides_Cl_mg_l": "6.6",
+            "Calcium_Ca_mg_l": "21.1"
+        }
+    },
+    {
+        "Region": "Vennesla kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.9",
+            "Alkalinity_TAC_mmol_l": "1.05",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "98",
+            "Sodium_Na_mg_l": "7.5",
+            "Chlorides_Cl_mg_l": "7.7",
+            "Calcium_Ca_mg_l": "7.1"
+        }
+    },
+    {
+        "Region": "Gjemnes kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.7",
+            "Alkalinity_TAC_mmol_l": "1.22",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "101",
+            "Sodium_Na_mg_l": "9.0",
+            "Chlorides_Cl_mg_l": "5.7",
+            "Calcium_Ca_mg_l": "10.8"
+        }
+    },
+    {
+        "Region": "Molde kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.5",
+            "Alkalinity_TAC_mmol_l": "0.92",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "57",
+            "Sodium_Na_mg_l": "13.2",
+            "Chlorides_Cl_mg_l": "9.9",
+            "Calcium_Ca_mg_l": "13.9"
+        }
+    },
+    {
+        "Region": "Stryn kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.1",
+            "Alkalinity_TAC_mmol_l": "0.54",
+            "pH": "8.5",
+            "TDS_Conductivity_uS_cm": "43",
+            "Sodium_Na_mg_l": "6.6",
+            "Chlorides_Cl_mg_l": "12.6",
+            "Calcium_Ca_mg_l": "16.7"
+        }
+    },
+    {
+        "Region": "Klepp kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.2",
+            "Alkalinity_TAC_mmol_l": "1.33",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "69",
+            "Sodium_Na_mg_l": "8.7",
+            "Chlorides_Cl_mg_l": "4.3",
+            "Calcium_Ca_mg_l": "18.8"
+        }
+    },
+    {
+        "Region": "Grane kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.2",
+            "Alkalinity_TAC_mmol_l": "1.27",
+            "pH": "8.4",
+            "TDS_Conductivity_uS_cm": "110",
+            "Sodium_Na_mg_l": "5.8",
+            "Chlorides_Cl_mg_l": "10.8",
+            "Calcium_Ca_mg_l": "13.2"
+        }
+    },
+    {
+        "Region": "Tana kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.8",
+            "Alkalinity_TAC_mmol_l": "0.85",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "64",
+            "Sodium_Na_mg_l": "13.8",
+            "Chlorides_Cl_mg_l": "4.1",
+            "Calcium_Ca_mg_l": "11.3"
+        }
+    },
+    {
+        "Region": "Høylandet kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.4",
+            "Alkalinity_TAC_mmol_l": "0.85",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "128",
+            "Sodium_Na_mg_l": "3.6",
+            "Chlorides_Cl_mg_l": "14.1",
+            "Calcium_Ca_mg_l": "14.2"
+        }
+    },
+    {
+        "Region": "Eigersund kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.3",
+            "Alkalinity_TAC_mmol_l": "0.55",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "60",
+            "Sodium_Na_mg_l": "10.1",
+            "Chlorides_Cl_mg_l": "6.3",
+            "Calcium_Ca_mg_l": "20.0"
+        }
+    },
+    {
+        "Region": "Halden kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.7",
+            "Alkalinity_TAC_mmol_l": "0.86",
+            "pH": "8.1",
+            "TDS_Conductivity_uS_cm": "91",
+            "Sodium_Na_mg_l": "11.2",
+            "Chlorides_Cl_mg_l": "13.6",
+            "Calcium_Ca_mg_l": "10.7"
+        }
+    },
+    {
+        "Region": "Nittedal kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.5",
+            "Alkalinity_TAC_mmol_l": "0.86",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "92",
+            "Sodium_Na_mg_l": "3.2",
+            "Chlorides_Cl_mg_l": "12.9",
+            "Calcium_Ca_mg_l": "9.2"
+        }
+    },
+    {
+        "Region": "Lillesand kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.3",
+            "Alkalinity_TAC_mmol_l": "1.37",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "106",
+            "Sodium_Na_mg_l": "9.1",
+            "Chlorides_Cl_mg_l": "8.7",
+            "Calcium_Ca_mg_l": "16.5"
+        }
+    },
+    {
+        "Region": "Søndre_Land kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.5",
+            "Alkalinity_TAC_mmol_l": "0.80",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "65",
+            "Sodium_Na_mg_l": "14.0",
+            "Chlorides_Cl_mg_l": "13.6",
+            "Calcium_Ca_mg_l": "9.6"
+        }
+    },
+    {
+        "Region": "Moss kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.6",
+            "Alkalinity_TAC_mmol_l": "0.93",
+            "pH": "8.1",
+            "TDS_Conductivity_uS_cm": "65",
+            "Sodium_Na_mg_l": "11.9",
+            "Chlorides_Cl_mg_l": "12.4",
+            "Calcium_Ca_mg_l": "19.7"
+        }
+    },
+    {
+        "Region": "Ålesund kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.3",
+            "Alkalinity_TAC_mmol_l": "1.27",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "109",
+            "Sodium_Na_mg_l": "5.6",
+            "Chlorides_Cl_mg_l": "4.6",
+            "Calcium_Ca_mg_l": "9.1"
+        }
+    },
+    {
+        "Region": "Vindafjord kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.4",
+            "Alkalinity_TAC_mmol_l": "0.62",
+            "pH": "8.3",
+            "TDS_Conductivity_uS_cm": "112",
+            "Sodium_Na_mg_l": "11.4",
+            "Chlorides_Cl_mg_l": "11.7",
+            "Calcium_Ca_mg_l": "11.1"
+        }
+    },
+    {
+        "Region": "Bremanger kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.5",
+            "Alkalinity_TAC_mmol_l": "0.52",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "97",
+            "Sodium_Na_mg_l": "9.9",
+            "Chlorides_Cl_mg_l": "12.8",
+            "Calcium_Ca_mg_l": "16.8"
+        }
+    },
+    {
+        "Region": "Åmot kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.6",
+            "Alkalinity_TAC_mmol_l": "1.46",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "97",
+            "Sodium_Na_mg_l": "2.9",
+            "Chlorides_Cl_mg_l": "14.2",
+            "Calcium_Ca_mg_l": "22.1"
+        }
+    },
+    {
+        "Region": "Salangen kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.3",
+            "Alkalinity_TAC_mmol_l": "1.45",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "92",
+            "Sodium_Na_mg_l": "3.6",
+            "Chlorides_Cl_mg_l": "11.1",
+            "Calcium_Ca_mg_l": "22.7"
+        }
+    },
+    {
+        "Region": "Gjerdrum kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.4",
+            "Alkalinity_TAC_mmol_l": "0.96",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "117",
+            "Sodium_Na_mg_l": "11.4",
+            "Chlorides_Cl_mg_l": "2.3",
+            "Calcium_Ca_mg_l": "6.4"
+        }
+    },
+    {
+        "Region": "Lindesnes kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.8",
+            "Alkalinity_TAC_mmol_l": "1.46",
+            "pH": "8.4",
+            "TDS_Conductivity_uS_cm": "120",
+            "Sodium_Na_mg_l": "12.6",
+            "Chlorides_Cl_mg_l": "12.5",
+            "Calcium_Ca_mg_l": "19.8"
+        }
+    },
+    {
+        "Region": "Sykkylven kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.8",
+            "Alkalinity_TAC_mmol_l": "1.36",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "125",
+            "Sodium_Na_mg_l": "9.0",
+            "Chlorides_Cl_mg_l": "5.1",
+            "Calcium_Ca_mg_l": "13.5"
+        }
+    },
+    {
+        "Region": "Sel kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.6",
+            "Alkalinity_TAC_mmol_l": "1.44",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "79",
+            "Sodium_Na_mg_l": "11.2",
+            "Chlorides_Cl_mg_l": "12.8",
+            "Calcium_Ca_mg_l": "19.8"
+        }
+    },
+    {
+        "Region": "Kvinesdal kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.8",
+            "Alkalinity_TAC_mmol_l": "0.70",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "110",
+            "Sodium_Na_mg_l": "5.3",
+            "Chlorides_Cl_mg_l": "4.8",
+            "Calcium_Ca_mg_l": "5.3"
+        }
+    },
+    {
+        "Region": "Alver kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.2",
+            "Alkalinity_TAC_mmol_l": "0.61",
+            "pH": "8.4",
+            "TDS_Conductivity_uS_cm": "132",
+            "Sodium_Na_mg_l": "12.7",
+            "Chlorides_Cl_mg_l": "11.1",
+            "Calcium_Ca_mg_l": "8.9"
+        }
+    },
+    {
+        "Region": "Arendal kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.5",
+            "Alkalinity_TAC_mmol_l": "0.81",
+            "pH": "8.2",
+            "TDS_Conductivity_uS_cm": "115",
+            "Sodium_Na_mg_l": "11.2",
+            "Chlorides_Cl_mg_l": "5.7",
+            "Calcium_Ca_mg_l": "13.5"
+        }
+    },
+    {
+        "Region": "Sunnfjord kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.6",
+            "Alkalinity_TAC_mmol_l": "0.80",
+            "pH": "8.3",
+            "TDS_Conductivity_uS_cm": "71",
+            "Sodium_Na_mg_l": "12.2",
+            "Chlorides_Cl_mg_l": "3.0",
+            "Calcium_Ca_mg_l": "18.8"
+        }
+    },
+    {
+        "Region": "Dyrøy kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.6",
+            "Alkalinity_TAC_mmol_l": "1.30",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "108",
+            "Sodium_Na_mg_l": "4.3",
+            "Chlorides_Cl_mg_l": "3.7",
+            "Calcium_Ca_mg_l": "24.7"
+        }
+    },
+    {
+        "Region": "Tvedestrand kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.1",
+            "Alkalinity_TAC_mmol_l": "0.73",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "53",
+            "Sodium_Na_mg_l": "8.0",
+            "Chlorides_Cl_mg_l": "3.0",
+            "Calcium_Ca_mg_l": "15.4"
+        }
+    },
+    {
+        "Region": "Rødøy kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.1",
+            "Alkalinity_TAC_mmol_l": "1.21",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "73",
+            "Sodium_Na_mg_l": "2.2",
+            "Chlorides_Cl_mg_l": "6.0",
+            "Calcium_Ca_mg_l": "19.8"
+        }
+    },
+    {
+        "Region": "Sola kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.1",
+            "Alkalinity_TAC_mmol_l": "0.95",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "67",
+            "Sodium_Na_mg_l": "12.1",
+            "Chlorides_Cl_mg_l": "9.5",
+            "Calcium_Ca_mg_l": "23.3"
+        }
+    },
+    {
+        "Region": "Nordre_Follo kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.7",
+            "Alkalinity_TAC_mmol_l": "1.49",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "93",
+            "Sodium_Na_mg_l": "4.2",
+            "Chlorides_Cl_mg_l": "11.5",
+            "Calcium_Ca_mg_l": "23.4"
+        }
+    },
+    {
+        "Region": "Vågå kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.9",
+            "Alkalinity_TAC_mmol_l": "1.29",
+            "pH": "8.3",
+            "TDS_Conductivity_uS_cm": "69",
+            "Sodium_Na_mg_l": "14.6",
+            "Chlorides_Cl_mg_l": "6.9",
+            "Calcium_Ca_mg_l": "12.0"
+        }
+    },
+    {
+        "Region": "Kristiansund kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.2",
+            "Alkalinity_TAC_mmol_l": "0.51",
+            "pH": "8.3",
+            "TDS_Conductivity_uS_cm": "97",
+            "Sodium_Na_mg_l": "14.5",
+            "Chlorides_Cl_mg_l": "9.7",
+            "Calcium_Ca_mg_l": "8.4"
+        }
+    },
+    {
+        "Region": "Ringsaker kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.5",
+            "Alkalinity_TAC_mmol_l": "1.06",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "86",
+            "Sodium_Na_mg_l": "11.0",
+            "Chlorides_Cl_mg_l": "13.5",
+            "Calcium_Ca_mg_l": "18.0"
+        }
+    },
+    {
+        "Region": "Lierne kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.4",
+            "Alkalinity_TAC_mmol_l": "1.48",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "112",
+            "Sodium_Na_mg_l": "8.0",
+            "Chlorides_Cl_mg_l": "11.3",
+            "Calcium_Ca_mg_l": "20.3"
+        }
+    },
+    {
+        "Region": "Flakstad kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.2",
+            "Alkalinity_TAC_mmol_l": "1.44",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "85",
+            "Sodium_Na_mg_l": "11.8",
+            "Chlorides_Cl_mg_l": "10.9",
+            "Calcium_Ca_mg_l": "13.7"
+        }
+    },
+    {
+        "Region": "Åseral kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.2",
+            "Alkalinity_TAC_mmol_l": "1.16",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "57",
+            "Sodium_Na_mg_l": "11.8",
+            "Chlorides_Cl_mg_l": "12.4",
+            "Calcium_Ca_mg_l": "12.0"
+        }
+    },
+    {
+        "Region": "Bykle kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.4",
+            "Alkalinity_TAC_mmol_l": "0.76",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "123",
+            "Sodium_Na_mg_l": "8.0",
+            "Chlorides_Cl_mg_l": "10.6",
+            "Calcium_Ca_mg_l": "15.8"
+        }
+    },
+    {
+        "Region": "Sømna kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.9",
+            "Alkalinity_TAC_mmol_l": "1.47",
+            "pH": "8.1",
+            "TDS_Conductivity_uS_cm": "83",
+            "Sodium_Na_mg_l": "9.8",
+            "Chlorides_Cl_mg_l": "13.8",
+            "Calcium_Ca_mg_l": "15.0"
+        }
+    },
+    {
+        "Region": "Kautokeino kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.1",
+            "Alkalinity_TAC_mmol_l": "1.35",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "57",
+            "Sodium_Na_mg_l": "6.7",
+            "Chlorides_Cl_mg_l": "3.7",
+            "Calcium_Ca_mg_l": "14.3"
+        }
+    },
+    {
+        "Region": "Askvoll kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.8",
+            "Alkalinity_TAC_mmol_l": "1.08",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "113",
+            "Sodium_Na_mg_l": "5.8",
+            "Chlorides_Cl_mg_l": "5.4",
+            "Calcium_Ca_mg_l": "23.3"
+        }
+    },
+    {
+        "Region": "Gjøvik kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.0",
+            "Alkalinity_TAC_mmol_l": "1.44",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "107",
+            "Sodium_Na_mg_l": "7.9",
+            "Chlorides_Cl_mg_l": "6.3",
+            "Calcium_Ca_mg_l": "8.3"
+        }
+    },
+    {
+        "Region": "Skjåk kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.1",
+            "Alkalinity_TAC_mmol_l": "0.66",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "51",
+            "Sodium_Na_mg_l": "14.2",
+            "Chlorides_Cl_mg_l": "9.8",
+            "Calcium_Ca_mg_l": "12.4"
+        }
+    },
+    {
+        "Region": "Aremark kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.3",
+            "Alkalinity_TAC_mmol_l": "0.85",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "101",
+            "Sodium_Na_mg_l": "7.6",
+            "Chlorides_Cl_mg_l": "12.6",
+            "Calcium_Ca_mg_l": "13.2"
+        }
+    },
+    {
+        "Region": "Ibestad kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.2",
+            "Alkalinity_TAC_mmol_l": "1.03",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "65",
+            "Sodium_Na_mg_l": "2.9",
+            "Chlorides_Cl_mg_l": "10.2",
+            "Calcium_Ca_mg_l": "16.1"
+        }
+    },
+    {
+        "Region": "Andøy kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.9",
+            "Alkalinity_TAC_mmol_l": "1.14",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "83",
+            "Sodium_Na_mg_l": "10.9",
+            "Chlorides_Cl_mg_l": "14.3",
+            "Calcium_Ca_mg_l": "5.6"
+        }
+    },
+    {
+        "Region": "Kongsvinger kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.9",
+            "Alkalinity_TAC_mmol_l": "1.28",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "82",
+            "Sodium_Na_mg_l": "12.7",
+            "Chlorides_Cl_mg_l": "12.6",
+            "Calcium_Ca_mg_l": "16.8"
+        }
+    },
+    {
+        "Region": "Randaberg kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.6",
+            "Alkalinity_TAC_mmol_l": "1.24",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "66",
+            "Sodium_Na_mg_l": "11.0",
+            "Chlorides_Cl_mg_l": "7.9",
+            "Calcium_Ca_mg_l": "5.3"
+        }
+    },
+    {
+        "Region": "Selbu kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.2",
+            "Alkalinity_TAC_mmol_l": "1.48",
+            "pH": "8.3",
+            "TDS_Conductivity_uS_cm": "106",
+            "Sodium_Na_mg_l": "6.3",
+            "Chlorides_Cl_mg_l": "7.4",
+            "Calcium_Ca_mg_l": "21.5"
+        }
+    },
+    {
+        "Region": "Vega kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.8",
+            "Alkalinity_TAC_mmol_l": "0.61",
+            "pH": "8.1",
+            "TDS_Conductivity_uS_cm": "98",
+            "Sodium_Na_mg_l": "9.5",
+            "Chlorides_Cl_mg_l": "8.7",
+            "Calcium_Ca_mg_l": "14.2"
+        }
+    },
+    {
+        "Region": "Drammen kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.9",
+            "Alkalinity_TAC_mmol_l": "1.46",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "98",
+            "Sodium_Na_mg_l": "12.3",
+            "Chlorides_Cl_mg_l": "12.8",
+            "Calcium_Ca_mg_l": "12.7"
+        }
+    },
+    {
+        "Region": "Farsund kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.4",
+            "Alkalinity_TAC_mmol_l": "0.72",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "105",
+            "Sodium_Na_mg_l": "4.9",
+            "Chlorides_Cl_mg_l": "2.4",
+            "Calcium_Ca_mg_l": "23.5"
+        }
+    },
+    {
+        "Region": "Krødsherad kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.2",
+            "Alkalinity_TAC_mmol_l": "1.19",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "45",
+            "Sodium_Na_mg_l": "2.8",
+            "Chlorides_Cl_mg_l": "6.1",
+            "Calcium_Ca_mg_l": "13.5"
+        }
+    },
+    {
+        "Region": "Aurskog-Høland kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.0",
+            "Alkalinity_TAC_mmol_l": "1.36",
+            "pH": "8.4",
+            "TDS_Conductivity_uS_cm": "108",
+            "Sodium_Na_mg_l": "7.9",
+            "Chlorides_Cl_mg_l": "7.2",
+            "Calcium_Ca_mg_l": "7.5"
+        }
+    },
+    {
+        "Region": "Røyrvik kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.9",
+            "Alkalinity_TAC_mmol_l": "1.48",
+            "pH": "8.3",
+            "TDS_Conductivity_uS_cm": "81",
+            "Sodium_Na_mg_l": "7.7",
+            "Chlorides_Cl_mg_l": "3.6",
+            "Calcium_Ca_mg_l": "12.1"
+        }
+    },
+    {
+        "Region": "Luster kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.4",
+            "Alkalinity_TAC_mmol_l": "1.34",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "112",
+            "Sodium_Na_mg_l": "14.2",
+            "Chlorides_Cl_mg_l": "13.1",
+            "Calcium_Ca_mg_l": "17.7"
+        }
+    },
+    {
+        "Region": "Vadsø kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.5",
+            "Alkalinity_TAC_mmol_l": "1.08",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "92",
+            "Sodium_Na_mg_l": "7.7",
+            "Chlorides_Cl_mg_l": "12.9",
+            "Calcium_Ca_mg_l": "9.3"
+        }
+    },
+    {
+        "Region": "Tydal kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.7",
+            "Alkalinity_TAC_mmol_l": "0.74",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "116",
+            "Sodium_Na_mg_l": "7.2",
+            "Chlorides_Cl_mg_l": "4.6",
+            "Calcium_Ca_mg_l": "10.4"
+        }
+    },
+    {
+        "Region": "Hasvik kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.6",
+            "Alkalinity_TAC_mmol_l": "1.30",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "108",
+            "Sodium_Na_mg_l": "9.3",
+            "Chlorides_Cl_mg_l": "2.2",
+            "Calcium_Ca_mg_l": "14.8"
+        }
+    },
+    {
+        "Region": "Nore_og_Uvdal kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.3",
+            "Alkalinity_TAC_mmol_l": "0.90",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "127",
+            "Sodium_Na_mg_l": "4.6",
+            "Chlorides_Cl_mg_l": "4.8",
+            "Calcium_Ca_mg_l": "9.7"
+        }
+    },
+    {
+        "Region": "Sørfold kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.5",
+            "Alkalinity_TAC_mmol_l": "1.05",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "104",
+            "Sodium_Na_mg_l": "3.4",
+            "Chlorides_Cl_mg_l": "9.8",
+            "Calcium_Ca_mg_l": "9.6"
+        }
+    },
+    {
+        "Region": "Tinn kommune",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.6",
+            "Alkalinity_TAC_mmol_l": "0.81",
+            "pH": "8.1",
+            "TDS_Conductivity_uS_cm": "84",
+            "Sodium_Na_mg_l": "2.5",
+            "Chlorides_Cl_mg_l": "4.9",
+            "Calcium_Ca_mg_l": "13.2"
+        }
+    }
+]

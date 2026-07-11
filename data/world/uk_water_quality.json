@@ -1,0 +1,4718 @@
+[
+    {
+        "Region": "London (Thames Water)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.5",
+            "Alkalinity_TAC_mmol_l": "3.2",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "510",
+            "Sodium_Na_mg_l": "25.0",
+            "Chlorides_Cl_mg_l": "35.0",
+            "Calcium_Ca_mg_l": "95.0"
+        }
+    },
+    {
+        "Region": "Birmingham (Severn Trent)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.0",
+            "Alkalinity_TAC_mmol_l": "2.1",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "360",
+            "Sodium_Na_mg_l": "18.0",
+            "Chlorides_Cl_mg_l": "28.0",
+            "Calcium_Ca_mg_l": "65.0"
+        }
+    },
+    {
+        "Region": "Scotland (Scottish Water)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.5",
+            "Alkalinity_TAC_mmol_l": "0.5",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "85",
+            "Sodium_Na_mg_l": "5.0",
+            "Chlorides_Cl_mg_l": "8.0",
+            "Calcium_Ca_mg_l": "15.0"
+        }
+    },
+    {
+        "Region": "District 1 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.9",
+            "Alkalinity_TAC_mmol_l": "1.75",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "178",
+            "Sodium_Na_mg_l": "14.4",
+            "Chlorides_Cl_mg_l": "5.2",
+            "Calcium_Ca_mg_l": "19.8"
+        }
+    },
+    {
+        "Region": "District 2 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.8",
+            "Alkalinity_TAC_mmol_l": "2.98",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "602",
+            "Sodium_Na_mg_l": "32.4",
+            "Chlorides_Cl_mg_l": "20.1",
+            "Calcium_Ca_mg_l": "80.9"
+        }
+    },
+    {
+        "Region": "District 3 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.9",
+            "Alkalinity_TAC_mmol_l": "1.97",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "521",
+            "Sodium_Na_mg_l": "30.9",
+            "Chlorides_Cl_mg_l": "38.7",
+            "Calcium_Ca_mg_l": "101.6"
+        }
+    },
+    {
+        "Region": "District 4 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "5.1",
+            "Alkalinity_TAC_mmol_l": "1.76",
+            "pH": "6.9",
+            "TDS_Conductivity_uS_cm": "234",
+            "Sodium_Na_mg_l": "10.5",
+            "Chlorides_Cl_mg_l": "13.5",
+            "Calcium_Ca_mg_l": "22.7"
+        }
+    },
+    {
+        "Region": "District 5 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.3",
+            "Alkalinity_TAC_mmol_l": "2.21",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "599",
+            "Sodium_Na_mg_l": "32.9",
+            "Chlorides_Cl_mg_l": "33.0",
+            "Calcium_Ca_mg_l": "85.2"
+        }
+    },
+    {
+        "Region": "District 6 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.9",
+            "Alkalinity_TAC_mmol_l": "3.36",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "586",
+            "Sodium_Na_mg_l": "17.2",
+            "Chlorides_Cl_mg_l": "38.3",
+            "Calcium_Ca_mg_l": "78.4"
+        }
+    },
+    {
+        "Region": "District 7 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.3",
+            "Alkalinity_TAC_mmol_l": "1.08",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "423",
+            "Sodium_Na_mg_l": "17.0",
+            "Chlorides_Cl_mg_l": "35.9",
+            "Calcium_Ca_mg_l": "100.8"
+        }
+    },
+    {
+        "Region": "District 8 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.4",
+            "Alkalinity_TAC_mmol_l": "3.56",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "435",
+            "Sodium_Na_mg_l": "33.1",
+            "Chlorides_Cl_mg_l": "21.0",
+            "Calcium_Ca_mg_l": "106.2"
+        }
+    },
+    {
+        "Region": "District 9 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "18.2",
+            "Alkalinity_TAC_mmol_l": "1.23",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "645",
+            "Sodium_Na_mg_l": "31.5",
+            "Chlorides_Cl_mg_l": "33.8",
+            "Calcium_Ca_mg_l": "79.5"
+        }
+    },
+    {
+        "Region": "District 10 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.9",
+            "Alkalinity_TAC_mmol_l": "2.57",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "229",
+            "Sodium_Na_mg_l": "14.1",
+            "Chlorides_Cl_mg_l": "10.2",
+            "Calcium_Ca_mg_l": "19.6"
+        }
+    },
+    {
+        "Region": "District 11 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.8",
+            "Alkalinity_TAC_mmol_l": "2.93",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "652",
+            "Sodium_Na_mg_l": "15.8",
+            "Chlorides_Cl_mg_l": "24.5",
+            "Calcium_Ca_mg_l": "98.0"
+        }
+    },
+    {
+        "Region": "District 12 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.2",
+            "Alkalinity_TAC_mmol_l": "2.35",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "422",
+            "Sodium_Na_mg_l": "18.4",
+            "Chlorides_Cl_mg_l": "26.2",
+            "Calcium_Ca_mg_l": "91.8"
+        }
+    },
+    {
+        "Region": "District 13 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.2",
+            "Alkalinity_TAC_mmol_l": "1.78",
+            "pH": "6.8",
+            "TDS_Conductivity_uS_cm": "212",
+            "Sodium_Na_mg_l": "10.2",
+            "Chlorides_Cl_mg_l": "10.2",
+            "Calcium_Ca_mg_l": "21.8"
+        }
+    },
+    {
+        "Region": "District 14 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.5",
+            "Alkalinity_TAC_mmol_l": "3.36",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "292",
+            "Sodium_Na_mg_l": "7.9",
+            "Chlorides_Cl_mg_l": "9.7",
+            "Calcium_Ca_mg_l": "21.8"
+        }
+    },
+    {
+        "Region": "District 15 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.9",
+            "Alkalinity_TAC_mmol_l": "2.07",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "586",
+            "Sodium_Na_mg_l": "32.5",
+            "Chlorides_Cl_mg_l": "27.1",
+            "Calcium_Ca_mg_l": "77.2"
+        }
+    },
+    {
+        "Region": "District 16 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.3",
+            "Alkalinity_TAC_mmol_l": "1.88",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "564",
+            "Sodium_Na_mg_l": "17.1",
+            "Chlorides_Cl_mg_l": "29.5",
+            "Calcium_Ca_mg_l": "67.6"
+        }
+    },
+    {
+        "Region": "District 17 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.8",
+            "Alkalinity_TAC_mmol_l": "3.26",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "131",
+            "Sodium_Na_mg_l": "14.1",
+            "Chlorides_Cl_mg_l": "7.3",
+            "Calcium_Ca_mg_l": "23.2"
+        }
+    },
+    {
+        "Region": "District 18 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.3",
+            "Alkalinity_TAC_mmol_l": "2.45",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "470",
+            "Sodium_Na_mg_l": "25.8",
+            "Chlorides_Cl_mg_l": "37.9",
+            "Calcium_Ca_mg_l": "103.9"
+        }
+    },
+    {
+        "Region": "District 19 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.7",
+            "Alkalinity_TAC_mmol_l": "1.76",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "468",
+            "Sodium_Na_mg_l": "25.1",
+            "Chlorides_Cl_mg_l": "31.3",
+            "Calcium_Ca_mg_l": "81.7"
+        }
+    },
+    {
+        "Region": "District 20 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "5.4",
+            "Alkalinity_TAC_mmol_l": "2.17",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "269",
+            "Sodium_Na_mg_l": "5.2",
+            "Chlorides_Cl_mg_l": "10.6",
+            "Calcium_Ca_mg_l": "22.4"
+        }
+    },
+    {
+        "Region": "District 21 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.8",
+            "Alkalinity_TAC_mmol_l": "2.06",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "506",
+            "Sodium_Na_mg_l": "22.6",
+            "Chlorides_Cl_mg_l": "23.5",
+            "Calcium_Ca_mg_l": "99.5"
+        }
+    },
+    {
+        "Region": "District 22 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.4",
+            "Alkalinity_TAC_mmol_l": "2.20",
+            "pH": "6.8",
+            "TDS_Conductivity_uS_cm": "321",
+            "Sodium_Na_mg_l": "9.6",
+            "Chlorides_Cl_mg_l": "10.3",
+            "Calcium_Ca_mg_l": "39.1"
+        }
+    },
+    {
+        "Region": "District 23 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.9",
+            "Alkalinity_TAC_mmol_l": "3.28",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "541",
+            "Sodium_Na_mg_l": "33.5",
+            "Chlorides_Cl_mg_l": "26.9",
+            "Calcium_Ca_mg_l": "107.0"
+        }
+    },
+    {
+        "Region": "District 24 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.1",
+            "Alkalinity_TAC_mmol_l": "2.59",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "452",
+            "Sodium_Na_mg_l": "30.4",
+            "Chlorides_Cl_mg_l": "34.7",
+            "Calcium_Ca_mg_l": "63.5"
+        }
+    },
+    {
+        "Region": "District 25 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.8",
+            "Alkalinity_TAC_mmol_l": "2.29",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "471",
+            "Sodium_Na_mg_l": "22.2",
+            "Chlorides_Cl_mg_l": "27.3",
+            "Calcium_Ca_mg_l": "105.3"
+        }
+    },
+    {
+        "Region": "District 26 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "19.9",
+            "Alkalinity_TAC_mmol_l": "2.71",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "702",
+            "Sodium_Na_mg_l": "26.8",
+            "Chlorides_Cl_mg_l": "25.0",
+            "Calcium_Ca_mg_l": "72.3"
+        }
+    },
+    {
+        "Region": "District 27 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.2",
+            "Alkalinity_TAC_mmol_l": "2.61",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "476",
+            "Sodium_Na_mg_l": "18.1",
+            "Chlorides_Cl_mg_l": "29.2",
+            "Calcium_Ca_mg_l": "77.9"
+        }
+    },
+    {
+        "Region": "District 28 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.9",
+            "Alkalinity_TAC_mmol_l": "1.68",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "630",
+            "Sodium_Na_mg_l": "27.4",
+            "Chlorides_Cl_mg_l": "25.9",
+            "Calcium_Ca_mg_l": "98.9"
+        }
+    },
+    {
+        "Region": "District 29 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.9",
+            "Alkalinity_TAC_mmol_l": "3.84",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "571",
+            "Sodium_Na_mg_l": "27.3",
+            "Chlorides_Cl_mg_l": "25.0",
+            "Calcium_Ca_mg_l": "88.3"
+        }
+    },
+    {
+        "Region": "District 30 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.2",
+            "Alkalinity_TAC_mmol_l": "1.72",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "519",
+            "Sodium_Na_mg_l": "28.5",
+            "Chlorides_Cl_mg_l": "21.1",
+            "Calcium_Ca_mg_l": "85.5"
+        }
+    },
+    {
+        "Region": "District 31 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.2",
+            "Alkalinity_TAC_mmol_l": "2.02",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "618",
+            "Sodium_Na_mg_l": "34.9",
+            "Chlorides_Cl_mg_l": "26.5",
+            "Calcium_Ca_mg_l": "88.2"
+        }
+    },
+    {
+        "Region": "District 32 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.3",
+            "Alkalinity_TAC_mmol_l": "3.62",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "489",
+            "Sodium_Na_mg_l": "22.2",
+            "Chlorides_Cl_mg_l": "35.9",
+            "Calcium_Ca_mg_l": "89.6"
+        }
+    },
+    {
+        "Region": "District 33 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.1",
+            "Alkalinity_TAC_mmol_l": "2.30",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "156",
+            "Sodium_Na_mg_l": "9.2",
+            "Chlorides_Cl_mg_l": "8.3",
+            "Calcium_Ca_mg_l": "20.2"
+        }
+    },
+    {
+        "Region": "District 34 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.1",
+            "Alkalinity_TAC_mmol_l": "1.76",
+            "pH": "6.9",
+            "TDS_Conductivity_uS_cm": "281",
+            "Sodium_Na_mg_l": "10.7",
+            "Chlorides_Cl_mg_l": "10.4",
+            "Calcium_Ca_mg_l": "32.3"
+        }
+    },
+    {
+        "Region": "District 35 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.4",
+            "Alkalinity_TAC_mmol_l": "2.11",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "529",
+            "Sodium_Na_mg_l": "28.9",
+            "Chlorides_Cl_mg_l": "20.3",
+            "Calcium_Ca_mg_l": "80.1"
+        }
+    },
+    {
+        "Region": "District 36 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.8",
+            "Alkalinity_TAC_mmol_l": "3.33",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "549",
+            "Sodium_Na_mg_l": "34.0",
+            "Chlorides_Cl_mg_l": "22.8",
+            "Calcium_Ca_mg_l": "74.5"
+        }
+    },
+    {
+        "Region": "District 37 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "19.0",
+            "Alkalinity_TAC_mmol_l": "3.44",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "673",
+            "Sodium_Na_mg_l": "23.3",
+            "Chlorides_Cl_mg_l": "26.4",
+            "Calcium_Ca_mg_l": "109.6"
+        }
+    },
+    {
+        "Region": "District 38 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "18.0",
+            "Alkalinity_TAC_mmol_l": "3.11",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "638",
+            "Sodium_Na_mg_l": "19.0",
+            "Chlorides_Cl_mg_l": "23.8",
+            "Calcium_Ca_mg_l": "79.5"
+        }
+    },
+    {
+        "Region": "District 39 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.1",
+            "Alkalinity_TAC_mmol_l": "2.59",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "605",
+            "Sodium_Na_mg_l": "31.0",
+            "Chlorides_Cl_mg_l": "35.1",
+            "Calcium_Ca_mg_l": "87.0"
+        }
+    },
+    {
+        "Region": "District 40 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.4",
+            "Alkalinity_TAC_mmol_l": "3.03",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "631",
+            "Sodium_Na_mg_l": "22.5",
+            "Chlorides_Cl_mg_l": "31.0",
+            "Calcium_Ca_mg_l": "69.5"
+        }
+    },
+    {
+        "Region": "District 41 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.7",
+            "Alkalinity_TAC_mmol_l": "2.10",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "285",
+            "Sodium_Na_mg_l": "6.1",
+            "Chlorides_Cl_mg_l": "8.8",
+            "Calcium_Ca_mg_l": "10.6"
+        }
+    },
+    {
+        "Region": "District 42 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.7",
+            "Alkalinity_TAC_mmol_l": "3.20",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "268",
+            "Sodium_Na_mg_l": "7.5",
+            "Chlorides_Cl_mg_l": "5.9",
+            "Calcium_Ca_mg_l": "21.2"
+        }
+    },
+    {
+        "Region": "District 43 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.7",
+            "Alkalinity_TAC_mmol_l": "3.11",
+            "pH": "6.9",
+            "TDS_Conductivity_uS_cm": "169",
+            "Sodium_Na_mg_l": "8.3",
+            "Chlorides_Cl_mg_l": "12.0",
+            "Calcium_Ca_mg_l": "30.5"
+        }
+    },
+    {
+        "Region": "District 44 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.2",
+            "Alkalinity_TAC_mmol_l": "1.18",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "595",
+            "Sodium_Na_mg_l": "17.8",
+            "Chlorides_Cl_mg_l": "29.6",
+            "Calcium_Ca_mg_l": "102.7"
+        }
+    },
+    {
+        "Region": "District 45 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "18.7",
+            "Alkalinity_TAC_mmol_l": "1.29",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "642",
+            "Sodium_Na_mg_l": "26.5",
+            "Chlorides_Cl_mg_l": "20.9",
+            "Calcium_Ca_mg_l": "98.3"
+        }
+    },
+    {
+        "Region": "District 46 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.1",
+            "Alkalinity_TAC_mmol_l": "3.33",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "121",
+            "Sodium_Na_mg_l": "12.6",
+            "Chlorides_Cl_mg_l": "12.9",
+            "Calcium_Ca_mg_l": "25.2"
+        }
+    },
+    {
+        "Region": "District 47 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.1",
+            "Alkalinity_TAC_mmol_l": "1.12",
+            "pH": "6.8",
+            "TDS_Conductivity_uS_cm": "202",
+            "Sodium_Na_mg_l": "14.4",
+            "Chlorides_Cl_mg_l": "5.0",
+            "Calcium_Ca_mg_l": "35.9"
+        }
+    },
+    {
+        "Region": "District 48 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.3",
+            "Alkalinity_TAC_mmol_l": "3.44",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "583",
+            "Sodium_Na_mg_l": "29.0",
+            "Chlorides_Cl_mg_l": "22.0",
+            "Calcium_Ca_mg_l": "95.3"
+        }
+    },
+    {
+        "Region": "District 49 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.0",
+            "Alkalinity_TAC_mmol_l": "1.75",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "483",
+            "Sodium_Na_mg_l": "23.5",
+            "Chlorides_Cl_mg_l": "20.8",
+            "Calcium_Ca_mg_l": "108.9"
+        }
+    },
+    {
+        "Region": "District 50 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.8",
+            "Alkalinity_TAC_mmol_l": "2.26",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "637",
+            "Sodium_Na_mg_l": "23.0",
+            "Chlorides_Cl_mg_l": "22.1",
+            "Calcium_Ca_mg_l": "88.3"
+        }
+    },
+    {
+        "Region": "District 51 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "18.4",
+            "Alkalinity_TAC_mmol_l": "2.95",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "685",
+            "Sodium_Na_mg_l": "34.4",
+            "Chlorides_Cl_mg_l": "22.3",
+            "Calcium_Ca_mg_l": "80.4"
+        }
+    },
+    {
+        "Region": "District 52 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "5.7",
+            "Alkalinity_TAC_mmol_l": "2.03",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "255",
+            "Sodium_Na_mg_l": "13.7",
+            "Chlorides_Cl_mg_l": "7.4",
+            "Calcium_Ca_mg_l": "16.4"
+        }
+    },
+    {
+        "Region": "District 53 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.6",
+            "Alkalinity_TAC_mmol_l": "1.63",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "200",
+            "Sodium_Na_mg_l": "13.7",
+            "Chlorides_Cl_mg_l": "14.8",
+            "Calcium_Ca_mg_l": "34.6"
+        }
+    },
+    {
+        "Region": "District 54 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.2",
+            "Alkalinity_TAC_mmol_l": "2.20",
+            "pH": "6.9",
+            "TDS_Conductivity_uS_cm": "136",
+            "Sodium_Na_mg_l": "8.0",
+            "Chlorides_Cl_mg_l": "12.4",
+            "Calcium_Ca_mg_l": "30.0"
+        }
+    },
+    {
+        "Region": "District 55 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.0",
+            "Alkalinity_TAC_mmol_l": "2.57",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "305",
+            "Sodium_Na_mg_l": "9.7",
+            "Chlorides_Cl_mg_l": "8.1",
+            "Calcium_Ca_mg_l": "26.6"
+        }
+    },
+    {
+        "Region": "District 56 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.2",
+            "Alkalinity_TAC_mmol_l": "3.74",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "608",
+            "Sodium_Na_mg_l": "33.4",
+            "Chlorides_Cl_mg_l": "37.7",
+            "Calcium_Ca_mg_l": "99.3"
+        }
+    },
+    {
+        "Region": "District 57 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.1",
+            "Alkalinity_TAC_mmol_l": "3.82",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "538",
+            "Sodium_Na_mg_l": "22.0",
+            "Chlorides_Cl_mg_l": "30.8",
+            "Calcium_Ca_mg_l": "66.7"
+        }
+    },
+    {
+        "Region": "District 58 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.2",
+            "Alkalinity_TAC_mmol_l": "1.13",
+            "pH": "6.9",
+            "TDS_Conductivity_uS_cm": "235",
+            "Sodium_Na_mg_l": "12.2",
+            "Chlorides_Cl_mg_l": "5.8",
+            "Calcium_Ca_mg_l": "11.5"
+        }
+    },
+    {
+        "Region": "District 59 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "18.0",
+            "Alkalinity_TAC_mmol_l": "3.78",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "666",
+            "Sodium_Na_mg_l": "26.4",
+            "Chlorides_Cl_mg_l": "26.0",
+            "Calcium_Ca_mg_l": "91.1"
+        }
+    },
+    {
+        "Region": "District 60 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.0",
+            "Alkalinity_TAC_mmol_l": "2.67",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "610",
+            "Sodium_Na_mg_l": "18.0",
+            "Chlorides_Cl_mg_l": "36.0",
+            "Calcium_Ca_mg_l": "74.6"
+        }
+    },
+    {
+        "Region": "District 61 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.3",
+            "Alkalinity_TAC_mmol_l": "2.26",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "649",
+            "Sodium_Na_mg_l": "29.8",
+            "Chlorides_Cl_mg_l": "23.9",
+            "Calcium_Ca_mg_l": "75.4"
+        }
+    },
+    {
+        "Region": "District 62 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.8",
+            "Alkalinity_TAC_mmol_l": "2.31",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "246",
+            "Sodium_Na_mg_l": "6.4",
+            "Chlorides_Cl_mg_l": "8.7",
+            "Calcium_Ca_mg_l": "16.4"
+        }
+    },
+    {
+        "Region": "District 63 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "18.5",
+            "Alkalinity_TAC_mmol_l": "2.47",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "662",
+            "Sodium_Na_mg_l": "26.3",
+            "Chlorides_Cl_mg_l": "37.1",
+            "Calcium_Ca_mg_l": "91.0"
+        }
+    },
+    {
+        "Region": "District 64 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.1",
+            "Alkalinity_TAC_mmol_l": "2.59",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "121",
+            "Sodium_Na_mg_l": "10.7",
+            "Chlorides_Cl_mg_l": "10.9",
+            "Calcium_Ca_mg_l": "37.3"
+        }
+    },
+    {
+        "Region": "District 65 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "5.6",
+            "Alkalinity_TAC_mmol_l": "1.20",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "233",
+            "Sodium_Na_mg_l": "5.7",
+            "Chlorides_Cl_mg_l": "14.1",
+            "Calcium_Ca_mg_l": "26.9"
+        }
+    },
+    {
+        "Region": "District 66 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "19.8",
+            "Alkalinity_TAC_mmol_l": "3.24",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "677",
+            "Sodium_Na_mg_l": "30.4",
+            "Chlorides_Cl_mg_l": "21.7",
+            "Calcium_Ca_mg_l": "60.6"
+        }
+    },
+    {
+        "Region": "District 67 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.3",
+            "Alkalinity_TAC_mmol_l": "3.63",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "565",
+            "Sodium_Na_mg_l": "29.4",
+            "Chlorides_Cl_mg_l": "22.5",
+            "Calcium_Ca_mg_l": "94.6"
+        }
+    },
+    {
+        "Region": "District 68 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.0",
+            "Alkalinity_TAC_mmol_l": "1.49",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "494",
+            "Sodium_Na_mg_l": "30.3",
+            "Chlorides_Cl_mg_l": "28.2",
+            "Calcium_Ca_mg_l": "81.5"
+        }
+    },
+    {
+        "Region": "District 69 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "19.5",
+            "Alkalinity_TAC_mmol_l": "2.68",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "676",
+            "Sodium_Na_mg_l": "19.6",
+            "Chlorides_Cl_mg_l": "28.4",
+            "Calcium_Ca_mg_l": "60.9"
+        }
+    },
+    {
+        "Region": "District 70 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.0",
+            "Alkalinity_TAC_mmol_l": "1.66",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "537",
+            "Sodium_Na_mg_l": "32.5",
+            "Chlorides_Cl_mg_l": "25.2",
+            "Calcium_Ca_mg_l": "81.8"
+        }
+    },
+    {
+        "Region": "District 71 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.0",
+            "Alkalinity_TAC_mmol_l": "2.29",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "186",
+            "Sodium_Na_mg_l": "6.3",
+            "Chlorides_Cl_mg_l": "14.4",
+            "Calcium_Ca_mg_l": "23.6"
+        }
+    },
+    {
+        "Region": "District 72 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.7",
+            "Alkalinity_TAC_mmol_l": "2.72",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "555",
+            "Sodium_Na_mg_l": "19.0",
+            "Chlorides_Cl_mg_l": "20.1",
+            "Calcium_Ca_mg_l": "107.2"
+        }
+    },
+    {
+        "Region": "District 73 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.8",
+            "Alkalinity_TAC_mmol_l": "1.62",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "644",
+            "Sodium_Na_mg_l": "15.5",
+            "Chlorides_Cl_mg_l": "37.3",
+            "Calcium_Ca_mg_l": "95.5"
+        }
+    },
+    {
+        "Region": "District 74 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.1",
+            "Alkalinity_TAC_mmol_l": "1.11",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "162",
+            "Sodium_Na_mg_l": "14.2",
+            "Chlorides_Cl_mg_l": "12.7",
+            "Calcium_Ca_mg_l": "35.5"
+        }
+    },
+    {
+        "Region": "District 75 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.9",
+            "Alkalinity_TAC_mmol_l": "1.49",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "577",
+            "Sodium_Na_mg_l": "22.4",
+            "Chlorides_Cl_mg_l": "21.6",
+            "Calcium_Ca_mg_l": "100.5"
+        }
+    },
+    {
+        "Region": "District 76 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.7",
+            "Alkalinity_TAC_mmol_l": "1.72",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "533",
+            "Sodium_Na_mg_l": "21.7",
+            "Chlorides_Cl_mg_l": "39.4",
+            "Calcium_Ca_mg_l": "67.6"
+        }
+    },
+    {
+        "Region": "District 77 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.0",
+            "Alkalinity_TAC_mmol_l": "3.93",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "578",
+            "Sodium_Na_mg_l": "22.2",
+            "Chlorides_Cl_mg_l": "20.5",
+            "Calcium_Ca_mg_l": "95.3"
+        }
+    },
+    {
+        "Region": "District 78 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.5",
+            "Alkalinity_TAC_mmol_l": "3.21",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "240",
+            "Sodium_Na_mg_l": "7.6",
+            "Chlorides_Cl_mg_l": "8.5",
+            "Calcium_Ca_mg_l": "13.0"
+        }
+    },
+    {
+        "Region": "District 79 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.9",
+            "Alkalinity_TAC_mmol_l": "1.58",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "672",
+            "Sodium_Na_mg_l": "17.2",
+            "Chlorides_Cl_mg_l": "30.4",
+            "Calcium_Ca_mg_l": "89.4"
+        }
+    },
+    {
+        "Region": "District 80 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "18.5",
+            "Alkalinity_TAC_mmol_l": "2.63",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "630",
+            "Sodium_Na_mg_l": "32.1",
+            "Chlorides_Cl_mg_l": "23.9",
+            "Calcium_Ca_mg_l": "108.6"
+        }
+    },
+    {
+        "Region": "District 81 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.2",
+            "Alkalinity_TAC_mmol_l": "1.11",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "475",
+            "Sodium_Na_mg_l": "24.9",
+            "Chlorides_Cl_mg_l": "31.2",
+            "Calcium_Ca_mg_l": "101.9"
+        }
+    },
+    {
+        "Region": "District 82 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.9",
+            "Alkalinity_TAC_mmol_l": "3.92",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "270",
+            "Sodium_Na_mg_l": "7.6",
+            "Chlorides_Cl_mg_l": "9.2",
+            "Calcium_Ca_mg_l": "18.3"
+        }
+    },
+    {
+        "Region": "District 83 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.2",
+            "Alkalinity_TAC_mmol_l": "1.30",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "501",
+            "Sodium_Na_mg_l": "23.8",
+            "Chlorides_Cl_mg_l": "34.8",
+            "Calcium_Ca_mg_l": "85.8"
+        }
+    },
+    {
+        "Region": "District 84 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.7",
+            "Alkalinity_TAC_mmol_l": "3.49",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "538",
+            "Sodium_Na_mg_l": "28.6",
+            "Chlorides_Cl_mg_l": "28.3",
+            "Calcium_Ca_mg_l": "85.8"
+        }
+    },
+    {
+        "Region": "District 85 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.3",
+            "Alkalinity_TAC_mmol_l": "1.96",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "467",
+            "Sodium_Na_mg_l": "20.1",
+            "Chlorides_Cl_mg_l": "37.8",
+            "Calcium_Ca_mg_l": "69.3"
+        }
+    },
+    {
+        "Region": "District 86 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "19.8",
+            "Alkalinity_TAC_mmol_l": "3.51",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "697",
+            "Sodium_Na_mg_l": "30.4",
+            "Chlorides_Cl_mg_l": "27.1",
+            "Calcium_Ca_mg_l": "72.4"
+        }
+    },
+    {
+        "Region": "District 87 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.8",
+            "Alkalinity_TAC_mmol_l": "1.91",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "655",
+            "Sodium_Na_mg_l": "19.5",
+            "Chlorides_Cl_mg_l": "22.2",
+            "Calcium_Ca_mg_l": "86.5"
+        }
+    },
+    {
+        "Region": "District 88 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.6",
+            "Alkalinity_TAC_mmol_l": "2.99",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "492",
+            "Sodium_Na_mg_l": "22.6",
+            "Chlorides_Cl_mg_l": "35.6",
+            "Calcium_Ca_mg_l": "67.9"
+        }
+    },
+    {
+        "Region": "District 89 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "5.3",
+            "Alkalinity_TAC_mmol_l": "3.10",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "200",
+            "Sodium_Na_mg_l": "11.2",
+            "Chlorides_Cl_mg_l": "10.7",
+            "Calcium_Ca_mg_l": "17.6"
+        }
+    },
+    {
+        "Region": "District 90 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.7",
+            "Alkalinity_TAC_mmol_l": "2.21",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "483",
+            "Sodium_Na_mg_l": "34.0",
+            "Chlorides_Cl_mg_l": "36.1",
+            "Calcium_Ca_mg_l": "85.0"
+        }
+    },
+    {
+        "Region": "District 91 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "18.0",
+            "Alkalinity_TAC_mmol_l": "3.10",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "619",
+            "Sodium_Na_mg_l": "22.0",
+            "Chlorides_Cl_mg_l": "29.2",
+            "Calcium_Ca_mg_l": "93.6"
+        }
+    },
+    {
+        "Region": "District 92 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "5.3",
+            "Alkalinity_TAC_mmol_l": "1.20",
+            "pH": "6.9",
+            "TDS_Conductivity_uS_cm": "225",
+            "Sodium_Na_mg_l": "5.6",
+            "Chlorides_Cl_mg_l": "8.3",
+            "Calcium_Ca_mg_l": "22.2"
+        }
+    },
+    {
+        "Region": "District 93 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.8",
+            "Alkalinity_TAC_mmol_l": "2.56",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "299",
+            "Sodium_Na_mg_l": "14.2",
+            "Chlorides_Cl_mg_l": "10.8",
+            "Calcium_Ca_mg_l": "34.4"
+        }
+    },
+    {
+        "Region": "District 94 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.0",
+            "Alkalinity_TAC_mmol_l": "3.69",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "191",
+            "Sodium_Na_mg_l": "5.8",
+            "Chlorides_Cl_mg_l": "10.2",
+            "Calcium_Ca_mg_l": "31.0"
+        }
+    },
+    {
+        "Region": "District 95 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.7",
+            "Alkalinity_TAC_mmol_l": "1.30",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "565",
+            "Sodium_Na_mg_l": "26.2",
+            "Chlorides_Cl_mg_l": "24.0",
+            "Calcium_Ca_mg_l": "81.3"
+        }
+    },
+    {
+        "Region": "District 96 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.5",
+            "Alkalinity_TAC_mmol_l": "3.74",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "470",
+            "Sodium_Na_mg_l": "18.8",
+            "Chlorides_Cl_mg_l": "30.3",
+            "Calcium_Ca_mg_l": "109.6"
+        }
+    },
+    {
+        "Region": "District 97 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.3",
+            "Alkalinity_TAC_mmol_l": "2.60",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "181",
+            "Sodium_Na_mg_l": "5.5",
+            "Chlorides_Cl_mg_l": "10.8",
+            "Calcium_Ca_mg_l": "33.0"
+        }
+    },
+    {
+        "Region": "District 98 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.7",
+            "Alkalinity_TAC_mmol_l": "3.76",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "265",
+            "Sodium_Na_mg_l": "12.1",
+            "Chlorides_Cl_mg_l": "10.9",
+            "Calcium_Ca_mg_l": "19.6"
+        }
+    },
+    {
+        "Region": "District 99 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.7",
+            "Alkalinity_TAC_mmol_l": "1.53",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "198",
+            "Sodium_Na_mg_l": "11.5",
+            "Chlorides_Cl_mg_l": "6.3",
+            "Calcium_Ca_mg_l": "16.8"
+        }
+    },
+    {
+        "Region": "District 100 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "20.0",
+            "Alkalinity_TAC_mmol_l": "3.42",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "728",
+            "Sodium_Na_mg_l": "27.3",
+            "Chlorides_Cl_mg_l": "26.8",
+            "Calcium_Ca_mg_l": "70.2"
+        }
+    },
+    {
+        "Region": "District 101 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.3",
+            "Alkalinity_TAC_mmol_l": "2.01",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "523",
+            "Sodium_Na_mg_l": "30.8",
+            "Chlorides_Cl_mg_l": "33.2",
+            "Calcium_Ca_mg_l": "62.9"
+        }
+    },
+    {
+        "Region": "District 102 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.2",
+            "Alkalinity_TAC_mmol_l": "1.92",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "481",
+            "Sodium_Na_mg_l": "28.4",
+            "Chlorides_Cl_mg_l": "26.5",
+            "Calcium_Ca_mg_l": "61.6"
+        }
+    },
+    {
+        "Region": "District 103 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.7",
+            "Alkalinity_TAC_mmol_l": "3.98",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "145",
+            "Sodium_Na_mg_l": "10.8",
+            "Chlorides_Cl_mg_l": "11.7",
+            "Calcium_Ca_mg_l": "16.4"
+        }
+    },
+    {
+        "Region": "District 104 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.2",
+            "Alkalinity_TAC_mmol_l": "3.68",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "574",
+            "Sodium_Na_mg_l": "23.1",
+            "Chlorides_Cl_mg_l": "20.3",
+            "Calcium_Ca_mg_l": "68.2"
+        }
+    },
+    {
+        "Region": "District 105 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "5.0",
+            "Alkalinity_TAC_mmol_l": "2.29",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "254",
+            "Sodium_Na_mg_l": "14.1",
+            "Chlorides_Cl_mg_l": "6.2",
+            "Calcium_Ca_mg_l": "37.1"
+        }
+    },
+    {
+        "Region": "District 106 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.7",
+            "Alkalinity_TAC_mmol_l": "3.29",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "564",
+            "Sodium_Na_mg_l": "18.0",
+            "Chlorides_Cl_mg_l": "31.4",
+            "Calcium_Ca_mg_l": "96.7"
+        }
+    },
+    {
+        "Region": "District 107 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.6",
+            "Alkalinity_TAC_mmol_l": "2.73",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "553",
+            "Sodium_Na_mg_l": "24.6",
+            "Chlorides_Cl_mg_l": "29.1",
+            "Calcium_Ca_mg_l": "79.7"
+        }
+    },
+    {
+        "Region": "District 108 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "5.2",
+            "Alkalinity_TAC_mmol_l": "1.34",
+            "pH": "6.9",
+            "TDS_Conductivity_uS_cm": "238",
+            "Sodium_Na_mg_l": "13.8",
+            "Chlorides_Cl_mg_l": "8.7",
+            "Calcium_Ca_mg_l": "31.7"
+        }
+    },
+    {
+        "Region": "District 109 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.5",
+            "Alkalinity_TAC_mmol_l": "3.34",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "507",
+            "Sodium_Na_mg_l": "16.2",
+            "Chlorides_Cl_mg_l": "20.2",
+            "Calcium_Ca_mg_l": "72.7"
+        }
+    },
+    {
+        "Region": "District 110 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.2",
+            "Alkalinity_TAC_mmol_l": "2.14",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "295",
+            "Sodium_Na_mg_l": "10.8",
+            "Chlorides_Cl_mg_l": "12.2",
+            "Calcium_Ca_mg_l": "37.8"
+        }
+    },
+    {
+        "Region": "District 111 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.1",
+            "Alkalinity_TAC_mmol_l": "1.43",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "496",
+            "Sodium_Na_mg_l": "19.8",
+            "Chlorides_Cl_mg_l": "20.4",
+            "Calcium_Ca_mg_l": "85.9"
+        }
+    },
+    {
+        "Region": "District 112 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.3",
+            "Alkalinity_TAC_mmol_l": "3.59",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "501",
+            "Sodium_Na_mg_l": "24.7",
+            "Chlorides_Cl_mg_l": "31.9",
+            "Calcium_Ca_mg_l": "94.8"
+        }
+    },
+    {
+        "Region": "District 113 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "18.1",
+            "Alkalinity_TAC_mmol_l": "2.10",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "631",
+            "Sodium_Na_mg_l": "27.1",
+            "Chlorides_Cl_mg_l": "34.7",
+            "Calcium_Ca_mg_l": "92.8"
+        }
+    },
+    {
+        "Region": "District 114 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "19.6",
+            "Alkalinity_TAC_mmol_l": "2.94",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "710",
+            "Sodium_Na_mg_l": "15.9",
+            "Chlorides_Cl_mg_l": "36.6",
+            "Calcium_Ca_mg_l": "67.2"
+        }
+    },
+    {
+        "Region": "District 115 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.6",
+            "Alkalinity_TAC_mmol_l": "1.71",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "448",
+            "Sodium_Na_mg_l": "27.8",
+            "Chlorides_Cl_mg_l": "33.1",
+            "Calcium_Ca_mg_l": "74.0"
+        }
+    },
+    {
+        "Region": "District 116 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.5",
+            "Alkalinity_TAC_mmol_l": "1.67",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "602",
+            "Sodium_Na_mg_l": "19.1",
+            "Chlorides_Cl_mg_l": "23.3",
+            "Calcium_Ca_mg_l": "63.6"
+        }
+    },
+    {
+        "Region": "District 117 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.9",
+            "Alkalinity_TAC_mmol_l": "3.94",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "599",
+            "Sodium_Na_mg_l": "23.6",
+            "Chlorides_Cl_mg_l": "28.9",
+            "Calcium_Ca_mg_l": "94.4"
+        }
+    },
+    {
+        "Region": "District 118 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "19.9",
+            "Alkalinity_TAC_mmol_l": "2.76",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "681",
+            "Sodium_Na_mg_l": "26.7",
+            "Chlorides_Cl_mg_l": "32.6",
+            "Calcium_Ca_mg_l": "73.1"
+        }
+    },
+    {
+        "Region": "District 119 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "18.4",
+            "Alkalinity_TAC_mmol_l": "2.02",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "682",
+            "Sodium_Na_mg_l": "17.1",
+            "Chlorides_Cl_mg_l": "33.2",
+            "Calcium_Ca_mg_l": "85.4"
+        }
+    },
+    {
+        "Region": "District 120 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.0",
+            "Alkalinity_TAC_mmol_l": "2.79",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "482",
+            "Sodium_Na_mg_l": "20.2",
+            "Chlorides_Cl_mg_l": "26.9",
+            "Calcium_Ca_mg_l": "80.8"
+        }
+    },
+    {
+        "Region": "District 121 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.1",
+            "Alkalinity_TAC_mmol_l": "2.49",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "520",
+            "Sodium_Na_mg_l": "33.2",
+            "Chlorides_Cl_mg_l": "22.1",
+            "Calcium_Ca_mg_l": "87.8"
+        }
+    },
+    {
+        "Region": "District 122 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.3",
+            "Alkalinity_TAC_mmol_l": "3.32",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "177",
+            "Sodium_Na_mg_l": "10.6",
+            "Chlorides_Cl_mg_l": "5.7",
+            "Calcium_Ca_mg_l": "34.0"
+        }
+    },
+    {
+        "Region": "District 123 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.7",
+            "Alkalinity_TAC_mmol_l": "3.69",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "186",
+            "Sodium_Na_mg_l": "7.2",
+            "Chlorides_Cl_mg_l": "14.4",
+            "Calcium_Ca_mg_l": "40.0"
+        }
+    },
+    {
+        "Region": "District 124 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "5.4",
+            "Alkalinity_TAC_mmol_l": "3.55",
+            "pH": "6.9",
+            "TDS_Conductivity_uS_cm": "203",
+            "Sodium_Na_mg_l": "13.4",
+            "Chlorides_Cl_mg_l": "6.1",
+            "Calcium_Ca_mg_l": "37.3"
+        }
+    },
+    {
+        "Region": "District 125 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.4",
+            "Alkalinity_TAC_mmol_l": "1.70",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "463",
+            "Sodium_Na_mg_l": "21.1",
+            "Chlorides_Cl_mg_l": "39.5",
+            "Calcium_Ca_mg_l": "80.1"
+        }
+    },
+    {
+        "Region": "District 126 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.0",
+            "Alkalinity_TAC_mmol_l": "1.96",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "495",
+            "Sodium_Na_mg_l": "15.2",
+            "Chlorides_Cl_mg_l": "29.8",
+            "Calcium_Ca_mg_l": "97.4"
+        }
+    },
+    {
+        "Region": "District 127 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.0",
+            "Alkalinity_TAC_mmol_l": "3.61",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "502",
+            "Sodium_Na_mg_l": "32.9",
+            "Chlorides_Cl_mg_l": "28.3",
+            "Calcium_Ca_mg_l": "81.5"
+        }
+    },
+    {
+        "Region": "District 128 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "5.6",
+            "Alkalinity_TAC_mmol_l": "2.38",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "237",
+            "Sodium_Na_mg_l": "11.4",
+            "Chlorides_Cl_mg_l": "13.1",
+            "Calcium_Ca_mg_l": "35.7"
+        }
+    },
+    {
+        "Region": "District 129 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.6",
+            "Alkalinity_TAC_mmol_l": "2.30",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "656",
+            "Sodium_Na_mg_l": "16.4",
+            "Chlorides_Cl_mg_l": "29.2",
+            "Calcium_Ca_mg_l": "73.1"
+        }
+    },
+    {
+        "Region": "District 130 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.7",
+            "Alkalinity_TAC_mmol_l": "2.47",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "629",
+            "Sodium_Na_mg_l": "18.2",
+            "Chlorides_Cl_mg_l": "32.9",
+            "Calcium_Ca_mg_l": "72.1"
+        }
+    },
+    {
+        "Region": "District 131 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.4",
+            "Alkalinity_TAC_mmol_l": "1.96",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "460",
+            "Sodium_Na_mg_l": "34.0",
+            "Chlorides_Cl_mg_l": "32.0",
+            "Calcium_Ca_mg_l": "66.8"
+        }
+    },
+    {
+        "Region": "District 132 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.5",
+            "Alkalinity_TAC_mmol_l": "2.24",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "266",
+            "Sodium_Na_mg_l": "12.0",
+            "Chlorides_Cl_mg_l": "10.5",
+            "Calcium_Ca_mg_l": "28.8"
+        }
+    },
+    {
+        "Region": "District 133 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.8",
+            "Alkalinity_TAC_mmol_l": "2.56",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "301",
+            "Sodium_Na_mg_l": "10.6",
+            "Chlorides_Cl_mg_l": "11.0",
+            "Calcium_Ca_mg_l": "15.4"
+        }
+    },
+    {
+        "Region": "District 134 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.3",
+            "Alkalinity_TAC_mmol_l": "3.63",
+            "pH": "6.8",
+            "TDS_Conductivity_uS_cm": "276",
+            "Sodium_Na_mg_l": "5.7",
+            "Chlorides_Cl_mg_l": "11.5",
+            "Calcium_Ca_mg_l": "35.2"
+        }
+    },
+    {
+        "Region": "District 135 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.5",
+            "Alkalinity_TAC_mmol_l": "2.52",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "496",
+            "Sodium_Na_mg_l": "24.6",
+            "Chlorides_Cl_mg_l": "30.2",
+            "Calcium_Ca_mg_l": "99.7"
+        }
+    },
+    {
+        "Region": "District 136 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.1",
+            "Alkalinity_TAC_mmol_l": "3.59",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "160",
+            "Sodium_Na_mg_l": "11.2",
+            "Chlorides_Cl_mg_l": "14.4",
+            "Calcium_Ca_mg_l": "22.2"
+        }
+    },
+    {
+        "Region": "District 137 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.9",
+            "Alkalinity_TAC_mmol_l": "2.26",
+            "pH": "6.9",
+            "TDS_Conductivity_uS_cm": "333",
+            "Sodium_Na_mg_l": "11.3",
+            "Chlorides_Cl_mg_l": "7.0",
+            "Calcium_Ca_mg_l": "23.9"
+        }
+    },
+    {
+        "Region": "District 138 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.5",
+            "Alkalinity_TAC_mmol_l": "3.41",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "484",
+            "Sodium_Na_mg_l": "27.9",
+            "Chlorides_Cl_mg_l": "38.8",
+            "Calcium_Ca_mg_l": "101.5"
+        }
+    },
+    {
+        "Region": "District 139 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.7",
+            "Alkalinity_TAC_mmol_l": "1.23",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "160",
+            "Sodium_Na_mg_l": "11.1",
+            "Chlorides_Cl_mg_l": "10.3",
+            "Calcium_Ca_mg_l": "16.7"
+        }
+    },
+    {
+        "Region": "District 140 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "5.1",
+            "Alkalinity_TAC_mmol_l": "3.20",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "200",
+            "Sodium_Na_mg_l": "9.0",
+            "Chlorides_Cl_mg_l": "13.2",
+            "Calcium_Ca_mg_l": "20.6"
+        }
+    },
+    {
+        "Region": "District 141 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "19.2",
+            "Alkalinity_TAC_mmol_l": "2.08",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "650",
+            "Sodium_Na_mg_l": "16.5",
+            "Chlorides_Cl_mg_l": "38.3",
+            "Calcium_Ca_mg_l": "90.5"
+        }
+    },
+    {
+        "Region": "District 142 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "19.9",
+            "Alkalinity_TAC_mmol_l": "1.05",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "734",
+            "Sodium_Na_mg_l": "18.1",
+            "Chlorides_Cl_mg_l": "29.5",
+            "Calcium_Ca_mg_l": "104.1"
+        }
+    },
+    {
+        "Region": "District 143 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.8",
+            "Alkalinity_TAC_mmol_l": "3.72",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "518",
+            "Sodium_Na_mg_l": "16.2",
+            "Chlorides_Cl_mg_l": "23.9",
+            "Calcium_Ca_mg_l": "102.1"
+        }
+    },
+    {
+        "Region": "District 144 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "5.3",
+            "Alkalinity_TAC_mmol_l": "3.79",
+            "pH": "6.9",
+            "TDS_Conductivity_uS_cm": "208",
+            "Sodium_Na_mg_l": "13.6",
+            "Chlorides_Cl_mg_l": "12.8",
+            "Calcium_Ca_mg_l": "10.3"
+        }
+    },
+    {
+        "Region": "District 145 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.8",
+            "Alkalinity_TAC_mmol_l": "3.81",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "517",
+            "Sodium_Na_mg_l": "31.9",
+            "Chlorides_Cl_mg_l": "26.5",
+            "Calcium_Ca_mg_l": "90.8"
+        }
+    },
+    {
+        "Region": "District 146 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.3",
+            "Alkalinity_TAC_mmol_l": "2.23",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "286",
+            "Sodium_Na_mg_l": "12.6",
+            "Chlorides_Cl_mg_l": "14.5",
+            "Calcium_Ca_mg_l": "21.7"
+        }
+    },
+    {
+        "Region": "District 147 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "19.0",
+            "Alkalinity_TAC_mmol_l": "2.56",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "687",
+            "Sodium_Na_mg_l": "19.4",
+            "Chlorides_Cl_mg_l": "20.4",
+            "Calcium_Ca_mg_l": "101.3"
+        }
+    },
+    {
+        "Region": "District 148 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.4",
+            "Alkalinity_TAC_mmol_l": "1.77",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "473",
+            "Sodium_Na_mg_l": "33.6",
+            "Chlorides_Cl_mg_l": "35.1",
+            "Calcium_Ca_mg_l": "106.5"
+        }
+    },
+    {
+        "Region": "District 149 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.9",
+            "Alkalinity_TAC_mmol_l": "1.20",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "287",
+            "Sodium_Na_mg_l": "13.9",
+            "Chlorides_Cl_mg_l": "7.5",
+            "Calcium_Ca_mg_l": "32.2"
+        }
+    },
+    {
+        "Region": "District 150 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.7",
+            "Alkalinity_TAC_mmol_l": "2.79",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "539",
+            "Sodium_Na_mg_l": "19.5",
+            "Chlorides_Cl_mg_l": "27.2",
+            "Calcium_Ca_mg_l": "78.7"
+        }
+    },
+    {
+        "Region": "District 151 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.2",
+            "Alkalinity_TAC_mmol_l": "3.17",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "117",
+            "Sodium_Na_mg_l": "14.0",
+            "Chlorides_Cl_mg_l": "8.5",
+            "Calcium_Ca_mg_l": "21.4"
+        }
+    },
+    {
+        "Region": "District 152 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.8",
+            "Alkalinity_TAC_mmol_l": "1.78",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "234",
+            "Sodium_Na_mg_l": "10.1",
+            "Chlorides_Cl_mg_l": "12.6",
+            "Calcium_Ca_mg_l": "25.6"
+        }
+    },
+    {
+        "Region": "District 153 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.7",
+            "Alkalinity_TAC_mmol_l": "2.33",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "186",
+            "Sodium_Na_mg_l": "10.8",
+            "Chlorides_Cl_mg_l": "6.9",
+            "Calcium_Ca_mg_l": "30.7"
+        }
+    },
+    {
+        "Region": "District 154 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.3",
+            "Alkalinity_TAC_mmol_l": "3.08",
+            "pH": "6.8",
+            "TDS_Conductivity_uS_cm": "154",
+            "Sodium_Na_mg_l": "13.2",
+            "Chlorides_Cl_mg_l": "7.9",
+            "Calcium_Ca_mg_l": "19.5"
+        }
+    },
+    {
+        "Region": "District 155 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.5",
+            "Alkalinity_TAC_mmol_l": "2.44",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "174",
+            "Sodium_Na_mg_l": "12.7",
+            "Chlorides_Cl_mg_l": "13.6",
+            "Calcium_Ca_mg_l": "30.6"
+        }
+    },
+    {
+        "Region": "District 156 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.4",
+            "Alkalinity_TAC_mmol_l": "1.25",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "576",
+            "Sodium_Na_mg_l": "17.4",
+            "Chlorides_Cl_mg_l": "34.6",
+            "Calcium_Ca_mg_l": "84.1"
+        }
+    },
+    {
+        "Region": "District 157 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.0",
+            "Alkalinity_TAC_mmol_l": "3.37",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "484",
+            "Sodium_Na_mg_l": "19.8",
+            "Chlorides_Cl_mg_l": "34.8",
+            "Calcium_Ca_mg_l": "108.8"
+        }
+    },
+    {
+        "Region": "District 158 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.4",
+            "Alkalinity_TAC_mmol_l": "3.89",
+            "pH": "6.8",
+            "TDS_Conductivity_uS_cm": "284",
+            "Sodium_Na_mg_l": "9.4",
+            "Chlorides_Cl_mg_l": "7.3",
+            "Calcium_Ca_mg_l": "18.3"
+        }
+    },
+    {
+        "Region": "District 159 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.0",
+            "Alkalinity_TAC_mmol_l": "1.32",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "645",
+            "Sodium_Na_mg_l": "15.3",
+            "Chlorides_Cl_mg_l": "32.9",
+            "Calcium_Ca_mg_l": "93.5"
+        }
+    },
+    {
+        "Region": "District 160 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.9",
+            "Alkalinity_TAC_mmol_l": "2.25",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "613",
+            "Sodium_Na_mg_l": "31.1",
+            "Chlorides_Cl_mg_l": "35.5",
+            "Calcium_Ca_mg_l": "81.9"
+        }
+    },
+    {
+        "Region": "District 161 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.0",
+            "Alkalinity_TAC_mmol_l": "1.90",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "196",
+            "Sodium_Na_mg_l": "7.5",
+            "Chlorides_Cl_mg_l": "11.7",
+            "Calcium_Ca_mg_l": "38.7"
+        }
+    },
+    {
+        "Region": "District 162 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.5",
+            "Alkalinity_TAC_mmol_l": "1.81",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "559",
+            "Sodium_Na_mg_l": "26.8",
+            "Chlorides_Cl_mg_l": "35.0",
+            "Calcium_Ca_mg_l": "83.2"
+        }
+    },
+    {
+        "Region": "District 163 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.3",
+            "Alkalinity_TAC_mmol_l": "2.47",
+            "pH": "6.8",
+            "TDS_Conductivity_uS_cm": "132",
+            "Sodium_Na_mg_l": "12.6",
+            "Chlorides_Cl_mg_l": "8.1",
+            "Calcium_Ca_mg_l": "33.7"
+        }
+    },
+    {
+        "Region": "District 164 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "18.7",
+            "Alkalinity_TAC_mmol_l": "2.34",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "660",
+            "Sodium_Na_mg_l": "27.4",
+            "Chlorides_Cl_mg_l": "24.7",
+            "Calcium_Ca_mg_l": "74.7"
+        }
+    },
+    {
+        "Region": "District 165 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.4",
+            "Alkalinity_TAC_mmol_l": "3.02",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "519",
+            "Sodium_Na_mg_l": "31.2",
+            "Chlorides_Cl_mg_l": "29.3",
+            "Calcium_Ca_mg_l": "77.2"
+        }
+    },
+    {
+        "Region": "District 166 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.7",
+            "Alkalinity_TAC_mmol_l": "1.80",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "590",
+            "Sodium_Na_mg_l": "33.9",
+            "Chlorides_Cl_mg_l": "20.1",
+            "Calcium_Ca_mg_l": "104.4"
+        }
+    },
+    {
+        "Region": "District 167 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.0",
+            "Alkalinity_TAC_mmol_l": "1.62",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "166",
+            "Sodium_Na_mg_l": "12.4",
+            "Chlorides_Cl_mg_l": "8.4",
+            "Calcium_Ca_mg_l": "21.0"
+        }
+    },
+    {
+        "Region": "District 168 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.6",
+            "Alkalinity_TAC_mmol_l": "1.68",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "245",
+            "Sodium_Na_mg_l": "8.0",
+            "Chlorides_Cl_mg_l": "6.4",
+            "Calcium_Ca_mg_l": "24.7"
+        }
+    },
+    {
+        "Region": "District 169 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.4",
+            "Alkalinity_TAC_mmol_l": "2.28",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "477",
+            "Sodium_Na_mg_l": "19.3",
+            "Chlorides_Cl_mg_l": "30.9",
+            "Calcium_Ca_mg_l": "103.8"
+        }
+    },
+    {
+        "Region": "District 170 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.9",
+            "Alkalinity_TAC_mmol_l": "3.16",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "265",
+            "Sodium_Na_mg_l": "6.3",
+            "Chlorides_Cl_mg_l": "12.1",
+            "Calcium_Ca_mg_l": "29.4"
+        }
+    },
+    {
+        "Region": "District 171 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.9",
+            "Alkalinity_TAC_mmol_l": "1.15",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "575",
+            "Sodium_Na_mg_l": "25.5",
+            "Chlorides_Cl_mg_l": "38.9",
+            "Calcium_Ca_mg_l": "79.2"
+        }
+    },
+    {
+        "Region": "District 172 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.5",
+            "Alkalinity_TAC_mmol_l": "3.34",
+            "pH": "6.9",
+            "TDS_Conductivity_uS_cm": "128",
+            "Sodium_Na_mg_l": "12.9",
+            "Chlorides_Cl_mg_l": "12.5",
+            "Calcium_Ca_mg_l": "20.4"
+        }
+    },
+    {
+        "Region": "District 173 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.2",
+            "Alkalinity_TAC_mmol_l": "3.34",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "159",
+            "Sodium_Na_mg_l": "11.8",
+            "Chlorides_Cl_mg_l": "8.8",
+            "Calcium_Ca_mg_l": "13.7"
+        }
+    },
+    {
+        "Region": "District 174 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.3",
+            "Alkalinity_TAC_mmol_l": "2.44",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "103",
+            "Sodium_Na_mg_l": "6.8",
+            "Chlorides_Cl_mg_l": "9.1",
+            "Calcium_Ca_mg_l": "20.4"
+        }
+    },
+    {
+        "Region": "District 175 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.3",
+            "Alkalinity_TAC_mmol_l": "1.93",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "582",
+            "Sodium_Na_mg_l": "30.1",
+            "Chlorides_Cl_mg_l": "26.4",
+            "Calcium_Ca_mg_l": "95.8"
+        }
+    },
+    {
+        "Region": "District 176 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.2",
+            "Alkalinity_TAC_mmol_l": "2.15",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "451",
+            "Sodium_Na_mg_l": "26.3",
+            "Chlorides_Cl_mg_l": "36.5",
+            "Calcium_Ca_mg_l": "81.0"
+        }
+    },
+    {
+        "Region": "District 177 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.2",
+            "Alkalinity_TAC_mmol_l": "2.11",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "478",
+            "Sodium_Na_mg_l": "18.5",
+            "Chlorides_Cl_mg_l": "24.8",
+            "Calcium_Ca_mg_l": "77.5"
+        }
+    },
+    {
+        "Region": "District 178 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.7",
+            "Alkalinity_TAC_mmol_l": "3.24",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "201",
+            "Sodium_Na_mg_l": "5.3",
+            "Chlorides_Cl_mg_l": "8.7",
+            "Calcium_Ca_mg_l": "34.5"
+        }
+    },
+    {
+        "Region": "District 179 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.4",
+            "Alkalinity_TAC_mmol_l": "3.87",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "473",
+            "Sodium_Na_mg_l": "18.4",
+            "Chlorides_Cl_mg_l": "30.8",
+            "Calcium_Ca_mg_l": "102.0"
+        }
+    },
+    {
+        "Region": "District 180 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.1",
+            "Alkalinity_TAC_mmol_l": "1.13",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "540",
+            "Sodium_Na_mg_l": "23.4",
+            "Chlorides_Cl_mg_l": "37.6",
+            "Calcium_Ca_mg_l": "86.2"
+        }
+    },
+    {
+        "Region": "District 181 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.9",
+            "Alkalinity_TAC_mmol_l": "1.87",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "536",
+            "Sodium_Na_mg_l": "34.2",
+            "Chlorides_Cl_mg_l": "32.3",
+            "Calcium_Ca_mg_l": "83.0"
+        }
+    },
+    {
+        "Region": "District 182 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.0",
+            "Alkalinity_TAC_mmol_l": "1.32",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "599",
+            "Sodium_Na_mg_l": "33.6",
+            "Chlorides_Cl_mg_l": "27.7",
+            "Calcium_Ca_mg_l": "103.9"
+        }
+    },
+    {
+        "Region": "District 183 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.2",
+            "Alkalinity_TAC_mmol_l": "1.16",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "564",
+            "Sodium_Na_mg_l": "31.2",
+            "Chlorides_Cl_mg_l": "35.9",
+            "Calcium_Ca_mg_l": "89.5"
+        }
+    },
+    {
+        "Region": "District 184 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.7",
+            "Alkalinity_TAC_mmol_l": "1.67",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "617",
+            "Sodium_Na_mg_l": "29.4",
+            "Chlorides_Cl_mg_l": "26.3",
+            "Calcium_Ca_mg_l": "90.9"
+        }
+    },
+    {
+        "Region": "District 185 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "19.7",
+            "Alkalinity_TAC_mmol_l": "1.19",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "682",
+            "Sodium_Na_mg_l": "25.0",
+            "Chlorides_Cl_mg_l": "21.5",
+            "Calcium_Ca_mg_l": "86.3"
+        }
+    },
+    {
+        "Region": "District 186 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.2",
+            "Alkalinity_TAC_mmol_l": "2.22",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "527",
+            "Sodium_Na_mg_l": "25.9",
+            "Chlorides_Cl_mg_l": "27.8",
+            "Calcium_Ca_mg_l": "104.1"
+        }
+    },
+    {
+        "Region": "District 187 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.1",
+            "Alkalinity_TAC_mmol_l": "2.33",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "133",
+            "Sodium_Na_mg_l": "12.7",
+            "Chlorides_Cl_mg_l": "7.5",
+            "Calcium_Ca_mg_l": "22.3"
+        }
+    },
+    {
+        "Region": "District 188 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.4",
+            "Alkalinity_TAC_mmol_l": "1.09",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "599",
+            "Sodium_Na_mg_l": "27.0",
+            "Chlorides_Cl_mg_l": "32.1",
+            "Calcium_Ca_mg_l": "86.7"
+        }
+    },
+    {
+        "Region": "District 189 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.0",
+            "Alkalinity_TAC_mmol_l": "1.03",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "313",
+            "Sodium_Na_mg_l": "13.5",
+            "Chlorides_Cl_mg_l": "7.1",
+            "Calcium_Ca_mg_l": "27.8"
+        }
+    },
+    {
+        "Region": "District 190 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.3",
+            "Alkalinity_TAC_mmol_l": "2.65",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "538",
+            "Sodium_Na_mg_l": "27.3",
+            "Chlorides_Cl_mg_l": "29.4",
+            "Calcium_Ca_mg_l": "72.6"
+        }
+    },
+    {
+        "Region": "District 191 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.7",
+            "Alkalinity_TAC_mmol_l": "2.48",
+            "pH": "6.9",
+            "TDS_Conductivity_uS_cm": "257",
+            "Sodium_Na_mg_l": "13.4",
+            "Chlorides_Cl_mg_l": "5.6",
+            "Calcium_Ca_mg_l": "34.1"
+        }
+    },
+    {
+        "Region": "District 192 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.9",
+            "Alkalinity_TAC_mmol_l": "1.25",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "578",
+            "Sodium_Na_mg_l": "25.0",
+            "Chlorides_Cl_mg_l": "27.3",
+            "Calcium_Ca_mg_l": "101.7"
+        }
+    },
+    {
+        "Region": "District 193 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.8",
+            "Alkalinity_TAC_mmol_l": "2.06",
+            "pH": "6.9",
+            "TDS_Conductivity_uS_cm": "184",
+            "Sodium_Na_mg_l": "9.4",
+            "Chlorides_Cl_mg_l": "5.8",
+            "Calcium_Ca_mg_l": "23.6"
+        }
+    },
+    {
+        "Region": "District 194 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.7",
+            "Alkalinity_TAC_mmol_l": "3.50",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "536",
+            "Sodium_Na_mg_l": "29.1",
+            "Chlorides_Cl_mg_l": "39.3",
+            "Calcium_Ca_mg_l": "65.8"
+        }
+    },
+    {
+        "Region": "District 195 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.9",
+            "Alkalinity_TAC_mmol_l": "3.61",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "489",
+            "Sodium_Na_mg_l": "17.3",
+            "Chlorides_Cl_mg_l": "39.4",
+            "Calcium_Ca_mg_l": "69.5"
+        }
+    },
+    {
+        "Region": "District 196 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "19.8",
+            "Alkalinity_TAC_mmol_l": "2.10",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "705",
+            "Sodium_Na_mg_l": "31.9",
+            "Chlorides_Cl_mg_l": "23.9",
+            "Calcium_Ca_mg_l": "63.1"
+        }
+    },
+    {
+        "Region": "District 197 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.6",
+            "Alkalinity_TAC_mmol_l": "2.31",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "468",
+            "Sodium_Na_mg_l": "29.8",
+            "Chlorides_Cl_mg_l": "32.6",
+            "Calcium_Ca_mg_l": "105.7"
+        }
+    },
+    {
+        "Region": "District 198 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.4",
+            "Alkalinity_TAC_mmol_l": "1.76",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "638",
+            "Sodium_Na_mg_l": "19.7",
+            "Chlorides_Cl_mg_l": "33.8",
+            "Calcium_Ca_mg_l": "65.5"
+        }
+    },
+    {
+        "Region": "District 199 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "18.0",
+            "Alkalinity_TAC_mmol_l": "1.01",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "633",
+            "Sodium_Na_mg_l": "17.3",
+            "Chlorides_Cl_mg_l": "35.9",
+            "Calcium_Ca_mg_l": "88.3"
+        }
+    },
+    {
+        "Region": "District 200 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "5.4",
+            "Alkalinity_TAC_mmol_l": "1.86",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "268",
+            "Sodium_Na_mg_l": "6.2",
+            "Chlorides_Cl_mg_l": "14.2",
+            "Calcium_Ca_mg_l": "24.6"
+        }
+    },
+    {
+        "Region": "District 201 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "18.9",
+            "Alkalinity_TAC_mmol_l": "2.27",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "642",
+            "Sodium_Na_mg_l": "16.5",
+            "Chlorides_Cl_mg_l": "28.6",
+            "Calcium_Ca_mg_l": "79.6"
+        }
+    },
+    {
+        "Region": "District 202 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.4",
+            "Alkalinity_TAC_mmol_l": "3.64",
+            "pH": "6.8",
+            "TDS_Conductivity_uS_cm": "291",
+            "Sodium_Na_mg_l": "5.4",
+            "Chlorides_Cl_mg_l": "6.0",
+            "Calcium_Ca_mg_l": "16.6"
+        }
+    },
+    {
+        "Region": "District 203 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.2",
+            "Alkalinity_TAC_mmol_l": "3.89",
+            "pH": "6.9",
+            "TDS_Conductivity_uS_cm": "174",
+            "Sodium_Na_mg_l": "6.8",
+            "Chlorides_Cl_mg_l": "8.9",
+            "Calcium_Ca_mg_l": "27.3"
+        }
+    },
+    {
+        "Region": "District 204 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.1",
+            "Alkalinity_TAC_mmol_l": "1.37",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "548",
+            "Sodium_Na_mg_l": "20.9",
+            "Chlorides_Cl_mg_l": "29.0",
+            "Calcium_Ca_mg_l": "73.9"
+        }
+    },
+    {
+        "Region": "District 205 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.1",
+            "Alkalinity_TAC_mmol_l": "3.59",
+            "pH": "6.8",
+            "TDS_Conductivity_uS_cm": "202",
+            "Sodium_Na_mg_l": "11.9",
+            "Chlorides_Cl_mg_l": "7.5",
+            "Calcium_Ca_mg_l": "37.1"
+        }
+    },
+    {
+        "Region": "District 206 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.6",
+            "Alkalinity_TAC_mmol_l": "3.72",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "540",
+            "Sodium_Na_mg_l": "20.6",
+            "Chlorides_Cl_mg_l": "26.3",
+            "Calcium_Ca_mg_l": "71.2"
+        }
+    },
+    {
+        "Region": "District 207 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.8",
+            "Alkalinity_TAC_mmol_l": "1.94",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "310",
+            "Sodium_Na_mg_l": "5.8",
+            "Chlorides_Cl_mg_l": "12.1",
+            "Calcium_Ca_mg_l": "16.8"
+        }
+    },
+    {
+        "Region": "District 208 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.2",
+            "Alkalinity_TAC_mmol_l": "3.20",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "569",
+            "Sodium_Na_mg_l": "24.0",
+            "Chlorides_Cl_mg_l": "38.4",
+            "Calcium_Ca_mg_l": "97.0"
+        }
+    },
+    {
+        "Region": "District 209 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.3",
+            "Alkalinity_TAC_mmol_l": "1.28",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "306",
+            "Sodium_Na_mg_l": "6.7",
+            "Chlorides_Cl_mg_l": "9.9",
+            "Calcium_Ca_mg_l": "18.9"
+        }
+    },
+    {
+        "Region": "District 210 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.2",
+            "Alkalinity_TAC_mmol_l": "2.08",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "168",
+            "Sodium_Na_mg_l": "7.4",
+            "Chlorides_Cl_mg_l": "6.2",
+            "Calcium_Ca_mg_l": "38.1"
+        }
+    },
+    {
+        "Region": "District 211 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "18.4",
+            "Alkalinity_TAC_mmol_l": "3.01",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "628",
+            "Sodium_Na_mg_l": "29.2",
+            "Chlorides_Cl_mg_l": "28.0",
+            "Calcium_Ca_mg_l": "93.5"
+        }
+    },
+    {
+        "Region": "District 212 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.3",
+            "Alkalinity_TAC_mmol_l": "2.79",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "490",
+            "Sodium_Na_mg_l": "35.0",
+            "Chlorides_Cl_mg_l": "36.8",
+            "Calcium_Ca_mg_l": "103.3"
+        }
+    },
+    {
+        "Region": "District 213 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.4",
+            "Alkalinity_TAC_mmol_l": "1.71",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "492",
+            "Sodium_Na_mg_l": "34.4",
+            "Chlorides_Cl_mg_l": "26.4",
+            "Calcium_Ca_mg_l": "92.4"
+        }
+    },
+    {
+        "Region": "District 214 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.7",
+            "Alkalinity_TAC_mmol_l": "3.71",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "538",
+            "Sodium_Na_mg_l": "28.6",
+            "Chlorides_Cl_mg_l": "23.9",
+            "Calcium_Ca_mg_l": "82.0"
+        }
+    },
+    {
+        "Region": "District 215 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "5.5",
+            "Alkalinity_TAC_mmol_l": "3.67",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "227",
+            "Sodium_Na_mg_l": "12.6",
+            "Chlorides_Cl_mg_l": "6.2",
+            "Calcium_Ca_mg_l": "28.7"
+        }
+    },
+    {
+        "Region": "District 216 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.3",
+            "Alkalinity_TAC_mmol_l": "1.81",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "537",
+            "Sodium_Na_mg_l": "21.3",
+            "Chlorides_Cl_mg_l": "28.7",
+            "Calcium_Ca_mg_l": "102.4"
+        }
+    },
+    {
+        "Region": "District 217 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "18.6",
+            "Alkalinity_TAC_mmol_l": "1.63",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "679",
+            "Sodium_Na_mg_l": "29.2",
+            "Chlorides_Cl_mg_l": "24.3",
+            "Calcium_Ca_mg_l": "99.5"
+        }
+    },
+    {
+        "Region": "District 218 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.0",
+            "Alkalinity_TAC_mmol_l": "2.50",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "598",
+            "Sodium_Na_mg_l": "21.0",
+            "Chlorides_Cl_mg_l": "20.0",
+            "Calcium_Ca_mg_l": "102.8"
+        }
+    },
+    {
+        "Region": "District 219 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.3",
+            "Alkalinity_TAC_mmol_l": "1.63",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "653",
+            "Sodium_Na_mg_l": "23.1",
+            "Chlorides_Cl_mg_l": "23.7",
+            "Calcium_Ca_mg_l": "102.3"
+        }
+    },
+    {
+        "Region": "District 220 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "18.2",
+            "Alkalinity_TAC_mmol_l": "3.30",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "628",
+            "Sodium_Na_mg_l": "17.1",
+            "Chlorides_Cl_mg_l": "34.5",
+            "Calcium_Ca_mg_l": "94.2"
+        }
+    },
+    {
+        "Region": "District 221 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.7",
+            "Alkalinity_TAC_mmol_l": "1.67",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "621",
+            "Sodium_Na_mg_l": "31.1",
+            "Chlorides_Cl_mg_l": "23.7",
+            "Calcium_Ca_mg_l": "72.4"
+        }
+    },
+    {
+        "Region": "District 222 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.7",
+            "Alkalinity_TAC_mmol_l": "1.23",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "536",
+            "Sodium_Na_mg_l": "17.8",
+            "Chlorides_Cl_mg_l": "35.9",
+            "Calcium_Ca_mg_l": "65.5"
+        }
+    },
+    {
+        "Region": "District 223 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.3",
+            "Alkalinity_TAC_mmol_l": "2.06",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "466",
+            "Sodium_Na_mg_l": "23.3",
+            "Chlorides_Cl_mg_l": "29.3",
+            "Calcium_Ca_mg_l": "63.1"
+        }
+    },
+    {
+        "Region": "District 224 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.3",
+            "Alkalinity_TAC_mmol_l": "3.47",
+            "pH": "6.8",
+            "TDS_Conductivity_uS_cm": "177",
+            "Sodium_Na_mg_l": "9.3",
+            "Chlorides_Cl_mg_l": "9.8",
+            "Calcium_Ca_mg_l": "39.2"
+        }
+    },
+    {
+        "Region": "District 225 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "18.1",
+            "Alkalinity_TAC_mmol_l": "3.31",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "664",
+            "Sodium_Na_mg_l": "22.4",
+            "Chlorides_Cl_mg_l": "30.2",
+            "Calcium_Ca_mg_l": "88.7"
+        }
+    },
+    {
+        "Region": "District 226 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.4",
+            "Alkalinity_TAC_mmol_l": "2.26",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "297",
+            "Sodium_Na_mg_l": "9.9",
+            "Chlorides_Cl_mg_l": "14.2",
+            "Calcium_Ca_mg_l": "15.3"
+        }
+    },
+    {
+        "Region": "District 227 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.0",
+            "Alkalinity_TAC_mmol_l": "2.94",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "176",
+            "Sodium_Na_mg_l": "13.3",
+            "Chlorides_Cl_mg_l": "7.2",
+            "Calcium_Ca_mg_l": "36.1"
+        }
+    },
+    {
+        "Region": "District 228 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.3",
+            "Alkalinity_TAC_mmol_l": "2.37",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "134",
+            "Sodium_Na_mg_l": "9.8",
+            "Chlorides_Cl_mg_l": "10.7",
+            "Calcium_Ca_mg_l": "14.2"
+        }
+    },
+    {
+        "Region": "District 229 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.3",
+            "Alkalinity_TAC_mmol_l": "1.41",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "187",
+            "Sodium_Na_mg_l": "13.0",
+            "Chlorides_Cl_mg_l": "14.8",
+            "Calcium_Ca_mg_l": "23.3"
+        }
+    },
+    {
+        "Region": "District 230 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.1",
+            "Alkalinity_TAC_mmol_l": "1.75",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "118",
+            "Sodium_Na_mg_l": "6.4",
+            "Chlorides_Cl_mg_l": "13.1",
+            "Calcium_Ca_mg_l": "26.0"
+        }
+    },
+    {
+        "Region": "District 231 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "18.7",
+            "Alkalinity_TAC_mmol_l": "3.53",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "687",
+            "Sodium_Na_mg_l": "32.9",
+            "Chlorides_Cl_mg_l": "21.9",
+            "Calcium_Ca_mg_l": "77.3"
+        }
+    },
+    {
+        "Region": "District 232 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "18.3",
+            "Alkalinity_TAC_mmol_l": "2.25",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "666",
+            "Sodium_Na_mg_l": "34.3",
+            "Chlorides_Cl_mg_l": "38.9",
+            "Calcium_Ca_mg_l": "95.2"
+        }
+    },
+    {
+        "Region": "District 233 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "19.1",
+            "Alkalinity_TAC_mmol_l": "2.18",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "702",
+            "Sodium_Na_mg_l": "21.9",
+            "Chlorides_Cl_mg_l": "24.1",
+            "Calcium_Ca_mg_l": "68.8"
+        }
+    },
+    {
+        "Region": "District 234 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.2",
+            "Alkalinity_TAC_mmol_l": "3.06",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "500",
+            "Sodium_Na_mg_l": "26.9",
+            "Chlorides_Cl_mg_l": "30.0",
+            "Calcium_Ca_mg_l": "106.9"
+        }
+    },
+    {
+        "Region": "District 235 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.8",
+            "Alkalinity_TAC_mmol_l": "1.30",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "496",
+            "Sodium_Na_mg_l": "30.0",
+            "Chlorides_Cl_mg_l": "24.5",
+            "Calcium_Ca_mg_l": "99.2"
+        }
+    },
+    {
+        "Region": "District 236 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "19.8",
+            "Alkalinity_TAC_mmol_l": "1.65",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "710",
+            "Sodium_Na_mg_l": "16.3",
+            "Chlorides_Cl_mg_l": "37.9",
+            "Calcium_Ca_mg_l": "69.6"
+        }
+    },
+    {
+        "Region": "District 237 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "5.6",
+            "Alkalinity_TAC_mmol_l": "2.33",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "233",
+            "Sodium_Na_mg_l": "6.7",
+            "Chlorides_Cl_mg_l": "10.8",
+            "Calcium_Ca_mg_l": "15.3"
+        }
+    },
+    {
+        "Region": "District 238 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.4",
+            "Alkalinity_TAC_mmol_l": "1.19",
+            "pH": "6.9",
+            "TDS_Conductivity_uS_cm": "281",
+            "Sodium_Na_mg_l": "7.1",
+            "Chlorides_Cl_mg_l": "12.5",
+            "Calcium_Ca_mg_l": "12.8"
+        }
+    },
+    {
+        "Region": "District 239 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.9",
+            "Alkalinity_TAC_mmol_l": "3.35",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "231",
+            "Sodium_Na_mg_l": "10.8",
+            "Chlorides_Cl_mg_l": "11.9",
+            "Calcium_Ca_mg_l": "21.0"
+        }
+    },
+    {
+        "Region": "District 240 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.3",
+            "Alkalinity_TAC_mmol_l": "3.52",
+            "pH": "6.9",
+            "TDS_Conductivity_uS_cm": "119",
+            "Sodium_Na_mg_l": "10.8",
+            "Chlorides_Cl_mg_l": "12.9",
+            "Calcium_Ca_mg_l": "15.8"
+        }
+    },
+    {
+        "Region": "District 241 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "19.0",
+            "Alkalinity_TAC_mmol_l": "1.80",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "673",
+            "Sodium_Na_mg_l": "19.9",
+            "Chlorides_Cl_mg_l": "35.3",
+            "Calcium_Ca_mg_l": "90.8"
+        }
+    },
+    {
+        "Region": "District 242 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.4",
+            "Alkalinity_TAC_mmol_l": "2.16",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "620",
+            "Sodium_Na_mg_l": "30.2",
+            "Chlorides_Cl_mg_l": "27.5",
+            "Calcium_Ca_mg_l": "108.3"
+        }
+    },
+    {
+        "Region": "District 243 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.8",
+            "Alkalinity_TAC_mmol_l": "1.08",
+            "pH": "6.9",
+            "TDS_Conductivity_uS_cm": "308",
+            "Sodium_Na_mg_l": "5.1",
+            "Chlorides_Cl_mg_l": "12.8",
+            "Calcium_Ca_mg_l": "16.9"
+        }
+    },
+    {
+        "Region": "District 244 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.4",
+            "Alkalinity_TAC_mmol_l": "2.36",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "606",
+            "Sodium_Na_mg_l": "30.5",
+            "Chlorides_Cl_mg_l": "27.4",
+            "Calcium_Ca_mg_l": "93.1"
+        }
+    },
+    {
+        "Region": "District 245 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.0",
+            "Alkalinity_TAC_mmol_l": "3.12",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "188",
+            "Sodium_Na_mg_l": "8.2",
+            "Chlorides_Cl_mg_l": "7.6",
+            "Calcium_Ca_mg_l": "28.7"
+        }
+    },
+    {
+        "Region": "District 246 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "18.0",
+            "Alkalinity_TAC_mmol_l": "1.46",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "636",
+            "Sodium_Na_mg_l": "28.8",
+            "Chlorides_Cl_mg_l": "30.3",
+            "Calcium_Ca_mg_l": "108.8"
+        }
+    },
+    {
+        "Region": "District 247 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.5",
+            "Alkalinity_TAC_mmol_l": "2.20",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "604",
+            "Sodium_Na_mg_l": "28.6",
+            "Chlorides_Cl_mg_l": "34.5",
+            "Calcium_Ca_mg_l": "89.6"
+        }
+    },
+    {
+        "Region": "District 248 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.8",
+            "Alkalinity_TAC_mmol_l": "3.40",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "599",
+            "Sodium_Na_mg_l": "23.9",
+            "Chlorides_Cl_mg_l": "35.5",
+            "Calcium_Ca_mg_l": "83.2"
+        }
+    },
+    {
+        "Region": "District 249 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.8",
+            "Alkalinity_TAC_mmol_l": "3.12",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "503",
+            "Sodium_Na_mg_l": "18.0",
+            "Chlorides_Cl_mg_l": "27.1",
+            "Calcium_Ca_mg_l": "90.4"
+        }
+    },
+    {
+        "Region": "District 250 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.2",
+            "Alkalinity_TAC_mmol_l": "3.64",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "526",
+            "Sodium_Na_mg_l": "25.6",
+            "Chlorides_Cl_mg_l": "20.1",
+            "Calcium_Ca_mg_l": "64.3"
+        }
+    },
+    {
+        "Region": "District 251 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "18.5",
+            "Alkalinity_TAC_mmol_l": "1.14",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "670",
+            "Sodium_Na_mg_l": "17.7",
+            "Chlorides_Cl_mg_l": "25.1",
+            "Calcium_Ca_mg_l": "80.8"
+        }
+    },
+    {
+        "Region": "District 252 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.7",
+            "Alkalinity_TAC_mmol_l": "3.26",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "541",
+            "Sodium_Na_mg_l": "29.4",
+            "Chlorides_Cl_mg_l": "23.2",
+            "Calcium_Ca_mg_l": "64.1"
+        }
+    },
+    {
+        "Region": "District 253 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.2",
+            "Alkalinity_TAC_mmol_l": "1.20",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "507",
+            "Sodium_Na_mg_l": "23.6",
+            "Chlorides_Cl_mg_l": "33.3",
+            "Calcium_Ca_mg_l": "95.5"
+        }
+    },
+    {
+        "Region": "District 254 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.8",
+            "Alkalinity_TAC_mmol_l": "3.87",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "653",
+            "Sodium_Na_mg_l": "16.3",
+            "Chlorides_Cl_mg_l": "23.3",
+            "Calcium_Ca_mg_l": "91.9"
+        }
+    },
+    {
+        "Region": "District 255 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.4",
+            "Alkalinity_TAC_mmol_l": "3.19",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "293",
+            "Sodium_Na_mg_l": "5.2",
+            "Chlorides_Cl_mg_l": "7.2",
+            "Calcium_Ca_mg_l": "34.7"
+        }
+    },
+    {
+        "Region": "District 256 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.1",
+            "Alkalinity_TAC_mmol_l": "1.70",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "263",
+            "Sodium_Na_mg_l": "10.3",
+            "Chlorides_Cl_mg_l": "13.4",
+            "Calcium_Ca_mg_l": "20.3"
+        }
+    },
+    {
+        "Region": "District 257 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.3",
+            "Alkalinity_TAC_mmol_l": "1.14",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "103",
+            "Sodium_Na_mg_l": "7.2",
+            "Chlorides_Cl_mg_l": "7.3",
+            "Calcium_Ca_mg_l": "23.4"
+        }
+    },
+    {
+        "Region": "District 258 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "19.2",
+            "Alkalinity_TAC_mmol_l": "3.85",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "647",
+            "Sodium_Na_mg_l": "26.5",
+            "Chlorides_Cl_mg_l": "24.2",
+            "Calcium_Ca_mg_l": "89.0"
+        }
+    },
+    {
+        "Region": "District 259 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.9",
+            "Alkalinity_TAC_mmol_l": "1.49",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "249",
+            "Sodium_Na_mg_l": "8.6",
+            "Chlorides_Cl_mg_l": "13.9",
+            "Calcium_Ca_mg_l": "20.2"
+        }
+    },
+    {
+        "Region": "District 260 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.8",
+            "Alkalinity_TAC_mmol_l": "1.35",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "508",
+            "Sodium_Na_mg_l": "21.6",
+            "Chlorides_Cl_mg_l": "33.3",
+            "Calcium_Ca_mg_l": "77.5"
+        }
+    },
+    {
+        "Region": "District 261 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.8",
+            "Alkalinity_TAC_mmol_l": "3.63",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "260",
+            "Sodium_Na_mg_l": "13.8",
+            "Chlorides_Cl_mg_l": "9.2",
+            "Calcium_Ca_mg_l": "33.4"
+        }
+    },
+    {
+        "Region": "District 262 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.3",
+            "Alkalinity_TAC_mmol_l": "1.59",
+            "pH": "6.9",
+            "TDS_Conductivity_uS_cm": "159",
+            "Sodium_Na_mg_l": "5.1",
+            "Chlorides_Cl_mg_l": "5.6",
+            "Calcium_Ca_mg_l": "12.7"
+        }
+    },
+    {
+        "Region": "District 263 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.9",
+            "Alkalinity_TAC_mmol_l": "2.07",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "509",
+            "Sodium_Na_mg_l": "31.5",
+            "Chlorides_Cl_mg_l": "20.1",
+            "Calcium_Ca_mg_l": "93.5"
+        }
+    },
+    {
+        "Region": "District 264 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.5",
+            "Alkalinity_TAC_mmol_l": "3.86",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "641",
+            "Sodium_Na_mg_l": "16.8",
+            "Chlorides_Cl_mg_l": "39.3",
+            "Calcium_Ca_mg_l": "103.1"
+        }
+    },
+    {
+        "Region": "District 265 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.0",
+            "Alkalinity_TAC_mmol_l": "3.24",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "571",
+            "Sodium_Na_mg_l": "17.0",
+            "Chlorides_Cl_mg_l": "29.2",
+            "Calcium_Ca_mg_l": "80.8"
+        }
+    },
+    {
+        "Region": "District 266 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.2",
+            "Alkalinity_TAC_mmol_l": "3.51",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "584",
+            "Sodium_Na_mg_l": "29.5",
+            "Chlorides_Cl_mg_l": "29.3",
+            "Calcium_Ca_mg_l": "63.5"
+        }
+    },
+    {
+        "Region": "District 267 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "19.6",
+            "Alkalinity_TAC_mmol_l": "1.00",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "682",
+            "Sodium_Na_mg_l": "30.0",
+            "Chlorides_Cl_mg_l": "24.7",
+            "Calcium_Ca_mg_l": "60.1"
+        }
+    },
+    {
+        "Region": "District 268 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "19.1",
+            "Alkalinity_TAC_mmol_l": "3.45",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "675",
+            "Sodium_Na_mg_l": "33.7",
+            "Chlorides_Cl_mg_l": "35.9",
+            "Calcium_Ca_mg_l": "76.4"
+        }
+    },
+    {
+        "Region": "District 269 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.2",
+            "Alkalinity_TAC_mmol_l": "3.70",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "529",
+            "Sodium_Na_mg_l": "28.1",
+            "Chlorides_Cl_mg_l": "21.4",
+            "Calcium_Ca_mg_l": "77.5"
+        }
+    },
+    {
+        "Region": "District 270 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "19.2",
+            "Alkalinity_TAC_mmol_l": "1.29",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "651",
+            "Sodium_Na_mg_l": "19.3",
+            "Chlorides_Cl_mg_l": "22.2",
+            "Calcium_Ca_mg_l": "72.9"
+        }
+    },
+    {
+        "Region": "District 271 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.3",
+            "Alkalinity_TAC_mmol_l": "3.18",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "188",
+            "Sodium_Na_mg_l": "6.1",
+            "Chlorides_Cl_mg_l": "11.0",
+            "Calcium_Ca_mg_l": "18.9"
+        }
+    },
+    {
+        "Region": "District 272 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.0",
+            "Alkalinity_TAC_mmol_l": "2.79",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "451",
+            "Sodium_Na_mg_l": "32.6",
+            "Chlorides_Cl_mg_l": "21.1",
+            "Calcium_Ca_mg_l": "73.7"
+        }
+    },
+    {
+        "Region": "District 273 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "19.8",
+            "Alkalinity_TAC_mmol_l": "2.65",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "691",
+            "Sodium_Na_mg_l": "28.5",
+            "Chlorides_Cl_mg_l": "29.5",
+            "Calcium_Ca_mg_l": "66.6"
+        }
+    },
+    {
+        "Region": "District 274 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.7",
+            "Alkalinity_TAC_mmol_l": "2.54",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "171",
+            "Sodium_Na_mg_l": "6.0",
+            "Chlorides_Cl_mg_l": "7.0",
+            "Calcium_Ca_mg_l": "25.3"
+        }
+    },
+    {
+        "Region": "District 275 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "19.2",
+            "Alkalinity_TAC_mmol_l": "2.19",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "701",
+            "Sodium_Na_mg_l": "30.3",
+            "Chlorides_Cl_mg_l": "26.6",
+            "Calcium_Ca_mg_l": "68.3"
+        }
+    },
+    {
+        "Region": "District 276 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.2",
+            "Alkalinity_TAC_mmol_l": "2.73",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "483",
+            "Sodium_Na_mg_l": "23.0",
+            "Chlorides_Cl_mg_l": "37.4",
+            "Calcium_Ca_mg_l": "95.6"
+        }
+    },
+    {
+        "Region": "District 277 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.8",
+            "Alkalinity_TAC_mmol_l": "2.10",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "633",
+            "Sodium_Na_mg_l": "29.6",
+            "Chlorides_Cl_mg_l": "39.1",
+            "Calcium_Ca_mg_l": "73.4"
+        }
+    },
+    {
+        "Region": "District 278 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.6",
+            "Alkalinity_TAC_mmol_l": "1.96",
+            "pH": "6.9",
+            "TDS_Conductivity_uS_cm": "174",
+            "Sodium_Na_mg_l": "5.6",
+            "Chlorides_Cl_mg_l": "7.2",
+            "Calcium_Ca_mg_l": "25.2"
+        }
+    },
+    {
+        "Region": "District 279 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.4",
+            "Alkalinity_TAC_mmol_l": "2.37",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "327",
+            "Sodium_Na_mg_l": "14.1",
+            "Chlorides_Cl_mg_l": "14.7",
+            "Calcium_Ca_mg_l": "18.0"
+        }
+    },
+    {
+        "Region": "District 280 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.3",
+            "Alkalinity_TAC_mmol_l": "3.32",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "475",
+            "Sodium_Na_mg_l": "20.6",
+            "Chlorides_Cl_mg_l": "21.5",
+            "Calcium_Ca_mg_l": "85.8"
+        }
+    },
+    {
+        "Region": "District 281 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.9",
+            "Alkalinity_TAC_mmol_l": "3.68",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "508",
+            "Sodium_Na_mg_l": "21.4",
+            "Chlorides_Cl_mg_l": "36.2",
+            "Calcium_Ca_mg_l": "88.7"
+        }
+    },
+    {
+        "Region": "District 282 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.0",
+            "Alkalinity_TAC_mmol_l": "1.15",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "567",
+            "Sodium_Na_mg_l": "20.0",
+            "Chlorides_Cl_mg_l": "39.3",
+            "Calcium_Ca_mg_l": "89.4"
+        }
+    },
+    {
+        "Region": "District 283 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "19.0",
+            "Alkalinity_TAC_mmol_l": "1.21",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "656",
+            "Sodium_Na_mg_l": "32.7",
+            "Chlorides_Cl_mg_l": "21.8",
+            "Calcium_Ca_mg_l": "61.7"
+        }
+    },
+    {
+        "Region": "District 284 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.3",
+            "Alkalinity_TAC_mmol_l": "1.19",
+            "pH": "6.9",
+            "TDS_Conductivity_uS_cm": "136",
+            "Sodium_Na_mg_l": "13.9",
+            "Chlorides_Cl_mg_l": "13.2",
+            "Calcium_Ca_mg_l": "31.8"
+        }
+    },
+    {
+        "Region": "District 285 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "19.7",
+            "Alkalinity_TAC_mmol_l": "1.65",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "697",
+            "Sodium_Na_mg_l": "31.8",
+            "Chlorides_Cl_mg_l": "25.4",
+            "Calcium_Ca_mg_l": "95.4"
+        }
+    },
+    {
+        "Region": "District 286 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "5.5",
+            "Alkalinity_TAC_mmol_l": "2.24",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "236",
+            "Sodium_Na_mg_l": "8.2",
+            "Chlorides_Cl_mg_l": "11.5",
+            "Calcium_Ca_mg_l": "38.7"
+        }
+    },
+    {
+        "Region": "District 287 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "19.0",
+            "Alkalinity_TAC_mmol_l": "1.85",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "705",
+            "Sodium_Na_mg_l": "15.4",
+            "Chlorides_Cl_mg_l": "28.0",
+            "Calcium_Ca_mg_l": "78.4"
+        }
+    },
+    {
+        "Region": "District 288 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.8",
+            "Alkalinity_TAC_mmol_l": "3.42",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "626",
+            "Sodium_Na_mg_l": "23.5",
+            "Chlorides_Cl_mg_l": "39.9",
+            "Calcium_Ca_mg_l": "73.5"
+        }
+    },
+    {
+        "Region": "District 289 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "5.2",
+            "Alkalinity_TAC_mmol_l": "1.65",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "218",
+            "Sodium_Na_mg_l": "10.5",
+            "Chlorides_Cl_mg_l": "8.8",
+            "Calcium_Ca_mg_l": "21.0"
+        }
+    },
+    {
+        "Region": "District 290 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.6",
+            "Alkalinity_TAC_mmol_l": "1.98",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "467",
+            "Sodium_Na_mg_l": "27.3",
+            "Chlorides_Cl_mg_l": "37.3",
+            "Calcium_Ca_mg_l": "71.3"
+        }
+    },
+    {
+        "Region": "District 291 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.6",
+            "Alkalinity_TAC_mmol_l": "2.62",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "318",
+            "Sodium_Na_mg_l": "7.3",
+            "Chlorides_Cl_mg_l": "7.0",
+            "Calcium_Ca_mg_l": "16.1"
+        }
+    },
+    {
+        "Region": "District 292 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "19.5",
+            "Alkalinity_TAC_mmol_l": "1.58",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "721",
+            "Sodium_Na_mg_l": "19.8",
+            "Chlorides_Cl_mg_l": "21.4",
+            "Calcium_Ca_mg_l": "88.4"
+        }
+    },
+    {
+        "Region": "District 293 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.7",
+            "Alkalinity_TAC_mmol_l": "1.94",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "334",
+            "Sodium_Na_mg_l": "8.2",
+            "Chlorides_Cl_mg_l": "9.1",
+            "Calcium_Ca_mg_l": "24.7"
+        }
+    },
+    {
+        "Region": "District 294 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.5",
+            "Alkalinity_TAC_mmol_l": "1.65",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "649",
+            "Sodium_Na_mg_l": "31.6",
+            "Chlorides_Cl_mg_l": "30.5",
+            "Calcium_Ca_mg_l": "84.3"
+        }
+    },
+    {
+        "Region": "District 295 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.8",
+            "Alkalinity_TAC_mmol_l": "2.66",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "570",
+            "Sodium_Na_mg_l": "17.3",
+            "Chlorides_Cl_mg_l": "24.5",
+            "Calcium_Ca_mg_l": "102.7"
+        }
+    },
+    {
+        "Region": "District 296 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "5.0",
+            "Alkalinity_TAC_mmol_l": "1.77",
+            "pH": "6.9",
+            "TDS_Conductivity_uS_cm": "194",
+            "Sodium_Na_mg_l": "9.9",
+            "Chlorides_Cl_mg_l": "7.3",
+            "Calcium_Ca_mg_l": "15.8"
+        }
+    },
+    {
+        "Region": "District 297 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.3",
+            "Alkalinity_TAC_mmol_l": "2.08",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "425",
+            "Sodium_Na_mg_l": "18.7",
+            "Chlorides_Cl_mg_l": "34.0",
+            "Calcium_Ca_mg_l": "104.4"
+        }
+    },
+    {
+        "Region": "District 298 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.5",
+            "Alkalinity_TAC_mmol_l": "3.96",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "460",
+            "Sodium_Na_mg_l": "26.0",
+            "Chlorides_Cl_mg_l": "31.0",
+            "Calcium_Ca_mg_l": "82.5"
+        }
+    },
+    {
+        "Region": "District 299 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "5.7",
+            "Alkalinity_TAC_mmol_l": "1.80",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "252",
+            "Sodium_Na_mg_l": "14.4",
+            "Chlorides_Cl_mg_l": "6.0",
+            "Calcium_Ca_mg_l": "32.4"
+        }
+    },
+    {
+        "Region": "District 300 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.1",
+            "Alkalinity_TAC_mmol_l": "1.87",
+            "pH": "6.9",
+            "TDS_Conductivity_uS_cm": "166",
+            "Sodium_Na_mg_l": "13.8",
+            "Chlorides_Cl_mg_l": "11.8",
+            "Calcium_Ca_mg_l": "36.4"
+        }
+    },
+    {
+        "Region": "District 301 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.2",
+            "Alkalinity_TAC_mmol_l": "1.63",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "561",
+            "Sodium_Na_mg_l": "25.1",
+            "Chlorides_Cl_mg_l": "29.8",
+            "Calcium_Ca_mg_l": "60.1"
+        }
+    },
+    {
+        "Region": "District 302 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.6",
+            "Alkalinity_TAC_mmol_l": "3.91",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "184",
+            "Sodium_Na_mg_l": "9.3",
+            "Chlorides_Cl_mg_l": "9.1",
+            "Calcium_Ca_mg_l": "10.9"
+        }
+    },
+    {
+        "Region": "District 303 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.6",
+            "Alkalinity_TAC_mmol_l": "2.13",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "639",
+            "Sodium_Na_mg_l": "28.1",
+            "Chlorides_Cl_mg_l": "23.0",
+            "Calcium_Ca_mg_l": "71.7"
+        }
+    },
+    {
+        "Region": "District 304 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.4",
+            "Alkalinity_TAC_mmol_l": "2.33",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "435",
+            "Sodium_Na_mg_l": "17.6",
+            "Chlorides_Cl_mg_l": "33.1",
+            "Calcium_Ca_mg_l": "74.3"
+        }
+    },
+    {
+        "Region": "District 305 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "18.0",
+            "Alkalinity_TAC_mmol_l": "3.20",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "607",
+            "Sodium_Na_mg_l": "30.2",
+            "Chlorides_Cl_mg_l": "24.7",
+            "Calcium_Ca_mg_l": "61.7"
+        }
+    },
+    {
+        "Region": "District 306 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.1",
+            "Alkalinity_TAC_mmol_l": "1.05",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "174",
+            "Sodium_Na_mg_l": "9.7",
+            "Chlorides_Cl_mg_l": "8.4",
+            "Calcium_Ca_mg_l": "17.9"
+        }
+    },
+    {
+        "Region": "District 307 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.2",
+            "Alkalinity_TAC_mmol_l": "3.65",
+            "pH": "6.9",
+            "TDS_Conductivity_uS_cm": "166",
+            "Sodium_Na_mg_l": "8.7",
+            "Chlorides_Cl_mg_l": "6.1",
+            "Calcium_Ca_mg_l": "10.3"
+        }
+    },
+    {
+        "Region": "District 308 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.1",
+            "Alkalinity_TAC_mmol_l": "1.02",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "145",
+            "Sodium_Na_mg_l": "9.2",
+            "Chlorides_Cl_mg_l": "10.6",
+            "Calcium_Ca_mg_l": "24.4"
+        }
+    },
+    {
+        "Region": "District 309 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.3",
+            "Alkalinity_TAC_mmol_l": "2.98",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "597",
+            "Sodium_Na_mg_l": "15.9",
+            "Chlorides_Cl_mg_l": "28.6",
+            "Calcium_Ca_mg_l": "92.3"
+        }
+    },
+    {
+        "Region": "District 310 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "5.3",
+            "Alkalinity_TAC_mmol_l": "3.28",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "261",
+            "Sodium_Na_mg_l": "5.3",
+            "Chlorides_Cl_mg_l": "14.4",
+            "Calcium_Ca_mg_l": "28.7"
+        }
+    },
+    {
+        "Region": "District 311 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.1",
+            "Alkalinity_TAC_mmol_l": "3.74",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "514",
+            "Sodium_Na_mg_l": "16.6",
+            "Chlorides_Cl_mg_l": "32.6",
+            "Calcium_Ca_mg_l": "92.4"
+        }
+    },
+    {
+        "Region": "District 312 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.3",
+            "Alkalinity_TAC_mmol_l": "3.99",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "601",
+            "Sodium_Na_mg_l": "21.8",
+            "Chlorides_Cl_mg_l": "21.9",
+            "Calcium_Ca_mg_l": "92.2"
+        }
+    },
+    {
+        "Region": "District 313 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.4",
+            "Alkalinity_TAC_mmol_l": "2.40",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "192",
+            "Sodium_Na_mg_l": "10.9",
+            "Chlorides_Cl_mg_l": "6.3",
+            "Calcium_Ca_mg_l": "15.1"
+        }
+    },
+    {
+        "Region": "District 314 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.1",
+            "Alkalinity_TAC_mmol_l": "3.20",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "489",
+            "Sodium_Na_mg_l": "16.0",
+            "Chlorides_Cl_mg_l": "36.6",
+            "Calcium_Ca_mg_l": "76.2"
+        }
+    },
+    {
+        "Region": "District 315 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.6",
+            "Alkalinity_TAC_mmol_l": "3.00",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "503",
+            "Sodium_Na_mg_l": "30.0",
+            "Chlorides_Cl_mg_l": "34.1",
+            "Calcium_Ca_mg_l": "105.7"
+        }
+    },
+    {
+        "Region": "District 316 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.7",
+            "Alkalinity_TAC_mmol_l": "3.36",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "537",
+            "Sodium_Na_mg_l": "21.3",
+            "Chlorides_Cl_mg_l": "32.6",
+            "Calcium_Ca_mg_l": "75.0"
+        }
+    },
+    {
+        "Region": "District 317 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "19.8",
+            "Alkalinity_TAC_mmol_l": "1.45",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "714",
+            "Sodium_Na_mg_l": "16.0",
+            "Chlorides_Cl_mg_l": "26.5",
+            "Calcium_Ca_mg_l": "72.3"
+        }
+    },
+    {
+        "Region": "District 318 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.0",
+            "Alkalinity_TAC_mmol_l": "3.29",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "178",
+            "Sodium_Na_mg_l": "11.1",
+            "Chlorides_Cl_mg_l": "10.5",
+            "Calcium_Ca_mg_l": "18.3"
+        }
+    },
+    {
+        "Region": "District 319 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.4",
+            "Alkalinity_TAC_mmol_l": "2.68",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "170",
+            "Sodium_Na_mg_l": "6.2",
+            "Chlorides_Cl_mg_l": "12.5",
+            "Calcium_Ca_mg_l": "14.1"
+        }
+    },
+    {
+        "Region": "District 320 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.5",
+            "Alkalinity_TAC_mmol_l": "2.06",
+            "pH": "6.8",
+            "TDS_Conductivity_uS_cm": "232",
+            "Sodium_Na_mg_l": "13.8",
+            "Chlorides_Cl_mg_l": "10.3",
+            "Calcium_Ca_mg_l": "33.7"
+        }
+    },
+    {
+        "Region": "District 321 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.3",
+            "Alkalinity_TAC_mmol_l": "3.98",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "559",
+            "Sodium_Na_mg_l": "32.0",
+            "Chlorides_Cl_mg_l": "38.5",
+            "Calcium_Ca_mg_l": "98.5"
+        }
+    },
+    {
+        "Region": "District 322 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.3",
+            "Alkalinity_TAC_mmol_l": "1.60",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "169",
+            "Sodium_Na_mg_l": "14.4",
+            "Chlorides_Cl_mg_l": "12.8",
+            "Calcium_Ca_mg_l": "28.3"
+        }
+    },
+    {
+        "Region": "District 323 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.9",
+            "Alkalinity_TAC_mmol_l": "3.93",
+            "pH": "6.9",
+            "TDS_Conductivity_uS_cm": "347",
+            "Sodium_Na_mg_l": "14.6",
+            "Chlorides_Cl_mg_l": "8.1",
+            "Calcium_Ca_mg_l": "35.6"
+        }
+    },
+    {
+        "Region": "District 324 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.7",
+            "Alkalinity_TAC_mmol_l": "3.43",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "497",
+            "Sodium_Na_mg_l": "24.8",
+            "Chlorides_Cl_mg_l": "21.1",
+            "Calcium_Ca_mg_l": "79.8"
+        }
+    },
+    {
+        "Region": "District 325 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "18.5",
+            "Alkalinity_TAC_mmol_l": "3.91",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "629",
+            "Sodium_Na_mg_l": "23.0",
+            "Chlorides_Cl_mg_l": "26.8",
+            "Calcium_Ca_mg_l": "95.8"
+        }
+    },
+    {
+        "Region": "District 326 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "18.1",
+            "Alkalinity_TAC_mmol_l": "1.04",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "637",
+            "Sodium_Na_mg_l": "26.3",
+            "Chlorides_Cl_mg_l": "39.5",
+            "Calcium_Ca_mg_l": "100.4"
+        }
+    },
+    {
+        "Region": "District 327 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.4",
+            "Alkalinity_TAC_mmol_l": "2.34",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "288",
+            "Sodium_Na_mg_l": "10.2",
+            "Chlorides_Cl_mg_l": "8.1",
+            "Calcium_Ca_mg_l": "12.7"
+        }
+    },
+    {
+        "Region": "District 328 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.8",
+            "Alkalinity_TAC_mmol_l": "2.52",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "499",
+            "Sodium_Na_mg_l": "18.6",
+            "Chlorides_Cl_mg_l": "21.0",
+            "Calcium_Ca_mg_l": "92.5"
+        }
+    },
+    {
+        "Region": "District 329 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.4",
+            "Alkalinity_TAC_mmol_l": "1.40",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "462",
+            "Sodium_Na_mg_l": "17.9",
+            "Chlorides_Cl_mg_l": "36.7",
+            "Calcium_Ca_mg_l": "94.7"
+        }
+    },
+    {
+        "Region": "District 330 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.7",
+            "Alkalinity_TAC_mmol_l": "3.77",
+            "pH": "6.8",
+            "TDS_Conductivity_uS_cm": "286",
+            "Sodium_Na_mg_l": "5.8",
+            "Chlorides_Cl_mg_l": "5.3",
+            "Calcium_Ca_mg_l": "30.4"
+        }
+    },
+    {
+        "Region": "District 331 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.3",
+            "Alkalinity_TAC_mmol_l": "1.86",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "542",
+            "Sodium_Na_mg_l": "28.7",
+            "Chlorides_Cl_mg_l": "25.1",
+            "Calcium_Ca_mg_l": "106.2"
+        }
+    },
+    {
+        "Region": "District 332 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.5",
+            "Alkalinity_TAC_mmol_l": "1.98",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "529",
+            "Sodium_Na_mg_l": "23.5",
+            "Chlorides_Cl_mg_l": "34.8",
+            "Calcium_Ca_mg_l": "61.8"
+        }
+    },
+    {
+        "Region": "District 333 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "5.3",
+            "Alkalinity_TAC_mmol_l": "1.21",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "217",
+            "Sodium_Na_mg_l": "6.8",
+            "Chlorides_Cl_mg_l": "13.5",
+            "Calcium_Ca_mg_l": "26.9"
+        }
+    },
+    {
+        "Region": "District 334 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.3",
+            "Alkalinity_TAC_mmol_l": "2.34",
+            "pH": "6.9",
+            "TDS_Conductivity_uS_cm": "156",
+            "Sodium_Na_mg_l": "11.6",
+            "Chlorides_Cl_mg_l": "11.0",
+            "Calcium_Ca_mg_l": "17.7"
+        }
+    },
+    {
+        "Region": "District 335 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.4",
+            "Alkalinity_TAC_mmol_l": "3.31",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "315",
+            "Sodium_Na_mg_l": "6.2",
+            "Chlorides_Cl_mg_l": "11.4",
+            "Calcium_Ca_mg_l": "33.6"
+        }
+    },
+    {
+        "Region": "District 336 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.2",
+            "Alkalinity_TAC_mmol_l": "1.65",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "533",
+            "Sodium_Na_mg_l": "30.0",
+            "Chlorides_Cl_mg_l": "34.0",
+            "Calcium_Ca_mg_l": "69.0"
+        }
+    },
+    {
+        "Region": "District 337 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.8",
+            "Alkalinity_TAC_mmol_l": "1.83",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "239",
+            "Sodium_Na_mg_l": "11.9",
+            "Chlorides_Cl_mg_l": "14.6",
+            "Calcium_Ca_mg_l": "22.6"
+        }
+    },
+    {
+        "Region": "District 338 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.2",
+            "Alkalinity_TAC_mmol_l": "1.68",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "325",
+            "Sodium_Na_mg_l": "12.5",
+            "Chlorides_Cl_mg_l": "14.7",
+            "Calcium_Ca_mg_l": "13.1"
+        }
+    },
+    {
+        "Region": "District 339 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "18.5",
+            "Alkalinity_TAC_mmol_l": "2.41",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "640",
+            "Sodium_Na_mg_l": "20.3",
+            "Chlorides_Cl_mg_l": "35.4",
+            "Calcium_Ca_mg_l": "77.8"
+        }
+    },
+    {
+        "Region": "District 340 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "19.8",
+            "Alkalinity_TAC_mmol_l": "1.67",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "691",
+            "Sodium_Na_mg_l": "15.9",
+            "Chlorides_Cl_mg_l": "35.6",
+            "Calcium_Ca_mg_l": "66.7"
+        }
+    },
+    {
+        "Region": "District 341 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "5.1",
+            "Alkalinity_TAC_mmol_l": "1.05",
+            "pH": "6.9",
+            "TDS_Conductivity_uS_cm": "245",
+            "Sodium_Na_mg_l": "13.0",
+            "Chlorides_Cl_mg_l": "12.9",
+            "Calcium_Ca_mg_l": "19.3"
+        }
+    },
+    {
+        "Region": "District 342 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.8",
+            "Alkalinity_TAC_mmol_l": "1.87",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "174",
+            "Sodium_Na_mg_l": "6.3",
+            "Chlorides_Cl_mg_l": "13.0",
+            "Calcium_Ca_mg_l": "33.1"
+        }
+    },
+    {
+        "Region": "District 343 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.2",
+            "Alkalinity_TAC_mmol_l": "1.37",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "627",
+            "Sodium_Na_mg_l": "21.6",
+            "Chlorides_Cl_mg_l": "34.7",
+            "Calcium_Ca_mg_l": "83.3"
+        }
+    },
+    {
+        "Region": "District 344 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.4",
+            "Alkalinity_TAC_mmol_l": "2.26",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "597",
+            "Sodium_Na_mg_l": "25.0",
+            "Chlorides_Cl_mg_l": "20.0",
+            "Calcium_Ca_mg_l": "100.8"
+        }
+    },
+    {
+        "Region": "District 345 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.6",
+            "Alkalinity_TAC_mmol_l": "3.10",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "612",
+            "Sodium_Na_mg_l": "32.9",
+            "Chlorides_Cl_mg_l": "34.3",
+            "Calcium_Ca_mg_l": "98.7"
+        }
+    },
+    {
+        "Region": "District 346 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.1",
+            "Alkalinity_TAC_mmol_l": "2.97",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "164",
+            "Sodium_Na_mg_l": "10.9",
+            "Chlorides_Cl_mg_l": "5.8",
+            "Calcium_Ca_mg_l": "33.6"
+        }
+    },
+    {
+        "Region": "District 347 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.2",
+            "Alkalinity_TAC_mmol_l": "2.03",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "596",
+            "Sodium_Na_mg_l": "30.5",
+            "Chlorides_Cl_mg_l": "24.3",
+            "Calcium_Ca_mg_l": "69.8"
+        }
+    },
+    {
+        "Region": "District 348 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.2",
+            "Alkalinity_TAC_mmol_l": "2.83",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "457",
+            "Sodium_Na_mg_l": "17.7",
+            "Chlorides_Cl_mg_l": "29.5",
+            "Calcium_Ca_mg_l": "80.4"
+        }
+    },
+    {
+        "Region": "District 349 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.5",
+            "Alkalinity_TAC_mmol_l": "2.25",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "535",
+            "Sodium_Na_mg_l": "33.1",
+            "Chlorides_Cl_mg_l": "39.7",
+            "Calcium_Ca_mg_l": "101.8"
+        }
+    },
+    {
+        "Region": "District 350 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.2",
+            "Alkalinity_TAC_mmol_l": "2.90",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "275",
+            "Sodium_Na_mg_l": "13.9",
+            "Chlorides_Cl_mg_l": "13.1",
+            "Calcium_Ca_mg_l": "27.5"
+        }
+    },
+    {
+        "Region": "District 351 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "19.3",
+            "Alkalinity_TAC_mmol_l": "1.23",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "679",
+            "Sodium_Na_mg_l": "26.3",
+            "Chlorides_Cl_mg_l": "32.3",
+            "Calcium_Ca_mg_l": "67.1"
+        }
+    },
+    {
+        "Region": "District 352 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.9",
+            "Alkalinity_TAC_mmol_l": "2.35",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "292",
+            "Sodium_Na_mg_l": "5.4",
+            "Chlorides_Cl_mg_l": "10.0",
+            "Calcium_Ca_mg_l": "11.4"
+        }
+    },
+    {
+        "Region": "District 353 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "18.7",
+            "Alkalinity_TAC_mmol_l": "2.20",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "643",
+            "Sodium_Na_mg_l": "15.6",
+            "Chlorides_Cl_mg_l": "33.9",
+            "Calcium_Ca_mg_l": "71.7"
+        }
+    },
+    {
+        "Region": "District 354 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.4",
+            "Alkalinity_TAC_mmol_l": "1.49",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "596",
+            "Sodium_Na_mg_l": "21.6",
+            "Chlorides_Cl_mg_l": "25.9",
+            "Calcium_Ca_mg_l": "105.4"
+        }
+    },
+    {
+        "Region": "District 355 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.6",
+            "Alkalinity_TAC_mmol_l": "1.63",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "249",
+            "Sodium_Na_mg_l": "11.0",
+            "Chlorides_Cl_mg_l": "11.2",
+            "Calcium_Ca_mg_l": "15.3"
+        }
+    },
+    {
+        "Region": "District 356 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.7",
+            "Alkalinity_TAC_mmol_l": "3.53",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "541",
+            "Sodium_Na_mg_l": "15.0",
+            "Chlorides_Cl_mg_l": "21.5",
+            "Calcium_Ca_mg_l": "103.7"
+        }
+    },
+    {
+        "Region": "District 357 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "19.3",
+            "Alkalinity_TAC_mmol_l": "3.68",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "716",
+            "Sodium_Na_mg_l": "18.1",
+            "Chlorides_Cl_mg_l": "21.3",
+            "Calcium_Ca_mg_l": "63.3"
+        }
+    },
+    {
+        "Region": "District 358 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "5.6",
+            "Alkalinity_TAC_mmol_l": "3.79",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "273",
+            "Sodium_Na_mg_l": "8.8",
+            "Chlorides_Cl_mg_l": "10.4",
+            "Calcium_Ca_mg_l": "25.9"
+        }
+    },
+    {
+        "Region": "District 359 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.7",
+            "Alkalinity_TAC_mmol_l": "3.49",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "623",
+            "Sodium_Na_mg_l": "26.9",
+            "Chlorides_Cl_mg_l": "26.9",
+            "Calcium_Ca_mg_l": "63.5"
+        }
+    },
+    {
+        "Region": "District 360 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.5",
+            "Alkalinity_TAC_mmol_l": "1.94",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "280",
+            "Sodium_Na_mg_l": "14.1",
+            "Chlorides_Cl_mg_l": "6.6",
+            "Calcium_Ca_mg_l": "36.1"
+        }
+    },
+    {
+        "Region": "District 361 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.7",
+            "Alkalinity_TAC_mmol_l": "3.01",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "249",
+            "Sodium_Na_mg_l": "6.8",
+            "Chlorides_Cl_mg_l": "10.5",
+            "Calcium_Ca_mg_l": "23.5"
+        }
+    },
+    {
+        "Region": "District 362 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "5.8",
+            "Alkalinity_TAC_mmol_l": "2.40",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "256",
+            "Sodium_Na_mg_l": "7.2",
+            "Chlorides_Cl_mg_l": "8.8",
+            "Calcium_Ca_mg_l": "13.2"
+        }
+    },
+    {
+        "Region": "District 363 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.8",
+            "Alkalinity_TAC_mmol_l": "2.14",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "617",
+            "Sodium_Na_mg_l": "34.2",
+            "Chlorides_Cl_mg_l": "31.2",
+            "Calcium_Ca_mg_l": "86.3"
+        }
+    },
+    {
+        "Region": "District 364 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.8",
+            "Alkalinity_TAC_mmol_l": "2.53",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "490",
+            "Sodium_Na_mg_l": "19.8",
+            "Chlorides_Cl_mg_l": "32.7",
+            "Calcium_Ca_mg_l": "77.5"
+        }
+    },
+    {
+        "Region": "District 365 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.3",
+            "Alkalinity_TAC_mmol_l": "2.34",
+            "pH": "6.8",
+            "TDS_Conductivity_uS_cm": "262",
+            "Sodium_Na_mg_l": "9.1",
+            "Chlorides_Cl_mg_l": "5.9",
+            "Calcium_Ca_mg_l": "21.4"
+        }
+    },
+    {
+        "Region": "District 366 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.2",
+            "Alkalinity_TAC_mmol_l": "1.75",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "293",
+            "Sodium_Na_mg_l": "7.8",
+            "Chlorides_Cl_mg_l": "6.3",
+            "Calcium_Ca_mg_l": "38.9"
+        }
+    },
+    {
+        "Region": "District 367 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.5",
+            "Alkalinity_TAC_mmol_l": "3.70",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "438",
+            "Sodium_Na_mg_l": "32.6",
+            "Chlorides_Cl_mg_l": "25.7",
+            "Calcium_Ca_mg_l": "84.0"
+        }
+    },
+    {
+        "Region": "District 368 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "19.2",
+            "Alkalinity_TAC_mmol_l": "3.67",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "668",
+            "Sodium_Na_mg_l": "34.9",
+            "Chlorides_Cl_mg_l": "36.8",
+            "Calcium_Ca_mg_l": "103.2"
+        }
+    },
+    {
+        "Region": "District 369 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "19.2",
+            "Alkalinity_TAC_mmol_l": "1.65",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "653",
+            "Sodium_Na_mg_l": "26.8",
+            "Chlorides_Cl_mg_l": "38.3",
+            "Calcium_Ca_mg_l": "70.7"
+        }
+    },
+    {
+        "Region": "District 370 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.8",
+            "Alkalinity_TAC_mmol_l": "1.93",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "602",
+            "Sodium_Na_mg_l": "32.0",
+            "Chlorides_Cl_mg_l": "20.7",
+            "Calcium_Ca_mg_l": "78.1"
+        }
+    },
+    {
+        "Region": "District 371 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.6",
+            "Alkalinity_TAC_mmol_l": "1.82",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "293",
+            "Sodium_Na_mg_l": "8.5",
+            "Chlorides_Cl_mg_l": "12.9",
+            "Calcium_Ca_mg_l": "28.1"
+        }
+    },
+    {
+        "Region": "District 372 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.4",
+            "Alkalinity_TAC_mmol_l": "1.65",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "475",
+            "Sodium_Na_mg_l": "20.2",
+            "Chlorides_Cl_mg_l": "29.0",
+            "Calcium_Ca_mg_l": "82.2"
+        }
+    },
+    {
+        "Region": "District 373 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.5",
+            "Alkalinity_TAC_mmol_l": "2.03",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "515",
+            "Sodium_Na_mg_l": "29.5",
+            "Chlorides_Cl_mg_l": "35.7",
+            "Calcium_Ca_mg_l": "105.0"
+        }
+    },
+    {
+        "Region": "District 374 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.9",
+            "Alkalinity_TAC_mmol_l": "2.54",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "635",
+            "Sodium_Na_mg_l": "16.0",
+            "Chlorides_Cl_mg_l": "28.7",
+            "Calcium_Ca_mg_l": "102.6"
+        }
+    },
+    {
+        "Region": "District 375 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.2",
+            "Alkalinity_TAC_mmol_l": "2.47",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "591",
+            "Sodium_Na_mg_l": "27.6",
+            "Chlorides_Cl_mg_l": "24.5",
+            "Calcium_Ca_mg_l": "107.9"
+        }
+    },
+    {
+        "Region": "District 376 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.4",
+            "Alkalinity_TAC_mmol_l": "1.63",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "488",
+            "Sodium_Na_mg_l": "32.5",
+            "Chlorides_Cl_mg_l": "38.6",
+            "Calcium_Ca_mg_l": "105.4"
+        }
+    },
+    {
+        "Region": "District 377 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "18.4",
+            "Alkalinity_TAC_mmol_l": "2.93",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "670",
+            "Sodium_Na_mg_l": "25.7",
+            "Chlorides_Cl_mg_l": "32.6",
+            "Calcium_Ca_mg_l": "66.7"
+        }
+    },
+    {
+        "Region": "District 378 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.5",
+            "Alkalinity_TAC_mmol_l": "1.12",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "554",
+            "Sodium_Na_mg_l": "21.9",
+            "Chlorides_Cl_mg_l": "30.7",
+            "Calcium_Ca_mg_l": "71.6"
+        }
+    },
+    {
+        "Region": "District 379 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.0",
+            "Alkalinity_TAC_mmol_l": "2.57",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "504",
+            "Sodium_Na_mg_l": "16.0",
+            "Chlorides_Cl_mg_l": "21.3",
+            "Calcium_Ca_mg_l": "76.5"
+        }
+    },
+    {
+        "Region": "District 380 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.2",
+            "Alkalinity_TAC_mmol_l": "2.69",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "456",
+            "Sodium_Na_mg_l": "28.0",
+            "Chlorides_Cl_mg_l": "39.2",
+            "Calcium_Ca_mg_l": "71.3"
+        }
+    },
+    {
+        "Region": "District 381 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "18.4",
+            "Alkalinity_TAC_mmol_l": "3.39",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "659",
+            "Sodium_Na_mg_l": "22.7",
+            "Chlorides_Cl_mg_l": "25.8",
+            "Calcium_Ca_mg_l": "82.2"
+        }
+    },
+    {
+        "Region": "District 382 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "18.8",
+            "Alkalinity_TAC_mmol_l": "1.27",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "672",
+            "Sodium_Na_mg_l": "23.7",
+            "Chlorides_Cl_mg_l": "33.5",
+            "Calcium_Ca_mg_l": "73.7"
+        }
+    },
+    {
+        "Region": "District 383 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.2",
+            "Alkalinity_TAC_mmol_l": "3.71",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "480",
+            "Sodium_Na_mg_l": "24.2",
+            "Chlorides_Cl_mg_l": "22.7",
+            "Calcium_Ca_mg_l": "99.7"
+        }
+    },
+    {
+        "Region": "District 384 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "18.1",
+            "Alkalinity_TAC_mmol_l": "1.12",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "662",
+            "Sodium_Na_mg_l": "21.6",
+            "Chlorides_Cl_mg_l": "36.3",
+            "Calcium_Ca_mg_l": "95.1"
+        }
+    },
+    {
+        "Region": "District 385 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.7",
+            "Alkalinity_TAC_mmol_l": "1.77",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "607",
+            "Sodium_Na_mg_l": "28.1",
+            "Chlorides_Cl_mg_l": "35.0",
+            "Calcium_Ca_mg_l": "96.8"
+        }
+    },
+    {
+        "Region": "District 386 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.7",
+            "Alkalinity_TAC_mmol_l": "1.63",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "576",
+            "Sodium_Na_mg_l": "17.1",
+            "Chlorides_Cl_mg_l": "30.0",
+            "Calcium_Ca_mg_l": "77.8"
+        }
+    },
+    {
+        "Region": "District 387 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.6",
+            "Alkalinity_TAC_mmol_l": "1.23",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "515",
+            "Sodium_Na_mg_l": "15.7",
+            "Chlorides_Cl_mg_l": "40.0",
+            "Calcium_Ca_mg_l": "87.4"
+        }
+    },
+    {
+        "Region": "District 388 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.6",
+            "Alkalinity_TAC_mmol_l": "3.56",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "618",
+            "Sodium_Na_mg_l": "25.6",
+            "Chlorides_Cl_mg_l": "21.8",
+            "Calcium_Ca_mg_l": "69.4"
+        }
+    },
+    {
+        "Region": "District 389 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.9",
+            "Alkalinity_TAC_mmol_l": "3.44",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "493",
+            "Sodium_Na_mg_l": "26.0",
+            "Chlorides_Cl_mg_l": "26.7",
+            "Calcium_Ca_mg_l": "82.5"
+        }
+    },
+    {
+        "Region": "District 390 (UK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.9",
+            "Alkalinity_TAC_mmol_l": "1.46",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "250",
+            "Sodium_Na_mg_l": "7.9",
+            "Chlorides_Cl_mg_l": "9.3",
+            "Calcium_Ca_mg_l": "16.3"
+        }
+    }
+]

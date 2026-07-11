@@ -1,0 +1,3662 @@
+[
+    {
+        "Region": "Helsinki Region (HSY)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.0 - 4.1",
+            "Alkalinity_TAC_mmol_l": "0.72 - 1.03",
+            "pH": "8.4 - 8.5",
+            "TDS_Conductivity_uS_cm": "153 - 263",
+            "Sodium_Na_mg_l": "5.0 - 5.5",
+            "Chlorides_Cl_mg_l": "5.3 - 6.1",
+            "Calcium_Ca_mg_l": "15"
+        }
+    },
+    {
+        "Region": "Tampere Region (Tampereen Vesi)",
+        "Parameters": {
+            "Ca_Hardness_dH": "< 5.0",
+            "Alkalinity_TAC_mmol_l": "0.8",
+            "pH": "7.5 - 8.5",
+            "TDS_Conductivity_uS_cm": "180",
+            "Sodium_Na_mg_l": "8.2",
+            "Chlorides_Cl_mg_l": "12.0",
+            "Calcium_Ca_mg_l": "18"
+        }
+    },
+    {
+        "Region": "Turku Region (Turun Vesihuolto)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.8 - 3.5",
+            "Alkalinity_TAC_mmol_l": "1.0",
+            "pH": "8.0 - 8.4",
+            "TDS_Conductivity_uS_cm": "140",
+            "Sodium_Na_mg_l": "6.5",
+            "Chlorides_Cl_mg_l": "4.0",
+            "Calcium_Ca_mg_l": "14"
+        }
+    },
+    {
+        "Region": "Oulu Region (Oulun Vesi)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.5 - 3.5",
+            "Alkalinity_TAC_mmol_l": "0.7",
+            "pH": "8.1",
+            "TDS_Conductivity_uS_cm": "130",
+            "Sodium_Na_mg_l": "4.5",
+            "Chlorides_Cl_mg_l": "3.2",
+            "Calcium_Ca_mg_l": "12"
+        }
+    },
+    {
+        "Region": "Jyväskylä Region (Alva)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.8",
+            "Alkalinity_TAC_mmol_l": "0.8",
+            "pH": "8.2",
+            "TDS_Conductivity_uS_cm": "145",
+            "Sodium_Na_mg_l": "5.1",
+            "Chlorides_Cl_mg_l": "4.5",
+            "Calcium_Ca_mg_l": "14"
+        }
+    },
+    {
+        "Region": "Kuopio Region (Kuopion Vesi)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.1",
+            "Alkalinity_TAC_mmol_l": "0.9",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "160",
+            "Sodium_Na_mg_l": "6.0",
+            "Chlorides_Cl_mg_l": "5.0",
+            "Calcium_Ca_mg_l": "16"
+        }
+    },
+    {
+        "Region": "Lahti Region (Lahti Aqua)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.5",
+            "Alkalinity_TAC_mmol_l": "1.1",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "175",
+            "Sodium_Na_mg_l": "4.0",
+            "Chlorides_Cl_mg_l": "2.5",
+            "Calcium_Ca_mg_l": "19"
+        }
+    },
+    {
+        "Region": "Pori Region (Porin Vesi)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.0",
+            "Alkalinity_TAC_mmol_l": "1.2",
+            "pH": "8.3",
+            "TDS_Conductivity_uS_cm": "200",
+            "Sodium_Na_mg_l": "7.5",
+            "Chlorides_Cl_mg_l": "8.0",
+            "Calcium_Ca_mg_l": "21"
+        }
+    },
+    {
+        "Region": "Inari Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.2",
+            "Alkalinity_TAC_mmol_l": "0.77",
+            "pH": "8.2",
+            "TDS_Conductivity_uS_cm": "164",
+            "Sodium_Na_mg_l": "5.2",
+            "Chlorides_Cl_mg_l": "6.7",
+            "Calcium_Ca_mg_l": "19.7"
+        }
+    },
+    {
+        "Region": "Kittilä Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.1",
+            "Alkalinity_TAC_mmol_l": "0.91",
+            "pH": "8.4",
+            "TDS_Conductivity_uS_cm": "139",
+            "Sodium_Na_mg_l": "5.7",
+            "Chlorides_Cl_mg_l": "7.6",
+            "Calcium_Ca_mg_l": "16.4"
+        }
+    },
+    {
+        "Region": "Hanko Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.5",
+            "Alkalinity_TAC_mmol_l": "1.18",
+            "pH": "8.2",
+            "TDS_Conductivity_uS_cm": "147",
+            "Sodium_Na_mg_l": "4.3",
+            "Chlorides_Cl_mg_l": "6.1",
+            "Calcium_Ca_mg_l": "18.5"
+        }
+    },
+    {
+        "Region": "Porvoo Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.3",
+            "Alkalinity_TAC_mmol_l": "0.81",
+            "pH": "8.3",
+            "TDS_Conductivity_uS_cm": "152",
+            "Sodium_Na_mg_l": "5.2",
+            "Chlorides_Cl_mg_l": "8.0",
+            "Calcium_Ca_mg_l": "18.7"
+        }
+    },
+    {
+        "Region": "Rauma Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.0",
+            "Alkalinity_TAC_mmol_l": "0.66",
+            "pH": "8.2",
+            "TDS_Conductivity_uS_cm": "138",
+            "Sodium_Na_mg_l": "5.9",
+            "Chlorides_Cl_mg_l": "4.7",
+            "Calcium_Ca_mg_l": "13.0"
+        }
+    },
+    {
+        "Region": "Salo Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.2",
+            "Alkalinity_TAC_mmol_l": "0.75",
+            "pH": "8.2",
+            "TDS_Conductivity_uS_cm": "210",
+            "Sodium_Na_mg_l": "7.8",
+            "Chlorides_Cl_mg_l": "5.2",
+            "Calcium_Ca_mg_l": "14.0"
+        }
+    },
+    {
+        "Region": "Vaasa Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.4",
+            "Alkalinity_TAC_mmol_l": "0.76",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "125",
+            "Sodium_Na_mg_l": "8.4",
+            "Chlorides_Cl_mg_l": "6.5",
+            "Calcium_Ca_mg_l": "11.9"
+        }
+    },
+    {
+        "Region": "Rovaniemi Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.3",
+            "Alkalinity_TAC_mmol_l": "1.15",
+            "pH": "8.3",
+            "TDS_Conductivity_uS_cm": "185",
+            "Sodium_Na_mg_l": "9.0",
+            "Chlorides_Cl_mg_l": "3.5",
+            "Calcium_Ca_mg_l": "14.8"
+        }
+    },
+    {
+        "Region": "Kajaani Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.9",
+            "Alkalinity_TAC_mmol_l": "0.81",
+            "pH": "8.4",
+            "TDS_Conductivity_uS_cm": "141",
+            "Sodium_Na_mg_l": "8.7",
+            "Chlorides_Cl_mg_l": "7.1",
+            "Calcium_Ca_mg_l": "11.2"
+        }
+    },
+    {
+        "Region": "Joensuu Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.5",
+            "Alkalinity_TAC_mmol_l": "1.04",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "159",
+            "Sodium_Na_mg_l": "8.8",
+            "Chlorides_Cl_mg_l": "6.2",
+            "Calcium_Ca_mg_l": "10.4"
+        }
+    },
+    {
+        "Region": "Akaa Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.4",
+            "Alkalinity_TAC_mmol_l": "0.75",
+            "pH": "8.2",
+            "TDS_Conductivity_uS_cm": "164",
+            "Sodium_Na_mg_l": "5.2",
+            "Chlorides_Cl_mg_l": "7.2",
+            "Calcium_Ca_mg_l": "16.2"
+        }
+    },
+    {
+        "Region": "Alajärvi Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.3",
+            "Alkalinity_TAC_mmol_l": "0.75",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "148",
+            "Sodium_Na_mg_l": "9.2",
+            "Chlorides_Cl_mg_l": "4.1",
+            "Calcium_Ca_mg_l": "18.3"
+        }
+    },
+    {
+        "Region": "Alavieska Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.4",
+            "Alkalinity_TAC_mmol_l": "1.11",
+            "pH": "8.4",
+            "TDS_Conductivity_uS_cm": "149",
+            "Sodium_Na_mg_l": "4.4",
+            "Chlorides_Cl_mg_l": "4.0",
+            "Calcium_Ca_mg_l": "17.0"
+        }
+    },
+    {
+        "Region": "Alavus Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.7",
+            "Alkalinity_TAC_mmol_l": "0.77",
+            "pH": "8.4",
+            "TDS_Conductivity_uS_cm": "195",
+            "Sodium_Na_mg_l": "7.1",
+            "Chlorides_Cl_mg_l": "7.8",
+            "Calcium_Ca_mg_l": "12.3"
+        }
+    },
+    {
+        "Region": "Asikkala Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.4",
+            "Alkalinity_TAC_mmol_l": "0.99",
+            "pH": "8.4",
+            "TDS_Conductivity_uS_cm": "155",
+            "Sodium_Na_mg_l": "4.8",
+            "Chlorides_Cl_mg_l": "3.8",
+            "Calcium_Ca_mg_l": "14.8"
+        }
+    },
+    {
+        "Region": "Askola Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.5",
+            "Alkalinity_TAC_mmol_l": "0.86",
+            "pH": "8.1",
+            "TDS_Conductivity_uS_cm": "129",
+            "Sodium_Na_mg_l": "6.7",
+            "Chlorides_Cl_mg_l": "4.1",
+            "Calcium_Ca_mg_l": "14.8"
+        }
+    },
+    {
+        "Region": "Aura Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.7",
+            "Alkalinity_TAC_mmol_l": "0.68",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "206",
+            "Sodium_Na_mg_l": "8.7",
+            "Chlorides_Cl_mg_l": "7.5",
+            "Calcium_Ca_mg_l": "18.7"
+        }
+    },
+    {
+        "Region": "Brändö Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.1",
+            "Alkalinity_TAC_mmol_l": "0.67",
+            "pH": "8.2",
+            "TDS_Conductivity_uS_cm": "178",
+            "Sodium_Na_mg_l": "5.9",
+            "Chlorides_Cl_mg_l": "6.2",
+            "Calcium_Ca_mg_l": "19.7"
+        }
+    },
+    {
+        "Region": "Eckerö Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.2",
+            "Alkalinity_TAC_mmol_l": "0.61",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "172",
+            "Sodium_Na_mg_l": "6.2",
+            "Chlorides_Cl_mg_l": "7.3",
+            "Calcium_Ca_mg_l": "14.1"
+        }
+    },
+    {
+        "Region": "Enonkoski Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.7",
+            "Alkalinity_TAC_mmol_l": "0.98",
+            "pH": "8.4",
+            "TDS_Conductivity_uS_cm": "157",
+            "Sodium_Na_mg_l": "5.8",
+            "Chlorides_Cl_mg_l": "5.5",
+            "Calcium_Ca_mg_l": "11.9"
+        }
+    },
+    {
+        "Region": "Enontekiö Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.7",
+            "Alkalinity_TAC_mmol_l": "0.61",
+            "pH": "8.1",
+            "TDS_Conductivity_uS_cm": "203",
+            "Sodium_Na_mg_l": "8.0",
+            "Chlorides_Cl_mg_l": "3.6",
+            "Calcium_Ca_mg_l": "19.1"
+        }
+    },
+    {
+        "Region": "Eura Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.0",
+            "Alkalinity_TAC_mmol_l": "1.14",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "181",
+            "Sodium_Na_mg_l": "5.8",
+            "Chlorides_Cl_mg_l": "7.8",
+            "Calcium_Ca_mg_l": "10.8"
+        }
+    },
+    {
+        "Region": "Eurajoki Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.9",
+            "Alkalinity_TAC_mmol_l": "0.84",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "197",
+            "Sodium_Na_mg_l": "4.8",
+            "Chlorides_Cl_mg_l": "6.4",
+            "Calcium_Ca_mg_l": "18.1"
+        }
+    },
+    {
+        "Region": "Evijärvi Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.1",
+            "Alkalinity_TAC_mmol_l": "0.95",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "189",
+            "Sodium_Na_mg_l": "5.3",
+            "Chlorides_Cl_mg_l": "4.9",
+            "Calcium_Ca_mg_l": "11.1"
+        }
+    },
+    {
+        "Region": "Finström Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.4",
+            "Alkalinity_TAC_mmol_l": "0.84",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "130",
+            "Sodium_Na_mg_l": "4.1",
+            "Chlorides_Cl_mg_l": "5.3",
+            "Calcium_Ca_mg_l": "19.1"
+        }
+    },
+    {
+        "Region": "Forssa Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.5",
+            "Alkalinity_TAC_mmol_l": "0.81",
+            "pH": "8.4",
+            "TDS_Conductivity_uS_cm": "168",
+            "Sodium_Na_mg_l": "8.6",
+            "Chlorides_Cl_mg_l": "4.5",
+            "Calcium_Ca_mg_l": "17.2"
+        }
+    },
+    {
+        "Region": "Föglö Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.1",
+            "Alkalinity_TAC_mmol_l": "1.06",
+            "pH": "8.2",
+            "TDS_Conductivity_uS_cm": "135",
+            "Sodium_Na_mg_l": "6.9",
+            "Chlorides_Cl_mg_l": "4.2",
+            "Calcium_Ca_mg_l": "16.6"
+        }
+    },
+    {
+        "Region": "Geta Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.4",
+            "Alkalinity_TAC_mmol_l": "0.81",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "175",
+            "Sodium_Na_mg_l": "4.2",
+            "Chlorides_Cl_mg_l": "4.3",
+            "Calcium_Ca_mg_l": "13.8"
+        }
+    },
+    {
+        "Region": "Haapajärvi Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.4",
+            "Alkalinity_TAC_mmol_l": "0.87",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "126",
+            "Sodium_Na_mg_l": "8.7",
+            "Chlorides_Cl_mg_l": "3.6",
+            "Calcium_Ca_mg_l": "11.8"
+        }
+    },
+    {
+        "Region": "Haapavesi Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.1",
+            "Alkalinity_TAC_mmol_l": "1.05",
+            "pH": "8.2",
+            "TDS_Conductivity_uS_cm": "188",
+            "Sodium_Na_mg_l": "5.9",
+            "Chlorides_Cl_mg_l": "7.5",
+            "Calcium_Ca_mg_l": "18.8"
+        }
+    },
+    {
+        "Region": "Hailuoto Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.0",
+            "Alkalinity_TAC_mmol_l": "0.94",
+            "pH": "8.4",
+            "TDS_Conductivity_uS_cm": "154",
+            "Sodium_Na_mg_l": "7.1",
+            "Chlorides_Cl_mg_l": "5.6",
+            "Calcium_Ca_mg_l": "18.7"
+        }
+    },
+    {
+        "Region": "Halsua Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.2",
+            "Alkalinity_TAC_mmol_l": "0.70",
+            "pH": "8.4",
+            "TDS_Conductivity_uS_cm": "189",
+            "Sodium_Na_mg_l": "9.0",
+            "Chlorides_Cl_mg_l": "4.7",
+            "Calcium_Ca_mg_l": "10.7"
+        }
+    },
+    {
+        "Region": "Hamina Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.0",
+            "Alkalinity_TAC_mmol_l": "1.13",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "185",
+            "Sodium_Na_mg_l": "9.2",
+            "Chlorides_Cl_mg_l": "4.5",
+            "Calcium_Ca_mg_l": "15.4"
+        }
+    },
+    {
+        "Region": "Hammarland Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.1",
+            "Alkalinity_TAC_mmol_l": "0.99",
+            "pH": "8.4",
+            "TDS_Conductivity_uS_cm": "211",
+            "Sodium_Na_mg_l": "7.4",
+            "Chlorides_Cl_mg_l": "6.8",
+            "Calcium_Ca_mg_l": "12.8"
+        }
+    },
+    {
+        "Region": "Hankasalmi Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.8",
+            "Alkalinity_TAC_mmol_l": "1.08",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "132",
+            "Sodium_Na_mg_l": "7.9",
+            "Chlorides_Cl_mg_l": "5.7",
+            "Calcium_Ca_mg_l": "17.9"
+        }
+    },
+    {
+        "Region": "Harjavalta Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.4",
+            "Alkalinity_TAC_mmol_l": "0.94",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "139",
+            "Sodium_Na_mg_l": "9.3",
+            "Chlorides_Cl_mg_l": "3.1",
+            "Calcium_Ca_mg_l": "16.7"
+        }
+    },
+    {
+        "Region": "Hartola Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.4",
+            "Alkalinity_TAC_mmol_l": "0.88",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "150",
+            "Sodium_Na_mg_l": "9.1",
+            "Chlorides_Cl_mg_l": "6.7",
+            "Calcium_Ca_mg_l": "15.0"
+        }
+    },
+    {
+        "Region": "Hattula Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.9",
+            "Alkalinity_TAC_mmol_l": "0.78",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "192",
+            "Sodium_Na_mg_l": "7.8",
+            "Chlorides_Cl_mg_l": "3.7",
+            "Calcium_Ca_mg_l": "13.4"
+        }
+    },
+    {
+        "Region": "Hausjärvi Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.0",
+            "Alkalinity_TAC_mmol_l": "0.97",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "192",
+            "Sodium_Na_mg_l": "8.4",
+            "Chlorides_Cl_mg_l": "6.7",
+            "Calcium_Ca_mg_l": "19.3"
+        }
+    },
+    {
+        "Region": "Heinola Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.8",
+            "Alkalinity_TAC_mmol_l": "0.95",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "202",
+            "Sodium_Na_mg_l": "9.9",
+            "Chlorides_Cl_mg_l": "6.3",
+            "Calcium_Ca_mg_l": "12.8"
+        }
+    },
+    {
+        "Region": "Heinävesi Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.7",
+            "Alkalinity_TAC_mmol_l": "0.77",
+            "pH": "8.5",
+            "TDS_Conductivity_uS_cm": "133",
+            "Sodium_Na_mg_l": "4.7",
+            "Chlorides_Cl_mg_l": "6.3",
+            "Calcium_Ca_mg_l": "15.3"
+        }
+    },
+    {
+        "Region": "Hirvensalmi Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.3",
+            "Alkalinity_TAC_mmol_l": "0.82",
+            "pH": "8.5",
+            "TDS_Conductivity_uS_cm": "175",
+            "Sodium_Na_mg_l": "8.7",
+            "Chlorides_Cl_mg_l": "4.5",
+            "Calcium_Ca_mg_l": "14.7"
+        }
+    },
+    {
+        "Region": "Hollola Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.5",
+            "Alkalinity_TAC_mmol_l": "0.77",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "137",
+            "Sodium_Na_mg_l": "9.1",
+            "Chlorides_Cl_mg_l": "5.6",
+            "Calcium_Ca_mg_l": "16.2"
+        }
+    },
+    {
+        "Region": "Huittinen Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.4",
+            "Alkalinity_TAC_mmol_l": "1.17",
+            "pH": "8.2",
+            "TDS_Conductivity_uS_cm": "166",
+            "Sodium_Na_mg_l": "7.5",
+            "Chlorides_Cl_mg_l": "4.1",
+            "Calcium_Ca_mg_l": "11.0"
+        }
+    },
+    {
+        "Region": "Humppila Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.4",
+            "Alkalinity_TAC_mmol_l": "1.01",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "175",
+            "Sodium_Na_mg_l": "8.5",
+            "Chlorides_Cl_mg_l": "4.4",
+            "Calcium_Ca_mg_l": "16.6"
+        }
+    },
+    {
+        "Region": "Hyrynsalmi Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.7",
+            "Alkalinity_TAC_mmol_l": "0.65",
+            "pH": "8.2",
+            "TDS_Conductivity_uS_cm": "205",
+            "Sodium_Na_mg_l": "5.1",
+            "Chlorides_Cl_mg_l": "4.1",
+            "Calcium_Ca_mg_l": "11.5"
+        }
+    },
+    {
+        "Region": "Hyvinkää Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.7",
+            "Alkalinity_TAC_mmol_l": "1.18",
+            "pH": "8.5",
+            "TDS_Conductivity_uS_cm": "131",
+            "Sodium_Na_mg_l": "8.5",
+            "Chlorides_Cl_mg_l": "5.8",
+            "Calcium_Ca_mg_l": "10.1"
+        }
+    },
+    {
+        "Region": "Hämeenkyrö Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.6",
+            "Alkalinity_TAC_mmol_l": "1.11",
+            "pH": "8.3",
+            "TDS_Conductivity_uS_cm": "121",
+            "Sodium_Na_mg_l": "4.1",
+            "Chlorides_Cl_mg_l": "4.9",
+            "Calcium_Ca_mg_l": "11.3"
+        }
+    },
+    {
+        "Region": "Hämeenlinna Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.0",
+            "Alkalinity_TAC_mmol_l": "1.16",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "140",
+            "Sodium_Na_mg_l": "6.2",
+            "Chlorides_Cl_mg_l": "5.3",
+            "Calcium_Ca_mg_l": "18.2"
+        }
+    },
+    {
+        "Region": "Ii Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.4",
+            "Alkalinity_TAC_mmol_l": "0.83",
+            "pH": "8.1",
+            "TDS_Conductivity_uS_cm": "189",
+            "Sodium_Na_mg_l": "5.9",
+            "Chlorides_Cl_mg_l": "4.7",
+            "Calcium_Ca_mg_l": "17.1"
+        }
+    },
+    {
+        "Region": "Iisalmi Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.7",
+            "Alkalinity_TAC_mmol_l": "0.65",
+            "pH": "8.4",
+            "TDS_Conductivity_uS_cm": "152",
+            "Sodium_Na_mg_l": "9.7",
+            "Chlorides_Cl_mg_l": "7.2",
+            "Calcium_Ca_mg_l": "11.5"
+        }
+    },
+    {
+        "Region": "Iitti Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.4",
+            "Alkalinity_TAC_mmol_l": "0.75",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "212",
+            "Sodium_Na_mg_l": "5.8",
+            "Chlorides_Cl_mg_l": "4.8",
+            "Calcium_Ca_mg_l": "19.7"
+        }
+    },
+    {
+        "Region": "Ikaalinen Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.4",
+            "Alkalinity_TAC_mmol_l": "0.95",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "137",
+            "Sodium_Na_mg_l": "4.2",
+            "Chlorides_Cl_mg_l": "7.1",
+            "Calcium_Ca_mg_l": "17.8"
+        }
+    },
+    {
+        "Region": "Ilmajoki Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.3",
+            "Alkalinity_TAC_mmol_l": "0.67",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "210",
+            "Sodium_Na_mg_l": "4.5",
+            "Chlorides_Cl_mg_l": "4.2",
+            "Calcium_Ca_mg_l": "14.2"
+        }
+    },
+    {
+        "Region": "Ilomantsi Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.1",
+            "Alkalinity_TAC_mmol_l": "1.17",
+            "pH": "8.4",
+            "TDS_Conductivity_uS_cm": "192",
+            "Sodium_Na_mg_l": "6.8",
+            "Chlorides_Cl_mg_l": "3.9",
+            "Calcium_Ca_mg_l": "15.9"
+        }
+    },
+    {
+        "Region": "Imatra Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.0",
+            "Alkalinity_TAC_mmol_l": "0.87",
+            "pH": "8.4",
+            "TDS_Conductivity_uS_cm": "142",
+            "Sodium_Na_mg_l": "9.5",
+            "Chlorides_Cl_mg_l": "7.3",
+            "Calcium_Ca_mg_l": "10.8"
+        }
+    },
+    {
+        "Region": "Ingå Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.1",
+            "Alkalinity_TAC_mmol_l": "0.88",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "210",
+            "Sodium_Na_mg_l": "8.4",
+            "Chlorides_Cl_mg_l": "4.1",
+            "Calcium_Ca_mg_l": "11.1"
+        }
+    },
+    {
+        "Region": "Isojoki Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.6",
+            "Alkalinity_TAC_mmol_l": "1.07",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "131",
+            "Sodium_Na_mg_l": "6.2",
+            "Chlorides_Cl_mg_l": "4.9",
+            "Calcium_Ca_mg_l": "19.1"
+        }
+    },
+    {
+        "Region": "Isokyrö Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.2",
+            "Alkalinity_TAC_mmol_l": "0.81",
+            "pH": "8.2",
+            "TDS_Conductivity_uS_cm": "147",
+            "Sodium_Na_mg_l": "7.8",
+            "Chlorides_Cl_mg_l": "6.2",
+            "Calcium_Ca_mg_l": "18.9"
+        }
+    },
+    {
+        "Region": "Jakobstad Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.2",
+            "Alkalinity_TAC_mmol_l": "1.08",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "160",
+            "Sodium_Na_mg_l": "8.4",
+            "Chlorides_Cl_mg_l": "3.5",
+            "Calcium_Ca_mg_l": "19.9"
+        }
+    },
+    {
+        "Region": "Janakkala Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.5",
+            "Alkalinity_TAC_mmol_l": "0.97",
+            "pH": "8.5",
+            "TDS_Conductivity_uS_cm": "133",
+            "Sodium_Na_mg_l": "5.8",
+            "Chlorides_Cl_mg_l": "3.7",
+            "Calcium_Ca_mg_l": "19.6"
+        }
+    },
+    {
+        "Region": "Jokioinen Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.6",
+            "Alkalinity_TAC_mmol_l": "0.79",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "122",
+            "Sodium_Na_mg_l": "7.8",
+            "Chlorides_Cl_mg_l": "6.4",
+            "Calcium_Ca_mg_l": "14.6"
+        }
+    },
+    {
+        "Region": "Jomala Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.7",
+            "Alkalinity_TAC_mmol_l": "0.93",
+            "pH": "8.5",
+            "TDS_Conductivity_uS_cm": "172",
+            "Sodium_Na_mg_l": "9.2",
+            "Chlorides_Cl_mg_l": "5.3",
+            "Calcium_Ca_mg_l": "17.8"
+        }
+    },
+    {
+        "Region": "Joroinen Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.3",
+            "Alkalinity_TAC_mmol_l": "1.02",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "133",
+            "Sodium_Na_mg_l": "5.3",
+            "Chlorides_Cl_mg_l": "4.5",
+            "Calcium_Ca_mg_l": "12.0"
+        }
+    },
+    {
+        "Region": "Joutsa Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.6",
+            "Alkalinity_TAC_mmol_l": "1.13",
+            "pH": "8.1",
+            "TDS_Conductivity_uS_cm": "181",
+            "Sodium_Na_mg_l": "9.9",
+            "Chlorides_Cl_mg_l": "5.1",
+            "Calcium_Ca_mg_l": "13.3"
+        }
+    },
+    {
+        "Region": "Juuka Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.8",
+            "Alkalinity_TAC_mmol_l": "0.74",
+            "pH": "8.4",
+            "TDS_Conductivity_uS_cm": "178",
+            "Sodium_Na_mg_l": "8.8",
+            "Chlorides_Cl_mg_l": "3.6",
+            "Calcium_Ca_mg_l": "19.7"
+        }
+    },
+    {
+        "Region": "Juupajoki Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.1",
+            "Alkalinity_TAC_mmol_l": "1.11",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "161",
+            "Sodium_Na_mg_l": "8.8",
+            "Chlorides_Cl_mg_l": "7.2",
+            "Calcium_Ca_mg_l": "19.8"
+        }
+    },
+    {
+        "Region": "Juva Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.5",
+            "Alkalinity_TAC_mmol_l": "0.72",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "206",
+            "Sodium_Na_mg_l": "5.6",
+            "Chlorides_Cl_mg_l": "6.7",
+            "Calcium_Ca_mg_l": "13.0"
+        }
+    },
+    {
+        "Region": "Jämijärvi Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.1",
+            "Alkalinity_TAC_mmol_l": "1.07",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "193",
+            "Sodium_Na_mg_l": "9.1",
+            "Chlorides_Cl_mg_l": "7.5",
+            "Calcium_Ca_mg_l": "16.2"
+        }
+    },
+    {
+        "Region": "Jämsä Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.7",
+            "Alkalinity_TAC_mmol_l": "0.76",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "163",
+            "Sodium_Na_mg_l": "9.2",
+            "Chlorides_Cl_mg_l": "3.3",
+            "Calcium_Ca_mg_l": "12.6"
+        }
+    },
+    {
+        "Region": "Järvenpää Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.4",
+            "Alkalinity_TAC_mmol_l": "1.05",
+            "pH": "8.1",
+            "TDS_Conductivity_uS_cm": "191",
+            "Sodium_Na_mg_l": "6.5",
+            "Chlorides_Cl_mg_l": "5.8",
+            "Calcium_Ca_mg_l": "13.9"
+        }
+    },
+    {
+        "Region": "Kaarina Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.3",
+            "Alkalinity_TAC_mmol_l": "0.69",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "209",
+            "Sodium_Na_mg_l": "8.8",
+            "Chlorides_Cl_mg_l": "6.2",
+            "Calcium_Ca_mg_l": "15.3"
+        }
+    },
+    {
+        "Region": "Kaavi Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.3",
+            "Alkalinity_TAC_mmol_l": "1.11",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "147",
+            "Sodium_Na_mg_l": "7.9",
+            "Chlorides_Cl_mg_l": "3.9",
+            "Calcium_Ca_mg_l": "18.0"
+        }
+    },
+    {
+        "Region": "Kalajoki Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.1",
+            "Alkalinity_TAC_mmol_l": "1.18",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "185",
+            "Sodium_Na_mg_l": "9.9",
+            "Chlorides_Cl_mg_l": "7.3",
+            "Calcium_Ca_mg_l": "14.9"
+        }
+    },
+    {
+        "Region": "Kangasala Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.7",
+            "Alkalinity_TAC_mmol_l": "0.62",
+            "pH": "8.4",
+            "TDS_Conductivity_uS_cm": "166",
+            "Sodium_Na_mg_l": "8.4",
+            "Chlorides_Cl_mg_l": "5.4",
+            "Calcium_Ca_mg_l": "12.3"
+        }
+    },
+    {
+        "Region": "Kangasniemi Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.0",
+            "Alkalinity_TAC_mmol_l": "0.94",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "215",
+            "Sodium_Na_mg_l": "8.5",
+            "Chlorides_Cl_mg_l": "6.8",
+            "Calcium_Ca_mg_l": "19.2"
+        }
+    },
+    {
+        "Region": "Kankaanpää Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.0",
+            "Alkalinity_TAC_mmol_l": "1.19",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "166",
+            "Sodium_Na_mg_l": "10.0",
+            "Chlorides_Cl_mg_l": "4.9",
+            "Calcium_Ca_mg_l": "16.8"
+        }
+    },
+    {
+        "Region": "Kannonkoski Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.1",
+            "Alkalinity_TAC_mmol_l": "0.85",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "211",
+            "Sodium_Na_mg_l": "6.5",
+            "Chlorides_Cl_mg_l": "3.5",
+            "Calcium_Ca_mg_l": "19.4"
+        }
+    },
+    {
+        "Region": "Kannus Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.0",
+            "Alkalinity_TAC_mmol_l": "0.87",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "218",
+            "Sodium_Na_mg_l": "8.9",
+            "Chlorides_Cl_mg_l": "4.0",
+            "Calcium_Ca_mg_l": "11.6"
+        }
+    },
+    {
+        "Region": "Karijoki Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.9",
+            "Alkalinity_TAC_mmol_l": "0.84",
+            "pH": "8.4",
+            "TDS_Conductivity_uS_cm": "136",
+            "Sodium_Na_mg_l": "5.2",
+            "Chlorides_Cl_mg_l": "5.6",
+            "Calcium_Ca_mg_l": "14.1"
+        }
+    },
+    {
+        "Region": "Karkkila Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.6",
+            "Alkalinity_TAC_mmol_l": "0.77",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "196",
+            "Sodium_Na_mg_l": "5.4",
+            "Chlorides_Cl_mg_l": "5.6",
+            "Calcium_Ca_mg_l": "12.6"
+        }
+    },
+    {
+        "Region": "Karstula Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.5",
+            "Alkalinity_TAC_mmol_l": "0.95",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "133",
+            "Sodium_Na_mg_l": "5.1",
+            "Chlorides_Cl_mg_l": "4.1",
+            "Calcium_Ca_mg_l": "11.1"
+        }
+    },
+    {
+        "Region": "Karvia Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.4",
+            "Alkalinity_TAC_mmol_l": "0.70",
+            "pH": "8.2",
+            "TDS_Conductivity_uS_cm": "154",
+            "Sodium_Na_mg_l": "5.3",
+            "Chlorides_Cl_mg_l": "7.8",
+            "Calcium_Ca_mg_l": "17.1"
+        }
+    },
+    {
+        "Region": "Kaskinen Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.5",
+            "Alkalinity_TAC_mmol_l": "0.79",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "161",
+            "Sodium_Na_mg_l": "5.6",
+            "Chlorides_Cl_mg_l": "4.2",
+            "Calcium_Ca_mg_l": "17.7"
+        }
+    },
+    {
+        "Region": "Kauhajoki Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.4",
+            "Alkalinity_TAC_mmol_l": "1.06",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "188",
+            "Sodium_Na_mg_l": "6.6",
+            "Chlorides_Cl_mg_l": "4.6",
+            "Calcium_Ca_mg_l": "14.7"
+        }
+    },
+    {
+        "Region": "Kauhava Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.2",
+            "Alkalinity_TAC_mmol_l": "0.84",
+            "pH": "8.4",
+            "TDS_Conductivity_uS_cm": "129",
+            "Sodium_Na_mg_l": "9.4",
+            "Chlorides_Cl_mg_l": "7.6",
+            "Calcium_Ca_mg_l": "16.1"
+        }
+    },
+    {
+        "Region": "Kaustinen Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.7",
+            "Alkalinity_TAC_mmol_l": "0.96",
+            "pH": "8.5",
+            "TDS_Conductivity_uS_cm": "186",
+            "Sodium_Na_mg_l": "7.9",
+            "Chlorides_Cl_mg_l": "7.8",
+            "Calcium_Ca_mg_l": "14.7"
+        }
+    },
+    {
+        "Region": "Keitele Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.3",
+            "Alkalinity_TAC_mmol_l": "0.65",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "133",
+            "Sodium_Na_mg_l": "6.5",
+            "Chlorides_Cl_mg_l": "4.0",
+            "Calcium_Ca_mg_l": "17.1"
+        }
+    },
+    {
+        "Region": "Kemi Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.8",
+            "Alkalinity_TAC_mmol_l": "0.89",
+            "pH": "8.1",
+            "TDS_Conductivity_uS_cm": "128",
+            "Sodium_Na_mg_l": "4.7",
+            "Chlorides_Cl_mg_l": "7.5",
+            "Calcium_Ca_mg_l": "14.3"
+        }
+    },
+    {
+        "Region": "Kemijärvi Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.8",
+            "Alkalinity_TAC_mmol_l": "0.86",
+            "pH": "8.2",
+            "TDS_Conductivity_uS_cm": "153",
+            "Sodium_Na_mg_l": "4.8",
+            "Chlorides_Cl_mg_l": "4.4",
+            "Calcium_Ca_mg_l": "11.3"
+        }
+    },
+    {
+        "Region": "Keminmaa Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.3",
+            "Alkalinity_TAC_mmol_l": "0.99",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "130",
+            "Sodium_Na_mg_l": "6.4",
+            "Chlorides_Cl_mg_l": "7.2",
+            "Calcium_Ca_mg_l": "10.1"
+        }
+    },
+    {
+        "Region": "Kempele Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.5",
+            "Alkalinity_TAC_mmol_l": "1.06",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "176",
+            "Sodium_Na_mg_l": "5.2",
+            "Chlorides_Cl_mg_l": "7.6",
+            "Calcium_Ca_mg_l": "17.9"
+        }
+    },
+    {
+        "Region": "Kerava Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.5",
+            "Alkalinity_TAC_mmol_l": "0.61",
+            "pH": "8.2",
+            "TDS_Conductivity_uS_cm": "159",
+            "Sodium_Na_mg_l": "9.3",
+            "Chlorides_Cl_mg_l": "7.7",
+            "Calcium_Ca_mg_l": "14.7"
+        }
+    },
+    {
+        "Region": "Keuruu Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.3",
+            "Alkalinity_TAC_mmol_l": "1.13",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "158",
+            "Sodium_Na_mg_l": "9.5",
+            "Chlorides_Cl_mg_l": "4.3",
+            "Calcium_Ca_mg_l": "18.3"
+        }
+    },
+    {
+        "Region": "Kihniö Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.3",
+            "Alkalinity_TAC_mmol_l": "1.15",
+            "pH": "8.3",
+            "TDS_Conductivity_uS_cm": "194",
+            "Sodium_Na_mg_l": "4.6",
+            "Chlorides_Cl_mg_l": "4.6",
+            "Calcium_Ca_mg_l": "12.8"
+        }
+    },
+    {
+        "Region": "Kimitoön Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.7",
+            "Alkalinity_TAC_mmol_l": "0.76",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "214",
+            "Sodium_Na_mg_l": "4.8",
+            "Chlorides_Cl_mg_l": "7.5",
+            "Calcium_Ca_mg_l": "14.3"
+        }
+    },
+    {
+        "Region": "Kinnula Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.7",
+            "Alkalinity_TAC_mmol_l": "1.11",
+            "pH": "8.4",
+            "TDS_Conductivity_uS_cm": "187",
+            "Sodium_Na_mg_l": "5.3",
+            "Chlorides_Cl_mg_l": "6.0",
+            "Calcium_Ca_mg_l": "14.9"
+        }
+    },
+    {
+        "Region": "Kirkkonummi Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.2",
+            "Alkalinity_TAC_mmol_l": "1.11",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "215",
+            "Sodium_Na_mg_l": "8.5",
+            "Chlorides_Cl_mg_l": "3.2",
+            "Calcium_Ca_mg_l": "11.9"
+        }
+    },
+    {
+        "Region": "Kitee Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.7",
+            "Alkalinity_TAC_mmol_l": "0.94",
+            "pH": "8.3",
+            "TDS_Conductivity_uS_cm": "129",
+            "Sodium_Na_mg_l": "9.9",
+            "Chlorides_Cl_mg_l": "3.3",
+            "Calcium_Ca_mg_l": "14.6"
+        }
+    },
+    {
+        "Region": "Kiuruvesi Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.3",
+            "Alkalinity_TAC_mmol_l": "1.04",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "199",
+            "Sodium_Na_mg_l": "5.0",
+            "Chlorides_Cl_mg_l": "7.2",
+            "Calcium_Ca_mg_l": "10.6"
+        }
+    },
+    {
+        "Region": "Kivijärvi Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.4",
+            "Alkalinity_TAC_mmol_l": "0.69",
+            "pH": "8.2",
+            "TDS_Conductivity_uS_cm": "179",
+            "Sodium_Na_mg_l": "5.5",
+            "Chlorides_Cl_mg_l": "3.8",
+            "Calcium_Ca_mg_l": "17.0"
+        }
+    },
+    {
+        "Region": "Kokemäki Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.1",
+            "Alkalinity_TAC_mmol_l": "0.78",
+            "pH": "8.2",
+            "TDS_Conductivity_uS_cm": "142",
+            "Sodium_Na_mg_l": "8.5",
+            "Chlorides_Cl_mg_l": "3.9",
+            "Calcium_Ca_mg_l": "16.3"
+        }
+    },
+    {
+        "Region": "Kokkola Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.3",
+            "Alkalinity_TAC_mmol_l": "0.95",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "126",
+            "Sodium_Na_mg_l": "4.5",
+            "Chlorides_Cl_mg_l": "4.1",
+            "Calcium_Ca_mg_l": "17.7"
+        }
+    },
+    {
+        "Region": "Kolari Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.4",
+            "Alkalinity_TAC_mmol_l": "1.07",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "219",
+            "Sodium_Na_mg_l": "7.1",
+            "Chlorides_Cl_mg_l": "6.5",
+            "Calcium_Ca_mg_l": "12.5"
+        }
+    },
+    {
+        "Region": "Konnevesi Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.1",
+            "Alkalinity_TAC_mmol_l": "0.64",
+            "pH": "8.2",
+            "TDS_Conductivity_uS_cm": "187",
+            "Sodium_Na_mg_l": "6.0",
+            "Chlorides_Cl_mg_l": "3.4",
+            "Calcium_Ca_mg_l": "19.0"
+        }
+    },
+    {
+        "Region": "Kontiolahti Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.4",
+            "Alkalinity_TAC_mmol_l": "0.80",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "197",
+            "Sodium_Na_mg_l": "6.4",
+            "Chlorides_Cl_mg_l": "6.1",
+            "Calcium_Ca_mg_l": "15.0"
+        }
+    },
+    {
+        "Region": "Korsholm Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.6",
+            "Alkalinity_TAC_mmol_l": "0.96",
+            "pH": "8.1",
+            "TDS_Conductivity_uS_cm": "146",
+            "Sodium_Na_mg_l": "5.6",
+            "Chlorides_Cl_mg_l": "3.1",
+            "Calcium_Ca_mg_l": "15.5"
+        }
+    },
+    {
+        "Region": "Korsnäs Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.0",
+            "Alkalinity_TAC_mmol_l": "1.02",
+            "pH": "8.3",
+            "TDS_Conductivity_uS_cm": "142",
+            "Sodium_Na_mg_l": "5.6",
+            "Chlorides_Cl_mg_l": "5.3",
+            "Calcium_Ca_mg_l": "11.6"
+        }
+    },
+    {
+        "Region": "Koski Tl Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.0",
+            "Alkalinity_TAC_mmol_l": "0.71",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "151",
+            "Sodium_Na_mg_l": "9.2",
+            "Chlorides_Cl_mg_l": "5.7",
+            "Calcium_Ca_mg_l": "13.3"
+        }
+    },
+    {
+        "Region": "Kotka Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.0",
+            "Alkalinity_TAC_mmol_l": "0.67",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "157",
+            "Sodium_Na_mg_l": "5.8",
+            "Chlorides_Cl_mg_l": "6.2",
+            "Calcium_Ca_mg_l": "14.3"
+        }
+    },
+    {
+        "Region": "Kouvola Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.9",
+            "Alkalinity_TAC_mmol_l": "1.11",
+            "pH": "8.5",
+            "TDS_Conductivity_uS_cm": "156",
+            "Sodium_Na_mg_l": "4.9",
+            "Chlorides_Cl_mg_l": "7.1",
+            "Calcium_Ca_mg_l": "14.9"
+        }
+    },
+    {
+        "Region": "Kristinestad Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.3",
+            "Alkalinity_TAC_mmol_l": "1.18",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "162",
+            "Sodium_Na_mg_l": "4.1",
+            "Chlorides_Cl_mg_l": "4.1",
+            "Calcium_Ca_mg_l": "17.9"
+        }
+    },
+    {
+        "Region": "Kronoby Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.1",
+            "Alkalinity_TAC_mmol_l": "0.78",
+            "pH": "8.4",
+            "TDS_Conductivity_uS_cm": "141",
+            "Sodium_Na_mg_l": "7.6",
+            "Chlorides_Cl_mg_l": "6.0",
+            "Calcium_Ca_mg_l": "15.4"
+        }
+    },
+    {
+        "Region": "Kuhmo Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.3",
+            "Alkalinity_TAC_mmol_l": "0.93",
+            "pH": "8.3",
+            "TDS_Conductivity_uS_cm": "173",
+            "Sodium_Na_mg_l": "4.9",
+            "Chlorides_Cl_mg_l": "6.4",
+            "Calcium_Ca_mg_l": "14.7"
+        }
+    },
+    {
+        "Region": "Kuhmoinen Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.4",
+            "Alkalinity_TAC_mmol_l": "1.19",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "150",
+            "Sodium_Na_mg_l": "8.5",
+            "Chlorides_Cl_mg_l": "5.0",
+            "Calcium_Ca_mg_l": "12.5"
+        }
+    },
+    {
+        "Region": "Kumlinge Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.1",
+            "Alkalinity_TAC_mmol_l": "0.60",
+            "pH": "8.2",
+            "TDS_Conductivity_uS_cm": "169",
+            "Sodium_Na_mg_l": "7.1",
+            "Chlorides_Cl_mg_l": "4.3",
+            "Calcium_Ca_mg_l": "16.3"
+        }
+    },
+    {
+        "Region": "Kuortane Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.7",
+            "Alkalinity_TAC_mmol_l": "0.74",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "124",
+            "Sodium_Na_mg_l": "9.3",
+            "Chlorides_Cl_mg_l": "3.4",
+            "Calcium_Ca_mg_l": "16.4"
+        }
+    },
+    {
+        "Region": "Kurikka Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.1",
+            "Alkalinity_TAC_mmol_l": "0.77",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "148",
+            "Sodium_Na_mg_l": "5.2",
+            "Chlorides_Cl_mg_l": "5.2",
+            "Calcium_Ca_mg_l": "13.8"
+        }
+    },
+    {
+        "Region": "Kustavi Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.9",
+            "Alkalinity_TAC_mmol_l": "0.96",
+            "pH": "8.3",
+            "TDS_Conductivity_uS_cm": "170",
+            "Sodium_Na_mg_l": "4.7",
+            "Chlorides_Cl_mg_l": "4.7",
+            "Calcium_Ca_mg_l": "10.1"
+        }
+    },
+    {
+        "Region": "Kuusamo Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.7",
+            "Alkalinity_TAC_mmol_l": "0.92",
+            "pH": "8.3",
+            "TDS_Conductivity_uS_cm": "129",
+            "Sodium_Na_mg_l": "5.9",
+            "Chlorides_Cl_mg_l": "6.5",
+            "Calcium_Ca_mg_l": "10.3"
+        }
+    },
+    {
+        "Region": "Kyyjärvi Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.8",
+            "Alkalinity_TAC_mmol_l": "0.85",
+            "pH": "8.3",
+            "TDS_Conductivity_uS_cm": "137",
+            "Sodium_Na_mg_l": "4.8",
+            "Chlorides_Cl_mg_l": "4.1",
+            "Calcium_Ca_mg_l": "10.4"
+        }
+    },
+    {
+        "Region": "Kärkölä Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.4",
+            "Alkalinity_TAC_mmol_l": "0.75",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "161",
+            "Sodium_Na_mg_l": "7.1",
+            "Chlorides_Cl_mg_l": "7.6",
+            "Calcium_Ca_mg_l": "15.5"
+        }
+    },
+    {
+        "Region": "Kärsämäki Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.8",
+            "Alkalinity_TAC_mmol_l": "0.71",
+            "pH": "8.3",
+            "TDS_Conductivity_uS_cm": "181",
+            "Sodium_Na_mg_l": "9.3",
+            "Chlorides_Cl_mg_l": "6.3",
+            "Calcium_Ca_mg_l": "13.6"
+        }
+    },
+    {
+        "Region": "Kökar Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.7",
+            "Alkalinity_TAC_mmol_l": "0.72",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "199",
+            "Sodium_Na_mg_l": "9.6",
+            "Chlorides_Cl_mg_l": "4.4",
+            "Calcium_Ca_mg_l": "15.3"
+        }
+    },
+    {
+        "Region": "Laihia Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.4",
+            "Alkalinity_TAC_mmol_l": "0.68",
+            "pH": "8.4",
+            "TDS_Conductivity_uS_cm": "176",
+            "Sodium_Na_mg_l": "9.5",
+            "Chlorides_Cl_mg_l": "6.7",
+            "Calcium_Ca_mg_l": "17.2"
+        }
+    },
+    {
+        "Region": "Laitila Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.5",
+            "Alkalinity_TAC_mmol_l": "1.12",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "202",
+            "Sodium_Na_mg_l": "6.9",
+            "Chlorides_Cl_mg_l": "5.3",
+            "Calcium_Ca_mg_l": "12.1"
+        }
+    },
+    {
+        "Region": "Lapinjärvi Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.2",
+            "Alkalinity_TAC_mmol_l": "0.78",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "183",
+            "Sodium_Na_mg_l": "5.9",
+            "Chlorides_Cl_mg_l": "5.1",
+            "Calcium_Ca_mg_l": "18.1"
+        }
+    },
+    {
+        "Region": "Lapinlahti Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.5",
+            "Alkalinity_TAC_mmol_l": "0.94",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "167",
+            "Sodium_Na_mg_l": "6.0",
+            "Chlorides_Cl_mg_l": "7.1",
+            "Calcium_Ca_mg_l": "18.1"
+        }
+    },
+    {
+        "Region": "Lappajärvi Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.8",
+            "Alkalinity_TAC_mmol_l": "1.16",
+            "pH": "8.1",
+            "TDS_Conductivity_uS_cm": "215",
+            "Sodium_Na_mg_l": "4.4",
+            "Chlorides_Cl_mg_l": "4.5",
+            "Calcium_Ca_mg_l": "18.6"
+        }
+    },
+    {
+        "Region": "Lappeenranta Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.8",
+            "Alkalinity_TAC_mmol_l": "1.16",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "166",
+            "Sodium_Na_mg_l": "4.8",
+            "Chlorides_Cl_mg_l": "6.0",
+            "Calcium_Ca_mg_l": "15.5"
+        }
+    },
+    {
+        "Region": "Lapua Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.8",
+            "Alkalinity_TAC_mmol_l": "0.63",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "133",
+            "Sodium_Na_mg_l": "7.3",
+            "Chlorides_Cl_mg_l": "4.9",
+            "Calcium_Ca_mg_l": "16.3"
+        }
+    },
+    {
+        "Region": "Larsmo Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.2",
+            "Alkalinity_TAC_mmol_l": "1.13",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "183",
+            "Sodium_Na_mg_l": "5.0",
+            "Chlorides_Cl_mg_l": "6.9",
+            "Calcium_Ca_mg_l": "14.6"
+        }
+    },
+    {
+        "Region": "Laukaa Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.1",
+            "Alkalinity_TAC_mmol_l": "0.69",
+            "pH": "8.4",
+            "TDS_Conductivity_uS_cm": "130",
+            "Sodium_Na_mg_l": "7.7",
+            "Chlorides_Cl_mg_l": "4.9",
+            "Calcium_Ca_mg_l": "18.6"
+        }
+    },
+    {
+        "Region": "Lemi Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.8",
+            "Alkalinity_TAC_mmol_l": "0.97",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "149",
+            "Sodium_Na_mg_l": "6.4",
+            "Chlorides_Cl_mg_l": "5.4",
+            "Calcium_Ca_mg_l": "17.1"
+        }
+    },
+    {
+        "Region": "Lemland Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.7",
+            "Alkalinity_TAC_mmol_l": "0.79",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "156",
+            "Sodium_Na_mg_l": "4.6",
+            "Chlorides_Cl_mg_l": "4.3",
+            "Calcium_Ca_mg_l": "11.2"
+        }
+    },
+    {
+        "Region": "Lempäälä Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.6",
+            "Alkalinity_TAC_mmol_l": "0.68",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "135",
+            "Sodium_Na_mg_l": "5.0",
+            "Chlorides_Cl_mg_l": "7.3",
+            "Calcium_Ca_mg_l": "11.1"
+        }
+    },
+    {
+        "Region": "Leppävirta Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.1",
+            "Alkalinity_TAC_mmol_l": "0.75",
+            "pH": "8.4",
+            "TDS_Conductivity_uS_cm": "219",
+            "Sodium_Na_mg_l": "9.6",
+            "Chlorides_Cl_mg_l": "3.5",
+            "Calcium_Ca_mg_l": "11.2"
+        }
+    },
+    {
+        "Region": "Lestijärvi Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.7",
+            "Alkalinity_TAC_mmol_l": "0.74",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "137",
+            "Sodium_Na_mg_l": "9.5",
+            "Chlorides_Cl_mg_l": "3.8",
+            "Calcium_Ca_mg_l": "10.7"
+        }
+    },
+    {
+        "Region": "Lieksa Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.5",
+            "Alkalinity_TAC_mmol_l": "1.10",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "218",
+            "Sodium_Na_mg_l": "7.6",
+            "Chlorides_Cl_mg_l": "3.1",
+            "Calcium_Ca_mg_l": "16.5"
+        }
+    },
+    {
+        "Region": "Lieto Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.5",
+            "Alkalinity_TAC_mmol_l": "0.72",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "155",
+            "Sodium_Na_mg_l": "8.5",
+            "Chlorides_Cl_mg_l": "3.9",
+            "Calcium_Ca_mg_l": "20.0"
+        }
+    },
+    {
+        "Region": "Liminka Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.6",
+            "Alkalinity_TAC_mmol_l": "0.82",
+            "pH": "8.3",
+            "TDS_Conductivity_uS_cm": "205",
+            "Sodium_Na_mg_l": "10.0",
+            "Chlorides_Cl_mg_l": "6.9",
+            "Calcium_Ca_mg_l": "10.8"
+        }
+    },
+    {
+        "Region": "Liperi Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.2",
+            "Alkalinity_TAC_mmol_l": "0.92",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "215",
+            "Sodium_Na_mg_l": "6.7",
+            "Chlorides_Cl_mg_l": "5.1",
+            "Calcium_Ca_mg_l": "17.7"
+        }
+    },
+    {
+        "Region": "Lohja Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.4",
+            "Alkalinity_TAC_mmol_l": "0.97",
+            "pH": "8.5",
+            "TDS_Conductivity_uS_cm": "220",
+            "Sodium_Na_mg_l": "8.9",
+            "Chlorides_Cl_mg_l": "4.5",
+            "Calcium_Ca_mg_l": "16.9"
+        }
+    },
+    {
+        "Region": "Loimaa Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.6",
+            "Alkalinity_TAC_mmol_l": "0.87",
+            "pH": "8.2",
+            "TDS_Conductivity_uS_cm": "179",
+            "Sodium_Na_mg_l": "5.0",
+            "Chlorides_Cl_mg_l": "3.9",
+            "Calcium_Ca_mg_l": "16.0"
+        }
+    },
+    {
+        "Region": "Loppi Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.0",
+            "Alkalinity_TAC_mmol_l": "0.81",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "197",
+            "Sodium_Na_mg_l": "6.6",
+            "Chlorides_Cl_mg_l": "3.3",
+            "Calcium_Ca_mg_l": "15.7"
+        }
+    },
+    {
+        "Region": "Loviisa Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.0",
+            "Alkalinity_TAC_mmol_l": "1.15",
+            "pH": "8.1",
+            "TDS_Conductivity_uS_cm": "210",
+            "Sodium_Na_mg_l": "6.0",
+            "Chlorides_Cl_mg_l": "6.5",
+            "Calcium_Ca_mg_l": "19.5"
+        }
+    },
+    {
+        "Region": "Luhanka Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.3",
+            "Alkalinity_TAC_mmol_l": "1.14",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "121",
+            "Sodium_Na_mg_l": "9.6",
+            "Chlorides_Cl_mg_l": "5.3",
+            "Calcium_Ca_mg_l": "10.2"
+        }
+    },
+    {
+        "Region": "Lumijoki Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.3",
+            "Alkalinity_TAC_mmol_l": "0.63",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "177",
+            "Sodium_Na_mg_l": "8.0",
+            "Chlorides_Cl_mg_l": "6.8",
+            "Calcium_Ca_mg_l": "14.9"
+        }
+    },
+    {
+        "Region": "Lumparland Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.4",
+            "Alkalinity_TAC_mmol_l": "0.92",
+            "pH": "8.1",
+            "TDS_Conductivity_uS_cm": "147",
+            "Sodium_Na_mg_l": "9.1",
+            "Chlorides_Cl_mg_l": "3.9",
+            "Calcium_Ca_mg_l": "10.4"
+        }
+    },
+    {
+        "Region": "Luumäki Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.5",
+            "Alkalinity_TAC_mmol_l": "0.68",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "204",
+            "Sodium_Na_mg_l": "4.9",
+            "Chlorides_Cl_mg_l": "3.4",
+            "Calcium_Ca_mg_l": "12.8"
+        }
+    },
+    {
+        "Region": "Malax Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.5",
+            "Alkalinity_TAC_mmol_l": "1.01",
+            "pH": "8.4",
+            "TDS_Conductivity_uS_cm": "147",
+            "Sodium_Na_mg_l": "8.1",
+            "Chlorides_Cl_mg_l": "6.1",
+            "Calcium_Ca_mg_l": "13.9"
+        }
+    },
+    {
+        "Region": "Mariehamn Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.5",
+            "Alkalinity_TAC_mmol_l": "0.88",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "155",
+            "Sodium_Na_mg_l": "9.6",
+            "Chlorides_Cl_mg_l": "6.2",
+            "Calcium_Ca_mg_l": "13.0"
+        }
+    },
+    {
+        "Region": "Marttila Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.0",
+            "Alkalinity_TAC_mmol_l": "0.63",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "153",
+            "Sodium_Na_mg_l": "5.5",
+            "Chlorides_Cl_mg_l": "7.6",
+            "Calcium_Ca_mg_l": "13.9"
+        }
+    },
+    {
+        "Region": "Masku Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.1",
+            "Alkalinity_TAC_mmol_l": "0.99",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "186",
+            "Sodium_Na_mg_l": "9.4",
+            "Chlorides_Cl_mg_l": "3.2",
+            "Calcium_Ca_mg_l": "13.8"
+        }
+    },
+    {
+        "Region": "Merijärvi Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.4",
+            "Alkalinity_TAC_mmol_l": "0.67",
+            "pH": "8.3",
+            "TDS_Conductivity_uS_cm": "128",
+            "Sodium_Na_mg_l": "4.3",
+            "Chlorides_Cl_mg_l": "6.1",
+            "Calcium_Ca_mg_l": "10.3"
+        }
+    },
+    {
+        "Region": "Merikarvia Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.8",
+            "Alkalinity_TAC_mmol_l": "0.90",
+            "pH": "8.3",
+            "TDS_Conductivity_uS_cm": "196",
+            "Sodium_Na_mg_l": "8.4",
+            "Chlorides_Cl_mg_l": "4.0",
+            "Calcium_Ca_mg_l": "16.5"
+        }
+    },
+    {
+        "Region": "Miehikkälä Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.9",
+            "Alkalinity_TAC_mmol_l": "1.13",
+            "pH": "8.1",
+            "TDS_Conductivity_uS_cm": "187",
+            "Sodium_Na_mg_l": "6.0",
+            "Chlorides_Cl_mg_l": "4.2",
+            "Calcium_Ca_mg_l": "13.5"
+        }
+    },
+    {
+        "Region": "Mikkeli Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.7",
+            "Alkalinity_TAC_mmol_l": "0.73",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "128",
+            "Sodium_Na_mg_l": "6.3",
+            "Chlorides_Cl_mg_l": "6.6",
+            "Calcium_Ca_mg_l": "19.0"
+        }
+    },
+    {
+        "Region": "Muhos Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.4",
+            "Alkalinity_TAC_mmol_l": "0.60",
+            "pH": "8.1",
+            "TDS_Conductivity_uS_cm": "156",
+            "Sodium_Na_mg_l": "9.4",
+            "Chlorides_Cl_mg_l": "5.7",
+            "Calcium_Ca_mg_l": "10.3"
+        }
+    },
+    {
+        "Region": "Multia Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.6",
+            "Alkalinity_TAC_mmol_l": "0.72",
+            "pH": "8.4",
+            "TDS_Conductivity_uS_cm": "172",
+            "Sodium_Na_mg_l": "5.2",
+            "Chlorides_Cl_mg_l": "7.3",
+            "Calcium_Ca_mg_l": "19.2"
+        }
+    },
+    {
+        "Region": "Muonio Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.6",
+            "Alkalinity_TAC_mmol_l": "1.04",
+            "pH": "8.2",
+            "TDS_Conductivity_uS_cm": "148",
+            "Sodium_Na_mg_l": "8.7",
+            "Chlorides_Cl_mg_l": "7.4",
+            "Calcium_Ca_mg_l": "19.4"
+        }
+    },
+    {
+        "Region": "Muurame Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.3",
+            "Alkalinity_TAC_mmol_l": "0.69",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "138",
+            "Sodium_Na_mg_l": "6.9",
+            "Chlorides_Cl_mg_l": "4.7",
+            "Calcium_Ca_mg_l": "17.8"
+        }
+    },
+    {
+        "Region": "Mynämäki Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.1",
+            "Alkalinity_TAC_mmol_l": "0.60",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "163",
+            "Sodium_Na_mg_l": "8.6",
+            "Chlorides_Cl_mg_l": "6.3",
+            "Calcium_Ca_mg_l": "14.4"
+        }
+    },
+    {
+        "Region": "Myrskylä Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.3",
+            "Alkalinity_TAC_mmol_l": "0.67",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "209",
+            "Sodium_Na_mg_l": "9.5",
+            "Chlorides_Cl_mg_l": "4.7",
+            "Calcium_Ca_mg_l": "10.2"
+        }
+    },
+    {
+        "Region": "Mäntsälä Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.9",
+            "Alkalinity_TAC_mmol_l": "0.71",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "148",
+            "Sodium_Na_mg_l": "4.6",
+            "Chlorides_Cl_mg_l": "7.0",
+            "Calcium_Ca_mg_l": "11.7"
+        }
+    },
+    {
+        "Region": "Mänttä-Vilppula Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.0",
+            "Alkalinity_TAC_mmol_l": "0.68",
+            "pH": "8.1",
+            "TDS_Conductivity_uS_cm": "128",
+            "Sodium_Na_mg_l": "6.7",
+            "Chlorides_Cl_mg_l": "6.2",
+            "Calcium_Ca_mg_l": "13.0"
+        }
+    },
+    {
+        "Region": "Mäntyharju Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.2",
+            "Alkalinity_TAC_mmol_l": "1.10",
+            "pH": "8.3",
+            "TDS_Conductivity_uS_cm": "163",
+            "Sodium_Na_mg_l": "6.4",
+            "Chlorides_Cl_mg_l": "3.8",
+            "Calcium_Ca_mg_l": "12.9"
+        }
+    },
+    {
+        "Region": "Naantali Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.9",
+            "Alkalinity_TAC_mmol_l": "1.18",
+            "pH": "8.1",
+            "TDS_Conductivity_uS_cm": "147",
+            "Sodium_Na_mg_l": "7.0",
+            "Chlorides_Cl_mg_l": "4.0",
+            "Calcium_Ca_mg_l": "14.1"
+        }
+    },
+    {
+        "Region": "Nakkila Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.5",
+            "Alkalinity_TAC_mmol_l": "0.72",
+            "pH": "8.1",
+            "TDS_Conductivity_uS_cm": "203",
+            "Sodium_Na_mg_l": "4.1",
+            "Chlorides_Cl_mg_l": "6.5",
+            "Calcium_Ca_mg_l": "19.0"
+        }
+    },
+    {
+        "Region": "Nivala Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.5",
+            "Alkalinity_TAC_mmol_l": "0.63",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "198",
+            "Sodium_Na_mg_l": "7.1",
+            "Chlorides_Cl_mg_l": "5.5",
+            "Calcium_Ca_mg_l": "12.4"
+        }
+    },
+    {
+        "Region": "Nokia Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.3",
+            "Alkalinity_TAC_mmol_l": "0.90",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "187",
+            "Sodium_Na_mg_l": "6.0",
+            "Chlorides_Cl_mg_l": "4.3",
+            "Calcium_Ca_mg_l": "11.6"
+        }
+    },
+    {
+        "Region": "Nousiainen Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.0",
+            "Alkalinity_TAC_mmol_l": "0.75",
+            "pH": "8.2",
+            "TDS_Conductivity_uS_cm": "192",
+            "Sodium_Na_mg_l": "5.4",
+            "Chlorides_Cl_mg_l": "3.0",
+            "Calcium_Ca_mg_l": "11.6"
+        }
+    },
+    {
+        "Region": "Nurmes Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.6",
+            "Alkalinity_TAC_mmol_l": "1.03",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "176",
+            "Sodium_Na_mg_l": "8.3",
+            "Chlorides_Cl_mg_l": "5.9",
+            "Calcium_Ca_mg_l": "13.5"
+        }
+    },
+    {
+        "Region": "Nurmijärvi Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.2",
+            "Alkalinity_TAC_mmol_l": "0.65",
+            "pH": "8.4",
+            "TDS_Conductivity_uS_cm": "151",
+            "Sodium_Na_mg_l": "5.1",
+            "Chlorides_Cl_mg_l": "3.1",
+            "Calcium_Ca_mg_l": "11.3"
+        }
+    },
+    {
+        "Region": "Nykarleby Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.7",
+            "Alkalinity_TAC_mmol_l": "0.89",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "139",
+            "Sodium_Na_mg_l": "5.2",
+            "Chlorides_Cl_mg_l": "6.9",
+            "Calcium_Ca_mg_l": "18.5"
+        }
+    },
+    {
+        "Region": "Närpes Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.6",
+            "Alkalinity_TAC_mmol_l": "1.04",
+            "pH": "8.5",
+            "TDS_Conductivity_uS_cm": "210",
+            "Sodium_Na_mg_l": "5.1",
+            "Chlorides_Cl_mg_l": "5.5",
+            "Calcium_Ca_mg_l": "14.3"
+        }
+    },
+    {
+        "Region": "Orimattila Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.7",
+            "Alkalinity_TAC_mmol_l": "0.90",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "138",
+            "Sodium_Na_mg_l": "9.0",
+            "Chlorides_Cl_mg_l": "3.6",
+            "Calcium_Ca_mg_l": "10.4"
+        }
+    },
+    {
+        "Region": "Oripää Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.8",
+            "Alkalinity_TAC_mmol_l": "1.08",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "150",
+            "Sodium_Na_mg_l": "6.1",
+            "Chlorides_Cl_mg_l": "3.3",
+            "Calcium_Ca_mg_l": "14.4"
+        }
+    },
+    {
+        "Region": "Orivesi Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.7",
+            "Alkalinity_TAC_mmol_l": "0.65",
+            "pH": "8.4",
+            "TDS_Conductivity_uS_cm": "203",
+            "Sodium_Na_mg_l": "9.4",
+            "Chlorides_Cl_mg_l": "4.8",
+            "Calcium_Ca_mg_l": "17.7"
+        }
+    },
+    {
+        "Region": "Oulainen Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.5",
+            "Alkalinity_TAC_mmol_l": "1.18",
+            "pH": "8.3",
+            "TDS_Conductivity_uS_cm": "122",
+            "Sodium_Na_mg_l": "8.9",
+            "Chlorides_Cl_mg_l": "5.5",
+            "Calcium_Ca_mg_l": "16.4"
+        }
+    },
+    {
+        "Region": "Outokumpu Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.6",
+            "Alkalinity_TAC_mmol_l": "0.71",
+            "pH": "8.4",
+            "TDS_Conductivity_uS_cm": "214",
+            "Sodium_Na_mg_l": "4.3",
+            "Chlorides_Cl_mg_l": "3.9",
+            "Calcium_Ca_mg_l": "15.3"
+        }
+    },
+    {
+        "Region": "Padasjoki Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.3",
+            "Alkalinity_TAC_mmol_l": "0.85",
+            "pH": "8.3",
+            "TDS_Conductivity_uS_cm": "134",
+            "Sodium_Na_mg_l": "7.0",
+            "Chlorides_Cl_mg_l": "5.8",
+            "Calcium_Ca_mg_l": "10.9"
+        }
+    },
+    {
+        "Region": "Paimio Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.4",
+            "Alkalinity_TAC_mmol_l": "0.61",
+            "pH": "8.2",
+            "TDS_Conductivity_uS_cm": "146",
+            "Sodium_Na_mg_l": "7.6",
+            "Chlorides_Cl_mg_l": "3.2",
+            "Calcium_Ca_mg_l": "17.5"
+        }
+    },
+    {
+        "Region": "Paltamo Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.3",
+            "Alkalinity_TAC_mmol_l": "0.61",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "155",
+            "Sodium_Na_mg_l": "5.4",
+            "Chlorides_Cl_mg_l": "3.3",
+            "Calcium_Ca_mg_l": "12.6"
+        }
+    },
+    {
+        "Region": "Pargas Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.2",
+            "Alkalinity_TAC_mmol_l": "0.79",
+            "pH": "8.5",
+            "TDS_Conductivity_uS_cm": "186",
+            "Sodium_Na_mg_l": "6.8",
+            "Chlorides_Cl_mg_l": "3.8",
+            "Calcium_Ca_mg_l": "10.3"
+        }
+    },
+    {
+        "Region": "Parikkala Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.0",
+            "Alkalinity_TAC_mmol_l": "0.78",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "181",
+            "Sodium_Na_mg_l": "7.0",
+            "Chlorides_Cl_mg_l": "3.4",
+            "Calcium_Ca_mg_l": "17.3"
+        }
+    },
+    {
+        "Region": "Parkano Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.9",
+            "Alkalinity_TAC_mmol_l": "0.92",
+            "pH": "8.1",
+            "TDS_Conductivity_uS_cm": "141",
+            "Sodium_Na_mg_l": "8.0",
+            "Chlorides_Cl_mg_l": "3.5",
+            "Calcium_Ca_mg_l": "17.7"
+        }
+    },
+    {
+        "Region": "Pedersöre Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.0",
+            "Alkalinity_TAC_mmol_l": "0.84",
+            "pH": "8.3",
+            "TDS_Conductivity_uS_cm": "195",
+            "Sodium_Na_mg_l": "6.9",
+            "Chlorides_Cl_mg_l": "4.0",
+            "Calcium_Ca_mg_l": "15.8"
+        }
+    },
+    {
+        "Region": "Pelkosenniemi Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.2",
+            "Alkalinity_TAC_mmol_l": "0.97",
+            "pH": "8.3",
+            "TDS_Conductivity_uS_cm": "220",
+            "Sodium_Na_mg_l": "5.3",
+            "Chlorides_Cl_mg_l": "4.4",
+            "Calcium_Ca_mg_l": "10.7"
+        }
+    },
+    {
+        "Region": "Pello Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.7",
+            "Alkalinity_TAC_mmol_l": "0.88",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "190",
+            "Sodium_Na_mg_l": "8.9",
+            "Chlorides_Cl_mg_l": "5.5",
+            "Calcium_Ca_mg_l": "18.5"
+        }
+    },
+    {
+        "Region": "Perho Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.1",
+            "Alkalinity_TAC_mmol_l": "1.20",
+            "pH": "8.2",
+            "TDS_Conductivity_uS_cm": "135",
+            "Sodium_Na_mg_l": "7.6",
+            "Chlorides_Cl_mg_l": "3.7",
+            "Calcium_Ca_mg_l": "12.9"
+        }
+    },
+    {
+        "Region": "Petäjävesi Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.6",
+            "Alkalinity_TAC_mmol_l": "0.92",
+            "pH": "8.2",
+            "TDS_Conductivity_uS_cm": "199",
+            "Sodium_Na_mg_l": "10.0",
+            "Chlorides_Cl_mg_l": "5.3",
+            "Calcium_Ca_mg_l": "18.3"
+        }
+    },
+    {
+        "Region": "Pieksämäki Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.3",
+            "Alkalinity_TAC_mmol_l": "0.82",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "170",
+            "Sodium_Na_mg_l": "9.3",
+            "Chlorides_Cl_mg_l": "7.1",
+            "Calcium_Ca_mg_l": "11.9"
+        }
+    },
+    {
+        "Region": "Pielavesi Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.3",
+            "Alkalinity_TAC_mmol_l": "0.90",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "124",
+            "Sodium_Na_mg_l": "6.8",
+            "Chlorides_Cl_mg_l": "7.0",
+            "Calcium_Ca_mg_l": "16.1"
+        }
+    },
+    {
+        "Region": "Pihtipudas Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.6",
+            "Alkalinity_TAC_mmol_l": "0.88",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "209",
+            "Sodium_Na_mg_l": "7.0",
+            "Chlorides_Cl_mg_l": "7.9",
+            "Calcium_Ca_mg_l": "16.7"
+        }
+    },
+    {
+        "Region": "Pirkkala Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.1",
+            "Alkalinity_TAC_mmol_l": "1.05",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "149",
+            "Sodium_Na_mg_l": "5.1",
+            "Chlorides_Cl_mg_l": "6.7",
+            "Calcium_Ca_mg_l": "12.3"
+        }
+    },
+    {
+        "Region": "Polvijärvi Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.9",
+            "Alkalinity_TAC_mmol_l": "0.73",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "153",
+            "Sodium_Na_mg_l": "7.4",
+            "Chlorides_Cl_mg_l": "3.8",
+            "Calcium_Ca_mg_l": "12.7"
+        }
+    },
+    {
+        "Region": "Pomarkku Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.8",
+            "Alkalinity_TAC_mmol_l": "1.14",
+            "pH": "8.3",
+            "TDS_Conductivity_uS_cm": "195",
+            "Sodium_Na_mg_l": "6.5",
+            "Chlorides_Cl_mg_l": "5.5",
+            "Calcium_Ca_mg_l": "15.2"
+        }
+    },
+    {
+        "Region": "Pornainen Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.0",
+            "Alkalinity_TAC_mmol_l": "0.62",
+            "pH": "8.3",
+            "TDS_Conductivity_uS_cm": "183",
+            "Sodium_Na_mg_l": "6.3",
+            "Chlorides_Cl_mg_l": "3.4",
+            "Calcium_Ca_mg_l": "13.8"
+        }
+    },
+    {
+        "Region": "Posio Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.6",
+            "Alkalinity_TAC_mmol_l": "1.13",
+            "pH": "8.4",
+            "TDS_Conductivity_uS_cm": "155",
+            "Sodium_Na_mg_l": "7.9",
+            "Chlorides_Cl_mg_l": "4.0",
+            "Calcium_Ca_mg_l": "18.7"
+        }
+    },
+    {
+        "Region": "Pudasjärvi Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.1",
+            "Alkalinity_TAC_mmol_l": "0.98",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "193",
+            "Sodium_Na_mg_l": "5.9",
+            "Chlorides_Cl_mg_l": "7.8",
+            "Calcium_Ca_mg_l": "14.1"
+        }
+    },
+    {
+        "Region": "Pukkila Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.4",
+            "Alkalinity_TAC_mmol_l": "0.63",
+            "pH": "8.1",
+            "TDS_Conductivity_uS_cm": "167",
+            "Sodium_Na_mg_l": "6.8",
+            "Chlorides_Cl_mg_l": "5.1",
+            "Calcium_Ca_mg_l": "14.1"
+        }
+    },
+    {
+        "Region": "Punkalaidun Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.7",
+            "Alkalinity_TAC_mmol_l": "1.19",
+            "pH": "8.1",
+            "TDS_Conductivity_uS_cm": "191",
+            "Sodium_Na_mg_l": "9.9",
+            "Chlorides_Cl_mg_l": "7.6",
+            "Calcium_Ca_mg_l": "10.2"
+        }
+    },
+    {
+        "Region": "Puolanka Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.4",
+            "Alkalinity_TAC_mmol_l": "0.97",
+            "pH": "8.2",
+            "TDS_Conductivity_uS_cm": "167",
+            "Sodium_Na_mg_l": "6.2",
+            "Chlorides_Cl_mg_l": "7.2",
+            "Calcium_Ca_mg_l": "19.8"
+        }
+    },
+    {
+        "Region": "Puumala Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.2",
+            "Alkalinity_TAC_mmol_l": "0.87",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "123",
+            "Sodium_Na_mg_l": "7.3",
+            "Chlorides_Cl_mg_l": "7.8",
+            "Calcium_Ca_mg_l": "17.9"
+        }
+    },
+    {
+        "Region": "Pyhtää Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.7",
+            "Alkalinity_TAC_mmol_l": "0.86",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "197",
+            "Sodium_Na_mg_l": "5.1",
+            "Chlorides_Cl_mg_l": "3.2",
+            "Calcium_Ca_mg_l": "17.2"
+        }
+    },
+    {
+        "Region": "Pyhäjoki Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.0",
+            "Alkalinity_TAC_mmol_l": "0.72",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "131",
+            "Sodium_Na_mg_l": "9.1",
+            "Chlorides_Cl_mg_l": "6.1",
+            "Calcium_Ca_mg_l": "13.0"
+        }
+    },
+    {
+        "Region": "Pyhäjärvi Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.1",
+            "Alkalinity_TAC_mmol_l": "0.85",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "166",
+            "Sodium_Na_mg_l": "5.6",
+            "Chlorides_Cl_mg_l": "4.7",
+            "Calcium_Ca_mg_l": "19.6"
+        }
+    },
+    {
+        "Region": "Pyhäntä Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.5",
+            "Alkalinity_TAC_mmol_l": "0.73",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "219",
+            "Sodium_Na_mg_l": "6.0",
+            "Chlorides_Cl_mg_l": "6.3",
+            "Calcium_Ca_mg_l": "18.3"
+        }
+    },
+    {
+        "Region": "Pyhäranta Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.5",
+            "Alkalinity_TAC_mmol_l": "0.77",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "159",
+            "Sodium_Na_mg_l": "7.4",
+            "Chlorides_Cl_mg_l": "5.4",
+            "Calcium_Ca_mg_l": "12.0"
+        }
+    },
+    {
+        "Region": "Pälkäne Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.3",
+            "Alkalinity_TAC_mmol_l": "0.97",
+            "pH": "8.3",
+            "TDS_Conductivity_uS_cm": "202",
+            "Sodium_Na_mg_l": "4.8",
+            "Chlorides_Cl_mg_l": "3.6",
+            "Calcium_Ca_mg_l": "19.9"
+        }
+    },
+    {
+        "Region": "Pöytyä Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.0",
+            "Alkalinity_TAC_mmol_l": "0.99",
+            "pH": "8.1",
+            "TDS_Conductivity_uS_cm": "219",
+            "Sodium_Na_mg_l": "8.8",
+            "Chlorides_Cl_mg_l": "4.9",
+            "Calcium_Ca_mg_l": "15.0"
+        }
+    },
+    {
+        "Region": "Raahe Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.0",
+            "Alkalinity_TAC_mmol_l": "0.77",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "168",
+            "Sodium_Na_mg_l": "6.5",
+            "Chlorides_Cl_mg_l": "6.3",
+            "Calcium_Ca_mg_l": "18.1"
+        }
+    },
+    {
+        "Region": "Raisio Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.5",
+            "Alkalinity_TAC_mmol_l": "0.91",
+            "pH": "8.5",
+            "TDS_Conductivity_uS_cm": "215",
+            "Sodium_Na_mg_l": "7.2",
+            "Chlorides_Cl_mg_l": "6.6",
+            "Calcium_Ca_mg_l": "15.3"
+        }
+    },
+    {
+        "Region": "Rantasalmi Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.6",
+            "Alkalinity_TAC_mmol_l": "0.87",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "208",
+            "Sodium_Na_mg_l": "6.4",
+            "Chlorides_Cl_mg_l": "6.3",
+            "Calcium_Ca_mg_l": "17.5"
+        }
+    },
+    {
+        "Region": "Ranua Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.1",
+            "Alkalinity_TAC_mmol_l": "0.92",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "217",
+            "Sodium_Na_mg_l": "7.5",
+            "Chlorides_Cl_mg_l": "6.2",
+            "Calcium_Ca_mg_l": "16.9"
+        }
+    },
+    {
+        "Region": "Raseborg Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.4",
+            "Alkalinity_TAC_mmol_l": "0.61",
+            "pH": "8.1",
+            "TDS_Conductivity_uS_cm": "127",
+            "Sodium_Na_mg_l": "9.8",
+            "Chlorides_Cl_mg_l": "5.5",
+            "Calcium_Ca_mg_l": "19.0"
+        }
+    },
+    {
+        "Region": "Rautalampi Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.0",
+            "Alkalinity_TAC_mmol_l": "1.06",
+            "pH": "8.5",
+            "TDS_Conductivity_uS_cm": "153",
+            "Sodium_Na_mg_l": "8.5",
+            "Chlorides_Cl_mg_l": "5.3",
+            "Calcium_Ca_mg_l": "19.1"
+        }
+    },
+    {
+        "Region": "Rautavaara Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.9",
+            "Alkalinity_TAC_mmol_l": "0.71",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "153",
+            "Sodium_Na_mg_l": "4.7",
+            "Chlorides_Cl_mg_l": "7.3",
+            "Calcium_Ca_mg_l": "15.6"
+        }
+    },
+    {
+        "Region": "Rautjärvi Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.2",
+            "Alkalinity_TAC_mmol_l": "0.79",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "158",
+            "Sodium_Na_mg_l": "6.5",
+            "Chlorides_Cl_mg_l": "6.4",
+            "Calcium_Ca_mg_l": "16.9"
+        }
+    },
+    {
+        "Region": "Reisjärvi Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.1",
+            "Alkalinity_TAC_mmol_l": "0.84",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "212",
+            "Sodium_Na_mg_l": "7.5",
+            "Chlorides_Cl_mg_l": "3.8",
+            "Calcium_Ca_mg_l": "11.8"
+        }
+    },
+    {
+        "Region": "Riihimäki Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.6",
+            "Alkalinity_TAC_mmol_l": "1.15",
+            "pH": "8.4",
+            "TDS_Conductivity_uS_cm": "188",
+            "Sodium_Na_mg_l": "5.8",
+            "Chlorides_Cl_mg_l": "4.5",
+            "Calcium_Ca_mg_l": "11.6"
+        }
+    },
+    {
+        "Region": "Ristijärvi Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.7",
+            "Alkalinity_TAC_mmol_l": "0.86",
+            "pH": "8.4",
+            "TDS_Conductivity_uS_cm": "142",
+            "Sodium_Na_mg_l": "9.7",
+            "Chlorides_Cl_mg_l": "4.2",
+            "Calcium_Ca_mg_l": "18.1"
+        }
+    },
+    {
+        "Region": "Ruokolahti Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.3",
+            "Alkalinity_TAC_mmol_l": "0.63",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "181",
+            "Sodium_Na_mg_l": "7.3",
+            "Chlorides_Cl_mg_l": "6.0",
+            "Calcium_Ca_mg_l": "15.6"
+        }
+    },
+    {
+        "Region": "Ruovesi Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.6",
+            "Alkalinity_TAC_mmol_l": "0.69",
+            "pH": "8.3",
+            "TDS_Conductivity_uS_cm": "132",
+            "Sodium_Na_mg_l": "7.1",
+            "Chlorides_Cl_mg_l": "3.2",
+            "Calcium_Ca_mg_l": "10.4"
+        }
+    },
+    {
+        "Region": "Rusko Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.0",
+            "Alkalinity_TAC_mmol_l": "0.88",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "214",
+            "Sodium_Na_mg_l": "8.0",
+            "Chlorides_Cl_mg_l": "7.5",
+            "Calcium_Ca_mg_l": "18.8"
+        }
+    },
+    {
+        "Region": "Rääkkylä Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.6",
+            "Alkalinity_TAC_mmol_l": "1.12",
+            "pH": "8.4",
+            "TDS_Conductivity_uS_cm": "129",
+            "Sodium_Na_mg_l": "7.7",
+            "Chlorides_Cl_mg_l": "7.6",
+            "Calcium_Ca_mg_l": "12.9"
+        }
+    },
+    {
+        "Region": "Saarijärvi Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.1",
+            "Alkalinity_TAC_mmol_l": "0.73",
+            "pH": "8.5",
+            "TDS_Conductivity_uS_cm": "174",
+            "Sodium_Na_mg_l": "8.0",
+            "Chlorides_Cl_mg_l": "5.9",
+            "Calcium_Ca_mg_l": "15.2"
+        }
+    },
+    {
+        "Region": "Salla Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.8",
+            "Alkalinity_TAC_mmol_l": "0.89",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "170",
+            "Sodium_Na_mg_l": "7.7",
+            "Chlorides_Cl_mg_l": "6.1",
+            "Calcium_Ca_mg_l": "19.8"
+        }
+    },
+    {
+        "Region": "Saltvik Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.6",
+            "Alkalinity_TAC_mmol_l": "1.11",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "120",
+            "Sodium_Na_mg_l": "4.0",
+            "Chlorides_Cl_mg_l": "5.8",
+            "Calcium_Ca_mg_l": "15.9"
+        }
+    },
+    {
+        "Region": "Sastamala Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.9",
+            "Alkalinity_TAC_mmol_l": "0.67",
+            "pH": "8.2",
+            "TDS_Conductivity_uS_cm": "156",
+            "Sodium_Na_mg_l": "9.6",
+            "Chlorides_Cl_mg_l": "3.2",
+            "Calcium_Ca_mg_l": "16.1"
+        }
+    },
+    {
+        "Region": "Sauvo Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.2",
+            "Alkalinity_TAC_mmol_l": "0.70",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "208",
+            "Sodium_Na_mg_l": "5.1",
+            "Chlorides_Cl_mg_l": "5.4",
+            "Calcium_Ca_mg_l": "19.6"
+        }
+    },
+    {
+        "Region": "Savitaipale Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.0",
+            "Alkalinity_TAC_mmol_l": "0.72",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "129",
+            "Sodium_Na_mg_l": "7.8",
+            "Chlorides_Cl_mg_l": "5.9",
+            "Calcium_Ca_mg_l": "17.7"
+        }
+    },
+    {
+        "Region": "Savonlinna Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.0",
+            "Alkalinity_TAC_mmol_l": "0.95",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "166",
+            "Sodium_Na_mg_l": "8.0",
+            "Chlorides_Cl_mg_l": "3.3",
+            "Calcium_Ca_mg_l": "19.2"
+        }
+    },
+    {
+        "Region": "Savukoski Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.1",
+            "Alkalinity_TAC_mmol_l": "1.14",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "169",
+            "Sodium_Na_mg_l": "6.9",
+            "Chlorides_Cl_mg_l": "6.6",
+            "Calcium_Ca_mg_l": "10.4"
+        }
+    },
+    {
+        "Region": "Seinäjoki Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.2",
+            "Alkalinity_TAC_mmol_l": "0.75",
+            "pH": "8.5",
+            "TDS_Conductivity_uS_cm": "186",
+            "Sodium_Na_mg_l": "6.5",
+            "Chlorides_Cl_mg_l": "5.5",
+            "Calcium_Ca_mg_l": "12.9"
+        }
+    },
+    {
+        "Region": "Sievi Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.5",
+            "Alkalinity_TAC_mmol_l": "0.82",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "151",
+            "Sodium_Na_mg_l": "4.9",
+            "Chlorides_Cl_mg_l": "3.9",
+            "Calcium_Ca_mg_l": "17.8"
+        }
+    },
+    {
+        "Region": "Siikainen Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.1",
+            "Alkalinity_TAC_mmol_l": "1.12",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "210",
+            "Sodium_Na_mg_l": "4.1",
+            "Chlorides_Cl_mg_l": "5.0",
+            "Calcium_Ca_mg_l": "15.7"
+        }
+    },
+    {
+        "Region": "Siikajoki Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.6",
+            "Alkalinity_TAC_mmol_l": "1.01",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "212",
+            "Sodium_Na_mg_l": "5.1",
+            "Chlorides_Cl_mg_l": "6.3",
+            "Calcium_Ca_mg_l": "14.6"
+        }
+    },
+    {
+        "Region": "Siikalatva Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.0",
+            "Alkalinity_TAC_mmol_l": "1.06",
+            "pH": "8.1",
+            "TDS_Conductivity_uS_cm": "183",
+            "Sodium_Na_mg_l": "9.1",
+            "Chlorides_Cl_mg_l": "4.8",
+            "Calcium_Ca_mg_l": "10.3"
+        }
+    },
+    {
+        "Region": "Siilinjärvi Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.1",
+            "Alkalinity_TAC_mmol_l": "0.90",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "173",
+            "Sodium_Na_mg_l": "6.9",
+            "Chlorides_Cl_mg_l": "7.3",
+            "Calcium_Ca_mg_l": "13.6"
+        }
+    },
+    {
+        "Region": "Simo Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.7",
+            "Alkalinity_TAC_mmol_l": "0.64",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "131",
+            "Sodium_Na_mg_l": "8.4",
+            "Chlorides_Cl_mg_l": "5.2",
+            "Calcium_Ca_mg_l": "12.0"
+        }
+    },
+    {
+        "Region": "Sipoo Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.4",
+            "Alkalinity_TAC_mmol_l": "0.74",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "202",
+            "Sodium_Na_mg_l": "4.1",
+            "Chlorides_Cl_mg_l": "7.9",
+            "Calcium_Ca_mg_l": "15.2"
+        }
+    },
+    {
+        "Region": "Siuntio Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.5",
+            "Alkalinity_TAC_mmol_l": "0.61",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "151",
+            "Sodium_Na_mg_l": "6.0",
+            "Chlorides_Cl_mg_l": "3.9",
+            "Calcium_Ca_mg_l": "20.0"
+        }
+    },
+    {
+        "Region": "Sodankylä Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.1",
+            "Alkalinity_TAC_mmol_l": "0.84",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "180",
+            "Sodium_Na_mg_l": "7.8",
+            "Chlorides_Cl_mg_l": "6.0",
+            "Calcium_Ca_mg_l": "13.0"
+        }
+    },
+    {
+        "Region": "Soini Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.8",
+            "Alkalinity_TAC_mmol_l": "0.77",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "134",
+            "Sodium_Na_mg_l": "5.1",
+            "Chlorides_Cl_mg_l": "7.7",
+            "Calcium_Ca_mg_l": "17.8"
+        }
+    },
+    {
+        "Region": "Somero Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.1",
+            "Alkalinity_TAC_mmol_l": "0.67",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "215",
+            "Sodium_Na_mg_l": "7.4",
+            "Chlorides_Cl_mg_l": "7.6",
+            "Calcium_Ca_mg_l": "12.0"
+        }
+    },
+    {
+        "Region": "Sonkajärvi Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.1",
+            "Alkalinity_TAC_mmol_l": "0.98",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "142",
+            "Sodium_Na_mg_l": "6.1",
+            "Chlorides_Cl_mg_l": "8.0",
+            "Calcium_Ca_mg_l": "15.5"
+        }
+    },
+    {
+        "Region": "Sotkamo Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.1",
+            "Alkalinity_TAC_mmol_l": "0.77",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "219",
+            "Sodium_Na_mg_l": "6.1",
+            "Chlorides_Cl_mg_l": "3.2",
+            "Calcium_Ca_mg_l": "18.7"
+        }
+    },
+    {
+        "Region": "Sottunga Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.4",
+            "Alkalinity_TAC_mmol_l": "1.10",
+            "pH": "8.4",
+            "TDS_Conductivity_uS_cm": "127",
+            "Sodium_Na_mg_l": "8.2",
+            "Chlorides_Cl_mg_l": "3.5",
+            "Calcium_Ca_mg_l": "18.0"
+        }
+    },
+    {
+        "Region": "Sulkava Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.3",
+            "Alkalinity_TAC_mmol_l": "0.63",
+            "pH": "8.2",
+            "TDS_Conductivity_uS_cm": "189",
+            "Sodium_Na_mg_l": "9.4",
+            "Chlorides_Cl_mg_l": "3.8",
+            "Calcium_Ca_mg_l": "14.5"
+        }
+    },
+    {
+        "Region": "Sund Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.2",
+            "Alkalinity_TAC_mmol_l": "0.82",
+            "pH": "8.3",
+            "TDS_Conductivity_uS_cm": "141",
+            "Sodium_Na_mg_l": "6.4",
+            "Chlorides_Cl_mg_l": "6.5",
+            "Calcium_Ca_mg_l": "11.2"
+        }
+    },
+    {
+        "Region": "Suomussalmi Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.9",
+            "Alkalinity_TAC_mmol_l": "0.79",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "165",
+            "Sodium_Na_mg_l": "5.8",
+            "Chlorides_Cl_mg_l": "3.3",
+            "Calcium_Ca_mg_l": "13.1"
+        }
+    },
+    {
+        "Region": "Suonenjoki Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.5",
+            "Alkalinity_TAC_mmol_l": "0.71",
+            "pH": "8.5",
+            "TDS_Conductivity_uS_cm": "127",
+            "Sodium_Na_mg_l": "6.8",
+            "Chlorides_Cl_mg_l": "4.4",
+            "Calcium_Ca_mg_l": "12.7"
+        }
+    },
+    {
+        "Region": "Sysmä Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.5",
+            "Alkalinity_TAC_mmol_l": "1.06",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "210",
+            "Sodium_Na_mg_l": "5.4",
+            "Chlorides_Cl_mg_l": "4.4",
+            "Calcium_Ca_mg_l": "19.7"
+        }
+    },
+    {
+        "Region": "Säkylä Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.1",
+            "Alkalinity_TAC_mmol_l": "0.89",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "203",
+            "Sodium_Na_mg_l": "5.1",
+            "Chlorides_Cl_mg_l": "5.2",
+            "Calcium_Ca_mg_l": "13.7"
+        }
+    },
+    {
+        "Region": "Taipalsaari Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.7",
+            "Alkalinity_TAC_mmol_l": "0.84",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "155",
+            "Sodium_Na_mg_l": "5.4",
+            "Chlorides_Cl_mg_l": "5.2",
+            "Calcium_Ca_mg_l": "15.2"
+        }
+    },
+    {
+        "Region": "Taivalkoski Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.2",
+            "Alkalinity_TAC_mmol_l": "1.20",
+            "pH": "8.2",
+            "TDS_Conductivity_uS_cm": "126",
+            "Sodium_Na_mg_l": "6.0",
+            "Chlorides_Cl_mg_l": "7.4",
+            "Calcium_Ca_mg_l": "11.4"
+        }
+    },
+    {
+        "Region": "Taivassalo Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.6",
+            "Alkalinity_TAC_mmol_l": "0.91",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "176",
+            "Sodium_Na_mg_l": "6.5",
+            "Chlorides_Cl_mg_l": "6.0",
+            "Calcium_Ca_mg_l": "19.1"
+        }
+    },
+    {
+        "Region": "Tammela Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.4",
+            "Alkalinity_TAC_mmol_l": "0.83",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "132",
+            "Sodium_Na_mg_l": "6.1",
+            "Chlorides_Cl_mg_l": "7.4",
+            "Calcium_Ca_mg_l": "17.9"
+        }
+    },
+    {
+        "Region": "Tervo Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.3",
+            "Alkalinity_TAC_mmol_l": "0.61",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "207",
+            "Sodium_Na_mg_l": "9.9",
+            "Chlorides_Cl_mg_l": "3.4",
+            "Calcium_Ca_mg_l": "12.9"
+        }
+    },
+    {
+        "Region": "Tervola Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.8",
+            "Alkalinity_TAC_mmol_l": "1.14",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "140",
+            "Sodium_Na_mg_l": "8.0",
+            "Chlorides_Cl_mg_l": "6.3",
+            "Calcium_Ca_mg_l": "17.3"
+        }
+    },
+    {
+        "Region": "Teuva Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.9",
+            "Alkalinity_TAC_mmol_l": "0.98",
+            "pH": "8.1",
+            "TDS_Conductivity_uS_cm": "173",
+            "Sodium_Na_mg_l": "5.5",
+            "Chlorides_Cl_mg_l": "5.9",
+            "Calcium_Ca_mg_l": "11.5"
+        }
+    },
+    {
+        "Region": "Tohmajärvi Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.9",
+            "Alkalinity_TAC_mmol_l": "0.98",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "200",
+            "Sodium_Na_mg_l": "7.2",
+            "Chlorides_Cl_mg_l": "5.2",
+            "Calcium_Ca_mg_l": "19.3"
+        }
+    },
+    {
+        "Region": "Toholampi Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.3",
+            "Alkalinity_TAC_mmol_l": "0.72",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "149",
+            "Sodium_Na_mg_l": "8.4",
+            "Chlorides_Cl_mg_l": "7.1",
+            "Calcium_Ca_mg_l": "15.3"
+        }
+    },
+    {
+        "Region": "Toivakka Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.8",
+            "Alkalinity_TAC_mmol_l": "0.77",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "175",
+            "Sodium_Na_mg_l": "9.9",
+            "Chlorides_Cl_mg_l": "7.3",
+            "Calcium_Ca_mg_l": "13.6"
+        }
+    },
+    {
+        "Region": "Tornio Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.8",
+            "Alkalinity_TAC_mmol_l": "0.79",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "202",
+            "Sodium_Na_mg_l": "7.3",
+            "Chlorides_Cl_mg_l": "5.0",
+            "Calcium_Ca_mg_l": "15.9"
+        }
+    },
+    {
+        "Region": "Tuusniemi Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.9",
+            "Alkalinity_TAC_mmol_l": "0.80",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "130",
+            "Sodium_Na_mg_l": "8.3",
+            "Chlorides_Cl_mg_l": "4.8",
+            "Calcium_Ca_mg_l": "16.8"
+        }
+    },
+    {
+        "Region": "Tuusula Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.7",
+            "Alkalinity_TAC_mmol_l": "0.90",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "194",
+            "Sodium_Na_mg_l": "8.7",
+            "Chlorides_Cl_mg_l": "5.2",
+            "Calcium_Ca_mg_l": "16.6"
+        }
+    },
+    {
+        "Region": "Tyrnävä Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.5",
+            "Alkalinity_TAC_mmol_l": "1.01",
+            "pH": "8.2",
+            "TDS_Conductivity_uS_cm": "187",
+            "Sodium_Na_mg_l": "4.2",
+            "Chlorides_Cl_mg_l": "7.2",
+            "Calcium_Ca_mg_l": "18.3"
+        }
+    },
+    {
+        "Region": "Ulvila Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.2",
+            "Alkalinity_TAC_mmol_l": "0.86",
+            "pH": "8.3",
+            "TDS_Conductivity_uS_cm": "184",
+            "Sodium_Na_mg_l": "9.7",
+            "Chlorides_Cl_mg_l": "3.1",
+            "Calcium_Ca_mg_l": "15.4"
+        }
+    },
+    {
+        "Region": "Urjala Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.2",
+            "Alkalinity_TAC_mmol_l": "0.95",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "210",
+            "Sodium_Na_mg_l": "9.8",
+            "Chlorides_Cl_mg_l": "5.7",
+            "Calcium_Ca_mg_l": "12.4"
+        }
+    },
+    {
+        "Region": "Utajärvi Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.1",
+            "Alkalinity_TAC_mmol_l": "0.78",
+            "pH": "8.1",
+            "TDS_Conductivity_uS_cm": "159",
+            "Sodium_Na_mg_l": "5.6",
+            "Chlorides_Cl_mg_l": "4.7",
+            "Calcium_Ca_mg_l": "10.9"
+        }
+    },
+    {
+        "Region": "Utsjoki Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.6",
+            "Alkalinity_TAC_mmol_l": "0.89",
+            "pH": "8.3",
+            "TDS_Conductivity_uS_cm": "136",
+            "Sodium_Na_mg_l": "6.5",
+            "Chlorides_Cl_mg_l": "4.6",
+            "Calcium_Ca_mg_l": "12.6"
+        }
+    },
+    {
+        "Region": "Uurainen Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.9",
+            "Alkalinity_TAC_mmol_l": "0.86",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "192",
+            "Sodium_Na_mg_l": "4.1",
+            "Chlorides_Cl_mg_l": "4.4",
+            "Calcium_Ca_mg_l": "13.2"
+        }
+    },
+    {
+        "Region": "Uusikaupunki Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.2",
+            "Alkalinity_TAC_mmol_l": "1.09",
+            "pH": "8.1",
+            "TDS_Conductivity_uS_cm": "208",
+            "Sodium_Na_mg_l": "9.4",
+            "Chlorides_Cl_mg_l": "3.6",
+            "Calcium_Ca_mg_l": "10.3"
+        }
+    },
+    {
+        "Region": "Vaala Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.0",
+            "Alkalinity_TAC_mmol_l": "0.70",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "137",
+            "Sodium_Na_mg_l": "9.8",
+            "Chlorides_Cl_mg_l": "5.9",
+            "Calcium_Ca_mg_l": "19.0"
+        }
+    },
+    {
+        "Region": "Valkeakoski Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.4",
+            "Alkalinity_TAC_mmol_l": "1.13",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "147",
+            "Sodium_Na_mg_l": "6.2",
+            "Chlorides_Cl_mg_l": "4.9",
+            "Calcium_Ca_mg_l": "17.0"
+        }
+    },
+    {
+        "Region": "Varkaus Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.1",
+            "Alkalinity_TAC_mmol_l": "0.79",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "202",
+            "Sodium_Na_mg_l": "6.1",
+            "Chlorides_Cl_mg_l": "3.6",
+            "Calcium_Ca_mg_l": "16.6"
+        }
+    },
+    {
+        "Region": "Vehmaa Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.3",
+            "Alkalinity_TAC_mmol_l": "1.07",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "159",
+            "Sodium_Na_mg_l": "10.0",
+            "Chlorides_Cl_mg_l": "7.1",
+            "Calcium_Ca_mg_l": "10.6"
+        }
+    },
+    {
+        "Region": "Vesanto Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.9",
+            "Alkalinity_TAC_mmol_l": "0.71",
+            "pH": "8.3",
+            "TDS_Conductivity_uS_cm": "159",
+            "Sodium_Na_mg_l": "9.7",
+            "Chlorides_Cl_mg_l": "3.5",
+            "Calcium_Ca_mg_l": "19.8"
+        }
+    },
+    {
+        "Region": "Vesilahti Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.3",
+            "Alkalinity_TAC_mmol_l": "0.74",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "195",
+            "Sodium_Na_mg_l": "5.5",
+            "Chlorides_Cl_mg_l": "3.9",
+            "Calcium_Ca_mg_l": "13.6"
+        }
+    },
+    {
+        "Region": "Veteli Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.2",
+            "Alkalinity_TAC_mmol_l": "1.15",
+            "pH": "8.3",
+            "TDS_Conductivity_uS_cm": "217",
+            "Sodium_Na_mg_l": "4.9",
+            "Chlorides_Cl_mg_l": "6.0",
+            "Calcium_Ca_mg_l": "18.5"
+        }
+    },
+    {
+        "Region": "Vieremä Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.2",
+            "Alkalinity_TAC_mmol_l": "0.60",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "149",
+            "Sodium_Na_mg_l": "8.5",
+            "Chlorides_Cl_mg_l": "7.7",
+            "Calcium_Ca_mg_l": "11.1"
+        }
+    },
+    {
+        "Region": "Vihti Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.2",
+            "Alkalinity_TAC_mmol_l": "1.08",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "153",
+            "Sodium_Na_mg_l": "8.0",
+            "Chlorides_Cl_mg_l": "5.7",
+            "Calcium_Ca_mg_l": "16.2"
+        }
+    },
+    {
+        "Region": "Viitasaari Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.9",
+            "Alkalinity_TAC_mmol_l": "1.19",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "139",
+            "Sodium_Na_mg_l": "4.8",
+            "Chlorides_Cl_mg_l": "6.1",
+            "Calcium_Ca_mg_l": "10.6"
+        }
+    },
+    {
+        "Region": "Vimpeli Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.4",
+            "Alkalinity_TAC_mmol_l": "1.02",
+            "pH": "8.4",
+            "TDS_Conductivity_uS_cm": "170",
+            "Sodium_Na_mg_l": "6.0",
+            "Chlorides_Cl_mg_l": "6.3",
+            "Calcium_Ca_mg_l": "12.2"
+        }
+    },
+    {
+        "Region": "Virolahti Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.5",
+            "Alkalinity_TAC_mmol_l": "1.15",
+            "pH": "8.4",
+            "TDS_Conductivity_uS_cm": "128",
+            "Sodium_Na_mg_l": "5.2",
+            "Chlorides_Cl_mg_l": "3.0",
+            "Calcium_Ca_mg_l": "18.5"
+        }
+    },
+    {
+        "Region": "Virrat Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.3",
+            "Alkalinity_TAC_mmol_l": "0.79",
+            "pH": "8.5",
+            "TDS_Conductivity_uS_cm": "150",
+            "Sodium_Na_mg_l": "9.6",
+            "Chlorides_Cl_mg_l": "4.9",
+            "Calcium_Ca_mg_l": "10.5"
+        }
+    },
+    {
+        "Region": "Vårdö Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.1",
+            "Alkalinity_TAC_mmol_l": "1.10",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "183",
+            "Sodium_Na_mg_l": "7.3",
+            "Chlorides_Cl_mg_l": "4.6",
+            "Calcium_Ca_mg_l": "11.5"
+        }
+    },
+    {
+        "Region": "Vörå Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.4",
+            "Alkalinity_TAC_mmol_l": "0.97",
+            "pH": "8.2",
+            "TDS_Conductivity_uS_cm": "129",
+            "Sodium_Na_mg_l": "7.7",
+            "Chlorides_Cl_mg_l": "4.9",
+            "Calcium_Ca_mg_l": "16.0"
+        }
+    },
+    {
+        "Region": "Ylitornio Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.7",
+            "Alkalinity_TAC_mmol_l": "0.71",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "197",
+            "Sodium_Na_mg_l": "7.7",
+            "Chlorides_Cl_mg_l": "7.2",
+            "Calcium_Ca_mg_l": "15.8"
+        }
+    },
+    {
+        "Region": "Ylivieska Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.1",
+            "Alkalinity_TAC_mmol_l": "0.76",
+            "pH": "8.2",
+            "TDS_Conductivity_uS_cm": "216",
+            "Sodium_Na_mg_l": "5.7",
+            "Chlorides_Cl_mg_l": "7.5",
+            "Calcium_Ca_mg_l": "14.8"
+        }
+    },
+    {
+        "Region": "Ylöjärvi Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.4",
+            "Alkalinity_TAC_mmol_l": "0.60",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "132",
+            "Sodium_Na_mg_l": "7.2",
+            "Chlorides_Cl_mg_l": "3.9",
+            "Calcium_Ca_mg_l": "18.4"
+        }
+    },
+    {
+        "Region": "Ypäjä Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.7",
+            "Alkalinity_TAC_mmol_l": "0.80",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "196",
+            "Sodium_Na_mg_l": "7.8",
+            "Chlorides_Cl_mg_l": "5.9",
+            "Calcium_Ca_mg_l": "10.9"
+        }
+    },
+    {
+        "Region": "Ähtäri Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.1",
+            "Alkalinity_TAC_mmol_l": "1.10",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "220",
+            "Sodium_Na_mg_l": "6.6",
+            "Chlorides_Cl_mg_l": "7.5",
+            "Calcium_Ca_mg_l": "11.2"
+        }
+    },
+    {
+        "Region": "Äänekoski Region",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.0",
+            "Alkalinity_TAC_mmol_l": "0.91",
+            "pH": "8.3",
+            "TDS_Conductivity_uS_cm": "204",
+            "Sodium_Na_mg_l": "6.7",
+            "Chlorides_Cl_mg_l": "3.6",
+            "Calcium_Ca_mg_l": "17.1"
+        }
+    }
+]
