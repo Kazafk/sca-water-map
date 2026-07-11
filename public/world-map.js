@@ -1,7 +1,7 @@
 import { colorFromScore } from './scoring.js';
 import { renderWorldCityPanel, renderWorldCountryPanel, renderNoDataPanel } from './world-panel.js';
 import { updatePanel } from './panel.js';
-import { searchLocalCities, searchNominatim } from './world-search.js';
+import { searchLocalCities, searchNominatim, escapeHtml } from './world-search.js';
 
 const COUNTRIES_GEOJSON_URL = 'https://raw.githubusercontent.com/datasets/geo-countries/master/data/countries.geojson';
 const COMMUNES_GEOJSON_URL  = 'https://raw.githubusercontent.com/gregoiredavid/france-geojson/master/communes-version-simplifiee.geojson';
@@ -151,18 +151,18 @@ async function init() {
     for (const c of localItems) {
       const col = colorFromScore(c.score);
       const pct = c.score != null ? Math.round(c.score * 100) + ' %' : '—';
-      html += `<div class="search-item" data-city-id="${c.id}">
-        <span class="search-item-name">${c.name}</span>
-        <span class="search-item-country">${c.country_name}</span>
+      html += `<div class="search-item" data-city-id="${escapeHtml(c.id)}">
+        <span class="search-item-name">${escapeHtml(c.name)}</span>
+        <span class="search-item-country">${escapeHtml(c.country_name)}</span>
         <span class="search-item-score" style="background:${col}20;color:${col}">${pct}</span>
       </div>`;
     }
     for (const n of nominatimItems) {
       const shortName = n.display_name.split(',')[0];
       const shortLoc  = n.display_name.split(',').slice(1, 3).join(',').trim();
-      html += `<div class="search-item" data-lat="${n.lat}" data-lon="${n.lon}" data-display="${shortName}">
-        <span class="search-item-name">${shortName}</span>
-        <span class="search-item-loc">📍 ${shortLoc}</span>
+      html += `<div class="search-item" data-lat="${escapeHtml(n.lat)}" data-lon="${escapeHtml(n.lon)}" data-display="${escapeHtml(shortName)}">
+        <span class="search-item-name">${escapeHtml(shortName)}</span>
+        <span class="search-item-loc">📍 ${escapeHtml(shortLoc)}</span>
       </div>`;
     }
     if (nominatimItems.length > 0) {
