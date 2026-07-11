@@ -65,7 +65,7 @@ async function init() {
     // We will color countries after fetching GeoJSON
     fetch(COUNTRIES_GEOJSON_URL).then(r => r.json()).then(geo => {
       geo.features.forEach(f => {
-        const iso = f.properties.ISO_A2;
+        const iso = f.properties['ISO3166-1-Alpha-2'];
         const cData = countriesMap.get(iso);
         f.properties.color = colorFromScore(cData?.avg_score);
       });
@@ -116,7 +116,7 @@ async function init() {
     
     // Interactions
     map.on('click', 'countries-fill', (e) => {
-      const iso = e.features[0].properties.ISO_A2;
+      const iso = e.features[0].properties['ISO3166-1-Alpha-2'];
       const data = countriesMap.get(iso);
       if (data) {
         const topCities = worldCities.filter(c => c.country === iso && c.score != null).sort((a,b) => b.score - a.score).slice(0, 5);
