@@ -261,8 +261,16 @@ async function init() {
 async function _loadFranceGeojson() {
   if (_franceLoaded) return;
   _franceLoaded = true;
-  
-  const r = await fetch(COMMUNES_GEOJSON_URL);
+
+  let r;
+  try {
+    r = await fetch(COMMUNES_GEOJSON_URL);
+    if (!r.ok) throw new Error(`HTTP ${r.status}`);
+  } catch (e) {
+    console.error('Communes GeoJSON fetch failed:', e.message);
+    _franceLoaded = false;
+    return;
+  }
   franceGeojson = await r.json();
   
   franceGeojson.features.forEach(f => {
