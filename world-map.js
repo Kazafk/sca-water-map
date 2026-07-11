@@ -102,9 +102,16 @@ async function init() {
     map.on('moveend', () => {
       const z = map.getZoom();
       const c = map.getCenter();
-      if (z >= 7 && c.lng > -5.5 && c.lng < 10.0 && c.lat > 41.0 && c.lat < 51.5) {
-        _loadFranceGeojson();
-      }
+      const inFrance = z >= 7
+        && c.lng > -5.5 && c.lng < 10.0
+        && c.lat > 41.0 && c.lat < 51.5;
+
+      document.getElementById('btn-toggle-view').hidden = !inFrance;
+      document.getElementById('search').placeholder = inFrance
+        ? '🔍  Commune ou n° de dép...'
+        : '🔍  Ville ou pays...';
+
+      if (inFrance) _loadFranceGeojson();
     });
     
     // Interactions
@@ -130,6 +137,28 @@ async function init() {
       document.getElementById('panel-content').innerHTML = renderWorldCityPanel(props);
       document.getElementById('panel-empty').hidden = true;
       document.getElementById('panel-content').hidden = false;
+    });
+
+    map.on('mouseenter', 'cities-circle', (e) => {
+      map.getCanvas().style.cursor = 'pointer';
+      const p     = e.features[0].properties;
+      const score = p.score != null ? Math.round(p.score * 100) + ' %' : '—';
+      const tip   = document.getElementById('map-tooltip');
+      tip.textContent = `${p.name} — ${score}`;
+      tip.style.display = 'block';
+      tip.style.left    = (e.point.x + 14) + 'px';
+      tip.style.top     = (e.point.y - 8)  + 'px';
+    });
+
+    map.on('mousemove', 'cities-circle', (e) => {
+      const tip = document.getElementById('map-tooltip');
+      tip.style.left = (e.point.x + 14) + 'px';
+      tip.style.top  = (e.point.y - 8)  + 'px';
+    });
+
+    map.on('mouseleave', 'cities-circle', () => {
+      map.getCanvas().style.cursor = '';
+      document.getElementById('map-tooltip').style.display = 'none';
     });
   });
 
@@ -217,6 +246,15 @@ async function init() {
     if (!document.getElementById('search-wrapper').contains(e.target)) {
       searchResults.hidden = true;
     }
+  });
+
+  document.getElementById('panel-content').addEventListener('click', e => {
+    const row = e.target.closest('.top-city-row');
+    if (!row) return;
+    const city = worldCities.find(c => c.id === row.dataset.cityId);
+    if (!city) return;
+    map.flyTo({ center: [city.lng, city.lat], zoom: 6 });
+    document.getElementById('panel-content').innerHTML = renderWorldCityPanel(city);
   });
 }
 
