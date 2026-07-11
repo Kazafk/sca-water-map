@@ -30,7 +30,7 @@ test('normalizeSearchQuery: empty string', () => {
   assert.equal(normalizeSearchQuery(''), '');
 });
 
-test('searchLocalCities: finds Tokyo by name prefix', () => {
+test('searchLocalCities: finds Tokyo by name prefix (includes)', () => {
   const r = searchLocalCities(SAMPLE, 'tok');
   assert.equal(r.length, 1);
   assert.equal(r[0].id, 'tokyo-JP');
@@ -63,4 +63,11 @@ test('searchLocalCities: diacritic-insensitive match (São Paulo)', () => {
 test('searchLocalCities: limit is respected', () => {
   const r = searchLocalCities(SAMPLE, 'fr', 1);
   assert.equal(r.length, 1);
+});
+
+test('searchLocalCities: includes match (not just prefix)', () => {
+  // 'arseille' est dans le milieu de 'Marseille'
+  const r = searchLocalCities(SAMPLE, 'arseille');
+  assert.equal(r.length, 1);
+  assert.equal(r[0].id, 'marseille-FR');
 });

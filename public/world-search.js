@@ -2,7 +2,7 @@ export function normalizeSearchQuery(s) {
   return s
     .toLowerCase()
     .normalize('NFD')
-    .replace(/[̀-ͯ]/g, '')
+    .replace(/[̀-ͯ᪰-᫿᷀-᷿]/g, '')
     .trim();
 }
 
@@ -11,8 +11,8 @@ export function searchLocalCities(worldCities, query, limit = 8) {
   if (q.length < 2) return [];
   return worldCities
     .filter(c =>
-      normalizeSearchQuery(c.name).startsWith(q) ||
-      normalizeSearchQuery(c.country_name).startsWith(q)
+      normalizeSearchQuery(c.name).includes(q) ||
+      normalizeSearchQuery(c.country_name).includes(q)
     )
     .sort((a, b) => (b.score ?? 0) - (a.score ?? 0))
     .slice(0, limit);
@@ -20,9 +20,18 @@ export function searchLocalCities(worldCities, query, limit = 8) {
 
 export async function searchNominatim(query) {
   const url = `https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(query)}&format=json&limit=5&accept-language=fr`;
-  const r = await fetch(url, {
-    headers: { 'User-Agent': 'SCA-Water-Map/1.0 (github.com/kazafk/sca-water-map)' }
-  });
-  if (!r.ok) return [];
-  return r.json();
+  try {
+    const r = await fetch(url, {
+      headers: { 'User-Agent': 'SCA-Water-Map/1.0 (github.com/kazafk/sca-water-map)' },
+      signal: AbortSignal.timeout(5000)
+    });
+    if (!r.ok) {
+      console.warn(`Nominatim ${r.status}:`, r.statusText);
+      return [];
+    }
+    return await r.json();
+  } catch (e) {
+    console.error('Nominatim fetch failed:', e.message);
+    return [];
+  }
 }
