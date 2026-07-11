@@ -15,14 +15,13 @@
       <span id="onboarding-logo">☕</span>
       <div>
         <div id="onboarding-title">SCA Water Map</div>
-        <div id="onboarding-sub">L'eau du robinet pour le café — France</div>
+        <div id="onboarding-sub">L'eau du robinet pour le café — Monde</div>
       </div>
     </div>
 
     <p id="onboarding-intro">
       La <strong>Specialty Coffee Association (SCA)</strong> définit des critères précis de qualité d'eau
-      pour obtenir la meilleure extraction possible. Cette carte évalue l'eau du robinet de
-      <strong>34 500 communes françaises</strong> selon ces standards.
+      pour obtenir la meilleure extraction possible. Cette carte évalue l'eau du robinet dans le <strong>monde entier</strong> selon ces standards.
     </p>
 
     <div id="onboarding-scores">
@@ -58,11 +57,12 @@
     <header id="topbar">
       <div id="brand">
         <span id="brand-title">☕ SCA Water Map</span>
-        <span id="brand-subtitle">Qualité de l'eau du robinet pour le café — France</span>
+        <span id="brand-subtitle">Qualité de l'eau du robinet pour le café — Monde</span>
       </div>
       <div id="controls">
         <div id="search-wrapper">
-          <input id="search" type="text" placeholder="🔍  Commune ou n° de dép..." autocomplete="off">
+          <input id="search" type="text" placeholder="🔍  Ville ou pays..." autocomplete="off">
+          <div id="search-results" hidden></div>
         </div>
         <button id="btn-theme" class="btn-icon" title="Basculer thème">☀</button>
         <button id="btn-home" class="btn-icon" title="Vue France entière">🏠</button>
@@ -112,6 +112,6 @@
   </div>
 
   <script src="https://unpkg.com/maplibre-gl@4/dist/maplibre-gl.js"></script>
-  <script type="module" src="map.js"></script>
+  <script type="module" src="world-map.js"></script>
 </body>
 </html>
