@@ -80,7 +80,7 @@ export function renderNoDataPanel(placeName) {
   return `
     <div class="panel-header">
       <div class="panel-title-row">
-        <h2 class="panel-title">${placeName}</h2>
+        <h2 class="panel-title">${placeName.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}</h2>
       </div>
       <div class="panel-subtitle">Aucune donnée SCA disponible</div>
     </div>

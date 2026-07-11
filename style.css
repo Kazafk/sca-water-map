@@ -654,8 +654,6 @@ body {
   font-weight: bold;
 }
 
-#search-wrapper { position: relative; }
-
 #search-results {
   position: absolute;
   top: 100%;
