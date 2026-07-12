@@ -28,7 +28,14 @@ async function init() {
   if (countriesRes.ok) worldCountries = await countriesRes.json();
   if (communesRes.ok) {
     const data = await communesRes.json();
-    communesData = data.data || data;
+    const list = data.communes || data.data || data;
+    if (Array.isArray(list)) {
+      for (const c of list) {
+        if (c.insee) communesData[c.insee] = c;
+      }
+    } else {
+      communesData = list;
+    }
   }
   
   const countriesMap = new Map(worldCountries.map(c => [c.iso2, c]));
