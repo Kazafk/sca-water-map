@@ -49,7 +49,7 @@ async function init() {
       type: 'fill',
       source: 'countries',
       paint: {
-        'fill-color': ['coalesce', ['get', 'color'], '#2d2d2d'],
+        'fill-color': ['coalesce', ['get', 'color'], 'rgba(0,0,0,0)'],
         'fill-opacity': 0.65
       }
     });
@@ -285,7 +285,7 @@ async function _loadFranceGeojson() {
     source: 'communes',
     minzoom: 7,
     paint: {
-      'fill-color': ['coalesce', ['get', 'color'], '#2d2d2d'],
+      'fill-color': ['coalesce', ['get', 'color'], 'rgba(0,0,0,0)'],
       'fill-opacity': 0.65
     }
   });
