@@ -2,20 +2,23 @@ import { colorFromScore } from './scoring.js';
 import { renderWorldCityPanel, renderWorldCountryPanel, renderNoDataPanel } from './world-panel.js';
 import { updatePanel } from './panel.js';
 import { searchLocalCities, searchNominatim, escapeHtml } from './world-search.js';
-import { Delaunay } from 'https://cdn.jsdelivr.net/npm/d3-delaunay@6/+esm';
 
 const COUNTRIES_GEOJSON_URL = 'https://raw.githubusercontent.com/datasets/geo-countries/master/data/countries.geojson';
 const COMMUNES_GEOJSON_URL  = 'https://raw.githubusercontent.com/gregoiredavid/france-geojson/master/communes-version-simplifiee.geojson';
-const US_STATES_GEOJSON_URL = 'https://raw.githubusercontent.com/PublicaMundi/MappingAPI/master/data/geojson/us-states.json';
+const PROVINCES_GEOJSON_URL = 'https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_50m_admin_1_states_provinces.geojson';
+
+// Layer architecture (bottom to top):
+// countries-fill (maxzoom:4) → world-provinces-fill (minzoom:4) → communes-fill (minzoom:7, France only)
 
 let map = null;
 let worldCities = [];
 let worldCountries = [];
 let communesData = {};
 let franceGeojson = null;
-let _franceLoaded = false;
-let _usStatesLoaded = false;
-let _usStatesMap = new Map(); // stateName → { avg_score, cities, scored_count }
+let _franceLoaded  = false;
+let _provincesLoaded = false;
+let _provincesData   = new Map(); // `${iso2}__${name}` → { avg_score, cities, scored_count, name }
+let _citiesByCountry = new Map(); // iso2 → city[]
 let _theme = localStorage.getItem('sca-theme') || 'dark';
 let _searchTimer        = null;
 let _lastNominatimQuery = '';
@@ -40,30 +43,6 @@ function _cityInPolygon(lng, lat, feature) {
   return false;
 }
 
-// Build Voronoi GeoJSON from city points (clipped to world bbox)
-function _buildVoronoiGeojson(cities) {
-  const pts = cities.map(c => [c.lng, c.lat]);
-  const delaunay = Delaunay.from(pts);
-  const voronoi = delaunay.voronoi([-180, -85, 180, 85]);
-  const features = [];
-  for (let i = 0; i < cities.length; i++) {
-    const cell = voronoi.cellPolygon(i);
-    if (!cell || cell.length < 4) continue;
-    features.push({
-      type: 'Feature',
-      geometry: { type: 'Polygon', coordinates: [cell] },
-      properties: {
-        color: colorFromScore(cities[i].score),
-        score: cities[i].score,
-        name: cities[i].name,
-        country: cities[i].country,
-        id: cities[i].id
-      }
-    });
-  }
-  return { type: 'FeatureCollection', features };
-}
-
 async function init() {
   const [citiesRes, countriesRes, communesRes] = await Promise.all([
     fetch('./world-cities.json'),
@@ -77,9 +56,7 @@ async function init() {
     const data = await communesRes.json();
     const list = data.communes || data.data || data;
     if (Array.isArray(list)) {
-      for (const c of list) {
-        if (c.insee) communesData[c.insee] = c;
-      }
+      for (const c of list) { if (c.insee) communesData[c.insee] = c; }
     } else {
       communesData = list;
     }
@@ -91,7 +68,6 @@ async function init() {
     ? communeScores.reduce((a, b) => a + b, 0) / communeScores.length
     : null;
 
-  // Build countries lookup; override France with computed avg
   const countriesMap = new Map(worldCountries.map(c => [c.iso2, c]));
   if (frAvgScore != null) {
     const frEntry = countriesMap.get('FR') || {};
@@ -105,25 +81,30 @@ async function init() {
     });
   }
 
-  // Pre-build city Voronoi (done once, reused as a layer)
-  const voronoiGeojson = _buildVoronoiGeojson(worldCities.filter(c => c.score != null));
+  // Group cities by country ISO2 for efficient province-level PIP
+  for (const city of worldCities) {
+    if (!_citiesByCountry.has(city.country)) _citiesByCountry.set(city.country, []);
+    _citiesByCountry.get(city.country).push(city);
+  }
 
   map = new maplibregl.Map({
     container: 'map',
-    style: _theme === 'light' ? 'https://tiles.openfreemap.org/styles/positron' : 'https://tiles.openfreemap.org/styles/dark',
+    style: _theme === 'light'
+      ? 'https://tiles.openfreemap.org/styles/positron'
+      : 'https://tiles.openfreemap.org/styles/dark',
     center: [10, 20],
     zoom: 2,
     maxZoom: 16
   });
 
   map.on('load', async () => {
-    // 1. Countries choropleth (zoom 0-∞, base layer)
+    // 1. Countries choropleth (zoom 0–4)
     map.addSource('countries', { type: 'geojson', data: COUNTRIES_GEOJSON_URL });
     map.addLayer({
       id: 'countries-fill',
       type: 'fill',
       source: 'countries',
-      maxzoom: 5,
+      maxzoom: 4,
       paint: {
         'fill-color': ['coalesce', ['get', 'color'], 'rgba(0,0,0,0)'],
         'fill-opacity': 0.65
@@ -133,7 +114,7 @@ async function init() {
       id: 'countries-line',
       type: 'line',
       source: 'countries',
-      maxzoom: 5,
+      maxzoom: 4,
       paint: { 'line-color': '#444', 'line-width': 0.5 }
     });
 
@@ -146,20 +127,7 @@ async function init() {
       map.getSource('countries').setData(geo);
     });
 
-    // 2. City Voronoi choropleth (zoom 4+, global city-level)
-    map.addSource('city-voronoi', { type: 'geojson', data: voronoiGeojson });
-    map.addLayer({
-      id: 'city-voronoi-fill',
-      type: 'fill',
-      source: 'city-voronoi',
-      minzoom: 4,
-      paint: {
-        'fill-color': ['coalesce', ['get', 'color'], 'rgba(0,0,0,0)'],
-        'fill-opacity': 0.70
-      }
-    });
-
-    // 3. moveend: detect France and USA zones
+    // 2. moveend: lazy-load provinces at zoom 4+, communes at zoom 7+ in France
     map.on('moveend', () => {
       const z = map.getZoom();
       const c = map.getCenter();
@@ -168,52 +136,33 @@ async function init() {
         && c.lng > -5.5 && c.lng < 10.0
         && c.lat > 41.0 && c.lat < 51.5;
 
-      const inUS = z >= 3
-        && c.lng > -170 && c.lng < -60
-        && c.lat > 15 && c.lat < 73;
-
       document.getElementById('btn-toggle-view').hidden = !inFrance;
       document.getElementById('search').placeholder = inFrance
         ? '🔍  Commune ou n° de dép...'
         : '🔍  Ville ou pays...';
 
       if (inFrance) _loadFranceGeojson();
-      if (inUS) _loadUsStatesGeojson();
+      if (z >= 4) _loadWorldProvincesGeojson();
     });
 
-    // 4. Country click (skip US at state zoom when states loaded)
+    // 3. Country click → panel + optional France zoom
     map.on('click', 'countries-fill', (e) => {
       const iso = e.features[0].properties['ISO3166-1-Alpha-2'];
-      if (iso === 'US' && _usStatesLoaded && map.getZoom() >= 3) return;
-
       const data = countriesMap.get(iso);
-      if (data) {
-        const topCities = worldCities
-          .filter(c => c.country === iso && c.score != null)
-          .sort((a, b) => b.score - a.score)
-          .slice(0, 5);
-        document.getElementById('panel-content').innerHTML = renderWorldCountryPanel(data, topCities);
-        document.getElementById('panel-empty').hidden = true;
-        document.getElementById('panel-content').hidden = false;
+      if (!data) return;
 
-        if (iso === 'FR') {
-          map.fitBounds([[-5.5, 41.0], [10.0, 51.5]], { padding: 20 });
-          _loadFranceGeojson();
-        }
-      }
-    });
-
-    // 5. Voronoi city click
-    map.on('click', 'city-voronoi-fill', (e) => {
-      const props = e.features[0].properties;
-      if (!props.id) return;
-      // Communes layer takes priority in France — skip if communes loaded and we're in France
-      if (_franceLoaded && map.getZoom() >= 7) return;
-      const city = worldCities.find(c => c.id === props.id);
-      if (!city) return;
-      document.getElementById('panel-content').innerHTML = renderWorldCityPanel(city);
+      const topCities = worldCities
+        .filter(c => c.country === iso && c.score != null)
+        .sort((a, b) => b.score - a.score)
+        .slice(0, 5);
+      document.getElementById('panel-content').innerHTML = renderWorldCountryPanel(data, topCities);
       document.getElementById('panel-empty').hidden = true;
       document.getElementById('panel-content').hidden = false;
+
+      if (iso === 'FR') {
+        map.fitBounds([[-5.5, 41.0], [10.0, 51.5]], { padding: 20 });
+        _loadFranceGeojson();
+      }
     });
   });
 
@@ -222,7 +171,7 @@ async function init() {
     map.flyTo({ center: [10, 20], zoom: 2 });
   });
 
-  // --- Recherche hybride ---
+  // Hybrid search
   const searchInput   = document.getElementById('search');
   const searchResults = document.getElementById('search-results');
 
@@ -312,6 +261,81 @@ async function init() {
   });
 }
 
+async function _loadWorldProvincesGeojson() {
+  if (_provincesLoaded) return;
+  _provincesLoaded = true;
+
+  let r;
+  try {
+    r = await fetch(PROVINCES_GEOJSON_URL);
+    if (!r.ok) throw new Error(`HTTP ${r.status}`);
+  } catch (e) {
+    console.error('World provinces GeoJSON fetch failed:', e.message);
+    _provincesLoaded = false;
+    return;
+  }
+
+  const geo = await r.json();
+
+  geo.features.forEach(f => {
+    // iso_3166_2 is like "US-CA", "FR-IDF", "DE-BY" — first 2 chars = country ISO2
+    const raw = f.properties.iso_3166_2 || '';
+    const iso2 = /^[A-Z]{2}/.test(raw) ? raw.substring(0, 2) : null;
+    const candidates = (iso2 && _citiesByCountry.get(iso2)) || [];
+    const cities  = candidates.filter(c => _cityInPolygon(c.lng, c.lat, f));
+    const scored  = cities.filter(c => c.score != null);
+    const avg     = scored.length ? scored.reduce((s, c) => s + c.score, 0) / scored.length : null;
+
+    f.properties.color       = colorFromScore(avg);
+    f.properties.avg_score   = avg;
+    f.properties.city_count  = cities.length;
+    f.properties.scored_count = scored.length;
+    f.properties.iso2        = iso2;
+
+    _provincesData.set(`${iso2}__${f.properties.name}`, {
+      avg_score: avg, cities, scored_count: scored.length, name: f.properties.name
+    });
+  });
+
+  map.addSource('world-provinces', { type: 'geojson', data: geo });
+  map.addLayer({
+    id: 'world-provinces-fill',
+    type: 'fill',
+    source: 'world-provinces',
+    minzoom: 4,
+    paint: {
+      'fill-color': ['coalesce', ['get', 'color'], 'rgba(0,0,0,0)'],
+      'fill-opacity': 0.75
+    }
+  });
+  map.addLayer({
+    id: 'world-provinces-line',
+    type: 'line',
+    source: 'world-provinces',
+    minzoom: 4,
+    paint: { 'line-color': '#555', 'line-width': 0.4 }
+  });
+
+  map.on('click', 'world-provinces-fill', (e) => {
+    // communes-fill is on top in France at zoom 7+ — its handler takes priority
+    if (_franceLoaded && map.getZoom() >= 7) return;
+    const iso2 = e.features[0].properties.iso2;
+    const name = e.features[0].properties.name;
+    const pd = _provincesData.get(`${iso2}__${name}`);
+    if (!pd) return;
+    const topCities = [...pd.cities]
+      .filter(c => c.score != null)
+      .sort((a, b) => b.score - a.score)
+      .slice(0, 5);
+    document.getElementById('panel-content').innerHTML = renderWorldCountryPanel(
+      { name: pd.name, avg_score: pd.avg_score, city_count: pd.cities.length, scored_count: pd.scored_count },
+      topCities
+    );
+    document.getElementById('panel-empty').hidden = true;
+    document.getElementById('panel-content').hidden = false;
+  });
+}
+
 async function _loadFranceGeojson() {
   if (_franceLoaded) return;
   _franceLoaded = true;
@@ -363,72 +387,4 @@ async function _loadFranceGeojson() {
   });
 }
 
-async function _loadUsStatesGeojson() {
-  if (_usStatesLoaded) return;
-  _usStatesLoaded = true;
-
-  let r;
-  try {
-    r = await fetch(US_STATES_GEOJSON_URL);
-    if (!r.ok) throw new Error(`HTTP ${r.status}`);
-  } catch (e) {
-    console.error('US States GeoJSON fetch failed:', e.message);
-    _usStatesLoaded = false;
-    return;
-  }
-
-  const geo = await r.json();
-  const usCities = worldCities.filter(c => c.country === 'US');
-
-  geo.features.forEach(f => {
-    const cities = usCities.filter(c => _cityInPolygon(c.lng, c.lat, f));
-    const scored = cities.filter(c => c.score != null);
-    const avg = scored.length ? scored.reduce((s, c) => s + c.score, 0) / scored.length : null;
-    f.properties.color = colorFromScore(avg);
-    f.properties.avg_score = avg;
-    f.properties.city_count = cities.length;
-    f.properties.scored_count = scored.length;
-    _usStatesMap.set(f.properties.name, { avg_score: avg, cities, scored_count: scored.length });
-  });
-
-  map.addSource('us-states', { type: 'geojson', data: geo });
-  // Insert below city-voronoi so Voronoi overrides at zoom 4+
-  map.addLayer({
-    id: 'us-states-fill',
-    type: 'fill',
-    source: 'us-states',
-    minzoom: 3,
-    maxzoom: 4,
-    paint: {
-      'fill-color': ['coalesce', ['get', 'color'], 'rgba(0,0,0,0)'],
-      'fill-opacity': 0.75
-    }
-  }, 'city-voronoi-fill');
-  map.addLayer({
-    id: 'us-states-line',
-    type: 'line',
-    source: 'us-states',
-    minzoom: 3,
-    maxzoom: 5,
-    paint: { 'line-color': '#555', 'line-width': 0.5 }
-  }, 'city-voronoi-fill');
-
-  map.on('click', 'us-states-fill', (e) => {
-    const stateName = e.features[0].properties.name;
-    const sd = _usStatesMap.get(stateName);
-    if (!sd) return;
-    const topCities = [...sd.cities]
-      .filter(c => c.score != null)
-      .sort((a, b) => b.score - a.score)
-      .slice(0, 5);
-    document.getElementById('panel-content').innerHTML = renderWorldCountryPanel(
-      { name: stateName, avg_score: sd.avg_score, city_count: sd.cities.length, scored_count: sd.scored_count },
-      topCities
-    );
-    document.getElementById('panel-empty').hidden = true;
-    document.getElementById('panel-content').hidden = false;
-  });
-}
-
-// Start
 init();
