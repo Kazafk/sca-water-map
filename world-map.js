@@ -5,6 +5,7 @@ import { searchLocalCities, searchNominatim, escapeHtml } from './world-search.j
 
 const COUNTRIES_GEOJSON_URL = 'https://raw.githubusercontent.com/datasets/geo-countries/master/data/countries.geojson';
 const COMMUNES_GEOJSON_URL  = 'https://raw.githubusercontent.com/gregoiredavid/france-geojson/master/communes-version-simplifiee.geojson';
+const US_STATES_GEOJSON_URL = 'https://raw.githubusercontent.com/PublicaMundi/MappingAPI/master/data/geojson/us-states.json';
 
 let map = null;
 let worldCities = [];
@@ -12,18 +13,39 @@ let worldCountries = [];
 let communesData = {};
 let franceGeojson = null;
 let _franceLoaded = false;
+let _usStatesLoaded = false;
+let _usStatesMap = new Map(); // stateName → { avg_score, cities, scored_count }
 let _theme = localStorage.getItem('sca-theme') || 'dark';
 let _searchTimer        = null;
 let _lastNominatimQuery = '';
 
+// Ray-casting point-in-polygon for a single ring
+function _pip(lng, lat, ring) {
+  let inside = false;
+  for (let i = 0, j = ring.length - 1; i < ring.length; j = i++) {
+    const xi = ring[i][0], yi = ring[i][1];
+    const xj = ring[j][0], yj = ring[j][1];
+    if ((yi > lat) !== (yj > lat) && lng < (xj - xi) * (lat - yi) / (yj - yi) + xi) {
+      inside = !inside;
+    }
+  }
+  return inside;
+}
+
+function _cityInPolygon(lng, lat, feature) {
+  const { type, coordinates } = feature.geometry;
+  if (type === 'Polygon') return _pip(lng, lat, coordinates[0]);
+  if (type === 'MultiPolygon') return coordinates.some(poly => _pip(lng, lat, poly[0]));
+  return false;
+}
+
 async function init() {
-  // Load data
   const [citiesRes, countriesRes, communesRes] = await Promise.all([
     fetch('./world-cities.json'),
     fetch('./world-countries.json'),
     fetch('./communes.json')
   ]);
-  
+
   if (citiesRes.ok) worldCities = await citiesRes.json();
   if (countriesRes.ok) worldCountries = await countriesRes.json();
   if (communesRes.ok) {
@@ -37,9 +59,9 @@ async function init() {
       communesData = list;
     }
   }
-  
+
   const countriesMap = new Map(worldCountries.map(c => [c.iso2, c]));
-  
+
   map = new maplibregl.Map({
     container: 'map',
     style: _theme === 'light' ? 'https://tiles.openfreemap.org/styles/positron' : 'https://tiles.openfreemap.org/styles/dark',
@@ -49,7 +71,7 @@ async function init() {
   });
 
   map.on('load', async () => {
-    // 1. Countries Layer
+    // 1. Countries choropleth (always visible)
     map.addSource('countries', { type: 'geojson', data: COUNTRIES_GEOJSON_URL });
     map.addLayer({
       id: 'countries-fill',
@@ -68,7 +90,6 @@ async function init() {
       paint: { 'line-color': '#444', 'line-width': 0.5 }
     });
 
-    // We will color countries after fetching GeoJSON
     fetch(COUNTRIES_GEOJSON_URL).then(r => r.json()).then(geo => {
       geo.features.forEach(f => {
         const iso = f.properties['ISO3166-1-Alpha-2'];
@@ -78,39 +99,18 @@ async function init() {
       map.getSource('countries').setData(geo);
     });
 
-    // 2. Cities Layer
-    const citiesGeojson = {
-      type: 'FeatureCollection',
-      features: worldCities.map(c => ({
-        type: 'Feature',
-        geometry: { type: 'Point', coordinates: [c.lng, c.lat] },
-        properties: { ...c, color: colorFromScore(c.score) }
-      }))
-    };
-    
-    map.addSource('cities', { type: 'geojson', data: citiesGeojson });
-    map.addLayer({
-      id: 'cities-circle',
-      type: 'circle',
-      source: 'cities',
-      minzoom: 4,
-      maxzoom: 7,
-      paint: {
-        'circle-radius': ['interpolate', ['linear'], ['zoom'], 4, 2, 7, 5],
-        'circle-color': ['get', 'color'],
-        'circle-opacity': ['interpolate', ['linear'], ['zoom'], 3, 0, 5, 1],
-        'circle-stroke-width': 1,
-        'circle-stroke-color': '#fff'
-      }
-    });
-
-    // France BBox check
+    // 2. moveend: detect France and USA zones
     map.on('moveend', () => {
       const z = map.getZoom();
       const c = map.getCenter();
+
       const inFrance = z >= 7
         && c.lng > -5.5 && c.lng < 10.0
         && c.lat > 41.0 && c.lat < 51.5;
+
+      const inUS = z >= 3
+        && c.lng > -170 && c.lng < -60
+        && c.lat > 15 && c.lat < 73;
 
       document.getElementById('btn-toggle-view').hidden = !inFrance;
       document.getElementById('search').placeholder = inFrance
@@ -118,53 +118,29 @@ async function init() {
         : '🔍  Ville ou pays...';
 
       if (inFrance) _loadFranceGeojson();
+      if (inUS) _loadUsStatesGeojson();
     });
-    
-    // Interactions
+
+    // 3. Country click — skip US when states are shown
     map.on('click', 'countries-fill', (e) => {
       const iso = e.features[0].properties['ISO3166-1-Alpha-2'];
+      if (iso === 'US' && _usStatesLoaded && map.getZoom() >= 3) return;
+
       const data = countriesMap.get(iso);
       if (data) {
-        const topCities = worldCities.filter(c => c.country === iso && c.score != null).sort((a,b) => b.score - a.score).slice(0, 5);
+        const topCities = worldCities
+          .filter(c => c.country === iso && c.score != null)
+          .sort((a, b) => b.score - a.score)
+          .slice(0, 5);
         document.getElementById('panel-content').innerHTML = renderWorldCountryPanel(data, topCities);
         document.getElementById('panel-empty').hidden = true;
         document.getElementById('panel-content').hidden = false;
-        
+
         if (iso === 'FR') {
           map.fitBounds([[-5.5, 41.0], [10.0, 51.5]], { padding: 20 });
           _loadFranceGeojson();
         }
       }
-    });
-
-    map.on('click', 'cities-circle', (e) => {
-      const props = e.features[0].properties;
-      props.params = JSON.parse(props.params); // Unpack
-      document.getElementById('panel-content').innerHTML = renderWorldCityPanel(props);
-      document.getElementById('panel-empty').hidden = true;
-      document.getElementById('panel-content').hidden = false;
-    });
-
-    map.on('mouseenter', 'cities-circle', (e) => {
-      map.getCanvas().style.cursor = 'pointer';
-      const p     = e.features[0].properties;
-      const score = p.score != null ? Math.round(p.score * 100) + ' %' : '—';
-      const tip   = document.getElementById('map-tooltip');
-      tip.textContent = `${p.name} — ${score}`;
-      tip.style.display = 'block';
-      tip.style.left    = (e.point.x + 14) + 'px';
-      tip.style.top     = (e.point.y - 8)  + 'px';
-    });
-
-    map.on('mousemove', 'cities-circle', (e) => {
-      const tip = document.getElementById('map-tooltip');
-      tip.style.left = (e.point.x + 14) + 'px';
-      tip.style.top  = (e.point.y - 8)  + 'px';
-    });
-
-    map.on('mouseleave', 'cities-circle', () => {
-      map.getCanvas().style.cursor = '';
-      document.getElementById('map-tooltip').style.display = 'none';
     });
   });
 
@@ -247,7 +223,6 @@ async function init() {
     }
   });
 
-  // Fermer le dropdown si clic hors du champ
   document.addEventListener('click', e => {
     if (!document.getElementById('search-wrapper').contains(e.target)) {
       searchResults.hidden = true;
@@ -278,13 +253,13 @@ async function _loadFranceGeojson() {
     return;
   }
   franceGeojson = await r.json();
-  
+
   franceGeojson.features.forEach(f => {
     const code = f.properties.code;
     const cData = communesData[code];
     f.properties.color = colorFromScore(cData?.score);
   });
-  
+
   map.addSource('communes', { type: 'geojson', data: franceGeojson });
   map.addLayer({
     id: 'communes-fill',
@@ -293,7 +268,7 @@ async function _loadFranceGeojson() {
     minzoom: 7,
     paint: {
       'fill-color': ['coalesce', ['get', 'color'], 'rgba(0,0,0,0)'],
-      'fill-opacity': 0.65
+      'fill-opacity': 0.75
     }
   });
   map.addLayer({
@@ -303,7 +278,7 @@ async function _loadFranceGeojson() {
     minzoom: 7,
     paint: { 'line-color': '#21262d', 'line-width': 0.3 }
   });
-  
+
   map.on('click', 'communes-fill', (e) => {
     const code = e.features[0].properties.code;
     const cData = communesData[code];
@@ -312,6 +287,70 @@ async function _loadFranceGeojson() {
       document.getElementById('panel-empty').hidden = true;
       document.getElementById('panel-content').hidden = false;
     }
+  });
+}
+
+async function _loadUsStatesGeojson() {
+  if (_usStatesLoaded) return;
+  _usStatesLoaded = true;
+
+  let r;
+  try {
+    r = await fetch(US_STATES_GEOJSON_URL);
+    if (!r.ok) throw new Error(`HTTP ${r.status}`);
+  } catch (e) {
+    console.error('US States GeoJSON fetch failed:', e.message);
+    _usStatesLoaded = false;
+    return;
+  }
+
+  const geo = await r.json();
+  const usCities = worldCities.filter(c => c.country === 'US');
+
+  geo.features.forEach(f => {
+    const cities = usCities.filter(c => _cityInPolygon(c.lng, c.lat, f));
+    const scored = cities.filter(c => c.score != null);
+    const avg = scored.length ? scored.reduce((s, c) => s + c.score, 0) / scored.length : null;
+    f.properties.color = colorFromScore(avg);
+    f.properties.avg_score = avg;
+    f.properties.city_count = cities.length;
+    f.properties.scored_count = scored.length;
+    _usStatesMap.set(f.properties.name, { avg_score: avg, cities, scored_count: scored.length });
+  });
+
+  map.addSource('us-states', { type: 'geojson', data: geo });
+  map.addLayer({
+    id: 'us-states-fill',
+    type: 'fill',
+    source: 'us-states',
+    minzoom: 3,
+    paint: {
+      'fill-color': ['coalesce', ['get', 'color'], 'rgba(0,0,0,0)'],
+      'fill-opacity': 0.75
+    }
+  });
+  map.addLayer({
+    id: 'us-states-line',
+    type: 'line',
+    source: 'us-states',
+    minzoom: 3,
+    paint: { 'line-color': '#555', 'line-width': 0.5 }
+  });
+
+  map.on('click', 'us-states-fill', (e) => {
+    const stateName = e.features[0].properties.name;
+    const sd = _usStatesMap.get(stateName);
+    if (!sd) return;
+    const topCities = [...sd.cities]
+      .filter(c => c.score != null)
+      .sort((a, b) => b.score - a.score)
+      .slice(0, 5);
+    document.getElementById('panel-content').innerHTML = renderWorldCountryPanel(
+      { name: stateName, avg_score: sd.avg_score, city_count: sd.cities.length, scored_count: sd.scored_count },
+      topCities
+    );
+    document.getElementById('panel-empty').hidden = true;
+    document.getElementById('panel-content').hidden = false;
   });
 }
 
