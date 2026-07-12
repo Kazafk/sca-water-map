@@ -48,10 +48,9 @@ async function init() {
       id: 'countries-fill',
       type: 'fill',
       source: 'countries',
-      maxzoom: 4,
       paint: {
         'fill-color': ['coalesce', ['get', 'color'], '#2d2d2d'],
-        'fill-opacity': ['interpolate', ['linear'], ['zoom'], 1, 0.8, 4, 0]
+        'fill-opacity': 0.65
       }
     });
     map.addLayer({
