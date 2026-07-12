@@ -8,17 +8,18 @@ const COMMUNES_GEOJSON_URL  = 'https://raw.githubusercontent.com/gregoiredavid/f
 const PROVINCES_GEOJSON_URL = 'https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_50m_admin_1_states_provinces.geojson';
 
 // Layer architecture (bottom to top):
-// countries-fill (maxzoom:4) → world-provinces-fill (minzoom:4) → communes-fill (minzoom:7, France only)
+// countries-fill (maxzoom:4) → world-provinces-fill (minzoom:4) → communes-fill (minzoom:4, France only)
 
 let map = null;
 let worldCities = [];
 let worldCountries = [];
 let communesData = {};
 let franceGeojson = null;
-let _franceLoaded  = false;
+let _franceLoaded    = false;
 let _provincesLoaded = false;
 let _provincesData   = new Map(); // `${iso2}__${name}` → { avg_score, cities, scored_count, name }
 let _citiesByCountry = new Map(); // iso2 → city[]
+let _iso3toIso2      = new Map(); // ISO 3166-1 alpha-3 → alpha-2 (built from countries GeoJSON)
 let _theme = localStorage.getItem('sca-theme') || 'dark';
 let _searchTimer        = null;
 let _lastNominatimQuery = '';
@@ -44,10 +45,13 @@ function _cityInPolygon(lng, lat, feature) {
 }
 
 async function init() {
-  const [citiesRes, countriesRes, communesRes] = await Promise.all([
+  // Fetch local data + countries GeoJSON in parallel.
+  // Countries GeoJSON is used both for the countries layer and to build the iso3→iso2 map.
+  const [citiesRes, countriesRes, communesRes, countriesGeoRes] = await Promise.all([
     fetch('./world-cities.json'),
     fetch('./world-countries.json'),
-    fetch('./communes.json')
+    fetch('./communes.json'),
+    fetch(COUNTRIES_GEOJSON_URL)
   ]);
 
   if (citiesRes.ok) worldCities = await citiesRes.json();
@@ -81,6 +85,19 @@ async function init() {
     });
   }
 
+  // Build iso3→iso2 map and color countries GeoJSON (single fetch, no duplicate load)
+  let countriesGeo = null;
+  if (countriesGeoRes.ok) {
+    countriesGeo = await countriesGeoRes.json();
+    for (const f of countriesGeo.features) {
+      const a2 = f.properties['ISO3166-1-Alpha-2'];
+      const a3 = f.properties['ISO3166-1-Alpha-3'];
+      if (a2 && a3) _iso3toIso2.set(a3, a2);
+      const cData = countriesMap.get(a2);
+      f.properties.color = colorFromScore(cData?.avg_score);
+    }
+  }
+
   // Group cities by country ISO2 for efficient province-level PIP
   for (const city of worldCities) {
     if (!_citiesByCountry.has(city.country)) _citiesByCountry.set(city.country, []);
@@ -98,8 +115,11 @@ async function init() {
   });
 
   map.on('load', async () => {
-    // 1. Countries choropleth (zoom 0–4)
-    map.addSource('countries', { type: 'geojson', data: COUNTRIES_GEOJSON_URL });
+    // 1. Countries choropleth (zoom 0–4), pre-colored, no second fetch
+    map.addSource('countries', {
+      type: 'geojson',
+      data: countriesGeo || COUNTRIES_GEOJSON_URL
+    });
     map.addLayer({
       id: 'countries-fill',
       type: 'fill',
@@ -118,30 +138,26 @@ async function init() {
       paint: { 'line-color': '#444', 'line-width': 0.5 }
     });
 
-    fetch(COUNTRIES_GEOJSON_URL).then(r => r.json()).then(geo => {
-      geo.features.forEach(f => {
-        const iso = f.properties['ISO3166-1-Alpha-2'];
-        const cData = countriesMap.get(iso);
-        f.properties.color = colorFromScore(cData?.avg_score);
-      });
-      map.getSource('countries').setData(geo);
-    });
-
-    // 2. moveend: lazy-load provinces at zoom 4+, communes at zoom 7+ in France
+    // 2. moveend: lazy-load provinces at zoom 4+, communes when in France at zoom 4+
     map.on('moveend', () => {
       const z = map.getZoom();
       const c = map.getCenter();
 
-      const inFrance = z >= 7
+      // Wide bbox to catch France in view at low zoom; strict bbox for UI changes
+      const inFranceArea = z >= 4
+        && c.lng > -8 && c.lng < 12
+        && c.lat > 39 && c.lat < 53;
+
+      const inFranceStrict = z >= 7
         && c.lng > -5.5 && c.lng < 10.0
         && c.lat > 41.0 && c.lat < 51.5;
 
-      document.getElementById('btn-toggle-view').hidden = !inFrance;
-      document.getElementById('search').placeholder = inFrance
+      document.getElementById('btn-toggle-view').hidden = !inFranceStrict;
+      document.getElementById('search').placeholder = inFranceStrict
         ? '🔍  Commune ou n° de dép...'
         : '🔍  Ville ou pays...';
 
-      if (inFrance) _loadFranceGeojson();
+      if (inFranceArea) _loadFranceGeojson();
       if (z >= 4) _loadWorldProvincesGeojson();
     });
 
@@ -278,19 +294,25 @@ async function _loadWorldProvincesGeojson() {
   const geo = await r.json();
 
   geo.features.forEach(f => {
-    // iso_3166_2 is like "US-CA", "FR-IDF", "DE-BY" — first 2 chars = country ISO2
-    const raw = f.properties.iso_3166_2 || '';
-    const iso2 = /^[A-Z]{2}/.test(raw) ? raw.substring(0, 2) : null;
+    // adm0_a3 (e.g. "USA", "FRA") is always populated in Natural Earth; convert via iso3→iso2 map
+    const adm0a3 = f.properties.adm0_a3;
+    let iso2 = adm0a3 ? (_iso3toIso2.get(adm0a3) || null) : null;
+    // Fallback: try iso_3166_2 prefix (e.g. "US-CA" → "US") for edge cases
+    if (!iso2) {
+      const raw = f.properties.iso_3166_2 || '';
+      if (/^[A-Z]{2}/.test(raw)) iso2 = raw.substring(0, 2);
+    }
+
     const candidates = (iso2 && _citiesByCountry.get(iso2)) || [];
     const cities  = candidates.filter(c => _cityInPolygon(c.lng, c.lat, f));
     const scored  = cities.filter(c => c.score != null);
     const avg     = scored.length ? scored.reduce((s, c) => s + c.score, 0) / scored.length : null;
 
-    f.properties.color       = colorFromScore(avg);
-    f.properties.avg_score   = avg;
-    f.properties.city_count  = cities.length;
+    f.properties.color        = colorFromScore(avg);
+    f.properties.avg_score    = avg;
+    f.properties.city_count   = cities.length;
     f.properties.scored_count = scored.length;
-    f.properties.iso2        = iso2;
+    f.properties.iso2         = iso2;
 
     _provincesData.set(`${iso2}__${f.properties.name}`, {
       avg_score: avg, cities, scored_count: scored.length, name: f.properties.name
@@ -317,8 +339,8 @@ async function _loadWorldProvincesGeojson() {
   });
 
   map.on('click', 'world-provinces-fill', (e) => {
-    // communes-fill is on top in France at zoom 7+ — its handler takes priority
-    if (_franceLoaded && map.getZoom() >= 7) return;
+    // communes-fill renders on top in France — skip French provinces click
+    if (_franceLoaded && e.features[0].properties.iso2 === 'FR') return;
     const iso2 = e.features[0].properties.iso2;
     const name = e.features[0].properties.name;
     const pd = _provincesData.get(`${iso2}__${name}`);
@@ -362,7 +384,7 @@ async function _loadFranceGeojson() {
     id: 'communes-fill',
     type: 'fill',
     source: 'communes',
-    minzoom: 7,
+    minzoom: 4,
     paint: {
       'fill-color': ['coalesce', ['get', 'color'], 'rgba(0,0,0,0)'],
       'fill-opacity': 0.80
@@ -372,7 +394,7 @@ async function _loadFranceGeojson() {
     id: 'communes-line',
     type: 'line',
     source: 'communes',
-    minzoom: 7,
+    minzoom: 4,
     paint: { 'line-color': '#21262d', 'line-width': 0.3 }
   });
 
