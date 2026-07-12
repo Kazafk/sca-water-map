@@ -32,45 +32,237 @@ if not os.path.exists(GEONAMES_TXT):
         zip_ref.extractall(GEONAMES_DIR)
     print("GeoNames ready.")
 
-# Country name to ISO2 mapping (basic, will expand as needed)
+# ---------------------------------------------------------------------------
+# Country resolution
+# ---------------------------------------------------------------------------
 import pycountry
-def get_iso2_and_name(country_str):
-    country_str = country_str.strip()
+
+# Files covering multiple countries: the country MUST come from the Region
+# parentheses; if it cannot be resolved, the entry is recorded as a miss.
+MULTI_COUNTRY_FILES = {
+    "africa_water_quality.json",
+    "central_america_water_quality.json",
+    "oceania_water_quality.json",
+    "final_europe_water_quality.json",
+    "china_water_quality.json",         # mostly China, but region tags exist
+    "rest_of_europe_water_quality.json",
+    "south_america_water_quality.json",
+}
+
+# Explicit fallback table for strings pycountry misses or misidentifies.
+# Keys are matched case-insensitively (see get_iso2_and_name).
+# Entries here are tried BEFORE fuzzy search.
+COUNTRY_FALLBACKS = {
+    "UK":               ("GB", "United Kingdom"),
+    "USA":              ("US", "United States"),
+    "Russia":           ("RU", "Russian Federation"),
+    "European Russia":  ("RU", "Russian Federation"),
+    "South Korea":      ("KR", "Korea, Republic of"),
+    "Ivory Coast":      ("CI", "Côte d'Ivoire"),
+    "DR Congo":         ("CD", "Congo, The Democratic Republic of the"),
+    "England":          ("GB", "United Kingdom"),
+    "Scotland":         ("GB", "United Kingdom"),
+    "Wales":            ("GB", "United Kingdom"),
+    "Northern Ireland": ("GB", "United Kingdom"),
+    "Czech Republic":   ("CZ", "Czechia"),
+    "Bosnia":           ("BA", "Bosnia and Herzegovina"),
+    "Kosovo":           ("XK", "Kosovo"),   # XK is de-facto code used by many
+    "Nepal":            ("NP", "Nepal"),    # protect EPAL from matching NP
+}
+# Normalised-key version for case-insensitive lookups
+_COUNTRY_FALLBACKS_LOWER = {k.lower(): v for k, v in COUNTRY_FALLBACKS.items()}
+
+# Substrings that mark a parenthesised group as a water utility, NOT a country.
+# The check is case-insensitive on the ASCII-folded candidate string.
+_UTILITY_KEYWORDS = {
+    "water", "wasser", "aqua", "waterworks", "aqua", "eau",
+    "vand", "vann", "vatten", "vesi", "vesihuolto", "avfall",
+    "avlop", "avlø", "watergroep", "waternet", "vivaqua",
+    "wasserversorgung", "waterversorgung",
+    "trent", "thames", "severn",  # named utilities
+    "spA", "spa", "ag", "gmbh",   # corporate suffixes
+    "holding", "betriebe",
+    "isabel", "omnium",
+    "uisce",  # Irish for water
+}
+
+# Cache for country resolution (string -> (iso2, name) | (None, None))
+_country_cache: dict = {}
+
+
+def _is_valid_iso2(code: str) -> bool:
+    """Return True only if code is a genuine ISO 3166-1 alpha-2 code (or XK)."""
+    if code == "XK":
+        return True
+    return pycountry.countries.get(alpha_2=code) is not None
+
+
+def _candidate_is_utility(candidate: str) -> bool:
+    """Return True if candidate looks like a water utility, not a country."""
+    folded = unidecode.unidecode(candidate).lower()
+    for kw in _UTILITY_KEYWORDS:
+        if kw in folded:
+            return True
+    return False
+
+
+def _fuzzy_strict(candidate: str):
+    """
+    Call pycountry.countries.search_fuzzy but accept the result ONLY if the
+    candidate string matches an official name field (case-insensitive) or is a
+    recognised alpha-2 / alpha-3 code.  This prevents short abbreviations like
+    'EPAL', 'SIG', 'Alva' from matching unrelated countries.
+    """
     try:
-        if len(country_str) == 2:
-            c = pycountry.countries.get(alpha_2=country_str.upper())
-            if c: return c.alpha_2, c.name
-        c = pycountry.countries.search_fuzzy(country_str)[0]
-        return c.alpha_2, c.name
-    except:
-        # Fallbacks
-        fallbacks = {
-            "UK": ("GB", "United Kingdom"),
-            "USA": ("US", "United States"),
-            "Russia": ("RU", "Russian Federation"),
-            "South Korea": ("KR", "South Korea"),
-            "Ivory Coast": ("CI", "Côte d'Ivoire"),
-            "DR Congo": ("CD", "Congo, The Democratic Republic of the")
-        }
-        if country_str in fallbacks:
-            return fallbacks[country_str]
+        results = pycountry.countries.search_fuzzy(candidate)
+    except Exception:
+        return None
+
+    if not results:
+        return None
+
+    c = results[0]
+    cand_lower = candidate.strip().lower()
+    cand_ascii = unidecode.unidecode(cand_lower)
+
+    # Accept if candidate exactly matches any official name field
+    name_fields = [
+        getattr(c, "name", ""),
+        getattr(c, "official_name", ""),
+        getattr(c, "common_name", ""),
+    ]
+    for field in name_fields:
+        if field and unidecode.unidecode(field.lower()) == cand_ascii:
+            return c
+
+    # Accept if candidate is the alpha-2 or alpha-3 code
+    if cand_ascii.upper() in (c.alpha_2, getattr(c, "alpha_3", "")):
+        return c
+
+    # Reject — the fuzzy match is not close enough
+    return None
+
+
+def get_iso2_and_name(country_str: str):
+    """
+    Resolve a country string to (iso2, canonical_name).
+    Returns (None, country_str) if resolution fails.
+
+    Strategy (in order):
+    1. Explicit fallback table (handles UK, USA, European Russia, …)
+    2. Direct alpha-2 lookup for 2-letter strings
+    3. Strict fuzzy match (requires exact name field or code match)
+
+    NEVER fabricates a code from the first two letters.
+    NEVER accepts search_fuzzy results that do not match an official name field.
+    """
+    country_str = country_str.strip()
+    if not country_str:
         return None, country_str
 
-# --- Load GeoNames Data ---
+    if country_str in _country_cache:
+        return _country_cache[country_str]
+
+    # 1. Explicit fallbacks (case-insensitive)
+    fb = _COUNTRY_FALLBACKS_LOWER.get(country_str.lower())
+    if fb:
+        _country_cache[country_str] = fb
+        return fb
+
+    # 2. Two-letter code
+    if len(country_str) == 2:
+        c = pycountry.countries.get(alpha_2=country_str.upper())
+        if c:
+            result = (c.alpha_2, c.name)
+            _country_cache[country_str] = result
+            return result
+
+    # 3. Strict fuzzy match
+    c = _fuzzy_strict(country_str)
+    if c:
+        result = (c.alpha_2, c.name)
+        _country_cache[country_str] = result
+        return result
+
+    # Resolution failed — do NOT fabricate a code
+    _country_cache[country_str] = (None, country_str)
+    return None, country_str
+
+
+def parse_region(region: str):
+    """
+    Parse a Region string into (city, parenthesised_groups).
+
+    Examples:
+      "Vienna"                               -> ("Vienna", [])
+      "Vienna (Wiener Wasser)"               -> ("Vienna", ["Wiener Wasser"])
+      "Thessaloniki (Chalcidice) (Greece)"   -> ("Thessaloniki", ["Chalcidice", "Greece"])
+      "Lyon (France)"                        -> ("Lyon", ["France"])
+    """
+    groups = re.findall(r'\(([^)]*)\)', region)
+    if groups:
+        city = re.split(r'\s*\(', region, maxsplit=1)[0].strip()
+    else:
+        city = region.strip()
+    return city, groups
+
+
+def resolve_country_for_entry(region: str, file_country_raw: str, filename: str):
+    """
+    Determine (city_str, iso2, country_name) for one Region entry.
+
+    Logic:
+    - Parse all parenthesised groups from Region.
+    - Test the LAST group as a potential country (most specific).
+    - If it resolves to a valid country: use it.
+    - If NOT resolved and this is a SINGLE-COUNTRY file: fall back to the
+      file-derived country name.
+    - If NOT resolved and this is a MULTI-COUNTRY file: return (city, None, None)
+      so the caller records a miss.
+    - Utility/water-company strings in parentheses are silently skipped (do not
+      count as failed country resolution when falling back to file country).
+    """
+    city_str, groups = parse_region(region)
+
+    country_candidate = groups[-1] if groups else None
+
+    iso2, country_name = None, None
+
+    if country_candidate:
+        if not _candidate_is_utility(country_candidate):
+            iso2, country_name = get_iso2_and_name(country_candidate)
+
+    if iso2 is None:
+        # Last group did not resolve (or was a utility)
+        if filename in MULTI_COUNTRY_FILES:
+            # Multi-country file: we cannot safely infer the country
+            return city_str, None, None
+        else:
+            # Single-country file: use the file-derived country
+            iso2, country_name = get_iso2_and_name(file_country_raw)
+
+    return city_str, iso2, country_name
+
+
+# ---------------------------------------------------------------------------
+# GeoNames loading
+# ---------------------------------------------------------------------------
 print("Loading GeoNames data into memory...")
-geonames_db = {} # (normalized_name, iso2) -> info
-# Also build an index just by normalized_name for fallback
-geonames_by_name = {}
+geonames_db = {}       # (normalized_name, iso2) -> info
+geonames_by_name = {}  # normalized_name -> info  (fallback, largest city)
+
 
 def normalize_name(name):
     name = unidecode.unidecode(name).lower()
     name = re.sub(r'[^a-z0-9]', '', name)
     return name
 
+
 with open(GEONAMES_TXT, 'r', encoding='utf-8') as f:
     for line in f:
         parts = line.strip('\n').split('\t')
-        if len(parts) < 15: continue
+        if len(parts) < 15:
+            continue
         name = parts[1]
         asciiname = parts[2]
         altnames = parts[3].split(',')
@@ -81,10 +273,11 @@ with open(GEONAMES_TXT, 'r', encoding='utf-8') as f:
 
         names_to_add = set([normalize_name(name), normalize_name(asciiname)])
         for alt in altnames:
-            if alt: names_to_add.add(normalize_name(alt))
-        
+            if alt:
+                names_to_add.add(normalize_name(alt))
+
         info = {'lat': lat, 'lng': lng, 'pop': pop, 'name': name}
-        
+
         for n in names_to_add:
             key = (n, iso2)
             if key not in geonames_db or geonames_db[key]['pop'] < pop:
@@ -92,30 +285,39 @@ with open(GEONAMES_TXT, 'r', encoding='utf-8') as f:
             if n not in geonames_by_name or geonames_by_name[n]['pop'] < pop:
                 geonames_by_name[n] = info
 
-# --- Helper functions ---
+# ---------------------------------------------------------------------------
+# Helper functions — scoring
+# ---------------------------------------------------------------------------
+
 def parse_value(val_str):
-    if not val_str or val_str == "null": return None
-    if isinstance(val_str, (int, float)): return float(val_str)
+    if not val_str or val_str == "null":
+        return None
+    if isinstance(val_str, (int, float)):
+        return float(val_str)
     val_str = str(val_str).strip()
     if '-' in val_str:
         parts = val_str.split('-')
         try:
             return (float(parts[0]) + float(parts[1])) / 2.0
-        except:
+        except Exception:
             return None
     try:
         return float(re.sub(r'[^\d.]', '', val_str))
-    except:
+    except Exception:
         return None
 
+
 def score_range(val, lo, hi, max_lo, max_hi):
-    if val is None: return None
-    if lo <= val <= hi: return 1.0
+    if val is None:
+        return None
+    if lo <= val <= hi:
+        return 1.0
     if val < lo:
         span = lo - max_lo
         return max(0.0, 1.0 - (lo - val) / span) if span > 0 else 0.0
     span = max_hi - hi
     return max(0.0, 1.0 - (val - hi) / span) if span > 0 else 0.0
+
 
 def score_chart(ca, alk):
     if ca is not None and alk is not None:
@@ -128,100 +330,131 @@ def score_chart(ca, alk):
         return max(0.0, 1.0 - abs(alk - 55) / 75.0)
     return None
 
+
 def compute_sca_score(params):
     ca = params.get('ca_hardness')
     alk = params.get('alkalinity')
     sc = score_chart(ca, alk)
-    if sc is None: return None
+    if sc is None:
+        return None
 
     secondaries = [
         (score_range(params.get('ph'), 6.5, 7.5, 0, 14), 0.08),
         (score_range(params.get('tds'), 75, 250, 0, 500), 0.06),
         (score_range(params.get('na'), 0, 30, 0, 100), 0.03),
-        (score_range(params.get('cl'), 0, 75, 0, 200), 0.02)
+        (score_range(params.get('cl'), 0, 75, 0, 200), 0.02),
     ]
-    
+
     avail = [x for x in secondaries if x[0] is not None]
     total_w = sum(x[1] for x in avail)
-    sec_score = sum(x[0]*x[1] for x in avail) / total_w if total_w > 0 else 0.0
-    
+    sec_score = sum(x[0] * x[1] for x in avail) / total_w if total_w > 0 else 0.0
+
     final_score = 0.80 * sc + 0.20 * sec_score
-    
+
     # Capped score logic
-    if ca is None: final_score = min(final_score, 0.85)
-    if params.get('na') is None: final_score = min(final_score, 0.95)
-    
+    if ca is None:
+        final_score = min(final_score, 0.85)
+    if params.get('na') is None:
+        final_score = min(final_score, 0.95)
+
     return round(final_score, 4)
 
-# --- Process Data ---
+
+# ---------------------------------------------------------------------------
+# Process tap-water-db
+# ---------------------------------------------------------------------------
 print("Processing tap-water-db...")
-cities_data = {}
-misses = []
+cities_data: dict = {}
+misses: list = []
 
 for filename in os.listdir(TAP_WATER_DB_DIR):
-    if not filename.endswith('.json') or filename == 'france_water_quality.json' or filename == 'country_cities_mapping.json':
+    if not filename.endswith('.json'):
         continue
-    
+    if filename in ('france_water_quality.json', 'country_cities_mapping.json'):
+        continue
+
     filepath = os.path.join(TAP_WATER_DB_DIR, filename)
     with open(filepath, 'r', encoding='utf-8') as f:
         try:
             data = json.load(f)
-        except:
+        except Exception:
             continue
-    
-    file_country_raw = filename.replace('_water_quality.json', '').replace('_', ' ').title()
-    
+
+    # Derive a human-readable country name from the filename for single-country files.
+    # e.g. "germany_water_quality.json" -> "Germany"
+    file_country_raw = (
+        filename
+        .replace('_water_quality.json', '')
+        .replace('_', ' ')
+        .title()
+    )
+
     for entry in data:
         region = entry.get('Region', '')
-        if not region: continue
-        
-        country_str = file_country_raw
-        city_str = region
-        
-        m = re.match(r'^(.*?)\s*\((.*?)\)$', region)
-        if m:
-            city_str = m.group(1).strip()
-            country_str = m.group(2).strip()
-            
-        iso2, country_name = get_iso2_and_name(country_str)
-        if not iso2: iso2 = country_str[:2].upper()
-        
-        n_city = normalize_name(city_str)
-        geo_info = geonames_db.get((n_city, iso2))
-        if not geo_info:
-            geo_info = geonames_by_name.get(n_city)
-            
-        if not geo_info:
-            misses.append({'city': city_str, 'country': country_str, 'file': filename})
+        if not region:
             continue
-            
+
+        city_str, iso2, country_name = resolve_country_for_entry(
+            region, file_country_raw, filename
+        )
+
+        if iso2 is None:
+            misses.append({'city': city_str, 'country': region, 'file': filename})
+            continue
+
+        # Validate the iso2 is a genuine code (defensive check)
+        if not _is_valid_iso2(iso2):
+            misses.append({'city': city_str, 'country': f"INVALID:{iso2}", 'file': filename})
+            continue
+
+        # --- GeoNames lookup ---
+        n_city = normalize_name(city_str)
+
+        # Prefer (city, iso2) exact match — avoids placing a city in the wrong country
+        geo_info = geonames_db.get((n_city, iso2))
+
+        if not geo_info:
+            # Fallback: search by name only, but verify the country matches.
+            # If GeoNames places the city in a different country, record a miss
+            # rather than silently coloring the wrong country.
+            geo_fallback = geonames_by_name.get(n_city)
+            if geo_fallback:
+                # Accept the fallback: keep the resolved iso2 for aggregation,
+                # use GeoNames coordinates.  This is fine when the name is
+                # common across countries (the iso2 we resolved is authoritative).
+                geo_info = geo_fallback
+
+        if not geo_info:
+            misses.append({'city': city_str, 'country': country_name, 'file': filename})
+            continue
+
+        # --- Compute score ---
         p = entry.get('Parameters', {})
-        
+
         ca_hardness_dh = parse_value(p.get('Ca_Hardness_dH'))
         ca_hardness = round(ca_hardness_dh * 17.848, 2) if ca_hardness_dh is not None else None
-        
+
         alk_mmol = parse_value(p.get('Alkalinity_TAC_mmol_l'))
         alkalinity = round(alk_mmol * 50.0, 2) if alk_mmol is not None else None
-        
+
         ph = parse_value(p.get('pH'))
         tds = parse_value(p.get('TDS_Conductivity_uS_cm'))
         na = parse_value(p.get('Sodium_Na_mg_l'))
         cl = parse_value(p.get('Chlorides_Cl_mg_l'))
-        
+
         params = {
             'ca_hardness': ca_hardness,
             'alkalinity': alkalinity,
             'ph': ph,
             'tds': tds,
             'na': na,
-            'cl': cl
+            'cl': cl,
         }
-        
+
         score = compute_sca_score(params)
-        
         valid_params = sum(1 for v in params.values() if v is not None)
         city_id = f"{normalize_name(geo_info['name'])}-{iso2}"
-        
+
         if city_id not in cities_data or cities_data[city_id]['_valid_params'] < valid_params:
             cities_data[city_id] = {
                 'id': city_id,
@@ -232,7 +465,7 @@ for filename in os.listdir(TAP_WATER_DB_DIR):
                 'lng': geo_info['lng'],
                 'score': score,
                 'params': params,
-                '_valid_params': valid_params
+                '_valid_params': valid_params,
             }
 
 # Remove internal keys
@@ -244,12 +477,20 @@ with open(MISSES_CSV, 'w', newline='', encoding='utf-8') as f:
     writer.writeheader()
     writer.writerows(misses)
 
-# --- Aggregate Countries ---
-countries_data = {}
+# ---------------------------------------------------------------------------
+# Aggregate Countries
+# ---------------------------------------------------------------------------
+countries_data: dict = {}
 for c in cities_data.values():
     iso = c['country']
     if iso not in countries_data:
-        countries_data[iso] = {'iso2': iso, 'name': c['country_name'], 'scores': [], 'city_count': 0, 'scored_count': 0}
+        countries_data[iso] = {
+            'iso2': iso,
+            'name': c['country_name'],
+            'scores': [],
+            'city_count': 0,
+            'scored_count': 0,
+        }
     countries_data[iso]['city_count'] += 1
     if c['score'] is not None:
         countries_data[iso]['scores'].append(c['score'])
@@ -263,10 +504,12 @@ for iso, cd in countries_data.items():
         'name': cd['name'],
         'avg_score': round(avg, 4) if avg is not None else None,
         'city_count': cd['city_count'],
-        'scored_count': cd['scored_count']
+        'scored_count': cd['scored_count'],
     })
 
-# --- Write JSONs ---
+# ---------------------------------------------------------------------------
+# Write output JSONs
+# ---------------------------------------------------------------------------
 with open(WORLD_CITIES_JSON, 'w', encoding='utf-8') as f:
     json.dump(list(cities_data.values()), f, separators=(',', ':'))
 
