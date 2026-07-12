@@ -115,7 +115,8 @@ async function init() {
   });
 
   map.on('load', async () => {
-    // 1. Countries choropleth (zoom 0–4), pre-colored, no second fetch
+    // 1. Countries choropleth — no maxzoom here; zoom range will be restricted to 0–4
+    // only after provinces layers are successfully added (P1: avoid blank-map gap).
     map.addSource('countries', {
       type: 'geojson',
       data: countriesGeo || COUNTRIES_GEOJSON_URL
@@ -124,7 +125,6 @@ async function init() {
       id: 'countries-fill',
       type: 'fill',
       source: 'countries',
-      maxzoom: 4,
       paint: {
         'fill-color': ['coalesce', ['get', 'color'], 'rgba(0,0,0,0)'],
         'fill-opacity': 0.65
@@ -134,11 +134,14 @@ async function init() {
       id: 'countries-line',
       type: 'line',
       source: 'countries',
-      maxzoom: 4,
       paint: { 'line-color': '#444', 'line-width': 0.5 }
     });
 
-    // 2. moveend: lazy-load provinces at zoom 4+, communes when in France at zoom 4+
+    // Eagerly kick off the provinces fetch in the background (P1).
+    // No await — countries layers stay visible at all zooms until provinces are ready.
+    _loadWorldProvincesGeojson();
+
+    // 2. moveend: lazy-load communes when in France at zoom 4+; provinces are now eager (P1).
     map.on('moveend', () => {
       const z = map.getZoom();
       const c = map.getCenter();
@@ -158,7 +161,7 @@ async function init() {
         : '🔍  Ville ou pays...';
 
       if (inFranceArea) _loadFranceGeojson();
-      if (z >= 4) _loadWorldProvincesGeojson();
+      // provinces are loaded eagerly; no moveend trigger needed for them
     });
 
     // 3. Country click → panel + optional France zoom
@@ -293,7 +296,14 @@ async function _loadWorldProvincesGeojson() {
 
   const geo = await r.json();
 
-  geo.features.forEach(f => {
+  // P2: chunked async loop to avoid blocking the main thread during PIP computation
+  const CHUNK = 300;
+  for (let i = 0; i < geo.features.length; i++) {
+    // Yield to the event loop every CHUNK features so the renderer can breathe
+    if (i > 0 && i % CHUNK === 0) {
+      await new Promise(resolve => setTimeout(resolve, 0));
+    }
+    const f = geo.features[i];
     // adm0_a3 (e.g. "USA", "FRA") is always populated in Natural Earth; convert via iso3→iso2 map
     const adm0a3 = f.properties.adm0_a3;
     let iso2 = adm0a3 ? (_iso3toIso2.get(adm0a3) || null) : null;
@@ -317,8 +327,9 @@ async function _loadWorldProvincesGeojson() {
     _provincesData.set(`${iso2}__${f.properties.name}`, {
       avg_score: avg, cities, scored_count: scored.length, name: f.properties.name
     });
-  });
+  }
 
+  // All PIP computation done; add source + layers, then restrict countries to zoom 0–4 (P1).
   map.addSource('world-provinces', { type: 'geojson', data: geo });
   map.addLayer({
     id: 'world-provinces-fill',
@@ -338,10 +349,19 @@ async function _loadWorldProvincesGeojson() {
     paint: { 'line-color': '#555', 'line-width': 0.4 }
   });
 
+  // P1: now that provinces are live, cap countries to zoom 0–4 so they don't overlap.
+  // This is intentionally deferred until here — if fetch/PIP fails, countries stay visible at all zooms.
+  map.setLayerZoomRange('countries-fill', 0, 4);
+  map.setLayerZoomRange('countries-line', 0, 4);
+
   map.on('click', 'world-provinces-fill', (e) => {
-    // communes-fill renders on top in France — skip French provinces click
-    if (_franceLoaded && e.features[0].properties.iso2 === 'FR') return;
     const iso2 = e.features[0].properties.iso2;
+    // P3: if this is a French province, trigger commune load (fire-and-forget)
+    // and skip the province panel only when communes-fill is already rendered.
+    if (iso2 === 'FR') {
+      _loadFranceGeojson();
+      if (map.getLayer('communes-fill')) return;
+    }
     const name = e.features[0].properties.name;
     const pd = _provincesData.get(`${iso2}__${name}`);
     if (!pd) return;
