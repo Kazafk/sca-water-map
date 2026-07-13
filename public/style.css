@@ -103,21 +103,62 @@ body {
 
 #legend {
   position: absolute;
-  top: 10px; left: 10px;
+  bottom: 28px; left: 10px;
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 6px;
-  padding: 8px 10px;
+  padding: 6px 10px;
   font-size: 10px;
   z-index: 1;
   transition: background .3s, border-color .3s;
+  max-width: 200px;
 }
-.legend-title { color: var(--muted); text-transform: uppercase; letter-spacing: .5px; font-size: 9px; margin-bottom: 6px; }
+#legend-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+.legend-title { color: var(--muted); text-transform: uppercase; letter-spacing: .5px; font-size: 9px; margin-bottom: 0; }
+.legend-toggle-btn {
+  background: none;
+  border: none;
+  color: var(--muted);
+  cursor: pointer;
+  font-size: 13px;
+  line-height: 1;
+  padding: 0 2px;
+  flex-shrink: 0;
+}
+.legend-toggle-btn:hover { color: var(--text); }
+#legend-body { overflow: hidden; transition: max-height .25s ease; }
+#legend.collapsed #legend-body { display: none; }
 .legend-item  { display: flex; align-items: flex-start; gap: 7px; margin: 4px 0; }
 .dot          { width: 10px; height: 10px; border-radius: 2px; flex-shrink: 0; background: var(--border); margin-top: 2px; }
-.dot-nodata   { background: var(--border); }
+.dot-nodata   { background: rgba(100,100,100,0.3); border: 1px solid var(--border); }
 .legend-label { font-size: 10px; color: var(--text); }
 .legend-sub   { font-size: 9px; color: var(--muted); margin-top: 1px; }
+
+/* Metric select in topbar */
+#metric-select {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  color: var(--text);
+  padding: 4px 6px;
+  font-size: 11px;
+  cursor: pointer;
+  appearance: auto;
+}
+#metric-select:hover { border-color: var(--blue); }
+#metric-select:focus { outline: none; border-color: var(--blue); }
+
+/* Copy-link button feedback */
+#btn-copy-link.copied {
+  color: var(--green);
+  border-color: var(--green);
+}
 
 #panel {
   width: 280px;
@@ -520,8 +561,9 @@ body {
   #legend {
     font-size: 8px;
     padding: 4px 6px;
+    bottom: 22px;
   }
-  #legend .legend-title { font-size: 8px; margin-bottom: 4px; }
+  #legend .legend-title { font-size: 8px; margin-bottom: 2px; }
   #legend .legend-label { font-size: 8px; }
   #legend .legend-sub   { display: none; }
   #legend .legend-item  { gap: 4px; margin: 2px 0; }
