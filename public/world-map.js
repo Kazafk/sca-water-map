@@ -10,8 +10,9 @@ const US_COUNTIES_GEOJSON_URL = 'https://raw.githubusercontent.com/plotly/datase
 
 // Layer architecture (bottom to top):
 // countries-fill (zoom 0-4) → world-provinces-fill (minzoom:4)
-//   → us-counties-fill (minzoom:5, USA only)
-//   → us-places-fill / eu-places-fill (minzoom:4) → communes-fill (minzoom:4, France only)
+//   → us-counties-fill (minzoom:5, USA only) → us-places-fill (minzoom:7, USA only)
+//   → eu-places-fill (minzoom:4, Europe) → communes-fill (minzoom:4, France only)
+// USA (taille continentale) : Pays → Etat → Comté → Ville ; Europe : Pays → Ville.
 
 // FIPS state code → USPS abbreviation (county names repeat across states)
 const _FIPS_STATE = {
@@ -802,10 +803,10 @@ async function _loadWorldProvincesGeojson() {
   map.setLayerZoomRange('countries-line', 0, 4);
 
   map.on('click', 'world-provinces-fill', (e) => {
-    // Un polygone municipal sous le curseur prend la main au zoom 4+
-    if (map.getZoom() >= 4
-        && ['us-places-fill', 'eu-places-fill'].some(l =>
-             map.getLayer(l) && map.queryRenderedFeatures(e.point, { layers: [l] }).length)) {
+    // Un polygone municipal rendu sous le curseur prend la main
+    // (queryRenderedFeatures respecte le minzoom de chaque couche)
+    if (['us-places-fill', 'eu-places-fill'].some(l =>
+          map.getLayer(l) && map.queryRenderedFeatures(e.point, { layers: [l] }).length)) {
       return;
     }
     const iso2 = e.features[0].properties.iso2;
@@ -912,8 +913,9 @@ async function _loadUsCountiesGeojson() {
   });
 
   map.on('click', 'us-counties-fill', (e) => {
-    // A partir du zoom 4, un polygone municipal sous le curseur prend la main
-    if (map.getLayer('us-places-fill') && map.getZoom() >= 4
+    // Un polygone municipal rendu sous le curseur prend la main (zoom 7+ :
+    // queryRenderedFeatures ne retourne rien tant que la couche n'est pas affichée)
+    if (map.getLayer('us-places-fill')
         && map.queryRenderedFeatures(e.point, { layers: ['us-places-fill'] }).length) return;
     const f  = e.features[0];
     const cd = _usCountiesData.get(f.properties.fips ?? f.id);
@@ -971,11 +973,13 @@ async function _loadUsPlacesGeojson() {
   }
 
   map.addSource('us-places', { type: 'geojson', data: geo });
+  // USA : pays de taille continentale → hiérarchie complète Etat (4-5) →
+  // Comté (5-7) → Ville (7+). L'Europe reste en Pays → Ville dès le zoom 4.
   map.addLayer({
     id: 'us-places-fill',
     type: 'fill',
     source: 'us-places',
-    minzoom: 4,
+    minzoom: 7,
     paint: {
       'fill-color': ['coalesce', ['get', 'color'], 'rgba(0,0,0,0)'],
       'fill-opacity': 0.85
@@ -985,8 +989,8 @@ async function _loadUsPlacesGeojson() {
     id: 'us-places-line',
     type: 'line',
     source: 'us-places',
-    minzoom: 4,
-    paint: { 'line-color': '#888', 'line-width': 0.6 }
+    minzoom: 7,
+    paint: { 'line-color': '#21262d', 'line-width': 0.3 }
   });
 
   map.on('click', 'us-places-fill', (e) => {
@@ -1049,7 +1053,7 @@ async function _loadEuPlacesGeojson() {
     type: 'line',
     source: 'eu-places',
     minzoom: 4,
-    paint: { 'line-color': '#888', 'line-width': 0.6 }
+    paint: { 'line-color': '#21262d', 'line-width': 0.3 }
   });
 
   map.on('click', 'eu-places-fill', (e) => {
