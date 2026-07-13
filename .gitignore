@@ -1,5 +1,6 @@
 # Generated data
 data/geonames/
+data/edt/
 data/geocoding_misses.csv
 
 # Python

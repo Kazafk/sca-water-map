@@ -1,0 +1,985 @@
+original,matched,method,country
+Shambu city,Shambu,suffix,ET
+Basyoun,Basyūn,fuzzy,EG
+Loitokitok,Oloitokitok,fuzzy,KE
+Rhamu,Ramu,fuzzy,KE
+El Taref,El Tarf,fuzzy,DZ
+Marandallah,Marandala,fuzzy,CI
+Nangbolodougou,Ngolodougou,fuzzy,CI
+Konolo,Kongolo,fuzzy,CI
+Brandberg,Brandenberg,fuzzy,AT
+Freinberg,Reinsberg,fuzzy,AT
+Fusch an der Großglocknerstraße,Bruck an der Großglocknerstraße,fuzzy,AT
+Grabern,Graben,fuzzy,AT
+Greinbach,Reinbach,fuzzy,AT
+Göming,Going,fuzzy,AT
+Kaltenberg,Altenberg bei Linz,fuzzy,AT
+Lichtenau im Mühlkreis,Reichenau im Mühlkreis,fuzzy,AT
+Neumarkt in der Steiermark,Neumarkt in Steiermark,fuzzy,AT
+Rechberg,Rehberg,fuzzy,AT
+Sankt Georgen am Längsee,St. Georgen am Längsee,fuzzy,AT
+Unterach am Attersee,Unterach (Attersee),fuzzy,AT
+Waidhofen an der Thaya-Land,Waidhofen an der Thaya,fuzzy,AT
+Weißpriach,Weissbriach,fuzzy,AT
+Hunuma,Hunucmá,fuzzy,MX
+Ojinaga Municipality,Ojinaga,suffix,MX
+Anáhuac Municipality,Anáhuac,suffix,MX
+Homún Municipality,Homun,suffix,MX
+Colón City,Colón,suffix,PA
+Pu'er City,Pu'er,suffix,CN
+Taoyuan County,Taoyuan,suffix,CN
+Hunjiang City,Baishan,suffix,CN
+Lion City,Lyon,suffix,CN
+Hailar City,Hailar,suffix,CN
+Jiayuguan City,Jiayuguan,suffix,CN
+Ansi City,Yuanquan,suffix,CN
+Yuyao City,Yuyao,suffix,CN
+Yevpatoriia,Yevpatoriya,fuzzy,UA
+Vyzhnytsia,Vyzhnytsya,fuzzy,UA
+Chekhov-2,Chekhov,fuzzy,RU
+Solnechnogorsk-30,Solnechnogorsk,fuzzy,RU
+Pionersky,Pionerskiy,fuzzy,RU
+Tavrovo,Stavrovo,fuzzy,RU
+Mariinsky Posad,Mariinskiy Posad,fuzzy,RU
+Chekhov-8,Chekhov,fuzzy,RU
+Chekhov-7,Chekhov,fuzzy,RU
+Chekhov-1,Chekhov,fuzzy,RU
+Alexandrovsk-Sakhalinsky,Aleksandrovsk-Sakhalinskiy,fuzzy,RU
+Chekhov-4,Chekhov,fuzzy,RU
+Serpukhov-15,Serpukhov,fuzzy,RU
+Chekhov-3,Chekhov,fuzzy,RU
+Bachatsky,Bachatskiy,fuzzy,RU
+Helsinki Region,Helsinki,suffix,FI
+Tampere Region,Tampere,suffix,FI
+Turku Region,Turku,suffix,FI
+Oulu Region,Oulu,suffix,FI
+Jyväskylä Region,Jyväskylä,suffix,FI
+Kuopio Region,Kuopio,suffix,FI
+Lahti Region,Lahti,suffix,FI
+Pori Region,Pori,suffix,FI
+Inari Region,Inari,suffix,FI
+Kittilä Region,Kittilä,suffix,FI
+Hanko Region,Hanko,suffix,FI
+Porvoo Region,Porvoo,suffix,FI
+Rauma Region,Rauma,suffix,FI
+Salo Region,Salo,suffix,FI
+Vaasa Region,Vaasa,suffix,FI
+Rovaniemi Region,Rovaniemi,suffix,FI
+Kajaani Region,Kajaani,suffix,FI
+Joensuu Region,Joensuu,suffix,FI
+Akaa Region,Akaa,suffix,FI
+Alajärvi Region,Älajärvi,suffix,FI
+Alavieska Region,Alavieska,suffix,FI
+Alavus Region,Alavus,fuzzy,FI
+Asikkala Region,Asikkala,suffix,FI
+Askola Region,Askola,suffix,FI
+Aura Region,Aura,suffix,FI
+Brändö Region,Kulosaari,suffix,FI
+Eckerö Region,Eckerö,suffix,FI
+Enonkoski Region,Enonkoski,suffix,FI
+Enontekiö Region,Enontekiö,suffix,FI
+Eura Region,Eura,suffix,FI
+Eurajoki Region,Eurajoki,suffix,FI
+Evijärvi Region,Evijärvi,suffix,FI
+Finström Region,Finström,suffix,FI
+Forssa Region,Forssa,suffix,FI
+Föglö Region,Föglö,suffix,FI
+Geta Region,Geta,suffix,FI
+Haapajärvi Region,Haapajärvi,suffix,FI
+Haapavesi Region,Haapajärvi,suffix,FI
+Hailuoto Region,Hailuoto,suffix,FI
+Halsua Region,Halsua,suffix,FI
+Hamina Region,Hamina,suffix,FI
+Hammarland Region,Hammarland,suffix,FI
+Hankasalmi Region,Hankasalmi,suffix,FI
+Harjavalta Region,Harjavalta,suffix,FI
+Hartola Region,Hartola,suffix,FI
+Hausjärvi Region,Hausjärvi,suffix,FI
+Heinola Region,Heinola,suffix,FI
+Heinävesi Region,Heinävesi,suffix,FI
+Hirvensalmi Region,Hirvensalmi,suffix,FI
+Hollola Region,Hollola,suffix,FI
+Huittinen Region,Huittinen,suffix,FI
+Humppila Region,Humppila,suffix,FI
+Hyrynsalmi Region,Hyrynsalmi,suffix,FI
+Hyvinkää Region,Hyvinge,suffix,FI
+Hämeenkyrö Region,Hämeenkyrö,suffix,FI
+Hämeenlinna Region,Hämeenlinna,suffix,FI
+Ii Region,Ii,suffix,FI
+Iisalmi Region,Iisalmi,suffix,FI
+Iitti Region,Iitti,suffix,FI
+Ikaalinen Region,Ikaalinen,suffix,FI
+Ilmajoki Region,Ilmajoki,suffix,FI
+Ilomantsi Region,Ilomantsi,suffix,FI
+Imatra Region,Imatra,suffix,FI
+Ingå Region,Ingå,suffix,FI
+Isojoki Region,Isojoki,suffix,FI
+Isokyrö Region,Isokyrö,suffix,FI
+Jakobstad Region,Jakobstad,suffix,FI
+Janakkala Region,Janakkala,suffix,FI
+Jokioinen Region,Jokioinen,suffix,FI
+Jomala Region,Jomala,suffix,FI
+Joroinen Region,Joroinen,suffix,FI
+Joutsa Region,Joutsa,suffix,FI
+Juuka Region,Juuka,suffix,FI
+Juupajoki Region,Juupajoki,suffix,FI
+Juva Region,Juva,suffix,FI
+Jämijärvi Region,Jämijärvi,suffix,FI
+Jämsä Region,Jämsä,suffix,FI
+Järvenpää Region,Järvenpää,suffix,FI
+Kaarina Region,Kaarina,suffix,FI
+Kaavi Region,Kaavi,suffix,FI
+Kalajoki Region,Kalajoki,suffix,FI
+Kangasala Region,Kangasala,suffix,FI
+Kangasniemi Region,Kangasniemi,suffix,FI
+Kankaanpää Region,Kankaanpää,suffix,FI
+Kannonkoski Region,Kannonkoski,suffix,FI
+Kannus Region,Cannes,suffix,FI
+Karijoki Region,Karijoki,suffix,FI
+Karkkila Region,Karkkila,suffix,FI
+Karstula Region,Karstula,suffix,FI
+Karvia Region,Karvia,suffix,FI
+Kaskinen Region,Kaskinen,suffix,FI
+Kauhajoki Region,Kauhajoki,suffix,FI
+Kauhava Region,Kauhava,suffix,FI
+Kaustinen Region,Kaustinen,suffix,FI
+Keitele Region,Keitele,suffix,FI
+Kemi Region,Kemi,suffix,FI
+Kemijärvi Region,Kemijärvi,suffix,FI
+Keminmaa Region,Keminmaa,suffix,FI
+Kempele Region,Kempele,suffix,FI
+Kerava Region,Kerava,suffix,FI
+Keuruu Region,Keuruu,suffix,FI
+Kihniö Region,Kihniö,suffix,FI
+Kinnula Region,Kinnula,suffix,FI
+Kirkkonummi Region,Kirkkonummi,suffix,FI
+Kitee Region,Kitee,suffix,FI
+Kiuruvesi Region,Kiuruvesi,suffix,FI
+Kivijärvi Region,Kivijärvi,suffix,FI
+Kokemäki Region,Kokemäki,suffix,FI
+Kokkola Region,Kokkola,suffix,FI
+Kolari Region,Kolari,suffix,FI
+Konnevesi Region,Konnevesi,suffix,FI
+Kontiolahti Region,Kontiolahti,suffix,FI
+Korsholm Region,Korsholm,suffix,FI
+Korsnäs Region,Korsnäs,fuzzy,FI
+Koski Tl Region,Koski Tl,suffix,FI
+Kotka Region,Kotka,suffix,FI
+Kouvola Region,Kouvola,suffix,FI
+Kristinestad Region,Kristinestad,suffix,FI
+Kronoby Region,Kronoby,suffix,FI
+Kuhmo Region,Kuhmo,suffix,FI
+Kuhmoinen Region,Kuhmoinen,suffix,FI
+Kumlinge Region,Kumlinge,suffix,FI
+Kuortane Region,Kuortane,suffix,FI
+Kurikka Region,Kurikka,suffix,FI
+Kustavi Region,Kustavi,suffix,FI
+Kuusamo Region,Kuusamo,suffix,FI
+Kyyjärvi Region,Kyyjärvi,suffix,FI
+Kärkölä Region,Kärkölä,suffix,FI
+Kärsämäki Region,Kärsämäki,suffix,FI
+Kökar Region,Kökar,suffix,FI
+Laihia Region,Laihia,suffix,FI
+Laitila Region,Laitila,suffix,FI
+Lapinjärvi Region,Lapinjärvi,suffix,FI
+Lapinlahti Region,Lapinlahti,suffix,FI
+Lappajärvi Region,Lappajärvi,suffix,FI
+Lappeenranta Region,Lappeenranta,suffix,FI
+Lapua Region,Lapua,suffix,FI
+Larsmo Region,Larsmo,suffix,FI
+Laukaa Region,Laukaa,suffix,FI
+Lemi Region,Lemi,suffix,FI
+Lemland Region,Lemland,suffix,FI
+Lempäälä Region,Lempäälä,suffix,FI
+Leppävirta Region,Leppävirta,suffix,FI
+Lestijärvi Region,Lestijärvi,suffix,FI
+Lieksa Region,Lieksa,suffix,FI
+Lieto Region,Lieto,suffix,FI
+Liminka Region,Liminka,suffix,FI
+Liperi Region,Liperi,suffix,FI
+Lohja Region,Lohja,suffix,FI
+Loimaa Region,Loimaa,suffix,FI
+Loppi Region,Loppi,suffix,FI
+Loviisa Region,Lovisa,suffix,FI
+Luhanka Region,Luhanka,suffix,FI
+Lumijoki Region,Lumijoki,suffix,FI
+Lumparland Region,Lumparland,suffix,FI
+Luumäki Region,Luumäki,suffix,FI
+Malax Region,Malax,suffix,FI
+Mariehamn Region,Mariehamn,suffix,FI
+Marttila Region,Marttila,suffix,FI
+Masku Region,Masku,suffix,FI
+Merijärvi Region,Merijärvi,suffix,FI
+Merikarvia Region,Merikarvia,suffix,FI
+Miehikkälä Region,Miehikkälä,suffix,FI
+Mikkeli Region,Mikkeli,suffix,FI
+Multia Region,Multia,suffix,FI
+Muonio Region,Muonio,suffix,FI
+Muurame Region,Muurame,suffix,FI
+Mynämäki Region,Mynämäki,suffix,FI
+Myrskylä Region,Myrskylä,suffix,FI
+Mäntsälä Region,Mäntsälä,suffix,FI
+Mäntyharju Region,Mäntyharju,suffix,FI
+Naantali Region,Naantali,suffix,FI
+Nakkila Region,Nakkila,suffix,FI
+Nivala Region,Nivala,suffix,FI
+Nokia Region,Nokia,suffix,FI
+Nousiainen Region,Nousiainen,suffix,FI
+Nurmes Region,Nurmes,fuzzy,FI
+Nurmijärvi Region,Nurmijärvi,suffix,FI
+Nykarleby Region,Nykarleby,suffix,FI
+Närpes Region,Närpes,fuzzy,FI
+Orimattila Region,Orimattila,suffix,FI
+Oripää Region,Oripää,suffix,FI
+Orivesi Region,Orivesi,suffix,FI
+Oulainen Region,Oulainen,suffix,FI
+Outokumpu Region,Outokumpu,suffix,FI
+Padasjoki Region,Padasjoki,suffix,FI
+Paimio Region,Paimio,suffix,FI
+Paltamo Region,Paltamo,suffix,FI
+Pargas Region,Fargo,suffix,FI
+Parikkala Region,Parikkala,suffix,FI
+Parkano Region,Parkano,suffix,FI
+Pedersöre Region,Pedersöre,suffix,FI
+Pelkosenniemi Region,Pelkosenniemi,suffix,FI
+Pello Region,Pello,suffix,FI
+Perho Region,Perho,suffix,FI
+Petäjävesi Region,Petäjävesi,suffix,FI
+Pieksämäki Region,Pieksämäki,suffix,FI
+Pielavesi Region,Pielavesi,suffix,FI
+Pihtipudas Region,Pihtipudas,fuzzy,FI
+Pirkkala Region,Pirkkala,suffix,FI
+Polvijärvi Region,Polvijärvi,suffix,FI
+Pomarkku Region,Pomarkku,suffix,FI
+Pornainen Region,Pornainen,suffix,FI
+Posio Region,Posio,suffix,FI
+Pudasjärvi Region,Pudasjärvi,suffix,FI
+Pukkila Region,Pukkila,suffix,FI
+Punkalaidun Region,Punkalaidun,suffix,FI
+Puolanka Region,Puolanka,suffix,FI
+Puumala Region,Puumala,suffix,FI
+Pyhtää Region,Pyhtää,suffix,FI
+Pyhäjoki Region,Pyhäjoki,suffix,FI
+Pyhäjärvi Region,Pyhäjärvi,suffix,FI
+Pyhäntä Region,Pyhäntä,suffix,FI
+Pyhäranta Region,Pyhäranta,suffix,FI
+Pälkäne Region,Pälkäne,suffix,FI
+Pöytyä Region,Pöytyä,suffix,FI
+Raahe Region,Raahe,suffix,FI
+Raisio Region,Raisio,suffix,FI
+Rantasalmi Region,Rantasalmi,suffix,FI
+Ranua Region,Ranua,suffix,FI
+Raseborg Region,Raseborg,suffix,FI
+Rautalampi Region,Rautalampi,suffix,FI
+Rautavaara Region,Rautavaara,suffix,FI
+Rautjärvi Region,Rautjärvi,suffix,FI
+Reisjärvi Region,Reisjärvi,suffix,FI
+Riihimäki Region,Riihimäki,suffix,FI
+Ristijärvi Region,Ristijärvi,suffix,FI
+Ruokolahti Region,Ruokolahti,suffix,FI
+Ruovesi Region,Ruovesi,suffix,FI
+Rusko Region,Rusko,suffix,FI
+Rääkkylä Region,Rääkkylä,suffix,FI
+Saarijärvi Region,Saarijärvi,suffix,FI
+Salla Region,Salla,suffix,FI
+Saltvik Region,Saltvik,suffix,FI
+Sastamala Region,Sastamala,suffix,FI
+Sauvo Region,Sauvo,suffix,FI
+Savitaipale Region,Savitaipale,suffix,FI
+Savonlinna Region,Savonlinna,suffix,FI
+Savukoski Region,Savukoski,suffix,FI
+Seinäjoki Region,Seinäjoki,suffix,FI
+Sievi Region,Sievi,suffix,FI
+Siikainen Region,Siikainen,suffix,FI
+Siikajoki Region,Siikajoki,suffix,FI
+Siilinjärvi Region,Siilinjärvi,suffix,FI
+Simo Region,Simo,suffix,FI
+Sipoo Region,Sibbo,suffix,FI
+Siuntio Region,Siuntio,suffix,FI
+Sodankylä Region,Sodankylä,suffix,FI
+Soini Region,Soini,suffix,FI
+Somero Region,Somero,suffix,FI
+Sonkajärvi Region,Sonkajärvi,suffix,FI
+Sotkamo Region,Sotkamo,suffix,FI
+Sottunga Region,Sottunga,suffix,FI
+Sulkava Region,Sulkava,suffix,FI
+Sund Region,Sundsbruk,suffix,FI
+Suomussalmi Region,Suomussalmi,suffix,FI
+Suonenjoki Region,Suonenjoki,suffix,FI
+Sysmä Region,Sysmä,suffix,FI
+Säkylä Region,Säkylä,suffix,FI
+Taipalsaari Region,Taipalsaari,suffix,FI
+Taivalkoski Region,Taivalkoski,suffix,FI
+Taivassalo Region,Taivassalo,suffix,FI
+Tammela Region,Tammela,suffix,FI
+Tervo Region,Tervo,suffix,FI
+Tervola Region,Tervola,suffix,FI
+Teuva Region,Teuva,suffix,FI
+Tohmajärvi Region,Tohmajärvi,suffix,FI
+Toholampi Region,Toholampi,suffix,FI
+Toivakka Region,Toivakka,suffix,FI
+Tornio Region,Tornio,suffix,FI
+Tuusniemi Region,Tuusniemi,suffix,FI
+Tuusula Region,Tuusula,suffix,FI
+Tyrnävä Region,Tyrnävä,suffix,FI
+Ulvila Region,Ulvila,suffix,FI
+Urjala Region,Urjala,suffix,FI
+Utajärvi Region,Utajärvi,suffix,FI
+Utsjoki Region,Utsjoki,suffix,FI
+Uurainen Region,Uurainen,suffix,FI
+Uusikaupunki Region,Uusikaupunki,suffix,FI
+Vaala Region,Vaala,suffix,FI
+Valkeakoski Region,Valkeakoski,suffix,FI
+Varkaus Region,Varkaus,fuzzy,FI
+Vehmaa Region,Vehmaa,suffix,FI
+Vesanto Region,Vesanto,suffix,FI
+Vesilahti Region,Vesilahti,suffix,FI
+Veteli Region,Veteli,suffix,FI
+Vieremä Region,Vieremä,suffix,FI
+Vihti Region,Vihti,suffix,FI
+Viitasaari Region,Viitasaari,suffix,FI
+Vimpeli Region,Vimpeli,suffix,FI
+Virolahti Region,Virolahti,suffix,FI
+Virrat Region,Virrat,suffix,FI
+Vårdö Region,Vardø,suffix,FI
+Vörå Region,Vörå,suffix,FI
+Ylitornio Region,Ylitornio,suffix,FI
+Ylivieska Region,Ylivieska,suffix,FI
+Ylöjärvi Region,Ylöjärvi,suffix,FI
+Ypäjä Region,Ypäjä,suffix,FI
+Ähtäri Region,Ähtäri,suffix,FI
+Äänekoski Region,Äänekoski,suffix,FI
+Trondheim kommune,Trondheim,suffix,NO
+Bodø kommune,Bodø,suffix,NO
+Verdal kommune,Verdal,suffix,NO
+Vik kommune,Vik,suffix,NO
+Kragerø kommune,Kragerø,suffix,NO
+Stranda kommune,Stranda,suffix,NO
+Sandefjord kommune,Sandefjord,suffix,NO
+Lillestrøm kommune,Lillestrøm,suffix,NO
+Leka kommune,Lockenhaus,suffix,NO
+Lier kommune,Lille,suffix,NO
+Lødingen kommune,Lødingen,suffix,NO
+Vang kommune,Vang,suffix,NO
+Tynset kommune,Tynset,suffix,NO
+Rollag kommune,Rollag,suffix,NO
+Holmestrand kommune,Holmestrand,suffix,NO
+Vestby kommune,Vestby,suffix,NO
+Jevnaker kommune,Jevnaker,suffix,NO
+Hvaler kommune,Våler,fuzzy,NO
+Dovre kommune,Dovre,suffix,NO
+Kinn kommune,Florø,suffix,NO
+Gratangen kommune,Gratangen,suffix,NO
+Sirdal kommune,Tonstad,suffix,NO
+Haugesund kommune,Haugesund,suffix,NO
+Stavanger kommune,Stavanger,suffix,NO
+Namsskogan kommune,Namsskogan,suffix,NO
+Siljan kommune,Siljan,suffix,NO
+Asker kommune,Asker,suffix,NO
+Nesbyen kommune,Nesbyen,suffix,NO
+Alta kommune,Alta,suffix,NO
+Bygland kommune,Bygland,suffix,NO
+Namsos kommune,Namsos,fuzzy,NO
+Ørsta kommune,Ørsta,suffix,NO
+Haram kommune,Haram,suffix,NO
+Vaksdal kommune,Vaksdal,suffix,NO
+Hyllestad kommune,Hyllestad,suffix,NO
+Rakkestad kommune,Rakkestad,suffix,NO
+Malvik kommune,Malvik,suffix,NO
+Ulvik kommune,Ulvik,suffix,NO
+Hurdal kommune,Hurdal,suffix,NO
+Tønsberg kommune,Tønsberg,suffix,NO
+Tysvær kommune,Tysvær,suffix,NO
+Grong kommune,Grong,suffix,NO
+Hå kommune,Ha,suffix,NO
+Folldal kommune,Folldal,suffix,NO
+Trysil kommune,Innbygda,suffix,NO
+Bokn kommune,Bokn,suffix,NO
+Engerdal kommune,Engerdal,suffix,NO
+Fauske kommune,Fauske,suffix,NO
+Lærdal kommune,Lærdalsøyri,suffix,NO
+Utsira kommune,Utsira,suffix,NO
+Sula kommune,Sola,suffix,NO
+Steinkjer kommune,Steinkjer,suffix,NO
+Sarpsborg kommune,Sarpsborg,suffix,NO
+Nesna kommune,Nesna,suffix,NO
+Alvdal kommune,Alvdal,suffix,NO
+Fyresdal kommune,Fyresdal,suffix,NO
+Røst kommune,Røst,suffix,NO
+Høyanger kommune,Høyanger,suffix,NO
+Masfjorden kommune,Masfjorden,suffix,NO
+Porsgrunn kommune,Porsgrunn,suffix,NO
+Rindal kommune,Rindal,suffix,NO
+Narvik kommune,Narvik,suffix,NO
+Levanger kommune,Levanger,suffix,NO
+Berlevåg kommune,Berlevåg,suffix,NO
+Hamar kommune,Hamar,suffix,NO
+Hol kommune,Hol,suffix,NO
+Nord-Odal kommune,Sand,suffix,NO
+Valle kommune,Valle,suffix,NO
+Gjerstad kommune,Gjerstad,suffix,NO
+Lurøy kommune,Lurøy,suffix,NO
+Melhus kommune,Melhus,fuzzy,NO
+Eidfjord kommune,Eidfjord,suffix,NO
+Hemsedal kommune,Hemsedal,suffix,NO
+Elverum kommune,Elverum,suffix,NO
+Råde kommune,Karlshus,suffix,NO
+Sveio kommune,Sveio,suffix,NO
+Frosta kommune,Frosta,suffix,NO
+Sortland kommune,Sortland,suffix,NO
+Åfjord kommune,Å i Åfjord,suffix,NO
+Larvik kommune,Larvik,suffix,NO
+Karasjok kommune,Kárášjohka,suffix,NO
+Lillehammer kommune,Lillehammer,suffix,NO
+Hole kommune,Halen,suffix,NO
+Ål kommune,Ål,suffix,NO
+Fredrikstad kommune,Fredrikstad,suffix,NO
+Tokke kommune,Stokke,fuzzy,NO
+Gol kommune,Gol,suffix,NO
+Aukra kommune,Aukra,suffix,NO
+Voss kommune,Voss,suffix,NO
+Flekkefjord kommune,Flekkefjord,suffix,NO
+Bardu kommune,Le Bardo,suffix,NO
+Ringebu kommune,Ringebu,suffix,NO
+Ørland kommune,Orland Park,suffix,NO
+Nome kommune,Nome,suffix,NO
+Grimstad kommune,Grimstad,suffix,NO
+Risør kommune,Risør,suffix,NO
+Kongsberg kommune,Kongsberg,suffix,NO
+Årdal kommune,Ardal,suffix,NO
+Horten kommune,Horten,suffix,NO
+Gran kommune,Esztergom,suffix,NO
+Fjaler kommune,Dale,suffix,NO
+Kvam kommune,Kvam,suffix,NO
+Sauda kommune,Sauda,suffix,NO
+Nærøysund kommune,Årøysund,fuzzy,NO
+Hammerfest kommune,Hammerfest,suffix,NO
+Vevelstad kommune,Vevelstad,suffix,NO
+Notodden kommune,Notodden,suffix,NO
+Kviteseid kommune,Kviteseid,suffix,NO
+Austrheim kommune,Austrheim,suffix,NO
+Lyngdal kommune,Lyngdal,suffix,NO
+Harstad kommune,Harstad,suffix,NO
+Rana kommune,Lana,suffix,NO
+Tingvoll kommune,Tingvoll,suffix,NO
+Surnadal kommune,Surnadal,suffix,NO
+Skien kommune,Skien,suffix,NO
+Åmli kommune,Åmli,suffix,NO
+Stjørdal kommune,Stjørdal,suffix,NO
+Båtsfjord kommune,Båtsfjord,suffix,NO
+Vestnes kommune,Vestnes,fuzzy,NO
+Balsfjord kommune,Båtsfjord,fuzzy,NO
+Brønnøy kommune,Brønnøysund,suffix,NO
+Tolga kommune,Tolga,suffix,NO
+Hareid kommune,Hareid,suffix,NO
+Nordre_Land kommune,Nodeland,fuzzy,NO
+Senja kommune,Senja,suffix,NO
+Flå kommune,Flå,suffix,NO
+Tromsø kommune,Tromsø,suffix,NO
+Kristiansand kommune,Kristiansand,suffix,NO
+Snåsa kommune,Snåase,suffix,NO
+Seljord kommune,Seljord,suffix,NO
+Rauma kommune,Rauma,suffix,NO
+Lesja kommune,Lesja,suffix,NO
+Skjervøy kommune,Skjervøy,suffix,NO
+Fitjar kommune,Fitjar,suffix,NO
+Løten kommune,Løten,suffix,NO
+Vardø kommune,Vardø,suffix,NO
+Volda kommune,Volda,suffix,NO
+Aure kommune,Aure,suffix,NO
+Sørreisa kommune,Sørreisa,suffix,NO
+Skaun kommune,Skaun,suffix,NO
+Stange kommune,Stange,suffix,NO
+Dønna kommune,Donna,suffix,NO
+Hemnes kommune,Hemnes,fuzzy,NO
+Fedje kommune,Fedje,suffix,NO
+Meråker kommune,Meråker,suffix,NO
+Austevoll kommune,Austevoll,suffix,NO
+Hattfjelldal kommune,Hattfjelldal,suffix,NO
+Etne kommune,Etne,suffix,NO
+Oppdal kommune,Oppdal,suffix,NO
+Sogndal kommune,Sogndal,suffix,NO
+Eidsvoll kommune,Eidsvoll,suffix,NO
+Smøla kommune,Sola,fuzzy,NO
+Vennesla kommune,Vennesla,suffix,NO
+Molde kommune,Molde,suffix,NO
+Stryn kommune,Stryn,suffix,NO
+Klepp kommune,Kleppe,fuzzy,NO
+Grane kommune,Grane,suffix,NO
+Tana kommune,Thāne,suffix,NO
+Høylandet kommune,Høylandet,suffix,NO
+Eigersund kommune,Egersund,fuzzy,NO
+Halden kommune,Halden,suffix,NO
+Lillesand kommune,Lillesand,suffix,NO
+Moss kommune,Moss,suffix,NO
+Ålesund kommune,Ålesund,suffix,NO
+Åmot kommune,Åmot,suffix,NO
+Sykkylven kommune,Sykkylven,suffix,NO
+Sel kommune,Seoul,suffix,NO
+Kvinesdal kommune,Kvinesdal,suffix,NO
+Arendal kommune,Arendal,suffix,NO
+Tvedestrand kommune,Tvedestrand,suffix,NO
+Sola kommune,Sola,suffix,NO
+Kristiansund kommune,Kristiansund,suffix,NO
+Lierne kommune,Liernais,suffix,NO
+Bykle kommune,Bykle,suffix,NO
+Kautokeino kommune,Kautokeino,suffix,NO
+Askvoll kommune,Askvoll,suffix,NO
+Gjøvik kommune,Gjøvik,suffix,NO
+Kongsvinger kommune,Kongsvinger,suffix,NO
+Randaberg kommune,Randaberg,suffix,NO
+Vega kommune,La Vega,suffix,NO
+Drammen kommune,Drammen,suffix,NO
+Farsund kommune,Farsund,suffix,NO
+Røyrvik kommune,Røyrvik,suffix,NO
+Luster kommune,Luster,suffix,NO
+Vadsø kommune,Vadsø,suffix,NO
+Tamaki City,Tamaki,suffix,NZ
+Dobieszczyn,Dobieszczyzna,fuzzy,PL
+Kalish Pomorski,Kalisz Pomorski,fuzzy,PL
+Oaxos,Axós,fuzzy,GR
+Aigai,Aigáni,fuzzy,GR
+Istron,Ístro,fuzzy,GR
+Arethusa,Aréthousa,fuzzy,GR
+Angeia,Anógeia,fuzzy,GR
+Grad Sveti Ivan Zelina,Sveti Ivan Zelina,fuzzy,HR
+Nin Town,Nin,suffix,HR
+Grad Hrvatska Kostajnica,Hrvatska Kostajnica,fuzzy,HR
+Namballe District,Namballe,suffix,PE
+Stockholm Region,Stockholm,suffix,SE
+Göteborgs Stad,Gothenburg,suffix,SE
+Uppsala kommun,Uppsala,suffix,SE
+Linköping kommun,Linköping,suffix,SE
+Örebro kommun,Örebro,suffix,SE
+Västerås kommun,Västerås,fuzzy,SE
+Jönköping kommun,Jönköping,suffix,SE
+Norrköping kommun,Norrköping,suffix,SE
+Umeå kommun,Umeå,suffix,SE
+Gävle kommun,Gävle,suffix,SE
+Borås kommun,Bor,suffix,SE
+Eskilstuna kommun,Eskilstuna,suffix,SE
+Halmstad kommun,Halmstad,suffix,SE
+Växjö kommun,Växjö,suffix,SE
+Karlstad kommun,Karlstad,suffix,SE
+Sundsvall kommun,Sundsvall,suffix,SE
+Östersund kommun,Östersund,suffix,SE
+Trollhättan kommun,Trollhättan,suffix,SE
+Luleå kommun,Luleå,suffix,SE
+Lidingö kommun,Lidingö,suffix,SE
+Täby kommun,Täby,suffix,SE
+Motala kommun,Motala,suffix,SE
+Falun kommun,Falun,suffix,SE
+Skövde kommun,Skövde,suffix,SE
+Karlskrona kommun,Karlskrona,suffix,SE
+Kristianstad kommun,Kristianstad,suffix,SE
+Kiruna kommun,Kiruna,suffix,SE
+Jokkmokk kommun,Jokkmokk,suffix,SE
+Båstad kommun,Båstad,suffix,SE
+Ystad kommun,Ystad,suffix,SE
+Norsjö kommun,Norsjö,suffix,SE
+Gnosjö kommun,Gnosjö,suffix,SE
+Sunne kommun,Sunne,suffix,SE
+Vetlanda kommun,Vetlanda,suffix,SE
+Ånge kommun,Ånge,suffix,SE
+Åmål kommun,Åmål,suffix,SE
+Lilla_Edet kommun,Lilla Edet,suffix,SE
+Simrishamn kommun,Simrishamn,suffix,SE
+Tibro kommun,Tibro,suffix,SE
+Torsås kommun,Torsa,suffix,SE
+Filipstad kommun,Filipstad,suffix,SE
+Gällivare kommun,Gällivare,suffix,SE
+Vingåker kommun,Vingåker,suffix,SE
+Kumla kommun,Kumla,suffix,SE
+Skellefteå kommun,Skellefteå,suffix,SE
+Hällefors kommun,Hällefors,fuzzy,SE
+Vara kommun,Vara,suffix,SE
+Norrtälje kommun,Norrtälje,suffix,SE
+Munkedal kommun,Munkedal,suffix,SE
+Osby kommun,Osby,suffix,SE
+Årjäng kommun,Årjäng,suffix,SE
+Hudiksvall kommun,Hudiksvall,suffix,SE
+Forshaga kommun,Forshaga,suffix,SE
+Kävlinge kommun,Kävlinge,suffix,SE
+Mölndal kommun,Mölndal,suffix,SE
+Torsby kommun,Torsby,suffix,SE
+Karlsborg kommun,Karlsborg,suffix,SE
+Mörbylånga kommun,Mörbylånga,suffix,SE
+Nordmaling kommun,Nordmaling,suffix,SE
+Boxholm kommun,Boxholm,suffix,SE
+Ängelholm kommun,Ängelholm,suffix,SE
+Härnösand kommun,Härnösand,suffix,SE
+Arvika kommun,Arvika,suffix,SE
+Östhammar kommun,Östhammar,suffix,SE
+Krokom kommun,Krokom,suffix,SE
+Orsa kommun,Orsa,suffix,SE
+Nora kommun,Nora,suffix,SE
+Olofström kommun,Olofström,suffix,SE
+Ljungby kommun,Ljungby,suffix,SE
+Perstorp kommun,Perstorp,suffix,SE
+Piteå kommun,Piteå,suffix,SE
+Tranås kommun,Tran,suffix,SE
+Askersund kommun,Askersund,suffix,SE
+Habo kommun,Habo,suffix,SE
+Söderhamn kommun,Söderhamn,suffix,SE
+Sjöbo kommun,Sjöbo,suffix,SE
+Oskarshamn kommun,Oskarshamn,suffix,SE
+Laxå kommun,Laxå,suffix,SE
+Nacka kommun,Nacka,suffix,SE
+Pajala kommun,Pajala,suffix,SE
+Älmhult kommun,Älmhult,suffix,SE
+Västervik kommun,Västervik,suffix,SE
+Sigtuna kommun,Sigtuna,suffix,SE
+Fagersta kommun,Fagersta,suffix,SE
+Alingsås kommun,Alingsås,fuzzy,SE
+Bjurholm kommun,Bjurholm,suffix,SE
+Älvkarleby kommun,Älvkarleby,suffix,SE
+Sollefteå kommun,Sollefteå,suffix,SE
+Åtvidaberg kommun,Åtvidaberg,suffix,SE
+Övertorneå kommun,Övertorneå,suffix,SE
+Svalöv kommun,Svalöv,suffix,SE
+Staffanstorp kommun,Staffanstorp,suffix,SE
+Emmaboda kommun,Emmaboda,suffix,SE
+Kalix kommun,Kalix,suffix,SE
+Säffle kommun,Säffle,suffix,SE
+Salem kommun,Jerusalem,suffix,SE
+Vaggeryd kommun,Vaggeryd,suffix,SE
+Älvdalen kommun,Älvdalen,suffix,SE
+Gislaved kommun,Gislaved,suffix,SE
+Höganäs kommun,Höganäs,fuzzy,SE
+Bengtsfors kommun,Bengtsfors,fuzzy,SE
+Kungsbacka kommun,Kungsbacka,suffix,SE
+Falköping kommun,Falköping,suffix,SE
+Markaryd kommun,Markaryd,suffix,SE
+Skinnskatteberg kommun,Skinnskatteberg,suffix,SE
+Hallsberg kommun,Hallsberg,suffix,SE
+Nyköping kommun,Nyköping,suffix,SE
+Värnamo kommun,Värnamo,suffix,SE
+Lerum kommun,Lerum,suffix,SE
+Skurup kommun,Skurup,suffix,SE
+Bräcke kommun,Bräcke,suffix,SE
+Höör kommun,Höör,suffix,SE
+Lysekil kommun,Lysekil,suffix,SE
+Gothenburg kommun,Gothenburg,suffix,SE
+Ludvika kommun,Ludvika,suffix,SE
+Degerfors kommun,Degerfors,fuzzy,SE
+Nässjö kommun,Nässjö,suffix,SE
+Flen kommun,Flen,suffix,SE
+Götene kommun,Götene,suffix,SE
+Partille kommun,Partille,suffix,SE
+Surahammar kommun,Surahammar,suffix,SE
+Vellinge kommun,Vellinge,suffix,SE
+Bjuv kommun,Bjuv,suffix,SE
+Hörby kommun,Hörby,suffix,SE
+Tranemo kommun,Tranemo,suffix,SE
+Arjeplog kommun,Arjeplog,suffix,SE
+Kungälv kommun,Kungälv,suffix,SE
+Finspång kommun,Finspång,suffix,SE
+Eda kommun,Aydat,suffix,SE
+Södertälje kommun,Södertälje,suffix,SE
+Haparanda kommun,Haparanda,suffix,SE
+Bollebygd kommun,Bollebygd,suffix,SE
+Svenljunga kommun,Svenljunga,suffix,SE
+Vimmerby kommun,Vimmerby,suffix,SE
+Landskrona kommun,Landskrona,suffix,SE
+Sandviken kommun,Sandviken,suffix,SE
+Stenungsund kommun,Stenungsund,suffix,SE
+Timrå kommun,Timrå,suffix,SE
+Karlshamn kommun,Karlshamn,suffix,SE
+Köping kommun,Köping,suffix,SE
+Sävsjö kommun,Sävsjö,suffix,SE
+Alvesta kommun,Alvesta,suffix,SE
+Söderköping kommun,Söderköping,suffix,SE
+Karlskoga kommun,Karlskoga,suffix,SE
+Trosa kommun,Trosa,suffix,SE
+Gullspång kommun,Gullspång,suffix,SE
+Lindesberg kommun,Lindesberg,suffix,SE
+Oxelösund kommun,Oxelösund,suffix,SE
+Tanum kommun,Tanumshede,suffix,SE
+Tidaholm kommun,Tidaholm,suffix,SE
+Lidköping kommun,Lidköping,suffix,SE
+Grästorp kommun,Grästorp,suffix,SE
+Nynäshamn kommun,Nynäshamn,suffix,SE
+Kungsör kommun,Kungsör,suffix,SE
+Aneby kommun,Aneby,suffix,SE
+Vansbro kommun,Vansbro,suffix,SE
+Klippan kommun,Klippan,suffix,SE
+Kil kommun,Kil,suffix,SE
+Arboga kommun,Arboga,suffix,SE
+Färgelanda kommun,Färgelanda,suffix,SE
+Älvsbyn kommun,Älvsbyn,suffix,SE
+Strömsund kommun,Strömsund,suffix,SE
+Trelleborg kommun,Trelleborg,suffix,SE
+Kalmar kommun,Kalmar,suffix,SE
+Smedjebacken kommun,Smedjebacken,suffix,SE
+Munkfors kommun,Munkfors,fuzzy,SE
+Valdemarsvik kommun,Valdemarsvik,suffix,SE
+Dorotea kommun,Dorotea,suffix,SE
+Bollnäs kommun,Bollnäs,fuzzy,SE
+Norberg kommun,Norberg,suffix,SE
+Gnesta kommun,Gnesta,suffix,SE
+Ockelbo kommun,Ockelbo,suffix,SE
+Arvidsjaur kommun,Arvidsjaur,suffix,SE
+Högsby kommun,Högsby,suffix,SE
+Mullsjö kommun,Mullsjö,suffix,SE
+Hallstahammar kommun,Hallstahammar,suffix,SE
+Eksjö kommun,Eksjö,suffix,SE
+Kristinehamn kommun,Kristinehamn,suffix,SE
+Ljusdal kommun,Ljusdal,suffix,SE
+Mark kommun,Mark,suffix,SE
+Hjo kommun,Hjo,suffix,SE
+Vaxholm kommun,Vaxholm,suffix,SE
+Håbo kommun,Habo,suffix,SE
+Strömstad kommun,Strömstad,suffix,SE
+Hässleholm kommun,Hässleholm,suffix,SE
+Boden kommun,Boden,suffix,SE
+Malå kommun,Malå,suffix,SE
+Hagfors kommun,Hagfors,fuzzy,SE
+Huddinge kommun,Huddinge,suffix,SE
+Åsele kommun,Åsele,suffix,SE
+Laholm kommun,Laholm,suffix,SE
+Mjölby kommun,Mjölby,suffix,SE
+Vänersborg kommun,Vänersborg,suffix,SE
+Upplands_Väsby kommun,Upplands Väsby,suffix,SE
+Ödeshög kommun,Ödeshög,suffix,SE
+Skara kommun,Skara,suffix,SE
+Solna kommun,Solna,suffix,SE
+Nybro kommun,Nybro,suffix,SE
+Mellerud kommun,Mellerud,suffix,SE
+Tierp kommun,Tierp,suffix,SE
+Storfors kommun,Storfors,fuzzy,SE
+Hultsfred kommun,Hultsfred,suffix,SE
+Kramfors kommun,Kramfors,fuzzy,SE
+Strängnäs kommun,Strängnäs,fuzzy,SE
+Vårgårda kommun,Vårgårda,suffix,SE
+Vännäs kommun,Vännäs,fuzzy,SE
+Borgholm kommun,Borgholm,suffix,SE
+Hedemora kommun,Hedemora,suffix,SE
+Tjörn kommun,Jörn,fuzzy,SE
+Lycksele kommun,Lycksele,suffix,SE
+Vilhelmina kommun,Vilhelmina,suffix,SE
+Borlänge kommun,Borlänge,suffix,SE
+Svedala kommun,Svedala,suffix,SE
+Härryda kommun,Härryda,suffix,SE
+Öckerö kommun,Öckerö,suffix,SE
+Robertsfors kommun,Robertsfors,fuzzy,SE
+Mönsterås kommun,Mönsterås,fuzzy,SE
+Töreboda kommun,Töreboda,suffix,SE
+Tomelilla kommun,Tomelilla,suffix,SE
+Heby kommun,Heby,suffix,SE
+Åstorp kommun,Åstorp,suffix,SE
+Örnsköldsvik kommun,Örnsköldsvik,suffix,SE
+Bromölla kommun,Bromölla,suffix,SE
+Haninge kommun,Haninge,suffix,SE
+Sölvesborg kommun,Sölvesborg,suffix,SE
+Mariestad kommun,Mariestad,suffix,SE
+Åre kommun,Åre,suffix,SE
+Ulricehamn kommun,Ulricehamn,suffix,SE
+Herrljunga kommun,Herrljunga,suffix,SE
+Knivsta kommun,Knivsta,suffix,SE
+Lomma kommun,Lomma,suffix,SE
+Danderyd kommun,Danderyd,suffix,SE
+Sundbyberg kommun,Sundbyberg,suffix,SE
+Ekerö kommun,Ekerö,suffix,SE
+Gagnef kommun,Gagnef,suffix,SE
+Uddevalla kommun,Uddevalla,suffix,SE
+Tingsryd kommun,Tingsryd,suffix,SE
+Falkenberg kommun,Falkenberg,suffix,SE
+Eslöv kommun,Eslöv,suffix,SE
+Leksand kommun,Leksand,suffix,SE
+Vadstena kommun,Vadstena,suffix,SE
+Hammarö kommun,Hammar,fuzzy,SE
+Nykvarn kommun,Nykvarn,suffix,SE
+Örkelljunga kommun,Örkelljunga,suffix,SE
+Enköping kommun,Enköping,suffix,SE
+Överkalix kommun,Överkalix,suffix,SE
+Storuman kommun,Storuman,suffix,SE
+Katrineholm kommun,Katrineholm,suffix,SE
+Rättvik kommun,Rättvik,suffix,SE
+Sollentuna kommun,Sollentuna,suffix,SE
+Lessebo kommun,Lessebo,suffix,SE
+Berg kommun,Berg,suffix,SE
+Avesta kommun,Avesta,suffix,SE
+Ronneby kommun,Ronneby,suffix,SE
+Vallentuna kommun,Vallentuna,suffix,SE
+Sorsele kommun,Sorsele,suffix,SE
+Säter kommun,Säter,suffix,SE
+Vindeln kommun,Vindeln,suffix,SE
+Varberg kommun,Varberg,suffix,SE
+Ale kommun,Nakhon Ratchasima,suffix,SE
+Anwil,Andwil,fuzzy,CH
+Bachs,Bäch,fuzzy,CH
+Boningen,Bönigen,fuzzy,CH
+Boswil,Bowil,fuzzy,CH
+Dittingen,Deitingen,fuzzy,CH
+Echarlens,Echallens,fuzzy,CH
+Inkwil,Inwil,fuzzy,CH
+Kemmental,Hemmental,fuzzy,CH
+Lonay,Blonay,fuzzy,CH
+Maschwanden,Schwanden,fuzzy,CH
+Meltingen,Mellingen,fuzzy,CH
+Mont-la-Ville,Pont-la-Ville,fuzzy,CH
+Oberbüren,Oberurnen,fuzzy,CH
+Oeschenbach,Eschenbach,fuzzy,CH
+Orges,Morges,fuzzy,CH
+Rivaz,Riaz,fuzzy,CH
+Rümlingen,Rümligen,fuzzy,CH
+Saules,Sâles,fuzzy,CH
+Schwarzenburg,Schwarzenberg,fuzzy,CH
+Syens,Yens,fuzzy,CH
+Teuffenthal,Teufenthal,fuzzy,CH
+Torny,Orny,fuzzy,CH
+Uezwil,Uzwil,fuzzy,CH
+Unterbäch,Luterbach,fuzzy,CH
+Ursins,Bursins,fuzzy,CH
+Walperswil,Walterswil,fuzzy,CH
+Zeiningen,Weiningen,fuzzy,CH
+Puli Township,Puli,suffix,TW
+Dongshih Township,Dongshi,suffix,TW
+Jiji Township,Jiji,suffix,TW
+Jhongliao Township,Zhongliao,suffix,TW
+Taibao City,Taibao,suffix,TW
+Wufeng Township,Wufeng,suffix,TW
+Emei Township,Suishan,suffix,TW
+Dacheng Township,Dacheng,suffix,TW
+Jincheng Township,Jincheng,suffix,TW
+Caotun Township,Caotun,suffix,TW
+Donggang Township,Donggang,suffix,TW
+Hsichou Township,Xizhou,suffix,TW
+Fenyuan Township,Fengyuan,fuzzy,TW
+Hengshan Township,Hengshan,suffix,TW
+Hsinchu City,Hsinchu,suffix,TW
+Checheng Township,Zhecheng Chengguanzhen,suffix,TW
+Fangshan Township,Fangshan,suffix,TW
+Xihu Township,Xihu,suffix,TW
+Zhubei City,Zhubei,suffix,TW
+Zhunan Township,Ningnan,suffix,TW
+Cihtong Township,Citong,suffix,TW
+Shenkang Township,Shengang,suffix,TW
+Ji'an Township,Ji’an,suffix,TW
+Datong Township,Datong,suffix,TW
+Magong City,Magong,suffix,TW
+Xiulin Township,Xiulin,suffix,TW
+Dahu Township,Dahu,suffix,TW
+Chihshang Township,Chishang,suffix,TW
+Dounan Township,Denain,suffix,TW
+Tai-an Township,Tai’an,suffix,TW
+Hengchun Township,Hengchun,suffix,TW
+Tianzhong Township,Tianzhong,suffix,TW
+Zhudong Township,Zhudong,suffix,TW
+Sanyi Township,Sanyi,suffix,TW
+Baisha Township,Kampong Pasir Ris,suffix,TW
+Su'ao Township,Su’ao,suffix,TW
+Erhshui Township,Ershui,suffix,TW
+Shizi Township,Shizi,suffix,TW
+Yuanshan Township,Yuanshan,suffix,TW
+Xianxi Township,Xianxi,suffix,TW
+Wangan Township,Wañgan,suffix,TW
+Wanrong Township,Xiedian,suffix,TW
+Erhlin Township,Erlin,suffix,TW
+Zhuqi Township,Zhuqi,suffix,TW
+Jinning Township,Kunyang,suffix,TW
+Hukou Township,Hukou,suffix,TW
+Jinsha Township,Jinsha,suffix,TW
+Dongyin Township,Dongyin,suffix,TW
+Kouhu Township,Kofu,suffix,TW
+Jinfeng Township,Jinfeng,suffix,TW
+Ligang Township,Toyooka,suffix,TW
+Yuanli Township,Yuanlin,fuzzy,TW
+Mudan Township,Mudan,suffix,TW
+Shitan Township,Shitan,suffix,TW
+Chaojhou Township,Chaozhou,suffix,TW
+Siluo Township,Xiluo,suffix,TW
+Jiadong Township,Katō,suffix,TW
+Tianwei Township,Tianwei,suffix,TW
+Wutai Township,Taicheng,suffix,TW
+Toufen City,Toufen,suffix,TW
+Yizhu Township,Ghulja,suffix,TW
+Baoshan Township,Baoshan,suffix,TW
+Xiyu Township,Xiyu,suffix,TW
+Sanxing Township,Sanxing,suffix,TW
+Guanshan Township,Guanshan,suffix,TW
+Chutang Township,Zhutang,suffix,TW
+Linnei Township,Linnei,suffix,TW
+Chenggong Township,Longcheng,suffix,TW
+Lugu Township,Lugu,suffix,TW
+Budai Township,Budai,suffix,TW
+Huatan Township,Huatan,suffix,TW
+Hsiushui Township,Yining,suffix,TW
+Dapu Township,Tai Po,suffix,TW
+Beigang Township,Beigang,suffix,TW
+Fuxing Township,Fuxing,suffix,TW
+Yuli Township,Yuli,suffix,TW
+Nanzhuang Township,Nanzhuang,suffix,TW
+Taihsi Township,Daixi,suffix,TW
+Dacun Township,Ōmura,suffix,TW
+Ruisui Township,Mizuho,suffix,TW
+Jiaoxi Township,Jiaoxi,suffix,TW
+Xikou Township,Xikou,suffix,TW
+Beigan Township,Beigang,fuzzy,TW
+Beidou Township,Beidou,suffix,TW
+Guanxi Township,Guanxi,suffix,TW
+Fenglin Township,Fenglin,suffix,TW
+Jinhu Township,Jinhu,suffix,TW
+Guangfu Township,Guangfu,suffix,TW
+Laiyi Township,Rye,suffix,TW
+Changhua City,Chang-hua,suffix,TW
+Shetou Township,Shetou,suffix,TW
+Puzi City,Buzi,suffix,TW
+Xinfeng Township,Xinfeng,suffix,TW
+Huxi Township,Kosai,suffix,TW
+Majia Township,Maggia,suffix,TW
+Yuanlin City,Yuanlin,suffix,TW
+Gongguan Township,Gongguan,suffix,TW
+Hsinchu City,Hsinchu,suffix,TW
+Jianshi Township,Ji’an,suffix,TW
+Taitung City,Taitung,suffix,TW
+Xingang Township,Xingang,suffix,TW
+Pitou Township,Pitou,suffix,TW
+Donghe Township,Donghe,suffix,TW
+Huwei Township,Huwei,suffix,TW
+Lieyu Township,Lieyu,suffix,TW
+Jhushan Township,Zhushan,suffix,TW
+Xincheng Township,Xincheng,suffix,TW
+Dongshi Township,Dongshi,suffix,TW
+Wujie Township,Wujie,suffix,TW
+Lukang Township,Lugang,suffix,TW
+Douliou City,Douliu,suffix,TW
+Dongshan Township,Dongshan,suffix,TW
+Yanping Township,Encheng,suffix,TW
+Xinpu Township,Xinpu,suffix,TW
+Dawu Township,Daya,suffix,TW
+Miaoli City,Miaoli,suffix,TW
+Fuli Township,Phủ Lý,suffix,TW
+Nan'ao Township,Nanao,suffix,TW
+Meishan Township,Meishan,suffix,TW
+Puyan Township,Puyang Chengguanzhen,suffix,TW
+Nangan Township,Nangan,suffix,TW
+Luodong Township,Luodong,suffix,TW
+Echo Lakes,Echo Lake,fuzzy,US
+Mt. Hamilton,Hamilton,fuzzy,US
+Oro Grande,Rio Grande City,fuzzy,US
+Markleeville,Cloverdale,fuzzy,US
+La Canada Flintrige,La Cañada Flintridge,fuzzy,US
+Helendale,Ellendale,fuzzy,US
+Hinkley,Hinckley,fuzzy,US
+Canyon Dam,Canyon Day,fuzzy,US
+Pope Valley,Hope Valley,fuzzy,US
+Acampo,Campo,fuzzy,US
+Old River,Gold River,fuzzy,US
+Bakesrfield,Bakersfield,fuzzy,US
+Twain Hatre,Twain Harte,fuzzy,US
+Fiddletown,Middletown,fuzzy,US
+Sierra City,Sierra Papacal,suffix,US
+Alleghany,Allegany,fuzzy,US
+Freestone,Firestone,fuzzy,US
+Calpine,Alpine,fuzzy,US
+Ravendale,Ravensdale,fuzzy,US
+Maybe,Maybee,fuzzy,US
+So Lake Tahoe,South Lake Tahoe,fuzzy,US
+Ca Hot Springs,Hot Springs,fuzzy,US
+St. Croix Falls,Saint Croix Falls,fuzzy,US
+Bordentown City,Bordentown,suffix,US
+Burlington City,Burlington,suffix,US
+Calion,Califon,fuzzy,US
+Corbin City,Corbin,suffix,US
+Sand City,Sand,suffix,US
