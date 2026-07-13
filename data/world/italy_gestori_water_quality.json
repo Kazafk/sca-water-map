@@ -1,0 +1,713 @@
+[
+ {
+  "Region": "Abbadia Cerreto (Italy)",
+  "Parameters": {
+   "pH": 7.6,
+   "Ca_Hardness_dH": 15.576,
+   "Alkalinity_TAC_mmol_l": 4.8918,
+   "TDS_Conductivity_uS_cm": 460.0,
+   "Calcium_Ca_mg_l": 80.0,
+   "Sodium_Na_mg_l": 7.0,
+   "Chlorides_Cl_mg_l": 8.0
+  }
+ },
+ {
+  "Region": "Bertonico (Italy)",
+  "Parameters": {
+   "pH": 8.1,
+   "Ca_Hardness_dH": 12.5504,
+   "Alkalinity_TAC_mmol_l": 4.7394,
+   "TDS_Conductivity_uS_cm": 373.0,
+   "Calcium_Ca_mg_l": 61.0,
+   "Sodium_Na_mg_l": 10.0,
+   "Chlorides_Cl_mg_l": 3.0
+  }
+ },
+ {
+  "Region": "Boffalora dAdda (Italy)",
+  "Parameters": {
+   "pH": 7.8,
+   "Ca_Hardness_dH": 14.9597,
+   "Alkalinity_TAC_mmol_l": 4.7476,
+   "TDS_Conductivity_uS_cm": 427.0,
+   "Calcium_Ca_mg_l": 75.0,
+   "Sodium_Na_mg_l": 5.0,
+   "Chlorides_Cl_mg_l": 6.0
+  }
+ },
+ {
+  "Region": "Borghetto Lodigiano (Italy)",
+  "Parameters": {
+   "pH": 7.9,
+   "Ca_Hardness_dH": 8.0121,
+   "Alkalinity_TAC_mmol_l": 3.1695,
+   "TDS_Conductivity_uS_cm": 264.0,
+   "Calcium_Ca_mg_l": 40.0,
+   "Sodium_Na_mg_l": 11.0,
+   "Chlorides_Cl_mg_l": 3.0
+  }
+ },
+ {
+  "Region": "Borgo San Giovanni (Italy)",
+  "Parameters": {
+   "pH": 8.0,
+   "Ca_Hardness_dH": 12.6065,
+   "Alkalinity_TAC_mmol_l": 4.8443,
+   "TDS_Conductivity_uS_cm": 402.0,
+   "Calcium_Ca_mg_l": 61.0,
+   "Sodium_Na_mg_l": 10.0
+  }
+ },
+ {
+  "Region": "Brembio (Italy)",
+  "Parameters": {
+   "pH": 8.0,
+   "Ca_Hardness_dH": 12.6065,
+   "Alkalinity_TAC_mmol_l": 4.8443,
+   "TDS_Conductivity_uS_cm": 402.0,
+   "Calcium_Ca_mg_l": 61.0,
+   "Sodium_Na_mg_l": 10.0
+  }
+ },
+ {
+  "Region": "Casaletto Lodigiano (Italy)",
+  "Parameters": {
+   "pH": 8.1,
+   "Ca_Hardness_dH": 10.9256,
+   "Alkalinity_TAC_mmol_l": 0.3933,
+   "TDS_Conductivity_uS_cm": 327.0,
+   "Calcium_Ca_mg_l": 54.0,
+   "Sodium_Na_mg_l": 7.0
+  }
+ },
+ {
+  "Region": "Casalmaiocco (Italy)",
+  "Parameters": {
+   "pH": 7.7,
+   "Ca_Hardness_dH": 14.5114,
+   "Alkalinity_TAC_mmol_l": 4.2773,
+   "TDS_Conductivity_uS_cm": 464.0,
+   "Calcium_Ca_mg_l": 78.0,
+   "Sodium_Na_mg_l": 13.0,
+   "Chlorides_Cl_mg_l": 18.0
+  }
+ },
+ {
+  "Region": "Casalpusterlengo (Italy)",
+  "Parameters": {
+   "pH": 7.7,
+   "Ca_Hardness_dH": 12.8306,
+   "Alkalinity_TAC_mmol_l": 4.5575,
+   "TDS_Conductivity_uS_cm": 41.0,
+   "Calcium_Ca_mg_l": 62.0,
+   "Sodium_Na_mg_l": 17.0,
+   "Chlorides_Cl_mg_l": 10.0
+  }
+ },
+ {
+  "Region": "Caselle Landi (Italy)",
+  "Parameters": {
+   "pH": 7.8,
+   "Ca_Hardness_dH": 13.671,
+   "Alkalinity_TAC_mmol_l": 4.9295,
+   "TDS_Conductivity_uS_cm": 431.0,
+   "Calcium_Ca_mg_l": 57.0,
+   "Sodium_Na_mg_l": 18.0,
+   "Chlorides_Cl_mg_l": 16.0
+  }
+ },
+ {
+  "Region": "Caselle Lurani (Italy)",
+  "Parameters": {
+   "pH": 8.0,
+   "Ca_Hardness_dH": 7.5078,
+   "Alkalinity_TAC_mmol_l": 2.8663,
+   "TDS_Conductivity_uS_cm": 242.0,
+   "Calcium_Ca_mg_l": 39.0,
+   "Sodium_Na_mg_l": 9.0,
+   "Chlorides_Cl_mg_l": 4.0
+  }
+ },
+ {
+  "Region": "Castelgerundo (Italy)",
+  "Parameters": {
+   "pH": 7.9,
+   "Ca_Hardness_dH": 13.2788,
+   "Alkalinity_TAC_mmol_l": 4.4182,
+   "TDS_Conductivity_uS_cm": 402.0,
+   "Calcium_Ca_mg_l": 61.0,
+   "Sodium_Na_mg_l": 13.0,
+   "Chlorides_Cl_mg_l": 11.0
+  }
+ },
+ {
+  "Region": "Castelnuovo Bocca dAdda (Italy)",
+  "Parameters": {
+   "pH": 7.6,
+   "Ca_Hardness_dH": 12.4944,
+   "Alkalinity_TAC_mmol_l": 3.9233,
+   "TDS_Conductivity_uS_cm": 401.0,
+   "Calcium_Ca_mg_l": 63.0,
+   "Sodium_Na_mg_l": 15.0,
+   "Chlorides_Cl_mg_l": 22.0
+  }
+ },
+ {
+  "Region": "Castiglione dAdda (Italy)",
+  "Parameters": {
+   "pH": 8.1,
+   "Ca_Hardness_dH": 13.8391,
+   "Alkalinity_TAC_mmol_l": 5.0344,
+   "TDS_Conductivity_uS_cm": 401.0,
+   "Calcium_Ca_mg_l": 66.0,
+   "Sodium_Na_mg_l": 10.0
+  }
+ },
+ {
+  "Region": "Castiraga Vidardo (Italy)",
+  "Parameters": {
+   "pH": 8.0,
+   "Ca_Hardness_dH": 7.5639,
+   "Alkalinity_TAC_mmol_l": 2.8302,
+   "TDS_Conductivity_uS_cm": 244.0,
+   "Calcium_Ca_mg_l": 40.0,
+   "Sodium_Na_mg_l": 9.0,
+   "Chlorides_Cl_mg_l": 4.0
+  }
+ },
+ {
+  "Region": "Cavenago dAdda (Italy)",
+  "Parameters": {
+   "pH": 8.0,
+   "Ca_Hardness_dH": 12.6065,
+   "Alkalinity_TAC_mmol_l": 4.7968,
+   "TDS_Conductivity_uS_cm": 368.0,
+   "Calcium_Ca_mg_l": 61.0,
+   "Sodium_Na_mg_l": 10.0,
+   "Chlorides_Cl_mg_l": 3.0
+  }
+ },
+ {
+  "Region": "Cervignano dAdda (Italy)",
+  "Parameters": {
+   "pH": 7.7,
+   "Ca_Hardness_dH": 11.1497,
+   "Alkalinity_TAC_mmol_l": 3.1252,
+   "TDS_Conductivity_uS_cm": 338.0,
+   "Calcium_Ca_mg_l": 60.0,
+   "Sodium_Na_mg_l": 7.0,
+   "Chlorides_Cl_mg_l": 9.0
+  }
+ },
+ {
+  "Region": "Codogno (Italy)",
+  "Parameters": {
+   "pH": 7.7,
+   "Ca_Hardness_dH": 14.8476,
+   "Alkalinity_TAC_mmol_l": 4.6247,
+   "TDS_Conductivity_uS_cm": 516.0,
+   "Calcium_Ca_mg_l": 69.0,
+   "Sodium_Na_mg_l": 25.0,
+   "Chlorides_Cl_mg_l": 37.0
+  }
+ },
+ {
+  "Region": "Comazzo (Italy)",
+  "Parameters": {
+   "pH": 7.7,
+   "Ca_Hardness_dH": 12.4944,
+   "Alkalinity_TAC_mmol_l": 4.4756,
+   "TDS_Conductivity_uS_cm": 366.0,
+   "Calcium_Ca_mg_l": 60.0,
+   "Sodium_Na_mg_l": 5.0,
+   "Chlorides_Cl_mg_l": 3.0
+  }
+ },
+ {
+  "Region": "Cornegliano Laudense (Italy)",
+  "Parameters": {
+   "pH": 8.1,
+   "Ca_Hardness_dH": 12.2143,
+   "Alkalinity_TAC_mmol_l": 4.528,
+   "TDS_Conductivity_uS_cm": 353.0,
+   "Calcium_Ca_mg_l": 59.0,
+   "Sodium_Na_mg_l": 9.0
+  }
+ },
+ {
+  "Region": "Corno Giovine (Italy)",
+  "Parameters": {
+   "pH": 7.8,
+   "Ca_Hardness_dH": 12.4944,
+   "Alkalinity_TAC_mmol_l": 4.0823,
+   "TDS_Conductivity_uS_cm": 402.0,
+   "Calcium_Ca_mg_l": 57.0,
+   "Sodium_Na_mg_l": 15.0,
+   "Chlorides_Cl_mg_l": 15.0
+  }
+ },
+ {
+  "Region": "Cornovecchio (Italy)",
+  "Parameters": {
+   "pH": 7.9,
+   "Ca_Hardness_dH": 12.5504,
+   "Alkalinity_TAC_mmol_l": 4.0708,
+   "TDS_Conductivity_uS_cm": 402.0,
+   "Calcium_Ca_mg_l": 57.0,
+   "Sodium_Na_mg_l": 15.0,
+   "Chlorides_Cl_mg_l": 16.0
+  }
+ },
+ {
+  "Region": "Corte Palasio (Italy)",
+  "Parameters": {
+   "pH": 7.6,
+   "Ca_Hardness_dH": 15.8561,
+   "Alkalinity_TAC_mmol_l": 4.9344,
+   "TDS_Conductivity_uS_cm": 468.0,
+   "Calcium_Ca_mg_l": 82.0,
+   "Sodium_Na_mg_l": 7.0,
+   "Chlorides_Cl_mg_l": 8.0
+  }
+ },
+ {
+  "Region": "Crespiatica (Italy)",
+  "Parameters": {
+   "pH": 7.9,
+   "Ca_Hardness_dH": 13.4469,
+   "Alkalinity_TAC_mmol_l": 4.5034,
+   "TDS_Conductivity_uS_cm": 389.0,
+   "Calcium_Ca_mg_l": 66.0,
+   "Sodium_Na_mg_l": 8.0,
+   "Chlorides_Cl_mg_l": 3.0
+  }
+ },
+ {
+  "Region": "Fombio (Italy)",
+  "Parameters": {
+   "pH": 7.6,
+   "Ca_Hardness_dH": 14.2313,
+   "Alkalinity_TAC_mmol_l": 4.5772,
+   "TDS_Conductivity_uS_cm": 511.0,
+   "Calcium_Ca_mg_l": 65.0,
+   "Sodium_Na_mg_l": 29.0,
+   "Chlorides_Cl_mg_l": 32.0
+  }
+ },
+ {
+  "Region": "Galgagnano (Italy)",
+  "Parameters": {
+   "pH": 7.6,
+   "Ca_Hardness_dH": 15.7441,
+   "Alkalinity_TAC_mmol_l": 4.705,
+   "TDS_Conductivity_uS_cm": 467.0,
+   "Calcium_Ca_mg_l": 83.0,
+   "Sodium_Na_mg_l": 7.0,
+   "Chlorides_Cl_mg_l": 11.0
+  }
+ },
+ {
+  "Region": "Graffignana (Italy)",
+  "Parameters": {
+   "pH": 7.9,
+   "Ca_Hardness_dH": 7.9561,
+   "Alkalinity_TAC_mmol_l": 3.1678,
+   "TDS_Conductivity_uS_cm": 264.0,
+   "Calcium_Ca_mg_l": 40.0,
+   "Sodium_Na_mg_l": 11.0,
+   "Chlorides_Cl_mg_l": 3.0
+  }
+ },
+ {
+  "Region": "Guardamiglio (Italy)",
+  "Parameters": {
+   "pH": 7.7,
+   "Ca_Hardness_dH": 17.0887,
+   "Alkalinity_TAC_mmol_l": 5.472,
+   "TDS_Conductivity_uS_cm": 509.0,
+   "Calcium_Ca_mg_l": 88.0,
+   "Sodium_Na_mg_l": 13.0,
+   "Chlorides_Cl_mg_l": 16.0
+  }
+ },
+ {
+  "Region": "Livraga (Italy)",
+  "Parameters": {
+   "pH": 7.9,
+   "Ca_Hardness_dH": 8.1802,
+   "Alkalinity_TAC_mmol_l": 3.2104,
+   "TDS_Conductivity_uS_cm": 270.0,
+   "Calcium_Ca_mg_l": 41.0,
+   "Sodium_Na_mg_l": 11.0,
+   "Chlorides_Cl_mg_l": 3.0
+  }
+ },
+ {
+  "Region": "Lodi (Italy)",
+  "Parameters": {
+   "pH": 7.7,
+   "Ca_Hardness_dH": 15.0717,
+   "Alkalinity_TAC_mmol_l": 4.6608,
+   "TDS_Conductivity_uS_cm": 438.0,
+   "Calcium_Ca_mg_l": 78.0,
+   "Sodium_Na_mg_l": 7.0,
+   "Chlorides_Cl_mg_l": 9.0
+  }
+ },
+ {
+  "Region": "Lodi Vecchio (Italy)",
+  "Parameters": {
+   "pH": 7.7,
+   "Ca_Hardness_dH": 16.0802,
+   "Alkalinity_TAC_mmol_l": 4.982,
+   "TDS_Conductivity_uS_cm": 464.0,
+   "Calcium_Ca_mg_l": 85.0,
+   "Sodium_Na_mg_l": 7.0,
+   "Chlorides_Cl_mg_l": 10.0
+  }
+ },
+ {
+  "Region": "Maccastorna (Italy)",
+  "Parameters": {
+   "pH": 7.6,
+   "Ca_Hardness_dH": 12.4384,
+   "Alkalinity_TAC_mmol_l": 3.9954,
+   "TDS_Conductivity_uS_cm": 402.0,
+   "Calcium_Ca_mg_l": 63.0,
+   "Sodium_Na_mg_l": 16.0,
+   "Chlorides_Cl_mg_l": 21.0
+  }
+ },
+ {
+  "Region": "Mairago (Italy)",
+  "Parameters": {
+   "pH": 8.0,
+   "Ca_Hardness_dH": 13.7831,
+   "Alkalinity_TAC_mmol_l": 4.8738,
+   "TDS_Conductivity_uS_cm": 398.0,
+   "Calcium_Ca_mg_l": 68.0,
+   "Sodium_Na_mg_l": 9.0,
+   "Chlorides_Cl_mg_l": 5.0
+  }
+ },
+ {
+  "Region": "Maleo (Italy)",
+  "Parameters": {
+   "pH": 7.8,
+   "Ca_Hardness_dH": 12.8866,
+   "Alkalinity_TAC_mmol_l": 4.1052,
+   "TDS_Conductivity_uS_cm": 401.0,
+   "Calcium_Ca_mg_l": 58.0,
+   "Sodium_Na_mg_l": 16.0,
+   "Chlorides_Cl_mg_l": 16.0
+  }
+ },
+ {
+  "Region": "Marudo (Italy)",
+  "Parameters": {
+   "pH": 8.1,
+   "Ca_Hardness_dH": 7.5639,
+   "Alkalinity_TAC_mmol_l": 2.8335,
+   "TDS_Conductivity_uS_cm": 246.0,
+   "Calcium_Ca_mg_l": 40.0,
+   "Sodium_Na_mg_l": 9.0,
+   "Chlorides_Cl_mg_l": 4.0
+  }
+ },
+ {
+  "Region": "Massalengo (Italy)",
+  "Parameters": {
+   "pH": 7.8,
+   "Ca_Hardness_dH": 12.2143,
+   "Alkalinity_TAC_mmol_l": 3.6791,
+   "TDS_Conductivity_uS_cm": 360.0,
+   "Calcium_Ca_mg_l": 64.0,
+   "Sodium_Na_mg_l": 6.0,
+   "Chlorides_Cl_mg_l": 8.0
+  }
+ },
+ {
+  "Region": "Meleti (Italy)",
+  "Parameters": {
+   "pH": 7.9,
+   "Ca_Hardness_dH": 12.8866,
+   "Alkalinity_TAC_mmol_l": 4.1003,
+   "TDS_Conductivity_uS_cm": 398.0,
+   "Calcium_Ca_mg_l": 58.0,
+   "Sodium_Na_mg_l": 15.0,
+   "Chlorides_Cl_mg_l": 16.0
+  }
+ },
+ {
+  "Region": "Merlino (Italy)",
+  "Parameters": {
+   "pH": 7.6,
+   "Ca_Hardness_dH": 16.5285,
+   "Alkalinity_TAC_mmol_l": 5.0459,
+   "TDS_Conductivity_uS_cm": 480.0,
+   "Calcium_Ca_mg_l": 85.0,
+   "Sodium_Na_mg_l": 8.0,
+   "Chlorides_Cl_mg_l": 12.0
+  }
+ },
+ {
+  "Region": "Montanaso Lombardo (Italy)",
+  "Parameters": {
+   "pH": 7.7,
+   "Ca_Hardness_dH": 18.2654,
+   "Alkalinity_TAC_mmol_l": 4.9705,
+   "TDS_Conductivity_uS_cm": 544.0,
+   "Calcium_Ca_mg_l": 96.0,
+   "Sodium_Na_mg_l": 8.0,
+   "Chlorides_Cl_mg_l": 18.0
+  }
+ },
+ {
+  "Region": "Mulazzano (Italy)",
+  "Parameters": {
+   "pH": 7.6,
+   "Ca_Hardness_dH": 17.7611,
+   "Alkalinity_TAC_mmol_l": 5.3687,
+   "TDS_Conductivity_uS_cm": 536.0,
+   "Calcium_Ca_mg_l": 94.0,
+   "Sodium_Na_mg_l": 12.0,
+   "Chlorides_Cl_mg_l": 18.0
+  }
+ },
+ {
+  "Region": "Orio Litta (Italy)",
+  "Parameters": {
+   "pH": 7.9,
+   "Ca_Hardness_dH": 8.4043,
+   "Alkalinity_TAC_mmol_l": 3.3038,
+   "TDS_Conductivity_uS_cm": 288.0,
+   "Calcium_Ca_mg_l": 42.0,
+   "Sodium_Na_mg_l": 13.0,
+   "Chlorides_Cl_mg_l": 6.0
+  }
+ },
+ {
+  "Region": "Ospedaletto Lodigiano (Italy)",
+  "Parameters": {
+   "pH": 7.9,
+   "Ca_Hardness_dH": 11.4299,
+   "Alkalinity_TAC_mmol_l": 4.1445,
+   "TDS_Conductivity_uS_cm": 517.0,
+   "Calcium_Ca_mg_l": 56.0,
+   "Sodium_Na_mg_l": 34.0,
+   "Chlorides_Cl_mg_l": 44.0
+  }
+ },
+ {
+  "Region": "Ossago Lodigiano (Italy)",
+  "Parameters": {
+   "pH": 8.1,
+   "Ca_Hardness_dH": 12.0462,
+   "Alkalinity_TAC_mmol_l": 4.4985,
+   "TDS_Conductivity_uS_cm": 347.0,
+   "Calcium_Ca_mg_l": 59.0,
+   "Sodium_Na_mg_l": 9.0
+  }
+ },
+ {
+  "Region": "Pieve Fissiraga (Italy)",
+  "Parameters": {
+   "pH": 7.6,
+   "Ca_Hardness_dH": 14.3433,
+   "Alkalinity_TAC_mmol_l": 4.2216,
+   "TDS_Conductivity_uS_cm": 430.0,
+   "Calcium_Ca_mg_l": 77.0,
+   "Sodium_Na_mg_l": 9.0,
+   "Chlorides_Cl_mg_l": 13.0
+  }
+ },
+ {
+  "Region": "Salerano sul Lambro (Italy)",
+  "Parameters": {
+   "pH": 8.1,
+   "Ca_Hardness_dH": 10.5894,
+   "Alkalinity_TAC_mmol_l": 3.8578,
+   "TDS_Conductivity_uS_cm": 319.0,
+   "Calcium_Ca_mg_l": 52.0,
+   "Sodium_Na_mg_l": 8.0
+  }
+ },
+ {
+  "Region": "San Fiorano (Italy)",
+  "Parameters": {
+   "pH": 7.9,
+   "Ca_Hardness_dH": 12.3823,
+   "Alkalinity_TAC_mmol_l": 4.1134,
+   "TDS_Conductivity_uS_cm": 408.0,
+   "Calcium_Ca_mg_l": 56.0,
+   "Sodium_Na_mg_l": 15.0,
+   "Chlorides_Cl_mg_l": 16.0
+  }
+ },
+ {
+  "Region": "San Martino in Strada (Italy)",
+  "Parameters": {
+   "pH": 8.0,
+   "Ca_Hardness_dH": 12.2143,
+   "Alkalinity_TAC_mmol_l": 4.5854,
+   "TDS_Conductivity_uS_cm": 359.0,
+   "Calcium_Ca_mg_l": 59.0,
+   "Sodium_Na_mg_l": 9.0
+  }
+ },
+ {
+  "Region": "San Rocco al Porto (Italy)",
+  "Parameters": {
+   "pH": 7.6,
+   "Ca_Hardness_dH": 14.8476,
+   "Alkalinity_TAC_mmol_l": 4.9984,
+   "TDS_Conductivity_uS_cm": 443.0,
+   "Calcium_Ca_mg_l": 59.0,
+   "Sodium_Na_mg_l": 11.0,
+   "Chlorides_Cl_mg_l": 12.0
+  }
+ },
+ {
+  "Region": "SantAngelo Lodigiano (Italy)",
+  "Parameters": {
+   "pH": 8.1,
+   "Ca_Hardness_dH": 7.3958,
+   "Alkalinity_TAC_mmol_l": 2.8138,
+   "TDS_Conductivity_uS_cm": 236.0,
+   "Calcium_Ca_mg_l": 38.0,
+   "Sodium_Na_mg_l": 8.0
+  }
+ },
+ {
+  "Region": "Santo Stefano Lodigiano (Italy)",
+  "Parameters": {
+   "pH": 7.6,
+   "Ca_Hardness_dH": 21.7391,
+   "Alkalinity_TAC_mmol_l": 6.1586,
+   "TDS_Conductivity_uS_cm": 610.0,
+   "Calcium_Ca_mg_l": 108.0,
+   "Sodium_Na_mg_l": 6.0,
+   "Chlorides_Cl_mg_l": 15.0
+  }
+ },
+ {
+  "Region": "Secugnago (Italy)",
+  "Parameters": {
+   "pH": 8.1,
+   "Ca_Hardness_dH": 12.6625,
+   "Alkalinity_TAC_mmol_l": 4.8673,
+   "TDS_Conductivity_uS_cm": 372.0,
+   "Calcium_Ca_mg_l": 61.0,
+   "Sodium_Na_mg_l": 10.0,
+   "Chlorides_Cl_mg_l": 3.0
+  }
+ },
+ {
+  "Region": "Senna Lodigiana (Italy)",
+  "Parameters": {
+   "pH": 7.6,
+   "Ca_Hardness_dH": 19.1058,
+   "Alkalinity_TAC_mmol_l": 5.4163,
+   "TDS_Conductivity_uS_cm": 595.0,
+   "Calcium_Ca_mg_l": 97.0,
+   "Sodium_Na_mg_l": 15.0,
+   "Chlorides_Cl_mg_l": 38.0
+  }
+ },
+ {
+  "Region": "Somaglia (Italy)",
+  "Parameters": {
+   "pH": 7.6,
+   "Ca_Hardness_dH": 16.5845,
+   "Alkalinity_TAC_mmol_l": 4.5985,
+   "TDS_Conductivity_uS_cm": 506.0,
+   "Calcium_Ca_mg_l": 85.0,
+   "Sodium_Na_mg_l": 10.0,
+   "Chlorides_Cl_mg_l": 20.0
+  }
+ },
+ {
+  "Region": "Sordio (Italy)",
+  "Parameters": {
+   "pH": 7.8,
+   "Ca_Hardness_dH": 14.1753,
+   "Alkalinity_TAC_mmol_l": 4.0987,
+   "TDS_Conductivity_uS_cm": 449.0,
+   "Calcium_Ca_mg_l": 78.0,
+   "Sodium_Na_mg_l": 14.0,
+   "Chlorides_Cl_mg_l": 20.0
+  }
+ },
+ {
+  "Region": "Tavazzano con Villavesco (Italy)",
+  "Parameters": {
+   "pH": 7.5,
+   "Ca_Hardness_dH": 22.2434,
+   "Alkalinity_TAC_mmol_l": 6.1832,
+   "TDS_Conductivity_uS_cm": 636.0,
+   "Calcium_Ca_mg_l": 118.0,
+   "Sodium_Na_mg_l": 10.0,
+   "Chlorides_Cl_mg_l": 21.0
+  }
+ },
+ {
+  "Region": "Terranova dei Passerini (Italy)",
+  "Parameters": {
+   "pH": 8.1,
+   "Ca_Hardness_dH": 12.6065,
+   "Alkalinity_TAC_mmol_l": 4.7788,
+   "TDS_Conductivity_uS_cm": 367.0,
+   "Calcium_Ca_mg_l": 61.0,
+   "Sodium_Na_mg_l": 10.0,
+   "Chlorides_Cl_mg_l": 3.0
+  }
+ },
+ {
+  "Region": "Turano Lodigiano (Italy)",
+  "Parameters": {
+   "pH": 8.1,
+   "Ca_Hardness_dH": 12.6625,
+   "Alkalinity_TAC_mmol_l": 4.7935,
+   "TDS_Conductivity_uS_cm": 367.0,
+   "Calcium_Ca_mg_l": 61.0,
+   "Sodium_Na_mg_l": 10.0,
+   "Chlorides_Cl_mg_l": 3.0
+  }
+ },
+ {
+  "Region": "Valera Fratta (Italy)",
+  "Parameters": {
+   "pH": 7.8,
+   "Ca_Hardness_dH": 9.4688,
+   "Alkalinity_TAC_mmol_l": 3.5382,
+   "TDS_Conductivity_uS_cm": 295.0,
+   "Calcium_Ca_mg_l": 51.0,
+   "Sodium_Na_mg_l": 8.0,
+   "Chlorides_Cl_mg_l": 3.0
+  }
+ },
+ {
+  "Region": "Villanova del Sillaro (Italy)",
+  "Parameters": {
+   "pH": 7.8,
+   "Ca_Hardness_dH": 12.2703,
+   "Alkalinity_TAC_mmol_l": 3.5398,
+   "TDS_Conductivity_uS_cm": 366.0,
+   "Calcium_Ca_mg_l": 67.0,
+   "Sodium_Na_mg_l": 6.0,
+   "Chlorides_Cl_mg_l": 12.0
+  }
+ },
+ {
+  "Region": "Zelo Buon Persico (Italy)",
+  "Parameters": {
+   "pH": 7.6,
+   "Ca_Hardness_dH": 16.4724,
+   "Alkalinity_TAC_mmol_l": 5.0246,
+   "TDS_Conductivity_uS_cm": 477.0,
+   "Calcium_Ca_mg_l": 87.0,
+   "Sodium_Na_mg_l": 8.0,
+   "Chlorides_Cl_mg_l": 11.0
+  }
+ }
+]
