@@ -11,9 +11,11 @@ const US_COUNTIES_GEOJSON_URL = 'https://raw.githubusercontent.com/plotly/datase
 // Layer architecture (bottom to top):
 // countries-fill (zoom 0-4) → world-provinces-fill (minzoom:4)
 //   → us-counties-fill (zoom 5-7, USA only) → us-places-fill (minzoom:7, USA only)
-//   → eu-places-fill (minzoom:4, Europe GISCO LAU + monde geoBoundaries via extra-places)
+//   → eu-places-fill (minzoom:4, pays "normaux" : Europe LAU + geoBoundaries)
+//   → big-places-fill (minzoom:7, pays continentaux CN/RU/CA/BR/AU/AR/MX/DZ/CD)
 //   → communes-fill (minzoom:4, France only)
-// USA (taille continentale) : Pays → Etat → Comté → Ville ; Europe : Pays → Ville.
+// USA : Pays → Etat → Comté → Ville ; pays continentaux : Pays → Province (4+)
+// → Ville (7+) ; Europe et petits pays : Pays → Ville (4+).
 
 // FIPS state code → USPS abbreviation (county names repeat across states)
 const _FIPS_STATE = {
@@ -178,7 +180,7 @@ function _initTooltip() {
   if (!tooltip || !mapEl || isTouchDevice) return;
 
   // Layers a surveiller, du plus fin au plus grossier
-  const HOVER_LAYERS = ['communes-fill', 'us-places-fill', 'eu-places-fill', 'us-counties-fill', 'world-provinces-fill', 'countries-fill'];
+  const HOVER_LAYERS = ['communes-fill', 'us-places-fill', 'eu-places-fill', 'big-places-fill', 'us-counties-fill', 'world-provinces-fill', 'countries-fill'];
 
   map.on('mousemove', (e) => {
     // Priorite a la couche la plus fine sous le curseur
@@ -208,7 +210,7 @@ function _initTooltip() {
       const city = _cityById.get(p.city_id);
       name  = p.name + (p.st ? `, ${p.st}` : '');
       score = city?.score ?? null;
-    } else if (hit.layer === 'eu-places-fill') {
+    } else if (hit.layer === 'eu-places-fill' || hit.layer === 'big-places-fill') {
       const city = _cityById.get(p.city_id);
       name  = p.name + (p.c ? `, ${p.c}` : '');
       score = city?.score ?? null;
@@ -803,7 +805,7 @@ async function _loadWorldProvincesGeojson() {
   map.on('click', 'world-provinces-fill', (e) => {
     // Un polygone municipal rendu sous le curseur prend la main
     // (queryRenderedFeatures respecte le minzoom de chaque couche)
-    if (['us-places-fill', 'eu-places-fill'].some(l =>
+    if (['us-places-fill', 'eu-places-fill', 'big-places-fill'].some(l =>
           map.getLayer(l) && map.queryRenderedFeatures(e.point, { layers: [l] }).length)) {
       return;
     }
@@ -1052,11 +1054,18 @@ async function _loadEuPlacesGeojson() {
     data: geo,
     attribution: '© EuroGeographics (limites administratives) · geoBoundaries (CC BY 4.0)'
   });
+  // Pays de taille continentale (logique USA) : les polygones municipaux
+  // n'apparaissent qu'au zoom 7+, les provinces servent d'etage intermediaire.
+  // Les autres pays (Europe...) gardent leurs communes des le zoom 4.
+  const BIG_COUNTRIES = ['CN', 'RU', 'CA', 'BR', 'AU', 'AR', 'MX', 'DZ', 'CD'];
+  const isBig = ['in', ['get', 'c'], ['literal', BIG_COUNTRIES]];
+
   map.addLayer({
     id: 'eu-places-fill',
     type: 'fill',
     source: 'eu-places',
     minzoom: 4,
+    filter: ['!', isBig],
     paint: {
       'fill-color': ['coalesce', ['get', 'color'], 'rgba(0,0,0,0)'],
       'fill-opacity': 0.85
@@ -1067,16 +1076,38 @@ async function _loadEuPlacesGeojson() {
     type: 'line',
     source: 'eu-places',
     minzoom: 4,
+    filter: ['!', isBig],
+    paint: { 'line-color': '#21262d', 'line-width': 0.3 }
+  });
+  map.addLayer({
+    id: 'big-places-fill',
+    type: 'fill',
+    source: 'eu-places',
+    minzoom: 7,
+    filter: isBig,
+    paint: {
+      'fill-color': ['coalesce', ['get', 'color'], 'rgba(0,0,0,0)'],
+      'fill-opacity': 0.85
+    }
+  });
+  map.addLayer({
+    id: 'big-places-line',
+    type: 'line',
+    source: 'eu-places',
+    minzoom: 7,
+    filter: isBig,
     paint: { 'line-color': '#21262d', 'line-width': 0.3 }
   });
 
-  map.on('click', 'eu-places-fill', (e) => {
+  const placeClick = (e) => {
     const city = _cityById.get(e.features[0].properties.city_id);
     if (!city) return;
     document.getElementById('panel-content').innerHTML = renderWorldCityPanel(city);
     document.getElementById('panel-empty').hidden = true;
     document.getElementById('panel-content').hidden = false;
-  });
+  };
+  map.on('click', 'eu-places-fill', placeClick);
+  map.on('click', 'big-places-fill', placeClick);
 }
 
 async function _loadFranceGeojson() {
