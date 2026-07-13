@@ -1,0 +1,875 @@
+[
+ {
+  "Region": "Gapyeong (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 2.9695,
+   "pH": 7.2,
+   "TDS_Conductivity_uS_cm": 146.0,
+   "Chlorides_Cl_mg_l": 11.35
+  }
+ },
+ {
+  "Region": "Gangneung (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 1.961,
+   "pH": 7.0,
+   "TDS_Conductivity_uS_cm": 71.5,
+   "Chlorides_Cl_mg_l": 13.7
+  }
+ },
+ {
+  "Region": "Gangjin (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 1.4567,
+   "pH": 7.2,
+   "TDS_Conductivity_uS_cm": 92.5,
+   "Chlorides_Cl_mg_l": 15.5
+  }
+ },
+ {
+  "Region": "Geoje (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 1.877,
+   "pH": 6.9,
+   "TDS_Conductivity_uS_cm": 63.5,
+   "Chlorides_Cl_mg_l": 10.8
+  }
+ },
+ {
+  "Region": "Gyeongsan-si (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 2.5773,
+   "pH": 7.35,
+   "TDS_Conductivity_uS_cm": 124.5,
+   "Chlorides_Cl_mg_l": 16.4
+  }
+ },
+ {
+  "Region": "Gyeongju (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 3.0816,
+   "pH": 7.25,
+   "TDS_Conductivity_uS_cm": 121.5,
+   "Chlorides_Cl_mg_l": 16.0
+  }
+ },
+ {
+  "Region": "Kosong (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 4.5103,
+   "pH": 7.1,
+   "TDS_Conductivity_uS_cm": 110.0,
+   "Chlorides_Cl_mg_l": 8.75
+  }
+ },
+ {
+  "Region": "Goyang-si (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 3.6699,
+   "pH": 6.9,
+   "TDS_Conductivity_uS_cm": 148.0,
+   "Chlorides_Cl_mg_l": 19.65
+  }
+ },
+ {
+  "Region": "Gongju (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 2.6053,
+   "pH": 6.75,
+   "TDS_Conductivity_uS_cm": 85.0,
+   "Chlorides_Cl_mg_l": 16.7
+  }
+ },
+ {
+  "Region": "Gwangmyeong (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 3.6699,
+   "pH": 7.15,
+   "TDS_Conductivity_uS_cm": 130.0,
+   "Chlorides_Cl_mg_l": 19.45
+  }
+ },
+ {
+  "Region": "Gwangyang (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 1.4007,
+   "pH": 7.2,
+   "TDS_Conductivity_uS_cm": 60.5,
+   "Chlorides_Cl_mg_l": 9.7
+  }
+ },
+ {
+  "Region": "Gwangju (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 3.6979,
+   "pH": 6.9,
+   "TDS_Conductivity_uS_cm": 139.5,
+   "Chlorides_Cl_mg_l": 22.5
+  }
+ },
+ {
+  "Region": "Koesan (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 7.5078,
+   "pH": 7.3,
+   "TDS_Conductivity_uS_cm": 208.5,
+   "Chlorides_Cl_mg_l": 9.3
+  }
+ },
+ {
+  "Region": "Kurye (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 2.8294,
+   "pH": 6.7,
+   "TDS_Conductivity_uS_cm": 94.5,
+   "Chlorides_Cl_mg_l": 18.4
+  }
+ },
+ {
+  "Region": "Guri-si (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 3.2216,
+   "pH": 7.7,
+   "TDS_Conductivity_uS_cm": 117.0,
+   "Chlorides_Cl_mg_l": 19.1
+  }
+ },
+ {
+  "Region": "Gumi (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 3.978,
+   "pH": 7.35,
+   "TDS_Conductivity_uS_cm": 148.5,
+   "Chlorides_Cl_mg_l": 19.95
+  }
+ },
+ {
+  "Region": "Gunpo (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 4.3702,
+   "pH": 7.35,
+   "TDS_Conductivity_uS_cm": 121.0,
+   "Chlorides_Cl_mg_l": 19.3
+  }
+ },
+ {
+  "Region": "Kinzan (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 1.6248,
+   "pH": 7.15,
+   "TDS_Conductivity_uS_cm": 82.5,
+   "Chlorides_Cl_mg_l": 10.35
+  }
+ },
+ {
+  "Region": "Gimcheon (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 2.9975,
+   "pH": 7.0,
+   "TDS_Conductivity_uS_cm": 110.0,
+   "Chlorides_Cl_mg_l": 10.95
+  }
+ },
+ {
+  "Region": "Gimpo-si (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 3.894,
+   "pH": 7.15,
+   "TDS_Conductivity_uS_cm": 133.5,
+   "Chlorides_Cl_mg_l": 17.8
+  }
+ },
+ {
+  "Region": "Kimhae (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 4.5663,
+   "pH": 7.2,
+   "TDS_Conductivity_uS_cm": 180.5,
+   "Chlorides_Cl_mg_l": 36.0
+  }
+ },
+ {
+  "Region": "Namyangju (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 3.3897,
+   "pH": 7.2,
+   "TDS_Conductivity_uS_cm": 123.0,
+   "Chlorides_Cl_mg_l": 17.25
+  }
+ },
+ {
+  "Region": "Damyang (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 1.5128,
+   "pH": 7.05,
+   "TDS_Conductivity_uS_cm": 42.5,
+   "Chlorides_Cl_mg_l": 9.05
+  }
+ },
+ {
+  "Region": "Tangjin (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 3.866,
+   "pH": 7.0,
+   "TDS_Conductivity_uS_cm": 121.0,
+   "Chlorides_Cl_mg_l": 33.55
+  }
+ },
+ {
+  "Region": "Daegu (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 2.7174,
+   "pH": 7.1,
+   "TDS_Conductivity_uS_cm": 121.5,
+   "Chlorides_Cl_mg_l": 12.9
+  }
+ },
+ {
+  "Region": "Daejeon (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 2.7734,
+   "pH": 6.9,
+   "TDS_Conductivity_uS_cm": 81.0,
+   "Chlorides_Cl_mg_l": 14.95
+  }
+ },
+ {
+  "Region": "Mokpo (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 1.3167,
+   "pH": 6.6,
+   "TDS_Conductivity_uS_cm": 71.0,
+   "Chlorides_Cl_mg_l": 8.85
+  }
+ },
+ {
+  "Region": "Mungyeong (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 2.7454,
+   "pH": 7.45,
+   "TDS_Conductivity_uS_cm": 102.0,
+   "Chlorides_Cl_mg_l": 6.55
+  }
+ },
+ {
+  "Region": "Miryang (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 2.2972,
+   "pH": 7.1,
+   "TDS_Conductivity_uS_cm": 66.0,
+   "Chlorides_Cl_mg_l": 8.4
+  }
+ },
+ {
+  "Region": "Boryeong (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 4.2862,
+   "pH": 7.0,
+   "TDS_Conductivity_uS_cm": 118.0,
+   "Chlorides_Cl_mg_l": 11.45
+  }
+ },
+ {
+  "Region": "Boseong (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 2.2692,
+   "pH": 7.05,
+   "TDS_Conductivity_uS_cm": 78.5,
+   "Chlorides_Cl_mg_l": 11.5
+  }
+ },
+ {
+  "Region": "Busan (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 2.8575,
+   "pH": 6.8,
+   "TDS_Conductivity_uS_cm": 99.5,
+   "Chlorides_Cl_mg_l": 13.1
+  }
+ },
+ {
+  "Region": "Buyeo (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 2.2131,
+   "pH": 6.9,
+   "TDS_Conductivity_uS_cm": 83.0,
+   "Chlorides_Cl_mg_l": 13.25
+  }
+ },
+ {
+  "Region": "Bucheon-si (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 3.6419,
+   "pH": 7.0,
+   "TDS_Conductivity_uS_cm": 137.5,
+   "Chlorides_Cl_mg_l": 21.95
+  }
+ },
+ {
+  "Region": "Santyoku (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 5.9951,
+   "pH": 7.45,
+   "TDS_Conductivity_uS_cm": 117.0,
+   "Chlorides_Cl_mg_l": 8.5
+  }
+ },
+ {
+  "Region": "Sangju (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 4.1741,
+   "pH": 7.3,
+   "TDS_Conductivity_uS_cm": 135.5,
+   "Chlorides_Cl_mg_l": 12.65
+  }
+ },
+ {
+  "Region": "Seoul (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 3.3617,
+   "pH": 7.1,
+   "TDS_Conductivity_uS_cm": 129.5,
+   "Chlorides_Cl_mg_l": 19.65
+  }
+ },
+ {
+  "Region": "Seongnam-si (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 3.4458,
+   "pH": 7.05,
+   "TDS_Conductivity_uS_cm": 136.0,
+   "Chlorides_Cl_mg_l": 21.5
+  }
+ },
+ {
+  "Region": "Sokcho (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 0.4482,
+   "pH": 6.65,
+   "TDS_Conductivity_uS_cm": 34.5,
+   "Chlorides_Cl_mg_l": 7.7
+  }
+ },
+ {
+  "Region": "Suwon (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 2.8294,
+   "pH": 7.5,
+   "TDS_Conductivity_uS_cm": 118.0,
+   "Chlorides_Cl_mg_l": 22.95
+  }
+ },
+ {
+  "Region": "Suncheon (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 1.7369,
+   "pH": 6.9,
+   "TDS_Conductivity_uS_cm": 54.5,
+   "Chlorides_Cl_mg_l": 8.7
+  }
+ },
+ {
+  "Region": "Sinan (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 1.6248,
+   "pH": 7.2,
+   "TDS_Conductivity_uS_cm": 74.0,
+   "Chlorides_Cl_mg_l": 25.9
+  }
+ },
+ {
+  "Region": "Asan (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 2.2411,
+   "pH": 7.05,
+   "TDS_Conductivity_uS_cm": 82.0,
+   "Chlorides_Cl_mg_l": 12.1
+  }
+ },
+ {
+  "Region": "Andong (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 4.4823,
+   "pH": 7.35,
+   "TDS_Conductivity_uS_cm": 138.0,
+   "Chlorides_Cl_mg_l": 15.4
+  }
+ },
+ {
+  "Region": "Ansan-si (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 3.7259,
+   "pH": 7.1,
+   "TDS_Conductivity_uS_cm": 123.0,
+   "Chlorides_Cl_mg_l": 20.95
+  }
+ },
+ {
+  "Region": "Anseong (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 5.3788,
+   "pH": 7.2,
+   "TDS_Conductivity_uS_cm": 164.0,
+   "Chlorides_Cl_mg_l": 22.2
+  }
+ },
+ {
+  "Region": "Anyang-si (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 4.2862,
+   "pH": 7.15,
+   "TDS_Conductivity_uS_cm": 111.5,
+   "Chlorides_Cl_mg_l": 23.35
+  }
+ },
+ {
+  "Region": "Yanggu (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 1.5128,
+   "pH": 7.0,
+   "TDS_Conductivity_uS_cm": 77.0,
+   "Chlorides_Cl_mg_l": 14.3
+  }
+ },
+ {
+  "Region": "Yangsan (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 2.9975,
+   "pH": 7.1,
+   "TDS_Conductivity_uS_cm": 148.0,
+   "Chlorides_Cl_mg_l": 23.6
+  }
+ },
+ {
+  "Region": "Yangp'yŏng (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 2.6894,
+   "pH": 7.6,
+   "TDS_Conductivity_uS_cm": 91.0,
+   "Chlorides_Cl_mg_l": 15.25
+  }
+ },
+ {
+  "Region": "Yeosu (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 0.8684,
+   "pH": 6.75,
+   "TDS_Conductivity_uS_cm": 60.5,
+   "Chlorides_Cl_mg_l": 7.8
+  }
+ },
+ {
+  "Region": "Yeoju (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 5.2107,
+   "pH": 7.45,
+   "TDS_Conductivity_uS_cm": 171.0,
+   "Chlorides_Cl_mg_l": 22.0
+  }
+ },
+ {
+  "Region": "Yeoncheon (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 2.2692,
+   "pH": 7.0,
+   "TDS_Conductivity_uS_cm": 88.5,
+   "Chlorides_Cl_mg_l": 4.85
+  }
+ },
+ {
+  "Region": "Yeonggwang (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 1.5968,
+   "pH": 7.2,
+   "TDS_Conductivity_uS_cm": 68.0,
+   "Chlorides_Cl_mg_l": 13.2
+  }
+ },
+ {
+  "Region": "Yeongdeok (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 4.1741,
+   "pH": 7.45,
+   "TDS_Conductivity_uS_cm": 126.5,
+   "Chlorides_Cl_mg_l": 10.6
+  }
+ },
+ {
+  "Region": "Yeongdong (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 2.3532,
+   "pH": 7.0,
+   "TDS_Conductivity_uS_cm": 110.0,
+   "Chlorides_Cl_mg_l": 14.8
+  }
+ },
+ {
+  "Region": "Yeongam (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 1.4007,
+   "pH": 6.65,
+   "TDS_Conductivity_uS_cm": 58.0,
+   "Chlorides_Cl_mg_l": 10.6
+  }
+ },
+ {
+  "Region": "Neietsu (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 7.6479,
+   "pH": 7.6,
+   "TDS_Conductivity_uS_cm": 135.0,
+   "Chlorides_Cl_mg_l": 13.0
+  }
+ },
+ {
+  "Region": "Yeongju (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 2.6053,
+   "pH": 7.1,
+   "TDS_Conductivity_uS_cm": 99.5,
+   "Chlorides_Cl_mg_l": 10.6
+  }
+ },
+ {
+  "Region": "Yesan (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 3.5858,
+   "pH": 7.1,
+   "TDS_Conductivity_uS_cm": 100.0,
+   "Chlorides_Cl_mg_l": 23.0
+  }
+ },
+ {
+  "Region": "Yecheon (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 4.0621,
+   "pH": 7.15,
+   "TDS_Conductivity_uS_cm": 130.5,
+   "Chlorides_Cl_mg_l": 12.35
+  }
+ },
+ {
+  "Region": "Okcheon (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 3.2777,
+   "pH": 7.25,
+   "TDS_Conductivity_uS_cm": 130.5,
+   "Chlorides_Cl_mg_l": 15.55
+  }
+ },
+ {
+  "Region": "Ulsan (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 2.9135,
+   "pH": 6.95,
+   "TDS_Conductivity_uS_cm": 197.5,
+   "Chlorides_Cl_mg_l": 21.5
+  }
+ },
+ {
+  "Region": "Wŏnju (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 5.6029,
+   "pH": 7.4,
+   "TDS_Conductivity_uS_cm": 224.0,
+   "Chlorides_Cl_mg_l": 42.25
+  }
+ },
+ {
+  "Region": "Uiwang (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 4.3142,
+   "pH": 7.95,
+   "TDS_Conductivity_uS_cm": 146.5,
+   "Chlorides_Cl_mg_l": 21.2
+  }
+ },
+ {
+  "Region": "Uijeongbu-si (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 1.4007,
+   "pH": 7.2,
+   "TDS_Conductivity_uS_cm": 88.0,
+   "Chlorides_Cl_mg_l": 10.65
+  }
+ },
+ {
+  "Region": "Icheon-si (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 4.5944,
+   "pH": 7.7,
+   "TDS_Conductivity_uS_cm": 149.5,
+   "Chlorides_Cl_mg_l": 20.6
+  }
+ },
+ {
+  "Region": "Iksan (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 2.1851,
+   "pH": 7.1,
+   "TDS_Conductivity_uS_cm": 82.5,
+   "Chlorides_Cl_mg_l": 14.3
+  }
+ },
+ {
+  "Region": "Incheon (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 3.2777,
+   "pH": 7.4,
+   "TDS_Conductivity_uS_cm": 121.5,
+   "Chlorides_Cl_mg_l": 20.8
+  }
+ },
+ {
+  "Region": "Imsil (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 2.9415,
+   "pH": 7.5,
+   "TDS_Conductivity_uS_cm": 102.5,
+   "Chlorides_Cl_mg_l": 13.95
+  }
+ },
+ {
+  "Region": "Jangseong (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 1.7369,
+   "pH": 6.7,
+   "TDS_Conductivity_uS_cm": 46.0,
+   "Chlorides_Cl_mg_l": 10.9
+  }
+ },
+ {
+  "Region": "Jangheung (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 1.2606,
+   "pH": 6.9,
+   "TDS_Conductivity_uS_cm": 52.5,
+   "Chlorides_Cl_mg_l": 8.7
+  }
+ },
+ {
+  "Region": "Jeongeup (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 2.2692,
+   "pH": 7.3,
+   "TDS_Conductivity_uS_cm": 66.0,
+   "Chlorides_Cl_mg_l": 11.6
+  }
+ },
+ {
+  "Region": "Jeju City (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 1.7369,
+   "pH": 7.7,
+   "TDS_Conductivity_uS_cm": 88.5,
+   "Chlorides_Cl_mg_l": 10.6
+  }
+ },
+ {
+  "Region": "Jinan-gun (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 1.7089,
+   "pH": 7.35,
+   "TDS_Conductivity_uS_cm": 66.5,
+   "Chlorides_Cl_mg_l": 11.65
+  }
+ },
+ {
+  "Region": "Chinju (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 2.045,
+   "pH": 6.95,
+   "TDS_Conductivity_uS_cm": 69.5,
+   "Chlorides_Cl_mg_l": 14.85
+  }
+ },
+ {
+  "Region": "Chinch'ŏn (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 6.1071,
+   "pH": 6.8,
+   "TDS_Conductivity_uS_cm": 255.0,
+   "Chlorides_Cl_mg_l": 12.45
+  }
+ },
+ {
+  "Region": "Changnyeong (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 1.7929,
+   "pH": 7.2,
+   "TDS_Conductivity_uS_cm": 65.5,
+   "Chlorides_Cl_mg_l": 9.2
+  }
+ },
+ {
+  "Region": "Changwon (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 5.1546,
+   "pH": 7.2,
+   "TDS_Conductivity_uS_cm": 190.0,
+   "Chlorides_Cl_mg_l": 36.4
+  }
+ },
+ {
+  "Region": "Cheonan (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 5.5188,
+   "pH": 7.05,
+   "TDS_Conductivity_uS_cm": 95.0,
+   "Chlorides_Cl_mg_l": 20.4
+  }
+ },
+ {
+  "Region": "Cheorwon (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 3.4738,
+   "pH": 7.2,
+   "TDS_Conductivity_uS_cm": 75.0,
+   "Chlorides_Cl_mg_l": 7.05
+  }
+ },
+ {
+  "Region": "Cheongsong gun (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 3.5858,
+   "pH": 7.2,
+   "TDS_Conductivity_uS_cm": 131.5,
+   "Chlorides_Cl_mg_l": 15.0
+  }
+ },
+ {
+  "Region": "Cheongju-si (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 2.9135,
+   "pH": 7.2,
+   "TDS_Conductivity_uS_cm": 95.0,
+   "Chlorides_Cl_mg_l": 12.2
+  }
+ },
+ {
+  "Region": "Chuncheon (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 2.1851,
+   "pH": 7.5,
+   "TDS_Conductivity_uS_cm": 71.0,
+   "Chlorides_Cl_mg_l": 10.7
+  }
+ },
+ {
+  "Region": "Chungju (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 4.9025,
+   "pH": 7.5,
+   "TDS_Conductivity_uS_cm": 179.5,
+   "Chlorides_Cl_mg_l": 17.95
+  }
+ },
+ {
+  "Region": "T’aebaek (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 5.2107,
+   "pH": 7.35,
+   "TDS_Conductivity_uS_cm": 109.5,
+   "Chlorides_Cl_mg_l": 15.35
+  }
+ },
+ {
+  "Region": "Paju (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 3.3337,
+   "pH": 7.2,
+   "TDS_Conductivity_uS_cm": 144.5,
+   "Chlorides_Cl_mg_l": 31.25
+  }
+ },
+ {
+  "Region": "Pyeongchang (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 2.0731,
+   "pH": 7.3,
+   "TDS_Conductivity_uS_cm": 88.5,
+   "Chlorides_Cl_mg_l": 10.3
+  }
+ },
+ {
+  "Region": "Pyeongtaek (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 6.3593,
+   "pH": 7.1,
+   "TDS_Conductivity_uS_cm": 209.5,
+   "Chlorides_Cl_mg_l": 55.1
+  }
+ },
+ {
+  "Region": "Pohang (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 4.1181,
+   "pH": 7.35,
+   "TDS_Conductivity_uS_cm": 132.0,
+   "Chlorides_Cl_mg_l": 19.75
+  }
+ },
+ {
+  "Region": "Hanam (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 3.81,
+   "pH": 7.6,
+   "TDS_Conductivity_uS_cm": 123.5,
+   "Chlorides_Cl_mg_l": 19.05
+  }
+ },
+ {
+  "Region": "Hadong (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 2.2411,
+   "pH": 7.1,
+   "TDS_Conductivity_uS_cm": 55.5,
+   "Chlorides_Cl_mg_l": 6.35
+  }
+ },
+ {
+  "Region": "Haenam (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 1.8209,
+   "pH": 7.0,
+   "TDS_Conductivity_uS_cm": 79.5,
+   "Chlorides_Cl_mg_l": 17.95
+  }
+ },
+ {
+  "Region": "Hongch’ŏn (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 4.0341,
+   "pH": 6.9,
+   "TDS_Conductivity_uS_cm": 109.5,
+   "Chlorides_Cl_mg_l": 11.75
+  }
+ },
+ {
+  "Region": "Hwaseong-si (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 3.838,
+   "pH": 7.0,
+   "TDS_Conductivity_uS_cm": 146.0,
+   "Chlorides_Cl_mg_l": 20.4
+  }
+ },
+ {
+  "Region": "Hwasun (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 2.9415,
+   "pH": 6.8,
+   "TDS_Conductivity_uS_cm": 64.5,
+   "Chlorides_Cl_mg_l": 8.7
+  }
+ },
+ {
+  "Region": "Hwacheon (South Korea)",
+  "Parameters": {
+   "Ca_Hardness_dH": 2.5773,
+   "pH": 7.3,
+   "TDS_Conductivity_uS_cm": 80.0,
+   "Chlorides_Cl_mg_l": 7.15
+  }
+ }
+]
