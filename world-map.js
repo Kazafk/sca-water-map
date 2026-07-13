@@ -213,10 +213,12 @@ function _initTooltip() {
       const city = _cityById.get(p.city_id);
       name  = p.name + (p.st ? `, ${p.st}` : '');
       score = city?.score ?? null;
+      if (city?.deg) note = ' (estimé sans dureté)';
     } else if (hit.layer === 'eu-places-fill' || hit.layer === 'big-places-fill') {
       const city = _cityById.get(p.city_id);
       name  = p.name + (p.c ? `, ${p.c}` : '');
       score = city?.score ?? null;
+      if (city?.deg) note = ' (estimé sans dureté)';
     } else if (hit.layer === 'us-counties-fill') {
       const st = _FIPS_STATE[p.STATE] || '';
       name  = p.NAME + (st ? `, ${st}` : '');
@@ -364,8 +366,34 @@ function _recolorPlaces(geo, sourceId, metric) {
 function _recolorUsPlaces(metric) { _recolorPlaces(_usPlacesGeo, 'us-places', metric); }
 function _recolorEuPlaces(metric) { _recolorPlaces(_euPlacesGeo, 'eu-places', metric); }
 
+function _makeHatchPattern() {
+  const size = 12;
+  const canvas = document.createElement('canvas');
+  canvas.width = size;
+  canvas.height = size;
+  const ctx = canvas.getContext('2d');
+  ctx.strokeStyle = 'rgba(13,17,23,0.55)';
+  ctx.lineWidth = 2;
+  ctx.beginPath();
+  // diagonale centrale + coins pour un raccord de tuile invisible
+  ctx.moveTo(0, size); ctx.lineTo(size, 0);
+  ctx.moveTo(-size * 0.25, size * 0.25); ctx.lineTo(size * 0.25, -size * 0.25);
+  ctx.moveTo(size * 0.75, size * 1.25); ctx.lineTo(size * 1.25, size * 0.75);
+  ctx.stroke();
+  return ctx.getImageData(0, 0, size, size);
+}
+
+// Les hachures ne concernent que le mode score (une metrique mesuree, ex. pH,
+// n'est pas "estimee") — visibilite basculee par _applyMetric.
+const HATCH_LAYERS = ['us-places-hatch', 'eu-places-hatch', 'big-places-hatch'];
+
 function _applyMetric(metric) {
   _currentMetric = metric;
+  for (const l of HATCH_LAYERS) {
+    if (map.getLayer(l)) {
+      map.setLayoutProperty(l, 'visibility', metric === 'score' ? 'visible' : 'none');
+    }
+  }
   // Mise a jour du titre de la legende
   const legendTitle = document.getElementById('legend-title');
   if (legendTitle) {
@@ -533,6 +561,9 @@ async function init() {
   });
 
   map.on('load', async () => {
+    // Motif de hachures diagonales pour les scores estimes sans durete
+    // (superpose a la couleur via des couches fill-pattern dediees)
+    map.addImage('hatch-pattern', _makeHatchPattern(), { pixelRatio: 2 });
     // 1. Countries choropleth — no maxzoom here; zoom range will be restricted to 0–4
     // only after provinces layers are successfully added (P1: avoid blank-map gap).
     map.addSource('countries', {
@@ -1009,6 +1040,7 @@ async function _loadUsPlacesGeojson() {
   for (const f of geo.features) {
     const city = _cityById.get(f.properties.city_id);
     f.properties.color = colorFromScore(city?.score);
+    if (city?.deg) f.properties.deg = 1; // score estime sans durete -> hachures
   }
 
   _usPlacesGeo = geo;
@@ -1041,6 +1073,15 @@ async function _loadUsPlacesGeojson() {
     source: 'us-places',
     minzoom: 5,
     paint: { 'line-color': '#21262d', 'line-width': 0.3 }
+  });
+  map.addLayer({
+    id: 'us-places-hatch',
+    type: 'fill',
+    source: 'us-places',
+    minzoom: 5,
+    filter: ['==', ['get', 'deg'], 1],
+    layout: { visibility: _currentMetric === 'score' ? 'visible' : 'none' },
+    paint: { 'fill-pattern': 'hatch-pattern' }
   });
 
   map.on('click', 'us-places-fill', (e) => {
@@ -1084,6 +1125,7 @@ async function _loadEuPlacesGeojson() {
   for (const f of geo.features) {
     const city = _cityById.get(f.properties.city_id);
     f.properties.color = colorFromScore(city?.score);
+    if (city?.deg) f.properties.deg = 1; // score estime sans durete -> hachures
   }
 
   _euPlacesGeo = geo;
@@ -1143,6 +1185,25 @@ async function _loadEuPlacesGeojson() {
     minzoom: 5,
     filter: isBig,
     paint: { 'line-color': '#21262d', 'line-width': 0.3 }
+  });
+  // Hachures des scores estimes sans durete (mode score uniquement)
+  map.addLayer({
+    id: 'eu-places-hatch',
+    type: 'fill',
+    source: 'eu-places',
+    minzoom: 4,
+    filter: ['all', ['!', isBig], ['==', ['get', 'deg'], 1]],
+    layout: { visibility: _currentMetric === 'score' ? 'visible' : 'none' },
+    paint: { 'fill-pattern': 'hatch-pattern' }
+  });
+  map.addLayer({
+    id: 'big-places-hatch',
+    type: 'fill',
+    source: 'eu-places',
+    minzoom: 5,
+    filter: ['all', isBig, ['==', ['get', 'deg'], 1]],
+    layout: { visibility: _currentMetric === 'score' ? 'visible' : 'none' },
+    paint: { 'fill-pattern': 'hatch-pattern' }
   });
 
   const placeClick = (e) => {

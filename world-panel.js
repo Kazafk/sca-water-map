@@ -79,12 +79,19 @@ export function renderWorldCityPanel(city) {
     `;
   }).join('');
 
-  // Ca hardness warning block (uses existing .panel-alert class)
-  const caWarning = noCaHardness ? `
+  // Ca hardness warning block (uses existing .panel-alert class).
+  // city.deg = score dégradé : ni dureté ni alcalinité, calcul sur les seuls
+  // paramètres secondaires, plafonné à 50 % (polygone hachuré sur la carte).
+  const caWarning = city.deg ? `
+    <div class="panel-alert">
+      Score estimé, plafonné à 50 % — dureté et alcalinité non mesurées
+      (calcul sur pH/TDS/Na/Cl uniquement)
+    </div>
+  ` : (noCaHardness ? `
     <div class="panel-alert">
       Score plafonné a 85 % — dureté calcique non mesurée
     </div>
-  ` : '';
+  ` : '');
 
   // "Données partielles" badge appended to the tag row when < 3 params
   const partialBadge = isPartialData
