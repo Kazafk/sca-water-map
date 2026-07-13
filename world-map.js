@@ -11,7 +11,8 @@ const US_COUNTIES_GEOJSON_URL = 'https://raw.githubusercontent.com/plotly/datase
 // Layer architecture (bottom to top):
 // countries-fill (zoom 0-4) → world-provinces-fill (minzoom:4)
 //   → us-counties-fill (zoom 5-7, USA only) → us-places-fill (minzoom:7, USA only)
-//   → eu-places-fill (minzoom:4, Europe) → communes-fill (minzoom:4, France only)
+//   → eu-places-fill (minzoom:4, Europe : GISCO LAU + extra-places geoBoundaries)
+//   → communes-fill (minzoom:4, France only)
 // USA (taille continentale) : Pays → Etat → Comté → Ville ; Europe : Pays → Ville.
 
 // FIPS state code → USPS abbreviation (county names repeat across states)
@@ -1021,6 +1022,19 @@ async function _loadEuPlacesGeojson() {
 
   const geo = await r.json();
 
+  // extra-places.json : pays europeens hors couverture GISCO LAU
+  // (UA, MD, BA, ME, XK, BY, AD, SM — contours geoBoundaries), meme
+  // schema {city_id, name, c}, fusionne dans la meme source. Non bloquant.
+  try {
+    const rx = await fetch('./extra-places.json');
+    if (rx.ok) {
+      const extra = await rx.json();
+      geo.features = geo.features.concat(extra.features);
+    }
+  } catch (e) {
+    console.warn('extra-places fetch failed:', e.message);
+  }
+
   for (const f of geo.features) {
     const city = _cityById.get(f.properties.city_id);
     f.properties.color = colorFromScore(city?.score);
@@ -1039,7 +1053,7 @@ async function _loadEuPlacesGeojson() {
   map.addSource('eu-places', {
     type: 'geojson',
     data: geo,
-    attribution: '© EuroGeographics (limites administratives)'
+    attribution: '© EuroGeographics (limites administratives) · geoBoundaries (CC BY 4.0)'
   });
   map.addLayer({
     id: 'eu-places-fill',
