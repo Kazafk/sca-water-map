@@ -64,6 +64,16 @@
           <input id="search" type="text" placeholder="🔍  Ville ou pays..." autocomplete="off">
           <div id="search-results" hidden></div>
         </div>
+        <select id="metric-select" class="btn-icon" title="Changer la métrique affichée">
+          <option value="score">Score SCA</option>
+          <option value="ca_hardness">Dureté calcique</option>
+          <option value="alkalinity">Alcalinité</option>
+          <option value="ph">pH</option>
+          <option value="tds">TDS</option>
+          <option value="na">Sodium</option>
+          <option value="cl">Chlorures</option>
+        </select>
+        <button id="btn-copy-link" class="btn-icon" title="Copier le lien de cette vue">Lien</button>
         <button id="btn-theme" class="btn-icon" title="Basculer thème">☀</button>
         <button id="btn-home" class="btn-icon" title="Vue France entière">🏠</button>
         <button id="btn-locate" class="btn-icon" title="Me localiser">📍</button>
@@ -79,26 +89,31 @@
         <div id="map"></div>
         <div id="map-tooltip"></div>
         <div id="legend">
-          <div class="legend-title">Score SCA</div>
-          <div class="legend-item">
-            <span class="dot" style="background:var(--green)"></span>
-            <div><div class="legend-label">≥ 75 % — Idéal</div><div class="legend-sub">Parfait pour espresso &amp; filtre</div></div>
+          <div id="legend-header">
+            <span id="legend-title" class="legend-title">Score SCA</span>
+            <button id="legend-toggle" class="legend-toggle-btn" title="Réduire/Agrandir la légende">−</button>
           </div>
-          <div class="legend-item">
-            <span class="dot" style="background:var(--blue)"></span>
-            <div><div class="legend-label">50–75 % — Acceptable</div><div class="legend-sub">Extraction correcte, non optimale</div></div>
-          </div>
-          <div class="legend-item">
-            <span class="dot" style="background:var(--orange)"></span>
-            <div><div class="legend-label">25–50 % — Hors plage</div><div class="legend-sub">Résultats variables en tasse</div></div>
-          </div>
-          <div class="legend-item">
-            <span class="dot" style="background:var(--red)"></span>
-            <div><div class="legend-label">&lt; 25 % — Très hors SCA</div><div class="legend-sub">Eau très calcaire ou trop douce</div></div>
-          </div>
-          <div class="legend-item">
-            <span class="dot dot-nodata"></span>
-            <div><div class="legend-label">Données absentes</div></div>
+          <div id="legend-body">
+            <div class="legend-item">
+              <span class="dot" style="background:var(--green)"></span>
+              <div><div class="legend-label">Idéal</div><div class="legend-sub">≥ 75 % — Parfait pour espresso &amp; filtre</div></div>
+            </div>
+            <div class="legend-item">
+              <span class="dot" style="background:var(--blue)"></span>
+              <div><div class="legend-label">Acceptable</div><div class="legend-sub">50–75 % — Extraction correcte, non optimale</div></div>
+            </div>
+            <div class="legend-item">
+              <span class="dot" style="background:var(--orange)"></span>
+              <div><div class="legend-label">Hors plage</div><div class="legend-sub">25–50 % — Résultats variables en tasse</div></div>
+            </div>
+            <div class="legend-item">
+              <span class="dot" style="background:var(--red)"></span>
+              <div><div class="legend-label">Très hors SCA</div><div class="legend-sub">&lt; 25 % — Eau très calcaire ou trop douce</div></div>
+            </div>
+            <div class="legend-item">
+              <span class="dot dot-nodata"></span>
+              <div><div class="legend-label">Pas de données</div><div class="legend-sub">Zone grise / transparente</div></div>
+            </div>
           </div>
         </div>
       </div>

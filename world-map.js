@@ -1,4 +1,4 @@
-import { colorFromScore } from './scoring.js';
+import { colorFromScore, labelFromScore } from './scoring.js';
 import { renderWorldCityPanel, renderWorldCountryPanel, renderNoDataPanel } from './world-panel.js';
 import { updatePanel } from './panel.js';
 import { searchLocalCities, searchNominatim, escapeHtml } from './world-search.js';
@@ -9,6 +9,66 @@ const PROVINCES_GEOJSON_URL = 'https://raw.githubusercontent.com/nvkelso/natural
 
 // Layer architecture (bottom to top):
 // countries-fill (maxzoom:4) → world-provinces-fill (minzoom:4) → communes-fill (minzoom:4, France only)
+
+// ── Tâche 3 : configuration des métriques individuelles ────────────────────
+// Stratégie choisie : precalcul des couleurs par metrique dans les proprietes GeoJSON
+// puis setData() sur chaque source au changement de metrique.
+// Avantage : pas de gestion d'état de couche complexe ; compatible avec le flux lazy de communes.
+const METRICS = {
+  score: { label: 'Score SCA', param: null },
+  ca_hardness: {
+    label: 'Dureté calcique',
+    lo: 50, hi: 85, minVal: 0, maxVal: 170
+  },
+  alkalinity: {
+    label: 'Alcalinité',
+    lo: 40, hi: 70, minVal: 0, maxVal: 140
+  },
+  ph: {
+    label: 'pH',
+    lo: 6.5, hi: 7.5, minVal: 4, maxVal: 10
+  },
+  tds: {
+    label: 'TDS',
+    lo: 75, hi: 250, minVal: 0, maxVal: 500
+  },
+  na: {
+    label: 'Sodium',
+    lo: 0, hi: 30, minVal: 0, maxVal: 100
+  },
+  cl: {
+    label: 'Chlorures',
+    lo: 0, hi: 75, minVal: 0, maxVal: 200
+  }
+};
+
+// Calcule le sous-score lineaire d'une valeur par rapport aux plages SCA d'une metrique
+function _metricSubScore(value, metric) {
+  if (value == null || metric === 'score') return null;
+  const cfg = METRICS[metric];
+  if (!cfg || cfg.param === null) return null;
+  const { lo, hi, minVal, maxVal } = cfg;
+  if (value >= lo && value <= hi) return 1.0;
+  if (value < lo) {
+    const span = lo - minVal;
+    return span > 0 ? Math.max(0, 1 - (lo - value) / span) : 0;
+  }
+  const span = maxVal - hi;
+  return span > 0 ? Math.max(0, 1 - (value - hi) / span) : 0;
+}
+
+// Couleur d'une valeur de parametre individuel selon sous-score lineaire
+function _colorFromMetricValue(value, metric) {
+  const sub = _metricSubScore(value, metric);
+  return colorFromScore(sub);
+}
+
+// Moyenne des valeurs d'un parametre sur une liste de villes
+function _avgParam(cities, metric) {
+  const vals = cities.map(c => c.params?.[metric]).filter(v => v != null);
+  if (!vals.length) return null;
+  return vals.reduce((a, b) => a + b, 0) / vals.length;
+}
 
 let map = null;
 let worldCities = [];
@@ -23,6 +83,10 @@ let _iso3toIso2      = new Map(); // ISO 3166-1 alpha-3 → alpha-2 (built from 
 let _theme = localStorage.getItem('sca-theme') || 'dark';
 let _searchTimer        = null;
 let _lastNominatimQuery = '';
+let _currentMetric = 'score'; // metrique active pour Tâche 3
+let _countriesGeo   = null;   // reference GeoJSON countries pour recoloration
+let _provincesGeo   = null;   // reference GeoJSON provinces pour recoloration
+let _countriesMap   = null;   // Map iso2 → countryData
 
 // Ray-casting point-in-polygon for a single ring
 function _pip(lng, lat, ring) {
@@ -42,6 +106,231 @@ function _cityInPolygon(lng, lat, feature) {
   if (type === 'Polygon') return _pip(lng, lat, coordinates[0]);
   if (type === 'MultiPolygon') return coordinates.some(poly => _pip(lng, lat, poly[0]));
   return false;
+}
+
+// ── Tâche 1 : légende repliable ────────────────────────────────────────────
+function _initLegend() {
+  const legend  = document.getElementById('legend');
+  const togBtn  = document.getElementById('legend-toggle');
+  const body    = document.getElementById('legend-body');
+  if (!legend || !togBtn || !body) return;
+
+  const stored = localStorage.getItem('sca-legend-collapsed');
+  if (stored === '1') {
+    legend.classList.add('collapsed');
+    togBtn.textContent = '+';
+  }
+
+  togBtn.addEventListener('click', () => {
+    const collapsed = legend.classList.toggle('collapsed');
+    togBtn.textContent = collapsed ? '+' : '−';
+    localStorage.setItem('sca-legend-collapsed', collapsed ? '1' : '0');
+  });
+}
+
+// ── Tâche 2 : tooltip ──────────────────────────────────────────────────────
+function _initTooltip() {
+  const tooltip    = document.getElementById('map-tooltip');
+  const mapEl      = document.getElementById('map');
+  const isTouchDevice = window.matchMedia('(hover: none)').matches;
+  if (!tooltip || !mapEl || isTouchDevice) return;
+
+  // Layers a surveiller, du plus fin au plus grossier
+  const HOVER_LAYERS = ['communes-fill', 'world-provinces-fill', 'countries-fill'];
+
+  map.on('mousemove', (e) => {
+    // Priorite a la couche la plus fine sous le curseur
+    let hit = null;
+    for (const layer of HOVER_LAYERS) {
+      if (!map.getLayer(layer)) continue;
+      const feats = map.queryRenderedFeatures(e.point, { layers: [layer] });
+      if (feats.length) { hit = { layer, feat: feats[0] }; break; }
+    }
+
+    if (!hit) {
+      tooltip.style.display = 'none';
+      return;
+    }
+
+    let name = '';
+    let score = null;
+    const p = hit.feat.properties;
+
+    if (hit.layer === 'communes-fill') {
+      const code  = p.code;
+      const cData = communesData[code];
+      name  = cData?.nom || p.nom || p.name || code || '—';
+      score = cData?.score ?? null;
+    } else if (hit.layer === 'world-provinces-fill') {
+      name  = p.name || '—';
+      score = p.avg_score != null ? parseFloat(p.avg_score) : null;
+    } else {
+      // countries-fill : propriete 'ADMIN' dans geo-countries GeoJSON
+      name  = p['ADMIN'] || p['NAME'] || p['name'] || '—';
+      const iso2 = p['ISO3166-1-Alpha-2'];
+      const cData = iso2 ? _countriesMap?.get(iso2) : null;
+      score = cData?.avg_score ?? null;
+    }
+
+    const pct = score != null ? Math.round(score * 100) + ' %' : null;
+    const col = colorFromScore(score);
+    const scoreHtml = pct
+      ? `<span style="color:${col};font-weight:bold"> ${pct}</span>`
+      : `<span style="color:var(--muted)"> Pas de données</span>`;
+
+    tooltip.innerHTML = `<span style="color:var(--text)">${escapeHtml(name)}</span>${scoreHtml}`;
+    tooltip.style.display = 'block';
+
+    // Positionnement : suit le curseur avec offset pour eviter le chevauchement
+    const rect  = mapEl.getBoundingClientRect();
+    const tx    = e.originalEvent.clientX - rect.left + 14;
+    const ty    = e.originalEvent.clientY - rect.top  - 28;
+    tooltip.style.left = tx + 'px';
+    tooltip.style.top  = ty + 'px';
+  });
+
+  map.on('mouseleave', () => { tooltip.style.display = 'none'; });
+
+  // Curseur pointer sur les couches cliquables
+  for (const layer of HOVER_LAYERS) {
+    map.on('mouseenter', layer, () => { map.getCanvas().style.cursor = 'pointer'; });
+    map.on('mouseleave', layer, () => { map.getCanvas().style.cursor = ''; });
+  }
+}
+
+// ── Tâche 3 : recoloration des sources selon la metrique active ────────────
+function _recolorCountries(metric) {
+  if (!_countriesGeo || !map.getSource('countries')) return;
+  for (const f of _countriesGeo.features) {
+    const iso2 = f.properties['ISO3166-1-Alpha-2'];
+    if (metric === 'score') {
+      const cData = _countriesMap?.get(iso2);
+      f.properties.color = colorFromScore(cData?.avg_score);
+    } else {
+      // France : moyenne sur communesData ; autres pays : moyenne sur worldCities
+      let avg = null;
+      if (iso2 === 'FR') {
+        const vals = Object.values(communesData)
+          .map(c => c.params?.[metric])
+          .filter(v => v != null);
+        avg = vals.length ? vals.reduce((a, b) => a + b, 0) / vals.length : null;
+      } else {
+        const cities = _citiesByCountry.get(iso2) || [];
+        avg = _avgParam(cities, metric);
+      }
+      f.properties.color = _colorFromMetricValue(avg, metric);
+    }
+  }
+  map.getSource('countries').setData(_countriesGeo);
+}
+
+function _recolorProvinces(metric) {
+  if (!_provincesGeo || !map.getSource('world-provinces')) return;
+  for (const f of _provincesGeo.features) {
+    if (metric === 'score') {
+      f.properties.color = colorFromScore(f.properties.avg_score);
+    } else {
+      const iso2 = f.properties.iso2;
+      const pd   = _provincesData.get(`${iso2}__${f.properties.name}`);
+      const cities = pd?.cities || [];
+      const avg    = _avgParam(cities, metric);
+      f.properties.color = _colorFromMetricValue(avg, metric);
+    }
+  }
+  map.getSource('world-provinces').setData(_provincesGeo);
+}
+
+function _recolorCommunes(metric) {
+  if (!franceGeojson || !map.getSource('communes')) return;
+  for (const f of franceGeojson.features) {
+    const code  = f.properties.code;
+    const cData = communesData[code];
+    if (metric === 'score') {
+      f.properties.color = colorFromScore(cData?.score);
+    } else {
+      const val = cData?.params?.[metric] ?? null;
+      f.properties.color = _colorFromMetricValue(val, metric);
+    }
+  }
+  map.getSource('communes').setData(franceGeojson);
+}
+
+function _applyMetric(metric) {
+  _currentMetric = metric;
+  // Mise a jour du titre de la legende
+  const legendTitle = document.getElementById('legend-title');
+  if (legendTitle) {
+    legendTitle.textContent = METRICS[metric]?.label || 'Score SCA';
+  }
+  _recolorCountries(metric);
+  _recolorProvinces(metric);
+  _recolorCommunes(metric);
+}
+
+function _initMetricSelect() {
+  const sel = document.getElementById('metric-select');
+  if (!sel) return;
+  sel.addEventListener('change', () => {
+    _applyMetric(sel.value);
+  });
+}
+
+// ── Tâche 4 : permaliens ───────────────────────────────────────────────────
+function _parseHash() {
+  const hash = window.location.hash.replace('#', '');
+  const parts = hash.split('/');
+  if (parts.length === 3) {
+    const zoom = parseFloat(parts[0]);
+    const lat  = parseFloat(parts[1]);
+    const lng  = parseFloat(parts[2]);
+    if (!isNaN(zoom) && !isNaN(lat) && !isNaN(lng)
+        && zoom >= 0 && zoom <= 22
+        && lat >= -90 && lat <= 90
+        && lng >= -180 && lng <= 180) {
+      return { zoom, lat, lng };
+    }
+  }
+  return null;
+}
+
+function _syncHash() {
+  if (!map) return;
+  const z   = map.getZoom().toFixed(2);
+  const lat = map.getCenter().lat.toFixed(5);
+  const lng = map.getCenter().lng.toFixed(5);
+  history.replaceState(null, '', `#${z}/${lat}/${lng}`);
+}
+
+function _initPermalink() {
+  // Synchronisation hash a chaque fin de deplacement
+  map.on('moveend', _syncHash);
+
+  // Bouton copie de lien
+  const btn = document.getElementById('btn-copy-link');
+  if (!btn) return;
+  btn.addEventListener('click', () => {
+    _syncHash(); // assure que le hash est a jour
+    navigator.clipboard.writeText(window.location.href).then(() => {
+      btn.classList.add('copied');
+      const orig = btn.textContent;
+      btn.textContent = 'Lien copie !';
+      setTimeout(() => {
+        btn.textContent = orig;
+        btn.classList.remove('copied');
+      }, 1800);
+    }).catch(() => {
+      // Fallback pour navigateurs sans Clipboard API (http, iframes)
+      const ta = document.createElement('textarea');
+      ta.value = window.location.href;
+      document.body.appendChild(ta);
+      ta.select();
+      document.execCommand('copy');
+      document.body.removeChild(ta);
+      btn.textContent = 'Lien copie !';
+      btn.classList.add('copied');
+      setTimeout(() => { btn.textContent = 'Lien'; btn.classList.remove('copied'); }, 1800);
+    });
+  });
 }
 
 async function init() {
@@ -72,10 +361,10 @@ async function init() {
     ? communeScores.reduce((a, b) => a + b, 0) / communeScores.length
     : null;
 
-  const countriesMap = new Map(worldCountries.map(c => [c.iso2, c]));
+  _countriesMap = new Map(worldCountries.map(c => [c.iso2, c]));
   if (frAvgScore != null) {
-    const frEntry = countriesMap.get('FR') || {};
-    countriesMap.set('FR', {
+    const frEntry = _countriesMap.get('FR') || {};
+    _countriesMap.set('FR', {
       ...frEntry,
       iso2: 'FR',
       name: 'France',
@@ -93,9 +382,10 @@ async function init() {
       const a2 = f.properties['ISO3166-1-Alpha-2'];
       const a3 = f.properties['ISO3166-1-Alpha-3'];
       if (a2 && a3) _iso3toIso2.set(a3, a2);
-      const cData = countriesMap.get(a2);
+      const cData = _countriesMap.get(a2);
       f.properties.color = colorFromScore(cData?.avg_score);
     }
+    _countriesGeo = countriesGeo; // conserve la reference pour recoloration Tâche 3
   }
 
   // Group cities by country ISO2 for efficient province-level PIP
@@ -104,13 +394,16 @@ async function init() {
     _citiesByCountry.get(city.country).push(city);
   }
 
+  // Tâche 4 : lire le hash initial pour positionner la carte
+  const initialView = _parseHash();
+
   map = new maplibregl.Map({
     container: 'map',
     style: _theme === 'light'
       ? 'https://tiles.openfreemap.org/styles/positron'
       : 'https://tiles.openfreemap.org/styles/dark',
-    center: [10, 20],
-    zoom: 2,
+    center: initialView ? [initialView.lng, initialView.lat] : [10, 20],
+    zoom:   initialView ? initialView.zoom : 2,
     maxZoom: 16
   });
 
@@ -167,7 +460,7 @@ async function init() {
     // 3. Country click → panel + optional France zoom
     map.on('click', 'countries-fill', (e) => {
       const iso = e.features[0].properties['ISO3166-1-Alpha-2'];
-      const data = countriesMap.get(iso);
+      const data = _countriesMap.get(iso);
       if (!data) return;
 
       const topCities = worldCities
@@ -183,6 +476,18 @@ async function init() {
         _loadFranceGeojson();
       }
     });
+
+    // Tâche 1 : legende repliable
+    _initLegend();
+
+    // Tâche 2 : tooltip
+    _initTooltip();
+
+    // Tâche 3 : selecteur de metrique
+    _initMetricSelect();
+
+    // Tâche 4 : permaliens
+    _initPermalink();
   });
 
   // Home Button
@@ -329,6 +634,13 @@ async function _loadWorldProvincesGeojson() {
     });
   }
 
+  _provincesGeo = geo; // conserve la reference pour recoloration Tâche 3
+
+  // Si une metrique non-score est deja active, appliquer immediatement aux provinces
+  if (_currentMetric !== 'score') {
+    _recolorProvinces(_currentMetric);
+  }
+
   // All PIP computation done; add source + layers, then restrict countries to zoom 0–4 (P1).
   map.addSource('world-provinces', { type: 'geojson', data: geo });
   map.addLayer({
@@ -398,6 +710,11 @@ async function _loadFranceGeojson() {
     const cData = communesData[code];
     f.properties.color = colorFromScore(cData?.score);
   });
+
+  // Si une metrique non-score est deja active, appliquer immediatement aux communes
+  if (_currentMetric !== 'score') {
+    _recolorCommunes(_currentMetric);
+  }
 
   map.addSource('communes', { type: 'geojson', data: franceGeojson });
   map.addLayer({
