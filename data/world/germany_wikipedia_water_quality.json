@@ -1,0 +1,482 @@
+[
+ {
+  "Region": "Aachen (Germany)",
+  "Parameters": {
+   "Ca_Hardness_dH": 8.5
+  }
+ },
+ {
+  "Region": "Augsburg (Germany)",
+  "Parameters": {
+   "Ca_Hardness_dH": 13.25
+  }
+ },
+ {
+  "Region": "Bergisch Gladbach (Germany)",
+  "Parameters": {
+   "Ca_Hardness_dH": 11.0
+  }
+ },
+ {
+  "Region": "Berlin (Germany)",
+  "Parameters": {
+   "Ca_Hardness_dH": 18.35
+  }
+ },
+ {
+  "Region": "Bielefeld (Germany)",
+  "Parameters": {
+   "Ca_Hardness_dH": 13.5
+  }
+ },
+ {
+  "Region": "Bochum (Germany)",
+  "Parameters": {
+   "Ca_Hardness_dH": 6.8
+  }
+ },
+ {
+  "Region": "Bonn (Germany)",
+  "Parameters": {
+   "Ca_Hardness_dH": 5.7
+  }
+ },
+ {
+  "Region": "Bottrop (Germany)",
+  "Parameters": {
+   "Ca_Hardness_dH": 11.5
+  }
+ },
+ {
+  "Region": "Braunschweig (Germany)",
+  "Parameters": {
+   "Ca_Hardness_dH": 5.2
+  }
+ },
+ {
+  "Region": "Bremen (Germany)",
+  "Parameters": {
+   "Ca_Hardness_dH": 9.65
+  }
+ },
+ {
+  "Region": "Bremerhaven (Germany)",
+  "Parameters": {
+   "Ca_Hardness_dH": 8.5
+  }
+ },
+ {
+  "Region": "Chemnitz (Germany)",
+  "Parameters": {
+   "Ca_Hardness_dH": 4.65
+  }
+ },
+ {
+  "Region": "Darmstadt (Germany)",
+  "Parameters": {
+   "Ca_Hardness_dH": 18.6
+  }
+ },
+ {
+  "Region": "Dortmund (Germany)",
+  "Parameters": {
+   "Ca_Hardness_dH": 6.45
+  }
+ },
+ {
+  "Region": "Dresden (Germany)",
+  "Parameters": {
+   "Ca_Hardness_dH": 9.15
+  }
+ },
+ {
+  "Region": "Duisburg (Germany)",
+  "Parameters": {
+   "Ca_Hardness_dH": 14.05
+  }
+ },
+ {
+  "Region": "Düsseldorf (Germany)",
+  "Parameters": {
+   "Ca_Hardness_dH": 14.0
+  }
+ },
+ {
+  "Region": "Erfurt (Germany)",
+  "Parameters": {
+   "Ca_Hardness_dH": 7.6
+  }
+ },
+ {
+  "Region": "Erlangen (Germany)",
+  "Parameters": {
+   "Ca_Hardness_dH": 12.55
+  }
+ },
+ {
+  "Region": "Essen (Germany)",
+  "Parameters": {
+   "Ca_Hardness_dH": 7.4
+  }
+ },
+ {
+  "Region": "Frankfurt am Main (Germany)",
+  "Parameters": {
+   "Ca_Hardness_dH": 12.0
+  }
+ },
+ {
+  "Region": "Freiburg im Breisgau (Germany)",
+  "Parameters": {
+   "Ca_Hardness_dH": 7.55
+  }
+ },
+ {
+  "Region": "Fürth (Germany)",
+  "Parameters": {
+   "Ca_Hardness_dH": 16.4
+  }
+ },
+ {
+  "Region": "Gelsenkirchen (Germany)",
+  "Parameters": {
+   "Ca_Hardness_dH": 9.25
+  }
+ },
+ {
+  "Region": "Göttingen (Germany)",
+  "Parameters": {
+   "Ca_Hardness_dH": 6.6
+  }
+ },
+ {
+  "Region": "Gütersloh (Germany)",
+  "Parameters": {
+   "Ca_Hardness_dH": 17.6
+  }
+ },
+ {
+  "Region": "Hagen (Germany)",
+  "Parameters": {
+   "Ca_Hardness_dH": 6.0
+  }
+ },
+ {
+  "Region": "Halle (Germany)",
+  "Parameters": {
+   "Ca_Hardness_dH": 4.2
+  }
+ },
+ {
+  "Region": "Hamburg (Germany)",
+  "Parameters": {
+   "Ca_Hardness_dH": 11.45
+  }
+ },
+ {
+  "Region": "Hamm (Germany)",
+  "Parameters": {
+   "Ca_Hardness_dH": 7.7
+  }
+ },
+ {
+  "Region": "Hannover (Germany)",
+  "Parameters": {
+   "Ca_Hardness_dH": 13.0
+  }
+ },
+ {
+  "Region": "Heidelberg (Germany)",
+  "Parameters": {
+   "Ca_Hardness_dH": 11.7
+  }
+ },
+ {
+  "Region": "Heilbronn (Germany)",
+  "Parameters": {
+   "Ca_Hardness_dH": 13.5
+  }
+ },
+ {
+  "Region": "Herne (Germany)",
+  "Parameters": {
+   "Ca_Hardness_dH": 9.05
+  }
+ },
+ {
+  "Region": "Hildesheim (Germany)",
+  "Parameters": {
+   "Ca_Hardness_dH": 2.8
+  }
+ },
+ {
+  "Region": "Ingolstadt (Germany)",
+  "Parameters": {
+   "Ca_Hardness_dH": 20.2
+  }
+ },
+ {
+  "Region": "Jena (Germany)",
+  "Parameters": {
+   "Ca_Hardness_dH": 10.95
+  }
+ },
+ {
+  "Region": "Karlsruhe (Germany)",
+  "Parameters": {
+   "Ca_Hardness_dH": 18.2
+  }
+ },
+ {
+  "Region": "Kassel (Germany)",
+  "Parameters": {
+   "Ca_Hardness_dH": 11.9
+  }
+ },
+ {
+  "Region": "Kiel (Germany)",
+  "Parameters": {
+   "Ca_Hardness_dH": 16.0
+  }
+ },
+ {
+  "Region": "Koblenz (Germany)",
+  "Parameters": {
+   "Ca_Hardness_dH": 12.65
+  }
+ },
+ {
+  "Region": "Köln (Germany)",
+  "Parameters": {
+   "Ca_Hardness_dH": 15.85
+  }
+ },
+ {
+  "Region": "Krefeld (Germany)",
+  "Parameters": {
+   "Ca_Hardness_dH": 12.9
+  }
+ },
+ {
+  "Region": "Leipzig (Germany)",
+  "Parameters": {
+   "Ca_Hardness_dH": 13.55
+  }
+ },
+ {
+  "Region": "Leverkusen (Germany)",
+  "Parameters": {
+   "Ca_Hardness_dH": 6.9
+  }
+ },
+ {
+  "Region": "Lübeck (Germany)",
+  "Parameters": {
+   "Ca_Hardness_dH": 15.5
+  }
+ },
+ {
+  "Region": "Ludwigshafen am Rhein (Germany)",
+  "Parameters": {
+   "Ca_Hardness_dH": 12.55
+  }
+ },
+ {
+  "Region": "Magdeburg (Germany)",
+  "Parameters": {
+   "Ca_Hardness_dH": 14.2
+  }
+ },
+ {
+  "Region": "Mainz (Germany)",
+  "Parameters": {
+   "Ca_Hardness_dH": 19.35
+  }
+ },
+ {
+  "Region": "Mannheim (Germany)",
+  "Parameters": {
+   "Ca_Hardness_dH": 18.5
+  }
+ },
+ {
+  "Region": "Moers (Germany)",
+  "Parameters": {
+   "Ca_Hardness_dH": 12.4
+  }
+ },
+ {
+  "Region": "Mönchengladbach (Germany)",
+  "Parameters": {
+   "Ca_Hardness_dH": 13.25
+  }
+ },
+ {
+  "Region": "Mülheim an der Ruhr (Germany)",
+  "Parameters": {
+   "Ca_Hardness_dH": 8.3
+  }
+ },
+ {
+  "Region": "München (Germany)",
+  "Parameters": {
+   "Ca_Hardness_dH": 15.8
+  }
+ },
+ {
+  "Region": "Münster (Germany)",
+  "Parameters": {
+   "Ca_Hardness_dH": 15.85
+  }
+ },
+ {
+  "Region": "Neuss (Germany)",
+  "Parameters": {
+   "Ca_Hardness_dH": 14.9
+  }
+ },
+ {
+  "Region": "Nürnberg (Germany)",
+  "Parameters": {
+   "Ca_Hardness_dH": 11.5
+  }
+ },
+ {
+  "Region": "Oberhausen (Germany)",
+  "Parameters": {
+   "Ca_Hardness_dH": 10.8
+  }
+ },
+ {
+  "Region": "Offenbach am Main (Germany)",
+  "Parameters": {
+   "Ca_Hardness_dH": 10.7
+  }
+ },
+ {
+  "Region": "Oldenburg (Germany)",
+  "Parameters": {
+   "Ca_Hardness_dH": 4.4
+  }
+ },
+ {
+  "Region": "Osnabrück (Germany)",
+  "Parameters": {
+   "Ca_Hardness_dH": 9.85
+  }
+ },
+ {
+  "Region": "Paderborn (Germany)",
+  "Parameters": {
+   "Ca_Hardness_dH": 11.1
+  }
+ },
+ {
+  "Region": "Pforzheim (Germany)",
+  "Parameters": {
+   "Ca_Hardness_dH": 8.6
+  }
+ },
+ {
+  "Region": "Potsdam (Germany)",
+  "Parameters": {
+   "Ca_Hardness_dH": 14.5
+  }
+ },
+ {
+  "Region": "Recklinghausen (Germany)",
+  "Parameters": {
+   "Ca_Hardness_dH": 11.1
+  }
+ },
+ {
+  "Region": "Regensburg (Germany)",
+  "Parameters": {
+   "Ca_Hardness_dH": 17.0
+  }
+ },
+ {
+  "Region": "Remscheid (Germany)",
+  "Parameters": {
+   "Ca_Hardness_dH": 5.0
+  }
+ },
+ {
+  "Region": "Reutlingen (Germany)",
+  "Parameters": {
+   "Ca_Hardness_dH": 13.5
+  }
+ },
+ {
+  "Region": "Rostock (Germany)",
+  "Parameters": {
+   "Ca_Hardness_dH": 18.0
+  }
+ },
+ {
+  "Region": "Saarbrücken (Germany)",
+  "Parameters": {
+   "Ca_Hardness_dH": 9.45
+  }
+ },
+ {
+  "Region": "Salzgitter (Germany)",
+  "Parameters": {
+   "Ca_Hardness_dH": 3.1
+  }
+ },
+ {
+  "Region": "Siegen (Germany)",
+  "Parameters": {
+   "Ca_Hardness_dH": 4.5
+  }
+ },
+ {
+  "Region": "Solingen (Germany)",
+  "Parameters": {
+   "Ca_Hardness_dH": 5.65
+  }
+ },
+ {
+  "Region": "Stuttgart (Germany)",
+  "Parameters": {
+   "Ca_Hardness_dH": 11.2
+  }
+ },
+ {
+  "Region": "Trier (Germany)",
+  "Parameters": {
+   "Ca_Hardness_dH": 7.5
+  }
+ },
+ {
+  "Region": "Ulm (Germany)",
+  "Parameters": {
+   "Ca_Hardness_dH": 12.7
+  }
+ },
+ {
+  "Region": "Wiesbaden (Germany)",
+  "Parameters": {
+   "Ca_Hardness_dH": 11.15
+  }
+ },
+ {
+  "Region": "Wolfsburg (Germany)",
+  "Parameters": {
+   "Ca_Hardness_dH": 6.7
+  }
+ },
+ {
+  "Region": "Wuppertal (Germany)",
+  "Parameters": {
+   "Ca_Hardness_dH": 7.9
+  }
+ },
+ {
+  "Region": "Würzburg (Germany)",
+  "Parameters": {
+   "Ca_Hardness_dH": 34.05
+  }
+ }
+]
