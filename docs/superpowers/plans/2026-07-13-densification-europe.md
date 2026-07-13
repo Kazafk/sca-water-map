@@ -86,7 +86,8 @@ Paramètres SCA cibles par ville (idéalement ≥ 4 pour éviter le badge « Don
 
 ### Phase 2 — Importeurs à fort rendement (sources structurées)
 
-#### 2a. Pays-Bas — `data/build_netherlands.py` ⚠️ BLOQUÉ sur la dureté (2026-07-13)
+#### 2a. Pays-Bas — `data/build_netherlands.py` ✅ DÉBLOQUÉ zone Vitens (2026-07-13)
+Les PDF « waterkwaliteitsoverzicht » Vitens (60 stations, parsing pypdf : Totale Hardheid °D, Waterstofcarbonaat→TAC, Ca, pH, EGV, Na, Cl) fusionnés aux stations RIVM par nom normalisé. **NL : 2 → 126 villes scorées, 99 polygones LAU.** Reste : PDFs des autres compagnies (Brabant Water, Evides, PWN, Dunea, WML…) pour couvrir le sud/ouest — le pipeline est prêt, il suffit d'ajouter leurs sources de PDFs.
 - **Trouvé et exploité** : WFS INSPIRE RIVM `inspire:drinkwaterkwaliteit` (data.rivm.nl/geo/inspire/wfs) — moyennes annuelles par station de pompage, 2013–présent, 203 stations. Le script est écrit et fonctionnel : dernière année par station, conversion RD→WGS84, affectation aux villes GeoNames ≤ 20 km → **304 villes avec pH, conductivité, sodium, chlorures**.
 - **Blocage** : la couche RIVM n'a **ni dureté, ni calcium, ni alcalinité** → `compute_sca_score` renvoie null (le score repose à 80 % sur le couple Ca/TAC). 304 villes grises = inutile ; données retirées, script conservé.
 - **Voies de déblocage** : (a) parser les PDF « waterkwaliteitsoverzicht » par station des compagnies (layout Vewin standard, lignes Hardheid totaal + Waterstofcarbonaat) — 2–3 j ; (b) reverse-engineering des lookups postcode par compagnie ; (c) décision produit : accepter un score dégradé calculé sur les seuls paramètres secondaires (plafonné bas) — à valider par l'utilisateur.
