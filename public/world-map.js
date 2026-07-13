@@ -10,7 +10,7 @@ const US_COUNTIES_GEOJSON_URL = 'https://raw.githubusercontent.com/plotly/datase
 
 // Layer architecture (bottom to top):
 // countries-fill (zoom 0-4) → world-provinces-fill (minzoom:4)
-//   → us-counties-fill (minzoom:5, USA only) → us-places-fill (minzoom:7, USA only)
+//   → us-counties-fill (zoom 5-7, USA only) → us-places-fill (minzoom:7, USA only)
 //   → eu-places-fill (minzoom:4, Europe) → communes-fill (minzoom:4, France only)
 // USA (taille continentale) : Pays → Etat → Comté → Ville ; Europe : Pays → Ville.
 
@@ -894,11 +894,13 @@ async function _loadUsCountiesGeojson() {
   }
 
   map.addSource('us-counties', { type: 'geojson', data: geo });
+  // maxzoom 7 : au-dela, seuls les polygones municipaux restent (pas de superposition)
   map.addLayer({
     id: 'us-counties-fill',
     type: 'fill',
     source: 'us-counties',
     minzoom: 5,
+    maxzoom: 7,
     paint: {
       'fill-color': ['coalesce', ['get', 'color'], 'rgba(0,0,0,0)'],
       'fill-opacity': 0.80
@@ -909,6 +911,7 @@ async function _loadUsCountiesGeojson() {
     type: 'line',
     source: 'us-counties',
     minzoom: 5,
+    maxzoom: 7,
     paint: { 'line-color': '#555', 'line-width': 0.3 }
   });
 
