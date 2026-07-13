@@ -61,6 +61,7 @@ COUNTRIES = {
     "EG": ("EGY", "ADM2"),  # markazes (365)
     "JP": ("JPN", "ADM2"),  # municipalities (1 745)
     "KR": ("KOR", "ADM2"),  # si/gun/gu (229)
+    "TR": ("TUR", "ADM1"),  # provinces = perimetres buyuksehir (81)
     "CI": ("CIV", "ADM3"),  # departements (510)
     "BO": ("BOL", "ADM3"),  # municipios (339)
     "ZA": ("ZAF", "ADM3"),  # local municipalities (213)

@@ -12,6 +12,15 @@
   }
  },
  {
+  "Region": "Zwijndrecht (Netherlands)",
+  "Parameters": {
+   "pH": 7.9795,
+   "TDS_Conductivity_uS_cm": 468.1275,
+   "Sodium_Na_mg_l": 42.7569,
+   "Chlorides_Cl_mg_l": 67.2687
+  }
+ },
+ {
   "Region": "Zutphen (Netherlands)",
   "Parameters": {
    "pH": 7.845,
@@ -21,6 +30,33 @@
    "Alkalinity_TAC_mmol_l": 2.3607,
    "Calcium_Ca_mg_l": 40.1857,
    "Ca_Hardness_dH": 7.0667
+  }
+ },
+ {
+  "Region": "Zuidwijk (Netherlands)",
+  "Parameters": {
+   "pH": 7.9626,
+   "TDS_Conductivity_uS_cm": 453.1857,
+   "Sodium_Na_mg_l": 37.3614,
+   "Chlorides_Cl_mg_l": 65.0571
+  }
+ },
+ {
+  "Region": "Zoetermeer (Netherlands)",
+  "Parameters": {
+   "pH": 8.2967,
+   "TDS_Conductivity_uS_cm": 486.0,
+   "Sodium_Na_mg_l": 50.0667,
+   "Chlorides_Cl_mg_l": 54.0
+  }
+ },
+ {
+  "Region": "Zierikzee (Netherlands)",
+  "Parameters": {
+   "pH": 7.61,
+   "TDS_Conductivity_uS_cm": 600.0,
+   "Sodium_Na_mg_l": 44.0,
+   "Chlorides_Cl_mg_l": 79.0
   }
  },
  {
@@ -60,6 +96,15 @@
   }
  },
  {
+  "Region": "Zandvoort (Netherlands)",
+  "Parameters": {
+   "pH": 8.035,
+   "TDS_Conductivity_uS_cm": 564.0,
+   "Sodium_Na_mg_l": 68.7,
+   "Chlorides_Cl_mg_l": 81.5
+  }
+ },
+ {
   "Region": "Zaltbommel (Netherlands)",
   "Parameters": {
    "pH": 7.7815,
@@ -69,6 +114,24 @@
    "Alkalinity_TAC_mmol_l": 3.0948,
    "Calcium_Ca_mg_l": 49.89,
    "Ca_Hardness_dH": 8.596
+  }
+ },
+ {
+  "Region": "Zaanstad (Netherlands)",
+  "Parameters": {
+   "pH": 8.01,
+   "TDS_Conductivity_uS_cm": 590.0,
+   "Sodium_Na_mg_l": 72.2,
+   "Chlorides_Cl_mg_l": 96.0
+  }
+ },
+ {
+  "Region": "Zaandam (Netherlands)",
+  "Parameters": {
+   "pH": 8.015,
+   "TDS_Conductivity_uS_cm": 534.5,
+   "Sodium_Na_mg_l": 62.45,
+   "Chlorides_Cl_mg_l": 77.5
   }
  },
  {
@@ -105,6 +168,24 @@
    "Alkalinity_TAC_mmol_l": 2.7578,
    "Calcium_Ca_mg_l": 48.8222,
    "Ca_Hardness_dH": 7.9
+  }
+ },
+ {
+  "Region": "Wisch (Netherlands)",
+  "Parameters": {
+   "pH": 7.8106,
+   "TDS_Conductivity_uS_cm": 452.5788,
+   "Sodium_Na_mg_l": 49.1846,
+   "Chlorides_Cl_mg_l": 27.0312
+  }
+ },
+ {
+  "Region": "Winterswijk (Netherlands)",
+  "Parameters": {
+   "pH": 7.7978,
+   "TDS_Conductivity_uS_cm": 503.454,
+   "Sodium_Na_mg_l": 65.2292,
+   "Chlorides_Cl_mg_l": 34.8
   }
  },
  {
@@ -192,6 +273,15 @@
   }
  },
  {
+  "Region": "Wassenaar (Netherlands)",
+  "Parameters": {
+   "pH": 8.45,
+   "TDS_Conductivity_uS_cm": 504.0,
+   "Sodium_Na_mg_l": 53.6333,
+   "Chlorides_Cl_mg_l": 52.3333
+  }
+ },
+ {
   "Region": "Wageningen (Netherlands)",
   "Parameters": {
    "pH": 7.8753,
@@ -201,6 +291,15 @@
    "Alkalinity_TAC_mmol_l": 1.5623,
    "Calcium_Ca_mg_l": 35.1111,
    "Ca_Hardness_dH": 5.5778
+  }
+ },
+ {
+  "Region": "Waddinxveen (Netherlands)",
+  "Parameters": {
+   "pH": 8.0084,
+   "TDS_Conductivity_uS_cm": 493.5329,
+   "Sodium_Na_mg_l": 51.1507,
+   "Chlorides_Cl_mg_l": 71.3429
   }
  },
  {
@@ -240,6 +339,42 @@
   }
  },
  {
+  "Region": "Vreewijk (Netherlands)",
+  "Parameters": {
+   "pH": 7.9626,
+   "TDS_Conductivity_uS_cm": 453.1857,
+   "Sodium_Na_mg_l": 37.3614,
+   "Chlorides_Cl_mg_l": 65.0571
+  }
+ },
+ {
+  "Region": "Voorschoten (Netherlands)",
+  "Parameters": {
+   "pH": 8.45,
+   "TDS_Conductivity_uS_cm": 504.0,
+   "Sodium_Na_mg_l": 53.6333,
+   "Chlorides_Cl_mg_l": 52.3333
+  }
+ },
+ {
+  "Region": "Voorburg (Netherlands)",
+  "Parameters": {
+   "pH": 8.45,
+   "TDS_Conductivity_uS_cm": 504.0,
+   "Sodium_Na_mg_l": 53.6333,
+   "Chlorides_Cl_mg_l": 52.3333
+  }
+ },
+ {
+  "Region": "Vlaardingen (Netherlands)",
+  "Parameters": {
+   "pH": 8.1747,
+   "TDS_Conductivity_uS_cm": 495.4,
+   "Sodium_Na_mg_l": 46.8562,
+   "Chlorides_Cl_mg_l": 74.375
+  }
+ },
+ {
   "Region": "Vianen (Netherlands)",
   "Parameters": {
    "pH": 7.8706,
@@ -261,6 +396,24 @@
    "Alkalinity_TAC_mmol_l": 4.5887,
    "Calcium_Ca_mg_l": 58.25,
    "Ca_Hardness_dH": 10.64
+  }
+ },
+ {
+  "Region": "Venlo (Netherlands)",
+  "Parameters": {
+   "pH": 7.608,
+   "TDS_Conductivity_uS_cm": 401.3,
+   "Sodium_Na_mg_l": 22.0,
+   "Chlorides_Cl_mg_l": 43.1
+  }
+ },
+ {
+  "Region": "Velsen-Zuid (Netherlands)",
+  "Parameters": {
+   "pH": 8.035,
+   "TDS_Conductivity_uS_cm": 564.0,
+   "Sodium_Na_mg_l": 68.7,
+   "Chlorides_Cl_mg_l": 81.5
   }
  },
  {
@@ -312,6 +465,15 @@
   }
  },
  {
+  "Region": "Veendam (Netherlands)",
+  "Parameters": {
+   "pH": 7.78,
+   "TDS_Conductivity_uS_cm": 410.6,
+   "Sodium_Na_mg_l": 24.4,
+   "Chlorides_Cl_mg_l": 43.0
+  }
+ },
+ {
   "Region": "Valkenswaard (Netherlands)",
   "Parameters": {
    "pH": 7.758,
@@ -345,6 +507,33 @@
    "Alkalinity_TAC_mmol_l": 2.3229,
    "Calcium_Ca_mg_l": 44.5769,
    "Ca_Hardness_dH": 7.2744
+  }
+ },
+ {
+  "Region": "Ulft (Netherlands)",
+  "Parameters": {
+   "pH": 7.811,
+   "TDS_Conductivity_uS_cm": 418.6817,
+   "Sodium_Na_mg_l": 38.8948,
+   "Chlorides_Cl_mg_l": 22.5833
+  }
+ },
+ {
+  "Region": "Uithoorn (Netherlands)",
+  "Parameters": {
+   "pH": 8.0615,
+   "TDS_Conductivity_uS_cm": 559.355,
+   "Sodium_Na_mg_l": 77.85,
+   "Chlorides_Cl_mg_l": 68.125
+  }
+ },
+ {
+  "Region": "Uitgeest (Netherlands)",
+  "Parameters": {
+   "pH": 7.985,
+   "TDS_Conductivity_uS_cm": 547.0,
+   "Sodium_Na_mg_l": 60.85,
+   "Chlorides_Cl_mg_l": 86.5
   }
  },
  {
@@ -420,6 +609,33 @@
   }
  },
  {
+  "Region": "Terneuzen (Netherlands)",
+  "Parameters": {
+   "pH": 8.03,
+   "TDS_Conductivity_uS_cm": 470.0,
+   "Sodium_Na_mg_l": 44.0,
+   "Chlorides_Cl_mg_l": 56.0
+  }
+ },
+ {
+  "Region": "Tegelen (Netherlands)",
+  "Parameters": {
+   "pH": 7.608,
+   "TDS_Conductivity_uS_cm": 401.3,
+   "Sodium_Na_mg_l": 22.0,
+   "Chlorides_Cl_mg_l": 43.1
+  }
+ },
+ {
+  "Region": "Stein (Netherlands)",
+  "Parameters": {
+   "pH": 7.782,
+   "TDS_Conductivity_uS_cm": 316.0,
+   "Sodium_Na_mg_l": 11.1,
+   "Chlorides_Cl_mg_l": 15.84
+  }
+ },
+ {
   "Region": "Steenwijk (Netherlands)",
   "Parameters": {
    "pH": 7.8028,
@@ -453,6 +669,33 @@
    "Alkalinity_TAC_mmol_l": 2.1851,
    "Calcium_Ca_mg_l": 45.3534,
    "Ca_Hardness_dH": 7.4733
+  }
+ },
+ {
+  "Region": "Stadskanaal (Netherlands)",
+  "Parameters": {
+   "pH": 7.775,
+   "TDS_Conductivity_uS_cm": 334.25,
+   "Sodium_Na_mg_l": 20.0,
+   "Chlorides_Cl_mg_l": 30.5
+  }
+ },
+ {
+  "Region": "Spijkenisse (Netherlands)",
+  "Parameters": {
+   "pH": 8.0863,
+   "TDS_Conductivity_uS_cm": 492.5333,
+   "Sodium_Na_mg_l": 45.2417,
+   "Chlorides_Cl_mg_l": 81.8333
+  }
+ },
+ {
+  "Region": "Spangen (Netherlands)",
+  "Parameters": {
+   "pH": 7.9763,
+   "TDS_Conductivity_uS_cm": 450.3833,
+   "Sodium_Na_mg_l": 36.255,
+   "Chlorides_Cl_mg_l": 66.7333
   }
  },
  {
@@ -492,6 +735,24 @@
   }
  },
  {
+  "Region": "Sliedrecht (Netherlands)",
+  "Parameters": {
+   "pH": 7.9766,
+   "TDS_Conductivity_uS_cm": 469.2886,
+   "Sodium_Na_mg_l": 42.7221,
+   "Chlorides_Cl_mg_l": 68.1643
+  }
+ },
+ {
+  "Region": "Sittard (Netherlands)",
+  "Parameters": {
+   "pH": 7.7917,
+   "TDS_Conductivity_uS_cm": 346.6667,
+   "Sodium_Na_mg_l": 21.5833,
+   "Chlorides_Cl_mg_l": 17.5333
+  }
+ },
+ {
   "Region": "Sint-Oedenrode (Netherlands)",
   "Parameters": {
    "pH": 7.8382,
@@ -513,6 +774,24 @@
    "Alkalinity_TAC_mmol_l": 3.2666,
    "Calcium_Ca_mg_l": 44.41,
    "Ca_Hardness_dH": 7.791
+  }
+ },
+ {
+  "Region": "'s-Gravenzande (Netherlands)",
+  "Parameters": {
+   "pH": 8.415,
+   "TDS_Conductivity_uS_cm": 504.0,
+   "Sodium_Na_mg_l": 53.4,
+   "Chlorides_Cl_mg_l": 52.5
+  }
+ },
+ {
+  "Region": "The Hague (Netherlands)",
+  "Parameters": {
+   "pH": 8.45,
+   "TDS_Conductivity_uS_cm": 504.0,
+   "Sodium_Na_mg_l": 53.6333,
+   "Chlorides_Cl_mg_l": 52.3333
   }
  },
  {
@@ -540,6 +819,69 @@
   }
  },
  {
+  "Region": "Schiedam (Netherlands)",
+  "Parameters": {
+   "pH": 8.0426,
+   "TDS_Conductivity_uS_cm": 458.0429,
+   "Sodium_Na_mg_l": 38.4614,
+   "Chlorides_Cl_mg_l": 64.6286
+  }
+ },
+ {
+  "Region": "Schiebroek (Netherlands)",
+  "Parameters": {
+   "pH": 7.9763,
+   "TDS_Conductivity_uS_cm": 450.3833,
+   "Sodium_Na_mg_l": 36.255,
+   "Chlorides_Cl_mg_l": 66.7333
+  }
+ },
+ {
+  "Region": "Scheveningen (Netherlands)",
+  "Parameters": {
+   "pH": 8.45,
+   "TDS_Conductivity_uS_cm": 504.0,
+   "Sodium_Na_mg_l": 53.6333,
+   "Chlorides_Cl_mg_l": 52.3333
+  }
+ },
+ {
+  "Region": "Schagen (Netherlands)",
+  "Parameters": {
+   "pH": 7.96,
+   "TDS_Conductivity_uS_cm": 504.0,
+   "Sodium_Na_mg_l": 49.5,
+   "Chlorides_Cl_mg_l": 77.0
+  }
+ },
+ {
+  "Region": "Sassenheim (Netherlands)",
+  "Parameters": {
+   "pH": 8.3233,
+   "TDS_Conductivity_uS_cm": 515.3333,
+   "Sodium_Na_mg_l": 58.1333,
+   "Chlorides_Cl_mg_l": 57.3333
+  }
+ },
+ {
+  "Region": "Rozenburg (Netherlands)",
+  "Parameters": {
+   "pH": 8.14,
+   "TDS_Conductivity_uS_cm": 471.3333,
+   "Sodium_Na_mg_l": 45.2333,
+   "Chlorides_Cl_mg_l": 56.6667
+  }
+ },
+ {
+  "Region": "Rotterdam (Netherlands)",
+  "Parameters": {
+   "pH": 7.9763,
+   "TDS_Conductivity_uS_cm": 450.3833,
+   "Sodium_Na_mg_l": 36.255,
+   "Chlorides_Cl_mg_l": 66.7333
+  }
+ },
+ {
   "Region": "Roosendaal (Netherlands)",
   "Parameters": {
    "pH": 7.945,
@@ -549,6 +891,24 @@
    "Alkalinity_TAC_mmol_l": 2.9108,
    "Calcium_Ca_mg_l": 51.94,
    "Ca_Hardness_dH": 8.4336
+  }
+ },
+ {
+  "Region": "Roermond (Netherlands)",
+  "Parameters": {
+   "pH": 7.7429,
+   "TDS_Conductivity_uS_cm": 380.0,
+   "Sodium_Na_mg_l": 18.6714,
+   "Chlorides_Cl_mg_l": 25.2
+  }
+ },
+ {
+  "Region": "Rijswijk (Netherlands)",
+  "Parameters": {
+   "pH": 8.3325,
+   "TDS_Conductivity_uS_cm": 490.5,
+   "Sodium_Na_mg_l": 50.475,
+   "Chlorides_Cl_mg_l": 53.5
   }
  },
  {
@@ -573,6 +933,24 @@
    "Alkalinity_TAC_mmol_l": 3.3678,
    "Calcium_Ca_mg_l": 53.536,
    "Ca_Hardness_dH": 9.0048
+  }
+ },
+ {
+  "Region": "Ridderkerk (Netherlands)",
+  "Parameters": {
+   "pH": 7.9795,
+   "TDS_Conductivity_uS_cm": 468.1275,
+   "Sodium_Na_mg_l": 42.7569,
+   "Chlorides_Cl_mg_l": 67.2687
+  }
+ },
+ {
+  "Region": "Rhoon (Netherlands)",
+  "Parameters": {
+   "pH": 7.9763,
+   "TDS_Conductivity_uS_cm": 450.3833,
+   "Sodium_Na_mg_l": 36.255,
+   "Chlorides_Cl_mg_l": 66.7333
   }
  },
  {
@@ -636,6 +1014,33 @@
   }
  },
  {
+  "Region": "Pijnacker (Netherlands)",
+  "Parameters": {
+   "pH": 8.3218,
+   "TDS_Conductivity_uS_cm": 505.92,
+   "Sodium_Na_mg_l": 50.725,
+   "Chlorides_Cl_mg_l": 68.3
+  }
+ },
+ {
+  "Region": "Pendrecht (Netherlands)",
+  "Parameters": {
+   "pH": 7.9626,
+   "TDS_Conductivity_uS_cm": 453.1857,
+   "Sodium_Na_mg_l": 37.3614,
+   "Chlorides_Cl_mg_l": 65.0571
+  }
+ },
+ {
+  "Region": "Papendrecht (Netherlands)",
+  "Parameters": {
+   "pH": 7.9795,
+   "TDS_Conductivity_uS_cm": 468.1275,
+   "Sodium_Na_mg_l": 42.7569,
+   "Chlorides_Cl_mg_l": 67.2687
+  }
+ },
+ {
   "Region": "Oudenbosch (Netherlands)",
   "Parameters": {
    "pH": 7.9933,
@@ -648,6 +1053,15 @@
   }
  },
  {
+  "Region": "Oud-Beijerland (Netherlands)",
+  "Parameters": {
+   "pH": 7.9763,
+   "TDS_Conductivity_uS_cm": 450.3833,
+   "Sodium_Na_mg_l": 36.255,
+   "Chlorides_Cl_mg_l": 66.7333
+  }
+ },
+ {
   "Region": "Oss (Netherlands)",
   "Parameters": {
    "pH": 7.8764,
@@ -657,6 +1071,24 @@
    "Alkalinity_TAC_mmol_l": 3.306,
    "Calcium_Ca_mg_l": 43.9725,
    "Ca_Hardness_dH": 8.218
+  }
+ },
+ {
+  "Region": "Opmeer (Netherlands)",
+  "Parameters": {
+   "pH": 7.96,
+   "TDS_Conductivity_uS_cm": 504.0,
+   "Sodium_Na_mg_l": 49.5,
+   "Chlorides_Cl_mg_l": 77.0
+  }
+ },
+ {
+  "Region": "Oosterpark (Netherlands)",
+  "Parameters": {
+   "pH": 7.82,
+   "TDS_Conductivity_uS_cm": 409.6,
+   "Sodium_Na_mg_l": 24.0,
+   "Chlorides_Cl_mg_l": 42.2
   }
  },
  {
@@ -681,6 +1113,15 @@
    "Alkalinity_TAC_mmol_l": 1.7025,
    "Calcium_Ca_mg_l": 36.6722,
    "Ca_Hardness_dH": 5.8444
+  }
+ },
+ {
+  "Region": "Ommoord (Netherlands)",
+  "Parameters": {
+   "pH": 7.9937,
+   "TDS_Conductivity_uS_cm": 467.86,
+   "Sodium_Na_mg_l": 42.5793,
+   "Chlorides_Cl_mg_l": 69.0214
   }
  },
  {
@@ -732,6 +1173,15 @@
   }
  },
  {
+  "Region": "Oegstgeest (Netherlands)",
+  "Parameters": {
+   "pH": 8.3233,
+   "TDS_Conductivity_uS_cm": 515.3333,
+   "Sodium_Na_mg_l": 58.1333,
+   "Chlorides_Cl_mg_l": 57.3333
+  }
+ },
+ {
   "Region": "Nunspeet (Netherlands)",
   "Parameters": {
    "pH": 7.9353,
@@ -753,6 +1203,33 @@
    "Alkalinity_TAC_mmol_l": 3.4426,
    "Calcium_Ca_mg_l": 48.8244,
    "Ca_Hardness_dH": 8.5991
+  }
+ },
+ {
+  "Region": "Nootdorp (Netherlands)",
+  "Parameters": {
+   "pH": 8.3325,
+   "TDS_Conductivity_uS_cm": 490.5,
+   "Sodium_Na_mg_l": 50.475,
+   "Chlorides_Cl_mg_l": 53.5
+  }
+ },
+ {
+  "Region": "Noordwijkerhout (Netherlands)",
+  "Parameters": {
+   "pH": 8.3233,
+   "TDS_Conductivity_uS_cm": 515.3333,
+   "Sodium_Na_mg_l": 58.1333,
+   "Chlorides_Cl_mg_l": 57.3333
+  }
+ },
+ {
+  "Region": "Noordwijk-Binnen (Netherlands)",
+  "Parameters": {
+   "pH": 8.3233,
+   "TDS_Conductivity_uS_cm": 515.3333,
+   "Sodium_Na_mg_l": 58.1333,
+   "Chlorides_Cl_mg_l": 57.3333
   }
  },
  {
@@ -792,6 +1269,24 @@
   }
  },
  {
+  "Region": "Nieuw-Vennep (Netherlands)",
+  "Parameters": {
+   "pH": 8.29,
+   "TDS_Conductivity_uS_cm": 521.0,
+   "Sodium_Na_mg_l": 59.65,
+   "Chlorides_Cl_mg_l": 59.5
+  }
+ },
+ {
+  "Region": "Nieuwerkerk aan den IJssel (Netherlands)",
+  "Parameters": {
+   "pH": 7.9927,
+   "TDS_Conductivity_uS_cm": 469.17,
+   "Sodium_Na_mg_l": 42.5092,
+   "Chlorides_Cl_mg_l": 70.3583
+  }
+ },
+ {
   "Region": "Nieuwegein (Netherlands)",
   "Parameters": {
    "pH": 7.893,
@@ -816,6 +1311,24 @@
   }
  },
  {
+  "Region": "Naaldwijk (Netherlands)",
+  "Parameters": {
+   "pH": 8.415,
+   "TDS_Conductivity_uS_cm": 504.0,
+   "Sodium_Na_mg_l": 53.4,
+   "Chlorides_Cl_mg_l": 52.5
+  }
+ },
+ {
+  "Region": "Monster (Netherlands)",
+  "Parameters": {
+   "pH": 8.415,
+   "TDS_Conductivity_uS_cm": 504.0,
+   "Sodium_Na_mg_l": 53.4,
+   "Chlorides_Cl_mg_l": 52.5
+  }
+ },
+ {
   "Region": "Mijdrecht (Netherlands)",
   "Parameters": {
    "pH": 7.9077,
@@ -825,6 +1338,24 @@
    "Alkalinity_TAC_mmol_l": 2.6767,
    "Calcium_Ca_mg_l": 48.1,
    "Ca_Hardness_dH": 7.4917
+  }
+ },
+ {
+  "Region": "Middelharnis (Netherlands)",
+  "Parameters": {
+   "pH": 7.86,
+   "TDS_Conductivity_uS_cm": 520.0,
+   "Sodium_Na_mg_l": 40.5,
+   "Chlorides_Cl_mg_l": 64.0
+  }
+ },
+ {
+  "Region": "Merenwijk (Netherlands)",
+  "Parameters": {
+   "pH": 8.3233,
+   "TDS_Conductivity_uS_cm": 515.3333,
+   "Sodium_Na_mg_l": 58.1333,
+   "Chlorides_Cl_mg_l": 57.3333
   }
  },
  {
@@ -840,6 +1371,15 @@
   }
  },
  {
+  "Region": "Medemblik (Netherlands)",
+  "Parameters": {
+   "pH": 8.14,
+   "TDS_Conductivity_uS_cm": 783.0,
+   "Sodium_Na_mg_l": 111.0,
+   "Chlorides_Cl_mg_l": 156.0
+  }
+ },
+ {
   "Region": "Made (Netherlands)",
   "Parameters": {
    "pH": 7.756,
@@ -849,6 +1389,15 @@
    "Alkalinity_TAC_mmol_l": 3.6424,
    "Calcium_Ca_mg_l": 55.8325,
    "Ca_Hardness_dH": 9.31
+  }
+ },
+ {
+  "Region": "Maassluis (Netherlands)",
+  "Parameters": {
+   "pH": 8.14,
+   "TDS_Conductivity_uS_cm": 471.3333,
+   "Sodium_Na_mg_l": 45.2333,
+   "Chlorides_Cl_mg_l": 56.6667
   }
  },
  {
@@ -912,6 +1461,15 @@
   }
  },
  {
+  "Region": "Lombardijen (Netherlands)",
+  "Parameters": {
+   "pH": 7.9626,
+   "TDS_Conductivity_uS_cm": 453.1857,
+   "Sodium_Na_mg_l": 37.3614,
+   "Chlorides_Cl_mg_l": 65.0571
+  }
+ },
+ {
   "Region": "Lochem (Netherlands)",
   "Parameters": {
    "pH": 7.8536,
@@ -924,6 +1482,15 @@
   }
  },
  {
+  "Region": "Lisse (Netherlands)",
+  "Parameters": {
+   "pH": 8.29,
+   "TDS_Conductivity_uS_cm": 521.0,
+   "Sodium_Na_mg_l": 59.65,
+   "Chlorides_Cl_mg_l": 59.5
+  }
+ },
+ {
   "Region": "Lindenholt (Netherlands)",
   "Parameters": {
    "pH": 7.836,
@@ -933,6 +1500,15 @@
    "Alkalinity_TAC_mmol_l": 1.6661,
    "Calcium_Ca_mg_l": 35.0833,
    "Ca_Hardness_dH": 5.6166
+  }
+ },
+ {
+  "Region": "Lichtenvoorde (Netherlands)",
+  "Parameters": {
+   "pH": 7.7976,
+   "TDS_Conductivity_uS_cm": 502.8988,
+   "Sodium_Na_mg_l": 62.9894,
+   "Chlorides_Cl_mg_l": 31.6875
   }
  },
  {
@@ -972,6 +1548,24 @@
   }
  },
  {
+  "Region": "Leiderdorp (Netherlands)",
+  "Parameters": {
+   "pH": 8.3233,
+   "TDS_Conductivity_uS_cm": 515.3333,
+   "Sodium_Na_mg_l": 58.1333,
+   "Chlorides_Cl_mg_l": 57.3333
+  }
+ },
+ {
+  "Region": "Leiden (Netherlands)",
+  "Parameters": {
+   "pH": 8.3233,
+   "TDS_Conductivity_uS_cm": 515.3333,
+   "Sodium_Na_mg_l": 58.1333,
+   "Chlorides_Cl_mg_l": 57.3333
+  }
+ },
+ {
   "Region": "Leeuwarden (Netherlands)",
   "Parameters": {
    "pH": 7.8233,
@@ -1008,6 +1602,15 @@
   }
  },
  {
+  "Region": "Leek (Netherlands)",
+  "Parameters": {
+   "pH": 7.825,
+   "TDS_Conductivity_uS_cm": 401.25,
+   "Sodium_Na_mg_l": 23.0,
+   "Chlorides_Cl_mg_l": 41.75
+  }
+ },
+ {
   "Region": "Laren (Netherlands)",
   "Parameters": {
    "pH": 7.7846,
@@ -1020,6 +1623,15 @@
   }
  },
  {
+  "Region": "Krimpen aan den IJssel (Netherlands)",
+  "Parameters": {
+   "pH": 7.9795,
+   "TDS_Conductivity_uS_cm": 468.1275,
+   "Sodium_Na_mg_l": 42.7569,
+   "Chlorides_Cl_mg_l": 67.2687
+  }
+ },
+ {
   "Region": "Korvel (Netherlands)",
   "Parameters": {
    "pH": 7.8,
@@ -1029,6 +1641,42 @@
    "Alkalinity_TAC_mmol_l": 3.1504,
    "Calcium_Ca_mg_l": 47.5438,
    "Ca_Hardness_dH": 8.022
+  }
+ },
+ {
+  "Region": "Korrewegwijk (Netherlands)",
+  "Parameters": {
+   "pH": 7.82,
+   "TDS_Conductivity_uS_cm": 409.6,
+   "Sodium_Na_mg_l": 24.0,
+   "Chlorides_Cl_mg_l": 42.2
+  }
+ },
+ {
+  "Region": "Klazienaveen (Netherlands)",
+  "Parameters": {
+   "pH": 7.7,
+   "TDS_Conductivity_uS_cm": 376.75,
+   "Sodium_Na_mg_l": 20.25,
+   "Chlorides_Cl_mg_l": 38.0
+  }
+ },
+ {
+  "Region": "Kerkrade (Netherlands)",
+  "Parameters": {
+   "pH": 7.84,
+   "TDS_Conductivity_uS_cm": 360.0,
+   "Sodium_Na_mg_l": 39.3,
+   "Chlorides_Cl_mg_l": 16.7
+  }
+ },
+ {
+  "Region": "Katwijk aan Zee (Netherlands)",
+  "Parameters": {
+   "pH": 8.3233,
+   "TDS_Conductivity_uS_cm": 515.3333,
+   "Sodium_Na_mg_l": 58.1333,
+   "Chlorides_Cl_mg_l": 57.3333
   }
  },
  {
@@ -1080,6 +1728,15 @@
   }
  },
  {
+  "Region": "IJmuiden (Netherlands)",
+  "Parameters": {
+   "pH": 8.035,
+   "TDS_Conductivity_uS_cm": 564.0,
+   "Sodium_Na_mg_l": 68.7,
+   "Chlorides_Cl_mg_l": 81.5
+  }
+ },
+ {
   "Region": "Huizen (Netherlands)",
   "Parameters": {
    "pH": 7.7705,
@@ -1116,6 +1773,24 @@
   }
  },
  {
+  "Region": "Hoorn (Netherlands)",
+  "Parameters": {
+   "pH": 8.14,
+   "TDS_Conductivity_uS_cm": 783.0,
+   "Sodium_Na_mg_l": 111.0,
+   "Chlorides_Cl_mg_l": 156.0
+  }
+ },
+ {
+  "Region": "Hoogvliet (Netherlands)",
+  "Parameters": {
+   "pH": 8.0193,
+   "TDS_Conductivity_uS_cm": 463.4325,
+   "Sodium_Na_mg_l": 42.525,
+   "Chlorides_Cl_mg_l": 73.375
+  }
+ },
+ {
   "Region": "Hoogland (Netherlands)",
   "Parameters": {
    "pH": 7.8017,
@@ -1125,6 +1800,24 @@
    "Alkalinity_TAC_mmol_l": 2.0124,
    "Calcium_Ca_mg_l": 40.918,
    "Ca_Hardness_dH": 6.6026
+  }
+ },
+ {
+  "Region": "Hoogkerk (Netherlands)",
+  "Parameters": {
+   "pH": 7.82,
+   "TDS_Conductivity_uS_cm": 409.6,
+   "Sodium_Na_mg_l": 24.0,
+   "Chlorides_Cl_mg_l": 42.2
+  }
+ },
+ {
+  "Region": "Hoogezand (Netherlands)",
+  "Parameters": {
+   "pH": 7.8,
+   "TDS_Conductivity_uS_cm": 435.25,
+   "Sodium_Na_mg_l": 26.75,
+   "Chlorides_Cl_mg_l": 47.5
   }
  },
  {
@@ -1140,6 +1833,15 @@
   }
  },
  {
+  "Region": "Hoofddorp (Netherlands)",
+  "Parameters": {
+   "pH": 8.06,
+   "TDS_Conductivity_uS_cm": 538.0,
+   "Sodium_Na_mg_l": 65.2,
+   "Chlorides_Cl_mg_l": 67.0
+  }
+ },
+ {
   "Region": "Hoge Vucht (Netherlands)",
   "Parameters": {
    "pH": 7.8967,
@@ -1149,6 +1851,15 @@
    "Alkalinity_TAC_mmol_l": 3.2592,
    "Calcium_Ca_mg_l": 52.13,
    "Ca_Hardness_dH": 8.7827
+  }
+ },
+ {
+  "Region": "Hoensbroek (Netherlands)",
+  "Parameters": {
+   "pH": 7.766,
+   "TDS_Conductivity_uS_cm": 330.0,
+   "Sodium_Na_mg_l": 21.1,
+   "Chlorides_Cl_mg_l": 14.24
   }
  },
  {
@@ -1164,6 +1875,15 @@
   }
  },
  {
+  "Region": "Hillegom (Netherlands)",
+  "Parameters": {
+   "pH": 8.29,
+   "TDS_Conductivity_uS_cm": 521.0,
+   "Sodium_Na_mg_l": 59.65,
+   "Chlorides_Cl_mg_l": 59.5
+  }
+ },
+ {
   "Region": "Hengelo (Netherlands)",
   "Parameters": {
    "pH": 7.8031,
@@ -1173,6 +1893,15 @@
    "Alkalinity_TAC_mmol_l": 2.8504,
    "Calcium_Ca_mg_l": 47.8167,
    "Ca_Hardness_dH": 8.5533
+  }
+ },
+ {
+  "Region": "Hendrik-Ido-Ambacht (Netherlands)",
+  "Parameters": {
+   "pH": 7.9795,
+   "TDS_Conductivity_uS_cm": 468.1275,
+   "Sodium_Na_mg_l": 42.7569,
+   "Chlorides_Cl_mg_l": 67.2687
   }
  },
  {
@@ -1188,6 +1917,24 @@
   }
  },
  {
+  "Region": "Hellevoetsluis (Netherlands)",
+  "Parameters": {
+   "pH": 7.86,
+   "TDS_Conductivity_uS_cm": 520.0,
+   "Sodium_Na_mg_l": 40.5,
+   "Chlorides_Cl_mg_l": 64.0
+  }
+ },
+ {
+  "Region": "Heiloo (Netherlands)",
+  "Parameters": {
+   "pH": 7.985,
+   "TDS_Conductivity_uS_cm": 547.0,
+   "Sodium_Na_mg_l": 60.85,
+   "Chlorides_Cl_mg_l": 86.5
+  }
+ },
+ {
   "Region": "Heesch (Netherlands)",
   "Parameters": {
    "pH": 7.8859,
@@ -1200,6 +1947,24 @@
   }
  },
  {
+  "Region": "Heerlen (Netherlands)",
+  "Parameters": {
+   "pH": 7.71,
+   "TDS_Conductivity_uS_cm": 370.0,
+   "Sodium_Na_mg_l": 28.9333,
+   "Chlorides_Cl_mg_l": 15.8
+  }
+ },
+ {
+  "Region": "Heerhugowaard (Netherlands)",
+  "Parameters": {
+   "pH": 7.96,
+   "TDS_Conductivity_uS_cm": 504.0,
+   "Sodium_Na_mg_l": 49.5,
+   "Chlorides_Cl_mg_l": 77.0
+  }
+ },
+ {
   "Region": "Heerenveen (Netherlands)",
   "Parameters": {
    "pH": 7.725,
@@ -1209,6 +1974,24 @@
    "Alkalinity_TAC_mmol_l": 3.6109,
    "Calcium_Ca_mg_l": 36.3333,
    "Ca_Hardness_dH": 6.75
+  }
+ },
+ {
+  "Region": "Heemstede (Netherlands)",
+  "Parameters": {
+   "pH": 8.035,
+   "TDS_Conductivity_uS_cm": 564.0,
+   "Sodium_Na_mg_l": 68.7,
+   "Chlorides_Cl_mg_l": 81.5
+  }
+ },
+ {
+  "Region": "Heemskerk (Netherlands)",
+  "Parameters": {
+   "pH": 7.985,
+   "TDS_Conductivity_uS_cm": 547.0,
+   "Sodium_Na_mg_l": 60.85,
+   "Chlorides_Cl_mg_l": 86.5
   }
  },
  {
@@ -1260,6 +2043,15 @@
   }
  },
  {
+  "Region": "Haarlem (Netherlands)",
+  "Parameters": {
+   "pH": 8.035,
+   "TDS_Conductivity_uS_cm": 564.0,
+   "Sodium_Na_mg_l": 68.7,
+   "Chlorides_Cl_mg_l": 81.5
+  }
+ },
+ {
   "Region": "Haaksbergen (Netherlands)",
   "Parameters": {
    "pH": 7.7959,
@@ -1269,6 +2061,42 @@
    "Alkalinity_TAC_mmol_l": 2.6968,
    "Calcium_Ca_mg_l": 46.2111,
    "Ca_Hardness_dH": 8.2111
+  }
+ },
+ {
+  "Region": "Groot IJsselmonde (Netherlands)",
+  "Parameters": {
+   "pH": 7.9795,
+   "TDS_Conductivity_uS_cm": 468.1275,
+   "Sodium_Na_mg_l": 42.7569,
+   "Chlorides_Cl_mg_l": 67.2687
+  }
+ },
+ {
+  "Region": "Groningen (Netherlands)",
+  "Parameters": {
+   "pH": 7.82,
+   "TDS_Conductivity_uS_cm": 409.6,
+   "Sodium_Na_mg_l": 24.0,
+   "Chlorides_Cl_mg_l": 42.2
+  }
+ },
+ {
+  "Region": "Groesbeek (Netherlands)",
+  "Parameters": {
+   "pH": 7.8098,
+   "TDS_Conductivity_uS_cm": 314.436,
+   "Sodium_Na_mg_l": 14.02,
+   "Chlorides_Cl_mg_l": 20.95
+  }
+ },
+ {
+  "Region": "Groenlo (Netherlands)",
+  "Parameters": {
+   "pH": 7.7987,
+   "TDS_Conductivity_uS_cm": 507.3129,
+   "Sodium_Na_mg_l": 66.245,
+   "Chlorides_Cl_mg_l": 32.5
   }
  },
  {
@@ -1332,6 +2160,15 @@
   }
  },
  {
+  "Region": "Goedereede (Netherlands)",
+  "Parameters": {
+   "pH": 7.72,
+   "TDS_Conductivity_uS_cm": 580.0,
+   "Sodium_Na_mg_l": 38.0,
+   "Chlorides_Cl_mg_l": 67.0
+  }
+ },
+ {
   "Region": "Glanerbrug (Netherlands)",
   "Parameters": {
    "pH": 7.7903,
@@ -1344,6 +2181,15 @@
   }
  },
  {
+  "Region": "Gennep (Netherlands)",
+  "Parameters": {
+   "pH": 7.8557,
+   "TDS_Conductivity_uS_cm": 282.0167,
+   "Sodium_Na_mg_l": 13.6833,
+   "Chlorides_Cl_mg_l": 17.5833
+  }
+ },
+ {
   "Region": "Gemert (Netherlands)",
   "Parameters": {
    "pH": 7.772,
@@ -1353,6 +2199,15 @@
    "Alkalinity_TAC_mmol_l": 3.7459,
    "Calcium_Ca_mg_l": 49.738,
    "Ca_Hardness_dH": 8.9376
+  }
+ },
+ {
+  "Region": "Geleen (Netherlands)",
+  "Parameters": {
+   "pH": 7.7917,
+   "TDS_Conductivity_uS_cm": 346.6667,
+   "Sodium_Na_mg_l": 21.5833,
+   "Chlorides_Cl_mg_l": 17.5333
   }
  },
  {
@@ -1425,6 +2280,24 @@
    "Alkalinity_TAC_mmol_l": 2.857,
    "Calcium_Ca_mg_l": 48.9167,
    "Ca_Hardness_dH": 8.6556
+  }
+ },
+ {
+  "Region": "Enkhuizen (Netherlands)",
+  "Parameters": {
+   "pH": 8.14,
+   "TDS_Conductivity_uS_cm": 783.0,
+   "Sodium_Na_mg_l": 111.0,
+   "Chlorides_Cl_mg_l": 156.0
+  }
+ },
+ {
+  "Region": "Emmen (Netherlands)",
+  "Parameters": {
+   "pH": 7.7,
+   "TDS_Conductivity_uS_cm": 376.75,
+   "Sodium_Na_mg_l": 20.25,
+   "Chlorides_Cl_mg_l": 38.0
   }
  },
  {
@@ -1572,6 +2445,15 @@
   }
  },
  {
+  "Region": "Dordrecht (Netherlands)",
+  "Parameters": {
+   "pH": 7.9795,
+   "TDS_Conductivity_uS_cm": 468.1275,
+   "Sodium_Na_mg_l": 42.7569,
+   "Chlorides_Cl_mg_l": 67.2687
+  }
+ },
+ {
   "Region": "Doorn (Netherlands)",
   "Parameters": {
    "pH": 7.8547,
@@ -1605,6 +2487,15 @@
    "Alkalinity_TAC_mmol_l": 2.1359,
    "Calcium_Ca_mg_l": 41.3667,
    "Ca_Hardness_dH": 7.8334
+  }
+ },
+ {
+  "Region": "Doetinchem (Netherlands)",
+  "Parameters": {
+   "pH": 7.8376,
+   "TDS_Conductivity_uS_cm": 442.6189,
+   "Sodium_Na_mg_l": 45.1801,
+   "Chlorides_Cl_mg_l": 30.6833
   }
  },
  {
@@ -1680,6 +2571,24 @@
   }
  },
  {
+  "Region": "De Lier (Netherlands)",
+  "Parameters": {
+   "pH": 8.2767,
+   "TDS_Conductivity_uS_cm": 489.3333,
+   "Sodium_Na_mg_l": 49.9333,
+   "Chlorides_Cl_mg_l": 55.3333
+  }
+ },
+ {
+  "Region": "Delft (Netherlands)",
+  "Parameters": {
+   "pH": 8.266,
+   "TDS_Conductivity_uS_cm": 484.4,
+   "Sodium_Na_mg_l": 48.98,
+   "Chlorides_Cl_mg_l": 55.0
+  }
+ },
+ {
   "Region": "Dedemsvaart (Netherlands)",
   "Parameters": {
    "pH": 7.7338,
@@ -1728,6 +2637,42 @@
   }
  },
  {
+  "Region": "Coevorden (Netherlands)",
+  "Parameters": {
+   "pH": 7.6667,
+   "TDS_Conductivity_uS_cm": 351.5,
+   "Sodium_Na_mg_l": 18.2833,
+   "Chlorides_Cl_mg_l": 32.3333
+  }
+ },
+ {
+  "Region": "Castricum (Netherlands)",
+  "Parameters": {
+   "pH": 7.985,
+   "TDS_Conductivity_uS_cm": 547.0,
+   "Sodium_Na_mg_l": 60.85,
+   "Chlorides_Cl_mg_l": 86.5
+  }
+ },
+ {
+  "Region": "Carnisse (Netherlands)",
+  "Parameters": {
+   "pH": 7.9626,
+   "TDS_Conductivity_uS_cm": 453.1857,
+   "Sodium_Na_mg_l": 37.3614,
+   "Chlorides_Cl_mg_l": 65.0571
+  }
+ },
+ {
+  "Region": "Capelle aan den IJssel (Netherlands)",
+  "Parameters": {
+   "pH": 7.9795,
+   "TDS_Conductivity_uS_cm": 468.1275,
+   "Sodium_Na_mg_l": 42.7569,
+   "Chlorides_Cl_mg_l": 67.2687
+  }
+ },
+ {
   "Region": "Bussum (Netherlands)",
   "Parameters": {
    "pH": 7.7858,
@@ -1737,6 +2682,15 @@
    "Alkalinity_TAC_mmol_l": 2.1871,
    "Calcium_Ca_mg_l": 44.1125,
    "Ca_Hardness_dH": 6.9833
+  }
+ },
+ {
+  "Region": "Brunssum (Netherlands)",
+  "Parameters": {
+   "pH": 7.7917,
+   "TDS_Conductivity_uS_cm": 346.6667,
+   "Sodium_Na_mg_l": 21.5833,
+   "Chlorides_Cl_mg_l": 17.5333
   }
  },
  {
@@ -1788,6 +2742,33 @@
   }
  },
  {
+  "Region": "Boxmeer (Netherlands)",
+  "Parameters": {
+   "pH": 7.7742,
+   "TDS_Conductivity_uS_cm": 316.5125,
+   "Sodium_Na_mg_l": 15.7625,
+   "Chlorides_Cl_mg_l": 22.1875
+  }
+ },
+ {
+  "Region": "Boskoop (Netherlands)",
+  "Parameters": {
+   "pH": 8.0603,
+   "TDS_Conductivity_uS_cm": 554.1433,
+   "Sodium_Na_mg_l": 74.8417,
+   "Chlorides_Cl_mg_l": 72.3333
+  }
+ },
+ {
+  "Region": "Borssele (Netherlands)",
+  "Parameters": {
+   "pH": 8.03,
+   "TDS_Conductivity_uS_cm": 470.0,
+   "Sodium_Na_mg_l": 44.0,
+   "Chlorides_Cl_mg_l": 56.0
+  }
+ },
+ {
   "Region": "Borne (Netherlands)",
   "Parameters": {
    "pH": 7.8583,
@@ -1824,6 +2805,33 @@
   }
  },
  {
+  "Region": "Bloemhof (Netherlands)",
+  "Parameters": {
+   "pH": 7.9626,
+   "TDS_Conductivity_uS_cm": 453.1857,
+   "Sodium_Na_mg_l": 37.3614,
+   "Chlorides_Cl_mg_l": 65.0571
+  }
+ },
+ {
+  "Region": "Blerick (Netherlands)",
+  "Parameters": {
+   "pH": 7.608,
+   "TDS_Conductivity_uS_cm": 401.3,
+   "Sodium_Na_mg_l": 22.0,
+   "Chlorides_Cl_mg_l": 43.1
+  }
+ },
+ {
+  "Region": "Bleiswijk (Netherlands)",
+  "Parameters": {
+   "pH": 8.0413,
+   "TDS_Conductivity_uS_cm": 457.7167,
+   "Sodium_Na_mg_l": 38.2717,
+   "Chlorides_Cl_mg_l": 65.4
+  }
+ },
+ {
   "Region": "Bilthoven (Netherlands)",
   "Parameters": {
    "pH": 7.8124,
@@ -1833,6 +2841,15 @@
    "Alkalinity_TAC_mmol_l": 2.3056,
    "Calcium_Ca_mg_l": 43.2521,
    "Ca_Hardness_dH": 7.0208
+  }
+ },
+ {
+  "Region": "Beverwijk (Netherlands)",
+  "Parameters": {
+   "pH": 8.035,
+   "TDS_Conductivity_uS_cm": 564.0,
+   "Sodium_Na_mg_l": 68.7,
+   "Chlorides_Cl_mg_l": 81.5
   }
  },
  {
@@ -1860,6 +2877,15 @@
   }
  },
  {
+  "Region": "Bergschenhoek (Netherlands)",
+  "Parameters": {
+   "pH": 8.0354,
+   "TDS_Conductivity_uS_cm": 458.0429,
+   "Sodium_Na_mg_l": 38.9471,
+   "Chlorides_Cl_mg_l": 64.7714
+  }
+ },
+ {
   "Region": "Bergeijk (Netherlands)",
   "Parameters": {
    "pH": 7.83,
@@ -1881,6 +2907,24 @@
    "Alkalinity_TAC_mmol_l": 2.9108,
    "Calcium_Ca_mg_l": 51.94,
    "Ca_Hardness_dH": 8.4336
+  }
+ },
+ {
+  "Region": "Bergen (Netherlands)",
+  "Parameters": {
+   "pH": 7.985,
+   "TDS_Conductivity_uS_cm": 547.0,
+   "Sodium_Na_mg_l": 60.85,
+   "Chlorides_Cl_mg_l": 86.5
+  }
+ },
+ {
+  "Region": "Benthuizen (Netherlands)",
+  "Parameters": {
+   "pH": 8.2967,
+   "TDS_Conductivity_uS_cm": 486.0,
+   "Sodium_Na_mg_l": 50.0667,
+   "Chlorides_Cl_mg_l": 54.0
   }
  },
  {
@@ -1920,6 +2964,24 @@
   }
  },
  {
+  "Region": "Barendrecht (Netherlands)",
+  "Parameters": {
+   "pH": 7.9626,
+   "TDS_Conductivity_uS_cm": 453.1857,
+   "Sodium_Na_mg_l": 37.3614,
+   "Chlorides_Cl_mg_l": 65.0571
+  }
+ },
+ {
+  "Region": "Badhoevedorp (Netherlands)",
+  "Parameters": {
+   "pH": 8.04,
+   "TDS_Conductivity_uS_cm": 508.5,
+   "Sodium_Na_mg_l": 58.95,
+   "Chlorides_Cl_mg_l": 63.0
+  }
+ },
+ {
   "Region": "Baarn (Netherlands)",
   "Parameters": {
    "pH": 7.7903,
@@ -1929,6 +2991,15 @@
    "Alkalinity_TAC_mmol_l": 2.0458,
    "Calcium_Ca_mg_l": 40.8445,
    "Ca_Hardness_dH": 6.5972
+  }
+ },
+ {
+  "Region": "Assendelft (Netherlands)",
+  "Parameters": {
+   "pH": 8.01,
+   "TDS_Conductivity_uS_cm": 590.0,
+   "Sodium_Na_mg_l": 72.2,
+   "Chlorides_Cl_mg_l": 96.0
   }
  },
  {
@@ -1968,6 +3039,24 @@
   }
  },
  {
+  "Region": "Amsterdam (Netherlands)",
+  "Parameters": {
+   "pH": 8.02,
+   "TDS_Conductivity_uS_cm": 479.0,
+   "Sodium_Na_mg_l": 52.7,
+   "Chlorides_Cl_mg_l": 59.0
+  }
+ },
+ {
+  "Region": "Amstelveen (Netherlands)",
+  "Parameters": {
+   "pH": 8.02,
+   "TDS_Conductivity_uS_cm": 479.0,
+   "Sodium_Na_mg_l": 52.7,
+   "Chlorides_Cl_mg_l": 59.0
+  }
+ },
+ {
   "Region": "Amersfoort (Netherlands)",
   "Parameters": {
    "pH": 7.8006,
@@ -1977,6 +3066,15 @@
    "Alkalinity_TAC_mmol_l": 2.0553,
    "Calcium_Ca_mg_l": 41.9389,
    "Ca_Hardness_dH": 6.7778
+  }
+ },
+ {
+  "Region": "Alphen aan den Rijn (Netherlands)",
+  "Parameters": {
+   "pH": 8.3115,
+   "TDS_Conductivity_uS_cm": 571.855,
+   "Sodium_Na_mg_l": 78.55,
+   "Chlorides_Cl_mg_l": 64.625
   }
  },
  {
@@ -2001,6 +3099,42 @@
    "Alkalinity_TAC_mmol_l": 2.4704,
    "Calcium_Ca_mg_l": 47.0241,
    "Ca_Hardness_dH": 8.1445
+  }
+ },
+ {
+  "Region": "Alkmaar (Netherlands)",
+  "Parameters": {
+   "pH": 7.985,
+   "TDS_Conductivity_uS_cm": 547.0,
+   "Sodium_Na_mg_l": 60.85,
+   "Chlorides_Cl_mg_l": 86.5
+  }
+ },
+ {
+  "Region": "Alblasserdam (Netherlands)",
+  "Parameters": {
+   "pH": 7.9795,
+   "TDS_Conductivity_uS_cm": 468.1275,
+   "Sodium_Na_mg_l": 42.7569,
+   "Chlorides_Cl_mg_l": 67.2687
+  }
+ },
+ {
+  "Region": "Aalten (Netherlands)",
+  "Parameters": {
+   "pH": 7.7965,
+   "TDS_Conductivity_uS_cm": 498.2117,
+   "Sodium_Na_mg_l": 61.0577,
+   "Chlorides_Cl_mg_l": 33.3333
+  }
+ },
+ {
+  "Region": "Aalsmeer (Netherlands)",
+  "Parameters": {
+   "pH": 8.061,
+   "TDS_Conductivity_uS_cm": 552.2367,
+   "Sodium_Na_mg_l": 73.6333,
+   "Chlorides_Cl_mg_l": 67.75
   }
  },
  {
@@ -2049,6 +3183,51 @@
    "Alkalinity_TAC_mmol_l": 2.282,
    "Calcium_Ca_mg_l": 43.6306,
    "Ca_Hardness_dH": 7.1583
+  }
+ },
+ {
+  "Region": "Berkel en Rodenrijs (Netherlands)",
+  "Parameters": {
+   "pH": 8.0354,
+   "TDS_Conductivity_uS_cm": 458.0429,
+   "Sodium_Na_mg_l": 38.9471,
+   "Chlorides_Cl_mg_l": 64.7714
+  }
+ },
+ {
+  "Region": "Ypenburg (Netherlands)",
+  "Parameters": {
+   "pH": 8.3325,
+   "TDS_Conductivity_uS_cm": 490.5,
+   "Sodium_Na_mg_l": 50.475,
+   "Chlorides_Cl_mg_l": 53.5
+  }
+ },
+ {
+  "Region": "Velserbroek (Netherlands)",
+  "Parameters": {
+   "pH": 8.035,
+   "TDS_Conductivity_uS_cm": 564.0,
+   "Sodium_Na_mg_l": 68.7,
+   "Chlorides_Cl_mg_l": 81.5
+  }
+ },
+ {
+  "Region": "'s-Gravenland (Netherlands)",
+  "Parameters": {
+   "pH": 7.9795,
+   "TDS_Conductivity_uS_cm": 468.1275,
+   "Sodium_Na_mg_l": 42.7569,
+   "Chlorides_Cl_mg_l": 67.2687
+  }
+ },
+ {
+  "Region": "Marsdijk (Netherlands)",
+  "Parameters": {
+   "pH": 7.75,
+   "TDS_Conductivity_uS_cm": 387.0,
+   "Sodium_Na_mg_l": 21.375,
+   "Chlorides_Cl_mg_l": 35.75
   }
  },
  {

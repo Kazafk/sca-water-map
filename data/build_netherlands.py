@@ -267,8 +267,8 @@ for city in nl_cities:
     for s in nearby:
         for k, v in s["params"].items():
             agg.setdefault(k, []).append(v)
-    if "Ca_Hardness_dH" not in agg:
-        continue  # SCA score would be null without the hardness chart
+    # Les villes sans dureté sont émises quand même : build_world leur
+    # attribue un score dégradé plafonné (affiché hachuré sur la carte).
     parameters = {k: round(sum(v) / len(v), 4) for k, v in agg.items()}
     if len(parameters) < 3:
         continue
@@ -276,5 +276,6 @@ for city in nl_cities:
 
 with open(OUT_JSON, "w", encoding="utf-8") as f:
     json.dump(entries, f, indent=1, ensure_ascii=False)
+n_hard = sum(1 for e in entries if "Ca_Hardness_dH" in e["Parameters"])
 print(f"Wrote {OUT_JSON}: {len(entries)} cities (pop >= {MIN_POPULATION}, "
-      f"hardness available)")
+      f"{n_hard} with hardness, {len(entries) - n_hard} degraded)")

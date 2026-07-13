@@ -420,12 +420,18 @@ def score_chart(ca, alk):
     return None
 
 
+# Plafond du score dégradé : sans dureté ni alcalinité, la grille SCA (80 %
+# du score) est incalculable ; on note sur les seuls paramètres secondaires,
+# plafonné bas, et on marque l'entrée (hachures + badge côté client).
+DEGRADED_CAP = 0.50
+
+
 def compute_sca_score(params):
+    """Retourne (score, degraded) — degraded=True si calculé sans la grille
+    dureté/alcalinité (score estimé sur les paramètres secondaires)."""
     ca = params.get('ca_hardness')
     alk = params.get('alkalinity')
     sc = score_chart(ca, alk)
-    if sc is None:
-        return None
 
     secondaries = [
         (score_range(params.get('ph'), 6.5, 7.5, 0, 14), 0.08),
@@ -438,6 +444,12 @@ def compute_sca_score(params):
     total_w = sum(x[1] for x in avail)
     sec_score = sum(x[0] * x[1] for x in avail) / total_w if total_w > 0 else 0.0
 
+    if sc is None:
+        # Score dégradé : au moins 2 paramètres secondaires requis
+        if len(avail) < 2:
+            return None, False
+        return round(DEGRADED_CAP * sec_score, 4), True
+
     final_score = 0.80 * sc + 0.20 * sec_score
 
     # Capped score logic
@@ -446,7 +458,7 @@ def compute_sca_score(params):
     if params.get('na') is None:
         final_score = min(final_score, 0.95)
 
-    return round(final_score, 4)
+    return round(final_score, 4), False
 
 
 # ---------------------------------------------------------------------------
@@ -630,12 +642,15 @@ for filename in os.listdir(TAP_WATER_DB_DIR):
             'cl': cl,
         }
 
-        score = compute_sca_score(params)
+        score, degraded = compute_sca_score(params)
         valid_params = sum(1 for v in params.values() if v is not None)
+        # Une entrée avec grille dureté/alcalinité prime toujours sur une
+        # entrée dégradée, même plus riche en paramètres secondaires.
+        rank = (0 if degraded else 1, valid_params)
         city_id = f"{normalize_name(geo_info['name'])}-{iso2}"
 
-        if city_id not in cities_data or cities_data[city_id]['_valid_params'] < valid_params:
-            cities_data[city_id] = {
+        if city_id not in cities_data or cities_data[city_id]['_rank'] < rank:
+            entry = {
                 'id': city_id,
                 'name': geo_info['name'],
                 'country': iso2,
@@ -644,12 +659,15 @@ for filename in os.listdir(TAP_WATER_DB_DIR):
                 'lng': geo_info['lng'],
                 'score': score,
                 'params': params,
-                '_valid_params': valid_params,
+                '_rank': rank,
             }
+            if degraded and score is not None:
+                entry['deg'] = 1
+            cities_data[city_id] = entry
 
 # Remove internal keys
 for v in cities_data.values():
-    del v['_valid_params']
+    del v['_rank']
 
 # Write misses CSV
 with open(MISSES_CSV, 'w', newline='', encoding='utf-8') as f:

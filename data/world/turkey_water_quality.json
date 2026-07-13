@@ -1,0 +1,11 @@
+[
+ {
+  "Region": "Ankara (Türkiye)",
+  "Parameters": {
+   "TDS_Conductivity_uS_cm": 1041.0,
+   "Chlorides_Cl_mg_l": 168.2,
+   "pH": 7.35,
+   "Sodium_Na_mg_l": 121.2
+  }
+ }
+]
