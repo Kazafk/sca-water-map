@@ -9,16 +9,22 @@ const PROVINCES_GEOJSON_URL = 'https://raw.githubusercontent.com/nvkelso/natural
 const US_COUNTIES_GEOJSON_URL = 'https://raw.githubusercontent.com/plotly/datasets/master/geojson-counties-fips.json';
 
 // Layer architecture (bottom to top):
-// Pays "normaux" (Europe, petits pays) : countries-fill (0-4)
+// Pays "normaux" (Europe, petits pays, NOPROV_4) : countries-fill (0-4)
 //   → world-provinces-fill (4+) → eu-places-fill (4+) → communes-fill (4+, FR)
-// Pays continentaux (BIG_ISO2, >= ~1,2 M km²) — hiérarchie stricte sans
+// Pays continentaux AVEC provinces NE (BIG_ISO2) — hiérarchie stricte sans
 // superposition : big-countries-fill (0-3) → big-provinces-fill (3-5)
 //   → us-counties-fill (4-5, USA) → us-places-fill / big-places-fill (5+)
+// Pays continentaux SANS provinces NE : NOPROV_4 (MX/AR/PE) = pays 0-4 puis
+// villes 4+ ; NOPROV_5 (DZ/CD) = noprov5-countries-fill 0-5 puis villes 5+.
 
-// Pays de taille continentale (>= ~1,2 M km²) et leurs codes ISO3 (provinces
-// Natural Earth). Un seul réglage : ajouter un pays ici suffit.
-const BIG_ISO2 = ['US', 'CN', 'RU', 'CA', 'BR', 'AU', 'AR', 'MX', 'DZ', 'CD', 'ZA', 'PE'];
+// Pays de taille continentale (>= ~1,2 M km²) AVEC provinces dans Natural
+// Earth 1:50m : hiérarchie Pays (0-3) → Provinces (3-5) → Villes (5+).
+const BIG_ISO2 = ['US', 'CN', 'RU', 'CA', 'BR', 'AU', 'ZA'];
 const BIG_IN_ISO2 = ['in', ['get', 'iso2'], ['literal', BIG_ISO2]];
+// Pays continentaux SANS provinces NE 1:50m (AR/MX/DZ/CD/PE : 0 polygone
+// admin-1) : le choroplèthe pays reste affiché jusqu'à l'arrivée des villes.
+const NOPROV_4 = ['MX', 'AR', 'PE'];  // polygones denses → villes dès 4
+const NOPROV_5 = ['DZ', 'CD'];        // données éparses → pays jusqu'à 5
 
 // FIPS state code → USPS abbreviation (county names repeat across states)
 const _FIPS_STATE = {
@@ -183,7 +189,7 @@ function _initTooltip() {
   if (!tooltip || !mapEl || isTouchDevice) return;
 
   // Layers a surveiller, du plus fin au plus grossier
-  const HOVER_LAYERS = ['communes-fill', 'us-places-fill', 'eu-places-fill', 'big-places-fill', 'us-counties-fill', 'world-provinces-fill', 'big-provinces-fill', 'countries-fill', 'big-countries-fill'];
+  const HOVER_LAYERS = ['communes-fill', 'us-places-fill', 'eu-places-fill', 'big-places-fill', 'us-counties-fill', 'world-provinces-fill', 'big-provinces-fill', 'countries-fill', 'big-countries-fill', 'noprov5-countries-fill'];
 
   map.on('mousemove', (e) => {
     // Priorite a la couche la plus fine sous le curseur
@@ -570,33 +576,48 @@ async function init() {
       type: 'geojson',
       data: countriesGeo || COUNTRIES_GEOJSON_URL
     });
-    // Pays continentaux séparés : leur choroplèthe pays s'arrête au zoom 3
-    // (les provinces prennent le relais), les autres pays vont jusqu'à 4.
+    // Pays continentaux séparés : choroplèthe pays jusqu'à 3 (provinces en
+    // relais) pour BIG_ISO2, jusqu'à 5 pour NOPROV_5 (pas de provinces NE,
+    // données éparses) ; les autres pays (dont NOPROV_4) vont jusqu'à 4.
     const isBigCountry = ['in', ['get', 'ISO3166-1-Alpha-2'], ['literal', BIG_ISO2]];
+    const isNoProv5 = ['in', ['get', 'ISO3166-1-Alpha-2'], ['literal', NOPROV_5]];
+    const countryPaint = {
+      'fill-color': ['coalesce', ['get', 'color'], 'rgba(0,0,0,0)'],
+      'fill-opacity': 0.65
+    };
     map.addLayer({
       id: 'countries-fill',
       type: 'fill',
       source: 'countries',
-      filter: ['!', isBigCountry],
-      paint: {
-        'fill-color': ['coalesce', ['get', 'color'], 'rgba(0,0,0,0)'],
-        'fill-opacity': 0.65
-      }
+      filter: ['!', ['any', isBigCountry, isNoProv5]],
+      paint: countryPaint
     });
     map.addLayer({
       id: 'big-countries-fill',
       type: 'fill',
       source: 'countries',
       filter: isBigCountry,
-      paint: {
-        'fill-color': ['coalesce', ['get', 'color'], 'rgba(0,0,0,0)'],
-        'fill-opacity': 0.65
-      }
+      paint: countryPaint
+    });
+    map.addLayer({
+      id: 'noprov5-countries-fill',
+      type: 'fill',
+      source: 'countries',
+      filter: isNoProv5,
+      paint: countryPaint
     });
     map.addLayer({
       id: 'countries-line',
       type: 'line',
       source: 'countries',
+      filter: ['!', isNoProv5],
+      paint: { 'line-color': '#444', 'line-width': 0.5 }
+    });
+    map.addLayer({
+      id: 'noprov5-countries-line',
+      type: 'line',
+      source: 'countries',
+      filter: isNoProv5,
       paint: { 'line-color': '#444', 'line-width': 0.5 }
     });
 
@@ -658,6 +679,7 @@ async function init() {
     };
     map.on('click', 'countries-fill', countryClick);
     map.on('click', 'big-countries-fill', countryClick);
+    map.on('click', 'noprov5-countries-fill', countryClick);
 
     // Tâche 1 : legende repliable
     _initLegend();
@@ -876,7 +898,9 @@ async function _loadWorldProvincesGeojson() {
   // This is intentionally deferred until here — if fetch/PIP fails, countries stay visible at all zooms.
   map.setLayerZoomRange('countries-fill', 0, 4);
   map.setLayerZoomRange('big-countries-fill', 0, 3);
+  map.setLayerZoomRange('noprov5-countries-fill', 0, 5);
   map.setLayerZoomRange('countries-line', 0, 4);
+  map.setLayerZoomRange('noprov5-countries-line', 0, 5);
 
   const provinceClick = (e) => {
     // Un polygone municipal rendu sous le curseur prend la main
@@ -1143,10 +1167,10 @@ async function _loadEuPlacesGeojson() {
     data: geo,
     attribution: '© EuroGeographics (limites administratives) · geoBoundaries (CC BY 4.0)'
   });
-  // Pays de taille continentale : les polygones municipaux n'apparaissent
-  // qu'au zoom 5+, les provinces servent d'etage intermediaire (3-5).
-  // Les autres pays (Europe...) gardent leurs communes des le zoom 4.
-  const isBig = ['in', ['get', 'c'], ['literal', BIG_ISO2]];
+  // Villes au zoom 5+ : pays continentaux a provinces (BIG_ISO2) et pays
+  // continentaux epars (NOPROV_5, le choroplethe pays tient jusqu'a 5).
+  // Les autres (Europe, NOPROV_4 : MX/AR/PE...) affichent leurs villes des 4.
+  const isBig = ['in', ['get', 'c'], ['literal', [...BIG_ISO2, ...NOPROV_5]]];
 
   map.addLayer({
     id: 'eu-places-fill',
