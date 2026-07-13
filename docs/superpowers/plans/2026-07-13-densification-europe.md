@@ -71,8 +71,8 @@ Paramètres SCA cibles par ville (idéalement ≥ 4 pour éviter le badge « Don
 
 ### Phase 1 — Gains rapides (effort faible, gros impact visuel)
 
-#### 1a. Ukraine + pays hors LAU : contours geoBoundaries — `data/build_extra_places.py` ✅ FAIT (2026-07-13)
-559 polygones livrés (UA 457, MD 29, BA 26, ME 17, XK 14, BY 10, AD 4, SM 2), fusionnés dans la source `eu-places` côté client.
+#### 1a. Ukraine + pays hors LAU : contours geoBoundaries — `data/build_extra_places.py` ✅ FAIT + ÉTENDU MONDE (2026-07-13)
+559 polygones Europe de l'Est livrés, puis extension à **43 pays / 2 361 polygones** (CN 276, CA 175, RU 168, BR 146, MX 110, JP 38, TW 56, AU 79 + Amériques/Afrique/Océanie + GB). Chargement client au zoom 4+ global. Fusionnés dans la source `eu-places` côté client.
 - **Données : déjà présentes** (463 villes UA scorées invisibles au zoom > 4 !)
 - Source : geoBoundaries (geoboundaries.org, licence ouverte, GeoJSON par pays/niveau)
 - Script générique paramétré `{iso2: (iso3, adm_level)}` couvrant UA (ADM3), MD, BA, ME, XK, BY, AD, SM — même matching spatial PIP que `build_eu_places.py`, sortie fusionnée dans `eu-places.json` (ou `extra-places.json` séparé)
@@ -86,8 +86,8 @@ Paramètres SCA cibles par ville (idéalement ≥ 4 pour éviter le badge « Don
 
 ### Phase 2 — Importeurs à fort rendement (sources structurées)
 
-#### 2a. Pays-Bas — `data/build_netherlands.py` ✅ DÉBLOQUÉ zone Vitens (2026-07-13)
-Les PDF « waterkwaliteitsoverzicht » Vitens (60 stations, parsing pypdf : Totale Hardheid °D, Waterstofcarbonaat→TAC, Ca, pH, EGV, Na, Cl) fusionnés aux stations RIVM par nom normalisé. **NL : 2 → 126 villes scorées, 99 polygones LAU.** Reste : PDFs des autres compagnies (Brabant Water, Evides, PWN, Dunea, WML…) pour couvrir le sud/ouest — le pipeline est prêt, il suffit d'ajouter leurs sources de PDFs.
+#### 2a. Pays-Bas — `data/build_netherlands.py` ✅ Vitens + Brabant Water (2026-07-13)
+PDFs Vitens (61 stations) et Brabant Water (26/28 stations, extraction pypdf mode `layout` — le mode par défaut décolle les valeurs de leur libellé) fusionnés aux stations RIVM. **NL : 2 → 175 villes scorées, 141 polygones LAU** (Eindhoven 8,2 °dH, Tilburg, Breda, Den Bosch…). Reste : Randstad (Evides = app JS, Dunea/PWN/Waternet/Oasen/WML/WMD à investiguer — le pipeline `merge_company_pdfs` est générique).
 - **Trouvé et exploité** : WFS INSPIRE RIVM `inspire:drinkwaterkwaliteit` (data.rivm.nl/geo/inspire/wfs) — moyennes annuelles par station de pompage, 2013–présent, 203 stations. Le script est écrit et fonctionnel : dernière année par station, conversion RD→WGS84, affectation aux villes GeoNames ≤ 20 km → **304 villes avec pH, conductivité, sodium, chlorures**.
 - **Blocage** : la couche RIVM n'a **ni dureté, ni calcium, ni alcalinité** → `compute_sca_score` renvoie null (le score repose à 80 % sur le couple Ca/TAC). 304 villes grises = inutile ; données retirées, script conservé.
 - **Voies de déblocage** : (a) parser les PDF « waterkwaliteitsoverzicht » par station des compagnies (layout Vewin standard, lignes Hardheid totaal + Waterstofcarbonaat) — 2–3 j ; (b) reverse-engineering des lookups postcode par compagnie ; (c) décision produit : accepter un score dégradé calculé sur les seuls paramètres secondaires (plafonné bas) — à valider par l'utilisateur.
@@ -98,8 +98,8 @@ Les PDF « waterkwaliteitsoverzicht » Vitens (60 stations, parsing pypdf : Tota
 - **Contours** : LAU exclut le UK → ONS Open Geography Portal (Local Authority Districts ou Built Up Areas, licence OGL) via un `build_uk_places.py` clone du pattern spatial
 - Rendement : 100–300 villes. Effort : 3–5 jours (hétérogénéité des 22 compagnies).
 
-#### 2c. Allemagne — `data/build_germany.py`
-- **Amorce rapide** : liste Wikipedia « Trinkwasserversorgung deutscher Großstädte » (80 villes > 100 000 hab : Härtebereich, nitrate) — partiel mais immédiat
+#### 2c. Allemagne — `data/build_germany.py` ✅ AMORCE FAITE (2026-07-13)
+- **Amorce livrée** : liste Wikipedia parsée → 80 villes avec Gesamthärte (milieu de fourchette), DE : 3 → 80 villes scorées, 80 polygones LAU. Badge « données partielles » assumé ; remplacement automatique dès qu'un importeur plus riche existera (dédoublonnage par richesse).
 - **Cœur** : scraping des pages « Trinkwasseranalyse » des Stadtwerke (obligation légale de publication ; analyses complètes Ca, Mg, Na, Cl, pH, Säurekapazität→TAC, conductivité). Cible : top 100–200 villes. trinkwasserdatenbank.de (gratuit) en complément nitrate/dureté
 - **Option payante** : leitungswasserqualitaet.de (~200 000 relevés, API JSON sous licence) si le scraping s'avère trop coûteux
 - Rendement : 80 villes (amorce) → 500+ (scraping). Effort : 1 jour (amorce) + 3–5 jours (Stadtwerke, formats hétérogènes).
