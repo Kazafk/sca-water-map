@@ -10,8 +10,8 @@ const US_COUNTIES_GEOJSON_URL = 'https://raw.githubusercontent.com/plotly/datase
 
 // Layer architecture (bottom to top):
 // countries-fill (zoom 0-4) → world-provinces-fill (minzoom:4)
-//   → us-counties-fill (minzoom:5, USA only) → us-places-fill (minzoom:7, USA only)
-//   → communes-fill (minzoom:4, France only)
+//   → us-counties-fill (minzoom:5, USA only)
+//   → us-places-fill / eu-places-fill (minzoom:4) → communes-fill (minzoom:4, France only)
 
 // FIPS state code → USPS abbreviation (county names repeat across states)
 const _FIPS_STATE = {
@@ -571,13 +571,13 @@ async function init() {
         ? '🔍  Commune ou n° de dép...'
         : '🔍  Ville ou pays...';
 
-      // Wide US bbox (Alaska/Hawaii included) — counties appear from zoom 5
-      const inUsArea = z >= 5
+      // Wide US bbox (Alaska/Hawaii included) — municipal polygons from zoom 4
+      const inUsArea = z >= 4
         && c.lng > -180 && c.lng < -60
         && c.lat > 15 && c.lat < 73;
 
-      // Wide Europe bbox — LAU municipal polygons appear from zoom 7
-      const inEuropeArea = z >= 5
+      // Wide Europe bbox — LAU municipal polygons from zoom 4
+      const inEuropeArea = z >= 4
         && c.lng > -25 && c.lng < 45
         && c.lat > 34 && c.lat < 72;
 
@@ -802,8 +802,8 @@ async function _loadWorldProvincesGeojson() {
   map.setLayerZoomRange('countries-line', 0, 4);
 
   map.on('click', 'world-provinces-fill', (e) => {
-    // Un polygone municipal sous le curseur prend la main au zoom 7+
-    if (map.getZoom() >= 7
+    // Un polygone municipal sous le curseur prend la main au zoom 4+
+    if (map.getZoom() >= 4
         && ['us-places-fill', 'eu-places-fill'].some(l =>
              map.getLayer(l) && map.queryRenderedFeatures(e.point, { layers: [l] }).length)) {
       return;
@@ -912,8 +912,8 @@ async function _loadUsCountiesGeojson() {
   });
 
   map.on('click', 'us-counties-fill', (e) => {
-    // A partir du zoom 7, un polygone municipal sous le curseur prend la main
-    if (map.getLayer('us-places-fill') && map.getZoom() >= 7
+    // A partir du zoom 4, un polygone municipal sous le curseur prend la main
+    if (map.getLayer('us-places-fill') && map.getZoom() >= 4
         && map.queryRenderedFeatures(e.point, { layers: ['us-places-fill'] }).length) return;
     const f  = e.features[0];
     const cd = _usCountiesData.get(f.properties.fips ?? f.id);
@@ -975,7 +975,7 @@ async function _loadUsPlacesGeojson() {
     id: 'us-places-fill',
     type: 'fill',
     source: 'us-places',
-    minzoom: 7,
+    minzoom: 4,
     paint: {
       'fill-color': ['coalesce', ['get', 'color'], 'rgba(0,0,0,0)'],
       'fill-opacity': 0.85
@@ -985,7 +985,7 @@ async function _loadUsPlacesGeojson() {
     id: 'us-places-line',
     type: 'line',
     source: 'us-places',
-    minzoom: 7,
+    minzoom: 4,
     paint: { 'line-color': '#888', 'line-width': 0.6 }
   });
 
@@ -1038,7 +1038,7 @@ async function _loadEuPlacesGeojson() {
     id: 'eu-places-fill',
     type: 'fill',
     source: 'eu-places',
-    minzoom: 7,
+    minzoom: 4,
     paint: {
       'fill-color': ['coalesce', ['get', 'color'], 'rgba(0,0,0,0)'],
       'fill-opacity': 0.85
@@ -1048,7 +1048,7 @@ async function _loadEuPlacesGeojson() {
     id: 'eu-places-line',
     type: 'line',
     source: 'eu-places',
-    minzoom: 7,
+    minzoom: 4,
     paint: { 'line-color': '#888', 'line-width': 0.6 }
   });
 
