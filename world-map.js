@@ -9,13 +9,16 @@ const PROVINCES_GEOJSON_URL = 'https://raw.githubusercontent.com/nvkelso/natural
 const US_COUNTIES_GEOJSON_URL = 'https://raw.githubusercontent.com/plotly/datasets/master/geojson-counties-fips.json';
 
 // Layer architecture (bottom to top):
-// countries-fill (zoom 0-4) → world-provinces-fill (minzoom:4)
-//   → us-counties-fill (zoom 5-7, USA only) → us-places-fill (minzoom:7, USA only)
-//   → eu-places-fill (minzoom:4, pays "normaux" : Europe LAU + geoBoundaries)
-//   → big-places-fill (minzoom:7, pays continentaux CN/RU/CA/BR/AU/AR/MX/DZ/CD)
-//   → communes-fill (minzoom:4, France only)
-// USA : Pays → Etat → Comté → Ville ; pays continentaux : Pays → Province (4+)
-// → Ville (7+) ; Europe et petits pays : Pays → Ville (4+).
+// Pays "normaux" (Europe, petits pays) : countries-fill (0-4)
+//   → world-provinces-fill (4+) → eu-places-fill (4+) → communes-fill (4+, FR)
+// Pays continentaux (BIG_ISO2, >= ~1,2 M km²) — hiérarchie stricte sans
+// superposition : big-countries-fill (0-3) → big-provinces-fill (3-5)
+//   → us-counties-fill (4-5, USA) → us-places-fill / big-places-fill (5+)
+
+// Pays de taille continentale (>= ~1,2 M km²) et leurs codes ISO3 (provinces
+// Natural Earth). Un seul réglage : ajouter un pays ici suffit.
+const BIG_ISO2 = ['US', 'CN', 'RU', 'CA', 'BR', 'AU', 'AR', 'MX', 'DZ', 'CD', 'ZA', 'PE'];
+const BIG_IN_ISO2 = ['in', ['get', 'iso2'], ['literal', BIG_ISO2]];
 
 // FIPS state code → USPS abbreviation (county names repeat across states)
 const _FIPS_STATE = {
@@ -180,7 +183,7 @@ function _initTooltip() {
   if (!tooltip || !mapEl || isTouchDevice) return;
 
   // Layers a surveiller, du plus fin au plus grossier
-  const HOVER_LAYERS = ['communes-fill', 'us-places-fill', 'eu-places-fill', 'big-places-fill', 'us-counties-fill', 'world-provinces-fill', 'countries-fill'];
+  const HOVER_LAYERS = ['communes-fill', 'us-places-fill', 'eu-places-fill', 'big-places-fill', 'us-counties-fill', 'world-provinces-fill', 'big-provinces-fill', 'countries-fill', 'big-countries-fill'];
 
   map.on('mousemove', (e) => {
     // Priorite a la couche la plus fine sous le curseur
@@ -218,7 +221,7 @@ function _initTooltip() {
       const st = _FIPS_STATE[p.STATE] || '';
       name  = p.NAME + (st ? `, ${st}` : '');
       score = p.avg_score != null ? parseFloat(p.avg_score) : null;
-    } else if (hit.layer === 'world-provinces-fill') {
+    } else if (hit.layer === 'world-provinces-fill' || hit.layer === 'big-provinces-fill') {
       name  = p.name || '—';
       score = p.avg_score != null ? parseFloat(p.avg_score) : null;
       if (score == null && p.natl_score != null) {
@@ -536,10 +539,24 @@ async function init() {
       type: 'geojson',
       data: countriesGeo || COUNTRIES_GEOJSON_URL
     });
+    // Pays continentaux séparés : leur choroplèthe pays s'arrête au zoom 3
+    // (les provinces prennent le relais), les autres pays vont jusqu'à 4.
+    const isBigCountry = ['in', ['get', 'ISO3166-1-Alpha-2'], ['literal', BIG_ISO2]];
     map.addLayer({
       id: 'countries-fill',
       type: 'fill',
       source: 'countries',
+      filter: ['!', isBigCountry],
+      paint: {
+        'fill-color': ['coalesce', ['get', 'color'], 'rgba(0,0,0,0)'],
+        'fill-opacity': 0.65
+      }
+    });
+    map.addLayer({
+      id: 'big-countries-fill',
+      type: 'fill',
+      source: 'countries',
+      filter: isBigCountry,
       paint: {
         'fill-color': ['coalesce', ['get', 'color'], 'rgba(0,0,0,0)'],
         'fill-opacity': 0.65
@@ -575,8 +592,9 @@ async function init() {
         ? '🔍  Commune ou n° de dép...'
         : '🔍  Ville ou pays...';
 
-      // Wide US bbox (Alaska/Hawaii included) — municipal polygons from zoom 4
-      const inUsArea = z >= 4
+      // Wide US bbox (Alaska/Hawaii included) — comtés dès le zoom 4,
+      // préchargement à partir de 3
+      const inUsArea = z >= 3
         && c.lng > -180 && c.lng < -60
         && c.lat > 15 && c.lat < 73;
 
@@ -589,7 +607,7 @@ async function init() {
     });
 
     // 3. Country click → panel + optional France zoom
-    map.on('click', 'countries-fill', (e) => {
+    const countryClick = (e) => {
       const iso = e.features[0].properties['ISO3166-1-Alpha-2'];
       const data = _countriesMap.get(iso);
       if (!data) return;
@@ -606,7 +624,9 @@ async function init() {
         map.fitBounds([[-5.5, 41.0], [10.0, 51.5]], { padding: 20 });
         _loadFranceGeojson();
       }
-    });
+    };
+    map.on('click', 'countries-fill', countryClick);
+    map.on('click', 'big-countries-fill', countryClick);
 
     // Tâche 1 : legende repliable
     _initLegend();
@@ -784,6 +804,7 @@ async function _loadWorldProvincesGeojson() {
     type: 'fill',
     source: 'world-provinces',
     minzoom: 4,
+    filter: ['!', BIG_IN_ISO2],
     paint: {
       'fill-color': ['coalesce', ['get', 'color'], 'rgba(0,0,0,0)'],
       'fill-opacity': 0.75
@@ -794,15 +815,39 @@ async function _loadWorldProvincesGeojson() {
     type: 'line',
     source: 'world-provinces',
     minzoom: 4,
+    filter: ['!', BIG_IN_ISO2],
+    paint: { 'line-color': '#555', 'line-width': 0.4 }
+  });
+  // Pays continentaux : provinces/etats de 3 a 5, puis les villes seules (5+).
+  map.addLayer({
+    id: 'big-provinces-fill',
+    type: 'fill',
+    source: 'world-provinces',
+    minzoom: 3,
+    maxzoom: 5,
+    filter: BIG_IN_ISO2,
+    paint: {
+      'fill-color': ['coalesce', ['get', 'color'], 'rgba(0,0,0,0)'],
+      'fill-opacity': 0.75
+    }
+  });
+  map.addLayer({
+    id: 'big-provinces-line',
+    type: 'line',
+    source: 'world-provinces',
+    minzoom: 3,
+    maxzoom: 5,
+    filter: BIG_IN_ISO2,
     paint: { 'line-color': '#555', 'line-width': 0.4 }
   });
 
-  // P1: now that provinces are live, cap countries to zoom 0–4 so they don't overlap.
+  // P1: now that provinces are live, cap countries so they don't overlap.
   // This is intentionally deferred until here — if fetch/PIP fails, countries stay visible at all zooms.
   map.setLayerZoomRange('countries-fill', 0, 4);
+  map.setLayerZoomRange('big-countries-fill', 0, 3);
   map.setLayerZoomRange('countries-line', 0, 4);
 
-  map.on('click', 'world-provinces-fill', (e) => {
+  const provinceClick = (e) => {
     // Un polygone municipal rendu sous le curseur prend la main
     // (queryRenderedFeatures respecte le minzoom de chaque couche)
     if (['us-places-fill', 'eu-places-fill', 'big-places-fill'].some(l =>
@@ -819,7 +864,7 @@ async function _loadWorldProvincesGeojson() {
     // Same pattern for US: county layer takes over from zoom 5
     if (iso2 === 'US') {
       _loadUsCountiesGeojson();
-      if (map.getLayer('us-counties-fill') && map.getZoom() >= 5) return;
+      if (map.getLayer('us-counties-fill') && map.getZoom() >= 4) return;
     }
     const name = e.features[0].properties.name;
     const pd = _provincesData.get(`${iso2}__${name}`);
@@ -834,7 +879,9 @@ async function _loadWorldProvincesGeojson() {
     );
     document.getElementById('panel-empty').hidden = true;
     document.getElementById('panel-content').hidden = false;
-  });
+  };
+  map.on('click', 'world-provinces-fill', provinceClick);
+  map.on('click', 'big-provinces-fill', provinceClick);
 }
 
 async function _loadUsCountiesGeojson() {
@@ -894,13 +941,13 @@ async function _loadUsCountiesGeojson() {
   }
 
   map.addSource('us-counties', { type: 'geojson', data: geo });
-  // maxzoom 7 : au-dela, seuls les polygones municipaux restent (pas de superposition)
+  // bande 4-5 : au-dela, seuls les polygones municipaux restent (pas de superposition)
   map.addLayer({
     id: 'us-counties-fill',
     type: 'fill',
     source: 'us-counties',
-    minzoom: 5,
-    maxzoom: 7,
+    minzoom: 4,
+    maxzoom: 5,
     paint: {
       'fill-color': ['coalesce', ['get', 'color'], 'rgba(0,0,0,0)'],
       'fill-opacity': 0.80
@@ -910,13 +957,13 @@ async function _loadUsCountiesGeojson() {
     id: 'us-counties-line',
     type: 'line',
     source: 'us-counties',
-    minzoom: 5,
-    maxzoom: 7,
+    minzoom: 4,
+    maxzoom: 5,
     paint: { 'line-color': '#555', 'line-width': 0.3 }
   });
 
   map.on('click', 'us-counties-fill', (e) => {
-    // Un polygone municipal rendu sous le curseur prend la main (zoom 7+ :
+    // Un polygone municipal rendu sous le curseur prend la main (zoom 5+ :
     // queryRenderedFeatures ne retourne rien tant que la couche n'est pas affichée)
     if (map.getLayer('us-places-fill')
         && map.queryRenderedFeatures(e.point, { layers: ['us-places-fill'] }).length) return;
@@ -982,7 +1029,7 @@ async function _loadUsPlacesGeojson() {
     id: 'us-places-fill',
     type: 'fill',
     source: 'us-places',
-    minzoom: 7,
+    minzoom: 5,
     paint: {
       'fill-color': ['coalesce', ['get', 'color'], 'rgba(0,0,0,0)'],
       'fill-opacity': 0.85
@@ -992,7 +1039,7 @@ async function _loadUsPlacesGeojson() {
     id: 'us-places-line',
     type: 'line',
     source: 'us-places',
-    minzoom: 7,
+    minzoom: 5,
     paint: { 'line-color': '#21262d', 'line-width': 0.3 }
   });
 
@@ -1054,11 +1101,10 @@ async function _loadEuPlacesGeojson() {
     data: geo,
     attribution: '© EuroGeographics (limites administratives) · geoBoundaries (CC BY 4.0)'
   });
-  // Pays de taille continentale (logique USA) : les polygones municipaux
-  // n'apparaissent qu'au zoom 7+, les provinces servent d'etage intermediaire.
+  // Pays de taille continentale : les polygones municipaux n'apparaissent
+  // qu'au zoom 5+, les provinces servent d'etage intermediaire (3-5).
   // Les autres pays (Europe...) gardent leurs communes des le zoom 4.
-  const BIG_COUNTRIES = ['CN', 'RU', 'CA', 'BR', 'AU', 'AR', 'MX', 'DZ', 'CD'];
-  const isBig = ['in', ['get', 'c'], ['literal', BIG_COUNTRIES]];
+  const isBig = ['in', ['get', 'c'], ['literal', BIG_ISO2]];
 
   map.addLayer({
     id: 'eu-places-fill',
@@ -1083,7 +1129,7 @@ async function _loadEuPlacesGeojson() {
     id: 'big-places-fill',
     type: 'fill',
     source: 'eu-places',
-    minzoom: 7,
+    minzoom: 5,
     filter: isBig,
     paint: {
       'fill-color': ['coalesce', ['get', 'color'], 'rgba(0,0,0,0)'],
@@ -1094,7 +1140,7 @@ async function _loadEuPlacesGeojson() {
     id: 'big-places-line',
     type: 'line',
     source: 'eu-places',
-    minzoom: 7,
+    minzoom: 5,
     filter: isBig,
     paint: { 'line-color': '#21262d', 'line-width': 0.3 }
   });
