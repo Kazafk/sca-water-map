@@ -142,6 +142,20 @@ PDFs Vitens (61 stations) et Brabant Water (26/28 stations, extraction pypdf mod
 
 Après les étapes 1–4 (≈ 1 semaine), plus aucun grand pays européen n'apparaît vide ; après la phase 3, la densité DE/IT/ES devient comparable aux pays LAU déjà couverts (AT/CH/PL).
 
+## 4bis. Reconnaissance hors Europe (2026-07-13, soir)
+
+### Corée du Sud ✅ FAIT — `data/build_korea.py`
+data.go.kr dataset 15093930 (analyses réglementaires mensuelles, 421 usines, 129 opérateurs). KR : 0 → 97 villes, 93 polygones ADM2. Attribution par opérateur, mapping hangul→GeoNames.
+
+### Golfe ❌ RÉSULTAT NÉGATIF documenté
+DEWA/Kahramaa/ADDC/Diam/NWC publient des **normes** (Kahramaa Requirements 59 p.) et des % de conformité, pas de mesures par ville en accès libre. Sites WAF-bloqués (curl), navigateur OK mais pages sans tables de mesures ; livret Kahramaa scanné sans texte. Voie restante : études académiques anciennes (Kuwait 2015, Jeddah 2012, revue SWCC/MDPI 2024 = eau en sortie d'usine). Non retenu : ne pas afficher des specs comme des mesures.
+
+### Turquie ⚠️ DEMI-RÉSULTAT — bloqué sur la dureté et l'accès
+- **Ankara (ASKİ)** : PDF mensuel officiel accessible et parsé — pH 7,35, EC 1041 µS/cm, Cl 168,2, Na 121,2 (avril 2026)… mais **pas de dureté** : la norme TS266 ne l'exige pas → pas de score SCA possible actuellement.
+- **Istanbul (İSKİ)** : site géo-bloqué hors Turquie ; portail open data İBB = données opérationnelles uniquement.
+- İzmir/Kayseri/Adana/Bursa/Antalya : sites instables, analyses derrière du JS, dureté non confirmée.
+- **Levier de déblocage commun (NL Randstad, Ankara, Golfe/études)** : décision produit « score dégradé sans dureté » (plafonné bas + badge) — voir chantier 2a.
+
 ## 5. Contraintes à respecter
 - Ne jamais relancer le pipeline France (`data/compute_scores.py`) ni `workflow_dispatch` sur `update-data.yml`
 - Déploiement uniquement via `git subtree split --prefix public master` → push `gh-pages`
