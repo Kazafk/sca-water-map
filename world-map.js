@@ -96,7 +96,9 @@ let _usCountiesGeo    = null;    // reference GeoJSON comtés pour recoloration 
 let _usCountiesData   = new Map(); // fips → { avg_score, cities, scored_count, name }
 let _usPlacesLoaded   = false;
 let _usPlacesGeo      = null;    // polygones municipaux Census (villes scorées uniquement)
-let _cityById         = new Map(); // id → city (join us-places ↔ worldCities)
+let _euPlacesLoaded   = false;
+let _euPlacesGeo      = null;    // polygones municipaux GISCO LAU (Europe hors France)
+let _cityById         = new Map(); // id → city (join us/eu-places ↔ worldCities)
 let _provincesData   = new Map(); // `${iso2}__${name}` → { avg_score, cities, scored_count, name }
 let _citiesByCountry = new Map(); // iso2 → city[]
 let _iso3toIso2      = new Map(); // ISO 3166-1 alpha-3 → alpha-2 (built from countries GeoJSON)
@@ -174,7 +176,7 @@ function _initTooltip() {
   if (!tooltip || !mapEl || isTouchDevice) return;
 
   // Layers a surveiller, du plus fin au plus grossier
-  const HOVER_LAYERS = ['communes-fill', 'us-places-fill', 'us-counties-fill', 'world-provinces-fill', 'countries-fill'];
+  const HOVER_LAYERS = ['communes-fill', 'us-places-fill', 'eu-places-fill', 'us-counties-fill', 'world-provinces-fill', 'countries-fill'];
 
   map.on('mousemove', (e) => {
     // Priorite a la couche la plus fine sous le curseur
@@ -203,6 +205,10 @@ function _initTooltip() {
     } else if (hit.layer === 'us-places-fill') {
       const city = _cityById.get(p.city_id);
       name  = p.name + (p.st ? `, ${p.st}` : '');
+      score = city?.score ?? null;
+    } else if (hit.layer === 'eu-places-fill') {
+      const city = _cityById.get(p.city_id);
+      name  = p.name + (p.c ? `, ${p.c}` : '');
       score = city?.score ?? null;
     } else if (hit.layer === 'us-counties-fill') {
       const st = _FIPS_STATE[p.STATE] || '';
@@ -333,9 +339,10 @@ function _recolorUsCounties(metric) {
   map.getSource('us-counties').setData(_usCountiesGeo);
 }
 
-function _recolorUsPlaces(metric) {
-  if (!_usPlacesGeo || !map.getSource('us-places')) return;
-  for (const f of _usPlacesGeo.features) {
+// Recolore une source de polygones municipaux (jointure city_id → worldCities)
+function _recolorPlaces(geo, sourceId, metric) {
+  if (!geo || !map.getSource(sourceId)) return;
+  for (const f of geo.features) {
     const city = _cityById.get(f.properties.city_id);
     if (metric === 'score') {
       f.properties.color = colorFromScore(city?.score);
@@ -344,8 +351,11 @@ function _recolorUsPlaces(metric) {
       f.properties.color = _colorFromMetricValue(val, metric);
     }
   }
-  map.getSource('us-places').setData(_usPlacesGeo);
+  map.getSource(sourceId).setData(geo);
 }
+
+function _recolorUsPlaces(metric) { _recolorPlaces(_usPlacesGeo, 'us-places', metric); }
+function _recolorEuPlaces(metric) { _recolorPlaces(_euPlacesGeo, 'eu-places', metric); }
 
 function _applyMetric(metric) {
   _currentMetric = metric;
@@ -358,6 +368,7 @@ function _applyMetric(metric) {
   _recolorProvinces(metric);
   _recolorUsCounties(metric);
   _recolorUsPlaces(metric);
+  _recolorEuPlaces(metric);
   _recolorCommunes(metric);
 }
 
@@ -565,8 +576,14 @@ async function init() {
         && c.lng > -180 && c.lng < -60
         && c.lat > 15 && c.lat < 73;
 
+      // Wide Europe bbox — LAU municipal polygons appear from zoom 7
+      const inEuropeArea = z >= 5
+        && c.lng > -25 && c.lng < 45
+        && c.lat > 34 && c.lat < 72;
+
       if (inFranceArea) _loadFranceGeojson();
       if (inUsArea) { _loadUsCountiesGeojson(); _loadUsPlacesGeojson(); }
+      if (inEuropeArea) _loadEuPlacesGeojson();
       // provinces are loaded eagerly; no moveend trigger needed for them
     });
 
@@ -785,6 +802,12 @@ async function _loadWorldProvincesGeojson() {
   map.setLayerZoomRange('countries-line', 0, 4);
 
   map.on('click', 'world-provinces-fill', (e) => {
+    // Un polygone municipal sous le curseur prend la main au zoom 7+
+    if (map.getZoom() >= 7
+        && ['us-places-fill', 'eu-places-fill'].some(l =>
+             map.getLayer(l) && map.queryRenderedFeatures(e.point, { layers: [l] }).length)) {
+      return;
+    }
     const iso2 = e.features[0].properties.iso2;
     // P3: if this is a French province, trigger commune load (fire-and-forget)
     // and skip the province panel only when communes-fill is already rendered.
@@ -967,6 +990,69 @@ async function _loadUsPlacesGeojson() {
   });
 
   map.on('click', 'us-places-fill', (e) => {
+    const city = _cityById.get(e.features[0].properties.city_id);
+    if (!city) return;
+    document.getElementById('panel-content').innerHTML = renderWorldCityPanel(city);
+    document.getElementById('panel-empty').hidden = true;
+    document.getElementById('panel-content').hidden = false;
+  });
+}
+
+async function _loadEuPlacesGeojson() {
+  if (_euPlacesLoaded) return;
+  _euPlacesLoaded = true;
+
+  let r;
+  try {
+    r = await fetch('./eu-places.json');
+    if (!r.ok) throw new Error(`HTTP ${r.status}`);
+  } catch (e) {
+    console.error('EU places GeoJSON fetch failed:', e.message);
+    _euPlacesLoaded = false;
+    return;
+  }
+
+  const geo = await r.json();
+
+  for (const f of geo.features) {
+    const city = _cityById.get(f.properties.city_id);
+    f.properties.color = colorFromScore(city?.score);
+  }
+
+  _euPlacesGeo = geo;
+
+  if (_currentMetric !== 'score') {
+    for (const f of geo.features) {
+      const city = _cityById.get(f.properties.city_id);
+      const val = city?.params?.[_currentMetric] ?? null;
+      f.properties.color = _colorFromMetricValue(val, _currentMetric);
+    }
+  }
+
+  map.addSource('eu-places', {
+    type: 'geojson',
+    data: geo,
+    attribution: '© EuroGeographics (limites administratives)'
+  });
+  map.addLayer({
+    id: 'eu-places-fill',
+    type: 'fill',
+    source: 'eu-places',
+    minzoom: 7,
+    paint: {
+      'fill-color': ['coalesce', ['get', 'color'], 'rgba(0,0,0,0)'],
+      'fill-opacity': 0.85
+    }
+  });
+  map.addLayer({
+    id: 'eu-places-line',
+    type: 'line',
+    source: 'eu-places',
+    minzoom: 7,
+    paint: { 'line-color': '#888', 'line-width': 0.6 }
+  });
+
+  map.on('click', 'eu-places-fill', (e) => {
     const city = _cityById.get(e.features[0].properties.city_id);
     if (!city) return;
     document.getElementById('panel-content').innerHTML = renderWorldCityPanel(city);
