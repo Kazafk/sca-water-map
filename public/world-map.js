@@ -10,7 +10,8 @@ const US_COUNTIES_GEOJSON_URL = 'https://raw.githubusercontent.com/plotly/datase
 
 // Layer architecture (bottom to top):
 // countries-fill (zoom 0-4) → world-provinces-fill (minzoom:4)
-//   → us-counties-fill (minzoom:5, USA only) → communes-fill (minzoom:4, France only)
+//   → us-counties-fill (minzoom:5, USA only) → us-places-fill (minzoom:7, USA only)
+//   → communes-fill (minzoom:4, France only)
 
 // FIPS state code → USPS abbreviation (county names repeat across states)
 const _FIPS_STATE = {
@@ -93,6 +94,9 @@ let _provincesLoaded = false;
 let _usCountiesLoaded = false;
 let _usCountiesGeo    = null;    // reference GeoJSON comtés pour recoloration métrique
 let _usCountiesData   = new Map(); // fips → { avg_score, cities, scored_count, name }
+let _usPlacesLoaded   = false;
+let _usPlacesGeo      = null;    // polygones municipaux Census (villes scorées uniquement)
+let _cityById         = new Map(); // id → city (join us-places ↔ worldCities)
 let _provincesData   = new Map(); // `${iso2}__${name}` → { avg_score, cities, scored_count, name }
 let _citiesByCountry = new Map(); // iso2 → city[]
 let _iso3toIso2      = new Map(); // ISO 3166-1 alpha-3 → alpha-2 (built from countries GeoJSON)
@@ -170,7 +174,7 @@ function _initTooltip() {
   if (!tooltip || !mapEl || isTouchDevice) return;
 
   // Layers a surveiller, du plus fin au plus grossier
-  const HOVER_LAYERS = ['communes-fill', 'us-counties-fill', 'world-provinces-fill', 'countries-fill'];
+  const HOVER_LAYERS = ['communes-fill', 'us-places-fill', 'us-counties-fill', 'world-provinces-fill', 'countries-fill'];
 
   map.on('mousemove', (e) => {
     // Priorite a la couche la plus fine sous le curseur
@@ -195,6 +199,10 @@ function _initTooltip() {
       const cData = communesData[code];
       name  = cData?.nom || p.nom || p.name || code || '—';
       score = cData?.score ?? null;
+    } else if (hit.layer === 'us-places-fill') {
+      const city = _cityById.get(p.city_id);
+      name  = p.name + (p.st ? `, ${p.st}` : '');
+      score = city?.score ?? null;
     } else if (hit.layer === 'us-counties-fill') {
       const st = _FIPS_STATE[p.STATE] || '';
       name  = p.NAME + (st ? `, ${st}` : '');
@@ -307,6 +315,20 @@ function _recolorUsCounties(metric) {
   map.getSource('us-counties').setData(_usCountiesGeo);
 }
 
+function _recolorUsPlaces(metric) {
+  if (!_usPlacesGeo || !map.getSource('us-places')) return;
+  for (const f of _usPlacesGeo.features) {
+    const city = _cityById.get(f.properties.city_id);
+    if (metric === 'score') {
+      f.properties.color = colorFromScore(city?.score);
+    } else {
+      const val = city?.params?.[metric] ?? null;
+      f.properties.color = _colorFromMetricValue(val, metric);
+    }
+  }
+  map.getSource('us-places').setData(_usPlacesGeo);
+}
+
 function _applyMetric(metric) {
   _currentMetric = metric;
   // Mise a jour du titre de la legende
@@ -317,6 +339,7 @@ function _applyMetric(metric) {
   _recolorCountries(metric);
   _recolorProvinces(metric);
   _recolorUsCounties(metric);
+  _recolorUsPlaces(metric);
   _recolorCommunes(metric);
 }
 
@@ -445,6 +468,7 @@ async function init() {
   for (const city of worldCities) {
     if (!_citiesByCountry.has(city.country)) _citiesByCountry.set(city.country, []);
     _citiesByCountry.get(city.country).push(city);
+    _cityById.set(city.id, city);
   }
 
   // Tâche 4 : lire le hash initial pour positionner la carte
@@ -512,7 +536,7 @@ async function init() {
         && c.lat > 15 && c.lat < 73;
 
       if (inFranceArea) _loadFranceGeojson();
-      if (inUsArea) _loadUsCountiesGeojson();
+      if (inUsArea) { _loadUsCountiesGeojson(); _loadUsPlacesGeojson(); }
       // provinces are loaded eagerly; no moveend trigger needed for them
     });
 
@@ -830,6 +854,9 @@ async function _loadUsCountiesGeojson() {
   });
 
   map.on('click', 'us-counties-fill', (e) => {
+    // A partir du zoom 7, un polygone municipal sous le curseur prend la main
+    if (map.getLayer('us-places-fill') && map.getZoom() >= 7
+        && map.queryRenderedFeatures(e.point, { layers: ['us-places-fill'] }).length) return;
     const f  = e.features[0];
     const cd = _usCountiesData.get(f.properties.fips ?? f.id);
     if (!cd) return;
@@ -847,6 +874,67 @@ async function _loadUsCountiesGeojson() {
       },
       topCities
     );
+    document.getElementById('panel-empty').hidden = true;
+    document.getElementById('panel-content').hidden = false;
+  });
+}
+
+async function _loadUsPlacesGeojson() {
+  if (_usPlacesLoaded) return;
+  _usPlacesLoaded = true;
+
+  let r;
+  try {
+    r = await fetch('./us-places.json');
+    if (!r.ok) throw new Error(`HTTP ${r.status}`);
+  } catch (e) {
+    console.error('US places GeoJSON fetch failed:', e.message);
+    _usPlacesLoaded = false;
+    return;
+  }
+
+  const geo = await r.json();
+
+  // Join with worldCities: color each municipal polygon from its city score
+  for (const f of geo.features) {
+    const city = _cityById.get(f.properties.city_id);
+    f.properties.color = colorFromScore(city?.score);
+  }
+
+  _usPlacesGeo = geo;
+
+  // Si une metrique non-score est deja active, appliquer avant l'ajout visuel
+  if (_currentMetric !== 'score') {
+    for (const f of geo.features) {
+      const city = _cityById.get(f.properties.city_id);
+      const val = city?.params?.[_currentMetric] ?? null;
+      f.properties.color = _colorFromMetricValue(val, _currentMetric);
+    }
+  }
+
+  map.addSource('us-places', { type: 'geojson', data: geo });
+  map.addLayer({
+    id: 'us-places-fill',
+    type: 'fill',
+    source: 'us-places',
+    minzoom: 7,
+    paint: {
+      'fill-color': ['coalesce', ['get', 'color'], 'rgba(0,0,0,0)'],
+      'fill-opacity': 0.85
+    }
+  });
+  map.addLayer({
+    id: 'us-places-line',
+    type: 'line',
+    source: 'us-places',
+    minzoom: 7,
+    paint: { 'line-color': '#888', 'line-width': 0.6 }
+  });
+
+  map.on('click', 'us-places-fill', (e) => {
+    const city = _cityById.get(e.features[0].properties.city_id);
+    if (!city) return;
+    document.getElementById('panel-content').innerHTML = renderWorldCityPanel(city);
     document.getElementById('panel-empty').hidden = true;
     document.getElementById('panel-content').hidden = false;
   });
