@@ -1,8 +1,9 @@
 """
 Build public/extra-places.json: administrative boundary polygons (geoBoundaries,
-gbOpen release, simplified geometries) for scored cities in European countries
-NOT covered by Eurostat GISCO LAU 2021 (Ukraine, Moldova, Bosnia, Montenegro,
-Kosovo, Belarus, Andorra, San Marino).
+gbOpen release, simplified geometries) for scored cities in countries covered
+by neither GISCO LAU (Europe) nor a dedicated layer (US, FR): Eastern Europe
+(UA, MD, BA, ME, XK, BY, AD, SM), the UK (excluded from LAU 2021) and the rest
+of the world (CN, RU, CA, BR, TW, MX, JP, AU...).
 
 Same pattern as build_eu_places.py: spatial matching — a polygon is kept iff
 one of our scored city points falls inside it. The front-end merges this file
@@ -26,7 +27,10 @@ OUT_JSON    = os.path.join(_HERE, "..", "public", "extra-places.json")
 COORD_DECIMALS = 4
 
 # iso2 -> (geoBoundaries iso3, ADM level)
+# Level = finest municipality-like level with <= ~6000 units (bigger files
+# bring no benefit: only polygons containing a scored city are kept).
 COUNTRIES = {
+    # Europe outside GISCO LAU coverage
     "UA": ("UKR", "ADM3"),  # hromadas/settlement councils (10 375)
     "MD": ("MDA", "ADM1"),  # raions (37)
     "BA": ("BIH", "ADM3"),  # municipalities (142)
@@ -35,6 +39,42 @@ COUNTRIES = {
     "BY": ("BLR", "ADM2"),  # raions (118)
     "AD": ("AND", "ADM1"),  # parishes (7)
     "SM": ("SMR", "ADM1"),  # castelli (9)
+    "GB": ("GBR", "ADM3"),  # local authorities (216)
+    # Rest of the world (scored cities without any polygon layer)
+    "CN": ("CHN", "ADM3"),  # counties (2 867)
+    "RU": ("RUS", "ADM2"),  # districts (2 328)
+    "CA": ("CAN", "ADM3"),  # census subdivisions (5 162)
+    "BR": ("BRA", "ADM2"),  # municipios (5 570)
+    "TW": ("TWN", "ADM2"),  # townships/districts (369)
+    "MX": ("MEX", "ADM2"),  # municipios (2 457)
+    "AR": ("ARG", "ADM2"),  # departamentos (526)
+    "AU": ("AUS", "ADM2"),  # LGAs (547)
+    "CL": ("CHL", "ADM3"),  # comunas (345)
+    "VE": ("VEN", "ADM2"),  # municipios (335)
+    "PE": ("PER", "ADM2"),  # provincias (196)
+    "ET": ("ETH", "ADM3"),  # woredas (690)
+    "CD": ("COD", "ADM3"),  # territoires (188)
+    "CO": ("COL", "ADM2"),  # municipios (1 122)
+    "EC": ("ECU", "ADM2"),  # cantones (224)
+    "UY": ("URY", "ADM2"),  # municipios (124)
+    "KE": ("KEN", "ADM3"),  # wards (1 452)
+    "EG": ("EGY", "ADM2"),  # markazes (365)
+    "JP": ("JPN", "ADM2"),  # municipalities (1 745)
+    "CI": ("CIV", "ADM3"),  # departements (510)
+    "BO": ("BOL", "ADM3"),  # municipios (339)
+    "ZA": ("ZAF", "ADM3"),  # local municipalities (213)
+    "DZ": ("DZA", "ADM3"),  # communes (1 540)
+    "GH": ("GHA", "ADM2"),  # districts (260)
+    "GT": ("GTM", "ADM2"),  # municipios (342)
+    "NZ": ("NZL", "ADM3"),  # wards (245)
+    "PG": ("PNG", "ADM3"),  # districts (326)
+    "HN": ("HND", "ADM2"),  # municipios (299)
+    "CR": ("CRI", "ADM3"),  # distritos (472)
+    "PA": ("PAN", "ADM3"),  # corregimientos (633)
+    "SV": ("SLV", "ADM2"),  # municipios (272)
+    "FJ": ("FJI", "ADM3"),  # tikinas (86)
+    "BZ": ("BLZ", "ADM2"),  # constituencies (31)
+    "NG": ("NGA", "ADM2"),  # LGAs (774)
 }
 
 os.makedirs(GB_DIR, exist_ok=True)
