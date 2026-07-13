@@ -11,7 +11,7 @@ const US_COUNTIES_GEOJSON_URL = 'https://raw.githubusercontent.com/plotly/datase
 // Layer architecture (bottom to top):
 // countries-fill (zoom 0-4) → world-provinces-fill (minzoom:4)
 //   → us-counties-fill (zoom 5-7, USA only) → us-places-fill (minzoom:7, USA only)
-//   → eu-places-fill (minzoom:4, Europe : GISCO LAU + extra-places geoBoundaries)
+//   → eu-places-fill (minzoom:4, Europe GISCO LAU + monde geoBoundaries via extra-places)
 //   → communes-fill (minzoom:4, France only)
 // USA (taille continentale) : Pays → Etat → Comté → Ville ; Europe : Pays → Ville.
 
@@ -578,14 +578,11 @@ async function init() {
         && c.lng > -180 && c.lng < -60
         && c.lat > 15 && c.lat < 73;
 
-      // Wide Europe bbox — LAU municipal polygons from zoom 4
-      const inEuropeArea = z >= 4
-        && c.lng > -25 && c.lng < 45
-        && c.lat > 34 && c.lat < 72;
-
       if (inFranceArea) _loadFranceGeojson();
       if (inUsArea) { _loadUsCountiesGeojson(); _loadUsPlacesGeojson(); }
-      if (inEuropeArea) _loadEuPlacesGeojson();
+      // eu-places + extra-places couvrent desormais l'Europe ET le reste du
+      // monde (geoBoundaries) : chargement au zoom 4+ quelle que soit la zone
+      if (z >= 4) _loadEuPlacesGeojson();
       // provinces are loaded eagerly; no moveend trigger needed for them
     });
 
@@ -1022,9 +1019,9 @@ async function _loadEuPlacesGeojson() {
 
   const geo = await r.json();
 
-  // extra-places.json : pays europeens hors couverture GISCO LAU
-  // (UA, MD, BA, ME, XK, BY, AD, SM — contours geoBoundaries), meme
-  // schema {city_id, name, c}, fusionne dans la meme source. Non bloquant.
+  // extra-places.json : contours geoBoundaries pour les pays sans couche
+  // dediee ni couverture LAU (Europe de l'Est, UK, Chine, Japon, Ameriques,
+  // Afrique...), meme schema {city_id, name, c}, meme source. Non bloquant.
   try {
     const rx = await fetch('./extra-places.json');
     if (rx.ok) {
