@@ -9,9 +9,13 @@ gestore and merges their output:
   - SAL (Societa Acqua Lodigiana) - province of Lodi, ~60 comuni, one PDF
     per comune with the full label (Durezza deg F, Bicarbonato, Calcio, pH,
     Conducibilita, Sodio, Cloruri, Residuo fisso).
+  - Hera (Emilia-Romagna, Veneto, Marche) - 178 comuni, read from the
+    SQLite DB shipped inside the Acquologo Android app (table
+    dati_qualita_acqua joined with comuni). The DB is committed as
+    data/italy/acquologo.sqlite (small, static reference data).
 
-Other gestori (Hera, Gruppo CAP, SMAT, Acea, AQP, Abbanoa...) publish via
-JS apps or vector-graphic reports and need dedicated future collectors.
+Other gestori (Gruppo CAP, SMAT, Acea, AQP, Abbanoa...) publish via JS apps
+or vector-graphic reports and need dedicated future collectors.
 
 Output: tap-water-db format [{Region: "Comune (Italy)", Parameters}].
 Downloads cached in data/italy/ (gitignored). Idempotent.
@@ -19,6 +23,7 @@ Downloads cached in data/italy/ (gitignored). Idempotent.
 import json
 import os
 import re
+import sqlite3
 import time
 import urllib.request
 
@@ -111,9 +116,58 @@ def collect_sal():
 
 
 # --------------------------------------------------------------------------
+# Hera — Acquologo app SQLite DB (committed reference file)
+# --------------------------------------------------------------------------
+HERA_DB = os.path.join(CACHE_DIR, "acquologo.sqlite")
+
+
+def collect_hera():
+    if not os.path.exists(HERA_DB):
+        print("Hera: acquologo.sqlite missing, skipped")
+        return {}
+    con = sqlite3.connect(HERA_DB)
+    rows = con.execute("""
+        SELECT c.nomecomune, d.durezza, d.con_ioni_idro, d.conduttivita,
+               d.sodio, d.cloruro, d.calcio, d.alcalinita_bicarbonati
+        FROM dati_qualita_acqua d JOIN comuni c ON d.IdComune = c.id
+    """).fetchall()
+    con.close()
+
+    entries = {}
+    for name, durezza, ph, cond, na, cl, ca, alk_bic in rows:
+        p = {}
+        d = num(durezza)              # degrees F
+        if d is not None:
+            p["Ca_Hardness_dH"] = round(d * 10 / 17.848, 4)
+        v = num(ph)
+        if v is not None:
+            p["pH"] = v
+        v = num(cond)
+        if v is not None:
+            p["TDS_Conductivity_uS_cm"] = v
+        v = num(na)
+        if v is not None:
+            p["Sodium_Na_mg_l"] = v
+        v = num(cl)
+        if v is not None:
+            p["Chlorides_Cl_mg_l"] = v
+        v = num(ca)
+        if v is not None:
+            p["Calcium_Ca_mg_l"] = v
+        v = num(alk_bic)              # mg/L HCO3 -> mmol/L
+        if v is not None:
+            p["Alkalinity_TAC_mmol_l"] = round(v / 61.02, 4)
+        if len(p) >= 3:
+            entries[name.strip()] = p
+    print(f"Hera: {len(entries)} comuni")
+    return entries
+
+
+# --------------------------------------------------------------------------
 def main():
     all_entries = {}
     all_entries.update(collect_sal())
+    all_entries.update(collect_hera())
 
     out = [{"Region": f"{comune} (Italy)", "Parameters": params}
            for comune, params in sorted(all_entries.items())]
