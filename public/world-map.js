@@ -6,9 +6,22 @@ import { searchLocalCities, searchNominatim, escapeHtml } from './world-search.j
 const COUNTRIES_GEOJSON_URL = 'https://raw.githubusercontent.com/datasets/geo-countries/master/data/countries.geojson';
 const COMMUNES_GEOJSON_URL  = 'https://raw.githubusercontent.com/gregoiredavid/france-geojson/master/communes-version-simplifiee.geojson';
 const PROVINCES_GEOJSON_URL = 'https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_50m_admin_1_states_provinces.geojson';
+const US_COUNTIES_GEOJSON_URL = 'https://raw.githubusercontent.com/plotly/datasets/master/geojson-counties-fips.json';
 
 // Layer architecture (bottom to top):
-// countries-fill (maxzoom:4) → world-provinces-fill (minzoom:4) → communes-fill (minzoom:4, France only)
+// countries-fill (zoom 0-4) → world-provinces-fill (minzoom:4)
+//   → us-counties-fill (minzoom:5, USA only) → communes-fill (minzoom:4, France only)
+
+// FIPS state code → USPS abbreviation (county names repeat across states)
+const _FIPS_STATE = {
+  '01':'AL','02':'AK','04':'AZ','05':'AR','06':'CA','08':'CO','09':'CT','10':'DE',
+  '11':'DC','12':'FL','13':'GA','15':'HI','16':'ID','17':'IL','18':'IN','19':'IA',
+  '20':'KS','21':'KY','22':'LA','23':'ME','24':'MD','25':'MA','26':'MI','27':'MN',
+  '28':'MS','29':'MO','30':'MT','31':'NE','32':'NV','33':'NH','34':'NJ','35':'NM',
+  '36':'NY','37':'NC','38':'ND','39':'OH','40':'OK','41':'OR','42':'PA','44':'RI',
+  '45':'SC','46':'SD','47':'TN','48':'TX','49':'UT','50':'VT','51':'VA','53':'WA',
+  '54':'WV','55':'WI','56':'WY','72':'PR'
+};
 
 // ── Tâche 3 : configuration des métriques individuelles ────────────────────
 // Stratégie choisie : precalcul des couleurs par metrique dans les proprietes GeoJSON
@@ -77,6 +90,9 @@ let communesData = {};
 let franceGeojson = null;
 let _franceLoaded    = false;
 let _provincesLoaded = false;
+let _usCountiesLoaded = false;
+let _usCountiesGeo    = null;    // reference GeoJSON comtés pour recoloration métrique
+let _usCountiesData   = new Map(); // fips → { avg_score, cities, scored_count, name }
 let _provincesData   = new Map(); // `${iso2}__${name}` → { avg_score, cities, scored_count, name }
 let _citiesByCountry = new Map(); // iso2 → city[]
 let _iso3toIso2      = new Map(); // ISO 3166-1 alpha-3 → alpha-2 (built from countries GeoJSON)
@@ -108,6 +124,24 @@ function _cityInPolygon(lng, lat, feature) {
   return false;
 }
 
+// Bounding box [minLng, minLat, maxLng, maxLat] of a feature — cheap pre-filter
+// before the exact PIP test (3143 counties × 1300 US cities would be costly raw).
+function _featureBbox(feature) {
+  let minLng = Infinity, minLat = Infinity, maxLng = -Infinity, maxLat = -Infinity;
+  const scan = ring => {
+    for (const [lng, lat] of ring) {
+      if (lng < minLng) minLng = lng;
+      if (lng > maxLng) maxLng = lng;
+      if (lat < minLat) minLat = lat;
+      if (lat > maxLat) maxLat = lat;
+    }
+  };
+  const { type, coordinates } = feature.geometry;
+  if (type === 'Polygon') coordinates.forEach(scan);
+  else if (type === 'MultiPolygon') coordinates.forEach(poly => poly.forEach(scan));
+  return [minLng, minLat, maxLng, maxLat];
+}
+
 // ── Tâche 1 : légende repliable ────────────────────────────────────────────
 function _initLegend() {
   const legend  = document.getElementById('legend');
@@ -136,7 +170,7 @@ function _initTooltip() {
   if (!tooltip || !mapEl || isTouchDevice) return;
 
   // Layers a surveiller, du plus fin au plus grossier
-  const HOVER_LAYERS = ['communes-fill', 'world-provinces-fill', 'countries-fill'];
+  const HOVER_LAYERS = ['communes-fill', 'us-counties-fill', 'world-provinces-fill', 'countries-fill'];
 
   map.on('mousemove', (e) => {
     // Priorite a la couche la plus fine sous le curseur
@@ -161,6 +195,10 @@ function _initTooltip() {
       const cData = communesData[code];
       name  = cData?.nom || p.nom || p.name || code || '—';
       score = cData?.score ?? null;
+    } else if (hit.layer === 'us-counties-fill') {
+      const st = _FIPS_STATE[p.STATE] || '';
+      name  = p.NAME + (st ? `, ${st}` : '');
+      score = p.avg_score != null ? parseFloat(p.avg_score) : null;
     } else if (hit.layer === 'world-provinces-fill') {
       name  = p.name || '—';
       score = p.avg_score != null ? parseFloat(p.avg_score) : null;
@@ -255,6 +293,20 @@ function _recolorCommunes(metric) {
   map.getSource('communes').setData(franceGeojson);
 }
 
+function _recolorUsCounties(metric) {
+  if (!_usCountiesGeo || !map.getSource('us-counties')) return;
+  for (const f of _usCountiesGeo.features) {
+    const cd = _usCountiesData.get(f.id);
+    if (metric === 'score') {
+      f.properties.color = colorFromScore(cd?.avg_score);
+    } else {
+      const avg = _avgParam(cd?.cities || [], metric);
+      f.properties.color = _colorFromMetricValue(avg, metric);
+    }
+  }
+  map.getSource('us-counties').setData(_usCountiesGeo);
+}
+
 function _applyMetric(metric) {
   _currentMetric = metric;
   // Mise a jour du titre de la legende
@@ -264,6 +316,7 @@ function _applyMetric(metric) {
   }
   _recolorCountries(metric);
   _recolorProvinces(metric);
+  _recolorUsCounties(metric);
   _recolorCommunes(metric);
 }
 
@@ -453,7 +506,13 @@ async function init() {
         ? '🔍  Commune ou n° de dép...'
         : '🔍  Ville ou pays...';
 
+      // Wide US bbox (Alaska/Hawaii included) — counties appear from zoom 5
+      const inUsArea = z >= 5
+        && c.lng > -180 && c.lng < -60
+        && c.lat > 15 && c.lat < 73;
+
       if (inFranceArea) _loadFranceGeojson();
+      if (inUsArea) _loadUsCountiesGeojson();
       // provinces are loaded eagerly; no moveend trigger needed for them
     });
 
@@ -674,6 +733,11 @@ async function _loadWorldProvincesGeojson() {
       _loadFranceGeojson();
       if (map.getLayer('communes-fill')) return;
     }
+    // Same pattern for US: county layer takes over from zoom 5
+    if (iso2 === 'US') {
+      _loadUsCountiesGeojson();
+      if (map.getLayer('us-counties-fill') && map.getZoom() >= 5) return;
+    }
     const name = e.features[0].properties.name;
     const pd = _provincesData.get(`${iso2}__${name}`);
     if (!pd) return;
@@ -683,6 +747,104 @@ async function _loadWorldProvincesGeojson() {
       .slice(0, 5);
     document.getElementById('panel-content').innerHTML = renderWorldCountryPanel(
       { name: pd.name, avg_score: pd.avg_score, city_count: pd.cities.length, scored_count: pd.scored_count },
+      topCities
+    );
+    document.getElementById('panel-empty').hidden = true;
+    document.getElementById('panel-content').hidden = false;
+  });
+}
+
+async function _loadUsCountiesGeojson() {
+  if (_usCountiesLoaded) return;
+  _usCountiesLoaded = true;
+
+  let r;
+  try {
+    r = await fetch(US_COUNTIES_GEOJSON_URL);
+    if (!r.ok) throw new Error(`HTTP ${r.status}`);
+  } catch (e) {
+    console.error('US counties GeoJSON fetch failed:', e.message);
+    _usCountiesLoaded = false;
+    return;
+  }
+
+  const geo = await r.json();
+  const usCities = _citiesByCountry.get('US') || [];
+
+  // Chunked PIP with bbox pre-filter (3143 counties)
+  const CHUNK = 300;
+  for (let i = 0; i < geo.features.length; i++) {
+    if (i > 0 && i % CHUNK === 0) {
+      await new Promise(resolve => setTimeout(resolve, 0));
+    }
+    const f = geo.features[i];
+    const [minLng, minLat, maxLng, maxLat] = _featureBbox(f);
+    const cities = usCities.filter(c =>
+      c.lng >= minLng && c.lng <= maxLng &&
+      c.lat >= minLat && c.lat <= maxLat &&
+      _cityInPolygon(c.lng, c.lat, f)
+    );
+    const scored = cities.filter(c => c.score != null);
+    const avg    = scored.length ? scored.reduce((s, c) => s + c.score, 0) / scored.length : null;
+
+    f.properties.color        = colorFromScore(avg);
+    f.properties.avg_score    = avg;
+    f.properties.city_count   = cities.length;
+    f.properties.scored_count = scored.length;
+    // MapLibre may drop string feature ids in rendered-feature events — keep FIPS in properties
+    f.properties.fips         = f.id;
+
+    _usCountiesData.set(f.id, {
+      avg_score: avg, cities, scored_count: scored.length, name: f.properties.NAME
+    });
+  }
+
+  _usCountiesGeo = geo;
+
+  // Si une metrique non-score est deja active, appliquer avant l'ajout visuel
+  if (_currentMetric !== 'score') {
+    for (const f of geo.features) {
+      const cd = _usCountiesData.get(f.id);
+      const avg = _avgParam(cd?.cities || [], _currentMetric);
+      f.properties.color = _colorFromMetricValue(avg, _currentMetric);
+    }
+  }
+
+  map.addSource('us-counties', { type: 'geojson', data: geo });
+  map.addLayer({
+    id: 'us-counties-fill',
+    type: 'fill',
+    source: 'us-counties',
+    minzoom: 5,
+    paint: {
+      'fill-color': ['coalesce', ['get', 'color'], 'rgba(0,0,0,0)'],
+      'fill-opacity': 0.80
+    }
+  });
+  map.addLayer({
+    id: 'us-counties-line',
+    type: 'line',
+    source: 'us-counties',
+    minzoom: 5,
+    paint: { 'line-color': '#555', 'line-width': 0.3 }
+  });
+
+  map.on('click', 'us-counties-fill', (e) => {
+    const f  = e.features[0];
+    const cd = _usCountiesData.get(f.properties.fips ?? f.id);
+    if (!cd) return;
+    const st = _FIPS_STATE[f.properties.STATE] || '';
+    const topCities = [...cd.cities]
+      .filter(c => c.score != null)
+      .sort((a, b) => b.score - a.score)
+      .slice(0, 5);
+    document.getElementById('panel-content').innerHTML = renderWorldCountryPanel(
+      {
+        name: cd.name + (st ? `, ${st}` : ''),
+        avg_score: cd.avg_score,
+        city_count: cd.cities.length,
+        scored_count: cd.scored_count
+      },
       topCities
     );
     document.getElementById('panel-empty').hidden = true;
