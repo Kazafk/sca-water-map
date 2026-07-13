@@ -192,6 +192,7 @@ function _initTooltip() {
 
     let name = '';
     let score = null;
+    let note = '';
     const p = hit.feat.properties;
 
     if (hit.layer === 'communes-fill') {
@@ -210,6 +211,10 @@ function _initTooltip() {
     } else if (hit.layer === 'world-provinces-fill') {
       name  = p.name || '—';
       score = p.avg_score != null ? parseFloat(p.avg_score) : null;
+      if (score == null && p.natl_score != null) {
+        score = parseFloat(p.natl_score);
+        note  = ' (moyenne nationale)';
+      }
     } else {
       // countries-fill : propriete 'ADMIN' dans geo-countries GeoJSON
       name  = p['ADMIN'] || p['NAME'] || p['name'] || '—';
@@ -223,8 +228,9 @@ function _initTooltip() {
     const scoreHtml = pct
       ? `<span style="color:${col};font-weight:bold"> ${pct}</span>`
       : `<span style="color:var(--muted)"> Pas de données</span>`;
+    const noteHtml = note ? `<span style="color:var(--muted);font-size:10px">${note}</span>` : '';
 
-    tooltip.innerHTML = `<span style="color:var(--text)">${escapeHtml(name)}</span>${scoreHtml}`;
+    tooltip.innerHTML = `<span style="color:var(--text)">${escapeHtml(name)}</span>${scoreHtml}${noteHtml}`;
     tooltip.style.display = 'block';
 
     // Positionnement : suit le curseur avec offset pour eviter le chevauchement
@@ -270,16 +276,28 @@ function _recolorCountries(metric) {
   map.getSource('countries').setData(_countriesGeo);
 }
 
+// Moyenne nationale d'un parametre (France via communesData, sinon worldCities)
+function _countryParamAvg(iso2, metric) {
+  if (iso2 === 'FR') {
+    const vals = Object.values(communesData)
+      .map(c => c.params?.[metric])
+      .filter(v => v != null);
+    return vals.length ? vals.reduce((a, b) => a + b, 0) / vals.length : null;
+  }
+  return _avgParam(_citiesByCountry.get(iso2) || [], metric);
+}
+
 function _recolorProvinces(metric) {
   if (!_provincesGeo || !map.getSource('world-provinces')) return;
   for (const f of _provincesGeo.features) {
+    const iso2 = f.properties.iso2;
     if (metric === 'score') {
-      f.properties.color = colorFromScore(f.properties.avg_score);
+      f.properties.color = colorFromScore(f.properties.avg_score ?? f.properties.natl_score);
     } else {
-      const iso2 = f.properties.iso2;
       const pd   = _provincesData.get(`${iso2}__${f.properties.name}`);
-      const cities = pd?.cities || [];
-      const avg    = _avgParam(cities, metric);
+      let avg    = _avgParam(pd?.cities || [], metric);
+      // Repli hiérarchique identique au mode score
+      if (avg == null && iso2) avg = _countryParamAvg(iso2, metric);
       f.properties.color = _colorFromMetricValue(avg, metric);
     }
   }
@@ -451,18 +469,30 @@ async function init() {
   }
 
   // Build iso3→iso2 map and color countries GeoJSON (single fetch, no duplicate load)
+  // geo-countries inherits Natural Earth's "-99" ISO codes for a few disputed/special
+  // entries — patch the ones we have data for, keyed by feature name.
+  const ISO_FIXES = { 'France': ['FR', 'FRA'], 'Norway': ['NO', 'NOR'], 'Kosovo': ['XK', 'XKX'] };
   let countriesGeo = null;
   if (countriesGeoRes.ok) {
     countriesGeo = await countriesGeoRes.json();
     for (const f of countriesGeo.features) {
-      const a2 = f.properties['ISO3166-1-Alpha-2'];
-      const a3 = f.properties['ISO3166-1-Alpha-3'];
-      if (a2 && a3) _iso3toIso2.set(a3, a2);
+      let a2 = f.properties['ISO3166-1-Alpha-2'];
+      let a3 = f.properties['ISO3166-1-Alpha-3'];
+      if ((!a2 || a2 === '-99') && ISO_FIXES[f.properties.name]) {
+        [a2, a3] = ISO_FIXES[f.properties.name];
+        f.properties['ISO3166-1-Alpha-2'] = a2; // in place: click/tooltip handlers use it
+        f.properties['ISO3166-1-Alpha-3'] = a3;
+      }
+      if (a2 && a3 && a2 !== '-99') _iso3toIso2.set(a3, a2);
       const cData = _countriesMap.get(a2);
       f.properties.color = colorFromScore(cData?.avg_score);
     }
     _countriesGeo = countriesGeo; // conserve la reference pour recoloration Tâche 3
   }
+  // Natural Earth uses its own alpha-3 for Kosovo in the provinces file
+  _iso3toIso2.set('FRA', 'FR');
+  _iso3toIso2.set('NOR', 'NO');
+  _iso3toIso2.set('KOS', 'XK');
 
   // Group cities by country ISO2 for efficient province-level PIP
   for (const city of worldCities) {
@@ -706,8 +736,13 @@ async function _loadWorldProvincesGeojson() {
     const scored  = cities.filter(c => c.score != null);
     const avg     = scored.length ? scored.reduce((s, c) => s + c.score, 0) / scored.length : null;
 
-    f.properties.color        = colorFromScore(avg);
+    // Repli hiérarchique : sans ville scorée, la province hérite de la moyenne nationale
+    // (couleur pleine, pas de superposition de couches → pas de teintes mélangées)
+    const natlScore = iso2 ? (_countriesMap.get(iso2)?.avg_score ?? null) : null;
+
+    f.properties.color        = colorFromScore(avg ?? natlScore);
     f.properties.avg_score    = avg;
+    f.properties.natl_score   = avg == null ? natlScore : null;
     f.properties.city_count   = cities.length;
     f.properties.scored_count = scored.length;
     f.properties.iso2         = iso2;
