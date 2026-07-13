@@ -86,10 +86,11 @@ Paramètres SCA cibles par ville (idéalement ≥ 4 pour éviter le badge « Don
 
 ### Phase 2 — Importeurs à fort rendement (sources structurées)
 
-#### 2a. Pays-Bas — `data/build_netherlands.py`
-- La base nationale REWAB (RIVM) n'est **pas** en open data (accès soumis à Vewin)
-- Voie libre : les **10 compagnies** couvrent 100 % du territoire et publient leurs analyses par station/commune : Vitens, PWN, Waternet, Evides, Dunea, Brabant Water, WML, WMD, Waterbedrijf Groningen (+ lookup dureté par code postal chez la plupart)
-- Rendement : ~342 gemeenten possibles. Effort : 2–3 jours (10 sites, formats majoritairement structurés).
+#### 2a. Pays-Bas — `data/build_netherlands.py` ⚠️ BLOQUÉ sur la dureté (2026-07-13)
+- **Trouvé et exploité** : WFS INSPIRE RIVM `inspire:drinkwaterkwaliteit` (data.rivm.nl/geo/inspire/wfs) — moyennes annuelles par station de pompage, 2013–présent, 203 stations. Le script est écrit et fonctionnel : dernière année par station, conversion RD→WGS84, affectation aux villes GeoNames ≤ 20 km → **304 villes avec pH, conductivité, sodium, chlorures**.
+- **Blocage** : la couche RIVM n'a **ni dureté, ni calcium, ni alcalinité** → `compute_sca_score` renvoie null (le score repose à 80 % sur le couple Ca/TAC). 304 villes grises = inutile ; données retirées, script conservé.
+- **Voies de déblocage** : (a) parser les PDF « waterkwaliteitsoverzicht » par station des compagnies (layout Vewin standard, lignes Hardheid totaal + Waterstofcarbonaat) — 2–3 j ; (b) reverse-engineering des lookups postcode par compagnie ; (c) décision produit : accepter un score dégradé calculé sur les seuls paramètres secondaires (plafonné bas) — à valider par l'utilisateur.
+- La base REWAB (RIVM/Vewin) reste fermée. Rendement final possible : ~340 gemeenten.
 
 #### 2b. Royaume-Uni — `data/build_uk.py` + contours ONS
 - **Données** : les 22 compagnies publient un lookup qualité par postcode + rapports annuels par supply zone (Severn Trent « check my water quality », Anglian supply-zone map, Thames >100 zones à Londres…) ; le DWI publie les retours annuels par compagnie. Stratégie : interroger les lookups par postcode des ~200 principales villes, ou parser les CSV/PDF de zones
