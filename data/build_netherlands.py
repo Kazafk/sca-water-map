@@ -28,6 +28,7 @@ import math
 import os
 import re
 import time
+import urllib.parse
 import urllib.request
 
 from pypdf import PdfReader
@@ -148,41 +149,102 @@ def parse_vitens_pdf(path: str) -> dict:
     return {k: round(sum(v) / len(v), 4) for k, v in acc.items()}
 
 
-print("Fetching Vitens overview page...")
-req = urllib.request.Request(VITENS_PAGE, headers={"User-Agent": "Mozilla/5.0"})
-with urllib.request.urlopen(req, timeout=60) as r:
-    page = r.read().decode("utf-8", errors="replace")
-pdf_urls = {}
-for m in re.finditer(r'href="(https://[^"]*?/wz_?[mn]pb-([a-z0-9-]+)\.pdf[^"]*)"', page):
-    pdf_urls[m.group(2)] = m.group(1).replace("&amp;", "&")
-print(f"Vitens station PDFs found: {len(pdf_urls)}")
+# Brabant Water publishes one quarterly PDF per production station; layout:
+# "<label> <unit> [norm] <n> <mean> <min> <max>" -> mean = 3rd number from
+# the end. Hardness is 'totale hardheid' in mmol/l (1 mmol/l = 5.6 dH).
+BRABANT_PAGE = ("https://www.brabantwater.nl/drinkwater/waterkwaliteit/"
+                "kraanwaterkwaliteit/waterkwaliteitsoverzicht-productielocatie")
+BRABANT_ROWS = [
+    (r"^\s*totale hardheid\s+mmol/l",   "Ca_Hardness_dH",         5.6),
+    (r"^\s*waterstofcarbonaat\s+mg/l",  "Alkalinity_TAC_mmol_l",  1 / 61.02),
+    (r"^\s*calcium\s+mg/l",             "Calcium_Ca_mg_l",        1.0),
+    (r"^\s*zuurgraad\s+pH-eenh",        "pH",                     1.0),
+    (r"^\s*EGV \(elek",                 "TDS_Conductivity_uS_cm", 10.0),
+    (r"^\s*natrium\s+mg/l",             "Sodium_Na_mg_l",         1.0),
+    (r"^\s*chloride\s+mg/l",            "Chlorides_Cl_mg_l",      1.0),
+]
 
-# RIVM Vitens stations indexed by normalized station name for matching
-rivm_vitens = {}
-for name, st in stations.items():
-    if name.lower().startswith("vitens"):
-        rivm_vitens[norm_name(name.split("_", 1)[-1])] = st
 
-matched = unmatched = 0
-for slug, url in pdf_urls.items():
-    cache = os.path.join(PDF_DIR, f"{slug}.pdf")
-    if not os.path.exists(cache) or os.path.getsize(cache) < 10_000:
-        try:
-            urllib.request.urlretrieve(url, cache)
-            time.sleep(0.1)
-        except Exception as e:
-            print(f"  PDF KO {slug}: {e}")
+def parse_brabant_pdf(path: str) -> dict:
+    # extraction_mode='layout' keeps table cells on their row (the default
+    # mode reflows some rows and detaches the values from their label)
+    try:
+        text = "\n".join(pg.extract_text(extraction_mode="layout") or ""
+                         for pg in PdfReader(path).pages)
+    except Exception:
+        return {}
+    params = {}
+    for line in text.splitlines():
+        for pattern, out_key, factor in BRABANT_ROWS:
+            if out_key in params or not re.search(pattern, line):
+                continue
+            nums = [num(t) for t in re.findall(r"\d+(?:,\d+)?", line)]
+            nums = [v for v in nums if v is not None]
+            if len(nums) >= 3:
+                params[out_key] = round(nums[-3] * factor, 4)
+            break
+    return params
+
+
+def merge_company_pdfs(company_prefix: str, pdf_urls: dict, parser) -> tuple:
+    """Merge per-station PDF params into RIVM stations (matched by name
+    containment after normalization)."""
+    rivm_idx = {}
+    for name, st in stations.items():
+        if name.lower().startswith(company_prefix.lower()):
+            rivm_idx[norm_name(name.split("_", 1)[-1])] = st
+    matched = unmatched = 0
+    for slug, url in pdf_urls.items():
+        cache = os.path.join(PDF_DIR, f"{norm_name(slug)}.pdf")
+        if not os.path.exists(cache) or os.path.getsize(cache) < 10_000:
+            try:
+                req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+                with urllib.request.urlopen(req, timeout=60) as r:
+                    raw = r.read()
+                with open(cache, "wb") as f:
+                    f.write(raw)
+                time.sleep(0.1)
+            except Exception as e:
+                print(f"  PDF KO {slug}: {e}")
+                continue
+        params = parser(cache)
+        if "Ca_Hardness_dH" not in params:
             continue
-    params = parse_vitens_pdf(cache)
-    if "Ca_Hardness_dH" not in params:
-        continue
-    st = rivm_vitens.get(norm_name(slug))
-    if st is None:
-        unmatched += 1
-        continue
-    st["params"].update(params)
-    matched += 1
-print(f"Vitens PDFs merged into RIVM stations: {matched} (no RIVM match: {unmatched})")
+        n_slug = norm_name(slug)
+        st = rivm_idx.get(n_slug)
+        if st is None:  # containment fallback: "bergenopzoom" in "bergenopzoommondaf"
+            cands = [s for k, s in rivm_idx.items() if n_slug in k or k in n_slug]
+            st = cands[0] if cands else None
+        if st is None:
+            unmatched += 1
+            continue
+        st["params"].update(params)
+        matched += 1
+    print(f"{company_prefix} PDFs merged: {matched} (no RIVM match: {unmatched})")
+
+
+def _fetch(url: str) -> str:
+    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+    with urllib.request.urlopen(req, timeout=60) as r:
+        return r.read().decode("utf-8", errors="replace")
+
+
+# --- Vitens ---
+page = _fetch(VITENS_PAGE)
+vitens_urls = {}
+for m in re.finditer(r'href="(https://[^"]*?/wz_?[mn]pb-([a-z0-9-]+)\.pdf[^"]*)"', page):
+    vitens_urls[m.group(2)] = m.group(1).replace("&amp;", "&")
+print(f"Vitens station PDFs found: {len(vitens_urls)}")
+merge_company_pdfs("Vitens", vitens_urls, parse_vitens_pdf)
+
+# --- Brabant Water ---
+page = _fetch(BRABANT_PAGE)
+brabant_urls = {}
+for m in re.finditer(r'href="(/sites/brabantwater\.nl/[^"]*?/([^"/]+?)%20Drinkwaterkwaliteit[^"]*\.pdf)"', page):
+    slug = urllib.parse.unquote(m.group(2))
+    brabant_urls[slug] = "https://www.brabantwater.nl" + m.group(1)
+print(f"Brabant Water station PDFs found: {len(brabant_urls)}")
+merge_company_pdfs("Brabant Water", brabant_urls, parse_brabant_pdf)
 
 # --- 3. GeoNames NL cities ---
 nl_cities = []
