@@ -71,18 +71,18 @@ Paramètres SCA cibles par ville (idéalement ≥ 4 pour éviter le badge « Don
 
 ### Phase 1 — Gains rapides (effort faible, gros impact visuel)
 
-#### 1a. Ukraine + pays hors LAU : contours geoBoundaries — `data/build_extra_places.py`
+#### 1a. Ukraine + pays hors LAU : contours geoBoundaries — `data/build_extra_places.py` ✅ FAIT (2026-07-13)
+559 polygones livrés (UA 457, MD 29, BA 26, ME 17, XK 14, BY 10, AD 4, SM 2), fusionnés dans la source `eu-places` côté client.
 - **Données : déjà présentes** (463 villes UA scorées invisibles au zoom > 4 !)
 - Source : geoBoundaries (geoboundaries.org, licence ouverte, GeoJSON par pays/niveau)
 - Script générique paramétré `{iso2: (iso3, adm_level)}` couvrant UA (ADM3), MD, BA, ME, XK, BY, AD, SM — même matching spatial PIP que `build_eu_places.py`, sortie fusionnée dans `eu-places.json` (ou `extra-places.json` séparé)
 - **Bonus** : le même script servira plus tard hors Europe (CN 283, RU 194, CA 187, BR 149…)
 - Effort : ~½ journée. Rendement : ~580 polygones d'un coup.
 
-#### 1b. Belgique — `data/build_belgium.py`
-- **Wallonie** : open data ODWB `zones-de-distribution-en-eau-wallonie` (odwb.be) + fiches par zone de l'outil cartographique SPW (environnement.wallonie.be) — vraie donnée publique structurée
-- **Flandre** : De Watergroep (recherche dureté/qualité par gemeente), water-link (Anvers), Farys, Pidpa — pages structurées par commune
-- **Bruxelles** : Vivaqua publie la composition de l'eau par commune (19 communes)
-- Rendement attendu : 300–580 communes. Polygones LAU déjà prêts. Effort : 1–2 jours.
+#### 1b. Belgique — `data/build_belgium.py` ✅ FAIT pour la Wallonie + Bruxelles (2026-07-13)
+- **Wallonie** : 635 fiches ZDE (cartodoc.wallonie.be, indexées par l'API ODWB) parsées → 262 communes avec 5 paramètres médians (dureté °f→°dH, pH, conductivité, sodium, chlorures). BE : 1 → 234 villes scorées, 231 polygones LAU.
+- **Bruxelles** : entrée Brussels conservée (valeurs Vivaqua, milieux de fourchette, codées dans le script).
+- **Flandre — RESTE À FAIRE** : pas d'open data. De Watergroep ne publie librement que la dureté par gemeente (analyses complètes sur formulaire) ; Farys = formulaire AJAX Drupal par commune (tokens) ; Vivaqua = PDF par adresse. Options : reverse-engineering du formulaire Farys, ou demande d'accès aux rapports De Watergroep. ~300 gemeenten en jeu.
 
 ### Phase 2 — Importeurs à fort rendement (sources structurées)
 
