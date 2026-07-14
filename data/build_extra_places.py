@@ -135,6 +135,18 @@ COUNTRIES = {
     "TH": ("THA", "ADM2"),  # amphoe (928)
     "MY": ("MYS", "ADM3"),  # mukim (1 859)
     "SG": ("SGP", "ADM2"),  # planning areas (55)
+    # Caraïbes
+    "DO": ("DOM", "ADM2"),  # municipios (155)
+    "JM": ("JAM", "ADM2"),  # districts (827)
+    "HT": ("HTI", "ADM3"),  # communal sections (140)
+    "BS": ("BHS", "ADM2"),  # districts (34)
+    "PR": ("PRI", "ADM2"),  # municipios (78)
+    "BB": ("BRB", "ADM1"),  # parishes (11)
+    "CU": ("CUB", "ADM2"),  # municipios (168)
+    "TT": ("TTO", "ADM1"),  # regions (14)
+    # Amérique latine débloquée par le fix mot-entier "ag" (Nicaragua/Paraguay)
+    "NI": ("NIC", "ADM2"),  # municipios (153)
+    "PY": ("PRY", "ADM2"),  # districts (247)
 }
 # Les DOM (GP/MQ/GF/RE/YT) sont bâtis depuis le référentiel communal
 # france-geojson (voir add_dom_places) — geoBoundaries les couvre mal.

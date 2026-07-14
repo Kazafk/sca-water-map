@@ -51,6 +51,8 @@ MULTI_COUNTRY_FILES = {
     # DOM/COM : chaque Region porte son territoire "(Guadeloupe)", "(Guyane)"…
     # avec des codes ISO distincts (GP/MQ/GF/RE/YT/PF/NC/MF/BL).
     "france_outremer_water_quality.json",
+    # Caraïbes : nations insulaires distinctes (DO/JM/HT/BS/PR/BB/CU/TT).
+    "caribbean_water_quality.json",
 }
 # NB : china_water_quality.json n'est PLUS multi-pays. Densifié à 336 entrées
 # toutes chinoises (parenthèses = régie ou "China") ; le traiter en mono-pays
@@ -84,6 +86,7 @@ COUNTRY_FALLBACKS = {
     "Nouvelle-Calédonie":  ("NC", "New Caledonia"),
     "Saint-Martin":        ("MF", "Saint Martin (French part)"),
     "Saint-Barthélemy":    ("BL", "Saint Barthélemy"),
+    "Tobago":              ("TT", "Trinidad and Tobago"),  # caribbean file
 }
 # Normalised-key version for case-insensitive lookups
 _COUNTRY_FALLBACKS_LOWER = {k.lower(): v for k, v in COUNTRY_FALLBACKS.items()}
@@ -96,11 +99,14 @@ _UTILITY_KEYWORDS = {
     "avlop", "avlø", "watergroep", "waternet", "vivaqua",
     "wasserversorgung", "waterversorgung",
     "trent", "thames", "severn",  # named utilities
-    "spA", "spa", "ag", "gmbh",   # corporate suffixes
+    "gmbh",                       # corporate suffixes
     "holding", "betriebe",
     "isabel", "omnium",
     "uisce",  # Irish for water
 }
+# Short keywords matched as WHOLE WORDS only — as substrings they produce false
+# positives ("ag" inside "Tobago", "spa" inside "Spain", "eau" inside "Bordeaux").
+_UTILITY_WORDS = {"ag", "spa", "eau"}
 
 # Cache for country resolution (string -> (iso2, name) | (None, None))
 _country_cache: dict = {}
@@ -119,7 +125,8 @@ def _candidate_is_utility(candidate: str) -> bool:
     for kw in _UTILITY_KEYWORDS:
         if kw in folded:
             return True
-    return False
+    words = set(re.findall(r"[a-z]+", folded))
+    return bool(words & _UTILITY_WORDS)
 
 
 def _fuzzy_strict(candidate: str):

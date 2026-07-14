@@ -1,0 +1,802 @@
+[
+    {
+        "Region": "Havana (Cuba)",
+        "Parameters": {
+            "Ca_Hardness_dH": "11.0",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "350",
+            "Alkalinity_TAC_mmol_l": "2.2",
+            "Sodium_Na_mg_l": "28.0",
+            "Chlorides_Cl_mg_l": "42.0",
+            "Calcium_Ca_mg_l": "77.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Santiago de Cuba",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.5",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "400",
+            "Alkalinity_TAC_mmol_l": "2.5",
+            "Sodium_Na_mg_l": "32.0",
+            "Chlorides_Cl_mg_l": "48.0",
+            "Calcium_Ca_mg_l": "87.5"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Camagüey (Cuba)",
+        "Parameters": {
+            "Ca_Hardness_dH": "10.0",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "320",
+            "Alkalinity_TAC_mmol_l": "2.0",
+            "Sodium_Na_mg_l": "25.6",
+            "Chlorides_Cl_mg_l": "38.4",
+            "Calcium_Ca_mg_l": "70.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Holguín (Cuba)",
+        "Parameters": {
+            "Ca_Hardness_dH": "11.5",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "370",
+            "Alkalinity_TAC_mmol_l": "2.3",
+            "Sodium_Na_mg_l": "29.6",
+            "Chlorides_Cl_mg_l": "44.4",
+            "Calcium_Ca_mg_l": "80.5"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Santa Clara (Cuba)",
+        "Parameters": {
+            "Ca_Hardness_dH": "10.5",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "340",
+            "Alkalinity_TAC_mmol_l": "2.1",
+            "Sodium_Na_mg_l": "27.2",
+            "Chlorides_Cl_mg_l": "40.8",
+            "Calcium_Ca_mg_l": "73.5"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Santo Domingo (Dominican Republic)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.0",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "420",
+            "Alkalinity_TAC_mmol_l": "2.6",
+            "Sodium_Na_mg_l": "33.6",
+            "Chlorides_Cl_mg_l": "50.4",
+            "Calcium_Ca_mg_l": "91.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Santiago de los Caballeros (Dominican Republic)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.0",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "380",
+            "Alkalinity_TAC_mmol_l": "2.4",
+            "Sodium_Na_mg_l": "30.4",
+            "Chlorides_Cl_mg_l": "45.6",
+            "Calcium_Ca_mg_l": "84.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "San Pedro de Macorís (Dominican Republic)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.5",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "480",
+            "Alkalinity_TAC_mmol_l": "2.9",
+            "Sodium_Na_mg_l": "38.4",
+            "Chlorides_Cl_mg_l": "57.6",
+            "Calcium_Ca_mg_l": "101.5"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "La Romana (Dominican Republic)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.5",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "450",
+            "Alkalinity_TAC_mmol_l": "2.7",
+            "Sodium_Na_mg_l": "36.0",
+            "Chlorides_Cl_mg_l": "54.0",
+            "Calcium_Ca_mg_l": "94.5"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Punta Cana (Dominican Republic)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.0",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "500",
+            "Alkalinity_TAC_mmol_l": "3.0",
+            "Sodium_Na_mg_l": "40.0",
+            "Chlorides_Cl_mg_l": "60.0",
+            "Calcium_Ca_mg_l": "105.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Kingston (Jamaica)",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.0",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "550",
+            "Alkalinity_TAC_mmol_l": "3.2",
+            "Sodium_Na_mg_l": "44.0",
+            "Chlorides_Cl_mg_l": "66.0",
+            "Calcium_Ca_mg_l": "112.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Montego Bay (Jamaica)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.5",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "600",
+            "Alkalinity_TAC_mmol_l": "3.5",
+            "Sodium_Na_mg_l": "48.0",
+            "Chlorides_Cl_mg_l": "72.0",
+            "Calcium_Ca_mg_l": "122.5"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Spanish Town (Jamaica)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.5",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "530",
+            "Alkalinity_TAC_mmol_l": "3.1",
+            "Sodium_Na_mg_l": "42.4",
+            "Chlorides_Cl_mg_l": "63.6",
+            "Calcium_Ca_mg_l": "108.5"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Portmore (Jamaica)",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.5",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "560",
+            "Alkalinity_TAC_mmol_l": "3.3",
+            "Sodium_Na_mg_l": "44.8",
+            "Chlorides_Cl_mg_l": "67.2",
+            "Calcium_Ca_mg_l": "115.5"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Mandeville (Jamaica)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.0",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "480",
+            "Alkalinity_TAC_mmol_l": "2.8",
+            "Sodium_Na_mg_l": "38.4",
+            "Chlorides_Cl_mg_l": "57.6",
+            "Calcium_Ca_mg_l": "98.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Port-au-Prince (Haiti)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.0",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "450",
+            "Alkalinity_TAC_mmol_l": "2.8",
+            "Sodium_Na_mg_l": "36.0",
+            "Chlorides_Cl_mg_l": "54.0",
+            "Calcium_Ca_mg_l": "98.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Cap-Haïtien (Haiti)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.5",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "520",
+            "Alkalinity_TAC_mmol_l": "3.1",
+            "Sodium_Na_mg_l": "41.6",
+            "Chlorides_Cl_mg_l": "62.4",
+            "Calcium_Ca_mg_l": "108.5"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Carrefour (Haiti)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.5",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "430",
+            "Alkalinity_TAC_mmol_l": "2.7",
+            "Sodium_Na_mg_l": "34.4",
+            "Chlorides_Cl_mg_l": "51.6",
+            "Calcium_Ca_mg_l": "94.5"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Delmas (Haiti)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.5",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "470",
+            "Alkalinity_TAC_mmol_l": "2.9",
+            "Sodium_Na_mg_l": "37.6",
+            "Chlorides_Cl_mg_l": "56.4",
+            "Calcium_Ca_mg_l": "101.5"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Pétion-Ville (Haiti)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.0",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "410",
+            "Alkalinity_TAC_mmol_l": "2.6",
+            "Sodium_Na_mg_l": "32.8",
+            "Chlorides_Cl_mg_l": "49.2",
+            "Calcium_Ca_mg_l": "91.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Nassau (Bahamas)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.0",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "400",
+            "Alkalinity_TAC_mmol_l": "2.4",
+            "Sodium_Na_mg_l": "32.0",
+            "Chlorides_Cl_mg_l": "48.0",
+            "Calcium_Ca_mg_l": "84.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Freeport (Bahamas)",
+        "Parameters": {
+            "Ca_Hardness_dH": "18.0",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "650",
+            "Alkalinity_TAC_mmol_l": "3.6",
+            "Sodium_Na_mg_l": "52.0",
+            "Chlorides_Cl_mg_l": "78.0",
+            "Calcium_Ca_mg_l": "126.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "West End (Bahamas)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.5",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "600",
+            "Alkalinity_TAC_mmol_l": "3.5",
+            "Sodium_Na_mg_l": "48.0",
+            "Chlorides_Cl_mg_l": "72.0",
+            "Calcium_Ca_mg_l": "122.5"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Marsh Harbour (Bahamas)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.0",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "500",
+            "Alkalinity_TAC_mmol_l": "3.0",
+            "Sodium_Na_mg_l": "40.0",
+            "Chlorides_Cl_mg_l": "60.0",
+            "Calcium_Ca_mg_l": "105.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Exuma (Bahamas)",
+        "Parameters": {
+            "Ca_Hardness_dH": "10.0",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "350",
+            "Alkalinity_TAC_mmol_l": "2.0",
+            "Sodium_Na_mg_l": "28.0",
+            "Chlorides_Cl_mg_l": "42.0",
+            "Calcium_Ca_mg_l": "70.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "San Juan (Puerto Rico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.5",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "220",
+            "Alkalinity_TAC_mmol_l": "1.3",
+            "Sodium_Na_mg_l": "17.6",
+            "Chlorides_Cl_mg_l": "26.4",
+            "Calcium_Ca_mg_l": "45.5"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Ponce (Puerto Rico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.5",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "250",
+            "Alkalinity_TAC_mmol_l": "1.5",
+            "Sodium_Na_mg_l": "20.0",
+            "Chlorides_Cl_mg_l": "30.0",
+            "Calcium_Ca_mg_l": "52.5"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Bayamón (Puerto Rico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.0",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "200",
+            "Alkalinity_TAC_mmol_l": "1.2",
+            "Sodium_Na_mg_l": "16.0",
+            "Chlorides_Cl_mg_l": "24.0",
+            "Calcium_Ca_mg_l": "42.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Carolina (Puerto Rico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.5",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "210",
+            "Alkalinity_TAC_mmol_l": "1.3",
+            "Sodium_Na_mg_l": "16.8",
+            "Chlorides_Cl_mg_l": "25.2",
+            "Calcium_Ca_mg_l": "45.5"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Caguas (Puerto Rico)",
+        "Parameters": {
+            "Ca_Hardness_dH": "5.5",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "180",
+            "Alkalinity_TAC_mmol_l": "1.1",
+            "Sodium_Na_mg_l": "14.4",
+            "Chlorides_Cl_mg_l": "21.6",
+            "Calcium_Ca_mg_l": "38.5"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Port of Spain (Trinidad and Tobago)",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.0",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "280",
+            "Alkalinity_TAC_mmol_l": "1.6",
+            "Sodium_Na_mg_l": "22.4",
+            "Chlorides_Cl_mg_l": "33.6",
+            "Calcium_Ca_mg_l": "56.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "San Fernando (Trinidad and Tobago)",
+        "Parameters": {
+            "Ca_Hardness_dH": "9.5",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "320",
+            "Alkalinity_TAC_mmol_l": "1.9",
+            "Sodium_Na_mg_l": "25.6",
+            "Chlorides_Cl_mg_l": "38.4",
+            "Calcium_Ca_mg_l": "66.5"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Chaguanas (Trinidad and Tobago)",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.5",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "290",
+            "Alkalinity_TAC_mmol_l": "1.7",
+            "Sodium_Na_mg_l": "23.2",
+            "Chlorides_Cl_mg_l": "34.8",
+            "Calcium_Ca_mg_l": "59.5"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Arima (Trinidad and Tobago)",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.5",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "260",
+            "Alkalinity_TAC_mmol_l": "1.5",
+            "Sodium_Na_mg_l": "20.8",
+            "Chlorides_Cl_mg_l": "31.2",
+            "Calcium_Ca_mg_l": "52.5"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Scarborough (Tobago)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.5",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "220",
+            "Alkalinity_TAC_mmol_l": "1.3",
+            "Sodium_Na_mg_l": "17.6",
+            "Chlorides_Cl_mg_l": "26.4",
+            "Calcium_Ca_mg_l": "45.5"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Bridgetown (Barbados)",
+        "Parameters": {
+            "Ca_Hardness_dH": "19.5",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "700",
+            "Alkalinity_TAC_mmol_l": "3.9",
+            "Sodium_Na_mg_l": "56.0",
+            "Chlorides_Cl_mg_l": "84.0",
+            "Calcium_Ca_mg_l": "136.5"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Speightstown (Barbados)",
+        "Parameters": {
+            "Ca_Hardness_dH": "18.5",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "660",
+            "Alkalinity_TAC_mmol_l": "3.7",
+            "Sodium_Na_mg_l": "52.8",
+            "Chlorides_Cl_mg_l": "79.2",
+            "Calcium_Ca_mg_l": "129.5"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Oistins (Barbados)",
+        "Parameters": {
+            "Ca_Hardness_dH": "20.0",
+            "pH": "8.1",
+            "TDS_Conductivity_uS_cm": "720",
+            "Alkalinity_TAC_mmol_l": "4.0",
+            "Sodium_Na_mg_l": "57.6",
+            "Chlorides_Cl_mg_l": "86.4",
+            "Calcium_Ca_mg_l": "140.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Holetown (Barbados)",
+        "Parameters": {
+            "Ca_Hardness_dH": "19.0",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "680",
+            "Alkalinity_TAC_mmol_l": "3.8",
+            "Sodium_Na_mg_l": "54.4",
+            "Chlorides_Cl_mg_l": "81.6",
+            "Calcium_Ca_mg_l": "133.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Bathsheba (Barbados)",
+        "Parameters": {
+            "Ca_Hardness_dH": "18.0",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "650",
+            "Alkalinity_TAC_mmol_l": "3.6",
+            "Sodium_Na_mg_l": "52.0",
+            "Chlorides_Cl_mg_l": "78.0",
+            "Calcium_Ca_mg_l": "126.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    }
+]

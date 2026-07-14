@@ -562,5 +562,1325 @@
             "Chlorides_Cl_mg_l": "15.7",
             "Calcium_Ca_mg_l": "18.4"
         }
+    },
+    {
+        "Region": "Shinjuku (Tokyo)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.8",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "130",
+            "Alkalinity_TAC_mmol_l": "0.8",
+            "Sodium_Na_mg_l": "10.4",
+            "Chlorides_Cl_mg_l": "15.6",
+            "Calcium_Ca_mg_l": "26.6"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Shibuya (Tokyo)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.9",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "135",
+            "Alkalinity_TAC_mmol_l": "0.8",
+            "Sodium_Na_mg_l": "10.8",
+            "Chlorides_Cl_mg_l": "16.2",
+            "Calcium_Ca_mg_l": "27.3"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Minato (Tokyo)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.0",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "140",
+            "Alkalinity_TAC_mmol_l": "0.8",
+            "Sodium_Na_mg_l": "11.2",
+            "Chlorides_Cl_mg_l": "16.8",
+            "Calcium_Ca_mg_l": "28.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Setagaya (Tokyo)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.7",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "125",
+            "Alkalinity_TAC_mmol_l": "0.7",
+            "Sodium_Na_mg_l": "10.0",
+            "Chlorides_Cl_mg_l": "15.0",
+            "Calcium_Ca_mg_l": "25.9"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Chuo (Tokyo)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.1",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "145",
+            "Alkalinity_TAC_mmol_l": "0.8",
+            "Sodium_Na_mg_l": "11.6",
+            "Chlorides_Cl_mg_l": "17.4",
+            "Calcium_Ca_mg_l": "28.7"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Chiyoda (Tokyo)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.0",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "140",
+            "Alkalinity_TAC_mmol_l": "0.8",
+            "Sodium_Na_mg_l": "11.2",
+            "Chlorides_Cl_mg_l": "16.8",
+            "Calcium_Ca_mg_l": "28.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Taito (Tokyo)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.8",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "130",
+            "Alkalinity_TAC_mmol_l": "0.8",
+            "Sodium_Na_mg_l": "10.4",
+            "Chlorides_Cl_mg_l": "15.6",
+            "Calcium_Ca_mg_l": "26.6"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Meguro (Tokyo)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.7",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "125",
+            "Alkalinity_TAC_mmol_l": "0.7",
+            "Sodium_Na_mg_l": "10.0",
+            "Chlorides_Cl_mg_l": "15.0",
+            "Calcium_Ca_mg_l": "25.9"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Shinagawa (Tokyo)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.9",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "135",
+            "Alkalinity_TAC_mmol_l": "0.8",
+            "Sodium_Na_mg_l": "10.8",
+            "Chlorides_Cl_mg_l": "16.2",
+            "Calcium_Ca_mg_l": "27.3"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Ota (Tokyo)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.2",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "150",
+            "Alkalinity_TAC_mmol_l": "0.8",
+            "Sodium_Na_mg_l": "12.0",
+            "Chlorides_Cl_mg_l": "18.0",
+            "Calcium_Ca_mg_l": "29.4"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Nakano (Tokyo)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.6",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "120",
+            "Alkalinity_TAC_mmol_l": "0.7",
+            "Sodium_Na_mg_l": "9.6",
+            "Chlorides_Cl_mg_l": "14.4",
+            "Calcium_Ca_mg_l": "25.2"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Suginami (Tokyo)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.5",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "115",
+            "Alkalinity_TAC_mmol_l": "0.7",
+            "Sodium_Na_mg_l": "9.2",
+            "Chlorides_Cl_mg_l": "13.8",
+            "Calcium_Ca_mg_l": "24.5"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Nerima (Tokyo)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.4",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "110",
+            "Alkalinity_TAC_mmol_l": "0.7",
+            "Sodium_Na_mg_l": "8.8",
+            "Chlorides_Cl_mg_l": "13.2",
+            "Calcium_Ca_mg_l": "23.8"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Katsushika (Tokyo)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.3",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "155",
+            "Alkalinity_TAC_mmol_l": "0.9",
+            "Sodium_Na_mg_l": "12.4",
+            "Chlorides_Cl_mg_l": "18.6",
+            "Calcium_Ca_mg_l": "30.1"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Edogawa (Tokyo)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.4",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "160",
+            "Alkalinity_TAC_mmol_l": "0.9",
+            "Sodium_Na_mg_l": "12.8",
+            "Chlorides_Cl_mg_l": "19.2",
+            "Calcium_Ca_mg_l": "30.8"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Yokohama (Kanagawa)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.5",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "110",
+            "Alkalinity_TAC_mmol_l": "0.7",
+            "Sodium_Na_mg_l": "8.8",
+            "Chlorides_Cl_mg_l": "13.2",
+            "Calcium_Ca_mg_l": "24.5"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Kawasaki (Kanagawa)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.6",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "115",
+            "Alkalinity_TAC_mmol_l": "0.7",
+            "Sodium_Na_mg_l": "9.2",
+            "Chlorides_Cl_mg_l": "13.8",
+            "Calcium_Ca_mg_l": "25.2"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Sagamihara (Kanagawa)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.2",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "100",
+            "Alkalinity_TAC_mmol_l": "0.6",
+            "Sodium_Na_mg_l": "8.0",
+            "Chlorides_Cl_mg_l": "12.0",
+            "Calcium_Ca_mg_l": "22.4"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Saitama City (Saitama)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.5",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "150",
+            "Alkalinity_TAC_mmol_l": "0.9",
+            "Sodium_Na_mg_l": "12.0",
+            "Chlorides_Cl_mg_l": "18.0",
+            "Calcium_Ca_mg_l": "31.5"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Kawaguchi (Saitama)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.4",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "145",
+            "Alkalinity_TAC_mmol_l": "0.9",
+            "Sodium_Na_mg_l": "11.6",
+            "Chlorides_Cl_mg_l": "17.4",
+            "Calcium_Ca_mg_l": "30.8"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Chiba City (Chiba)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.8",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "165",
+            "Alkalinity_TAC_mmol_l": "1.0",
+            "Sodium_Na_mg_l": "13.2",
+            "Chlorides_Cl_mg_l": "19.8",
+            "Calcium_Ca_mg_l": "33.6"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Funabashi (Chiba)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.9",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "170",
+            "Alkalinity_TAC_mmol_l": "1.0",
+            "Sodium_Na_mg_l": "13.6",
+            "Chlorides_Cl_mg_l": "20.4",
+            "Calcium_Ca_mg_l": "34.3"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Ichikawa (Chiba)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.7",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "160",
+            "Alkalinity_TAC_mmol_l": "0.9",
+            "Sodium_Na_mg_l": "12.8",
+            "Chlorides_Cl_mg_l": "19.2",
+            "Calcium_Ca_mg_l": "32.9"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Matsudo (Chiba)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.6",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "155",
+            "Alkalinity_TAC_mmol_l": "0.9",
+            "Sodium_Na_mg_l": "12.4",
+            "Chlorides_Cl_mg_l": "18.6",
+            "Calcium_Ca_mg_l": "32.2"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Sakai (Osaka)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.4",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "85",
+            "Alkalinity_TAC_mmol_l": "0.5",
+            "Sodium_Na_mg_l": "6.8",
+            "Chlorides_Cl_mg_l": "10.2",
+            "Calcium_Ca_mg_l": "16.8"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Higashiosaka (Osaka)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.6",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "95",
+            "Alkalinity_TAC_mmol_l": "0.5",
+            "Sodium_Na_mg_l": "7.6",
+            "Chlorides_Cl_mg_l": "11.4",
+            "Calcium_Ca_mg_l": "18.2"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Toyonaka (Osaka)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.5",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "90",
+            "Alkalinity_TAC_mmol_l": "0.5",
+            "Sodium_Na_mg_l": "7.2",
+            "Chlorides_Cl_mg_l": "10.8",
+            "Calcium_Ca_mg_l": "17.5"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Hirakata (Osaka)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.3",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "80",
+            "Alkalinity_TAC_mmol_l": "0.5",
+            "Sodium_Na_mg_l": "6.4",
+            "Chlorides_Cl_mg_l": "9.6",
+            "Calcium_Ca_mg_l": "16.1"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Suita (Osaka)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.5",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "90",
+            "Alkalinity_TAC_mmol_l": "0.5",
+            "Sodium_Na_mg_l": "7.2",
+            "Chlorides_Cl_mg_l": "10.8",
+            "Calcium_Ca_mg_l": "17.5"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Kobe (Hyogo)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.2",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "75",
+            "Alkalinity_TAC_mmol_l": "0.4",
+            "Sodium_Na_mg_l": "6.0",
+            "Chlorides_Cl_mg_l": "9.0",
+            "Calcium_Ca_mg_l": "15.4"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Nishinomiya (Hyogo)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.1",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "70",
+            "Alkalinity_TAC_mmol_l": "0.4",
+            "Sodium_Na_mg_l": "5.6",
+            "Chlorides_Cl_mg_l": "8.4",
+            "Calcium_Ca_mg_l": "14.7"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Amagasaki (Hyogo)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.4",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "85",
+            "Alkalinity_TAC_mmol_l": "0.5",
+            "Sodium_Na_mg_l": "6.8",
+            "Chlorides_Cl_mg_l": "10.2",
+            "Calcium_Ca_mg_l": "16.8"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Himeji (Hyogo)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.7",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "100",
+            "Alkalinity_TAC_mmol_l": "0.5",
+            "Sodium_Na_mg_l": "8.0",
+            "Chlorides_Cl_mg_l": "12.0",
+            "Calcium_Ca_mg_l": "18.9"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Nara City (Nara)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.8",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "105",
+            "Alkalinity_TAC_mmol_l": "0.6",
+            "Sodium_Na_mg_l": "8.4",
+            "Chlorides_Cl_mg_l": "12.6",
+            "Calcium_Ca_mg_l": "19.6"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Otsu (Shiga)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.0",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "65",
+            "Alkalinity_TAC_mmol_l": "0.4",
+            "Sodium_Na_mg_l": "5.2",
+            "Chlorides_Cl_mg_l": "7.8",
+            "Calcium_Ca_mg_l": "14.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Nagoya (Aichi)",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.8",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "60",
+            "Alkalinity_TAC_mmol_l": "0.4",
+            "Sodium_Na_mg_l": "4.8",
+            "Chlorides_Cl_mg_l": "7.2",
+            "Calcium_Ca_mg_l": "12.6"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Toyota (Aichi)",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.5",
+            "pH": "6.9",
+            "TDS_Conductivity_uS_cm": "50",
+            "Alkalinity_TAC_mmol_l": "0.3",
+            "Sodium_Na_mg_l": "4.0",
+            "Chlorides_Cl_mg_l": "6.0",
+            "Calcium_Ca_mg_l": "10.5"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Okazaki (Aichi)",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.7",
+            "pH": "6.9",
+            "TDS_Conductivity_uS_cm": "55",
+            "Alkalinity_TAC_mmol_l": "0.3",
+            "Sodium_Na_mg_l": "4.4",
+            "Chlorides_Cl_mg_l": "6.6",
+            "Calcium_Ca_mg_l": "11.9"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Ichinomiya (Aichi)",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.9",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "65",
+            "Alkalinity_TAC_mmol_l": "0.4",
+            "Sodium_Na_mg_l": "5.2",
+            "Chlorides_Cl_mg_l": "7.8",
+            "Calcium_Ca_mg_l": "13.3"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Shizuoka City (Shizuoka)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.0",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "100",
+            "Alkalinity_TAC_mmol_l": "0.6",
+            "Sodium_Na_mg_l": "8.0",
+            "Chlorides_Cl_mg_l": "12.0",
+            "Calcium_Ca_mg_l": "21.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Hamamatsu (Shizuoka)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.2",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "110",
+            "Alkalinity_TAC_mmol_l": "0.6",
+            "Sodium_Na_mg_l": "8.8",
+            "Chlorides_Cl_mg_l": "13.2",
+            "Calcium_Ca_mg_l": "22.4"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Gifu City (Gifu)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.2",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "75",
+            "Alkalinity_TAC_mmol_l": "0.4",
+            "Sodium_Na_mg_l": "6.0",
+            "Chlorides_Cl_mg_l": "9.0",
+            "Calcium_Ca_mg_l": "15.4"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Fukuoka City (Fukuoka)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.9",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "105",
+            "Alkalinity_TAC_mmol_l": "0.6",
+            "Sodium_Na_mg_l": "8.4",
+            "Chlorides_Cl_mg_l": "12.6",
+            "Calcium_Ca_mg_l": "20.3"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Kitakyushu (Fukuoka)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.1",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "115",
+            "Alkalinity_TAC_mmol_l": "0.6",
+            "Sodium_Na_mg_l": "9.2",
+            "Chlorides_Cl_mg_l": "13.8",
+            "Calcium_Ca_mg_l": "21.7"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Kurume (Fukuoka)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.7",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "95",
+            "Alkalinity_TAC_mmol_l": "0.5",
+            "Sodium_Na_mg_l": "7.6",
+            "Chlorides_Cl_mg_l": "11.4",
+            "Calcium_Ca_mg_l": "18.9"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Kumamoto City (Kumamoto)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.5",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "150",
+            "Alkalinity_TAC_mmol_l": "0.9",
+            "Sodium_Na_mg_l": "12.0",
+            "Chlorides_Cl_mg_l": "18.0",
+            "Calcium_Ca_mg_l": "31.5"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Kagoshima City (Kagoshima)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.5",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "85",
+            "Alkalinity_TAC_mmol_l": "0.5",
+            "Sodium_Na_mg_l": "6.8",
+            "Chlorides_Cl_mg_l": "10.2",
+            "Calcium_Ca_mg_l": "17.5"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Nagasaki City (Nagasaki)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.2",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "75",
+            "Alkalinity_TAC_mmol_l": "0.4",
+            "Sodium_Na_mg_l": "6.0",
+            "Chlorides_Cl_mg_l": "9.0",
+            "Calcium_Ca_mg_l": "15.4"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Oita City (Oita)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.4",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "80",
+            "Alkalinity_TAC_mmol_l": "0.5",
+            "Sodium_Na_mg_l": "6.4",
+            "Chlorides_Cl_mg_l": "9.6",
+            "Calcium_Ca_mg_l": "16.8"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Hakodate (Hokkaido)",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.9",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "65",
+            "Alkalinity_TAC_mmol_l": "0.4",
+            "Sodium_Na_mg_l": "5.2",
+            "Chlorides_Cl_mg_l": "7.8",
+            "Calcium_Ca_mg_l": "13.3"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Asahikawa (Hokkaido)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.1",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "70",
+            "Alkalinity_TAC_mmol_l": "0.4",
+            "Sodium_Na_mg_l": "5.6",
+            "Chlorides_Cl_mg_l": "8.4",
+            "Calcium_Ca_mg_l": "14.7"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Kushiro (Hokkaido)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.3",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "80",
+            "Alkalinity_TAC_mmol_l": "0.5",
+            "Sodium_Na_mg_l": "6.4",
+            "Chlorides_Cl_mg_l": "9.6",
+            "Calcium_Ca_mg_l": "16.1"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Otaru (Hokkaido)",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.7",
+            "pH": "6.9",
+            "TDS_Conductivity_uS_cm": "55",
+            "Alkalinity_TAC_mmol_l": "0.3",
+            "Sodium_Na_mg_l": "4.4",
+            "Chlorides_Cl_mg_l": "6.6",
+            "Calcium_Ca_mg_l": "11.9"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Sendai (Miyagi)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.0",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "70",
+            "Alkalinity_TAC_mmol_l": "0.4",
+            "Sodium_Na_mg_l": "5.6",
+            "Chlorides_Cl_mg_l": "8.4",
+            "Calcium_Ca_mg_l": "14.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Morioka (Iwate)",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.5",
+            "pH": "6.8",
+            "TDS_Conductivity_uS_cm": "50",
+            "Alkalinity_TAC_mmol_l": "0.3",
+            "Sodium_Na_mg_l": "4.0",
+            "Chlorides_Cl_mg_l": "6.0",
+            "Calcium_Ca_mg_l": "10.5"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Aomori City (Aomori)",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.8",
+            "pH": "6.9",
+            "TDS_Conductivity_uS_cm": "60",
+            "Alkalinity_TAC_mmol_l": "0.4",
+            "Sodium_Na_mg_l": "4.8",
+            "Chlorides_Cl_mg_l": "7.2",
+            "Calcium_Ca_mg_l": "12.6"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Hiroshima City (Hiroshima)",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.6",
+            "pH": "6.9",
+            "TDS_Conductivity_uS_cm": "55",
+            "Alkalinity_TAC_mmol_l": "0.3",
+            "Sodium_Na_mg_l": "4.4",
+            "Chlorides_Cl_mg_l": "6.6",
+            "Calcium_Ca_mg_l": "11.2"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Okayama City (Okayama)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.5",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "85",
+            "Alkalinity_TAC_mmol_l": "0.5",
+            "Sodium_Na_mg_l": "6.8",
+            "Chlorides_Cl_mg_l": "10.2",
+            "Calcium_Ca_mg_l": "17.5"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Kurashiki (Okayama)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.6",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "90",
+            "Alkalinity_TAC_mmol_l": "0.5",
+            "Sodium_Na_mg_l": "7.2",
+            "Chlorides_Cl_mg_l": "10.8",
+            "Calcium_Ca_mg_l": "18.2"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Matsuyama (Ehime)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.2",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "75",
+            "Alkalinity_TAC_mmol_l": "0.4",
+            "Sodium_Na_mg_l": "6.0",
+            "Chlorides_Cl_mg_l": "9.0",
+            "Calcium_Ca_mg_l": "15.4"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Takamatsu (Kagawa)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.5",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "120",
+            "Alkalinity_TAC_mmol_l": "0.7",
+            "Sodium_Na_mg_l": "9.6",
+            "Chlorides_Cl_mg_l": "14.4",
+            "Calcium_Ca_mg_l": "24.5"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Naha (Okinawa)",
+        "Parameters": {
+            "Ca_Hardness_dH": "11.5",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "380",
+            "Alkalinity_TAC_mmol_l": "2.3",
+            "Sodium_Na_mg_l": "30.4",
+            "Chlorides_Cl_mg_l": "45.6",
+            "Calcium_Ca_mg_l": "80.5"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Okinawa City (Okinawa)",
+        "Parameters": {
+            "Ca_Hardness_dH": "10.5",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "350",
+            "Alkalinity_TAC_mmol_l": "2.1",
+            "Sodium_Na_mg_l": "28.0",
+            "Chlorides_Cl_mg_l": "42.0",
+            "Calcium_Ca_mg_l": "73.5"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Uruma (Okinawa)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.0",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "400",
+            "Alkalinity_TAC_mmol_l": "2.4",
+            "Sodium_Na_mg_l": "32.0",
+            "Chlorides_Cl_mg_l": "48.0",
+            "Calcium_Ca_mg_l": "84.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Miyakojima (Okinawa)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.0",
+            "pH": "8.1",
+            "TDS_Conductivity_uS_cm": "520",
+            "Alkalinity_TAC_mmol_l": "3.0",
+            "Sodium_Na_mg_l": "41.6",
+            "Chlorides_Cl_mg_l": "62.4",
+            "Calcium_Ca_mg_l": "105.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Ishigaki (Okinawa)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.5",
+            "pH": "8.0",
+            "TDS_Conductivity_uS_cm": "450",
+            "Alkalinity_TAC_mmol_l": "2.7",
+            "Sodium_Na_mg_l": "36.0",
+            "Chlorides_Cl_mg_l": "54.0",
+            "Calcium_Ca_mg_l": "94.5"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
     }
 ]
