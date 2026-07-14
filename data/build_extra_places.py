@@ -80,6 +80,7 @@ COUNTRIES = {
     "MA": ("MAR", "ADM2"),  # prefectures/provinces (75)
     "SN": ("SEN", "ADM3"),  # arrondissements (121)
     "TN": ("TUN", "ADM3"),  # municipalities (2 083)
+    "IN": ("IND", "ADM2"),  # districts (736)
 }
 
 os.makedirs(GB_DIR, exist_ok=True)
