@@ -1,0 +1,102 @@
+[
+    {
+        "Region": "Tel Aviv",
+        "Parameters": {
+            "Ca_Hardness_dH": "10.0",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "300",
+            "Alkalinity_TAC_mmol_l": "2.0",
+            "Sodium_Na_mg_l": "24.0",
+            "Chlorides_Cl_mg_l": "36.0",
+            "Calcium_Ca_mg_l": "70.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Jerusalem",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.0",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "350",
+            "Alkalinity_TAC_mmol_l": "2.4",
+            "Sodium_Na_mg_l": "28.0",
+            "Chlorides_Cl_mg_l": "42.0",
+            "Calcium_Ca_mg_l": "84.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Haifa",
+        "Parameters": {
+            "Ca_Hardness_dH": "11.0",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "320",
+            "Alkalinity_TAC_mmol_l": "2.2",
+            "Sodium_Na_mg_l": "25.6",
+            "Chlorides_Cl_mg_l": "38.4",
+            "Calcium_Ca_mg_l": "77.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Rishon LeZion",
+        "Parameters": {
+            "Ca_Hardness_dH": "10.0",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "300",
+            "Alkalinity_TAC_mmol_l": "2.0",
+            "Sodium_Na_mg_l": "24.0",
+            "Chlorides_Cl_mg_l": "36.0",
+            "Calcium_Ca_mg_l": "70.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Eilat",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.0",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "250",
+            "Alkalinity_TAC_mmol_l": "1.6",
+            "Sodium_Na_mg_l": "20.0",
+            "Chlorides_Cl_mg_l": "30.0",
+            "Calcium_Ca_mg_l": "56.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    }
+]

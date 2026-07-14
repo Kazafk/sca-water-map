@@ -100,6 +100,9 @@ COUNTRIES = {
     "BI": ("BDI", "ADM3"),  # collines (2 615)
     "MG": ("MDG", "ADM3"),  # communes (1 579)
     "SO": ("SOM", "ADM2"),  # districts (118)
+    # Levant
+    "LB": ("LBN", "ADM2"),  # cazas (26)
+    "IL": ("ISR", "ADM2"),  # sub-districts (15)
 }
 
 os.makedirs(GB_DIR, exist_ok=True)
