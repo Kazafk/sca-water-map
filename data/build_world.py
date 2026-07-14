@@ -46,10 +46,15 @@ MULTI_COUNTRY_FILES = {
     "central_america_water_quality.json",
     "oceania_water_quality.json",
     "final_europe_water_quality.json",
-    "china_water_quality.json",         # mostly China, but region tags exist
     "rest_of_europe_water_quality.json",
     "south_america_water_quality.json",
+    # DOM/COM : chaque Region porte son territoire "(Guadeloupe)", "(Guyane)"…
+    # avec des codes ISO distincts (GP/MQ/GF/RE/YT/PF/NC/MF/BL).
+    "france_outremer_water_quality.json",
 }
+# NB : china_water_quality.json n'est PLUS multi-pays. Densifié à 336 entrées
+# toutes chinoises (parenthèses = régie ou "China") ; le traiter en mono-pays
+# fait résoudre tout le monde en CN (le nom de fichier prime, cf. fix Funchal).
 
 # Explicit fallback table for strings pycountry misses or misidentifies.
 # Keys are matched case-insensitively (see get_iso2_and_name).
@@ -71,6 +76,14 @@ COUNTRY_FALLBACKS = {
     "Kosovo":           ("XK", "Kosovo"),   # XK is de-facto code used by many
     "Nepal":            ("NP", "Nepal"),    # protect EPAL from matching NP
     "Uae":              ("AE", "United Arab Emirates"),  # uae_water_quality.json
+    # DOM/COM — noms français absents de pycountry (qui utilise l'anglais)
+    "Guyane":              ("GF", "French Guiana"),
+    "La Réunion":          ("RE", "Réunion"),
+    "Réunion":             ("RE", "Réunion"),
+    "Polynésie":           ("PF", "French Polynesia"),
+    "Nouvelle-Calédonie":  ("NC", "New Caledonia"),
+    "Saint-Martin":        ("MF", "Saint Martin (French part)"),
+    "Saint-Barthélemy":    ("BL", "Saint Barthélemy"),
 }
 # Normalised-key version for case-insensitive lookups
 _COUNTRY_FALLBACKS_LOWER = {k.lower(): v for k, v in COUNTRY_FALLBACKS.items()}

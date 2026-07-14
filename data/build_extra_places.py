@@ -135,6 +135,11 @@ COUNTRIES = {
     "TH": ("THA", "ADM2"),  # amphoe (928)
     "MY": ("MYS", "ADM3"),  # mukim (1 859)
     "SG": ("SGP", "ADM2"),  # planning areas (55)
+    # DOM français couverts par geoBoundaries (les autres territoires n'ont
+    # pas de géométrie en open data ; ils s'affichent au niveau pays)
+    "MQ": ("MTQ", "ADM3"),  # Martinique communes (4)
+    "GF": ("GUF", "ADM3"),  # Guyane communes (2)
+    "RE": ("REU", "ADM3"),  # Réunion communes (4)
 }
 
 os.makedirs(GB_DIR, exist_ok=True)

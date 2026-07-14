@@ -1,0 +1,802 @@
+[
+    {
+        "Region": "Pointe-à-Pitre (Guadeloupe)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.5",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "140",
+            "Alkalinity_TAC_mmol_l": "0.9",
+            "Sodium_Na_mg_l": "11.2",
+            "Chlorides_Cl_mg_l": "16.8",
+            "Calcium_Ca_mg_l": "31.5"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Basse-Terre (Guadeloupe)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.0",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "110",
+            "Alkalinity_TAC_mmol_l": "0.6",
+            "Sodium_Na_mg_l": "8.8",
+            "Chlorides_Cl_mg_l": "13.2",
+            "Calcium_Ca_mg_l": "21.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Les Abymes (Guadeloupe)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.0",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "130",
+            "Alkalinity_TAC_mmol_l": "0.8",
+            "Sodium_Na_mg_l": "10.4",
+            "Chlorides_Cl_mg_l": "15.6",
+            "Calcium_Ca_mg_l": "28.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Le Gosier (Guadeloupe)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.5",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "145",
+            "Alkalinity_TAC_mmol_l": "0.9",
+            "Sodium_Na_mg_l": "11.6",
+            "Chlorides_Cl_mg_l": "17.4",
+            "Calcium_Ca_mg_l": "31.5"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Baie-Mahault (Guadeloupe)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.5",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "120",
+            "Alkalinity_TAC_mmol_l": "0.7",
+            "Sodium_Na_mg_l": "9.6",
+            "Chlorides_Cl_mg_l": "14.4",
+            "Calcium_Ca_mg_l": "24.5"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Fort-de-France (Martinique)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.5",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "95",
+            "Alkalinity_TAC_mmol_l": "0.5",
+            "Sodium_Na_mg_l": "7.6",
+            "Chlorides_Cl_mg_l": "11.4",
+            "Calcium_Ca_mg_l": "17.5"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Le Lamentin (Martinique)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.0",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "105",
+            "Alkalinity_TAC_mmol_l": "0.6",
+            "Sodium_Na_mg_l": "8.4",
+            "Chlorides_Cl_mg_l": "12.6",
+            "Calcium_Ca_mg_l": "21.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Le Robert (Martinique)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.5",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "115",
+            "Alkalinity_TAC_mmol_l": "0.7",
+            "Sodium_Na_mg_l": "9.2",
+            "Chlorides_Cl_mg_l": "13.8",
+            "Calcium_Ca_mg_l": "24.5"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Schœlcher (Martinique)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.5",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "90",
+            "Alkalinity_TAC_mmol_l": "0.5",
+            "Sodium_Na_mg_l": "7.2",
+            "Chlorides_Cl_mg_l": "10.8",
+            "Calcium_Ca_mg_l": "17.5"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Sainte-Marie (Martinique)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.0",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "125",
+            "Alkalinity_TAC_mmol_l": "0.8",
+            "Sodium_Na_mg_l": "10.0",
+            "Chlorides_Cl_mg_l": "15.0",
+            "Calcium_Ca_mg_l": "28.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Cayenne (Guyane)",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.5",
+            "pH": "6.8",
+            "TDS_Conductivity_uS_cm": "60",
+            "Alkalinity_TAC_mmol_l": "0.3",
+            "Sodium_Na_mg_l": "4.8",
+            "Chlorides_Cl_mg_l": "7.2",
+            "Calcium_Ca_mg_l": "10.5"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Saint-Laurent-du-Maroni (Guyane)",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.0",
+            "pH": "6.5",
+            "TDS_Conductivity_uS_cm": "50",
+            "Alkalinity_TAC_mmol_l": "0.2",
+            "Sodium_Na_mg_l": "4.0",
+            "Chlorides_Cl_mg_l": "6.0",
+            "Calcium_Ca_mg_l": "7.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Matoury (Guyane)",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.5",
+            "pH": "6.7",
+            "TDS_Conductivity_uS_cm": "65",
+            "Alkalinity_TAC_mmol_l": "0.3",
+            "Sodium_Na_mg_l": "5.2",
+            "Chlorides_Cl_mg_l": "7.8",
+            "Calcium_Ca_mg_l": "10.5"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Kourou (Guyane)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.0",
+            "pH": "6.9",
+            "TDS_Conductivity_uS_cm": "75",
+            "Alkalinity_TAC_mmol_l": "0.4",
+            "Sodium_Na_mg_l": "6.0",
+            "Chlorides_Cl_mg_l": "9.0",
+            "Calcium_Ca_mg_l": "14.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Remire-Montjoly (Guyane)",
+        "Parameters": {
+            "Ca_Hardness_dH": "1.5",
+            "pH": "6.8",
+            "TDS_Conductivity_uS_cm": "60",
+            "Alkalinity_TAC_mmol_l": "0.3",
+            "Sodium_Na_mg_l": "4.8",
+            "Chlorides_Cl_mg_l": "7.2",
+            "Calcium_Ca_mg_l": "10.5"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Saint-Denis (La Réunion)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.5",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "120",
+            "Alkalinity_TAC_mmol_l": "0.7",
+            "Sodium_Na_mg_l": "9.6",
+            "Chlorides_Cl_mg_l": "14.4",
+            "Calcium_Ca_mg_l": "24.5"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Saint-Paul (La Réunion)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.0",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "130",
+            "Alkalinity_TAC_mmol_l": "0.8",
+            "Sodium_Na_mg_l": "10.4",
+            "Chlorides_Cl_mg_l": "15.6",
+            "Calcium_Ca_mg_l": "28.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Saint-Pierre (La Réunion)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.0",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "110",
+            "Alkalinity_TAC_mmol_l": "0.6",
+            "Sodium_Na_mg_l": "8.8",
+            "Chlorides_Cl_mg_l": "13.2",
+            "Calcium_Ca_mg_l": "21.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Le Tampon (La Réunion)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.5",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "95",
+            "Alkalinity_TAC_mmol_l": "0.5",
+            "Sodium_Na_mg_l": "7.6",
+            "Chlorides_Cl_mg_l": "11.4",
+            "Calcium_Ca_mg_l": "17.5"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Saint-André (La Réunion)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.0",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "105",
+            "Alkalinity_TAC_mmol_l": "0.6",
+            "Sodium_Na_mg_l": "8.4",
+            "Chlorides_Cl_mg_l": "12.6",
+            "Calcium_Ca_mg_l": "21.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Mamoudzou (Mayotte)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.5",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "150",
+            "Alkalinity_TAC_mmol_l": "0.9",
+            "Sodium_Na_mg_l": "12.0",
+            "Chlorides_Cl_mg_l": "18.0",
+            "Calcium_Ca_mg_l": "31.5"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Koungou (Mayotte)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.0",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "140",
+            "Alkalinity_TAC_mmol_l": "0.8",
+            "Sodium_Na_mg_l": "11.2",
+            "Chlorides_Cl_mg_l": "16.8",
+            "Calcium_Ca_mg_l": "28.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Dzaoudzi (Mayotte)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.0",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "190",
+            "Alkalinity_TAC_mmol_l": "1.2",
+            "Sodium_Na_mg_l": "15.2",
+            "Chlorides_Cl_mg_l": "22.8",
+            "Calcium_Ca_mg_l": "42.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Sada (Mayotte)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.5",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "145",
+            "Alkalinity_TAC_mmol_l": "0.9",
+            "Sodium_Na_mg_l": "11.6",
+            "Chlorides_Cl_mg_l": "17.4",
+            "Calcium_Ca_mg_l": "31.5"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Pamandzi (Mayotte)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.5",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "200",
+            "Alkalinity_TAC_mmol_l": "1.3",
+            "Sodium_Na_mg_l": "16.0",
+            "Chlorides_Cl_mg_l": "24.0",
+            "Calcium_Ca_mg_l": "45.5"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Papeete (Polynésie)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.5",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "115",
+            "Alkalinity_TAC_mmol_l": "0.7",
+            "Sodium_Na_mg_l": "9.2",
+            "Chlorides_Cl_mg_l": "13.8",
+            "Calcium_Ca_mg_l": "24.5"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Faa'a (Polynésie)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.0",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "125",
+            "Alkalinity_TAC_mmol_l": "0.8",
+            "Sodium_Na_mg_l": "10.0",
+            "Chlorides_Cl_mg_l": "15.0",
+            "Calcium_Ca_mg_l": "28.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Punaauia (Polynésie)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.0",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "100",
+            "Alkalinity_TAC_mmol_l": "0.6",
+            "Sodium_Na_mg_l": "8.0",
+            "Chlorides_Cl_mg_l": "12.0",
+            "Calcium_Ca_mg_l": "21.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Bora-Bora (Polynésie)",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.0",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "250",
+            "Alkalinity_TAC_mmol_l": "1.6",
+            "Sodium_Na_mg_l": "20.0",
+            "Chlorides_Cl_mg_l": "30.0",
+            "Calcium_Ca_mg_l": "56.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Moorea-Maiao (Polynésie)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.5",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "140",
+            "Alkalinity_TAC_mmol_l": "0.9",
+            "Sodium_Na_mg_l": "11.2",
+            "Chlorides_Cl_mg_l": "16.8",
+            "Calcium_Ca_mg_l": "31.5"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Nouméa (Nouvelle-Calédonie)",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.0",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "260",
+            "Alkalinity_TAC_mmol_l": "1.6",
+            "Sodium_Na_mg_l": "20.8",
+            "Chlorides_Cl_mg_l": "31.2",
+            "Calcium_Ca_mg_l": "56.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Le Mont-Dore (Nouvelle-Calédonie)",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.0",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "230",
+            "Alkalinity_TAC_mmol_l": "1.4",
+            "Sodium_Na_mg_l": "18.4",
+            "Chlorides_Cl_mg_l": "27.6",
+            "Calcium_Ca_mg_l": "49.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Dumbéa (Nouvelle-Calédonie)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.5",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "210",
+            "Alkalinity_TAC_mmol_l": "1.3",
+            "Sodium_Na_mg_l": "16.8",
+            "Chlorides_Cl_mg_l": "25.2",
+            "Calcium_Ca_mg_l": "45.5"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Païta (Nouvelle-Calédonie)",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.5",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "245",
+            "Alkalinity_TAC_mmol_l": "1.5",
+            "Sodium_Na_mg_l": "19.6",
+            "Chlorides_Cl_mg_l": "29.4",
+            "Calcium_Ca_mg_l": "52.5"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Koné (Nouvelle-Calédonie)",
+        "Parameters": {
+            "Ca_Hardness_dH": "9.0",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "280",
+            "Alkalinity_TAC_mmol_l": "1.8",
+            "Sodium_Na_mg_l": "22.4",
+            "Chlorides_Cl_mg_l": "33.6",
+            "Calcium_Ca_mg_l": "63.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Marigot (Saint-Martin)",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.0",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "250",
+            "Alkalinity_TAC_mmol_l": "1.6",
+            "Sodium_Na_mg_l": "20.0",
+            "Chlorides_Cl_mg_l": "30.0",
+            "Calcium_Ca_mg_l": "56.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Grand-Case (Saint-Martin)",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.0",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "250",
+            "Alkalinity_TAC_mmol_l": "1.6",
+            "Sodium_Na_mg_l": "20.0",
+            "Chlorides_Cl_mg_l": "30.0",
+            "Calcium_Ca_mg_l": "56.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Quartier-d'Orléans (Saint-Martin)",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.0",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "250",
+            "Alkalinity_TAC_mmol_l": "1.6",
+            "Sodium_Na_mg_l": "20.0",
+            "Chlorides_Cl_mg_l": "30.0",
+            "Calcium_Ca_mg_l": "56.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Gustavia (Saint-Barthélemy)",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.5",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "260",
+            "Alkalinity_TAC_mmol_l": "1.7",
+            "Sodium_Na_mg_l": "20.8",
+            "Chlorides_Cl_mg_l": "31.2",
+            "Calcium_Ca_mg_l": "59.5"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Saint-Jean (Saint-Barthélemy)",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.5",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "260",
+            "Alkalinity_TAC_mmol_l": "1.7",
+            "Sodium_Na_mg_l": "20.8",
+            "Chlorides_Cl_mg_l": "31.2",
+            "Calcium_Ca_mg_l": "59.5"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    }
+]
