@@ -19,7 +19,7 @@ const US_COUNTIES_GEOJSON_URL = 'https://raw.githubusercontent.com/plotly/datase
 
 // Pays de taille continentale (>= ~1,2 M km²) AVEC provinces dans Natural
 // Earth 1:50m : hiérarchie Pays (0-3) → Provinces (3-5) → Villes (5+).
-const BIG_ISO2 = ['US', 'CN', 'RU', 'CA', 'BR', 'AU', 'ZA'];
+const BIG_ISO2 = ['US', 'CN', 'RU', 'CA', 'BR', 'AU', 'ZA', 'IN'];
 const BIG_IN_ISO2 = ['in', ['get', 'iso2'], ['literal', BIG_ISO2]];
 // Pays continentaux SANS provinces NE 1:50m (AR/MX/DZ/CD/PE : 0 polygone
 // admin-1) : le choroplèthe pays reste affiché jusqu'à l'arrivée des villes.
