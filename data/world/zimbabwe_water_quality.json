@@ -1,0 +1,102 @@
+[
+    {
+        "Region": "Harare (ZINWA)",
+        "Parameters": {
+            "Ca_Hardness_dH": "11.0",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "350",
+            "Alkalinity_TAC_mmol_l": "2.2",
+            "Sodium_Na_mg_l": "28.0",
+            "Chlorides_Cl_mg_l": "42.0",
+            "Calcium_Ca_mg_l": "77.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Bulawayo (ZINWA)",
+        "Parameters": {
+            "Ca_Hardness_dH": "10.0",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "300",
+            "Alkalinity_TAC_mmol_l": "2.0",
+            "Sodium_Na_mg_l": "24.0",
+            "Chlorides_Cl_mg_l": "36.0",
+            "Calcium_Ca_mg_l": "70.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Mutare (ZINWA)",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.0",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "200",
+            "Alkalinity_TAC_mmol_l": "1.4",
+            "Sodium_Na_mg_l": "16.0",
+            "Chlorides_Cl_mg_l": "24.0",
+            "Calcium_Ca_mg_l": "49.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Gweru (ZINWA)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.0",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "380",
+            "Alkalinity_TAC_mmol_l": "2.4",
+            "Sodium_Na_mg_l": "30.4",
+            "Chlorides_Cl_mg_l": "45.6",
+            "Calcium_Ca_mg_l": "84.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Masvingo (ZINWA)",
+        "Parameters": {
+            "Ca_Hardness_dH": "9.0",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "270",
+            "Alkalinity_TAC_mmol_l": "1.8",
+            "Sodium_Na_mg_l": "21.6",
+            "Chlorides_Cl_mg_l": "32.4",
+            "Calcium_Ca_mg_l": "63.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    }
+]

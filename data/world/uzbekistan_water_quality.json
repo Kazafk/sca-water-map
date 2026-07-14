@@ -1,0 +1,102 @@
+[
+    {
+        "Region": "Tashkent",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.0",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "220",
+            "Alkalinity_TAC_mmol_l": "1.6",
+            "Sodium_Na_mg_l": "17.6",
+            "Chlorides_Cl_mg_l": "26.4",
+            "Calcium_Ca_mg_l": "56.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Samarkand",
+        "Parameters": {
+            "Ca_Hardness_dH": "10.0",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "300",
+            "Alkalinity_TAC_mmol_l": "2.0",
+            "Sodium_Na_mg_l": "24.0",
+            "Chlorides_Cl_mg_l": "36.0",
+            "Calcium_Ca_mg_l": "70.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Bukhara",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.0",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "500",
+            "Alkalinity_TAC_mmol_l": "3.0",
+            "Sodium_Na_mg_l": "40.0",
+            "Chlorides_Cl_mg_l": "60.0",
+            "Calcium_Ca_mg_l": "105.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Namangan",
+        "Parameters": {
+            "Ca_Hardness_dH": "9.5",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "260",
+            "Alkalinity_TAC_mmol_l": "1.9",
+            "Sodium_Na_mg_l": "20.8",
+            "Chlorides_Cl_mg_l": "31.2",
+            "Calcium_Ca_mg_l": "66.5"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Nukus",
+        "Parameters": {
+            "Ca_Hardness_dH": "18.0",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "850",
+            "Alkalinity_TAC_mmol_l": "3.6",
+            "Sodium_Na_mg_l": "68.0",
+            "Chlorides_Cl_mg_l": "102.0",
+            "Calcium_Ca_mg_l": "126.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    }
+]

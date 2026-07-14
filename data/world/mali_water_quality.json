@@ -1,0 +1,102 @@
+[
+    {
+        "Region": "Bamako (SOMAGEP)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.0",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "120",
+            "Alkalinity_TAC_mmol_l": "0.8",
+            "Sodium_Na_mg_l": "9.6",
+            "Chlorides_Cl_mg_l": "14.4",
+            "Calcium_Ca_mg_l": "28.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Sikasso (SOMAGEP)",
+        "Parameters": {
+            "Ca_Hardness_dH": "5.0",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "150",
+            "Alkalinity_TAC_mmol_l": "1.0",
+            "Sodium_Na_mg_l": "12.0",
+            "Chlorides_Cl_mg_l": "18.0",
+            "Calcium_Ca_mg_l": "35.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Ségou (SOMAGEP)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.5",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "130",
+            "Alkalinity_TAC_mmol_l": "0.9",
+            "Sodium_Na_mg_l": "10.4",
+            "Chlorides_Cl_mg_l": "15.6",
+            "Calcium_Ca_mg_l": "31.5"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Mopti (SOMAGEP)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.0",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "180",
+            "Alkalinity_TAC_mmol_l": "1.2",
+            "Sodium_Na_mg_l": "14.4",
+            "Chlorides_Cl_mg_l": "21.6",
+            "Calcium_Ca_mg_l": "42.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Kayes (SOMAGEP)",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.0",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "210",
+            "Alkalinity_TAC_mmol_l": "1.4",
+            "Sodium_Na_mg_l": "16.8",
+            "Chlorides_Cl_mg_l": "25.2",
+            "Calcium_Ca_mg_l": "49.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    }
+]

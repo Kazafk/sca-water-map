@@ -1,0 +1,102 @@
+[
+    {
+        "Region": "Kampala (NWSC)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.0",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "90",
+            "Alkalinity_TAC_mmol_l": "0.6",
+            "Sodium_Na_mg_l": "7.2",
+            "Chlorides_Cl_mg_l": "10.8",
+            "Calcium_Ca_mg_l": "21.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Entebbe (NWSC)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.5",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "80",
+            "Alkalinity_TAC_mmol_l": "0.5",
+            "Sodium_Na_mg_l": "6.4",
+            "Chlorides_Cl_mg_l": "9.6",
+            "Calcium_Ca_mg_l": "17.5"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Jinja (NWSC)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.5",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "100",
+            "Alkalinity_TAC_mmol_l": "0.7",
+            "Sodium_Na_mg_l": "8.0",
+            "Chlorides_Cl_mg_l": "12.0",
+            "Calcium_Ca_mg_l": "24.5"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Gulu (NWSC)",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.0",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "220",
+            "Alkalinity_TAC_mmol_l": "1.4",
+            "Sodium_Na_mg_l": "17.6",
+            "Chlorides_Cl_mg_l": "26.4",
+            "Calcium_Ca_mg_l": "49.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Mbarara (NWSC)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.0",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "180",
+            "Alkalinity_TAC_mmol_l": "1.2",
+            "Sodium_Na_mg_l": "14.4",
+            "Chlorides_Cl_mg_l": "21.6",
+            "Calcium_Ca_mg_l": "42.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    }
+]

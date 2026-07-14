@@ -103,6 +103,19 @@ COUNTRIES = {
     # Levant
     "LB": ("LBN", "ADM2"),  # cazas (26)
     "IL": ("ISR", "ADM2"),  # sub-districts (15)
+    # Asie centrale + Pakistan
+    "KZ": ("KAZ", "ADM2"),  # districts (174)
+    "UZ": ("UZB", "ADM2"),  # districts (199)
+    "KG": ("KGZ", "ADM2"),  # districts (41)
+    "TJ": ("TJK", "ADM2"),  # districts (58)
+    "PK": ("PAK", "ADM3"),  # tehsils (554)
+    # Afrique de l'Ouest + Est/Sud
+    "ML": ("MLI", "ADM3"),  # communes (701)
+    "TG": ("TGO", "ADM2"),  # prefectures (37)
+    "BJ": ("BEN", "ADM3"),  # arrondissements (546)
+    "ZW": ("ZWE", "ADM3"),  # wards (1 961)
+    "BF": ("BFA", "ADM3"),  # departments (351)
+    "UG": ("UGA", "ADM3"),  # sub-counties (137)
 }
 
 os.makedirs(GB_DIR, exist_ok=True)
