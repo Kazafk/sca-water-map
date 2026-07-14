@@ -228,20 +228,23 @@ def resolve_country_for_entry(region: str, file_country_raw: str, filename: str)
 
     country_candidate = groups[-1] if groups else None
 
-    iso2, country_name = None, None
-
-    if country_candidate:
-        if not _candidate_is_utility(country_candidate):
+    if filename in MULTI_COUNTRY_FILES:
+        # Multi-country file: the country MUST come from the parenthetical.
+        iso2, country_name = None, None
+        if country_candidate and not _candidate_is_utility(country_candidate):
             iso2, country_name = get_iso2_and_name(country_candidate)
-
-    if iso2 is None:
-        # Last group did not resolve (or was a utility)
-        if filename in MULTI_COUNTRY_FILES:
-            # Multi-country file: we cannot safely infer the country
+        if iso2 is None:
             return city_str, None, None
-        else:
-            # Single-country file: use the file-derived country
-            iso2, country_name = get_iso2_and_name(file_country_raw)
+        return city_str, iso2, country_name
+
+    # Single-country file: the filename country is authoritative WHEN it
+    # resolves. The parenthetical is usually the utility name and may collide
+    # with an ISO alpha-3 (e.g. "Funchal (ARM)" must stay Portugal, not become
+    # Armenia). Fall back to the parenthetical only when the filename does not
+    # resolve (e.g. "usa_california" -> "Usa California" fails -> use "(USA)").
+    iso2, country_name = get_iso2_and_name(file_country_raw)
+    if iso2 is None and country_candidate and not _candidate_is_utility(country_candidate):
+        iso2, country_name = get_iso2_and_name(country_candidate)
 
     return city_str, iso2, country_name
 
