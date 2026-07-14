@@ -15,16 +15,22 @@ const US_COUNTIES_GEOJSON_URL = 'https://raw.githubusercontent.com/plotly/datase
 // superposition : big-countries-fill (0-3) → big-provinces-fill (3-5)
 //   → us-counties-fill (4-5, USA) → us-places-fill / big-places-fill (5+)
 // Pays continentaux SANS provinces NE : NOPROV_4 (MX/AR/PE) = pays 0-4 puis
-// villes 4+ ; NOPROV_5 (DZ/CD) = noprov5-countries-fill 0-5 puis villes 5+.
+// villes 4+ ; NOPROV_5 (DZ/CD/SA/AO/KZ/IR/MN) = noprov5-countries-fill 0-5
+// puis villes 5+. NOPROV = pays continentaux SANS provinces NE uniquement.
 
 // Pays de taille continentale (>= ~1,2 M km²) AVEC provinces dans Natural
 // Earth 1:50m : hiérarchie Pays (0-3) → Provinces (3-5) → Villes (5+).
-const BIG_ISO2 = ['US', 'CN', 'RU', 'CA', 'BR', 'AU', 'ZA', 'IN'];
+const BIG_ISO2 = ['US', 'CN', 'RU', 'CA', 'BR', 'AU', 'ZA', 'IN', 'ID'];
 const BIG_IN_ISO2 = ['in', ['get', 'iso2'], ['literal', BIG_ISO2]];
 // Pays continentaux SANS provinces NE 1:50m (AR/MX/DZ/CD/PE : 0 polygone
 // admin-1) : le choroplèthe pays reste affiché jusqu'à l'arrivée des villes.
 const NOPROV_4 = ['MX', 'AR', 'PE'];  // polygones denses → villes dès 4
-const NOPROV_5 = ['DZ', 'CD', 'SA', 'AO', 'KZ', 'IR', 'MN', 'ID'];  // données éparses → pays jusqu'à 5
+const NOPROV_5 = ['DZ', 'CD', 'SA', 'AO', 'KZ', 'IR', 'MN'];  // données éparses → pays jusqu'à 5
+// Tous les pays à hiérarchie spéciale : exclus de la couche provinces
+// générique (world-provinces-fill) pour éviter toute superposition —
+// un pays NOPROV qui aurait des provinces NE ne doit pas les laisser fuir.
+const SPECIAL_HIER = ['in', ['get', 'iso2'],
+  ['literal', [...BIG_ISO2, ...NOPROV_4, ...NOPROV_5]]];
 
 // FIPS state code → USPS abbreviation (county names repeat across states)
 const _FIPS_STATE = {
@@ -857,7 +863,7 @@ async function _loadWorldProvincesGeojson() {
     type: 'fill',
     source: 'world-provinces',
     minzoom: 4,
-    filter: ['!', BIG_IN_ISO2],
+    filter: ['!', SPECIAL_HIER],
     paint: {
       'fill-color': ['coalesce', ['get', 'color'], 'rgba(0,0,0,0)'],
       'fill-opacity': 0.75
@@ -868,7 +874,7 @@ async function _loadWorldProvincesGeojson() {
     type: 'line',
     source: 'world-provinces',
     minzoom: 4,
-    filter: ['!', BIG_IN_ISO2],
+    filter: ['!', SPECIAL_HIER],
     paint: { 'line-color': '#555', 'line-width': 0.4 }
   });
   // Pays continentaux : provinces/etats de 3 a 5, puis les villes seules (5+).
