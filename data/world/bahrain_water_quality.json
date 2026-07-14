@@ -1,0 +1,42 @@
+[
+    {
+        "Region": "Manama (EWA)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.5",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "180",
+            "Alkalinity_TAC_mmol_l": "0.7",
+            "Sodium_Na_mg_l": "14.4",
+            "Chlorides_Cl_mg_l": "21.6",
+            "Calcium_Ca_mg_l": "24.5"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Muharraq (EWA)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.5",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "180",
+            "Alkalinity_TAC_mmol_l": "0.7",
+            "Sodium_Na_mg_l": "14.4",
+            "Chlorides_Cl_mg_l": "21.6",
+            "Calcium_Ca_mg_l": "24.5"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    }
+]

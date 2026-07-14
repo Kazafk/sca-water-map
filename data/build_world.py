@@ -70,6 +70,7 @@ COUNTRY_FALLBACKS = {
     "Bosnia":           ("BA", "Bosnia and Herzegovina"),
     "Kosovo":           ("XK", "Kosovo"),   # XK is de-facto code used by many
     "Nepal":            ("NP", "Nepal"),    # protect EPAL from matching NP
+    "Uae":              ("AE", "United Arab Emirates"),  # uae_water_quality.json
 }
 # Normalised-key version for case-insensitive lookups
 _COUNTRY_FALLBACKS_LOWER = {k.lower(): v for k, v in COUNTRY_FALLBACKS.items()}

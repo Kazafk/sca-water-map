@@ -81,6 +81,25 @@ COUNTRIES = {
     "SN": ("SEN", "ADM3"),  # arrondissements (121)
     "TN": ("TUN", "ADM3"),  # municipalities (2 083)
     "IN": ("IND", "ADM2"),  # districts (736)
+    # Golfe
+    "BH": ("BHR", "ADM1"),  # governorates (4)
+    "OM": ("OMN", "ADM2"),  # wilayats (61)
+    "KW": ("KWT", "ADM2"),  # areas (138)
+    "QA": ("QAT", "ADM2"),  # zones (79)
+    "AE": ("ARE", "ADM1"),  # emirates (7)
+    "SA": ("SAU", "ADM2"),  # governorates (147)
+    # Afrique subsaharienne
+    "ZM": ("ZMB", "ADM2"),  # districts (116)
+    "TZ": ("TZA", "ADM3"),  # wards (3 644)
+    "NA": ("NAM", "ADM2"),  # constituencies (109)
+    "BW": ("BWA", "ADM2"),  # sub-districts (25)
+    "RW": ("RWA", "ADM3"),  # sectors (416)
+    "MW": ("MWI", "ADM3"),  # wards (245)
+    "MZ": ("MOZ", "ADM3"),  # postos (411)
+    "AO": ("AGO", "ADM3"),  # communes (558)
+    "BI": ("BDI", "ADM3"),  # collines (2 615)
+    "MG": ("MDG", "ADM3"),  # communes (1 579)
+    "SO": ("SOM", "ADM2"),  # districts (118)
 }
 
 os.makedirs(GB_DIR, exist_ok=True)

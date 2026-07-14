@@ -1,0 +1,42 @@
+[
+    {
+        "Region": "Doha (Kahramaa)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.0",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "150",
+            "Alkalinity_TAC_mmol_l": "0.6",
+            "Sodium_Na_mg_l": "12.0",
+            "Chlorides_Cl_mg_l": "18.0",
+            "Calcium_Ca_mg_l": "21.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Al Rayyan (Kahramaa)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.0",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "150",
+            "Alkalinity_TAC_mmol_l": "0.6",
+            "Sodium_Na_mg_l": "12.0",
+            "Chlorides_Cl_mg_l": "18.0",
+            "Calcium_Ca_mg_l": "21.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    }
+]

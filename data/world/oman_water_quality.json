@@ -1,0 +1,62 @@
+[
+    {
+        "Region": "Muscat (Diam)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.0",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "250",
+            "Alkalinity_TAC_mmol_l": "0.8",
+            "Sodium_Na_mg_l": "20.0",
+            "Chlorides_Cl_mg_l": "30.0",
+            "Calcium_Ca_mg_l": "28.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Salalah (Dhofar Water)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.5",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "300",
+            "Alkalinity_TAC_mmol_l": "0.9",
+            "Sodium_Na_mg_l": "24.0",
+            "Chlorides_Cl_mg_l": "36.0",
+            "Calcium_Ca_mg_l": "31.5"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Sohar (Diam)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.0",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "250",
+            "Alkalinity_TAC_mmol_l": "0.8",
+            "Sodium_Na_mg_l": "20.0",
+            "Chlorides_Cl_mg_l": "30.0",
+            "Calcium_Ca_mg_l": "28.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    }
+]

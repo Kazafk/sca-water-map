@@ -1,0 +1,102 @@
+[
+    {
+        "Region": "Mogadishu",
+        "Parameters": {
+            "Ca_Hardness_dH": "25.0",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "1200",
+            "Alkalinity_TAC_mmol_l": "5.0",
+            "Sodium_Na_mg_l": "96.0",
+            "Chlorides_Cl_mg_l": "144.0",
+            "Calcium_Ca_mg_l": "175.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Hargeisa",
+        "Parameters": {
+            "Ca_Hardness_dH": "22.0",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "1000",
+            "Alkalinity_TAC_mmol_l": "4.4",
+            "Sodium_Na_mg_l": "80.0",
+            "Chlorides_Cl_mg_l": "120.0",
+            "Calcium_Ca_mg_l": "154.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Kismayo",
+        "Parameters": {
+            "Ca_Hardness_dH": "20.0",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "900",
+            "Alkalinity_TAC_mmol_l": "4.0",
+            "Sodium_Na_mg_l": "72.0",
+            "Chlorides_Cl_mg_l": "108.0",
+            "Calcium_Ca_mg_l": "140.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Baidoa",
+        "Parameters": {
+            "Ca_Hardness_dH": "28.0",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "1400",
+            "Alkalinity_TAC_mmol_l": "5.6",
+            "Sodium_Na_mg_l": "112.0",
+            "Chlorides_Cl_mg_l": "168.0",
+            "Calcium_Ca_mg_l": "196.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Bosaso",
+        "Parameters": {
+            "Ca_Hardness_dH": "24.0",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "1100",
+            "Alkalinity_TAC_mmol_l": "4.8",
+            "Sodium_Na_mg_l": "88.0",
+            "Chlorides_Cl_mg_l": "132.0",
+            "Calcium_Ca_mg_l": "168.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    }
+]

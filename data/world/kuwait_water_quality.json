@@ -1,0 +1,42 @@
+[
+    {
+        "Region": "Kuwait City (MEW)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.5",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "200",
+            "Alkalinity_TAC_mmol_l": "0.7",
+            "Sodium_Na_mg_l": "16.0",
+            "Chlorides_Cl_mg_l": "24.0",
+            "Calcium_Ca_mg_l": "24.5"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Al Ahmadi (MEW)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.5",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "200",
+            "Alkalinity_TAC_mmol_l": "0.7",
+            "Sodium_Na_mg_l": "16.0",
+            "Chlorides_Cl_mg_l": "24.0",
+            "Calcium_Ca_mg_l": "24.5"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    }
+]
