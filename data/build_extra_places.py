@@ -135,12 +135,16 @@ COUNTRIES = {
     "TH": ("THA", "ADM2"),  # amphoe (928)
     "MY": ("MYS", "ADM3"),  # mukim (1 859)
     "SG": ("SGP", "ADM2"),  # planning areas (55)
-    # DOM français couverts par geoBoundaries (les autres territoires n'ont
-    # pas de géométrie en open data ; ils s'affichent au niveau pays)
-    "MQ": ("MTQ", "ADM3"),  # Martinique communes (4)
-    "GF": ("GUF", "ADM3"),  # Guyane communes (2)
-    "RE": ("REU", "ADM3"),  # Réunion communes (4)
 }
+# Les DOM (GP/MQ/GF/RE/YT) sont bâtis depuis le référentiel communal
+# france-geojson (voir add_dom_places) — geoBoundaries les couvre mal.
+# Les COM (PF/NC/MF/BL) s'affichent au niveau pays (polygones geo-countries).
+
+# Codes département INSEE (préfixe du code commune) -> iso2 du territoire
+DOM_PREFIX_TO_ISO2 = {"971": "GP", "972": "MQ", "973": "GF", "974": "RE", "976": "YT"}
+DOM_GEOJSON_URL = ("https://raw.githubusercontent.com/gregoiredavid/"
+                   "france-geojson/master/communes-avec-outre-mer.geojson")
+DOM_CACHE = os.path.join(GB_DIR, "communes-avec-outre-mer.geojson")
 
 os.makedirs(GB_DIR, exist_ok=True)
 
@@ -257,6 +261,59 @@ for iso2, (iso3, adm) in COUNTRIES.items():
             },
         })
     print(f"  -> {n_matched} polygons ({len(candidates) - n_matched} cities unmatched)")
+
+
+# --- French overseas departments (DOM) from the france-geojson communal file ---
+def add_dom_places():
+    dom_cities = {}
+    for c in world_cities:
+        if c.get("country") in DOM_PREFIX_TO_ISO2.values() and c.get("score") is not None:
+            dom_cities.setdefault(c["country"], []).append(c)
+    if not dom_cities:
+        return
+    if not os.path.exists(DOM_CACHE) or os.path.getsize(DOM_CACHE) < 1_000_000:
+        print("  downloading france-geojson communes-avec-outre-mer ...")
+        urllib.request.urlretrieve(DOM_GEOJSON_URL, DOM_CACHE)
+    with open(DOM_CACHE, "r", encoding="utf-8") as f:
+        communes = json.load(f)["features"]
+
+    n = 0
+    for feat in communes:
+        code = str(feat["properties"].get("code", ""))
+        iso2 = DOM_PREFIX_TO_ISO2.get(code[:3])
+        if not iso2:
+            continue
+        candidates = dom_cities.get(iso2)
+        if not candidates:
+            continue
+        geom = feat.get("geometry")
+        if geom is None:
+            continue
+        min_lng, min_lat, max_lng, max_lat = coords_bbox(geom["coordinates"], geom["type"])
+        inside = [
+            c for c in candidates
+            if min_lng <= c["lng"] <= max_lng and min_lat <= c["lat"] <= max_lat
+            and point_in_coords(c["lng"], c["lat"], geom["coordinates"], geom["type"])
+            and c["id"] not in matched_city_ids
+        ]
+        if not inside:
+            continue
+        city = max(inside, key=lambda c: sum(1 for v in c["params"].values() if v is not None))
+        matched_city_ids.add(city["id"])
+        n += 1
+        features.append({
+            "type": "Feature",
+            "geometry": {"type": geom["type"], "coordinates": round_coords(geom["coordinates"])},
+            "properties": {
+                "city_id": city["id"],
+                "name": feat["properties"].get("nom") or city["name"],
+                "c": iso2,
+            },
+        })
+    print(f"DOM (france-geojson): {n} polygons")
+
+
+add_dom_places()
 
 with open(OUT_JSON, "w", encoding="utf-8") as f:
     json.dump({"type": "FeatureCollection", "features": features}, f,
