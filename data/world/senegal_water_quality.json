@@ -1,0 +1,202 @@
+[
+    {
+        "Region": "Dakar (SEN'EAU)",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.0",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "350",
+            "Alkalinity_TAC_mmol_l": "1.6",
+            "Sodium_Na_mg_l": "28.0",
+            "Chlorides_Cl_mg_l": "42.0",
+            "Calcium_Ca_mg_l": "56.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Thiès (SEN'EAU)",
+        "Parameters": {
+            "Ca_Hardness_dH": "10.0",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "450",
+            "Alkalinity_TAC_mmol_l": "2.0",
+            "Sodium_Na_mg_l": "36.0",
+            "Chlorides_Cl_mg_l": "54.0",
+            "Calcium_Ca_mg_l": "70.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Saint-Louis (SEN'EAU)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.0",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "250",
+            "Alkalinity_TAC_mmol_l": "1.2",
+            "Sodium_Na_mg_l": "20.0",
+            "Chlorides_Cl_mg_l": "30.0",
+            "Calcium_Ca_mg_l": "42.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Kaolack (SEN'EAU)",
+        "Parameters": {
+            "Ca_Hardness_dH": "18.0",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "1400",
+            "Alkalinity_TAC_mmol_l": "3.6",
+            "Sodium_Na_mg_l": "112.0",
+            "Chlorides_Cl_mg_l": "168.0",
+            "Calcium_Ca_mg_l": "126.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Fatick (SEN'EAU)",
+        "Parameters": {
+            "Ca_Hardness_dH": "17.0",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "1300",
+            "Alkalinity_TAC_mmol_l": "3.4",
+            "Sodium_Na_mg_l": "104.0",
+            "Chlorides_Cl_mg_l": "156.0",
+            "Calcium_Ca_mg_l": "119.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Diourbel/Touba (SEN'EAU)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.0",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "1100",
+            "Alkalinity_TAC_mmol_l": "3.0",
+            "Sodium_Na_mg_l": "88.0",
+            "Chlorides_Cl_mg_l": "132.0",
+            "Calcium_Ca_mg_l": "105.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Ziguinchor (SEN'EAU)",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.0",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "300",
+            "Alkalinity_TAC_mmol_l": "1.6",
+            "Sodium_Na_mg_l": "24.0",
+            "Chlorides_Cl_mg_l": "36.0",
+            "Calcium_Ca_mg_l": "56.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Tambacounda (SEN'EAU)",
+        "Parameters": {
+            "Ca_Hardness_dH": "10.0",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "400",
+            "Alkalinity_TAC_mmol_l": "2.0",
+            "Sodium_Na_mg_l": "32.0",
+            "Chlorides_Cl_mg_l": "48.0",
+            "Calcium_Ca_mg_l": "70.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Louga (SEN'EAU)",
+        "Parameters": {
+            "Ca_Hardness_dH": "11.0",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "500",
+            "Alkalinity_TAC_mmol_l": "2.2",
+            "Sodium_Na_mg_l": "40.0",
+            "Chlorides_Cl_mg_l": "60.0",
+            "Calcium_Ca_mg_l": "77.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Kolda (SEN'EAU)",
+        "Parameters": {
+            "Ca_Hardness_dH": "9.0",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "350",
+            "Alkalinity_TAC_mmol_l": "1.8",
+            "Sodium_Na_mg_l": "28.0",
+            "Chlorides_Cl_mg_l": "42.0",
+            "Calcium_Ca_mg_l": "63.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    }
+]

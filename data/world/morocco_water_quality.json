@@ -1,329 +1,9 @@
 [
     {
-        "Region": "Porto (Águas do Porto)",
-        "Parameters": {
-            "Ca_Hardness_dH": "3.0",
-            "pH": "7.1",
-            "TDS_Conductivity_uS_cm": "170",
-            "Alkalinity_TAC_mmol_l": "0.6",
-            "Sodium_Na_mg_l": "13.6",
-            "Chlorides_Cl_mg_l": "20.4",
-            "Calcium_Ca_mg_l": "21.0"
-        },
-        "Metadata": {
-            "Estimated_Parameters": [
-                "Alkalinity_TAC_mmol_l",
-                "Sodium_Na_mg_l",
-                "Chlorides_Cl_mg_l",
-                "Calcium_Ca_mg_l"
-            ]
-        }
-    },
-    {
-        "Region": "Lisbon (EPAL)",
-        "Parameters": {
-            "Ca_Hardness_dH": "6.0",
-            "pH": "7.3",
-            "TDS_Conductivity_uS_cm": "210",
-            "Alkalinity_TAC_mmol_l": "1.2",
-            "Sodium_Na_mg_l": "16.8",
-            "Chlorides_Cl_mg_l": "25.2",
-            "Calcium_Ca_mg_l": "42.0"
-        },
-        "Metadata": {
-            "Estimated_Parameters": [
-                "Alkalinity_TAC_mmol_l",
-                "Sodium_Na_mg_l",
-                "Chlorides_Cl_mg_l",
-                "Calcium_Ca_mg_l"
-            ]
-        }
-    },
-    {
-        "Region": "Braga (AGERE)",
-        "Parameters": {
-            "Ca_Hardness_dH": "2.0",
-            "pH": "7.0",
-            "TDS_Conductivity_uS_cm": "100",
-            "Alkalinity_TAC_mmol_l": "0.4",
-            "Sodium_Na_mg_l": "8.0",
-            "Chlorides_Cl_mg_l": "12.0",
-            "Calcium_Ca_mg_l": "14.0"
-        },
-        "Metadata": {
-            "Estimated_Parameters": [
-                "Alkalinity_TAC_mmol_l",
-                "Sodium_Na_mg_l",
-                "Chlorides_Cl_mg_l",
-                "Calcium_Ca_mg_l"
-            ]
-        }
-    },
-    {
-        "Region": "Coimbra (Águas de Coimbra)",
-        "Parameters": {
-            "Ca_Hardness_dH": "1.3",
-            "pH": "7.2",
-            "TDS_Conductivity_uS_cm": "110",
-            "Alkalinity_TAC_mmol_l": "0.3",
-            "Sodium_Na_mg_l": "8.8",
-            "Chlorides_Cl_mg_l": "13.2",
-            "Calcium_Ca_mg_l": "9.1"
-        },
-        "Metadata": {
-            "Estimated_Parameters": [
-                "Alkalinity_TAC_mmol_l",
-                "Sodium_Na_mg_l",
-                "Chlorides_Cl_mg_l",
-                "Calcium_Ca_mg_l"
-            ]
-        }
-    },
-    {
-        "Region": "Almada (SMAS Almada)",
+        "Region": "Casablanca (Lydec)",
         "Parameters": {
             "Ca_Hardness_dH": "15.0",
-            "pH": "7.4",
-            "TDS_Conductivity_uS_cm": "450",
-            "Alkalinity_TAC_mmol_l": "3.0",
-            "Sodium_Na_mg_l": "36.0",
-            "Chlorides_Cl_mg_l": "54.0",
-            "Calcium_Ca_mg_l": "105.0"
-        },
-        "Metadata": {
-            "Estimated_Parameters": [
-                "Alkalinity_TAC_mmol_l",
-                "Sodium_Na_mg_l",
-                "Chlorides_Cl_mg_l",
-                "Calcium_Ca_mg_l"
-            ]
-        }
-    },
-    {
-        "Region": "Funchal (ARM)",
-        "Parameters": {
-            "Ca_Hardness_dH": "2.0",
             "pH": "7.5",
-            "TDS_Conductivity_uS_cm": "100",
-            "Alkalinity_TAC_mmol_l": "0.4",
-            "Sodium_Na_mg_l": "8.0",
-            "Chlorides_Cl_mg_l": "12.0",
-            "Calcium_Ca_mg_l": "14.0"
-        },
-        "Metadata": {
-            "Estimated_Parameters": [
-                "Alkalinity_TAC_mmol_l",
-                "Sodium_Na_mg_l",
-                "Chlorides_Cl_mg_l",
-                "Calcium_Ca_mg_l"
-            ]
-        }
-    },
-    {
-        "Region": "Faro (Fagar)",
-        "Parameters": {
-            "Ca_Hardness_dH": "14.0",
-            "pH": "7.4",
-            "TDS_Conductivity_uS_cm": "500",
-            "Alkalinity_TAC_mmol_l": "2.8",
-            "Sodium_Na_mg_l": "40.0",
-            "Chlorides_Cl_mg_l": "60.0",
-            "Calcium_Ca_mg_l": "98.0"
-        },
-        "Metadata": {
-            "Estimated_Parameters": [
-                "Alkalinity_TAC_mmol_l",
-                "Sodium_Na_mg_l",
-                "Chlorides_Cl_mg_l",
-                "Calcium_Ca_mg_l"
-            ]
-        }
-    },
-    {
-        "Region": "Setúbal (Águas do Sado)",
-        "Parameters": {
-            "Ca_Hardness_dH": "16.0",
-            "pH": "7.3",
-            "TDS_Conductivity_uS_cm": "480",
-            "Alkalinity_TAC_mmol_l": "3.2",
-            "Sodium_Na_mg_l": "38.4",
-            "Chlorides_Cl_mg_l": "57.6",
-            "Calcium_Ca_mg_l": "112.0"
-        },
-        "Metadata": {
-            "Estimated_Parameters": [
-                "Alkalinity_TAC_mmol_l",
-                "Sodium_Na_mg_l",
-                "Chlorides_Cl_mg_l",
-                "Calcium_Ca_mg_l"
-            ]
-        }
-    },
-    {
-        "Region": "Viana do Castelo (Águas do Alto Minho)",
-        "Parameters": {
-            "Ca_Hardness_dH": "2.0",
-            "pH": "7.0",
-            "TDS_Conductivity_uS_cm": "100",
-            "Alkalinity_TAC_mmol_l": "0.4",
-            "Sodium_Na_mg_l": "8.0",
-            "Chlorides_Cl_mg_l": "12.0",
-            "Calcium_Ca_mg_l": "14.0"
-        },
-        "Metadata": {
-            "Estimated_Parameters": [
-                "Alkalinity_TAC_mmol_l",
-                "Sodium_Na_mg_l",
-                "Chlorides_Cl_mg_l",
-                "Calcium_Ca_mg_l"
-            ]
-        }
-    },
-    {
-        "Region": "Vila Real (EMAS)",
-        "Parameters": {
-            "Ca_Hardness_dH": "2.0",
-            "pH": "7.0",
-            "TDS_Conductivity_uS_cm": "100",
-            "Alkalinity_TAC_mmol_l": "0.4",
-            "Sodium_Na_mg_l": "8.0",
-            "Chlorides_Cl_mg_l": "12.0",
-            "Calcium_Ca_mg_l": "14.0"
-        },
-        "Metadata": {
-            "Estimated_Parameters": [
-                "Alkalinity_TAC_mmol_l",
-                "Sodium_Na_mg_l",
-                "Chlorides_Cl_mg_l",
-                "Calcium_Ca_mg_l"
-            ]
-        }
-    },
-    {
-        "Region": "Bragança (Águas do Norte)",
-        "Parameters": {
-            "Ca_Hardness_dH": "3.0",
-            "pH": "7.0",
-            "TDS_Conductivity_uS_cm": "120",
-            "Alkalinity_TAC_mmol_l": "0.6",
-            "Sodium_Na_mg_l": "9.6",
-            "Chlorides_Cl_mg_l": "14.4",
-            "Calcium_Ca_mg_l": "21.0"
-        },
-        "Metadata": {
-            "Estimated_Parameters": [
-                "Alkalinity_TAC_mmol_l",
-                "Sodium_Na_mg_l",
-                "Chlorides_Cl_mg_l",
-                "Calcium_Ca_mg_l"
-            ]
-        }
-    },
-    {
-        "Region": "Aveiro (AdRA)",
-        "Parameters": {
-            "Ca_Hardness_dH": "5.0",
-            "pH": "7.1",
-            "TDS_Conductivity_uS_cm": "150",
-            "Alkalinity_TAC_mmol_l": "1.0",
-            "Sodium_Na_mg_l": "12.0",
-            "Chlorides_Cl_mg_l": "18.0",
-            "Calcium_Ca_mg_l": "35.0"
-        },
-        "Metadata": {
-            "Estimated_Parameters": [
-                "Alkalinity_TAC_mmol_l",
-                "Sodium_Na_mg_l",
-                "Chlorides_Cl_mg_l",
-                "Calcium_Ca_mg_l"
-            ]
-        }
-    },
-    {
-        "Region": "Viseu (Águas de Viseu)",
-        "Parameters": {
-            "Ca_Hardness_dH": "2.0",
-            "pH": "6.8",
-            "TDS_Conductivity_uS_cm": "80",
-            "Alkalinity_TAC_mmol_l": "0.4",
-            "Sodium_Na_mg_l": "6.4",
-            "Chlorides_Cl_mg_l": "9.6",
-            "Calcium_Ca_mg_l": "14.0"
-        },
-        "Metadata": {
-            "Estimated_Parameters": [
-                "Alkalinity_TAC_mmol_l",
-                "Sodium_Na_mg_l",
-                "Chlorides_Cl_mg_l",
-                "Calcium_Ca_mg_l"
-            ]
-        }
-    },
-    {
-        "Region": "Guarda (Águas do Vale do Tejo)",
-        "Parameters": {
-            "Ca_Hardness_dH": "2.0",
-            "pH": "6.8",
-            "TDS_Conductivity_uS_cm": "80",
-            "Alkalinity_TAC_mmol_l": "0.4",
-            "Sodium_Na_mg_l": "6.4",
-            "Chlorides_Cl_mg_l": "9.6",
-            "Calcium_Ca_mg_l": "14.0"
-        },
-        "Metadata": {
-            "Estimated_Parameters": [
-                "Alkalinity_TAC_mmol_l",
-                "Sodium_Na_mg_l",
-                "Chlorides_Cl_mg_l",
-                "Calcium_Ca_mg_l"
-            ]
-        }
-    },
-    {
-        "Region": "Castelo Branco (Serviços Municipalizados)",
-        "Parameters": {
-            "Ca_Hardness_dH": "3.0",
-            "pH": "7.0",
-            "TDS_Conductivity_uS_cm": "100",
-            "Alkalinity_TAC_mmol_l": "0.6",
-            "Sodium_Na_mg_l": "8.0",
-            "Chlorides_Cl_mg_l": "12.0",
-            "Calcium_Ca_mg_l": "21.0"
-        },
-        "Metadata": {
-            "Estimated_Parameters": [
-                "Alkalinity_TAC_mmol_l",
-                "Sodium_Na_mg_l",
-                "Chlorides_Cl_mg_l",
-                "Calcium_Ca_mg_l"
-            ]
-        }
-    },
-    {
-        "Region": "Leiria (SMAS Leiria)",
-        "Parameters": {
-            "Ca_Hardness_dH": "14.0",
-            "pH": "7.4",
-            "TDS_Conductivity_uS_cm": "400",
-            "Alkalinity_TAC_mmol_l": "2.8",
-            "Sodium_Na_mg_l": "32.0",
-            "Chlorides_Cl_mg_l": "48.0",
-            "Calcium_Ca_mg_l": "98.0"
-        },
-        "Metadata": {
-            "Estimated_Parameters": [
-                "Alkalinity_TAC_mmol_l",
-                "Sodium_Na_mg_l",
-                "Chlorides_Cl_mg_l",
-                "Calcium_Ca_mg_l"
-            ]
-        }
-    },
-    {
-        "Region": "Santarém (Águas de Santarém)",
-        "Parameters": {
-            "Ca_Hardness_dH": "15.0",
-            "pH": "7.4",
             "TDS_Conductivity_uS_cm": "450",
             "Alkalinity_TAC_mmol_l": "3.0",
             "Sodium_Na_mg_l": "36.0",
@@ -340,7 +20,87 @@
         }
     },
     {
-        "Region": "Évora (Águas do Vale do Tejo)",
+        "Region": "Rabat (Redal)",
+        "Parameters": {
+            "Ca_Hardness_dH": "11.0",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "300",
+            "Alkalinity_TAC_mmol_l": "2.2",
+            "Sodium_Na_mg_l": "24.0",
+            "Chlorides_Cl_mg_l": "36.0",
+            "Calcium_Ca_mg_l": "77.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Tanger (Amendis)",
+        "Parameters": {
+            "Ca_Hardness_dH": "11.0",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "300",
+            "Alkalinity_TAC_mmol_l": "2.2",
+            "Sodium_Na_mg_l": "24.0",
+            "Chlorides_Cl_mg_l": "36.0",
+            "Calcium_Ca_mg_l": "77.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Marrakech (RADEEMA)",
+        "Parameters": {
+            "Ca_Hardness_dH": "18.0",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "550",
+            "Alkalinity_TAC_mmol_l": "3.6",
+            "Sodium_Na_mg_l": "44.0",
+            "Chlorides_Cl_mg_l": "66.0",
+            "Calcium_Ca_mg_l": "126.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Agadir (RAMSA)",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.0",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "250",
+            "Alkalinity_TAC_mmol_l": "1.6",
+            "Sodium_Na_mg_l": "20.0",
+            "Chlorides_Cl_mg_l": "30.0",
+            "Calcium_Ca_mg_l": "56.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Fès (RADEEF)",
         "Parameters": {
             "Ca_Hardness_dH": "12.0",
             "pH": "7.3",
@@ -360,7 +120,187 @@
         }
     },
     {
-        "Region": "Beja (EMAS Beja)",
+        "Region": "Oujda (RADEEO)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.0",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "400",
+            "Alkalinity_TAC_mmol_l": "2.8",
+            "Sodium_Na_mg_l": "32.0",
+            "Chlorides_Cl_mg_l": "48.0",
+            "Calcium_Ca_mg_l": "98.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Meknès (RADEM)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.0",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "450",
+            "Alkalinity_TAC_mmol_l": "3.0",
+            "Sodium_Na_mg_l": "36.0",
+            "Chlorides_Cl_mg_l": "54.0",
+            "Calcium_Ca_mg_l": "105.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Kénitra (RAK)",
+        "Parameters": {
+            "Ca_Hardness_dH": "10.0",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "300",
+            "Alkalinity_TAC_mmol_l": "2.0",
+            "Sodium_Na_mg_l": "24.0",
+            "Chlorides_Cl_mg_l": "36.0",
+            "Calcium_Ca_mg_l": "70.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Laâyoune (ONEE)",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.0",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "250",
+            "Alkalinity_TAC_mmol_l": "1.6",
+            "Sodium_Na_mg_l": "20.0",
+            "Chlorides_Cl_mg_l": "30.0",
+            "Calcium_Ca_mg_l": "56.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Dakhla (ONEE)",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.0",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "250",
+            "Alkalinity_TAC_mmol_l": "1.6",
+            "Sodium_Na_mg_l": "20.0",
+            "Chlorides_Cl_mg_l": "30.0",
+            "Calcium_Ca_mg_l": "56.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Safi (RADEES)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.0",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "400",
+            "Alkalinity_TAC_mmol_l": "2.6",
+            "Sodium_Na_mg_l": "32.0",
+            "Chlorides_Cl_mg_l": "48.0",
+            "Calcium_Ca_mg_l": "91.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Béni Mellal (RADEET)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.0",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "420",
+            "Alkalinity_TAC_mmol_l": "2.8",
+            "Sodium_Na_mg_l": "33.6",
+            "Chlorides_Cl_mg_l": "50.4",
+            "Calcium_Ca_mg_l": "98.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "El Jadida (RADEEJ)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.0",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "380",
+            "Alkalinity_TAC_mmol_l": "2.6",
+            "Sodium_Na_mg_l": "30.4",
+            "Chlorides_Cl_mg_l": "45.6",
+            "Calcium_Ca_mg_l": "91.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Tétouan (Amendis)",
+        "Parameters": {
+            "Ca_Hardness_dH": "11.0",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "300",
+            "Alkalinity_TAC_mmol_l": "2.2",
+            "Sodium_Na_mg_l": "24.0",
+            "Chlorides_Cl_mg_l": "36.0",
+            "Calcium_Ca_mg_l": "77.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Nador (ONEE)",
         "Parameters": {
             "Ca_Hardness_dH": "15.0",
             "pH": "7.5",
@@ -380,15 +320,75 @@
         }
     },
     {
-        "Region": "Ponta Delgada (SMAS Ponta Delgada)",
+        "Region": "Errachidia (ONEE)",
         "Parameters": {
-            "Ca_Hardness_dH": "3.0",
-            "pH": "7.2",
-            "TDS_Conductivity_uS_cm": "150",
-            "Alkalinity_TAC_mmol_l": "0.6",
-            "Sodium_Na_mg_l": "12.0",
-            "Chlorides_Cl_mg_l": "18.0",
-            "Calcium_Ca_mg_l": "21.0"
+            "Ca_Hardness_dH": "16.0",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "500",
+            "Alkalinity_TAC_mmol_l": "3.2",
+            "Sodium_Na_mg_l": "40.0",
+            "Chlorides_Cl_mg_l": "60.0",
+            "Calcium_Ca_mg_l": "112.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Guelmim (ONEE)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.0",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "350",
+            "Alkalinity_TAC_mmol_l": "2.4",
+            "Sodium_Na_mg_l": "28.0",
+            "Chlorides_Cl_mg_l": "42.0",
+            "Calcium_Ca_mg_l": "84.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Settat (RADEEC)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.0",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "400",
+            "Alkalinity_TAC_mmol_l": "2.8",
+            "Sodium_Na_mg_l": "32.0",
+            "Chlorides_Cl_mg_l": "48.0",
+            "Calcium_Ca_mg_l": "98.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Al Hoceïma (ONEE)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.0",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "350",
+            "Alkalinity_TAC_mmol_l": "2.4",
+            "Sodium_Na_mg_l": "28.0",
+            "Chlorides_Cl_mg_l": "42.0",
+            "Calcium_Ca_mg_l": "84.0"
         },
         "Metadata": {
             "Estimated_Parameters": [

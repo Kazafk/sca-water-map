@@ -77,6 +77,9 @@ COUNTRIES = {
     "FJ": ("FJI", "ADM3"),  # tikinas (86)
     "BZ": ("BLZ", "ADM2"),  # constituencies (31)
     "NG": ("NGA", "ADM2"),  # LGAs (774)
+    "MA": ("MAR", "ADM2"),  # prefectures/provinces (75)
+    "SN": ("SEN", "ADM3"),  # arrondissements (121)
+    "TN": ("TUN", "ADM3"),  # municipalities (2 083)
 }
 
 os.makedirs(GB_DIR, exist_ok=True)

@@ -1,0 +1,202 @@
+[
+    {
+        "Region": "Tunis (SONEDE)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.0",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "750",
+            "Alkalinity_TAC_mmol_l": "3.0",
+            "Sodium_Na_mg_l": "60.0",
+            "Chlorides_Cl_mg_l": "90.0",
+            "Calcium_Ca_mg_l": "105.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Bizerte (SONEDE)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.0",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "700",
+            "Alkalinity_TAC_mmol_l": "2.8",
+            "Sodium_Na_mg_l": "56.0",
+            "Chlorides_Cl_mg_l": "84.0",
+            "Calcium_Ca_mg_l": "98.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Sousse (SONEDE)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.0",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "1000",
+            "Alkalinity_TAC_mmol_l": "2.4",
+            "Sodium_Na_mg_l": "80.0",
+            "Chlorides_Cl_mg_l": "120.0",
+            "Calcium_Ca_mg_l": "84.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Sfax (SONEDE)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.0",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "1200",
+            "Alkalinity_TAC_mmol_l": "2.6",
+            "Sodium_Na_mg_l": "96.0",
+            "Chlorides_Cl_mg_l": "144.0",
+            "Calcium_Ca_mg_l": "91.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Gabès (SONEDE)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.0",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "1300",
+            "Alkalinity_TAC_mmol_l": "2.8",
+            "Sodium_Na_mg_l": "104.0",
+            "Chlorides_Cl_mg_l": "156.0",
+            "Calcium_Ca_mg_l": "98.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Gafsa (SONEDE)",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.0",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "1400",
+            "Alkalinity_TAC_mmol_l": "3.2",
+            "Sodium_Na_mg_l": "112.0",
+            "Chlorides_Cl_mg_l": "168.0",
+            "Calcium_Ca_mg_l": "112.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Kairouan (SONEDE)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.0",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "1100",
+            "Alkalinity_TAC_mmol_l": "3.0",
+            "Sodium_Na_mg_l": "88.0",
+            "Chlorides_Cl_mg_l": "132.0",
+            "Calcium_Ca_mg_l": "105.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Médenine/Djerba (SONEDE)",
+        "Parameters": {
+            "Ca_Hardness_dH": "9.0",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "600",
+            "Alkalinity_TAC_mmol_l": "1.8",
+            "Sodium_Na_mg_l": "48.0",
+            "Chlorides_Cl_mg_l": "72.0",
+            "Calcium_Ca_mg_l": "63.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Béja (SONEDE)",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.0",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "650",
+            "Alkalinity_TAC_mmol_l": "2.8",
+            "Sodium_Na_mg_l": "52.0",
+            "Chlorides_Cl_mg_l": "78.0",
+            "Calcium_Ca_mg_l": "98.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Nabeul (SONEDE)",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.0",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "800",
+            "Alkalinity_TAC_mmol_l": "2.6",
+            "Sodium_Na_mg_l": "64.0",
+            "Chlorides_Cl_mg_l": "96.0",
+            "Calcium_Ca_mg_l": "91.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    }
+]
