@@ -528,15 +528,19 @@ async function init() {
 
   // Build iso3→iso2 map and color countries GeoJSON (single fetch, no duplicate load)
   // geo-countries inherits Natural Earth's "-99" ISO codes for a few disputed/special
-  // entries — patch the ones we have data for, keyed by feature name.
-  const ISO_FIXES = { 'France': ['FR', 'FRA'], 'Norway': ['NO', 'NOR'], 'Kosovo': ['XK', 'XKX'] };
+  // entries, and codes Taiwan as "CN-TW" — patch the ones we have data for, keyed by
+  // feature name. The fix is authoritative: always applied for these countries.
+  const ISO_FIXES = {
+    'France': ['FR', 'FRA'], 'Norway': ['NO', 'NOR'], 'Kosovo': ['XK', 'XKX'],
+    'Taiwan': ['TW', 'TWN'],
+  };
   let countriesGeo = null;
   if (countriesGeoRes.ok) {
     countriesGeo = await countriesGeoRes.json();
     for (const f of countriesGeo.features) {
       let a2 = f.properties['ISO3166-1-Alpha-2'];
       let a3 = f.properties['ISO3166-1-Alpha-3'];
-      if ((!a2 || a2 === '-99') && ISO_FIXES[f.properties.name]) {
+      if (ISO_FIXES[f.properties.name]) {
         [a2, a3] = ISO_FIXES[f.properties.name];
         f.properties['ISO3166-1-Alpha-2'] = a2; // in place: click/tooltip handlers use it
         f.properties['ISO3166-1-Alpha-3'] = a3;
