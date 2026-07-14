@@ -1,0 +1,102 @@
+[
+    {
+        "Region": "Kuala Lumpur (Air Selangor)",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.5",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "150",
+            "Alkalinity_TAC_mmol_l": "0.9",
+            "Sodium_Na_mg_l": "12.0",
+            "Chlorides_Cl_mg_l": "18.0",
+            "Calcium_Ca_mg_l": "31.5"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Penang",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.0",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "130",
+            "Alkalinity_TAC_mmol_l": "0.8",
+            "Sodium_Na_mg_l": "10.4",
+            "Chlorides_Cl_mg_l": "15.6",
+            "Calcium_Ca_mg_l": "28.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Johor Bahru",
+        "Parameters": {
+            "Ca_Hardness_dH": "5.0",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "160",
+            "Alkalinity_TAC_mmol_l": "1.0",
+            "Sodium_Na_mg_l": "12.8",
+            "Chlorides_Cl_mg_l": "19.2",
+            "Calcium_Ca_mg_l": "35.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Kuching",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.5",
+            "pH": "7.0",
+            "TDS_Conductivity_uS_cm": "110",
+            "Alkalinity_TAC_mmol_l": "0.7",
+            "Sodium_Na_mg_l": "8.8",
+            "Chlorides_Cl_mg_l": "13.2",
+            "Calcium_Ca_mg_l": "24.5"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Kota Kinabalu",
+        "Parameters": {
+            "Ca_Hardness_dH": "5.5",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "170",
+            "Alkalinity_TAC_mmol_l": "1.1",
+            "Sodium_Na_mg_l": "13.6",
+            "Chlorides_Cl_mg_l": "20.4",
+            "Calcium_Ca_mg_l": "38.5"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    }
+]

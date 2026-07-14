@@ -1,0 +1,102 @@
+[
+    {
+        "Region": "Central (PUB)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.0",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "120",
+            "Alkalinity_TAC_mmol_l": "0.6",
+            "Sodium_Na_mg_l": "9.6",
+            "Chlorides_Cl_mg_l": "14.4",
+            "Calcium_Ca_mg_l": "21.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "East (PUB)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.5",
+            "pH": "7.9",
+            "TDS_Conductivity_uS_cm": "130",
+            "Alkalinity_TAC_mmol_l": "0.7",
+            "Sodium_Na_mg_l": "10.4",
+            "Chlorides_Cl_mg_l": "15.6",
+            "Calcium_Ca_mg_l": "24.5"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "North (PUB)",
+        "Parameters": {
+            "Ca_Hardness_dH": "2.5",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "110",
+            "Alkalinity_TAC_mmol_l": "0.5",
+            "Sodium_Na_mg_l": "8.8",
+            "Chlorides_Cl_mg_l": "13.2",
+            "Calcium_Ca_mg_l": "17.5"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "West (PUB)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.0",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "125",
+            "Alkalinity_TAC_mmol_l": "0.6",
+            "Sodium_Na_mg_l": "10.0",
+            "Chlorides_Cl_mg_l": "15.0",
+            "Calcium_Ca_mg_l": "21.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "North-East (PUB)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.5",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "135",
+            "Alkalinity_TAC_mmol_l": "0.7",
+            "Sodium_Na_mg_l": "10.8",
+            "Chlorides_Cl_mg_l": "16.2",
+            "Calcium_Ca_mg_l": "24.5"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    }
+]

@@ -1,0 +1,102 @@
+[
+    {
+        "Region": "Tbilisi (GWP)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.5",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "180",
+            "Alkalinity_TAC_mmol_l": "1.3",
+            "Sodium_Na_mg_l": "14.4",
+            "Chlorides_Cl_mg_l": "21.6",
+            "Calcium_Ca_mg_l": "45.5"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Batumi",
+        "Parameters": {
+            "Ca_Hardness_dH": "5.0",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "140",
+            "Alkalinity_TAC_mmol_l": "1.0",
+            "Sodium_Na_mg_l": "11.2",
+            "Chlorides_Cl_mg_l": "16.8",
+            "Calcium_Ca_mg_l": "35.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Kutaisi",
+        "Parameters": {
+            "Ca_Hardness_dH": "5.5",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "150",
+            "Alkalinity_TAC_mmol_l": "1.1",
+            "Sodium_Na_mg_l": "12.0",
+            "Chlorides_Cl_mg_l": "18.0",
+            "Calcium_Ca_mg_l": "38.5"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Rustavi",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.0",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "200",
+            "Alkalinity_TAC_mmol_l": "1.4",
+            "Sodium_Na_mg_l": "16.0",
+            "Chlorides_Cl_mg_l": "24.0",
+            "Calcium_Ca_mg_l": "49.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Gori",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.0",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "170",
+            "Alkalinity_TAC_mmol_l": "1.2",
+            "Sodium_Na_mg_l": "13.6",
+            "Chlorides_Cl_mg_l": "20.4",
+            "Calcium_Ca_mg_l": "42.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    }
+]

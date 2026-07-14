@@ -1,0 +1,102 @@
+[
+    {
+        "Region": "Bangkok (MWA)",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.5",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "220",
+            "Alkalinity_TAC_mmol_l": "1.3",
+            "Sodium_Na_mg_l": "17.6",
+            "Chlorides_Cl_mg_l": "26.4",
+            "Calcium_Ca_mg_l": "45.5"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Chiang Mai",
+        "Parameters": {
+            "Ca_Hardness_dH": "5.0",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "160",
+            "Alkalinity_TAC_mmol_l": "1.0",
+            "Sodium_Na_mg_l": "12.8",
+            "Chlorides_Cl_mg_l": "19.2",
+            "Calcium_Ca_mg_l": "35.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Phuket",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.5",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "150",
+            "Alkalinity_TAC_mmol_l": "0.9",
+            "Sodium_Na_mg_l": "12.0",
+            "Chlorides_Cl_mg_l": "18.0",
+            "Calcium_Ca_mg_l": "31.5"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Pattaya",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.0",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "250",
+            "Alkalinity_TAC_mmol_l": "1.4",
+            "Sodium_Na_mg_l": "20.0",
+            "Chlorides_Cl_mg_l": "30.0",
+            "Calcium_Ca_mg_l": "49.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Khon Kaen",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.0",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "280",
+            "Alkalinity_TAC_mmol_l": "1.6",
+            "Sodium_Na_mg_l": "22.4",
+            "Chlorides_Cl_mg_l": "33.6",
+            "Calcium_Ca_mg_l": "56.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    }
+]

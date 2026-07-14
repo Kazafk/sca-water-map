@@ -1,0 +1,102 @@
+[
+    {
+        "Region": "Tehran",
+        "Parameters": {
+            "Ca_Hardness_dH": "9.0",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "280",
+            "Alkalinity_TAC_mmol_l": "1.8",
+            "Sodium_Na_mg_l": "22.4",
+            "Chlorides_Cl_mg_l": "33.6",
+            "Calcium_Ca_mg_l": "63.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Mashhad",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.0",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "380",
+            "Alkalinity_TAC_mmol_l": "2.4",
+            "Sodium_Na_mg_l": "30.4",
+            "Chlorides_Cl_mg_l": "45.6",
+            "Calcium_Ca_mg_l": "84.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Isfahan",
+        "Parameters": {
+            "Ca_Hardness_dH": "14.0",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "450",
+            "Alkalinity_TAC_mmol_l": "2.8",
+            "Sodium_Na_mg_l": "36.0",
+            "Chlorides_Cl_mg_l": "54.0",
+            "Calcium_Ca_mg_l": "98.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Ahvaz",
+        "Parameters": {
+            "Ca_Hardness_dH": "22.0",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "950",
+            "Alkalinity_TAC_mmol_l": "4.4",
+            "Sodium_Na_mg_l": "76.0",
+            "Chlorides_Cl_mg_l": "114.0",
+            "Calcium_Ca_mg_l": "154.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Shiraz",
+        "Parameters": {
+            "Ca_Hardness_dH": "13.0",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "400",
+            "Alkalinity_TAC_mmol_l": "2.6",
+            "Sodium_Na_mg_l": "32.0",
+            "Chlorides_Cl_mg_l": "48.0",
+            "Calcium_Ca_mg_l": "91.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    }
+]

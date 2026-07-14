@@ -116,6 +116,25 @@ COUNTRIES = {
     "ZW": ("ZWE", "ADM3"),  # wards (1 961)
     "BF": ("BFA", "ADM3"),  # departments (351)
     "UG": ("UGA", "ADM3"),  # sub-counties (137)
+    # Caucase + Moyen-Orient + Asie
+    "JO": ("JOR", "ADM2"),  # districts (52)
+    "AM": ("ARM", "ADM2"),  # communities (39)
+    "GE": ("GEO", "ADM2"),  # municipalities (68)
+    "IQ": ("IRQ", "ADM2"),  # districts (101)
+    "IR": ("IRN", "ADM3"),  # bakhsh (1 076)
+    "MN": ("MNG", "ADM2"),  # soums (339)
+    "NP": ("NPL", "ADM3"),  # municipalities (774)
+    "BT": ("BTN", "ADM2"),  # gewogs (205)
+    "BD": ("BGD", "ADM3"),  # upazilas (544)
+    # Asie du Sud-Est
+    "LK": ("LKA", "ADM3"),  # divisions (330)
+    "ID": ("IDN", "ADM2"),  # regencies (519)
+    "VN": ("VNM", "ADM2"),  # districts (708)
+    "PH": ("PHL", "ADM3"),  # barangay-groups (1 647)
+    "KH": ("KHM", "ADM3"),  # communes (1 633)
+    "TH": ("THA", "ADM2"),  # amphoe (928)
+    "MY": ("MYS", "ADM3"),  # mukim (1 859)
+    "SG": ("SGP", "ADM2"),  # planning areas (55)
 }
 
 os.makedirs(GB_DIR, exist_ok=True)

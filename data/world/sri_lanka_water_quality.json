@@ -1,0 +1,102 @@
+[
+    {
+        "Region": "Colombo (NWSDB)",
+        "Parameters": {
+            "Ca_Hardness_dH": "3.5",
+            "pH": "7.1",
+            "TDS_Conductivity_uS_cm": "110",
+            "Alkalinity_TAC_mmol_l": "0.7",
+            "Sodium_Na_mg_l": "8.8",
+            "Chlorides_Cl_mg_l": "13.2",
+            "Calcium_Ca_mg_l": "24.5"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Kandy",
+        "Parameters": {
+            "Ca_Hardness_dH": "4.5",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "140",
+            "Alkalinity_TAC_mmol_l": "0.9",
+            "Sodium_Na_mg_l": "11.2",
+            "Chlorides_Cl_mg_l": "16.8",
+            "Calcium_Ca_mg_l": "31.5"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Galle",
+        "Parameters": {
+            "Ca_Hardness_dH": "5.0",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "160",
+            "Alkalinity_TAC_mmol_l": "1.0",
+            "Sodium_Na_mg_l": "12.8",
+            "Chlorides_Cl_mg_l": "19.2",
+            "Calcium_Ca_mg_l": "35.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Anuradhapura",
+        "Parameters": {
+            "Ca_Hardness_dH": "19.0",
+            "pH": "7.8",
+            "TDS_Conductivity_uS_cm": "650",
+            "Alkalinity_TAC_mmol_l": "3.8",
+            "Sodium_Na_mg_l": "52.0",
+            "Chlorides_Cl_mg_l": "78.0",
+            "Calcium_Ca_mg_l": "133.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Jaffna",
+        "Parameters": {
+            "Ca_Hardness_dH": "18.0",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "600",
+            "Alkalinity_TAC_mmol_l": "3.6",
+            "Sodium_Na_mg_l": "48.0",
+            "Chlorides_Cl_mg_l": "72.0",
+            "Calcium_Ca_mg_l": "126.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    }
+]

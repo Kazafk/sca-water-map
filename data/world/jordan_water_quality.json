@@ -1,0 +1,102 @@
+[
+    {
+        "Region": "Amman (Miyahuna)",
+        "Parameters": {
+            "Ca_Hardness_dH": "18.0",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "550",
+            "Alkalinity_TAC_mmol_l": "3.6",
+            "Sodium_Na_mg_l": "44.0",
+            "Chlorides_Cl_mg_l": "66.0",
+            "Calcium_Ca_mg_l": "126.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Zarqa",
+        "Parameters": {
+            "Ca_Hardness_dH": "19.0",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "580",
+            "Alkalinity_TAC_mmol_l": "3.8",
+            "Sodium_Na_mg_l": "46.4",
+            "Chlorides_Cl_mg_l": "69.6",
+            "Calcium_Ca_mg_l": "133.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Irbid",
+        "Parameters": {
+            "Ca_Hardness_dH": "16.0",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "480",
+            "Alkalinity_TAC_mmol_l": "3.2",
+            "Sodium_Na_mg_l": "38.4",
+            "Chlorides_Cl_mg_l": "57.6",
+            "Calcium_Ca_mg_l": "112.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Russeifa",
+        "Parameters": {
+            "Ca_Hardness_dH": "18.5",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "560",
+            "Alkalinity_TAC_mmol_l": "3.7",
+            "Sodium_Na_mg_l": "44.8",
+            "Chlorides_Cl_mg_l": "67.2",
+            "Calcium_Ca_mg_l": "129.5"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Aqaba",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.0",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "250",
+            "Alkalinity_TAC_mmol_l": "1.6",
+            "Sodium_Na_mg_l": "20.0",
+            "Chlorides_Cl_mg_l": "30.0",
+            "Calcium_Ca_mg_l": "56.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    }
+]

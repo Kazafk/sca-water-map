@@ -1,0 +1,102 @@
+[
+    {
+        "Region": "Jakarta (PAM Jaya)",
+        "Parameters": {
+            "Ca_Hardness_dH": "15.0",
+            "pH": "7.7",
+            "TDS_Conductivity_uS_cm": "800",
+            "Alkalinity_TAC_mmol_l": "3.0",
+            "Sodium_Na_mg_l": "64.0",
+            "Chlorides_Cl_mg_l": "96.0",
+            "Calcium_Ca_mg_l": "105.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Surabaya",
+        "Parameters": {
+            "Ca_Hardness_dH": "11.0",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "350",
+            "Alkalinity_TAC_mmol_l": "2.2",
+            "Sodium_Na_mg_l": "28.0",
+            "Chlorides_Cl_mg_l": "42.0",
+            "Calcium_Ca_mg_l": "77.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Bandung",
+        "Parameters": {
+            "Ca_Hardness_dH": "6.5",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "180",
+            "Alkalinity_TAC_mmol_l": "1.3",
+            "Sodium_Na_mg_l": "14.4",
+            "Chlorides_Cl_mg_l": "21.6",
+            "Calcium_Ca_mg_l": "45.5"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Medan",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.0",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "240",
+            "Alkalinity_TAC_mmol_l": "1.6",
+            "Sodium_Na_mg_l": "19.2",
+            "Chlorides_Cl_mg_l": "28.8",
+            "Calcium_Ca_mg_l": "56.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Denpasar (Bali)",
+        "Parameters": {
+            "Ca_Hardness_dH": "12.0",
+            "pH": "7.6",
+            "TDS_Conductivity_uS_cm": "400",
+            "Alkalinity_TAC_mmol_l": "2.4",
+            "Sodium_Na_mg_l": "32.0",
+            "Chlorides_Cl_mg_l": "48.0",
+            "Calcium_Ca_mg_l": "84.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    }
+]

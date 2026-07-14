@@ -24,7 +24,7 @@ const BIG_IN_ISO2 = ['in', ['get', 'iso2'], ['literal', BIG_ISO2]];
 // Pays continentaux SANS provinces NE 1:50m (AR/MX/DZ/CD/PE : 0 polygone
 // admin-1) : le choroplèthe pays reste affiché jusqu'à l'arrivée des villes.
 const NOPROV_4 = ['MX', 'AR', 'PE'];  // polygones denses → villes dès 4
-const NOPROV_5 = ['DZ', 'CD', 'SA', 'AO', 'KZ'];  // données éparses → pays jusqu'à 5
+const NOPROV_5 = ['DZ', 'CD', 'SA', 'AO', 'KZ', 'IR', 'MN', 'ID'];  // données éparses → pays jusqu'à 5
 
 // FIPS state code → USPS abbreviation (county names repeat across states)
 const _FIPS_STATE = {

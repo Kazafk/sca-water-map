@@ -1,0 +1,102 @@
+[
+    {
+        "Region": "Ulaanbaatar",
+        "Parameters": {
+            "Ca_Hardness_dH": "10.5",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "310",
+            "Alkalinity_TAC_mmol_l": "2.1",
+            "Sodium_Na_mg_l": "24.8",
+            "Chlorides_Cl_mg_l": "37.2",
+            "Calcium_Ca_mg_l": "73.5"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Erdenet",
+        "Parameters": {
+            "Ca_Hardness_dH": "9.0",
+            "pH": "7.4",
+            "TDS_Conductivity_uS_cm": "260",
+            "Alkalinity_TAC_mmol_l": "1.8",
+            "Sodium_Na_mg_l": "20.8",
+            "Chlorides_Cl_mg_l": "31.2",
+            "Calcium_Ca_mg_l": "63.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Darkhan",
+        "Parameters": {
+            "Ca_Hardness_dH": "11.0",
+            "pH": "7.5",
+            "TDS_Conductivity_uS_cm": "330",
+            "Alkalinity_TAC_mmol_l": "2.2",
+            "Sodium_Na_mg_l": "26.4",
+            "Chlorides_Cl_mg_l": "39.6",
+            "Calcium_Ca_mg_l": "77.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Choibalsan",
+        "Parameters": {
+            "Ca_Hardness_dH": "8.5",
+            "pH": "7.3",
+            "TDS_Conductivity_uS_cm": "240",
+            "Alkalinity_TAC_mmol_l": "1.7",
+            "Sodium_Na_mg_l": "19.2",
+            "Chlorides_Cl_mg_l": "28.8",
+            "Calcium_Ca_mg_l": "59.5"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    },
+    {
+        "Region": "Mörön",
+        "Parameters": {
+            "Ca_Hardness_dH": "7.0",
+            "pH": "7.2",
+            "TDS_Conductivity_uS_cm": "190",
+            "Alkalinity_TAC_mmol_l": "1.4",
+            "Sodium_Na_mg_l": "15.2",
+            "Chlorides_Cl_mg_l": "22.8",
+            "Calcium_Ca_mg_l": "49.0"
+        },
+        "Metadata": {
+            "Estimated_Parameters": [
+                "Alkalinity_TAC_mmol_l",
+                "Sodium_Na_mg_l",
+                "Chlorides_Cl_mg_l",
+                "Calcium_Ca_mg_l"
+            ]
+        }
+    }
+]
